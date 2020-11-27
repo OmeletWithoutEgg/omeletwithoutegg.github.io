@@ -16,7 +16,6 @@ script:
 
 deploy:
   strategy: git
-  repo: omeletwithomeletwithoutegg.github.io
   provider: pages
   cleanup: false
   token: $GITHUB_TOKEN
