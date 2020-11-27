@@ -19,7 +19,7 @@ deploy:
   provider: pages
   cleanup: false
   token: $GITHUB_TOKEN
-  local_dir: public
+  local_dir: /public
   on:
     branch: master
 
