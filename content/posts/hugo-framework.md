@@ -13,9 +13,8 @@ hexo似乎是對windows比較友善？檔名都一堆底線之類的
 Hugo沒有預設的theme，所以如果不想無中生有一定要裝一個theme。
 我原本用的Hexo Theme Cactus在Hugo也有人維護一個theme，不過feature就沒有那麼多了。
 總之試著寫一個markdown然後 `hugo server`
-驚訝的發現他超快XDD應該說是Hexo太慢了，我想node.js天生本來就有一些缺點吧
-既然可以拋棄噁心的 `node_modules` 還有底線，而且還可以讓他 generate 的時間變超快，我決定試看看能不能把整個網站從Hexo改成用Hugo寫。
-並且同時大部份東西仍然保持跟之前相同，例如Repo、網址、code highlight、search/tag feature等等
+驚訝的發現他超快XDD應該說是Hexo太慢了，我想node.js天生本來就有一些缺點吧。
+既然可以拋棄噁心的 `node_modules` 還有底線，而且還可以讓他 generate 的時間變超快，我決定試看看能不能把整個網站從Hexo改成用Hugo寫，並且同時大部份東西仍然保持跟之前相同，例如Repo、網址、code highlight、search/tag feature等等
 
 ## 一些遇到的問題
 - Hard Line Break
@@ -34,7 +33,8 @@ Hugo沒有預設的theme，所以如果不想無中生有一定要裝一個theme
 ```
 - 沒有search
     - Solution:
-    Google了一陣子。中間找到這個使用Fuse.js的一個實作，雖然不知道為什麼是放在討論區：https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae雖然蠻快找到，不過我踩了很多雷。
+    Google了一陣子。中間找到這個使用Fuse.js的一個實作，不知道為什麼是放在討論區：https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae
+    雖然蠻快找到，不過我踩了很多雷。
     首先是他寫法是 `define "footerfiles"`，但是我的theme的基底模板沒有`block "footerfiles"`的區塊。所以我目前是把那段script跟他定義的main放在一起。
     再來是mark.js，一直出現 `$(...).mark is not a function`，我也不知道為什麼用 jquery 的 mark.js 就會出事，總之我最後是把 `search.js` 換成上面連結裡面有人提出來的不帶 `jquery` 的版本。CSS直接抄原本Hexo那邊的搜尋框XD
 - 各種格式不一樣(日期、TOML v.s. YAML)
