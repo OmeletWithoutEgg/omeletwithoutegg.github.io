@@ -1,4 +1,5 @@
 # Copy from BB's blog XD
+os: linux
 dist: focal
 branches:
   only:
@@ -19,7 +20,7 @@ deploy:
   provider: pages
   cleanup: false
   token: $GITHUB_TOKEN
-  local-dir: $TRAVIS_BUILD_DIR/public
+  local_dir: $TRAVIS_BUILD_DIR/public
   on:
     branch: master
 
