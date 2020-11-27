@@ -58,7 +58,6 @@ weight = 5
         lineNos = true
         lineNumbersInTable = true
         noClasses = true
-        style = "solarized-dark"
         tabWidth = 4
 
 [blackfriday]
