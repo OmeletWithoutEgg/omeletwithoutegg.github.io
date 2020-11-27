@@ -15,11 +15,10 @@ script:
 
 
 deploy:
-  strategy: git
   provider: pages
-  cleanup: false
-  token: $GITHUB_TOKEN
-  local_dir: /public
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
   on:
     branch: master
 
