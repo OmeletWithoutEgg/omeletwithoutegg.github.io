@@ -1,4 +1,4 @@
-baseURL = "https://omeletwithoutegg.github.io/blog/"
+baseURL = "https://omeletwithoutegg.github.io/"
 languageCode = "en-us"
 title = "蛋餅的競程隨筆"
 theme = "cactus"
