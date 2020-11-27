@@ -1,0 +1,36 @@
+<!-- May include footer scripts here -->
+
+<script src={{ "/lib/clipboard/clipboard.min.js" | relURL }}></script>
+<script>
+  $(function () {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+          var selector = 'code[data-lang]:not([data-lang=""])';
+          var ret = Array.from(trigger.nextElementSibling.querySelectorAll(selector)).reduce((str,it) => str+it.innerText+'\n','')
+          // console.log(ret);
+          return ret;
+      }
+    });
+    clip.on("success", function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    });
+    clip.on("error", function(e) {
+      console.error("Action:", e.action);
+      console.error("Trigger:", e.trigger);
+    });
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"
+  count=100
+  color="0,200,100"
+  opacity=0.25
+>
+</script>
