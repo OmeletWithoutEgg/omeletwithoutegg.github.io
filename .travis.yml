@@ -15,10 +15,11 @@ script:
 
 
 deploy:
+  strategy: git
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: public
+  cleanup: false
+  token: $GITHUB_TOKEN
+  local-dir: $TRAVIS_BUILD_DIR/public
   on:
     branch: master
 
