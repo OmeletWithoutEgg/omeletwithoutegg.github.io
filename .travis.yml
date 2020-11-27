@@ -15,6 +15,7 @@ script:
 
 
 deploy:
+  repo: omeletwithoutegg.github.io
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
