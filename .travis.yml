@@ -15,11 +15,12 @@ script:
 
 
 deploy:
-  repo: omeletwithoutegg.github.io
+  strategy: git
+  repo: omeletwithomeletwithoutegg.github.io
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: public
+  cleanup: false
+  token: $GITHUB_TOKEN
+  local_dir: public
   on:
     branch: master
 
