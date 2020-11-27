@@ -1,5 +1,5 @@
 # Copy from BB's blog XD
-dist: bionic
+dist: focal
 branches:
   only:
     - master
