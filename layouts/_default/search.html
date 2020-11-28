@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+<section class="search">
   <form action="{{ "search" | absURL }}">
     <input class="search-input" id="search-input" name="s" placeholder="Search..."/>
   </form>
@@ -16,12 +16,6 @@
       ${ isset categories }<p>Categories: ${categories}</p>${ end }
     </div>
 </script>
-<style type="text/css">
-mark {
-    color: black;
-    background: lightgreen;
-}
-</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
 <script src="{{ "/js/search.js" | absURL }}"></script>
