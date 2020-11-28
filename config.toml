@@ -83,6 +83,7 @@ weight = 5
   
     # Post page settings
     show_updated = false # default
+    defaultAuthor = "2qbingxuan"
 
     mathjax = true
   
