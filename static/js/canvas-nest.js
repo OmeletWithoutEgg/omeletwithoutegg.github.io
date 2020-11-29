@@ -131,8 +131,9 @@
                     now = now + 0.01;
                     p.x = mouse_position.x + Math.sqrt(dist) * Math.cos(now);
                     p.y = mouse_position.y + Math.sqrt(dist) * Math.sin(now);
-                    p.vx = Math.cos(now);
-                    p.vy = Math.cos(now);
+                    let t = random() * Math.PI * 2;
+                    p.vx = Math.cos(t);
+                    p.vy = Math.sin(t);
                 } else {
                     p.x += p.vx;
                     p.y += p.vy;
