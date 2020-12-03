@@ -9,7 +9,7 @@
         let scripts = get_by_tagname("script"),
             script_len = scripts.length,
             script = scripts[script_len - 1]; // current loading script
-        console.log(script);
+        // console.log(script);
         return {
             l: script_len, // for canvas id
             z: get_attribute(script, "zIndex", -1),
@@ -33,7 +33,7 @@
     };
 
     let config = get_config();
-    console.log(config);
+    // console.log(config);
     let canvas = document.createElement("canvas");
     let int = Math.floor;
     let abs = Math.abs;
