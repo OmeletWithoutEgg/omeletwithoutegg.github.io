@@ -93,6 +93,10 @@ weight = 5
   
     # the value of name should be an valid font awesome icon name (brands type)
     # https://fontawesome.com/icons?d=gallery&s=brands
+
+    [[params.social]]
+    name = "facebook"
+    link = "https://www.facebook.com/profile.php?id=100005239143082"
     [[params.social]]
     name = "github"
     link = "https://github.com/OmeletWithoutEgg"
