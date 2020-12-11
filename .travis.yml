@@ -7,10 +7,6 @@ branches:
 
 language: go
 
-cache:
-  directories:
-    - /home/travis/.rvm/
-
 install:
 - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_extended_0.68.3_Linux-64bit.deb
 - sudo dpkg -i /tmp/hugo.deb
