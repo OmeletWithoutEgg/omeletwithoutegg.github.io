@@ -1,8 +1,7 @@
 ---
 title: "Arch Miku Mouse"
 date: 2020-12-10T17:05:06+08:00
-draft: true
-mathjax: true
+draft: false
 tags: [Arch, experience, miku]
 ---
 
@@ -28,4 +27,4 @@ tags: [Arch, experience, miku]
 真是要感謝他們www
 
 話說我發現其實可以直接把檔案放到[github](https://github.com/OmeletWithoutEgg/miku-cursor-theme)上面，這樣也可以推廣或是找人來修改(X
-裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ
+裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ，所以希望放到github上之後有人可以把其他那些icon改成統一的風格owo
