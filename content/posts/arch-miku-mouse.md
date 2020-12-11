@@ -12,7 +12,7 @@ tags: [Arch, experience, miku]
 
 1. 找到[巴哈姆特](https://home.gamer.com.tw/creationDetail.php?sn=1760192)上面的原始檔（是.ani跟.cur）
 2. 利用[cursor-converter](https://github.com/paddygord/cursor-converter)把.ani和.cur換成x-cursor的icon類型
-3. 手動把對應的圖案複製到 `~/.local/share/icons/$THEME/cursors` 裡面
+3. 手動把對應的圖案複製到 `~/.icons/$THEME/cursors` 裡面
    如果不知道哪個檔名是什麼的話，可以先複製別的theme的資料夾，接著用 `xcur2png` 換成 png看某個檔案實際上是對應哪個圖案。
 4. 加上 `index.theme`。反正只要有Name就可以了吧我猜
 
