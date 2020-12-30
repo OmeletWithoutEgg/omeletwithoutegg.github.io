@@ -1,4 +1,5 @@
 # Copy from BB's blog XD
+arch: arm64
 os: linux
 dist: focal
 branches:
