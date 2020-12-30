@@ -6,7 +6,7 @@ branches:
   only:
     - master
 
-language: go
+# language: go
 
 install:
 - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.79.1/hugo_0.79.1_Linux-ARM64.deb
