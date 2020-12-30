@@ -9,7 +9,7 @@ branches:
 language: go
 
 install:
-- wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_extended_0.68.3_Linux-64bit.deb
+- wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.79.1/hugo_0.79.1_Linux-ARM64.deb
 - sudo dpkg -i /tmp/hugo.deb
 
 script:
