@@ -139,8 +139,8 @@ $$
 
 $$
 \text{for } 0 \leq i < \frac{n}{2}, 
-\left\{\begin{matrix}
-y_i &= F _ {even}(i) + \omega_n^i F _ {odd}(i) \newline
+\left\\{\begin{matrix}
+y _ i &= F _ {even}(i) + \omega_n^i F _ {odd}(i) \newline
 y _ {i+\frac{n}{2}} &= F _ {even}(i) - \omega_n^i F _ {odd}(i)
 \end{matrix}\right.
 $$
@@ -181,8 +181,7 @@ $$
 \end{bmatrix}
 \begin{bmatrix}
 c_0\newline c_1\newline \vdots\newline c _ {n-1}
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 C(1)\newline C(\omega)\newline \vdots\newline C(\omega^{n-1})
 \end{bmatrix}
@@ -201,7 +200,7 @@ $i=j$時顯然為1
 可以發現我們只需要把FFT的$\omega$改成倒數，最後再除上$n$就是IFFT所需要的
 因為FFT和IFFT的相似性，我們可以將程式碼整合如下
 
-``` cpp
+```cpp
 const double PI = acos(-1);
 typedef complex<double> cd;
 vector<cd> FFT(const vector<cd> &F, bool inv) { // assume F.size() == 2^k
@@ -232,7 +231,7 @@ vector<cd> FFT(const vector<cd> &F, bool inv) { // assume F.size() == 2^k
 4. 再利用Cooley-Turkey演算法求出$C$
 
 
-``` cpp
+```cpp
 vector<cd> A{1,3,4};
 vector<cd> B{1,2,5};
 signed main() {
@@ -298,7 +297,7 @@ void FFT(cd F[], int n, bool inv) { // in-place FFT, also assume n = 2^k
 注意到我們可以實行分治的關鍵就是存在一個$\omega$使得
 
 $$
-\omega ^ n = 1\newline
+\omega ^ n = 1 \wedge
 \forall 0 \leq i < j < n, \omega^i \neq \omega^j
 $$
 
