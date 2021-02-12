@@ -117,7 +117,7 @@ $$
 \omega_n^{\frac{n}{2}} = \omega_2 = e^{i\pi} = -1
 $$
 
-## Cooley-Turkey FFT algorithm
+## Cooley-Tukey FFT algorithm
 先假設$n$是2的冪次，然後下面提到的$i$都只是index
 將DFT中的$x_i$取值為$\omega_n^i$，可以知道我們要算的就是對$i \in [0, n-1]$求
 $$
@@ -226,9 +226,9 @@ vector<cd> FFT(const vector<cd> &F, bool inv) { // assume F.size() == 2^k
 有了FFT和IFFT兩個工具，我們要做捲積就很簡單了
 
 1. 確定兩個多項式相乘的次數，並且選擇一個足夠大的$n = 2^k$(後面可以補0)
-2. 利用Cooley-Turkey演算法求出$A,B$的傅立葉變換$\hat A, \hat B$
+2. 利用Cooley-Tukey演算法求出$A,B$的傅立葉變換$\hat A, \hat B$
 3. 將$\hat A, \hat B$在對應位置兩兩相乘得到$\hat C$(可能叫Hadamard Product吧)
-4. 再利用Cooley-Turkey演算法求出$C$
+4. 再利用Cooley-Tukey演算法求出$C$
 
 
 ```cpp
@@ -318,7 +318,7 @@ $$
 那麼$\omega$的選擇就很簡單了，也就是$\omega_n \equiv g ^ {\frac{\varphi(p)}{n}}$
 容易驗證$\omega_n$滿足上面的性質
 
-這樣做必須滿足$n | \varphi(p)$，而若使用Cooley-Turkey演算法的話$n$會是2的冪次
+這樣做必須滿足$n | \varphi(p)$，而若使用Cooley-Tukey演算法的話$n$會是2的冪次
 也就是說若$\varphi(p) = p-1 = t \cdot 2^k$，其中$t$是奇數
 那對這個$p$來說可行的$n$的範圍最多就是$2^k$了
 這也是為什麼NTT的模數常常都是那些數字的原因
