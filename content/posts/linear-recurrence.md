@@ -13,15 +13,22 @@ tags: [template, math]
 首先先來介紹如何快速求線性遞迴。
 
 ## 定義
-> 已知序列 $ \langle a_n \rangle $ 滿足遞迴關係 $ \displaystyle \forall i \geq k, a_i = \sum _ {j=0} ^ {k-1} s _ j a _ {i-1-j} $ ，並且已經給定 $a_0, a_1, \dots, a _ {k-1}$
+> 已知序列 $ \langle a_n \rangle $ 滿足遞迴關係 $ \displaystyle \forall i \geq k, a_i = \sum _ {j=0} ^ {k-1} s _ j a _ {i-1-j} $ ，並且已經給定 $s$ 跟 $a_0, a_1, \dots, a _ {k-1}$
 > 現在想要求 $ a_n $ 的值，其中 $ 1 \leq k \leq 5000, 0 \leq n \leq 10^9 $
 
 許多人大概會很快想到矩陣快速冪，複雜度是 $ \mathcal{O}(k^3 \log n) $。但我們要更快！
 
 ## 通靈
 定義一個函數 $G$，對於形式冪級數 $f(x) = \sum c_i x^i, G(f) = \sum c_i a_i$ 。
-顯然$G(f \pm g) = G(f) \pm G(G)$。
-考慮多項式$ \displaystyle f(x) = x^k - \sum _ {i=0} ^ {k-1} s_i x^{k-1-i}$，可以發現 $G(f) = 0$，而且$G(fx) = G(fx^2) = \dots = 0$。
+顯然$G(f \pm g) = G(f) \pm G(g)$。
+根據 $s$ 構造一個多項式
+
+$$
+f(x) = x^k - \sum _ {i=0} ^ {k-1} s_i x^{k-1-i}
+$$
+
+可以發現 $G(f) = 0$，因為代進去正好是 $a_i - \sum\limits _ {j=0} ^ {k-1} s _ j a _ {i-1-j} = 0 $。
+而且，平移之後也會滿足遞迴關係，所以 $G(fx) = G(fx^2) = \dots = 0$。
 上面兩條可以得知，對於任何多項式$g$都有$G(fg) = 0$。
 
 我們想求的第$n$項，正好就是$G(x^n)$，不妨取 $\displaystyle g = \lfloor \frac{x^n}{f} \rfloor$，則$G(x^n) = G(x^n - fg) = G(x^n \mod f)$。
@@ -31,7 +38,7 @@ tags: [template, math]
 證明也很快。
 總而言之，只要求得$x^n \mod f$（注意這個東西的degree是$\mathcal{O}(k)$），再帶進$G$就能得到 $a_n$！
 可以對$n$做類似快速冪的事情，每次算$x^{n/2} \cdot x^{n/2} \mod f$之類的，如果是mod質數的話，甚至可以利用FFT或是NTT來快速多項式帶餘除法作到總複雜度 $\mathcal{O}(k\log k \log n)$，不過超出今天的篇幅所以這邊只放$\mathcal{O}(k^2 \log n)$的寫法。
-老實說$\mathcal{O}(n^2)$的$\mod f$比想像中好寫，只要從大到小不斷把$x^k$換成$ \sum\limits _ {i=0} ^{k-1} s_i x^{k-1-i}$ 就好
+老實說$\mathcal{O}(k^2)$的$\mod f$比想像中好寫，只要從大到小不斷把$x^k$換成$ \sum\limits _ {i=0} ^{k-1} s_i x^{k-1-i}$ 就好
 
 ```cpp
 template <typename T>
@@ -89,9 +96,9 @@ BM演算法包含了一些迭代法跟greedy的思維。我們由短到長逐步
 1. 不是第一次修正。
     假設這次誤差叫做 $\varepsilon$ 好了，也就是 $a_i - \sum _ {j=0} ^ {k-1} s _ j a _ {i-1-j} = \varepsilon$
     因為不是第一次修正，所以設之前有一次是在加入第 $i'$ 個數字後修正的，該次修正之前的遞迴式為$s'$，誤差為 $\varepsilon'$。也就是說，$a _ {i'} - \sum _ {j=0} ^{k'-1} s' _ j a _ {i'-1-j} = \varepsilon'$
-    可以發現，$\frac{\varepsilon}{\varepsilon'} (a _ x - \sum _ {j=0} ^ {k'-1} s' _ j a _ {x-1-j})$是一個僅在 $x = i'$ 是 $\varepsilon$，其他位置是 $0$ 的序列。在 $s'$ 前面補 $0$ ，使得前面的項都不會被影響到，而第 $i$ 項恰好對到 $\varepsilon$ 那一項，如此兩者相消就能讓第 $i$ 項的誤差變為 $0$ 。
+    可以發現，$\frac{\varepsilon}{\varepsilon'} (a _ x - \sum _ {j=0} ^ {k'-1} s' _ j a _ {x-1-j})$是一個僅在 $x = i'$ 是 $\varepsilon$，其他位置是 $0$ 的序列。在 $s'$ 前面補 $0$ ，使得前面的項都不會被影響到，而第 $i$ 項恰好對到 $\varepsilon$ 那一項，如此兩者相消就能讓第 $i$ 項的誤差變為 $0$ 。也就是說，如果當前的 $s$ 出錯了，我們就會把 $s$ 加上「之前某次的 $s'$ 乘上若干倍再平移」以修正該次的誤差。
     總之就是取前面算過的東西拿來消掉新加入的項的誤差啦。至於 $i'$ 的取法似乎是要讓要補的 $0$ 盡量少，最後的結果才會是最短的遞迴式。
-    在下面的 code 中， `bestPos`維護的是最好的 $i$ ； `best` 維護的是最好的 $s'$ ，取負號之後前面補 $1$ ，然後除以 $ \varepsilon' $
+    在下面的 code 中， `bestPos`維護的是最好的 $i'$ ； `best` 維護的是最好的 $s'$ ，取負號之後前面補 $1$ ，然後除以 $ \varepsilon' $
 2. 第一次修正
     表示 $i$ 是第一個非零元素，將 $s$ 修正為 $i+1$ 個 0 ，表示前 $i+1$ 項應該會是在給定的 $k$ 項之中。
     `best` 更新成單項式 $1 / \varepsilon$
@@ -159,13 +166,13 @@ IOICAMP似乎有一題可以用這個搶topcoder
 例題可以去試試TIOJ 1892 owo
 
 ### 矩陣的最小多項式
-一個 $n\times n$ 方陣 $A$ 的最小多項式是 degree 最小的 $p$ 使得 $p(A) = 0$ 。By Cayley Hamilton theorem，特徵多項式正好也是一個多項式 $p$ 使得 $p(A) = 0$ ，所以最小多項式的 degree 至多是 $n$。根據 wiki 上 Cayley Hamilton 定理的頁面，最小多項式還是特徵多項式的因式。
+一個 $n\times n$ 方陣 $A$ 的最小多項式是 degree 最小的 $p$ 使得 $p(A) = 0$ 。By Cayley Hamilton theorem，特徵多項式正好也是一個多項式 $p$ 使得 $p(A) = 0$ ，所以最小多項式的 degree 至多是 $n$。
 如何求？最小多項式 $p(A) = \sum c_i A^i$ ，可以發現只要求 $ \\{ A^0, A^1, A^2, \dots \\} $ 的 SLR 就能得到最小多項式。又，最小多項式至多 $n$ 項，故取前 $2n$ 項計算即可得到答案。
 
 ### 稀疏矩陣行列式
-給定一個稀疏矩陣$A$想求$det(A)$。事實上只要求得特徵方程式的常數項就可以得到行列式。
-前面提到最小多項式是特徵方程式的因式，但他們可能不相等，不過他們的根集合是相同的，問題只是特徵多項式裡可能有重根。因此我們把$A$乘上一個隨機的對角矩陣$B$，可以證明$AB$沒有重根的機率至少是 $1 - \frac{2n^2 - n}{p}$。
-似乎同樣又是Schwartz-Zippel。總之 $\det(A) = \det(AB) / \det(B)$ 就完成了。
+給定一個稀疏矩陣$A$想求$\det(A)$。事實上只要求得特徵方程式的常數項就可以得到行列式。
+根據 wiki 上 Cayley Hamilton 定理的頁面，最小多項式是特徵多項式的因式，但他們可能不相等，不過他們的根集合是相同的，問題只是特徵多項式裡可能有重根。因此我們把$A$乘上一個隨機的對角矩陣$B$，可以證明$AB$沒有重根（特徵多項式與最小多項式相等）的機率至少是 $1 - \frac{2n^2 - n}{p}$。似乎同樣又是Schwartz-Zippel。
+總之，求得 $AB$ 的特徵多項式 $p$ ，並設 $p$ 的領導係數是 $1$ （如果不是就除掉），那麼 $\det(AB)$ 就是 $(-1)^{|A|} \cdot p(0)$ 也就是 $p$ 的常數項差一個正負號。 $\det(A) = \det(AB) / \det(B)$ 就完成了。
 這個是之前打BambooFoxCTF google and copy過別人的XD現在才來完整了解作法
 
 
