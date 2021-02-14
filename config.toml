@@ -33,14 +33,19 @@ url = "/posts"
 weight = 3
 
 [[menu.main]]
+name = "Resources"
+url = "resources"
+weight = 4
+
+[[menu.main]]
 name = "Search"
 url = "/search"
-weight = 4
+weight = 5
 
 [[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 5
+weight = 6
 
 
 # Markup Config
