@@ -34,7 +34,7 @@ weight = 3
 
 [[menu.main]]
 name = "Resources"
-url = "resources"
+url = "/resources"
 weight = 4
 
 [[menu.main]]

@@ -18,15 +18,16 @@ tags: []
 - https://simba-fs.github.io/
 - https://blog.tommydong.live/
 
-# 久遠失修（？）的 blog
+# 年久失修（？）的 blog
 其實我猜我的 blog 很快也要年久失修ㄌ
 
 - https://brian.su/
 - https://codingsimplifylife.blogspot.com/
 - http://sunmoon-template.blogspot.com/
 - http://cbdcoding.blogspot.com/
-- https://oi.ototot.tw/2018/
+- https://oi.ototot.tw/
 - https://tmt514.github.io/blog
+- http://baluteshih.blogspot.com/
 
 # for 競程的工具
 - [OI checklist](https://oichecklist.pythonanywhere.com/)
