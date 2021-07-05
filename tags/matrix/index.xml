@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>matrix on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/matrix/</link><description>Recent content in matrix on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 04 Dec 2019 11:34:34 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/matrix/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</guid><description>F.無限兔子問題 https://tioj.ck.tp.edu.tw/problems/2021
+Description 令$F_i$是費式數列
+給定$s,t$，求$\sum\limits _ {i=s}^t\binom{F_i}{2}$
+Solution 這題也是有夠數學OwO
+題目所求是$\sum\limits _ {i=s}^t\frac{1}{2}{F_i(F_i - 1)}$
+可以想到分別求$\sum\limits _ {i=1}^nF_i$和$\sum\limits _ {i=1}^nF_i^2$
+前者可以用
+$$
+\left[
+\begin{matrix}
+0 &amp;amp; 1 &amp;amp; 0 \newline
+1 &amp;amp; 1 &amp;amp; 0 \newline
+1 &amp;amp; 1 &amp;amp; 1
+\end{matrix}
+\right]
+\left[
+\begin{matrix}
+F _ {i-2} \newline
+F _ {i-1} \newline
+S _ {i-1}
+\end{matrix}
+\right] =
+\left[
+\begin{matrix}
+F _ {i-1} \newline
+F_i \newline
+S_i
+\end{matrix}
+\right]</description></item></channel></rss>

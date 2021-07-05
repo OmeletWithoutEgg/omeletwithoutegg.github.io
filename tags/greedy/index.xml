@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>greedy on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/greedy/</link><description>Recent content in greedy on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 04 May 2020 21:05:10 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>照亮的山景 https://tioj.ck.tp.edu.tw/problems/1404
+Description 在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。
+如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。
+請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？
+$1 \leq M, N \leq 10^5$
+所有座標的絕對值小於$10^5$
+Solution 發現到每個燈泡可以照到的範圍可能會長的非常奇怪
+於是我們轉換思維，考慮每個轉折點如果要被照到要有什麼條件
+可以發現，對於每個轉折點來說有一個區間，只要區間內有一個燈泡有開，這個轉折點就會被照到
+找出那些區間之後這題就是經典的greedy題目了（按照右界由小到大，有拿過的跳過沒拿過的拿右界那個點）
+那麼要怎麼找出這些區間呢？某個轉折點$p_i$對應的右界，正好是他和他右邊所有其他點所連出的射線中斜率最大者
+維護一個上凸包能夠找到對應的那個點，再用直線求交點公式找出高度恰好是$T$的位置就好
+左界也是同樣方式處理
+因為題目給定的點已經幫我們排序好了，所以做凸包是$\mathcal{O}(M)$，而greedy的部分也可以做到$\mathcal{O}(N)$不過我這邊是放了$\mathcal{O}(N\log N)$的，因為找到交點之後必須二分搜求出到底涵蓋了哪些燈泡
+總複雜度是$\mathcal{O}((M+N)\log N)$
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</guid><description>蘿莉切割問題 https://tioj.ck.tp.edu.tw/problems/1861
+Description 請你把一個數字$L$切成$a_1, a_2, \dots, a_n$
+切一個數字$x$的代價是$x$，可以把它切成$b, x-b$兩個數字
+找出最小的代價
+Solution 霍夫曼編碼XD老題目
+把切割的過程看成一個二元樹，每個$a_i$都代表一個葉子
+其餘的節點代表合併中會出現的數字(?)
+那麼總代價就是所有葉子的權重乘上各自的深度的和
+我們想要讓這個代價越小越好
+可以發現，在最優解$T$中：
+沒有節點只有一個兒子，只要不是葉子的節點都恰好有兩個子節點
+深度最大的那層節點一定是權重最小的，否則可以直接交換得到更優解
+由上面兩點可以發現，權重最小的兩個節點一定都在最深的那一層
+並且可以在不影響代價的情況下交換節點使得最小的兩個節點互為兄弟
+結論是：每次把最小和次小的節點合併成一個節點，一定可以得到最佳解
+(QQ我覺得我不會查也不會寫證明)
+要怎麼維護所有節點的最小和次小呢？用一個heap就可以啦
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; const int N = 100025; #define int ll int v[N]; signed main() { ios_base::sync_with_stdio(0), cin.</description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>我很忙 https://tioj.ck.tp.edu.tw/problems/1408
+Description 給定$n$個時段$[l_i, r_i)$
+問至少有多少單位時間要是忙碌的才能滿足
+「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)
+註: 題目保證有解
+Solution 看到這種很多區間的題目，就會很想把它們照右界從小到大排序
+可以想到一個greedy策略
+按右界遞增排序好之後，遇到一個時段就看是否已經滿足條件
+如果已經滿足了就跳過
+如果還沒有的話就必須選一些時間由空閒變為忙碌，而這些時間依照貪心的原則是從越右邊開始選越好
+(選左邊的不會對之後右界更大的時段有比較多幫助)
+檢查是否滿足條件只要維護區間和
+於是我的作法是用一棵線段樹配上一個 stack
+每次新插入一個時段，先以線段樹查詢這個區間內忙碌的時間總共是多少
+接著對於剩下需要再增加的時間，維持 stack 內是不相交且排序好的一些時段，代表那些時間必須要是忙碌的
+只要看目前最右邊的忙碌時段就能處理好
+這份AC code中我沒有值域壓縮(因為我懶)
+一臉在CF上欠hack
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</guid><description>萬里長城 https://tioj.ck.tp.edu.tw/problems/1441
+Description 給定一個序列，找出最長的「長城」子序列
+一個序列$&amp;lt; a_1,a_2,\dots,a_n &amp;gt;$必須符合下列幾點才算是「長城」
+1. n是奇數
+2. 若$i$是偶數，則$a_i$必須小於相鄰的項
+3. 若$i$是奇數，則$a_i$必須大於相鄰的項
+Solution 貪心法
+維護一個tail表示前$i$項滿足點2. 3.的最佳解，其結尾是多少
+假設下一個項h必須比tail大
+若h比tail大，那就直接接上去(並更新tail)，否則就把tail替換成h
+反之亦然
+證明大概可以用數歸吧(?)我也不太會說明QQ
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #include &amp;lt;iostream&amp;gt;signed main() { ios_base::sync_with_stdio(0), cin.tie(0); int n, tail = -1, inc = 1, ans = 0; cin &amp;gt;&amp;gt; n; while(n--) { cin &amp;gt;&amp;gt; h; if(h == tail) continue; if(h &amp;lt; tail ^ inc) ++ans, inc = !</description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</guid><description>黑色騎士團的飛彈野望 https://tioj.ck.tp.edu.tw/problems/1567
+Description 給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點
+若不可行輸出-1
+Solution 首先我們對每個點都可以知道包覆它的圓的圓心範圍在$x$軸的哪段區間
+那題目就轉換成在$x$軸上放一些圓心，使得每個點對應的區間內都至少有一個點被選到
+此為greedy經典題，按照右界排序後，由小到大檢查若某個區間還沒有放東西就放一個在它的右界
+證明很簡單，右界最小的區間內一定至少要選一個點放
+假設沒有選右界$r$而選了某個點$i$放，則改選右界，不會有其他右界更大的區間$I$包含$i$卻不包含$r$
+故選右界最小的區間的右界不會錯過最佳解
+無解的判斷就是只要有一個點和$x$軸距離超過$r$就不可行，否則顯然至多用$n$個圓可以覆蓋所有點
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item></channel></rss>

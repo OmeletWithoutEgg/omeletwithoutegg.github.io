@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linear-algebra on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/linear-algebra/</link><description>Recent content in linear-algebra on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 24 Jan 2020 10:33:31 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</guid><description>C.幼稚國王的獎賞 https://tioj.ck.tp.edu.tw/problems/1094
+Description 定義一個非負整數集合的價值是裡面所有數字XOR起來
+給定一些非負整數，問你能選出價值最高的子集價值是多少？
+Solution 經典題 maximum subset xor
+線性基 首先可以把每個數字的二進位看成模2的$k$維向量
+span 我們說一群向量$S = {\textbf{v}_ 1, \textbf{v}_ 2, \dots, \textbf{v}_ n}$的線性生成空間是
+$$
+\textrm{span}(S) = { \sum _ {i=1}^n\lambda _ i \textbf{v} _ i }
+$$
+也就是說$\textrm{span}(S)$代表的是所有$S$內的元素的有限線性組合
+linear independent 對於一組向量${\textbf{v}_ 1, \textbf{v}_ 2, \dots, \textbf{v} _ n}$
+若存在不全為$0$的$\lambda_1, \lambda_2, \dots, \lambda_n$使得
+$$
+\sum _ {i=1}^n\lambda_ i \textbf{v}_ i = \textbf{0}
+$$
+則我們說這群向量是線性相關的；反之則稱為線性獨立(linear independent)
+一組線性相關的向量至少有一個向量可以用其他向量表示
+說明: 不失一般性設$\lambda _ 1 \neq 0$，則</description></item></channel></rss>
