@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>experience on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/experience/</link><description>Recent content in experience on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 01 Jul 2021 07:11:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml"/><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>IOI 2021 只是想打一下IOI的心得而已
+可能還是流水帳請多多包含(?)
+Before 其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強
+因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西
+另外很好笑的是我這學期比前兩個學期還努力追學分，因為之前太混了XD這學期剛好要全部過才夠畢業的學分竟然夠了
+謝謝所有即使我交作業很混還是讓我過的老師!
+四模拿了一個不錯看的分數，如果我在國手線下150分甚至可以抵回來(?)因為這件事我大概可以claim二階很好追分(並沒有)
+因為疫情的關係國培燒雞，我超期待的說，還想說今年想再寫一次國培紀錄QQ
+唯一比較算是訓練的東西是tmt(卡恩)和我們google meet討論一些題目
+第一次meet的時候是先丟題目討論，然後也講了去年的模考題，像是expected LCS那題好像就是暴力DP(雖然我不知道複雜度是什麼)
+ZCK真的超級積極，丟了好多POI或是JOI、CSAcademy的題目，好多題目我都是第一次見
+基本上沒有什麼想法，不過就算只是聽解也蠻困難的，有一些證明因為卡恩也是當場想所以有點久，我也沒注意聽就做自己的事了XD
+第二次meet主要討論IOI2019，有事前看過題目之後感覺就好一點了(?)不過因為一直想要把line得多一點分所以也沒有太專心(X
+感謝卡恩與zisk讓我腦袋有在動(?)
+Day0 看到好久沒看到的ZCK與wiwi還有(隔著口罩)呼吸到新鮮空氣心情還不錯
+晚上是練習賽
+題目都跟去年一樣
+唯一不一樣的是一題BFS
+結果還不能破台，好好笑
+不過差點在賽中因為唬爛弄出正解(?)
+結束之後問了一下ZCK解，果然他會只是剛好在兩小時的最後才想到(?)
+Day1 day1前一天打了一場div.2寫完ABCD看完F猜他的式子很漂亮就亂推AC了 然後E寫好久總算寫完
+這讓我感覺狀態還不錯，對我來說可能寫水題也是一個穩定心情的方法(?)
+我們三個人還有監考人員占用一整個會議室，間隔開來坐
+原本是用acer的筆電但是後來變成msi的樣子，因為好像跑比較快
+開賽的時候先打了模板
+ZCK帶來的鍵盤的聲音來讓人滿是壓力XD
+然後看紙本題目想
+然後&amp;hellip;就沒有然後了
+parks看起來有點困難先放著了一下
+candies看起來就很經典題，而keys也是沒有什麼想法
+一直畫圖交替想兩題，大概花了一小時還是沒有什麼想法
+三個人維持了安靜好久，然後ZCK開始動鍵盤的時候有夠可怕
+只好姑且先去撈分，撈了keys的基本分跟candies的一點分數
+仔細看了parks發現可以弄成類似2SAT的東西不過實作異常麻煩，而且我也忘記tarjan怎麼寫甚至跑去寫kosaraju(?)
+不過花了好久拿到了70分，我覺得還算值得
+接下來就繼續把candies的分數撈一撈，有一個subtask似乎是我唬爛得到的分數賽後才發現，唬爛就是爽
+最後一直在想candies $l=0, r=n-1$ 的subtask就結束了
+結束之後有點怕自己又是銅牌命，趕快問分數，結果大家都一樣好好笑，而且都是銀牌左右的分數，看來 day1 實在蠻難的
+Day2 day1/2中間似乎吃了雙豚還是山嵐
+day2前一天因為睡不著跑去看了IOI2014之類的，然後發現做不出來趕快看解以免影響比賽，好好笑
+心中不想太多的雜事，很快就開賽了
+打完模板開始讀題目，然後就遇到很欠嘴砲的水題(?)大概在25分鐘內就AC了，有點帶給我小小信心(X
+剩下兩題開始讀
+registers實在有點長，當然只能先去看dungeons
+因為想說贏了好像強度就會加倍，所以原本想說只會贏log次，寫到一半突然覺得怪怪
+後來發現應該是「贏了輸過的人的話那麼強度會加倍」，然後就不知道怎麼做了
+跑去讀registers題敘發現實在超級長，結果是要實作取min跟排序，感覺就是跟19的vision或是12的odometer這種題一樣噁心
+想一想覺得應該可以做很多平行化，而且去年的國培蔡孟宗甚至還講過平行化的bitonic sort，結果今年沒國培，好慘
+先做了取min的subtask，實作比較的方式我是先做減法，然後就可以有絕對值，就有min了
+平行化大概需要170個操作左右，和最後一個subtask要求150只差一點但是怎麼都壓不過，傷心
+後來看著dungeons一直想他怎麼樣會加倍，突然就想到2的冪次分層
+也就是說如果現在的強度 $z\in[2^i,2^{i+1})$ 就說現在在第 $i$ 層，那一定會輸 $2^{i+1}$ 以上的人、贏 $2^i$ 以下的人，而一旦贏了中間的人就會跳到下一層!</description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</guid><description>IOIC 2021 去年就來過一次了，今年再次造訪這困難的營隊。
+其實幾乎沒有什麼特別不一樣的地方，不過我想說還是寫個短短的紀錄。
+吃的東西 IOIC有準備早餐、午餐跟晚餐讓我們不用擔心時間太可怕的問題（？）
+然後還有下午的點心，大致上都不錯吃，除了有魚刺的便當QQ
+可惜的是去年會在吃東西的時候放影片，今年可能是因為疫情怕我們吵雜起來，甚至還讓我們坐梅花座。
+上課 這次上課的主題和去年比較起來，好像少了常數優化、隨機、分塊之類的，但是多了flow跟game theory。
+老實說很多東西都是聽過但是不那麼熟QQ
+喵喵時間不知道選訓有沒有機會再聽到一次(X
+而且講義幾乎都是「參考」前幾年的（雖然本來就應該要這樣，滾動式稍微有更新就好）
+這次覺得比較有聽到的應該是burnside lemma跟flow還有賽局的東東。雖然賽局的題目好像都跟上課沒什麼關係QQ只要會mex跟xor和通靈（重要）就好。
+模擬賽 第一天趣味賽還可以，賽到一個隨機bubble sort的debug題
+接下來兩天天都爆炸，真的是實力檢討大會QQ
+第四天個人賽其實還不錯，但是就輸balbit，最後忙著猜pA來不及想I或是H QQ通靈難死
+第五天，放鬆打（？）反正好幾個人都在我們上面習慣了。
+這種長時間的比賽幾乎大家的開題都差不多，然後我很習慣用subtask來確認有沒有寫錯，只有整題的feedback超難@@
+最後差一點用題數贏，不過輸在就是輸在DP沒有想好QQ
+發獎品的時候拿到的是除蟲網（？）是不是要成為AY傳人了(#
+賽後補題 基本上快把全部的題目都補完了，剩下兩題吧（？）
+在IOIC的judge搶topcoder好好玩，尤其是在用毒瘤演算法的時候XD
+老實說上課幾乎都在刷題或是補題，我覺得這樣也許有點糟糕，不過我相信補題也是一種收穫。</description></item><item><title>jngen</title><link>https://omeletwithoutegg.github.io/2021/01/24/jngen/</link><pubDate>Sun, 24 Jan 2021 01:17:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/24/jngen/</guid><description>jngen 最近在生107北市賽題目的測資想放到TIOJ上面，其中一題是關於找兩個凸包的兩條內公切線交點。
+因為不太知道測資怎麼生，又想到之前東東有提過jngen這個東西，因此就把他拿來生成我需要的凸包了。
+我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X
+Usage https://github.com/ifsmirnov/jngen
+要使用jngen，你只需要下載jngen.h並引用標頭檔。下載來的標頭檔可以放在 /usr/include 之類的地方，或是跟你的C++原始碼相同目錄當中。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #include &amp;#34;jngen.h&amp;#34;#include &amp;lt;iostream&amp;gt; using std::cout, std::endl; int main(int argc, char *argv[]) { parseArgs(argc, argv); int n, m; getPositional(n, m); Tree t = Tree::bamboo(n).link(n - 1, Tree::star(m), 0); if (getOpt(&amp;#34;shuffled&amp;#34;, false)) { t.shuffle(); } cout &amp;lt;&amp;lt; t.printN().add1() &amp;lt;&amp;lt; endl; } 下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。</description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</link><pubDate>Thu, 21 Jan 2021 00:11:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</guid><description>這篇是想放一些神奇的C++語法錯誤
+也可能會放基礎的(X
+然後可能會是動態更新
+lambda capture (Update: 2021/1/21)
+這似乎是因為capture到值的時候還沒成功建構func這個變數，所以會出問題
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 #include &amp;lt;iostream&amp;gt;#include &amp;lt;functional&amp;gt; using namespace std; signed main() { function&amp;lt;void(void)&amp;gt; func = [=]() { int x; cin &amp;gt;&amp;gt; x; cout &amp;lt;&amp;lt; &amp;#34;ok &amp;#34; &amp;lt;&amp;lt; x &amp;lt;&amp;lt; &amp;#39;\n&amp;#39;; if(x) func(); }; func(); } const reference &amp;amp; implicit conversion (Update: 2021/1/21)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #include &amp;lt;iostream&amp;gt; using namespace std; struct Data { int x; Data(int val = 0) : x(val) {} int calc() { return x * 2 + 3; } }; istream &amp;amp; operator&amp;gt;&amp;gt;(istream &amp;amp;I, const Data &amp;amp;data) { return I &amp;gt;&amp;gt; data.</description></item><item><title>BambooFox CTF 2021</title><link>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</link><pubDate>Tue, 19 Jan 2021 12:09:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</guid><description>BambooFox CTF 2021 這次是第二次參加BambooFox，不過事前都沒有做什麼練習wwww本來想說去OT之前推薦過的網站練習一些基礎，但是忘記是什麼網站了888
+依然是跟joy一隊，然後另一個隊友變成casper了
+今年似乎是大進步，不過我懷疑只是因為考很多演算法題orz
+來講一些有解的題目，很抱歉我不知道怎麼讓我的code折疊起來XD
+Gamer&amp;rsquo;s Cipher 一開場先開了 P versus ♯P，雖然查到解法可是精度跟速度都壓不過去，所以只好放棄改開別題。
+然後第一個成功的題目就是Gamer&amp;rsquo;s Cipher這一題。
+casper說看懂code就解完了（？）不過他沒辦法編譯所以也不知道怎麼辦。
+總之我也跑去下載code看，然後查了好一下子怎麼編譯Haskell（記得編譯要加-dynamic的flag），成功編譯之後努力看懂code。
+看起來像是用Nimber對字串加密，
+明文和密文的長度都是$n=51$，然後他的key必須要是$n$階的原根，所以我寫了一個腳本看哪些是合法的key。
+1 2 3 4 5 6 7 8 #!/bin/bash # search possible keys len=51 printf &amp;#34;len = %d\n&amp;#34; $len for i in $(seq 0 255); do echo $i printf &amp;#34;%51s\n%d\n&amp;#34; &amp;#39;&amp;#39; $i | tr &amp;#34; &amp;#34; &amp;#34;a&amp;#34; | ./Main 2&amp;gt;/dev/null &amp;gt;/dev/null &amp;amp;&amp;amp; printf &amp;#34;i = %d\n\n&amp;#34; $i &amp;gt;&amp;gt; possible.txt done 但是關鍵的加密部份怎麼樣都不確定我看的對不對，所以我先把nimber的乘法表弄成一個文字檔存起來，再另外寫一個python跟Haskell的輸出比對</description></item><item><title>Miku Cursor on Arch Linux</title><link>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</link><pubDate>Thu, 10 Dec 2020 17:05:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</guid><description>在Arch的初音游標 因為在Windows有下載一個可愛的初音游標，但是之前換成Ubuntu後就沒有把他裝回來，覺得很可惜。
+因此現在換成Arch之後，想說應該有一些社群的package可以用了，直接抓來就好，但是怎麼google都google不到？
+因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。
+找到巴哈姆特上面的原始檔（是.ani跟.cur）
+利用cursor-converter把.ani和.cur換成x-cursor的icon類型
+手動把對應的圖案複製到 ~/.icons/$THEME/cursors 裡面
+如果不知道哪個檔名是什麼的話，可以先複製別的theme的資料夾，接著用 xcur2png 換成 png看某個檔案實際上是對應哪個圖案。
+加上 index.theme。反正只要有Name就可以了吧我猜
+中間踩了各種怪東西XD
+我原本先去下載了其他主題，想說看別的主題的游標應該是什麼對應到什麼，尤其是有動畫的。
+不過似乎有動畫的游標和沒動畫的檔名一樣QQ
+然後有找到一個ani2png，但是畫質會爆炸而且沒有幫忙放到對應的位置（雖然最後也是我們自己放到對應的位置）
+接著找到CSDN上面有人說用CursorXP從Windows上面把游標主題包起來，接著在Linux下載一個用來轉換成icon類型的Perl腳本，
+會轉換成一個tar.gz然後就可以安裝的樣子了，不過還是偏糟，從Windows上面看就發現畫質還是大小大爆炸了
+最後終於走對路，找到github上面一個比較新的repo是把.ani跟.cur轉成linux的x-cursor檔案
+真是要感謝他們www
+話說我發現其實可以直接把檔案放到github上面，這樣也可以推廣或是找人來修改(X
+裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ，所以希望放到github上之後有人可以把其他那些icon改成統一的風格owo</description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>好久又沒有發文了
+來講講上一次發文之後我都在做什麼好了
+Before IOI 首先在8/17開始所謂的賽前集訓
+總共為期三周，分別在台南、新竹和台北
+在台南的前幾天是一個奇怪的教授要我們寫爛題目
+還得用PC2 judge，不過我們最後都變成在玩python in one line了
+之後他又講了有關點連通、邊連通跟degree之類的關係
+後來吳邦一教授來講課，他講了一些IOI的題目還有一些常見的trick，例如四邊形之類的
+那時候就能看出來我超爛(((
+週末是在師大上王柄豐的課
+這時似乎已經累計很多他丟的題目沒寫了QQ
+下一個禮拜是在清大和交大
+第一天韓永楷教授早上早上上的有點基礎，不過下午上的東西還蠻有趣的
+另外有遇到吳宗達跟盧可瑜(?) 還聽到了奇怪的洋蔥式資料結構
+第二天是蔡孟宗教授講parametric search跟matroid之類的東西
+雖然matroid和submodular的東西我是幾乎聽不懂，不過我覺得這天的課都還算是有趣
+第三天是蔡錫鈞教授，我一開始感覺他不是很友善，然後外加上我超想睡，而且其實頗難的，課聽進去的沒有多少QQ
+下午的時候謝旻錚教授找了hank來跟我們virtual IOI2017
+想當然而我被打爆，而且AY還贏了hank，超強orzzzz
+晚上被教授請客XD不過餐廳有點太高級不敢吃什麼東西
+周五的時候謝旻錚教授講了一些計算幾何的東西，感覺只要提到簡單多邊形就是超級噁心的@@
+回到台北之後都是王柄豐的課了
+終於聽到了toptree，不過還沒有實作過QQ
+然後也把之前ICPC的題目程式碼給補了一點點
+啊IOI也vir了幾場 可是總感覺沒有胸有成竹的感覺
+只能說IOI比成這樣真的是自己練習不足啊
+在集訓完到IOI這中間有空一個禮拜，而且還是在開學期間，實在有夠尷尬
+總之我把他當成有公假，而我們的校內賽初賽也是在這個禮拜，正好可以回去確認狀況以及去校內培訓玩玩(?)
+話說我們這屆的人能出校內賽其實算神奇
+原因是因為我們幾個有進過全國賽不會在北市賽佔到建中的名額，所以老師就找我們來出題目
+雖然我們出的題目好像沒有說很好QQ
+不過初賽感覺問題比較像是當天流程沒有仔細check好QQ
+After IOI 回到教室有種更尷尬的感覺
+不過總之周一下午跟著蕭梓宏他們跑去台大上了微積分一
+前面幾堂講的實在好基礎(#)
+另外我周三和周五的早上有去旁聽線性代數
+上了幾天的課之後
+我發現我就算沒去台大修課，大家也剛好會去，因為班上沒人自然就沒辦法上課
+再加上我也沒有修這學期的數理課程，事實上我幾乎沒有課需要上啊OAO
+要擔心的只有國文/英文/藝術與生活/體育，我覺得英文應該是最佳選擇
+我上微積分的第二個禮拜就開始感覺困難了orz
+總之希望是可以好好修完
+校內賽複賽變成是有點尷尬，因為我們流程是我們出題、老師選題，啊又剛好沒選到太多水題或是學長的題目QQ
+我覺得我應該當初直接寫出來說推薦可以直接選哪些題
+而且老實說也應該出幾題培訓有講過的東西，自己的盲點真的自己看不到@@
+大家當天的分數普遍都很低
+不過至少最後預期會進的人大部份都進了，還算是幸運
+在中秋連假的時候我買了一把新鍵盤，是ducky one的60%紅軸，用起來真的只能說超爽的wwww紅軸軟又軟，啊鍵位也都整個習慣了之後小巧的它就很有魅力wwww
+現在我的書包裡面除了筆電跟軟軟以外還多了鍵盤這個常駐物品
+Esc離手指超近而且方向鍵又被拔掉超爽的XDDDD
+可是有一個重大問題是用注音打字的時候我習慣按方向鍵XDD 所以還是得跑去弄組合鍵
+總之，希望我以後還能夠常常用到這把鍵盤，還有希望他能陪我很久</description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</guid><description>二階奇幻之旅 原本一段剛好和一階撞到，可以免考，但是因為疫情的緣故又錯過了
+不過在我們從一階回來之後傳出師大那邊有確診的消息，而且還跟我們用過同一間教室(?)
+所以我們就剛好利用防疫公假得到免考的資格，嘻嘻
+防疫公假? 在自主健康管理的這段期間，我除了家裡基本上都待在王政祺家地下室
+寒假的時候去那邊都是在打桌遊，不過這個禮拜去不是在刷題就是在刷題XD
+有戳了一些POI還是BOI，不過POI真的好怪，什麼官解一兩百行特判的數學題之類的
+AY來的時候他會丟CF的題目，然後帶我們吃超多拉麵
+不過我真的對蒜不行&amp;gt;&amp;lt;
+二階 總之防疫公假結束之後就無縫接軌二階
+因為師大有確診所以我們原本應該是要待在家裡邊防疫邊線上上課
+我們的住宿和披薩全都因為疫情泡湯QAQ，變成線上授課
+啊我們上課就不是重點喔@@我覺得能夠不管任何外部事務，只專心互相討論題目、或者耍廢才是我心目中(?)的選訓營QQ
+非新北、台北的學生可以有一晚的住宿，我好想要飯店早餐(
+既然我們都覺得教授上的課不是重點，能夠和其他電神互相討論才是選訓營最大的好處&amp;gt;&amp;lt;
+於是我們建中一群人就借用了電教和創客教室來討論(?)
+有些南部人待在台北的也跟著來ㄌ，這一團變得超熱鬧
+捯捯捯捯捯捯捯 AY跑去新竹跟東東和balbit刷題的樣子，第二個禮拜double學長也跑下去
+模考的時候他們再跑上來
+總之我們好像每次模考就會吃一兩次拉麵XD好爽
+課程 在二階上的有些課很奇怪，比如說什麼KMP和SA，或者建凸包求面積之類的
+雖然從北市賽到入營考考的字串題好像只有AC自動機那題，可是在二階教這些超奇怪的吧XD
+有一堂課是教授會丟題目給我們寫，給一個很大的測資然後要我們找出答案之類的
+去年似乎是舉手讓教授看，不過今年是用google meet，答案直接打在聊天室，沒有避嫌超奇怪啦
+雖然是教分治的教授，不過有丟了一些有趣的DP題目
+這次也聽到了Level Ancestor的做法，Ladder Algorithm好神奇喔
+不過RMQ的O(N)O(1)也聽了好幾遍，已經聽膩了
+國手們來講課的時候AY好像弄了一個DC的bot，於是我們後面就開始duel
+休閒娛樂 什麼是duel呢?
+就是讓bot選一題然後兩個人比誰先想出來然後AC XD
+我好像沒有duel的太積極ww不過AY和balbit似乎超常對決
+不知道從誰開始玩BTD battles的，我們幾乎每天都玩(到二階結束還在玩)
+03t教的策略超強，可是我還是常常玩到破產，只能打五元的，超可憐又一直遇到金錢幾百萬的對手，怎麼贏?
+另外因為沒有被關在師大，吃飯就成了一個問題
+我們除了在建中的熱食部吃以外，也去吃了好幾家拉麵，有點罪惡感XD
+啊也因為沒有被關在師大，我就可以順理成章的在晚上去打音遊，真爽(現在sdvx中毒中:P)
+模考 模考在師大本部舉行，地點是一個會議室(汗)
+而且跟全國賽一樣是用筆電，不過這次升級成電競筆電了(不如把預算拿去幫我們弄住宿或上課空間QQ)
+三模難度超高QQ，本來以為自己被電爆不過似乎拿到最高分，因為拿到一題FWT的56分@@可惜我沒拿滿
+剩下pCpD幾乎沒人拿到分數，超可怕
+我pA沒有把手做的分數拿滿有點可惜(?)
+四模的話，pA看起來是可以做的題目(幸好進位制不是負的)，花了一些時間丟上去部分分確定是對的之後優化個兩三次就AC了
+剩下的題目都做不出來QQ原本以為pB是可以做的DP但是出來好像大家都不會
+pC沒有拿滿很可惜，pD也是和大家一樣沒想法不過可惜我沒去拿一條鏈的case
+接下來? 因為我在學校嘗試待了一個禮拜之後發現真的待不太下去(這就是奧林匹亞回歸症候群嗎&amp;hellip;)
+於是成功的用準備資奧的理由請了假，罪惡感爆棚呢XD
+現在該做的事可能就是編講義、寫題解吧，希望自己不要頹廢OvO</description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>選訓生活(?) 最近部落格停更好久喔&amp;gt;&amp;lt;
+不知道有沒有沒有追蹤我facebook的人在看我的部落格，嘻嘻
+入營考當天? 我和蕭梓宏還有王品翔一起去師大看好戲(X)
+然後電石似乎在旁邊寫作業和嘴砲(?)
+不過記分板上沒有每個人的名字，只有學校和編號
+幸好遇到一個奇怪的家長有拍名單之類的XD 讓我們能夠對照
+最後結果是AY破台拿第一，除了03t以外的建中高二應該都進了一階
+我們之後分團去ㄘ了拉麵！
+一階 懷著新奇的心情來到這個地方，報到時我好像是蠻晚進去的幾個(因為林哲宇帶路)
+一開始我本來想說可以打osu，因為去年似乎好多人那樣刷時間?
+不過晚上看到好多人在刷題，我超怕www
+於是就開始寫不知道甚麼題目
+課程 有幾堂是教授講課，首先是入營考的題解，不過好像被發現有一題假解XDD
+之後有一個是張經略教授，他會在白板上畫加菲貓而且上課超級high(他自嗨功力很高)
+有一堂課是國手經驗分享，bert和minson說了好多奇怪的趣聞(?)
+第一個禮拜幾乎所有人都出現了(?) BB、電石、吳聖福、王彥仁好幾位都有來講題目or分享奇怪心得
+從一模隔天開始，剩下的教授幾乎都是線上上課，所以我後來幾乎沒有在上課QQ
+O(N)O(1)RMQ 教了幾百遍聽到不想再聽(X)
+教室似乎因為防疫的關係換了三次左右，有點煩躁
+第一個禮拜我刷的比較多應該還是TIOJ，畢竟我還是覺得我刷不動POI(?)
+不過第二個禮拜開始刷一些BOI，想說練一下喇分能力
+可是不知道是題目問題還是我的個性幾乎不是直接想到滿分解就是只有不到三十的部分分QQ
+POI和JOI仍然還在我的實力的很上方
+話說一模附近幾天剛好是JOISC，不過難到炸，我完全寫不出啥
+飲食住宿 我們的飯店是台大捷絲旅，對面就是哈拉星球XDD，可惜沒有辦法去打QQ
+然後我的室友是暘典，好像有點自然的就稍微變熟不過還是很不熟(?)
+早餐是飯店的早餐，這十四天每天早上吃這個真的超級爽耶，我超愛炒蛋和炸的東西
+午餐和晚餐在師大的學餐吃，我覺得中餐真的就是該吃早餐部XD
+joy一直推薦西西里雞腿堡加蛋加起司，不過我覺得沒有傳言那麼好吃
+晚餐就只剩西餐廳跟自助餐兩個選，我覺得西餐廳的拉麵超級糟糕，丼飯也只是勉強能吃ww
+自助餐則是超級尷尬的選擇，不好吃也不難吃，不過很容易就超過預算90元要自掏腰包www
+在吃飯的時候基本上都會打牌，因為這似乎是無聊的選訓生活中少數的消遣(?) (雖然我現在覺得選訓一點都不無聊QQ)
+最常打的是拿破崙，ericxiao真的大師，啊seanliu到第二個禮拜才發現他知道的比牌大小規則是錯的XD超好笑
+此外因為那時候mini metro限免，大家一窩蜂去下載來玩
+吃完飯之後我幾乎都會買微舒打，好爽喔
+在飯店，有時候晚上會和祺他人在其他房玩狼人殺或打拿破崙之類的(?)
+有時也會有淇怪的人來我們房間玩(?)
+每天晚上點名的時候有零食和飲料，算是填填牙縫(
+晚上沒什麼消遣，除了打牌玩狼人殺，或者打code以外，也可以跟人聊天 &amp;lt;3
+模考 如同國手們分享經驗時所說的，我覺得我正好就是那些在北市賽、全國賽也許表現得好，但是是第一次模考的菜雞
+他們提到說賽中要多喝水、多上廁所，也要記得補充血糖，轉換轉換心情並讓大腦保持清醒
+其實這些我在500days那本書就看過了好幾次，不過我還是當作重要的一些策略記著
+一模的時候我雖然打得很差，可是我沒有想到什麼特別的原因讓我打爛，單純只是我都沒有想法而已
+因為還沒踏進棺材所以晚上也不是特別難過，不過看到打得比我好的說什麼我很強就覺得超級不爽= =想打人(例如joy)
+看到別人分數比自己高還是會超級羨慕的吧
+二模因為pC出一大堆問題所以大家好像都打得很爛，不過我pC是最後才碰的所以幸運沒有踩雷
+而且還是因為pD測資爛撈到一個AC= =現在回去看每一場都有憐憫我的分數
+模考的難度聽說比以往難，然後我實際寫也是感覺真的很難(雖然我沒去過以前的)，可能跟一些div 1的場次一樣吧?
+不過撈部分分的能力應該才是真正決勝的地方，有請品翔喇分大師分享入營考0AC的經驗
+列舉事項 因為一階遇到很多酷哥，所以我要從facebook抄過來那段列舉
+幾件神奇的事情：
+1. thomaswang和ericxiao分別站在爛梗光譜的兩端</description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>2020 IOIC 小記 五天都11點回家 好累喔
+不過聽到很多神奇技巧和神奇題目(?)
+Day 1 早上是常數優化與電腦結構，看到一些毒瘤的東東還有會造成我常數大的一些寫法
+中午有貓貓時間，電仁分享了他競程的心得之後，丟給我們一些題目
+可是我幾乎都不會做QQ
+下午塗大為的DP&amp;amp;圖論，速度超快的www趕火車
+聽到有點快要睡著，超難
+晚上趣味賽有一個隊友還沒來QQ，不過這種類型的題目真棒
+空白、tab和換行不算edit distance的規則沒有想到能讓註解佔了好多除蟲題的名額XD
+Day 2 資料結構初階OwO!
+直接從前一天下午的惡夢變成舒適的溫水浴，於是我決定自己翻講義刷題
+可是圖論超煩躁，DP我也不會SCC我也一直寫爛，搞了快半天AC不了半題WTF
+最後還被卡記憶體，直接怒不寫了QQ
+下午原本是數學被換成根號算法，因為蔣立元有講過蠻多的所以YP這堂還算友善(?)
+聽到很多有趣的題目，不過可惜我前一天自己看講義被捏到一些QQ
+除了2的冪次分層(不知道怎麼用)以外都蠻喜歡的
+因為分塊就是優美的暴力(O)
+第一場個人賽，實在是打的有點差
+pA被我擱置，聽到解法之後覺得超顯然QQ為甚麼我賽中不開啊
+開場就碰pF，碰到結尾還AC不了，到底三小
+我已經自認locality很好了欸QAQ而且取模乘法加法都有好好寫啊 早知道就多試一點順序了
+pC開的極慢，DP式一直推不出來，有夠爛，還一直亂猜加一減一吃WA吃滿
+pE水題太慢看到ww在附中練習賽有寫過所以速速AC
+pD樹重心，推導一下式子之後想到二分搜祖先再加上去(題解後感覺這個解超爛QQ)
+pG是樹上莫隊裸題，但我不知道為甚麼沒自信寫(X)
+時間全都砸在pB，想到一個實作又臭又長的作法，花了好久實作之後TLE
+到結束沒時間再寫出一題QQ
+結束之後YP跟我說我差一點AC pB，要用degree分塊才不會爛掉(我就爛)
+Day 3 早上字串，幾乎都是聽了n遍之後已經大概知道的東西(?)
+AC前一天pB之後有點不知道要做啥
+於是我試著刻了AC自動機，參考了一下講義上的code之後傳到TIOJ 1306得到SF
+我想說是不是我空間開錯，怎麼開都會SF，看了一下其他人的AC code發現他們都開4e5
+然後我開了還是SF，後來才發現是我有地方寫錯@_@
+後面唯一覺得有興趣的後綴自動機仍然沒有聽懂(?)雖然之前在講師小莫的blog上面看過了不過還是感覺好複雜
+隨機和近似實在是不太容易通靈出來，有些只要直覺的隨便亂做多次一點就足夠AC
+但是竟然有要先自己創造另一個題目的算法XD太難啦
+團體賽總算是有了第三個隊友
+pH是裸題，pI是水題，隊友找出來之後我趕緊水掉
+剩下根本找不出來甚麼題目可做XD
+pD是簡單DP，可是我一直WA，還好隊友有提醒我一些鬼邊界狀況
+剩下時間花了好多開pJ，結果還漏看一個條件，而且在樹上的想法也是錯的QQ
+pB以為是簡單結論題沒想到原來是奇怪的經典題(?)
+pC也應該猜一猜在賽中寫出來的，有點可惜
+Day 4 電石的資結進階，除了Pattern以外都有稍微聽過(線段樹優化建圖是在某一次蕭梓宏選的virtual場看到的XD)
+CDQ分治更是直接聽電石本人講過ww
+Pattern這東西好神奇喔，我想還要好久我才能通透，感覺題目再一些變化的話我就看不出來了
+下午是數學，但在上課之前出現神秘講師短短的講了Splay和LCT就不見了XD(聽說他是原本FFT的講師?)
+中堂休息之後突然就切換到數學模式，頓時有種我不會數學的感覺，明明聽過那麼多東西卻無法好好應用
+(也許我應該去精進我的數學實力? 要怎麼讀啊?)
+個人賽一開始有想法只有pB，看到Scoreboard上面大家都AC pD就猜是水結論題直接給他猜結論下去XDD</description></item><item><title>bamboofox-ctf</title><link>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</link><pubDate>Thu, 02 Jan 2020 15:00:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</guid><description>這次打跨年CTF應該是我第一次打一個正常的CTF吧（？）
+感覺好多有趣的題目www
+https://ctf.bamboofox.cs.nctu.edu.tw/
+Solved Problems Welcome Joy說看題目給的影片就有flag了
+Web newbie 被作業解掉，好像往source code的註解裡面找就對了
+Land-1 良心題
+直接copy全國模擬賽的code，送我們這些有打的人免費分數
+Land-2碰了好久一直CE，QQ
+I can&amp;rsquo;t see you 給了一個 what.rar ，Joy說不知道密碼不過丟到網路上某個工具就解開了XD(密碼是blind，聽說有人直接猜出來)
+之後會看到一張白底有黑點的圖片，對照盲人點字可以拿到flag
+How2decompyle 題目給了一個沒有副檔名的檔案
+因為題目名稱裡面有py，嘗試把他丟到google找到的decompyler之類的東西?
+不過因為沒有副檔名他不吃，他只吃.py和.pyc(這時我們才知道我們大概拿到.pyc，是byte code XDD)
+於是改副檔名再丟一樣的地方就得到原始的.py檔了
+讀一下發現怎麼讓他跑出flag之後跑一跑就AC了(?)
+Happy New Year 賽中新增的題目，直接給flag ww
+Tree 作業丟給我的(?)
+解壓縮他給的檔案之後發現看起來很欠DFS，確定葉節點是檔案可以直接讀之後就想寫個DFS
+不過shell的遞迴我不會，想說用python，不過還是要查套件:(，爛死
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 from os import chdir from glob import glob def dfs(s): s = s[0] #print(&amp;#39;s = &amp;#39;, s) typ = s[-1] #print(typ) if typ == &amp;#39;+&amp;#39;: return dfs(glob(s+&amp;#34;/0_*&amp;#34;)) + dfs(glob(s+&amp;#34;/1_*&amp;#34;)) if typ == &amp;#39;x&amp;#39;: return dfs(glob(s+&amp;#34;/0_*&amp;#34;)) * dfs(glob(s+&amp;#34;/1_*&amp;#34;)) if typ == &amp;#39;r&amp;#39;: #print(&amp;#39;path = &amp;#39;, s) return int(open(s).</description></item></channel></rss>

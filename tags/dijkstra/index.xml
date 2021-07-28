@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dijkstra on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dijkstra/</link><description>Recent content in dijkstra on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 30 Dec 2020 12:57:24 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dijkstra/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</guid><description>變動的過路費 https://tioj.ck.tp.edu.tw/problems/1597
+Description 給你一張有向圖，每個邊會有隨時間變動的權重，並且邊的權重對時間是一個線性函數。
+再給你兩個點 $A,B$，現在你想要從 $A$ 走到 $B$ 再走回 $A$，
+問你在時間 $[0, D-1]$ 中，最長的最短路徑和最短的最短路徑相差多少。
+保證在時間內的邊權都是非負整數，並且答案不會超過long long。
+Solution 這題很久以前就跟蕭梓宏討論過了，不過我怎麼寫都會吃WA 0分
+今天#define int ll結果就拿了67分XD仔細檢查才發現原來一條邊的邊權可以不在int的範圍內但我卻用了int
+忘記開long long真的Orz
+因為線性函數的和還是線性函數，考慮所有的「路徑」，他們都代表一條對時間的線性函數。
+而某個時間點的最短路徑就是這些直線的 $\min$。也就是說，所有時間點的最短路徑是所有路徑的線性函數的下凸包(lower envelope)
+把這個凸包建出來似乎不是可行的（？）所以就考慮三分搜找出最大值。至於最小值一定是在端點，所以相減就是答案了。
+好像有卡一些常數QQ我還得判如果dijkstra跑到終點就return、三分搜遇到相同就break;之類的，不知道是不是TIOJ主機變慢了QQ
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 #pragma GCC optmize(&amp;#34;Ofast&amp;#34;) #include &amp;lt;bits/stdc++.</description></item></channel></rss>

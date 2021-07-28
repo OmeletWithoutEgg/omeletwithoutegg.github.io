@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>geometry on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/geometry/</link><description>Recent content in geometry on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 23 Dec 2020 13:31:04 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/geometry/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>賽車問題 https://tioj.ck.tp.edu.tw/submissions/231136
+Description 現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。
+你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。
+可以假設車速都不相同
+Solution 首先每個車的位置對於時間是一個一次函數，而「每個時刻最前面的車的位置」和「每個時刻最後面的車的位置」就是這些直線形成的上下凸包（envelope）
+這題可以用三分搜寫掉（？）
+不過可以把凸包真的建出來做。最佳的答案一定會出現在凸包的頂點上，或是邊界（也就是時刻=0的時候）
+於是建出來之後用雙指標依照x由小到大檢查上下凸包的距離就可以了，記得要處理邊界的case。
+這樣雖然時間複雜度還是有 $\log$ ，不過是 sort 的 $\log n$。
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>照亮的山景 https://tioj.ck.tp.edu.tw/problems/1404
+Description 在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。
+如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。
+請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？
+$1 \leq M, N \leq 10^5$
+所有座標的絕對值小於$10^5$
+Solution 發現到每個燈泡可以照到的範圍可能會長的非常奇怪
+於是我們轉換思維，考慮每個轉折點如果要被照到要有什麼條件
+可以發現，對於每個轉折點來說有一個區間，只要區間內有一個燈泡有開，這個轉折點就會被照到
+找出那些區間之後這題就是經典的greedy題目了（按照右界由小到大，有拿過的跳過沒拿過的拿右界那個點）
+那麼要怎麼找出這些區間呢？某個轉折點$p_i$對應的右界，正好是他和他右邊所有其他點所連出的射線中斜率最大者
+維護一個上凸包能夠找到對應的那個點，再用直線求交點公式找出高度恰好是$T$的位置就好
+左界也是同樣方式處理
+因為題目給定的點已經幫我們排序好了，所以做凸包是$\mathcal{O}(M)$，而greedy的部分也可以做到$\mathcal{O}(N)$不過我這邊是放了$\mathcal{O}(N\log N)$的，因為找到交點之後必須二分搜求出到底涵蓋了哪些燈泡
+總複雜度是$\mathcal{O}((M+N)\log N)$
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 #include &amp;lt;bits/stdc++.</description></item></channel></rss>

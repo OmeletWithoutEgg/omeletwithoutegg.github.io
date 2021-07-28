@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dp on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dp/</link><description>Recent content in dp on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 12 May 2020 15:31:47 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dp/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</guid><description>Ch2. Section 9. 補魔力的條件 https://tioj.ck.tp.edu.tw/problems/1764
+Description 現在有排成一直線的$N$個格子，從左到右編號為$1 \dots N$，每個格子都有自己的高度
+一開始你站在第一格，每次移動都只能往編號大的格子跳，目標是走到第$N$格
+假設第$i$個格子的高度是$x_i$，從格子$i$跳到格子$j$需要耗費$\max(0, (j-i)+(x_j-x_i))$的力氣
+請問在花最少力氣到達終點的前提下，他最多可以跳幾次?
+Solution 先考慮最小化力氣
+令$x_i+i = v_i$，簡單的列出DP式
+$$
+dp[i] = \min _ {j &amp;lt; i}(dp[j] + \max(0,v_j-v_i))
+$$
+這樣的複雜度是$\mathcal{O}(N^2)$
+不過可以分case討論
+$$
+dp[i] = \min(
+\min _ {j &amp;lt; i \wedge v_j \geq v_i}(dp[j]+v_j)-v_i,
+\min _ {j &amp;lt; i \wedge v_j &amp;lt; v_i}(dp[j])
+)
+$$
+就可以用資料結構$\mathcal{O}(N \log N)$維護了
+那麼最多可以跳的次數也可以一邊維護
+也就是說如果力氣不同就選力氣小的，力氣相同則選跳的次數多的，可以直接用pair做就好
+這邊寫的是值域壓縮之後用BIT維護前後綴min OAO
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 #pragma GCC optimize(&amp;#34;Ofast&amp;#34;) #pragma loop_opt(on) #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1628</title><link>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</link><pubDate>Sun, 03 May 2020 15:02:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</guid><description>組合布丁 https://tioj.ck.tp.edu.tw/problems/1628
+Description 記得在快樂暑假營開始前，你曾經說過：「只要我有一次比賽沒有破台，就要請全快樂營的人吃布丁。」
+好吧，蚯蚓太威了，你終究是沒有破台。
+根據小道消息，你得知了這次的快樂暑假營總共有 $n$ 個人報名，
+但是實際上會出席的只有 $k$ 個人，因此你只要請 $k$ 個人吃布丁就好。
+而報名的第 $i$ 個人只會願意吃 $t_i$ 口味的布丁(用一個 int 範圍內的整數表示)。
+假設你不確定究竟誰會出席，那有幾種不同的布丁組合可能會出現在你的採買清單上 ?
+喔對了，因為答案可能太大了，所以你決定只要知道答案除以 $M$ 的餘數就好。
+輸入包含多筆測資
+$$
+1 \leq n, k \leq 5000, 1 \leq M &amp;lt; 2^{31}
+$$
+Solution 兩種布丁組合不同，若且唯若某一種布丁的數量不同
+因此我們枚舉每個布丁的數量去做計數背包就好了
+可以用前綴和甚至FFT加速(?)不過FFT應該不會比較快www
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1102</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</link><pubDate>Tue, 25 Feb 2020 08:33:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</guid><description>E.海賊王 https://tioj.ck.tp.edu.tw/problems/1102
+Description 你是一位海賊，現在有$P$個敵人與$T$個寶藏等間距圍成一圓形
+你必須決定一個發射砲彈的方式
+砲彈會波及的範圍是圓形的，每次發射後範圍內的海賊會被殺死，寶藏也會被毀壞
+剩下的會重整隊形，同樣等間距圍成一圓形，且半徑不變（炮彈可以波及的半徑大於他們圍成的圈的半徑）
+檢查過船上的砲彈存量以後，你發現一次至少要炸死兩個敵方海賊（所以剩三個海賊的話一定要一次打死三個）
+你決定寫個程式幫你計算最多可以拿到多少未被毀壞的寶藏
+Solution 半徑根本就是垃圾資訊XDD
+只要炸的到的範圍比圍成的圈的範圍還要大，每次炸的就是環上的一段區間
+總之考慮海賊之間的間隙，本題等價於選取環上許多個不相鄰的間隙使得權重最大
+那麼顯然就直接DP，只要記得考慮環形的問題就好
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item><item><title>TIOJ-1553</title><link>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</link><pubDate>Wed, 19 Feb 2020 16:54:42 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</guid><description>B-Game https://tioj.ck.tp.edu.tw/problems/1553
+Description B-Game是個殘酷的兩人卡片對戰遊戲(Battle Game)
+檯面上有$n$張卡片，排成環狀，每張卡片有其數值
+兩人輪流取卡片，只能選與已經取過的卡片相鄰的卡片，但第一個人不受此限
+選完卡片之後，勝負決定在將兩人手中卡片的數值和
+若某位玩家得分大於另一位玩家，無論大多少均是勝利
+輸出一行包含兩個數
+分別是一開始有幾種拿法可以讓先拿的人勝利
+與先拿的人最多可以拿到多少
+Solution 一開始我沒有注意到環型的條件，送了好多次假解XD
+後面還忘記%n，WA到癱軟www
+現在假設先手第一步取了某張卡
+則剩下的卡片就是環上的一段連續區間，並且不管怎麼拿都會一直保持是連續區間
+可以透過奇偶性知道最後一步輪到誰拿，且拿的位置肯定是區間的最左邊或是最右邊
+而對手ㄧ定會讓自己分數最低，我們則是讓分數盡量高
+因此可以列出簡單的2D/0D轉移式，得到每個區間可以從兩頭拿時先手的最高得分
+再加上先手第一步取得的分數就可以知道從每個地方起手先手所能得到的最高分
+也就知道在那個位置是否有機會勝利了
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 #include &amp;lt;cstdio&amp;gt; inline int min(int a, int b) {return a&amp;lt;b?a:b;} inline int max(int a, int b) {return a&amp;gt;b?</description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</guid><description>&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;
+超大畫框設置 https://tioj.ck.tp.edu.tw/problems/1283
+Description 在一個「漸進式框架」當中，你想要找到一個最大面積的矩形位置放置你最喜愛的一幅畫。
+當然地，畫框必須掛正，所以矩形的四個邊都必須與框架的邊平行或垂直。
+所謂的「漸進式框架」，指的是任何一個水平線截出的框架區段是連續，並且由上往下該區段只會往右移動，如下圖
+Solution 這個是蕭梓宏在超級久之前講的四邊形優化題目，筆者發現已經過了一年多了還沒AC就想說來寫看看好了！這一題不難想到，對於每一個在下面的線，都計算是哪一條在上面的線和它搭配會有最佳，再取$\max$就好了。不過，這樣需要$O(MN)$的時間，頗爛。
+不過呢，還可以觀察（且證明）一個性質，就是：倘若$L(x)$為下面的線中第$x$條線所對應到的最佳（面積最大）的上面的線的編號，則$L(x + 1) \geq L(x)$！有了這個性質，大概就可以維護一個deque，裡面放一堆東西$(L, R, I)$來維護說：上面第$I$條線可以轉移下面第$L$到第$R$的線為最佳。一開始只有一個$(0, M, 0)$，然後每次進來一個上面的線段就開始判斷（假設目前deque中最後面的元素為$(L, R, I)$，且目前我在第$X$條）：
+若$X$和$L$的矩形比$I$和$L$的矩形還大，這代表$(L, R, I)$這個區間可以完全不要了，pop掉
+若$X$和$M - 1$的矩形比$I$和$M - 1$的矩形還小（也就是最後一個），則代表我永遠贏不了那一條線，我就直接break了，反正贏不了
+否則，開始二分搜說我到哪裡可以贏$(L, R, I)$，也就是說，找一個最小的$m$使得$m$和$I$的矩形小於或等於$m$和$X$的矩形
+維護完之後，再掃一次$M$條線取$\max$就好了！
+AC code 感覺寫完到AC的時間還不會很久，但是中間有一堆小細節被卡（還有二分搜寫錯、被卡long long、$N, M$要除以二、面積計算出錯等有趣環節），幸好沒有太大的問題！
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 #include &amp;lt;iostream&amp;gt;#include &amp;lt;deque&amp;gt;#define int long long int #define ericxiao ios_base::sync_with_stdio(0);cin.</description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</guid><description>1.銀河帝國旅行社 https://tioj.ck.tp.edu.tw/problems/1152
+Description 給一棵樹，找最遠的兩個點的距離
+Solution 這裡用類似DP的方法
+dfs(i) 回傳一個 {ans, deepest} 分別表示以$i$為根子樹中的答案和從$i$往下走的最遠距離
+那ans可以分成有經過$i$的和沒經過的，有經過的就看最深的兩個子樹加起來是多少，沒經過的就遞迴下去算
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 #include &amp;lt;bits/stdc++.h&amp;gt;#define pb emplace_back #define ff first #define ss second using namespace std; int n; vector&amp;lt;int&amp;gt; g[N]; pair&amp;lt;int,int&amp;gt; dfs(int i) { vector&amp;lt;int&amp;gt; tmp{0}; int ans = 0; for(int j: g[i]) { auto p = dfs(j); ans = max(ans, p.</description></item><item><title>TIOJ-2037</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</link><pubDate>Tue, 31 Dec 2019 16:06:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</guid><description>警力配置 https://tioj.ck.tp.edu.tw/problems/2037
+Description 裸的二分圖匹配
+Solution 這邊給匈牙利算法
+有一個subtask是給一個點數很多的樹
+特判用dp即可
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item><item><title>TIOJ-1394</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</link><pubDate>Fri, 13 Dec 2019 06:36:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</guid><description>黑色騎士團的逆襲野望 https://tioj.ck.tp.edu.tw/problems/1394
+Description 自從黑色騎士團上次的最終野望被白色騎士豬殺苦破滅之後，黑色騎士團銷聲滅跡了一陣子，不過他們仍繼續計畫著侵略神聖的大不列顛帝國。
+終於他們發現了一個機會：原來大不列顛帝國的命脈就是對外輸出的藥品&amp;rdquo;REBRAIN&amp;rdquo;，只要能控制住它所有的運輸與加工途徑，那大不列顛帝國就完了！
+與之前一樣，他們只要佔領一個據點就可以控制與他相鄰的運輸途徑了！
+&amp;ldquo;REBRAIN&amp;rdquo;的運輸過程十分有趣，他有一個總工廠來製造&amp;rdquo;REBRAIN&amp;rdquo;的一些半成品，再依序經過幾個有向道路到下個加工地點進行加工，就這樣一直到完成成品，並且為了不讓產品流程出問題，他們的運輸路徑不會出現環狀或逆向的情況。
+不過黑色騎士團的人手有限，所以他們希望佔據最少的據點就可以完全控制整個運輸與加工途徑。
+註: 雖然是有向邊，不過相鄰的關係依然是互相的；另外雖然沒有講的很清楚，題目是有保證0號節點可以走到所有其他節點
+Solution 題目所求是最小點覆蓋，也就是在給定圖上要選幾個點才能保證所有邊都有一個端點被選到
+因為這題給的是DAG，所以我們可以考慮用DP的方式做
+狀態$dp[i][s]$代表$i$往子孫走的邊都已經保證有端點被選到的答案，若$s=1$代表有選$i$這個點，反之沒有
+可以知道如果沒有選$i$這個點，那他的子節點都一定要選，所以
+$$dp[i][0] = \sum\limits _ {j\in son(i)} dp[j][1]$$
+如果選了$i$這個點，那他的子節點可選可不選，我們就取比較小的那個，有
+$$dp[i][1] = 1 + \sum\limits _ {j\in son(i)} \min(dp[j][0],dp[j][1])$$
+最後取的答案是0號節點選或不選取$\min$
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 #include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; const int N = 33001; int dp[N][2], vis[N]; vector&amp;lt;int&amp;gt; g[N]; void dfs(int i) { if(vis[i]) return; vis[i] = true; dp[i][0] = 0; dp[i][1] = 1; for(int j:g[i]) { dfs(j); dp[i][0] += dp[j][1]; dp[i][1] += min(dp[j][0],dp[j][1]); } } signed main() { ios_base::sync_with_stdio(0), cin.</description></item><item><title>TIOJ-1774</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</link><pubDate>Thu, 05 Dec 2019 21:30:24 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</guid><description> Ch3. Section 9. 妁艷的頭髮 https://tioj.ck.tp.edu.tw/problems/1774
+Solution 裸背包，被值域嚇到XD
+不過實際上魔力M只會到2000所以沒差的啦
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 #include &amp;lt;iostream&amp;gt;using namespace std; long long n,M,dp[2001]; signed main() { ios_base::sync_with_stdio(0), cin.tie(0); cin &amp;gt;&amp;gt; n &amp;gt;&amp;gt; M; for(int i = 0,h,c; i &amp;lt; n; i++) { cin &amp;gt;&amp;gt; h &amp;gt;&amp;gt; c; for(int j = c; j &amp;lt;= M; j++) dp[j] = max(dp[j-c]+h, dp[j]); } cout &amp;lt;&amp;lt; dp[M] &amp;lt;&amp;lt; &amp;#39;\n&amp;#39;; }</description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</guid><description>排教室問題 https://tioj.ck.tp.edu.tw/problems/1197
+Description 某校有M種不同的課程，其中有些課程的時間會有衝堂。如果學校中總共有N間不同的教室，請問共有多少種安排各課程上課教室的方式？最少要用到幾間教室？
+$M,N \leq 10$
+註: 衝堂的意思是他們不能被安排在同一個教室
+Solution 題目可以想成給定一張圖，每個頂點有$k$種顏色可以塗，定義合法塗色是讓相鄰頂點無同色的塗色方式，問有幾種合法塗色的方式以及至少要用多少顏色才能合法塗色
+一開始覺得這是暴搜題，但忽然想到可能不連通也可能會有環之後就不太知道怎麼實作
+另外題敘好像沒有講到，不過這題讀邊的時候要用EOF讀
+這題我的寫法是位元DP，考慮狀態$dp[S][c]$代表$c$之前的顏色都用過了，並且$S$這個subset已經被塗過了
+那轉移可以想成把$S$的一個subset$X$都塗上$c$這個顏色，當然$X$中任意兩個頂點都不相鄰(也就是說$X$是獨立集)，式子長得像
+$$
+dp[S][c] = \sum\limits _ {X \subseteq S, Valid(X)} dp[S \setminus X][c-1]
+$$
+其中$Valid(X)$代表$X$是否為獨立集，可以先預處理
+預處理獨立集可以做到$\mathcal{O}(n \cdot 2^n)$，而後面枚舉$k$次子集則是$\mathcal{O}(k \cdot 3^n)$
+註: 一次枚舉複雜度是$\mathcal{O}(3^n)$的原因可以參考 https://cp-algorithms.com/algebra/all-submasks.html
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 #include &amp;lt;cstdio&amp;gt;#include &amp;lt;algorithm&amp;gt;using namespace std; const int N = 10; typedef long long ll; int k,n,a,b,valid[1&amp;lt;&amp;lt;N],g[N][N]; ll dp[1&amp;lt;&amp;lt;N][N]; signed main() { scanf(&amp;#34;%d%d&amp;#34;,&amp;amp;n,&amp;amp;k); while(~scanf(&amp;#34;%d%d&amp;#34;,&amp;amp;a,&amp;amp;b)) --a, --b, g[a][b] = g[b][a] = true; for(int s = 0; s &amp;lt; (1&amp;lt;&amp;lt;n); s++) valid[s] = true; for(int s = 0; s &amp;lt; (1&amp;lt;&amp;lt;n); s++) { for(int i = n-1; i &amp;gt;= 0; i--) if(s &amp;amp; (1&amp;lt;&amp;lt;i)) { if(!</description></item></channel></rss>

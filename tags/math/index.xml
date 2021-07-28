@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>math on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/math/</link><description>Recent content in math on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 13 Feb 2021 16:28:29 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。
+主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。
+Fast Linear Recurrence 首先先來介紹如何快速求線性遞迴。
+定義 已知序列 $ \langle a_n \rangle $ 滿足遞迴關係 $ \displaystyle \forall i \geq k, a_i = \sum _ {j=0} ^ {k-1} s _ j a _ {i-1-j} $ ，並且已經給定 $s$ 跟 $a_0, a_1, \dots, a _ {k-1}$
+現在想要求 $ a_n $ 的值，其中 $ 1 \leq k \leq 5000, 0 \leq n \leq 10^9 $
+許多人大概會很快想到矩陣快速冪，複雜度是 $ \mathcal{O}(k^3 \log n) $。但我們要更快！
+通靈 定義一個函數 $G$，對於形式冪級數 $f(x) = \sum c_i x^i, G(f) = \sum c_i a_i$ 。</description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>賽車問題 https://tioj.ck.tp.edu.tw/submissions/231136
+Description 現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。
+你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。
+可以假設車速都不相同
+Solution 首先每個車的位置對於時間是一個一次函數，而「每個時刻最前面的車的位置」和「每個時刻最後面的車的位置」就是這些直線形成的上下凸包（envelope）
+這題可以用三分搜寫掉（？）
+不過可以把凸包真的建出來做。最佳的答案一定會出現在凸包的頂點上，或是邊界（也就是時刻=0的時候）
+於是建出來之後用雙指標依照x由小到大檢查上下凸包的距離就可以了，記得要處理邊界的case。
+這樣雖然時間複雜度還是有 $\log$ ，不過是 sort 的 $\log n$。
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 #include &amp;lt;bits/stdc++.</description></item><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</guid><description>AtCoder Regular Contest 106 最近一直被ZCK推坑，vir了好幾場ARC
+然後打完AGC才發現自己rating太低unrated，爛死XD
+結果打完這場還是不到能夠rated的標準1200 QQ
+然後想說寫一下題解好了 :P
+A. 106 Statement 給你$N$，問你有沒有正整數$A,B$使得$3^A+5^B = N$，$N \leq 10^{18}$
+Solution 因為$A,B$最多都是$\log$量級的所以亂枚舉就好了
+基本上也不太會溢位
+AC CODE
+B. Values Statement 給你一張無向圖，還有每個點一開始寫的數字$a_i$
+每次可以把兩個相鄰的點$x,y$一個數字+1一個數字-1
+問你是否能讓最後第$i$個點寫的數字是$b_i$
+$1 \leq N \leq 2 \times 10^5$
+$0 \leq M \leq 2 \times 10^5$
+$-10^9 \leq a_i, b_i \leq 10^9$
+Solution 只要一個連通塊裡$a_i$的總和和$b_i$的總和相同就做的到
+於是用 dsu 維護總和
+AC CODE
+C. Solutions 一開始想說這題題敘很長先跑去做 pD
+結果是水題，不過還是WA慘QQ
+Statement 「給你$N$個線段，請選出最多條兩兩完全不相交的線段。。」
+現在有兩種演算法$A,B$分別嘗試解決上述問題：
+- $A$演算法：按照右界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小
+- $B$演算法：按照左界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小
+請構造一組輸出使得「$A$輸出的答案 - $B$輸出的答案 = $M$」</description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</guid><description>Assssss!! https://tioj.ck.tp.edu.tw/problems/1505
+Description 現在有一個正整數構成的除法數列
+$
+x_1 / x_2 / x_3 / \dots / x_n
+$
+請問是否有一種加上括號的方法使得最後運算的結果是整數?
+$2 \leq n \leq 10^5, 1 \leq x_i \leq 10^9$
+Solution 加上括號之後每個數字會被放到分母或分子，想當然而放在分子的數字越多越好
+可以發現$x_2$會恰好被放到分母一次，因此在最後他一定是當分母的
+而我們可以構造出一個方法讓除了$x_2$最後當分母以外，其他數字都當分子
+$$
+(x_1 / (((x_2 / x_3) / x_4) / x_5 \dots)) = \frac{x_1 x_3 x_4 x_5 \dots x_n}{x_2}
+$$
+由於$x_2$最後一定會待在分母，只要檢查其他數字的乘積是否可以被$x_2$整除就好了
+記得 long long 的問題
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 #include &amp;lt;cstdio&amp;gt; inline char readchar() { constexpr int B = 1&amp;lt;&amp;lt;20; static char buf[B], *p, *q; if(p == q &amp;amp;&amp;amp; (q=(p=buf)+fread(buf,1,B,stdin)) == buf) return EOF; return *p++; } inline int nextint() { int x = 0, c = readchar(); while(c &amp;lt; &amp;#39;0&amp;#39;) c = readchar(); while(c &amp;gt;= &amp;#39;0&amp;#39;) x=x*10+(c^&amp;#39;0&amp;#39;), c=readchar(); return x; } signed main() { int t = nextint(); while(t--) { int n = nextint(); int res = nextint(), mod = nextint(); for(int i = 2; i &amp;lt; n; i++) res = 1LL * res * nextint() % mod; puts(res ?</description></item><item><title>TIOJ-1219</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</link><pubDate>Tue, 25 Feb 2020 09:55:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</guid><description>發糖果囉 https://tioj.ck.tp.edu.tw/problems/1219
+Description 求符合$1 \leq x \leq n, 1 \leq y \leq m$且$x,y$的最大公因數是$g$的數對有多少對
+有多筆測試資料，$1 \leq n, m, g \leq 50000$
+Solution 莫比烏斯反演
+lemma $$
+\sum_d \mu(d) [d | x] = [x = 1]
+$$
+拿來簡化 $[\gcd(i,j)=1]$ 的部分，再想辦法換一下$\sum$的位置
+$$
+\begin{align*}
+\sum _ {i=1}^n \sum _ {j=1}^m [\gcd(i, j) = g] &amp;amp;= \sum _ {i=1}^{\lfloor n/g \rfloor} \sum _ {j=1}^{\lfloor m/g \rfloor} [\gcd(i, j) = 1]\newline
+\sum _ {i=1}^N \sum _ {j=1}^M [\gcd(i, j) = 1] &amp;amp;= \sum _ {i=1}^N \sum _ {j=1}^M \sum_d \mu(d) \cdot [d | \gcd(i, j)]\newline</description></item><item><title>TIOJ-1511</title><link>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</link><pubDate>Sat, 15 Feb 2020 13:25:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</guid><description>Problem A. 雷射防護網 https://tioj.ck.tp.edu.tw/problems/1511
+Description 考慮在正$n$邊形的頂點中任選三點形成的三角形，請統計分別有幾個銳角三角形、直角三角形和鈍角三角形
+注意：兩個三角形被視為不同的，若且唯若三個頂點的編號不完全相同，並且不可以旋轉三角形
+$n \leq 10^6$
+Solution 簡單排列組合，不過我寫好久還踩到一些坑
+直角的case很容易解決，因為斜邊必須要是外接圓的直徑，故$n$得是偶數
+而所有$n/2$條直徑對應的直角三角形個數就是$2(n/2-1)$
+接著我們先計算鈍角的case
+固定鈍角那個頂點，假設三個角的角度分別等於$a, b, c$個邊(因為是正多邊形所以可以這樣統計)，且$a &amp;gt; b,c$
+那麼所有鈍角三角形的個數就等於$a+b+c = n$且$a &amp;gt; n/2$的正整數解的個數
+此時枚舉$a$，$b+c=n-a$有$n-a-1$組正整數解，可以知道所求即是
+$$
+\sum _ {a = \left \lfloor n/2 \right \rfloor + 1} ^ {n-2} n-a-1 = \sum _ {i=1}^{n-2 - \left \lfloor n/2 \right \rfloor} i = \frac{(n-2 - \left \lfloor n/2 \right \rfloor) (n-2 - \left \lfloor n/2 \right \rfloor + 1)}{2}</description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</guid><description>爆炸吧現充~ https://tioj.ck.tp.edu.tw/problems/1600
+Description 求共有幾個滿足
+$$
+1 \leq x \leq n,
+\exists k &amp;gt; 1, k^2 | x
+$$
+的$x$
+Solution 一開始我的想法是$[\mu(x)=0]$的前綴，想說用杜教篩或莫比烏斯反演什麼的，但怎麼推都推不出來
+去問王政祺之後，他說直接枚舉平方數再排容就好，至於排容的係數就直接取$\mu$
+令
+$$
+S_k = \{x | 1 \leq x = k^2t \leq n\}
+$$
+則答案就是
+$$
+\begin{matrix}
+|\bigcup _ {k} S_k| &amp;amp;= &amp;amp; (|S_2| + |S_3| + |S_5| + |S_7| + \cdots)\newline
+&amp;amp;- &amp;amp; (|S_6|+|S _ {10}|+|S _ {14}|+|S _ {15}|+ \cdots)\newline
+&amp;amp;+ &amp;amp; (|S _ {30}|+|S _ {42}|+|S _ {66}|+|S _ {70}|+ \cdots)\newline</description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>同餘算數 定義 $$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$
+或者說$a,b$同餘於$m$
+基本性質 當一個題目要求答案模一個數字$m$時
+通常我們都可以不用先算出一個很大的答案再取模
+利用下面的規則能夠在計算的過程中一邊取模(加減乘不會改變等價關係)
+設
+$$
+\left \{
+\begin{matrix}
+a_0 \equiv a_1 \pmod m\newline
+b_0 \equiv b_1 \pmod m
+\end{matrix}
+\right .
+$$
+則易得到
+$$
+\left \{
+\begin{matrix}
+a_0 \pm b_0 \equiv a_1 \pm b_1 \pmod m\newline
+a_0b_0 \equiv a_1b_1 \pmod m
+\end{matrix}
+\right .
+$$
+模逆元 在一般實數的除法時，如果我們想知道除以$a$的結果，可以看成乘上倒數$1/a$
+也就是說找一個$x$使得$ax = 1$
+而在模$m$的情況下，我們同樣也可以用一個使得$ax \equiv 1$的$x$來代替除以$a$的運算，稱為模逆元
+(如果常常打CF的話應該常常看見上面模逆元的敘述)
+求取模逆元$x = a^{-1}$只要把同餘關係改寫成$ax = my+1$就可以用擴展歐幾里得求解了</description></item><item><title>TIOJ-1674</title><link>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</link><pubDate>Thu, 19 Dec 2019 10:58:57 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</guid><description>新專輯 https://tioj.ck.tp.edu.tw/problems/1674
+Description 最近你打算訂購$N^2$張水樹奈奈的專輯《極限魅惑IMPACT EXCITER》。
+由於份量實在是太多了，你決定分散成$N$份訂單。
+然而，不幸的，依據博客來新的訂貨規定，每一位顧客第$k$次下訂單所訂的CD張數必頇是$k$的正整數倍。
+換句話說，一位顧客第$5$次訂的CD張數只可能是$5$張、$10$張、$15$張、…依此類推。
+當然，原先你把$N^2$張CD分散在$N$份訂單的目的就是為了讓一張訂單中最多只會有$N$張CD。
+即使博客來多了這項奇怪的規定，你仍然不打算捨棄你的原則，只是這樣每份訂單訂的數量可能會達不到你原來的期望。
+無論如何，你還是下了訂單。為了估計你實際訂下的CD數與你期望訂下的CD數的差別，你決定把每次你少訂的數量加起來。
+可是，因為你可能少訂非常多張CD，所以你希望算出少訂的總數量除以$10^9+9$的餘數。
+也就是說，如果你總共要訂$3^2$張CD，分成三次訂的話，
+那你第一、第二、第三次分別可以訂$3$、$2$、$3$張CD，分別會少訂是$0＋1＋0＝1$張CD。
+Solution 仔細讀懂題目之後可以發現題目要求的就是
+$$
+\sum _ {i=1}^n n\%i
+$$
+不過$n$可以到$10^{13}$不能直接$\mathcal{O}(n)$跑過去
+數論分塊 數論分塊的精神很簡單，不同的$\lfloor n/i \rfloor$數量只有$\mathcal{O}(\sqrt{n})$種
+說明:
+對於$i \leq \sqrt{n}$，最多只有$\sqrt{n}$種不同的值
+對於$i &amp;gt; \sqrt{n}$，$\lfloor n/i \rfloor &amp;lt; \sqrt{n}$最多也只有$\sqrt{n}$種不同的值
+怎麼快速枚舉可能的$\lfloor n/i \rfloor$？
+1 2 3 4 5 6 for(int i = 1,j,x; i &amp;lt;= n; i = j+1) { x = n/i; j = n/x; // j是最大的數字使得j*x &amp;lt;= n，意即[i,j]區間內正好是所有n/k=x的數字 // use n/i here } 回到剛剛的式子，把他改寫成</description></item><item><title>TIOJ-1948</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</link><pubDate>Wed, 11 Dec 2019 13:24:35 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</guid><description>小向的試煉 2-1：洞穴(Cave) https://tioj.ck.tp.edu.tw/problems/1948
+Description 小向在洞穴裡偵察到了$N$個烏龍，不知道是本尊還是分身。不過他們在洞穴中都是以每秒1公分的速度前進，只是有的朝著左邊的入口前進，而有的朝著右邊的入口前進。而由於洞穴相當狹窄，兩個相向的烏龍相撞時會回頭。小向大膽猜測，本尊一定會在所有分身都出洞穴被小向打敗後才出洞穴，瞄準小向用盡魔力的那剎那攻擊小向。不過她也沒那麼多時間等所有分身慢慢走出來再找到本尊，所以小向希望能直接用她剛剛偵察到的資訊判斷哪個是本尊。($N\leq10^6$，洞穴的長度$L\leq10^9$)
+注意：離開洞穴的定義是從左邊的入口往左走一步或從右邊的入口往右走一步。保證答案唯一，並且所有烏龍都在不同位置。
+Solution 首先若不管烏龍的編號，只想知道烏龍最後的位置，兩個烏龍相撞並回頭時可以當作穿過去
+顯然地，我們可以知道所有烏龍最晚離開洞穴的時刻，就等於每隻烏龍單獨放在洞穴內離開洞穴的時刻的最大值，我們也能知道最後一隻離開洞穴的烏龍是向左還是向右
+接著可以發現在烏龍相撞的過程中，左右順序一定不會變，意思是如果某個編號$i$的烏龍一開始是x座標第$k$大的，那不管經過多少次的相撞，他仍然會是x座標第$k$大的
+同時向左的烏龍數量與向右的烏龍數量也不會變
+所以，我們可以知道最後一隻烏龍離開洞穴時，一定是左邊全部向左，右邊全部向右，而那隻最後離開的烏龍一定是「向左的烏龍中最右邊的或者向右的烏龍中最左邊的」，也就知道了最後離開的烏龍是x座標第幾大的了
+用 nth_element 可以快速找出x座標第$k$大的編號，注意一開始他給的編號沒有按照x座標排序，上述推論必須先照x座標排序才會是對的= =
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #pragma g++ optimize(&amp;#34;Ofast&amp;#34;) #pragma loop_opt(on) #include &amp;lt;cstdio&amp;gt;#include &amp;lt;algorithm&amp;gt;const int N = 1000001; int n,L,x[N],id[N],cnt; signed main() { int t = -1e9, dir, pos; scanf(&amp;#34;%d%d&amp;#34;,&amp;amp;n,&amp;amp;L); for(int i = 0,d; i &amp;lt; n; i++) { scanf(&amp;#34;%d%d&amp;#34;,x+i,&amp;amp;d); int dis = d ?</description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</guid><description>販賣機耶 https://tioj.ck.tp.edu.tw/problems/1614
+Description 蝴蝶在路旁玩壞一台販賣機，它一次只能投一枚硬幣（故障？）。
+重點是：投進一枚x元的硬幣，然後按退幣鈕，居然會吐出一枚價值 $f(x)$ 的硬幣耶！
+更神秘的是，天才蝴蝶已經發現 $f(x) = x + (x-b_1) (x-b_2) (x-b_3) \dots (x-b_m)$。
+現在蝴蝶手上有 $n$ 枚硬幣，分別是 $a_1 \dots a_n$，請問蝴蝶投進去會賺的硬幣有幾枚？
+Solution 題目就是問$f(x)-x = \prod\limits _ {i=1}^m (x-b_i)$是不是正的
+然後看有幾個$b_i$小於$x$就可以知道乘積的正負號了(國中數學??)
+另外注意$x - b_i = 0$的case，然後也不要亂 unique ，要保持個數的奇偶性。
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 #include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; const int N = 100025; int n,m,a[N],b[N]; signed main() { ios_base::sync_with_stdio(0), cin.</description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>同步(Sync) https://tioj.ck.tp.edu.tw/problems/1927
+Description 在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。
+有時遊戲中的兩人會產生「同步」的現象。產生同步的條件是兩人所在的格子的數字$a,b$分別滿足
+$$
+(ab)^{\frac{p-1}{2}} \equiv 1 \pmod p
+$$
+其中$p = 10^9 + 7$。產生同步後，兩人會瞬移至下一格。如果在下一格又產生「同步」，則會繼續往下走，直到其中一人超出格子範圍(到了終點了)或者兩人不再同步。
+Solution 對於$x \not\equiv 0 \pmod p$，$y = x^{\frac{p-1}{2}} \equiv \pm 1 \pmod p$
+因為$y$是$1$的平方根(?)
+然後$(ab)^{\frac{p-1}{2}} \equiv a^{(\frac{p-1}{2})} b^{(\frac{p-1}{2})}$
+所以可先把所有值先$(p-1)/2$次方，一定會是$\pm 1$，接著他們同步的條件就可以簡化成$a = b$了
+考慮到同步必須要是連續的性質，我們聯想到字串演算法中的後綴陣列，這題等價求兩個後綴的LCP，完全是SA的形狀XDD
+SA + RMQ資結收工
+注意查詢兩個同樣位置的情況，RMQ會查到空區間，不過我們知道這時候的答案顯然就是到尾巴的長度
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</guid><description>D.番茄大戰爭 https://tioj.ck.tp.edu.tw/problems/2019
+Description 兩個人在玩剪刀石頭布，而他們兩個人玩了$T$個回合。兩個人（此處稱為小奕和小安）各自有一個「策略」，分別為兩個字串$A$和$B$。兩個字串皆由R、P、S三個字元組成，分別代表小奕和小安會出石頭、布、剪刀。兩個人都會根據他們的「策略」出題，在第$i$個回合，小奕將會出$A _ {i \mod {|A|}}$，而小安將出$B _ {i \mod{|B|}}$，從$i = 0$開始。請輸出：經過$T$個回合後，兩人分別贏了幾局，平手了幾局。
+保證滿足：$1 \leq T \leq 10^9$，$1 \leq |A|, |B| \leq 10^6$，且$A, B$由R、P、S三個字元組成。
+Solution 首先，看到$1 \leq T \leq 10^9$當然想說直接給他寫個$\mathcal{O}(T)$，寫了五分鐘之後傳上去——AC——了前幾筆，之後就TLE了。所以，當然就來想怪做法嘍！
+先假設$|A| \leq |B|$。第一個想法就是，對於$A$裏頭的每一個字元$A_i$，我都看一次我會遇到哪些字元（$B_i, B _ {i + |A|}, B _ {i + 2\times|A|}, \dots$，也就是所有滿足$(i + k|A|) \mod{|B|} \leq T$的$B _ {(i + k|A|)\mod{|B|}}$，然後再$\mathcal{O}(1)$更新答案。這樣複雜度依然為$\mathcal{O}(T)$，因為還是每一個時間點都有戳到一次，只是改變順序而已了。不過！這個順序很重要，因為可以優化！
+若我們看$A_i$，我們先考慮它會遇到那些$B$的字元$$B_i, B _ {i + |A|}, B _ {i + 2\times|A|}, \dots $$，也就是所有的$B _ {i + k|A| \mod{|B|}}$。可以知道，這樣分可以將$B$的所有字元分成若干個相斥的群組$G_t$！具體做法就是，先看$A_i$，如果$B_i$尚未在一個群組裡面，就創立一個新的群組然後將所有的$B _ {i + k|A|}$加進去這個群組裡面。現在，就想要用這個新的資料儲存方式來加快我們的運算。</description></item><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</guid><description>F.無限兔子問題 https://tioj.ck.tp.edu.tw/problems/2021
+Description 令$F_i$是費式數列
+給定$s,t$，求$\sum\limits _ {i=s}^t\binom{F_i}{2}$
+Solution 這題也是有夠數學OwO
+題目所求是$\sum\limits _ {i=s}^t\frac{1}{2}{F_i(F_i - 1)}$
+可以想到分別求$\sum\limits _ {i=1}^nF_i$和$\sum\limits _ {i=1}^nF_i^2$
+前者可以用
+$$
+\left[
+\begin{matrix}
+0 &amp;amp; 1 &amp;amp; 0 \newline
+1 &amp;amp; 1 &amp;amp; 0 \newline
+1 &amp;amp; 1 &amp;amp; 1
+\end{matrix}
+\right]
+\left[
+\begin{matrix}
+F _ {i-2} \newline
+F _ {i-1} \newline
+S _ {i-1}
+\end{matrix}
+\right] =
+\left[
+\begin{matrix}
+F _ {i-1} \newline
+F_i \newline
+S_i
+\end{matrix}
+\right]</description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>愛蜜利雅的作業2 https://tioj.ck.tp.edu.tw/problems/1282
+Description 給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數
+$1 \leq n,q \leq 10^5$
+Solution 想法是利用區間加值等於對差分的兩個單點修改
+然後有一個性質是 $\gcd(a,b) = \gcd(a-b,b)$
+所以$[l,r]$區間的GCD會等於$\gcd(\gcd(a _ {l+1}-a_l, a _ {l+2}-a _ {l+1}, \dots, a_r-a _ {r-1}), a_r)$之類的
+求$a_r$可以用BIT就好，前面那項我則是用線段樹維護
+複雜度$\mathcal{O}(n\log c + q\log n \log c)$
+注意算完GCD要加絕對值，因為差分會出現負數，此時__gcd可能回傳負數
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item></channel></rss>

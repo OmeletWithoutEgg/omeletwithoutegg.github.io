@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>splay-tree on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/splay-tree/</link><description>Recent content in splay-tree on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 23 Jul 2021 18:16:13 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/splay-tree/index.xml" rel="self" type="application/rss+xml"/><item><title>PBDS Split Join Is Slow</title><link>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</link><pubDate>Fri, 23 Jul 2021 18:16:13 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</guid><description>幫 pbds 上香 如題。
+先說結論：
+官網的 document 寫說 split 跟 join 時間是「poly-logarithm」，但是其實目前為止 GNU 的 pbds 預設的 split 是 $\mathcal{O}(N)$ 的，請看這篇文章。
+不過有一些方法可以讓複雜度變回一次 split $\Theta(\log N)$，但是有一點麻煩。
+前言 Policy-Base Data Structure 簡稱 pbds ，是 GCC 提供的一系列資料結構的 template，而今天要談的是當中的 tree 型別。
+因為看到別人寫的 pbds 自訂 metadata_type 覺得很酷，因此想要來探索探索 pbds 一番。
+大概了解 node_update 怎麼運作之後，我試著去寫了 氣球博覽會，因為需要區間查詢，我使用了 tree::split(key, other) 和 tree::join(other)，沒想到全部吃 TLE，研究一番之後發現下面這樣的 code 就會執行不完了：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 #include &amp;lt;bits/extc++.</description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</guid><description>殿壬看蝴蝶 https://tioj.ck.tp.edu.tw/problems/2124
+Description 太長了，略
+Solution 看到第五種操作就會想用平衡樹去寫這題
+然後仔細看看就會發現第八種操作其實和其他操作都沒什麼關係，只有第三、四種操作會改變以蝴蝶編號為順序的區間和
+所以呢對蝴蝶的編號開一個線段樹、對樹的編號開個Splay就能AC了
+Splay只需要實現查一個節點在中序是第個、查中序第k個節點是什麼，還有剪切區間
+至於區間和就隨便維護吧XD，code如下，我不知道該對裸題做甚麼解釋
+寫剪切區間的splay的時候要注意的可能就是不要改到空節點(我是用0代表空節點)的任何值
+也小心不要讓合併的時候合併到同一棵splay，出現環
+中途有一次一個回傳int的函數忘記回傳東西，在TIOJ上吃SF
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 #include &amp;lt;cstdio&amp;gt;#include &amp;lt;cstdlib&amp;gt; const int N = 200025; int n, q, v[N]; struct SplayTree { struct node { int val, sz; int sum; int ch[2], pa; //bool rev; } S[N]; bool dir(int i) {return i==S[S[i].</description></item><item><title>TIOJ-1950</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</link><pubDate>Fri, 13 Dec 2019 23:26:11 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</guid><description>小向的試煉 2-3：轉！(Rotate!) https://tioj.ck.tp.edu.tw/problems/1950
+Description 給定長度$N$的排列，問「以交換任意兩個數字的方式排序這個序列需要多少次數」
+另外有$M$次修改，每次修改會交換數字$i$和數字$j$的位置，請輸出$M+1$行代表一開始和每次修改過後的答案
+Solution 已經知道每個數字應該被放到哪裡了，所以我們可以想到一個排序方法
+每次看某個位置$i$的數字$x$，如果和$i$不同的話就把$x$放到位置$x$的地方，再繼續對原本放在位置$x$的地方的數字做同樣的事
+可以發現這樣會形成好幾個「環」，例如範測的$(1, 4, 2, 5, 3)$會形成兩個環
+$$
+\begin{pmatrix}
+1
+\end{pmatrix}
+\begin{pmatrix}
+4 &amp;amp; 5 &amp;amp; 3 &amp;amp; 2
+\end{pmatrix}
+$$
+或是$(1, 6, 4, 5, 3, 2)$會形成三個環
+$$
+\begin{pmatrix}
+1
+\end{pmatrix}
+\begin{pmatrix}
+6 &amp;amp; 2
+\end{pmatrix}
+\begin{pmatrix}
+4 &amp;amp; 5 &amp;amp; 3
+\end{pmatrix}
+$$
+也就是說，每個環代表第一個元素要放到第二個元素的位置，第二個元素要放到第三個元素的位置&amp;hellip;以此類推
+一個大小$L$的環需要的交換次數是$L-1$，所以把$1\dots n$的排列排序好所需的時間就是$n-($環的個數$)$
+用數學一點的講法就是一個置換可以分解成好多不相交的輪換(?)而且方法是唯一的喔
+考慮一下交換了兩個數字會發生什麼事:
+如果他們在同一個「環」裡面，那那個環就會被切成兩個環
+反之則會讓兩個環合在一起，變成一個「環」
+示意圖大概就是這樣
+要怎麼辦到這件事呢？快速把元素之間連接或者切斷，我們會想到使用鏈結串列，但是這樣無法判斷他們是否在同一個環裡面
+退而求其次可以使用二元樹來維護，用$\mathcal{O}(\log n)$獲得可以剪切又可以黏貼序列的神力(?)
+我選擇用splay來實作，詳細的原理自己google OwO
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item></channel></rss>

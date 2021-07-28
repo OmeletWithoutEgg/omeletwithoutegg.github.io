@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>string on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/string/</link><description>Recent content in string on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 06 Dec 2019 10:36:19 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/string/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>同步(Sync) https://tioj.ck.tp.edu.tw/problems/1927
+Description 在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。
+有時遊戲中的兩人會產生「同步」的現象。產生同步的條件是兩人所在的格子的數字$a,b$分別滿足
+$$
+(ab)^{\frac{p-1}{2}} \equiv 1 \pmod p
+$$
+其中$p = 10^9 + 7$。產生同步後，兩人會瞬移至下一格。如果在下一格又產生「同步」，則會繼續往下走，直到其中一人超出格子範圍(到了終點了)或者兩人不再同步。
+Solution 對於$x \not\equiv 0 \pmod p$，$y = x^{\frac{p-1}{2}} \equiv \pm 1 \pmod p$
+因為$y$是$1$的平方根(?)
+然後$(ab)^{\frac{p-1}{2}} \equiv a^{(\frac{p-1}{2})} b^{(\frac{p-1}{2})}$
+所以可先把所有值先$(p-1)/2$次方，一定會是$\pm 1$，接著他們同步的條件就可以簡化成$a = b$了
+考慮到同步必須要是連續的性質，我們聯想到字串演算法中的後綴陣列，這題等價求兩個後綴的LCP，完全是SA的形狀XDD
+SA + RMQ資結收工
+注意查詢兩個同樣位置的情況，RMQ會查到空區間，不過我們知道這時候的答案顯然就是到尾巴的長度
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item></channel></rss>

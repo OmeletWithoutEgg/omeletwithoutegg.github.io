@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tree on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tree/</link><description>Recent content in tree on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 23 Feb 2020 11:34:03 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tree/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>Can You Arrive? https://tioj.ck.tp.edu.tw/problems/1798
+Description 地鐵有$N$個站，$M$條軌道，$K$段行駛路線
+站與站之間使用軌道連接
+保證軌道不會形成環，且$M = N-1$
+每段行駛路線代表有一輛車在兩站之間的最短路徑來回發車
+也就是說這段路上的任意兩站都是互通的，可以直接抵達不需轉車
+現在$Q$位妹子來向你問路，問你能不能從某一站經過任意多次的轉車搭到另一站。
+保證兩站不是同一站。
+$K \leq N \leq 10^6, M = N-1, Q \leq 10^6$
+Solution 每條行駛路線代表的就是在這條路徑上加值
+而查詢到不到得了就是查詢路徑上有沒有$0$
+可以採用輕重鏈剖分維護樹上路徑和
+因為修改都在詢問之前，所以利用前綴和就好，不需要開線段樹
+複雜度$\mathcal{O}(N + Q \log N)$
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</guid><description>1.銀河帝國旅行社 https://tioj.ck.tp.edu.tw/problems/1152
+Description 給一棵樹，找最遠的兩個點的距離
+Solution 這裡用類似DP的方法
+dfs(i) 回傳一個 {ans, deepest} 分別表示以$i$為根子樹中的答案和從$i$往下走的最遠距離
+那ans可以分成有經過$i$的和沒經過的，有經過的就看最深的兩個子樹加起來是多少，沒經過的就遞迴下去算
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 #include &amp;lt;bits/stdc++.h&amp;gt;#define pb emplace_back #define ff first #define ss second using namespace std; int n; vector&amp;lt;int&amp;gt; g[N]; pair&amp;lt;int,int&amp;gt; dfs(int i) { vector&amp;lt;int&amp;gt; tmp{0}; int ans = 0; for(int j: g[i]) { auto p = dfs(j); ans = max(ans, p.</description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</guid><description>動態樹的奮鬥 為了這題的Link-Cut-Tree解我花了不只一整天XD
+壓常實在是神奇的事，把 long long 改成 int 再加上幾個 pragma 終於成功壓過唯一奇怪的那筆= =
+而且 push 竟然還不能用遞迴寫，到底三小
+LCT怎麼這麼可撥XD
+不過壓過去那筆之後其他筆的執行時間加起來超少，值得了
+註: 模板是參考日月卦長那裡的，大概不會有時間會為這篇補上解說吧，大家自己google
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 #pragma g++ optimize(&amp;#34;Ofast&amp;#34;) #pragma loop_opt(on) #include &amp;lt;cstdio&amp;gt;#include &amp;lt;bitset&amp;gt;#include &amp;lt;algorithm&amp;gt;using namespace std; typedef long long ll; const int N = 100025; inline char readchar() { const static int B = 1&amp;lt;&amp;lt;20; static char buf[B], *p, *q; // p,q would be initialized with nullptr if(p == q &amp;amp;&amp;amp; (q=(p=buf)+fread(buf,1,B,stdin)) == buf) return EOF; return *p++; } inline int nextint() { int x = 0, c = readchar(); while(&amp;#39;0&amp;#39;&amp;gt;c || c&amp;gt;&amp;#39;9&amp;#39;) c = readchar(); while(&amp;#39;0&amp;#39;&amp;lt;=c&amp;amp;&amp;amp;c&amp;lt;=&amp;#39;9&amp;#39;) x = x*10 + (c^&amp;#39;0&amp;#39;), c = readchar(); return x; } // \sum{cnt[p] * w[p]} struct LinkCutTree { // Splay struct node { ll ws, sum; int laz, cnt, w; int ch[2], pa; } S[N]; bool isroot(int x) { // is the root of the splay tree return S[S[x].</description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>我要成為海賊王 https://tioj.ck.tp.edu.tw/problems/1171
+Description 給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和
+Solution 可能算是經典題吧，這邊提供兩種寫法: 重心剖分和輕重鍊剖分
+重心剖分 重心剖分的核心想法是樹分治，每次拔掉一個點，並統計有經過這個點的答案並遞迴計算沒經過該點的答案
+為了確保複雜度，每次拔掉重心是一個好選擇
+也許可以發現每個頂點都會當一次重心(?)
+並且若把每次拔掉的重心$c$和分治下去的每個子樹找到的重心$c&amp;rsquo;$都連邊，也會是一棵樹，稱為重心樹
+假設我要查詢$x$這個點，我們就枚舉$x$在重心樹上的祖先
+對於所有黑色頂點$b$來說都可以找到恰一個祖先$c$使得$b,x$最後是被$c$分開的
+可以想到紀錄$cnt_c, sum_c$分別代表分治到以$c$為重心的時候的子樹中，黑色節點的數量以及與$c$的距離和
+加加減減就能得到答案了
+算式好難推QQ去查了YP的題解才知道怎麼寫
+記得在重心樹往上爬的時候必須減掉和下一層有關的一些東西，要避免有重複的邊的路徑被計算到
+式子可能長得像這樣吧
+$$
+\sum _ {p\not=croot} sum_q + cnt_q \cdot path(q,x) - sum_p - cnt_p \cdot path(p,q)
+$$
+其中$q$是$p$在重心樹上的父節點
+每次詢問的複雜度是重心樹的深度也就是$\mathcal{O}(\log n)$
+輕重鍊剖分 用$b$和$B$代表黑色頂點和他們的集合，$dis_v$代表從根走到$v$的距離
+把所求寫成
+$$
+\sum _ {b\in B} dis_x + \sum _ {b\in B} dis_b - 2\sum _ {b\in B} dis _ {LCA(b,x)} = |B|dis_x + \sum _ {b\in B}dis_b - 2 \sum _ {b\in B} dis _ {LCA(b,x)}</description></item></channel></rss>
