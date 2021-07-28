@@ -24,7 +24,7 @@ Policy-Base Data Structure 簡稱 pbds ，是 GCC 提供的一系列資料結構
 using namespace std;
 
 using BST = __gnu_pbds::tree<int, __gnu_pbds::null_type, less<int>,
-      __gnu_pbds::rb_tree_tag>;
+      __gnu_pbds::rb_tree_tag, tree_order_statistics_node_update>;
 signed main() {
     ios_base::sync_with_stdio(0), cin.tie(0);
     BST A, B, C;
@@ -94,6 +94,7 @@ namespace std {
         // jump until root
         while (it->m_p_parent->m_p_parent != it)
             it = it->m_p_parent;
+        // returns the size for the whole tree (only for split)
         return it->get_metadata();
     }
 }
@@ -101,7 +102,6 @@ namespace std {
 void splayAfterSplit(BST &bst) {
     if (bst.empty()) return;
     bst.find(*bst.begin());
-    bst.find(*bst.rbegin());
 }
 
 signed main() {

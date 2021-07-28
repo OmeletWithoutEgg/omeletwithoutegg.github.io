@@ -21,24 +21,24 @@ tags: [template, math]
 ## 通靈
 定義一個函數 $G$，對於形式冪級數 $f(x) = \sum c_i x^i, G(f) = \sum c_i a_i$ 。
 顯然$G(f \pm g) = G(f) \pm G(g)$。
-根據 $s$ 構造一個多項式
+根據 $s$ 構造一個多項式 $S$
 
 $$
-f(x) = x^k - \sum _ {i=0} ^ {k-1} s_i x^{k-1-i}
+S(x) = x^k - \sum _ {i=0} ^ {k-1} s_i x^{k-1-i}
 $$
 
-可以發現 $G(f) = 0$，因為代進去正好是 $a_i - \sum\limits _ {j=0} ^ {k-1} s _ j a _ {i-1-j} = 0 $。
-而且，平移之後也會滿足遞迴關係，所以 $G(fx) = G(fx^2) = \dots = 0$。
-上面兩條可以得知，對於任何多項式$g$都有$G(fg) = 0$。
+可以發現 $G(S) = 0$，因為代進去正好是 $a_i - \sum\limits _ {j=0} ^ {k-1} s _ j a _ {i-1-j} = 0 $。
+而且，平移之後也會滿足遞迴關係，所以 $G(Sx) = G(Sx^2) = \dots = 0$。
+由上面兩條可以得知，對於任何多項式$f$都有$G(Sf) = 0$。
 
-我們想求的第$n$項，正好就是$G(x^n)$，不妨取 $\displaystyle g = \lfloor \frac{x^n}{f} \rfloor$，則$G(x^n) = G(x^n - fg) = G(x^n \mod f)$。
-上述$\lfloor \frac{x^n}{f} \rfloor$ 和 $x^n \mod f$分別代表多項式帶餘除法的商和餘數。
+我們想求的第$n$項，正好就是$G(x^n)$，不妨取 $\displaystyle f = \lfloor \frac{x^n}{S} \rfloor$，則$G(x^n) = G(x^n - Sf) = G(x^n \mod S)$。
+上述$\lfloor \frac{x^n}{S} \rfloor$ 和 $x^n \mod S$ 分別是多項式帶餘除法的商和餘數。
 
 ## 結論
 證明也很快。
-總而言之，只要求得$x^n \mod f$（注意這個東西的degree是$\mathcal{O}(k)$），再帶進$G$就能得到 $a_n$！
-可以對$n$做類似快速冪的事情，每次算$x^{n/2} \cdot x^{n/2} \mod f$之類的，如果是mod質數的話，甚至可以利用FFT或是NTT來快速多項式帶餘除法作到總複雜度 $\mathcal{O}(k\log k \log n)$，不過超出今天的篇幅所以這邊只放$\mathcal{O}(k^2 \log n)$的寫法。
-老實說$\mathcal{O}(k^2)$的$\mod f$比想像中好寫，只要從大到小不斷把$x^k$換成$ \sum\limits _ {i=0} ^{k-1} s_i x^{k-1-i}$ 就好
+總而言之，只要求得$x^n \mod S$（注意這個東西的degree是$\mathcal{O}(k)$），再帶進$G$就能得到 $a_n$！
+可以對$n$做類似快速冪的事情，每次算$x^{n/2} \cdot x^{n/2} \mod S$之類的，如果是mod質數的話，甚至可以利用FFT或是NTT來快速多項式帶餘除法作到總複雜度 $\mathcal{O}(k\log k \log n)$，不過超出今天的篇幅所以這邊只放$\mathcal{O}(k^2 \log n)$的寫法。
+老實說$\mathcal{O}(k^2)$的$\mod S$比想像中好寫，只要從大到小不斷把$x^k$換成$ \sum\limits _ {i=0} ^{k-1} s_i x^{k-1-i}$ 就好
 
 ```cpp
 template <typename T>
