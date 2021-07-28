@@ -91,6 +91,7 @@ weight = 6
     defaultAuthor = "2qbingxuan"
 
     mathjax = true
+    css = ["css/style-dark.css"]
   
     [params.comments]
     enabled = true # default
