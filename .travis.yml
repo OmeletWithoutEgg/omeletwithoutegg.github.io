@@ -18,7 +18,6 @@ script:
 deploy:
   strategy: git
   provider: pages
-  skip_cleanup: true
   token: $GITHUB_TOKEN
   local_dir: $TRAVIS_BUILD_DIR/public
   on:
