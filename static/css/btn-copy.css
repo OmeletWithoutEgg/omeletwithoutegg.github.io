@@ -1,0 +1,13 @@
+.highlight:hover .btn-copy {
+  opacity: 1;
+}
+.highlight .btn-copy {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 20px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in;
+}
+.highlight .btn-copy:hover {
+  color: #2bbc8a;
+}
