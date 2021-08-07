@@ -50,7 +50,8 @@ weight = 6
 
 # Markup Config
 [markup]
-    defaultMarkdownHandler = "blackfriday"
+    [markup.goldmark.renderer]
+        hardWraps = true
     [markup.tableOfContents]
         endLevel = 4
         ordered = false
@@ -64,9 +65,6 @@ weight = 6
         lineNumbersInTable = true
         noClasses = true
         tabWidth = 4
-
-[blackfriday]
-    extensions = ["hardLineBreak"] # hard line break
 
 [params]
 
@@ -91,7 +89,7 @@ weight = 6
     defaultAuthor = "2qbingxuan"
 
     mathjax = true
-    css = ["css/highlight.css", "css/btn-copy.css", "css/search.css"]
+    css = ["css/highlight.css", "css/btn-copy.css", "css/search.css", "css/highlight-table.css"]
   
     [params.comments]
     enabled = true # default
