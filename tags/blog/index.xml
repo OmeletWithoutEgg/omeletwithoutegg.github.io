@@ -6,18 +6,11 @@ Startup Hugo沒有預設的theme，所以如果不想無中生有一定要裝一
 總之試著寫一個markdown然後 hugo server
 驚訝的發現他超快XDD應該說是Hexo太慢了，我想node.js天生本來就有一些缺點吧。
 既然可以拋棄噁心的 node_modules 還有底線，而且還可以讓他 generate 的時間變超快，我決定試看看能不能把整個網站從Hexo改成用Hugo寫，並且同時大部份東西仍然保持跟之前相同，例如Repo、網址、code highlight、search/tag feature等等
-一些遇到的問題 Hard Line Break
-這個蠻可怕的。在用Hexo的時候沒什麼感覺，但是我的Markdown全部都是用直接換行來換行；而Hugo預設不是，也就是說他應該要用兩個空格或是反斜線的方式來換行。這其實是Markdown預設的換行方式，但是真的很不習慣，不知道該怎麼說。而且也不可能一個一個檔案調整XD
-Solution:
-一開始查到可以在 config.html 裡面加
-1 2 [blackfriday] extensions = [&amp;#34;hardLineBreak&amp;#34;] 不過都沒有效。後來才知道Blackfriday是Hugo原本拿來render markdown的東西，而某次更新之後已經換成Goldmark這個套件了。
-基於我找不到怎麼在Goldmark加上 Hard Line Break 的選項，我選擇改回用Blackfriday render就好。
-1 2 [markup] defaultMarkdownHandler = &amp;#34;blackfriday&amp;#34; 沒有search
-Solution:
+一些遇到的問題 Hard Line Break 這個蠻可怕的。在用Hexo的時候沒什麼感覺，但是我的Markdown全部都是用直接換行來換行；而Hugo預設不是，也就是說他應該要用兩個空格或是反斜線的方式來換行。這其實是Markdown預設的換行方式，但是真的很不習慣，不知道該怎麼說。而且也不可能一個一個檔案調整XD Solution:
+一開始查到可以在 config.html 裡面加 1 2 [blackfriday] extensions = [&amp;#34;hardLineBreak&amp;#34;] 不過都沒有效。後來才知道Blackfriday是Hugo原本拿來render markdown的東西，而某次更新之後已經換成Goldmark這個套件了。 基於我找不到怎麼在Goldmark加上 Hard Line Break 的選項，我選擇改回用Blackfriday render就好。 1 2 [markup] defaultMarkdownHandler = &amp;#34;blackfriday&amp;#34; 沒有search Solution:
 Google了一陣子。中間找到這個使用Fuse.js的一個實作，不知道為什麼是放在討論區：https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae
 雖然蠻快找到，不過我踩了很多雷。
-首先是他寫法是 define &amp;quot;footerfiles&amp;quot;，但是我的theme的基底模板沒有block &amp;quot;footerfiles&amp;quot;的區塊。所以我目前是把那段script跟他定義的main放在一起。
-再來是mark.js，一直出現 $(.</description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description> 這是一篇測試用的文章
+首先是他寫法是 define &amp;quot;footerfiles&amp;quot;，但是我的theme的基底模板沒有block &amp;quot;footerfiles&amp;quot;的區塊。所以我目前是把那段script跟他定義的main放在一起。</description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description>這是一篇測試用的文章
 A quick brown fox jumps over the lazy dog.
 引用文字
 標題 二級標題 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;Hello hexo&amp;#34; &amp;lt;&amp;lt; std::endl; } 1 2 3 $ hexo clean $ hexo s -g $ echo 7122</description></item></channel></rss>

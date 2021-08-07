@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>experience on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/experience/</link><description>Recent content in experience on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 01 Jul 2021 07:11:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml"/><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>IOI 2021 只是想打一下IOI的心得而已
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>experience on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/experience/</link><description>Recent content in experience on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 08 Aug 2021 00:28:51 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml"/><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>除錯模板的重要 這是一篇很短的廢文。
+當你發現你寫出的程式有 bug 的時候，就會是你花上很多時間的時候。
+尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 // An AC a day keeps the doctor away. #pragma GCC optimize(&amp;#34;Ofast&amp;#34;) #include &amp;lt;bits/stdc++.h&amp;gt;#ifdef local #define safe std::cerr&amp;lt;&amp;lt;__PRETTY_FUNCTION__&amp;lt;&amp;lt;&amp;#34; line &amp;#34;&amp;lt;&amp;lt;__LINE__&amp;lt;&amp;lt;&amp;#34; safe\n&amp;#34; #define debug(args...) qqbx(#args, args) #define orange(args.</description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>IOI 2021 只是想打一下IOI的心得而已
 可能還是流水帳請多多包含(?)
 Before 其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強
 因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西
@@ -74,7 +77,8 @@ registers實在有點長，當然只能先去看dungeons
 我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X
 Usage https://github.com/ifsmirnov/jngen
 要使用jngen，你只需要下載jngen.h並引用標頭檔。下載來的標頭檔可以放在 /usr/include 之類的地方，或是跟你的C++原始碼相同目錄當中。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #include &amp;#34;jngen.h&amp;#34;#include &amp;lt;iostream&amp;gt; using std::cout, std::endl; int main(int argc, char *argv[]) { parseArgs(argc, argv); int n, m; getPositional(n, m); Tree t = Tree::bamboo(n).link(n - 1, Tree::star(m), 0); if (getOpt(&amp;#34;shuffled&amp;#34;, false)) { t.shuffle(); } cout &amp;lt;&amp;lt; t.printN().add1() &amp;lt;&amp;lt; endl; } 下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。</description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</link><pubDate>Thu, 21 Jan 2021 00:11:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</guid><description>這篇是想放一些神奇的C++語法錯誤
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #include &amp;#34;jngen.h&amp;#34;#include &amp;lt;iostream&amp;gt; using std::cout, std::endl; int main(int argc, char *argv[]) { parseArgs(argc, argv); int n, m; getPositional(n, m); Tree t = Tree::bamboo(n).link(n - 1, Tree::star(m), 0); if (getOpt(&amp;#34;shuffled&amp;#34;, false)) { t.shuffle(); } cout &amp;lt;&amp;lt; t.printN().add1() &amp;lt;&amp;lt; endl; } 下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。
+Random jngen跟testlib一樣會使用你執行時傳入的參數做一些hash之類的當作偽隨機的種子，所以如果不是每次呼叫main都用不同參數呼叫，就得乾脆把一個種子在一個generator裡面重複利用。</description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</link><pubDate>Thu, 21 Jan 2021 00:11:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</guid><description>這篇是想放一些神奇的C++語法錯誤
 也可能會放基礎的(X
 然後可能會是動態更新
 lambda capture (Update: 2021/1/21)
@@ -93,12 +97,8 @@ casper說看懂code就解完了（？）不過他沒辦法編譯所以也不知�
 1 2 3 4 5 6 7 8 #!/bin/bash # search possible keys len=51 printf &amp;#34;len = %d\n&amp;#34; $len for i in $(seq 0 255); do echo $i printf &amp;#34;%51s\n%d\n&amp;#34; &amp;#39;&amp;#39; $i | tr &amp;#34; &amp;#34; &amp;#34;a&amp;#34; | ./Main 2&amp;gt;/dev/null &amp;gt;/dev/null &amp;amp;&amp;amp; printf &amp;#34;i = %d\n\n&amp;#34; $i &amp;gt;&amp;gt; possible.txt done 但是關鍵的加密部份怎麼樣都不確定我看的對不對，所以我先把nimber的乘法表弄成一個文字檔存起來，再另外寫一個python跟Haskell的輸出比對</description></item><item><title>Miku Cursor on Arch Linux</title><link>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</link><pubDate>Thu, 10 Dec 2020 17:05:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</guid><description>在Arch的初音游標 因為在Windows有下載一個可愛的初音游標，但是之前換成Ubuntu後就沒有把他裝回來，覺得很可惜。
 因此現在換成Arch之後，想說應該有一些社群的package可以用了，直接抓來就好，但是怎麼google都google不到？
 因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。
-找到巴哈姆特上面的原始檔（是.ani跟.cur）
-利用cursor-converter把.ani和.cur換成x-cursor的icon類型
-手動把對應的圖案複製到 ~/.icons/$THEME/cursors 裡面
-如果不知道哪個檔名是什麼的話，可以先複製別的theme的資料夾，接著用 xcur2png 換成 png看某個檔案實際上是對應哪個圖案。
-加上 index.theme。反正只要有Name就可以了吧我猜
-中間踩了各種怪東西XD
+找到巴哈姆特上面的原始檔（是.ani跟.cur） 利用cursor-converter把.ani和.cur換成x-cursor的icon類型 手動把對應的圖案複製到 ~/.icons/$THEME/cursors 裡面
+如果不知道哪個檔名是什麼的話，可以先複製別的theme的資料夾，接著用 xcur2png 換成 png看某個檔案實際上是對應哪個圖案。 加上 index.theme。反正只要有Name就可以了吧我猜 中間踩了各種怪東西XD
 我原本先去下載了其他主題，想說看別的主題的游標應該是什麼對應到什麼，尤其是有動畫的。
 不過似乎有動畫的游標和沒動畫的檔名一樣QQ
 然後有找到一個ani2png，但是畫質會爆炸而且沒有幫忙放到對應的位置（雖然最後也是我們自己放到對應的位置）
@@ -254,7 +254,7 @@ joy一直推薦西西里雞腿堡加蛋加起司，不過我覺得沒有傳言�
 不過撈部分分的能力應該才是真正決勝的地方，有請品翔喇分大師分享入營考0AC的經驗
 列舉事項 因為一階遇到很多酷哥，所以我要從facebook抄過來那段列舉
 幾件神奇的事情：
-1. thomaswang和ericxiao分別站在爛梗光譜的兩端</description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>2020 IOIC 小記 五天都11點回家 好累喔
+thomaswang和ericxiao分別站在爛梗光譜的兩端 西餐廳的拉麵超糟 午餐吃早餐部唯一真理吧 天天喝微舒打好爽 吃飯店的早餐有夠爽 晚餐或晚上超常打拿破崙 seanliu打了兩個禮拜竟然有規則不知道 然後蕭電超強 YoJaHuang&amp;amp;品翔歌神了吧 實中的人都超酷 除了tommydong比較正常一點 仲群病毒大家都一直學www 「我燒雞」 「呃 我弱」 casperwang洗澡專家 不過還是教不會品翔 好多東西都是第一次接觸到 例如十二人狼人殺或是學生餐廳的點餐方法www 待續&amp;hellip; 因為打這篇的時候我在學校努力上課(?</description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>2020 IOIC 小記 五天都11點回家 好累喔
 不過聽到很多神奇技巧和神奇題目(?)
 Day 1 早上是常數優化與電腦結構，看到一些毒瘤的東東還有會造成我常數大的一些寫法
 中午有貓貓時間，電仁分享了他競程的心得之後，丟給我們一些題目
@@ -303,7 +303,8 @@ Pattern這東西好神奇喔，我想還要好久我才能通透，感覺題目�
 下午是數學，但在上課之前出現神秘講師短短的講了Splay和LCT就不見了XD(聽說他是原本FFT的講師?)
 中堂休息之後突然就切換到數學模式，頓時有種我不會數學的感覺，明明聽過那麼多東西卻無法好好應用
 (也許我應該去精進我的數學實力? 要怎麼讀啊?)
-個人賽一開始有想法只有pB，看到Scoreboard上面大家都AC pD就猜是水結論題直接給他猜結論下去XDD</description></item><item><title>bamboofox-ctf</title><link>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</link><pubDate>Thu, 02 Jan 2020 15:00:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</guid><description>這次打跨年CTF應該是我第一次打一個正常的CTF吧（？）
+個人賽一開始有想法只有pB，看到Scoreboard上面大家都AC pD就猜是水結論題直接給他猜結論下去XDD
+接著花時間把pB寫掉了，雖然看到一些人在丟pC不過沒什麼想法，反而翻到pE是今天電石上課直接講過的東西XD</description></item><item><title>bamboofox-ctf</title><link>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</link><pubDate>Thu, 02 Jan 2020 15:00:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</guid><description>這次打跨年CTF應該是我第一次打一個正常的CTF吧（？）
 感覺好多有趣的題目www
 https://ctf.bamboofox.cs.nctu.edu.tw/
 Solved Problems Welcome Joy說看題目給的影片就有flag了

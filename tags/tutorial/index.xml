@@ -5,10 +5,8 @@
 Kuhn Munkres 這裡介紹KM演算法，而若要求解二分圖上的最大權匹配等相關問題可以透過下面的演算法轉換成KM的模型。
 KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法，其中邊的權重都是非負的。
 演算法轉換 最大權匹配 $\to$ 最大權完全二分圖完美匹配(非負邊權)
-把不存在的邊以及負邊權的邊邊權設成0
-最大權完美匹配(有負邊權) $\to$ 最大權完全二分圖完美匹配(非負邊權)
-把不存在的邊邊權設成0，並且把剩下每條邊的邊權加上一個夠大的數$M$，這樣就會傾向於選出儘量多邊。最後的答案記得要扣掉這些$M$
-可以想想看為什麼上面兩種轉換是對的
+把不存在的邊以及負邊權的邊邊權設成0 最大權完美匹配(有負邊權) $\to$ 最大權完全二分圖完美匹配(非負邊權)
+把不存在的邊邊權設成0，並且把剩下每條邊的邊權加上一個夠大的數$M$，這樣就會傾向於選出儘量多邊。最後的答案記得要扣掉這些$M$ 可以想想看為什麼上面兩種轉換是對的
 把問題敘述再好好的寫一遍
 Description 給你一張完全二分圖 $K _ {n,n}$ ，每條邊 $e = (x_i,y_j)$ 有邊權 $w _ e$
 請選出 $n$ 條邊 $e_1, e_2, \cdots e_n$ 兩兩不共端點，使得邊權和$\sum\limits _ {i=1}^n w _ {e _ i}$最大
@@ -55,10 +53,8 @@ A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline
 C(x) = A(x)B(x)</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>迭代式線段樹 先備知識: 線段樹(帶懶標) + 位元運算(吧)
 如果讀者還不知道線段樹的原理最好看遞迴的(?)
 單點修改 例題仍然是萬年RMQ
-&amp;gt; 給定一個長度$n$的序列，請支援以下操作
-&amp;gt; 1. 將位置$p$的值改為$x$
-&amp;gt; 2. 查詢區間$[l,r)$的最大值
-完美二元樹 首先假定$n$是2的冪次，思考可能可以簡單一些
+給定一個長度$n$的序列，請支援以下操作
+將位置$p$的值改為$x$ 查詢區間$[l,r)$的最大值 完美二元樹 首先假定$n$是2的冪次，思考可能可以簡單一些
 我們一樣用1當根，並且節點i的左右子樹會是i*2和i*2+1或寫成i&amp;lt;&amp;lt;1, i&amp;lt;&amp;lt;1|1
 1 2 const int N = 1&amp;lt;&amp;lt;18; int tr[N&amp;lt;&amp;lt;1], n; 對於初始化來說，可以發現葉子節點對應的都是長度$1$的區間，正好是原序列的值，所以可以直接讀入或另外傳入賦值給 tr[i+n]，接著可以用遞減的順序把其他長度的區間的答案算好
 1 2 3 4 void build(int v[]) { for(int i = 0; i &amp;lt; n; i++) tr[i+n] = v[i]; for(int i = n-1; i &amp;gt; 0; i--) tr[i] = max(tr[i&amp;lt;&amp;lt;1], tr[i&amp;lt;&amp;lt;1|1]); } 更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到</description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>常用的輸入(出)優化 cin / cout 因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用

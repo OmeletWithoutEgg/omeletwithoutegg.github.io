@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 23 Jul 2021 18:16:13 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>PBDS Split Join Is Slow</title><link>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</link><pubDate>Fri, 23 Jul 2021 18:16:13 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</guid><description>幫 pbds 上香 如題。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 08 Aug 2021 00:28:51 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>除錯模板的重要 這是一篇很短的廢文。
+當你發現你寫出的程式有 bug 的時候，就會是你花上很多時間的時候。
+尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 // An AC a day keeps the doctor away. #pragma GCC optimize(&amp;#34;Ofast&amp;#34;) #include &amp;lt;bits/stdc++.h&amp;gt;#ifdef local #define safe std::cerr&amp;lt;&amp;lt;__PRETTY_FUNCTION__&amp;lt;&amp;lt;&amp;#34; line &amp;#34;&amp;lt;&amp;lt;__LINE__&amp;lt;&amp;lt;&amp;#34; safe\n&amp;#34; #define debug(args...) qqbx(#args, args) #define orange(args.</description></item><item><title>PBDS Split Join Is Slow</title><link>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</link><pubDate>Fri, 23 Jul 2021 18:16:13 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</guid><description>幫 pbds 上香 如題。
 先說結論：
 官網的 document 寫說 split 跟 join 時間是「poly-logarithm」，但是其實目前為止 GNU 的 pbds 預設的 split 是 $\mathcal{O}(N)$ 的，請看這篇文章。
 不過有一些方法可以讓複雜度變回一次 split $\Theta(\log N)$，但是有一點麻煩。
@@ -58,29 +61,8 @@ registers實在有點長，當然只能先去看dungeons
 平行化大概需要170個操作左右，和最後一個subtask要求150只差一點但是怎麼都壓不過，傷心
 後來看著dungeons一直想他怎麼樣會加倍，突然就想到2的冪次分層
 也就是說如果現在的強度 $z\in[2^i,2^{i+1})$ 就說現在在第 $i$ 層，那一定會輸 $2^{i+1}$ 以上的人、贏 $2^i$ 以下的人，而一旦贏了中間的人就會跳到下一層!</description></item><item><title>Resources</title><link>https://omeletwithoutegg.github.io/resources/</link><pubDate>Sun, 14 Feb 2021 20:15:17 +0800</pubDate><guid>https://omeletwithoutegg.github.io/resources/</guid><description>這裡是放各種友情連結(X)
-其他人的 blog https://www.wiwiho.me/
-https://www.jikuai.codes/
-https://fhvirus.github.io/
-https://casperwang.github.io/
-https://erdone.github.io/
-https://emanlaicepsa.github.io/
-https://simba-fs.github.io/
-https://blog.tommydong.live/
-年久失修（？）的 blog 其實我猜我的 blog 很快也要年久失修ㄌ
-https://brian.su/
-https://codingsimplifylife.blogspot.com/
-http://sunmoon-template.blogspot.com/
-http://cbdcoding.blogspot.com/
-https://oi.ototot.tw/
-https://tmt514.github.io/blog
-http://baluteshih.blogspot.com/
-for 競程的工具 OI checklist
-CF, TIOJ, AtCoder
-USACO Guide
-Draw Graph
-Library Checker
-vim、vim-plug
-蹭熱度蹭起來啦。雖然不知道這樣算不算蹭。</description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。
+其他人的 blog https://www.wiwiho.me/ https://www.jikuai.codes/ https://fhvirus.github.io/ https://casperwang.github.io/ https://erdone.github.io/ https://emanlaicepsa.github.io/ https://simba-fs.github.io/ https://blog.tommydong.live/ 年久失修（？）的 blog 其實我猜我的 blog 很快也要年久失修ㄌ
+https://brian.su/ https://codingsimplifylife.blogspot.com/ http://sunmoon-template.blogspot.com/ http://cbdcoding.blogspot.com/ https://oi.ototot.tw/ https://tmt514.github.io/blog http://baluteshih.blogspot.com/ for 競程的工具 OI checklist CF, TIOJ, AtCoder USACO Guide Draw Graph Library Checker vim、vim-plug 蹭熱度蹭起來啦。雖然不知道這樣算不算蹭。</description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。
 主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。
 Fast Linear Recurrence 首先先來介紹如何快速求線性遞迴。
 定義 已知序列 $ \langle a_n \rangle $ 滿足遞迴關係 $ \displaystyle \forall i \geq k, a_i = \sum _ {j=0} ^ {k-1} s _ j a _ {i-1-j} $ ，並且已經給定 $s$ 跟 $a_0, a_1, \dots, a _ {k-1}$
@@ -110,7 +92,8 @@ Fast Linear Recurrence 首先先來介紹如何快速求線性遞迴。
 我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X
 Usage https://github.com/ifsmirnov/jngen
 要使用jngen，你只需要下載jngen.h並引用標頭檔。下載來的標頭檔可以放在 /usr/include 之類的地方，或是跟你的C++原始碼相同目錄當中。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #include &amp;#34;jngen.h&amp;#34;#include &amp;lt;iostream&amp;gt; using std::cout, std::endl; int main(int argc, char *argv[]) { parseArgs(argc, argv); int n, m; getPositional(n, m); Tree t = Tree::bamboo(n).link(n - 1, Tree::star(m), 0); if (getOpt(&amp;#34;shuffled&amp;#34;, false)) { t.shuffle(); } cout &amp;lt;&amp;lt; t.printN().add1() &amp;lt;&amp;lt; endl; } 下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。</description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</link><pubDate>Thu, 21 Jan 2021 00:11:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</guid><description>這篇是想放一些神奇的C++語法錯誤
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #include &amp;#34;jngen.h&amp;#34;#include &amp;lt;iostream&amp;gt; using std::cout, std::endl; int main(int argc, char *argv[]) { parseArgs(argc, argv); int n, m; getPositional(n, m); Tree t = Tree::bamboo(n).link(n - 1, Tree::star(m), 0); if (getOpt(&amp;#34;shuffled&amp;#34;, false)) { t.shuffle(); } cout &amp;lt;&amp;lt; t.printN().add1() &amp;lt;&amp;lt; endl; } 下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。
+Random jngen跟testlib一樣會使用你執行時傳入的參數做一些hash之類的當作偽隨機的種子，所以如果不是每次呼叫main都用不同參數呼叫，就得乾脆把一個種子在一個generator裡面重複利用。</description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</link><pubDate>Thu, 21 Jan 2021 00:11:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/21/cppbugs/</guid><description>這篇是想放一些神奇的C++語法錯誤
 也可能會放基礎的(X
 然後可能會是動態更新
 lambda capture (Update: 2021/1/21)
@@ -150,12 +133,8 @@ Solution 首先每個車的位置對於時間是一個一次函數，而「每�
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 #include &amp;lt;bits/stdc++.</description></item><item><title>Miku Cursor on Arch Linux</title><link>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</link><pubDate>Thu, 10 Dec 2020 17:05:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</guid><description>在Arch的初音游標 因為在Windows有下載一個可愛的初音游標，但是之前換成Ubuntu後就沒有把他裝回來，覺得很可惜。
 因此現在換成Arch之後，想說應該有一些社群的package可以用了，直接抓來就好，但是怎麼google都google不到？
 因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。
-找到巴哈姆特上面的原始檔（是.ani跟.cur）
-利用cursor-converter把.ani和.cur換成x-cursor的icon類型
-手動把對應的圖案複製到 ~/.icons/$THEME/cursors 裡面
-如果不知道哪個檔名是什麼的話，可以先複製別的theme的資料夾，接著用 xcur2png 換成 png看某個檔案實際上是對應哪個圖案。
-加上 index.theme。反正只要有Name就可以了吧我猜
-中間踩了各種怪東西XD
+找到巴哈姆特上面的原始檔（是.ani跟.cur） 利用cursor-converter把.ani和.cur換成x-cursor的icon類型 手動把對應的圖案複製到 ~/.icons/$THEME/cursors 裡面
+如果不知道哪個檔名是什麼的話，可以先複製別的theme的資料夾，接著用 xcur2png 換成 png看某個檔案實際上是對應哪個圖案。 加上 index.theme。反正只要有Name就可以了吧我猜 中間踩了各種怪東西XD
 我原本先去下載了其他主題，想說看別的主題的游標應該是什麼對應到什麼，尤其是有動畫的。
 不過似乎有動畫的游標和沒動畫的檔名一樣QQ
 然後有找到一個ani2png，但是畫質會爆炸而且沒有幫忙放到對應的位置（雖然最後也是我們自己放到對應的位置）
@@ -172,18 +151,11 @@ Startup Hugo沒有預設的theme，所以如果不想無中生有一定要裝一
 總之試著寫一個markdown然後 hugo server
 驚訝的發現他超快XDD應該說是Hexo太慢了，我想node.js天生本來就有一些缺點吧。
 既然可以拋棄噁心的 node_modules 還有底線，而且還可以讓他 generate 的時間變超快，我決定試看看能不能把整個網站從Hexo改成用Hugo寫，並且同時大部份東西仍然保持跟之前相同，例如Repo、網址、code highlight、search/tag feature等等
-一些遇到的問題 Hard Line Break
-這個蠻可怕的。在用Hexo的時候沒什麼感覺，但是我的Markdown全部都是用直接換行來換行；而Hugo預設不是，也就是說他應該要用兩個空格或是反斜線的方式來換行。這其實是Markdown預設的換行方式，但是真的很不習慣，不知道該怎麼說。而且也不可能一個一個檔案調整XD
-Solution:
-一開始查到可以在 config.html 裡面加
-1 2 [blackfriday] extensions = [&amp;#34;hardLineBreak&amp;#34;] 不過都沒有效。後來才知道Blackfriday是Hugo原本拿來render markdown的東西，而某次更新之後已經換成Goldmark這個套件了。
-基於我找不到怎麼在Goldmark加上 Hard Line Break 的選項，我選擇改回用Blackfriday render就好。
-1 2 [markup] defaultMarkdownHandler = &amp;#34;blackfriday&amp;#34; 沒有search
-Solution:
+一些遇到的問題 Hard Line Break 這個蠻可怕的。在用Hexo的時候沒什麼感覺，但是我的Markdown全部都是用直接換行來換行；而Hugo預設不是，也就是說他應該要用兩個空格或是反斜線的方式來換行。這其實是Markdown預設的換行方式，但是真的很不習慣，不知道該怎麼說。而且也不可能一個一個檔案調整XD Solution:
+一開始查到可以在 config.html 裡面加 1 2 [blackfriday] extensions = [&amp;#34;hardLineBreak&amp;#34;] 不過都沒有效。後來才知道Blackfriday是Hugo原本拿來render markdown的東西，而某次更新之後已經換成Goldmark這個套件了。 基於我找不到怎麼在Goldmark加上 Hard Line Break 的選項，我選擇改回用Blackfriday render就好。 1 2 [markup] defaultMarkdownHandler = &amp;#34;blackfriday&amp;#34; 沒有search Solution:
 Google了一陣子。中間找到這個使用Fuse.js的一個實作，不知道為什麼是放在討論區：https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae
 雖然蠻快找到，不過我踩了很多雷。
-首先是他寫法是 define &amp;quot;footerfiles&amp;quot;，但是我的theme的基底模板沒有block &amp;quot;footerfiles&amp;quot;的區塊。所以我目前是把那段script跟他定義的main放在一起。
-再來是mark.js，一直出現 $(.</description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</guid><description>邀請函（Invitation） https://tioj.ck.tp.edu.tw/problems/1978
+首先是他寫法是 define &amp;quot;footerfiles&amp;quot;，但是我的theme的基底模板沒有block &amp;quot;footerfiles&amp;quot;的區塊。所以我目前是把那段script跟他定義的main放在一起。</description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</guid><description>邀請函（Invitation） https://tioj.ck.tp.edu.tw/problems/1978
 Description 給你一張圖，求出最大點獨立集。
 點數最多80
 Solution 我本來一直以為這題是一般圖最大匹配，不過今天仔細看之後發現不是，而且一般圖沒有最大匹配=最小點覆蓋的結論。
@@ -191,10 +163,7 @@ Solution 我本來一直以為這題是一般圖最大匹配，不過今天仔�
 吳邦一教授講過關於最小點覆蓋的一個回溯法，於是我想說把他拿來用。
 其實這個演算法也很簡單，就每次挑最大degree的點出來要選或者不選就好，這樣的話複雜度聽起來會是$\mathcal{O}(2^n)$之類的。
 不過我們可以先做以下幾個處理(簡化)
-1. degree 0的點直接拔掉。
-2. degree 1的點，選他不如選他唯一的鄰居
-3. 剩下假設最大的degree是2，那所有點的degree都是2了，也就是說是一堆環，可以判掉
-於是乎我們只剩下最大degree至少是3的case了。
+degree 0的點直接拔掉。 degree 1的點，選他不如選他唯一的鄰居 剩下假設最大的degree是2，那所有點的degree都是2了，也就是說是一堆環，可以判掉 於是乎我們只剩下最大degree至少是3的case了。
 如果不選那個點的話，那他的鄰居都必須要選，可以列出遞迴式$T(n) = T(n-1) + T(n-4) + f(n)$，$n$代表還沒決定要不要選的點的數量，$f(n)$代表維護上面那些東西需要的時間。
 解這個遞迴式可以直接DP，或是利用特徵方程式$\lambda^n = \lambda^{n-1} + \lambda^{n-4} \Rightarrow \lambda^4 - \lambda^3 - 1 = 0$，他最大的實根大約是1.38左右，所以我們dfs的複雜度最多是$\mathcal{O}(1.38^n f(n))$。用蠻naive的寫法$f(n)$會是$\mathcal{O}(n)$(我也不知道怎麼快速維護XD)，$n=80$代進去$80 \cdot 1.38^{80}$似乎幾乎是不行，不過不知道為什麼會AC而且竟然只輸BB跟塗大為的submission XD
 寫完之後，身為admin看到幾乎所有人都是用random，心情很複雜(#
@@ -206,10 +175,8 @@ AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 
 Kuhn Munkres 這裡介紹KM演算法，而若要求解二分圖上的最大權匹配等相關問題可以透過下面的演算法轉換成KM的模型。
 KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法，其中邊的權重都是非負的。
 演算法轉換 最大權匹配 $\to$ 最大權完全二分圖完美匹配(非負邊權)
-把不存在的邊以及負邊權的邊邊權設成0
-最大權完美匹配(有負邊權) $\to$ 最大權完全二分圖完美匹配(非負邊權)
-把不存在的邊邊權設成0，並且把剩下每條邊的邊權加上一個夠大的數$M$，這樣就會傾向於選出儘量多邊。最後的答案記得要扣掉這些$M$
-可以想想看為什麼上面兩種轉換是對的
+把不存在的邊以及負邊權的邊邊權設成0 最大權完美匹配(有負邊權) $\to$ 最大權完全二分圖完美匹配(非負邊權)
+把不存在的邊邊權設成0，並且把剩下每條邊的邊權加上一個夠大的數$M$，這樣就會傾向於選出儘量多邊。最後的答案記得要扣掉這些$M$ 可以想想看為什麼上面兩種轉換是對的
 把問題敘述再好好的寫一遍
 Description 給你一張完全二分圖 $K _ {n,n}$ ，每條邊 $e = (x_i,y_j)$ 有邊權 $w _ e$
 請選出 $n$ 條邊 $e_1, e_2, \cdots e_n$ 兩兩不共端點，使得邊權和$\sum\limits _ {i=1}^n w _ {e _ i}$最大
@@ -237,9 +204,7 @@ C. Solutions 一開始想說這題題敘很長先跑去做 pD
 結果是水題，不過還是WA慘QQ
 Statement 「給你$N$個線段，請選出最多條兩兩完全不相交的線段。。」
 現在有兩種演算法$A,B$分別嘗試解決上述問題：
-- $A$演算法：按照右界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小
-- $B$演算法：按照左界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小
-請構造一組輸出使得「$A$輸出的答案 - $B$輸出的答案 = $M$」</description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>好久又沒有發文了
+$A$演算法：按照右界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小 $B$演算法：按照左界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小 請構造一組輸出使得「$A$輸出的答案 - $B$輸出的答案 = $M$」</description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>好久又沒有發文了
 來講講上一次發文之後我都在做什麼好了
 Before IOI 首先在8/17開始所謂的賽前集訓
 總共為期三周，分別在台南、新竹和台北
@@ -350,11 +315,8 @@ my vimrc 附上我自己的 vimrc
 物色自己喜歡的插件真的很難，可能害我熬夜了好幾次QQ
 不知道過了一段時間之後我的 vimrc 又會變成什麼樣子
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 set nocompatibleset encoding=utf8set fileencoding=utf8&amp;#34;&amp;#34;&amp;#34; Plugins, use &amp;#39;vim-plug&amp;#39; to manage pluginscall plug#begin(&amp;#39;~/.</description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</guid><description>Ch2. Section 9. 補魔力的條件 https://tioj.ck.tp.edu.tw/problems/1764
-Description 現在有排成一直線的$N$個格子，從左到右編號為$1 \dots N$，每個格子都有自己的高度
-一開始你站在第一格，每次移動都只能往編號大的格子跳，目標是走到第$N$格
-假設第$i$個格子的高度是$x_i$，從格子$i$跳到格子$j$需要耗費$\max(0, (j-i)+(x_j-x_i))$的力氣
-請問在花最少力氣到達終點的前提下，他最多可以跳幾次?
-Solution 先考慮最小化力氣
+Description 現在有排成一直線的$N$個格子，從左到右編號為$1 \dots N$，每個格子都有自己的高度 一開始你站在第一格，每次移動都只能往編號大的格子跳，目標是走到第$N$格 假設第$i$個格子的高度是$x_i$，從格子$i$跳到格子$j$需要耗費$\max(0, (j-i)+(x_j-x_i))$的力氣
+請問在花最少力氣到達終點的前提下，他最多可以跳幾次? Solution 先考慮最小化力氣
 令$x_i+i = v_i$，簡單的列出DP式
 $$
 dp[i] = \min _ {j &amp;lt; i}(dp[j] + \max(0,v_j-v_i))
@@ -375,9 +337,7 @@ AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 
 Description 有一個由1到N的數字排成的序列。
 可是你對於現在這個排列很不滿意，決定透過一些操作改變這個序列。
 你現在有兩種操作：
-REV L R ：把L到R所有數字反轉順序，例如1 2 3 4變成4 3 2 1
-SWAP L1 R1 L2 R2：把L1到R1所有數字跟L2到R2所有數字交換位置，但順序不變。
-你總共進行了M次操作，請輸出最後序列的樣子。
+REV L R ：把L到R所有數字反轉順序，例如1 2 3 4變成4 3 2 1 SWAP L1 R1 L2 R2：把L1到R1所有數字跟L2到R2所有數字交換位置，但順序不變。 你總共進行了M次操作，請輸出最後序列的樣子。
 Solution 平衡二元樹裸題，我用的是Treap
 要反轉的話可以打懶標(?)然後記得push
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 #pragma GCC optimize(&amp;#34;Ofast&amp;#34;) #pragma loop_opt(on) #include &amp;lt;cstdio&amp;gt;#include &amp;lt;random&amp;gt; const int N = 130025; inline char readchar() { constexpr int B = 1&amp;lt;&amp;lt;20; static char buf[B], *p, *q; if(p == q &amp;amp;&amp;amp; (q=(p=buf)+fread(buf,1,B,stdin)) == buf) return EOF; return *p++; } inline int nextint() { int x = 0, c = readchar(); while(c &amp;lt; &amp;#39;0&amp;#39;) c = readchar(); while(c &amp;gt;= &amp;#39;0&amp;#39;) x=x*10+(c^&amp;#39;0&amp;#39;), c=readchar(); return x; } inline void readuntil(char *s, char esc = &amp;#39;\n&amp;#39;) { char c = readchar(); while(c !</description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</guid><description>二階奇幻之旅 原本一段剛好和一階撞到，可以免考，但是因為疫情的緣故又錯過了
@@ -439,7 +399,7 @@ Solution 呃&amp;hellip;就是一大堆噁心輸出
 計算魔術數字的方法就是用while迴圈一直加，跑到在題敘指定的情況下A隊的勝率會大於B隊的勝率
 噢名次的地方也是要注意QQ很容易沒注意就寫錯
 還有他的空行是在測試資料之間(?)雖然我不知道有沒有差啦
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 #include &amp;lt;cstdio&amp;gt;#include &amp;lt;cmath&amp;gt;#include &amp;lt;algorithm&amp;gt;struct Team { char name[10]; int W, T, L, id; double rate; friend bool operator&amp;lt;(const Team &amp;amp;a, const Team &amp;amp;b) { return a.</description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>照亮的山景 https://tioj.ck.tp.edu.tw/problems/1404
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 #include &amp;lt;cstdio&amp;gt;#include &amp;lt;cmath&amp;gt;#include &amp;lt;algorithm&amp;gt;struct Team { char name[10]; int W, T, L, id; double rate; friend bool operator&amp;lt;(const Team &amp;amp;a, const Team &amp;amp;b) { return a.</description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>照亮的山景 https://tioj.ck.tp.edu.tw/problems/1404
 Description 在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。
 如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。
 請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？
@@ -479,14 +439,12 @@ Solution 霍夫曼編碼XD老題目
 那麼總代價就是所有葉子的權重乘上各自的深度的和
 我們想要讓這個代價越小越好
 可以發現，在最優解$T$中：
-沒有節點只有一個兒子，只要不是葉子的節點都恰好有兩個子節點
-深度最大的那層節點一定是權重最小的，否則可以直接交換得到更優解
-由上面兩點可以發現，權重最小的兩個節點一定都在最深的那一層
+沒有節點只有一個兒子，只要不是葉子的節點都恰好有兩個子節點 深度最大的那層節點一定是權重最小的，否則可以直接交換得到更優解 由上面兩點可以發現，權重最小的兩個節點一定都在最深的那一層
 並且可以在不影響代價的情況下交換節點使得最小的兩個節點互為兄弟
 結論是：每次把最小和次小的節點合併成一個節點，一定可以得到最佳解
 (QQ我覺得我不會查也不會寫證明)
 要怎麼維護所有節點的最小和次小呢？用一個heap就可以啦
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; const int N = 100025; #define int ll int v[N]; signed main() { ios_base::sync_with_stdio(0), cin.</description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>選訓生活(?) 最近部落格停更好久喔&amp;gt;&amp;lt;
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; const int N = 100025; #define int ll int v[N]; signed main() { ios_base::sync_with_stdio(0), cin.tie(0); int n,ans; while(cin &amp;gt;&amp;gt; n) { ans = 0; for(int i = 0; i &amp;lt; n; i++) cin &amp;gt;&amp;gt; v[i]; std::priority_queue&amp;lt;int,vector&amp;lt;int&amp;gt;,greater&amp;lt;int&amp;gt;&amp;gt; pq(v,v+n); while(pq.</description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>選訓生活(?) 最近部落格停更好久喔&amp;gt;&amp;lt;
 不知道有沒有沒有追蹤我facebook的人在看我的部落格，嘻嘻
 入營考當天? 我和蕭梓宏還有王品翔一起去師大看好戲(X)
 然後電石似乎在旁邊寫作業和嘴砲(?)
@@ -537,7 +495,7 @@ joy一直推薦西西里雞腿堡加蛋加起司，不過我覺得沒有傳言�
 不過撈部分分的能力應該才是真正決勝的地方，有請品翔喇分大師分享入營考0AC的經驗
 列舉事項 因為一階遇到很多酷哥，所以我要從facebook抄過來那段列舉
 幾件神奇的事情：
-1. thomaswang和ericxiao分別站在爛梗光譜的兩端</description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</guid><description>快樂規劃路徑 https://tioj.ck.tp.edu.tw/problems/1629
+thomaswang和ericxiao分別站在爛梗光譜的兩端 西餐廳的拉麵超糟 午餐吃早餐部唯一真理吧 天天喝微舒打好爽 吃飯店的早餐有夠爽 晚餐或晚上超常打拿破崙 seanliu打了兩個禮拜竟然有規則不知道 然後蕭電超強 YoJaHuang&amp;amp;品翔歌神了吧 實中的人都超酷 除了tommydong比較正常一點 仲群病毒大家都一直學www 「我燒雞」 「呃 我弱」 casperwang洗澡專家 不過還是教不會品翔 好多東西都是第一次接觸到 例如十二人狼人殺或是學生餐廳的點餐方法www 待續&amp;hellip; 因為打這篇的時候我在學校努力上課(?</description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</guid><description>快樂規劃路徑 https://tioj.ck.tp.edu.tw/problems/1629
 Description 樹朋友們生活在一個湖邊，湖邊的樹依照順時針方向編號為$1, 2, \dots n$。
 他們想要讓自己更快樂，所以發明了一種娛樂方式，就是找到一條路徑遍歷全部$n$棵樹剛好一遍。
 要從A樹到B樹唯一的方法就是架一條很長的梯子直直伸過去。
@@ -586,8 +544,7 @@ Description 給你一個長度為$N$的序列$a_1, a_2, \dots, a_N$，並且依�
 $1 \leq N, Q \leq 10^5$
 $1 \leq L \leq R \leq N$
 $1 \leq x \leq N$
-$0 \leq a_i, y \leq 10^9$
-$1 \leq k \leq 10^9$</description></item><item><title>TIOJ-1102</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</link><pubDate>Tue, 25 Feb 2020 08:33:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</guid><description>E.海賊王 https://tioj.ck.tp.edu.tw/problems/1102
+$0 \leq a_i, y \leq 10^9$</description></item><item><title>TIOJ-1102</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</link><pubDate>Tue, 25 Feb 2020 08:33:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</guid><description>E.海賊王 https://tioj.ck.tp.edu.tw/problems/1102
 Description 你是一位海賊，現在有$P$個敵人與$T$個寶藏等間距圍成一圓形
 你必須決定一個發射砲彈的方式
 砲彈會波及的範圍是圓形的，每次發射後範圍內的海賊會被殺死，寶藏也會被毀壞
@@ -700,12 +657,9 @@ Solution 一開始我沒有注意到環型的條件，送了好多次假解XD
 因此可以列出簡單的2D/0D轉移式，得到每個區間可以從兩頭拿時先手的最高得分
 再加上先手第一步取得的分數就可以知道從每個地方起手先手所能得到的最高分
 也就知道在那個位置是否有機會勝利了
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 #include &amp;lt;cstdio&amp;gt; inline int min(int a, int b) {return a&amp;lt;b?a:b;} inline int max(int a, int b) {return a&amp;gt;b?</description></item><item><title>TIOJ-1274</title><link>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</link><pubDate>Sun, 16 Feb 2020 21:07:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</guid><description> [純屬無聊] Tie Breaker https://tioj.ck.tp.edu.tw/problems/1274
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 #include &amp;lt;cstdio&amp;gt; inline int min(int a, int b) {return a&amp;lt;b?a:b;} inline int max(int a, int b) {return a&amp;gt;b?</description></item><item><title>TIOJ-1274</title><link>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</link><pubDate>Sun, 16 Feb 2020 21:07:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</guid><description>[純屬無聊] Tie Breaker https://tioj.ck.tp.edu.tw/problems/1274
 Description 本題考驗你對小向的試煉題敘的理解程度。請回答以下三個問題：
-假設2-2的圖來自遊戲「甲」(一個包含五個字母的單字)，2-3的圖來自動畫「乙」(一個包含九個字母的單字 ，請問甲和乙中字母e出現幾次？
-假設3-1的圖來自動畫「丙」(包含四個中文字)，3-3的圖來自漫畫「丁」(包含六個中文字) ，請問丙和丁中聲調為二聲的字有幾個？
-假設4-1的圖來自動畫「戊」(包含八個中文字，其中第五個字是三聲)，4-2的圖來自動畫「己」(包含四個中文字)，4-3的圖來自動畫「庚」(包含六個中文字) ，且令為己的前兩個字翻譯成英文後的字母數，為戊的第二個字所代表的數字 ，「辛」是「庚」的第一個字。請問「辛」倍的x+y是幾？
-Solution 註: 小向的試煉是TIOJ上一系列的題目，可以自行搜尋
+假設2-2的圖來自遊戲「甲」(一個包含五個字母的單字)，2-3的圖來自動畫「乙」(一個包含九個字母的單字 ，請問甲和乙中字母e出現幾次？ 假設3-1的圖來自動畫「丙」(包含四個中文字)，3-3的圖來自漫畫「丁」(包含六個中文字) ，請問丙和丁中聲調為二聲的字有幾個？ 假設4-1的圖來自動畫「戊」(包含八個中文字，其中第五個字是三聲)，4-2的圖來自動畫「己」(包含四個中文字)，4-3的圖來自動畫「庚」(包含六個中文字) ，且令為己的前兩個字翻譯成英文後的字母數，為戊的第二個字所代表的數字 ，「辛」是「庚」的第一個字。請問「辛」倍的x+y是幾？ Solution 註: 小向的試煉是TIOJ上一系列的題目，可以自行搜尋
 甲 = Deemo 乙 = charlotte
 第一點的答案 = 3
 丙 = 遊戲人生 丁 = 我的英雄學院
@@ -725,7 +679,8 @@ Solution 簡單排列組合，不過我寫好久還踩到一些坑
 那麼所有鈍角三角形的個數就等於$a+b+c = n$且$a &amp;gt; n/2$的正整數解的個數
 此時枚舉$a$，$b+c=n-a$有$n-a-1$組正整數解，可以知道所求即是
 $$
-\sum _ {a = \left \lfloor n/2 \right \rfloor + 1} ^ {n-2} n-a-1 = \sum _ {i=1}^{n-2 - \left \lfloor n/2 \right \rfloor} i = \frac{(n-2 - \left \lfloor n/2 \right \rfloor) (n-2 - \left \lfloor n/2 \right \rfloor + 1)}{2}</description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</guid><description>重疊的天際線 https://tioj.ck.tp.edu.tw/problems/1202
+\sum _ {a = \left \lfloor n/2 \right \rfloor + 1} ^ {n-2} n-a-1 = \sum _ {i=1}^{n-2 - \left \lfloor n/2 \right \rfloor} i = \frac{(n-2 - \left \lfloor n/2 \right \rfloor) (n-2 - \left \lfloor n/2 \right \rfloor + 1)}{2}
+$$</description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</guid><description>重疊的天際線 https://tioj.ck.tp.edu.tw/problems/1202
 Description 地平線上有許多房子，而這些房子在夕陽的照射之下形成有趣的輪廓，我們稱之為天際線(Skyline)。為了方便起見，你可以假設所有的房子都是一個位在2D平面上的矩形，並且有一條邊貼在這個假想2D平面上的X軸。
 一棟建築可以用三元數組$(L_i, H_i, R_i)$來表示，依序代表該建築物的左界座標、高度、右界座標。
 下圖中的八棟建築就是用此方法表示就是
@@ -741,7 +696,7 @@ Solution 考慮所有矩形的邊界上的點，我們只要確定這些點的�
 從左到右考慮所有邊界，對於任一個建築物的高度$H$，都在$L$的時候加進 multiset 裡面然後在$R$的時候刪掉
 如果這個點的高度和前一次的答案一樣就不需要加進答案裡面
 注意輸出格式QQ，一開始還吃WA好幾次
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1156</title><link>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</link><pubDate>Sat, 08 Feb 2020 12:29:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</guid><description> 5.高中運動會 https://tioj.ck.tp.edu.tw/problems/1156
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1156</title><link>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</link><pubDate>Sat, 08 Feb 2020 12:29:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</guid><description>5.高中運動會 https://tioj.ck.tp.edu.tw/problems/1156
 Description 夢幻城市每年為全市高中生舉辦一次運動大會。為促進各校同學之間的交流，採用特別的分隊方式：每一個學校的同學，必須被均勻分散到各隊，使得每一隊中該校的人數皆相同。為增加比賽的競爭性，希望分成越多隊越好。你的任務是由各校的人數，決定最多可分成的隊數。
 Solution 沒想到全國賽竟然有這麼水的題目XDD，題目所求就是所有學校人數的最大公因數
 用 __gcd 就足夠了，不過我覺得這份code寫起來很簡短所以我想貼出來ouo，順便加了個輸入優化
@@ -770,10 +725,7 @@ Description 在一個「漸進式框架」當中，你想要找到一個最大�
 所謂的「漸進式框架」，指的是任何一個水平線截出的框架區段是連續，並且由上往下該區段只會往右移動，如下圖
 Solution 這個是蕭梓宏在超級久之前講的四邊形優化題目，筆者發現已經過了一年多了還沒AC就想說來寫看看好了！這一題不難想到，對於每一個在下面的線，都計算是哪一條在上面的線和它搭配會有最佳，再取$\max$就好了。不過，這樣需要$O(MN)$的時間，頗爛。
 不過呢，還可以觀察（且證明）一個性質，就是：倘若$L(x)$為下面的線中第$x$條線所對應到的最佳（面積最大）的上面的線的編號，則$L(x + 1) \geq L(x)$！有了這個性質，大概就可以維護一個deque，裡面放一堆東西$(L, R, I)$來維護說：上面第$I$條線可以轉移下面第$L$到第$R$的線為最佳。一開始只有一個$(0, M, 0)$，然後每次進來一個上面的線段就開始判斷（假設目前deque中最後面的元素為$(L, R, I)$，且目前我在第$X$條）：
-若$X$和$L$的矩形比$I$和$L$的矩形還大，這代表$(L, R, I)$這個區間可以完全不要了，pop掉
-若$X$和$M - 1$的矩形比$I$和$M - 1$的矩形還小（也就是最後一個），則代表我永遠贏不了那一條線，我就直接break了，反正贏不了
-否則，開始二分搜說我到哪裡可以贏$(L, R, I)$，也就是說，找一個最小的$m$使得$m$和$I$的矩形小於或等於$m$和$X$的矩形
-維護完之後，再掃一次$M$條線取$\max$就好了！
+若$X$和$L$的矩形比$I$和$L$的矩形還大，這代表$(L, R, I)$這個區間可以完全不要了，pop掉 若$X$和$M - 1$的矩形比$I$和$M - 1$的矩形還小（也就是最後一個），則代表我永遠贏不了那一條線，我就直接break了，反正贏不了 否則，開始二分搜說我到哪裡可以贏$(L, R, I)$，也就是說，找一個最小的$m$使得$m$和$I$的矩形小於或等於$m$和$X$的矩形 維護完之後，再掃一次$M$條線取$\max$就好了！
 AC code 感覺寫完到AC的時間還不會很久，但是中間有一堆小細節被卡（還有二分搜寫錯、被卡long long、$N, M$要除以二、面積計算出錯等有趣環節），幸好沒有太大的問題！
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 #include &amp;lt;iostream&amp;gt;#include &amp;lt;deque&amp;gt;#define int long long int #define ericxiao ios_base::sync_with_stdio(0);cin.</description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>2020 IOIC 小記 五天都11點回家 好累喔
 不過聽到很多神奇技巧和神奇題目(?)
@@ -824,7 +776,8 @@ Pattern這東西好神奇喔，我想還要好久我才能通透，感覺題目�
 下午是數學，但在上課之前出現神秘講師短短的講了Splay和LCT就不見了XD(聽說他是原本FFT的講師?)
 中堂休息之後突然就切換到數學模式，頓時有種我不會數學的感覺，明明聽過那麼多東西卻無法好好應用
 (也許我應該去精進我的數學實力? 要怎麼讀啊?)
-個人賽一開始有想法只有pB，看到Scoreboard上面大家都AC pD就猜是水結論題直接給他猜結論下去XDD</description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</guid><description>進階的入門 https://tioj.ck.tp.edu.tw/problems/1168
+個人賽一開始有想法只有pB，看到Scoreboard上面大家都AC pD就猜是水結論題直接給他猜結論下去XDD
+接著花時間把pB寫掉了，雖然看到一些人在丟pC不過沒什麼想法，反而翻到pE是今天電石上課直接講過的東西XD</description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</guid><description>進階的入門 https://tioj.ck.tp.edu.tw/problems/1168
 Description 你需要實作五個函式：
 1 2 3 4 5 void pop_big(); void pop_small(); void push(int s); int big(); int small(); 其中第一個函式需要將最大的數字移除，第二個函式需要將最小的數字移除，第三個函式需要將一個數加入目前的數字們，第四個函式需要回傳當前的最大值，第五個函式需要回傳當前的最小值。
 假設一開始沒有任何數字，請你實作這五個操作。
@@ -906,10 +859,7 @@ Solution 這邊給匈牙利算法
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</guid><description>萬里長城 https://tioj.ck.tp.edu.tw/problems/1441
 Description 給定一個序列，找出最長的「長城」子序列
 一個序列$&amp;lt; a_1,a_2,\dots,a_n &amp;gt;$必須符合下列幾點才算是「長城」
-1. n是奇數
-2. 若$i$是偶數，則$a_i$必須小於相鄰的項
-3. 若$i$是奇數，則$a_i$必須大於相鄰的項
-Solution 貪心法
+n是奇數 若$i$是偶數，則$a_i$必須小於相鄰的項 若$i$是奇數，則$a_i$必須大於相鄰的項 Solution 貪心法
 維護一個tail表示前$i$項滿足點2. 3.的最佳解，其結尾是多少
 假設下一個項h必須比tail大
 若h比tail大，那就直接接上去(並更新tail)，否則就把tail替換成h
@@ -966,7 +916,8 @@ C(x) = A(x)B(x)</description></item><item><title>Sieving-Method</title><link>htt
 質數篩與快樂的積性函數 想必大家都精通各種質數篩法，最簡單的$\mathcal{O}(n\sqrt{n})$就不提啦
 $n\log n$篩 1 2 3 4 5 for(int i = 2; i &amp;lt;= n; i++) { for(int j = i*2; j &amp;lt;= n; j+=i) { sieve[j] = 1; } } $\sum \frac{1}{i}$的調和級數是$\mathcal{O}(\log n)$量級的，故複雜度為$\mathcal{O}(n\log n)$
 這個寫法也可以很簡單的統計每個數字的因數個數
-1 for(int i = 1; i &amp;lt;= n; i++) for(int j = i; j &amp;lt;= n; j+=i) ++d[j]; 其中 d[i] 代表 i 的因數個數</description></item><item><title>TIOJ-1726</title><link>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</link><pubDate>Mon, 23 Dec 2019 22:14:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</guid><description>Dice Wars https://tioj.ck.tp.edu.tw/problems/1726
+1 for(int i = 1; i &amp;lt;= n; i++) for(int j = i; j &amp;lt;= n; j+=i) ++d[j]; 其中 d[i] 代表 i 的因數個數
+容易發現$\sum\limits _ {i=1}^n d[i]$也是$\mathcal{O}(n\log n)$量級的</description></item><item><title>TIOJ-1726</title><link>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</link><pubDate>Mon, 23 Dec 2019 22:14:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</guid><description>Dice Wars https://tioj.ck.tp.edu.tw/problems/1726
 Description Dice Wars是一款兼具謀略和運氣的遊戲。
 遊戲中你扮演紫色的骰子，要攻下其他顏色的骰子的城池，進而統一全地圖。
 如今你選到了一張看起來不錯的地圖: 整張地圖呈一條直線，每個位置都有一個顏色勢力佔領。
@@ -999,7 +950,7 @@ Description 最近你打算訂購$N^2$張水樹奈奈的專輯《極限魅惑IMP
 那你第一、第二、第三次分別可以訂$3$、$2$、$3$張CD，分別會少訂是$0＋1＋0＝1$張CD。
 Solution 仔細讀懂題目之後可以發現題目要求的就是
 $$
-\sum _ {i=1}^n n\%i
+\sum _ {i=1}^n n%i
 $$
 不過$n$可以到$10^{13}$不能直接$\mathcal{O}(n)$跑過去
 數論分塊 數論分塊的精神很簡單，不同的$\lfloor n/i \rfloor$數量只有$\mathcal{O}(\sqrt{n})$種
@@ -1013,8 +964,8 @@ Description 給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串
 請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。
 ex.
 對於
-&amp;gt; ababa
-&amp;gt; babab
+ababa
+babab
 來說，
 ababa
 =babab
@@ -1074,9 +1025,9 @@ $$
 我選擇用splay來實作，詳細的原理自己google OwO
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item><item><title>TIOJ-1394</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</link><pubDate>Fri, 13 Dec 2019 06:36:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</guid><description>黑色騎士團的逆襲野望 https://tioj.ck.tp.edu.tw/problems/1394
 Description 自從黑色騎士團上次的最終野望被白色騎士豬殺苦破滅之後，黑色騎士團銷聲滅跡了一陣子，不過他們仍繼續計畫著侵略神聖的大不列顛帝國。
-終於他們發現了一個機會：原來大不列顛帝國的命脈就是對外輸出的藥品&amp;rdquo;REBRAIN&amp;rdquo;，只要能控制住它所有的運輸與加工途徑，那大不列顛帝國就完了！
+終於他們發現了一個機會：原來大不列顛帝國的命脈就是對外輸出的藥品&amp;quot;REBRAIN&amp;quot;，只要能控制住它所有的運輸與加工途徑，那大不列顛帝國就完了！
 與之前一樣，他們只要佔領一個據點就可以控制與他相鄰的運輸途徑了！
-&amp;ldquo;REBRAIN&amp;rdquo;的運輸過程十分有趣，他有一個總工廠來製造&amp;rdquo;REBRAIN&amp;rdquo;的一些半成品，再依序經過幾個有向道路到下個加工地點進行加工，就這樣一直到完成成品，並且為了不讓產品流程出問題，他們的運輸路徑不會出現環狀或逆向的情況。
+&amp;ldquo;REBRAIN&amp;quot;的運輸過程十分有趣，他有一個總工廠來製造&amp;quot;REBRAIN&amp;quot;的一些半成品，再依序經過幾個有向道路到下個加工地點進行加工，就這樣一直到完成成品，並且為了不讓產品流程出問題，他們的運輸路徑不會出現環狀或逆向的情況。
 不過黑色騎士團的人手有限，所以他們希望佔據最少的據點就可以完全控制整個運輸與加工途徑。
 註: 雖然是有向邊，不過相鄰的關係依然是互相的；另外雖然沒有講的很清楚，題目是有保證0號節點可以走到所有其他節點
 Solution 題目所求是最小點覆蓋，也就是在給定圖上要選幾個點才能保證所有邊都有一個端點被選到
@@ -1108,10 +1059,8 @@ Solution 首先若不管烏龍的編號，只想知道烏龍最後的位置，�
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #pragma g++ optimize(&amp;#34;Ofast&amp;#34;) #pragma loop_opt(on) #include &amp;lt;cstdio&amp;gt;#include &amp;lt;algorithm&amp;gt;const int N = 1000001; int n,L,x[N],id[N],cnt; signed main() { int t = -1e9, dir, pos; scanf(&amp;#34;%d%d&amp;#34;,&amp;amp;n,&amp;amp;L); for(int i = 0,d; i &amp;lt; n; i++) { scanf(&amp;#34;%d%d&amp;#34;,x+i,&amp;amp;d); int dis = d ?</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>迭代式線段樹 先備知識: 線段樹(帶懶標) + 位元運算(吧)
 如果讀者還不知道線段樹的原理最好看遞迴的(?)
 單點修改 例題仍然是萬年RMQ
-&amp;gt; 給定一個長度$n$的序列，請支援以下操作
-&amp;gt; 1. 將位置$p$的值改為$x$
-&amp;gt; 2. 查詢區間$[l,r)$的最大值
-完美二元樹 首先假定$n$是2的冪次，思考可能可以簡單一些
+給定一個長度$n$的序列，請支援以下操作
+將位置$p$的值改為$x$ 查詢區間$[l,r)$的最大值 完美二元樹 首先假定$n$是2的冪次，思考可能可以簡單一些
 我們一樣用1當根，並且節點i的左右子樹會是i*2和i*2+1或寫成i&amp;lt;&amp;lt;1, i&amp;lt;&amp;lt;1|1
 1 2 const int N = 1&amp;lt;&amp;lt;18; int tr[N&amp;lt;&amp;lt;1], n; 對於初始化來說，可以發現葉子節點對應的都是長度$1$的區間，正好是原序列的值，所以可以直接讀入或另外傳入賦值給 tr[i+n]，接著可以用遞減的順序把其他長度的區間的答案算好
 1 2 3 4 void build(int v[]) { for(int i = 0; i &amp;lt; n; i++) tr[i+n] = v[i]; for(int i = n-1; i &amp;gt; 0; i--) tr[i] = max(tr[i&amp;lt;&amp;lt;1], tr[i&amp;lt;&amp;lt;1|1]); } 更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到</description></item><item><title>TIOJ-2017</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</link><pubDate>Fri, 06 Dec 2019 13:03:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</guid><description>B.廢文大資料 mining https://tioj.ck.tp.edu.tw/problems/2017
@@ -1119,7 +1068,7 @@ Description 給定一個序列 $a_i$ ，問有多少區間 $[l,r]$ 使得存在�
 Solution 先對 $a_i$ 做前綴 $s_k = \sum\limits _ {i=1}^k a_i$
 對於一個固定的 $l$ 來說，題目等價於找到一個最小的 $m$ 使得 $s_m - s _ {l-1} &amp;lt; 0$
 在 $m$ 之後的 $r$ 都會被算在答案裡面
-可以用單調隊列幫每個 $i$ 找到最小的 $i&amp;rsquo;$ 使得 $s _ {i&amp;rsquo;} &amp;lt; s_i$ ，複雜度 $\mathcal{O}(n)$
+可以用單調隊列幫每個 $i$ 找到最小的 $i'$ 使得 $s _ {i'} &amp;lt; s_i$ ，複雜度 $\mathcal{O}(n)$
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</guid><description>販賣機耶 https://tioj.ck.tp.edu.tw/problems/1614
 Description 蝴蝶在路旁玩壞一台販賣機，它一次只能投一枚硬幣（故障？）。
 重點是：投進一枚x元的硬幣，然後按退幣鈕，居然會吐出一枚價值 $f(x)$ 的硬幣耶！
@@ -1147,7 +1096,7 @@ Solution 對於$x \not\equiv 0 \pmod p$，$y = x^{\frac{p-1}{2}} \equiv \pm 1 \p
 考慮到同步必須要是連續的性質，我們聯想到字串演算法中的後綴陣列，這題等價求兩個後綴的LCP，完全是SA的形狀XDD
 SA + RMQ資結收工
 注意查詢兩個同樣位置的情況，RMQ會查到空區間，不過我們知道這時候的答案顯然就是到尾巴的長度
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item><item><title>TIOJ-1774</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</link><pubDate>Thu, 05 Dec 2019 21:30:24 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</guid><description> Ch3. Section 9. 妁艷的頭髮 https://tioj.ck.tp.edu.tw/problems/1774
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item><item><title>TIOJ-1774</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</link><pubDate>Thu, 05 Dec 2019 21:30:24 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</guid><description>Ch3. Section 9. 妁艷的頭髮 https://tioj.ck.tp.edu.tw/problems/1774
 Solution 裸背包，被值域嚇到XD
 不過實際上魔力M只會到2000所以沒差的啦
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 #include &amp;lt;iostream&amp;gt;using namespace std; long long n,M,dp[2001]; signed main() { ios_base::sync_with_stdio(0), cin.tie(0); cin &amp;gt;&amp;gt; n &amp;gt;&amp;gt; M; for(int i = 0,h,c; i &amp;lt; n; i++) { cin &amp;gt;&amp;gt; h &amp;gt;&amp;gt; c; for(int j = c; j &amp;lt;= M; j++) dp[j] = max(dp[j-c]+h, dp[j]); } cout &amp;lt;&amp;lt; dp[M] &amp;lt;&amp;lt; &amp;#39;\n&amp;#39;; }</description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</guid><description>D.番茄大戰爭 https://tioj.ck.tp.edu.tw/problems/2019
@@ -1161,7 +1110,7 @@ Solution 可能算是經典題吧，這邊提供兩種寫法: 重心剖分和輕
 重心剖分 重心剖分的核心想法是樹分治，每次拔掉一個點，並統計有經過這個點的答案並遞迴計算沒經過該點的答案
 為了確保複雜度，每次拔掉重心是一個好選擇
 也許可以發現每個頂點都會當一次重心(?)
-並且若把每次拔掉的重心$c$和分治下去的每個子樹找到的重心$c&amp;rsquo;$都連邊，也會是一棵樹，稱為重心樹
+並且若把每次拔掉的重心$c$和分治下去的每個子樹找到的重心$c'$都連邊，也會是一棵樹，稱為重心樹
 假設我要查詢$x$這個點，我們就枚舉$x$在重心樹上的祖先
 對於所有黑色頂點$b$來說都可以找到恰一個祖先$c$使得$b,x$最後是被$c$分開的
 可以想到紀錄$cnt_c, sum_c$分別代表分治到以$c$為重心的時候的子樹中，黑色節點的數量以及與$c$的距離和
@@ -1220,7 +1169,8 @@ F _ {i-1} \newline
 F_i \newline
 S_i
 \end{matrix}
-\right]</description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>愛蜜利雅的作業2 https://tioj.ck.tp.edu.tw/problems/1282
+\right]
+$$</description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>愛蜜利雅的作業2 https://tioj.ck.tp.edu.tw/problems/1282
 Description 給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數
 $1 \leq n,q \leq 10^5$
 Solution 想法是利用區間加值等於對差分的兩個單點修改
@@ -1232,8 +1182,8 @@ Solution 想法是利用區間加值等於對差分的兩個單點修改
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item><item><title>about</title><link>https://omeletwithoutegg.github.io/about/</link><pubDate>Tue, 03 Dec 2019 16:23:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/about/</guid><description>在刷TIOJ的時候都查不到解，所以我想來當那個查的到的解! 希望能進選訓營(*’ｰ’*)
 全國賽打得好像算好，能夠跳過入營考去選訓了&amp;gt;W&amp;lt;
 開心&amp;gt;w&amp;lt; 選訓2!第三
-IOI2020 打好爛，想要重新再來。不過似乎被 Enjoy_the_game 電爆了
-大家好，我是一塊蛋餅，一塊APIO沒拿過牌不過IOI2021撈到金牌的蛋餅</description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description> 這是一篇測試用的文章
+IOI2020 打好爛，想要重新再來。不過似乎被 Enjoy_the_game電爆了
+大家好，我是一塊蛋餅，一塊APIO沒拿過牌不過IOI2021撈到金牌的蛋餅</description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description>這是一篇測試用的文章
 A quick brown fox jumps over the lazy dog.
 引用文字
 標題 二級標題 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;Hello hexo&amp;#34; &amp;lt;&amp;lt; std::endl; } 1 2 3 $ hexo clean $ hexo s -g $ echo 7122</description></item><item><title>Search</title><link>https://omeletwithoutegg.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/search/</guid><description>This is the search page, type keywords to search among my articles.</description></item></channel></rss>

@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>template on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/template/</link><description>Recent content in template on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 13 Feb 2021 16:28:29 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/template/index.xml" rel="self" type="application/rss+xml"/><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>template on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/template/</link><description>Recent content in template on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 08 Aug 2021 00:28:51 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/template/index.xml" rel="self" type="application/rss+xml"/><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>除錯模板的重要 這是一篇很短的廢文。
+當你發現你寫出的程式有 bug 的時候，就會是你花上很多時間的時候。
+尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 // An AC a day keeps the doctor away. #pragma GCC optimize(&amp;#34;Ofast&amp;#34;) #include &amp;lt;bits/stdc++.h&amp;gt;#ifdef local #define safe std::cerr&amp;lt;&amp;lt;__PRETTY_FUNCTION__&amp;lt;&amp;lt;&amp;#34; line &amp;#34;&amp;lt;&amp;lt;__LINE__&amp;lt;&amp;lt;&amp;#34; safe\n&amp;#34; #define debug(args...) qqbx(#args, args) #define orange(args.</description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。
 主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。
 Fast Linear Recurrence 首先先來介紹如何快速求線性遞迴。
 定義 已知序列 $ \langle a_n \rangle $ 滿足遞迴關係 $ \displaystyle \forall i \geq k, a_i = \sum _ {j=0} ^ {k-1} s _ j a _ {i-1-j} $ ，並且已經給定 $s$ 跟 $a_0, a_1, \dots, a _ {k-1}$
@@ -9,17 +12,16 @@ Fast Linear Recurrence 首先先來介紹如何快速求線性遞迴。
 我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X
 Usage https://github.com/ifsmirnov/jngen
 要使用jngen，你只需要下載jngen.h並引用標頭檔。下載來的標頭檔可以放在 /usr/include 之類的地方，或是跟你的C++原始碼相同目錄當中。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #include &amp;#34;jngen.h&amp;#34;#include &amp;lt;iostream&amp;gt; using std::cout, std::endl; int main(int argc, char *argv[]) { parseArgs(argc, argv); int n, m; getPositional(n, m); Tree t = Tree::bamboo(n).link(n - 1, Tree::star(m), 0); if (getOpt(&amp;#34;shuffled&amp;#34;, false)) { t.shuffle(); } cout &amp;lt;&amp;lt; t.printN().add1() &amp;lt;&amp;lt; endl; } 下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。</description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>我只是想做一下筆記
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #include &amp;#34;jngen.h&amp;#34;#include &amp;lt;iostream&amp;gt; using std::cout, std::endl; int main(int argc, char *argv[]) { parseArgs(argc, argv); int n, m; getPositional(n, m); Tree t = Tree::bamboo(n).link(n - 1, Tree::star(m), 0); if (getOpt(&amp;#34;shuffled&amp;#34;, false)) { t.shuffle(); } cout &amp;lt;&amp;lt; t.printN().add1() &amp;lt;&amp;lt; endl; } 下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。
+Random jngen跟testlib一樣會使用你執行時傳入的參數做一些hash之類的當作偽隨機的種子，所以如果不是每次呼叫main都用不同參數呼叫，就得乾脆把一個種子在一個generator裡面重複利用。</description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>我只是想做一下筆記
 然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配
 先備知識 看得懂$\sum$
 然後會(不帶權)二分圖匹配的匈牙利演算法
 Kuhn Munkres 這裡介紹KM演算法，而若要求解二分圖上的最大權匹配等相關問題可以透過下面的演算法轉換成KM的模型。
 KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法，其中邊的權重都是非負的。
 演算法轉換 最大權匹配 $\to$ 最大權完全二分圖完美匹配(非負邊權)
-把不存在的邊以及負邊權的邊邊權設成0
-最大權完美匹配(有負邊權) $\to$ 最大權完全二分圖完美匹配(非負邊權)
-把不存在的邊邊權設成0，並且把剩下每條邊的邊權加上一個夠大的數$M$，這樣就會傾向於選出儘量多邊。最後的答案記得要扣掉這些$M$
-可以想想看為什麼上面兩種轉換是對的
+把不存在的邊以及負邊權的邊邊權設成0 最大權完美匹配(有負邊權) $\to$ 最大權完全二分圖完美匹配(非負邊權)
+把不存在的邊邊權設成0，並且把剩下每條邊的邊權加上一個夠大的數$M$，這樣就會傾向於選出儘量多邊。最後的答案記得要扣掉這些$M$ 可以想想看為什麼上面兩種轉換是對的
 把問題敘述再好好的寫一遍
 Description 給你一張完全二分圖 $K _ {n,n}$ ，每條邊 $e = (x_i,y_j)$ 有邊權 $w _ e$
 請選出 $n$ 條邊 $e_1, e_2, \cdots e_n$ 兩兩不共端點，使得邊權和$\sum\limits _ {i=1}^n w _ {e _ i}$最大
@@ -35,10 +37,8 @@ LCT怎麼這麼可撥XD
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 #pragma g++ optimize(&amp;#34;Ofast&amp;#34;) #pragma loop_opt(on) #include &amp;lt;cstdio&amp;gt;#include &amp;lt;bitset&amp;gt;#include &amp;lt;algorithm&amp;gt;using namespace std; typedef long long ll; const int N = 100025; inline char readchar() { const static int B = 1&amp;lt;&amp;lt;20; static char buf[B], *p, *q; // p,q would be initialized with nullptr if(p == q &amp;amp;&amp;amp; (q=(p=buf)+fread(buf,1,B,stdin)) == buf) return EOF; return *p++; } inline int nextint() { int x = 0, c = readchar(); while(&amp;#39;0&amp;#39;&amp;gt;c || c&amp;gt;&amp;#39;9&amp;#39;) c = readchar(); while(&amp;#39;0&amp;#39;&amp;lt;=c&amp;amp;&amp;amp;c&amp;lt;=&amp;#39;9&amp;#39;) x = x*10 + (c^&amp;#39;0&amp;#39;), c = readchar(); return x; } // \sum{cnt[p] * w[p]} struct LinkCutTree { // Splay struct node { ll ws, sum; int laz, cnt, w; int ch[2], pa; } S[N]; bool isroot(int x) { // is the root of the splay tree return S[S[x].</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>迭代式線段樹 先備知識: 線段樹(帶懶標) + 位元運算(吧)
 如果讀者還不知道線段樹的原理最好看遞迴的(?)
 單點修改 例題仍然是萬年RMQ
-&amp;gt; 給定一個長度$n$的序列，請支援以下操作
-&amp;gt; 1. 將位置$p$的值改為$x$
-&amp;gt; 2. 查詢區間$[l,r)$的最大值
-完美二元樹 首先假定$n$是2的冪次，思考可能可以簡單一些
+給定一個長度$n$的序列，請支援以下操作
+將位置$p$的值改為$x$ 查詢區間$[l,r)$的最大值 完美二元樹 首先假定$n$是2的冪次，思考可能可以簡單一些
 我們一樣用1當根，並且節點i的左右子樹會是i*2和i*2+1或寫成i&amp;lt;&amp;lt;1, i&amp;lt;&amp;lt;1|1
 1 2 const int N = 1&amp;lt;&amp;lt;18; int tr[N&amp;lt;&amp;lt;1], n; 對於初始化來說，可以發現葉子節點對應的都是長度$1$的區間，正好是原序列的值，所以可以直接讀入或另外傳入賦值給 tr[i+n]，接著可以用遞減的順序把其他長度的區間的答案算好
 1 2 3 4 void build(int v[]) { for(int i = 0; i &amp;lt; n; i++) tr[i+n] = v[i]; for(int i = n-1; i &amp;gt; 0; i--) tr[i] = max(tr[i&amp;lt;&amp;lt;1], tr[i&amp;lt;&amp;lt;1|1]); } 更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到</description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>常用的輸入(出)優化 cin / cout 因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用

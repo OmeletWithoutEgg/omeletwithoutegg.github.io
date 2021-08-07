@@ -34,9 +34,7 @@ C. Solutions 一開始想說這題題敘很長先跑去做 pD
 結果是水題，不過還是WA慘QQ
 Statement 「給你$N$個線段，請選出最多條兩兩完全不相交的線段。。」
 現在有兩種演算法$A,B$分別嘗試解決上述問題：
-- $A$演算法：按照右界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小
-- $B$演算法：按照左界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小
-請構造一組輸出使得「$A$輸出的答案 - $B$輸出的答案 = $M$」</description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</guid><description>Assssss!! https://tioj.ck.tp.edu.tw/problems/1505
+$A$演算法：按照右界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小 $B$演算法：按照左界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小 請構造一組輸出使得「$A$輸出的答案 - $B$輸出的答案 = $M$」</description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</guid><description>Assssss!! https://tioj.ck.tp.edu.tw/problems/1505
 Description 現在有一個正整數構成的除法數列
 $
 x_1 / x_2 / x_3 / \dots / x_n
@@ -74,7 +72,8 @@ Solution 簡單排列組合，不過我寫好久還踩到一些坑
 那麼所有鈍角三角形的個數就等於$a+b+c = n$且$a &amp;gt; n/2$的正整數解的個數
 此時枚舉$a$，$b+c=n-a$有$n-a-1$組正整數解，可以知道所求即是
 $$
-\sum _ {a = \left \lfloor n/2 \right \rfloor + 1} ^ {n-2} n-a-1 = \sum _ {i=1}^{n-2 - \left \lfloor n/2 \right \rfloor} i = \frac{(n-2 - \left \lfloor n/2 \right \rfloor) (n-2 - \left \lfloor n/2 \right \rfloor + 1)}{2}</description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</guid><description>爆炸吧現充~ https://tioj.ck.tp.edu.tw/problems/1600
+\sum _ {a = \left \lfloor n/2 \right \rfloor + 1} ^ {n-2} n-a-1 = \sum _ {i=1}^{n-2 - \left \lfloor n/2 \right \rfloor} i = \frac{(n-2 - \left \lfloor n/2 \right \rfloor) (n-2 - \left \lfloor n/2 \right \rfloor + 1)}{2}
+$$</description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</guid><description>爆炸吧現充~ https://tioj.ck.tp.edu.tw/problems/1600
 Description 求共有幾個滿足
 $$
 1 \leq x \leq n,
@@ -132,7 +131,7 @@ Description 最近你打算訂購$N^2$張水樹奈奈的專輯《極限魅惑IMP
 那你第一、第二、第三次分別可以訂$3$、$2$、$3$張CD，分別會少訂是$0＋1＋0＝1$張CD。
 Solution 仔細讀懂題目之後可以發現題目要求的就是
 $$
-\sum _ {i=1}^n n\%i
+\sum _ {i=1}^n n%i
 $$
 不過$n$可以到$10^{13}$不能直接$\mathcal{O}(n)$跑過去
 數論分塊 數論分塊的精神很簡單，不同的$\lfloor n/i \rfloor$數量只有$\mathcal{O}(\sqrt{n})$種
@@ -204,7 +203,8 @@ F _ {i-1} \newline
 F_i \newline
 S_i
 \end{matrix}
-\right]</description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>愛蜜利雅的作業2 https://tioj.ck.tp.edu.tw/problems/1282
+\right]
+$$</description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>愛蜜利雅的作業2 https://tioj.ck.tp.edu.tw/problems/1282
 Description 給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數
 $1 \leq n,q \leq 10^5$
 Solution 想法是利用區間加值等於對差分的兩個單點修改

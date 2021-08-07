@@ -3,5 +3,5 @@ Description 給定一個序列 $a_i$ ，問有多少區間 $[l,r]$ 使得存在�
 Solution 先對 $a_i$ 做前綴 $s_k = \sum\limits _ {i=1}^k a_i$
 對於一個固定的 $l$ 來說，題目等價於找到一個最小的 $m$ 使得 $s_m - s _ {l-1} &amp;lt; 0$
 在 $m$ 之後的 $r$ 都會被算在答案裡面
-可以用單調隊列幫每個 $i$ 找到最小的 $i&amp;rsquo;$ 使得 $s _ {i&amp;rsquo;} &amp;lt; s_i$ ，複雜度 $\mathcal{O}(n)$
+可以用單調隊列幫每個 $i$ 找到最小的 $i'$ 使得 $s _ {i'} &amp;lt; s_i$ ，複雜度 $\mathcal{O}(n)$
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include &amp;lt;bits/stdc++.</description></item></channel></rss>

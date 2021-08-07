@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DAG on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/DAG/</link><description>Recent content in DAG on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 13 Dec 2019 06:36:47 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/DAG/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1394</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</link><pubDate>Fri, 13 Dec 2019 06:36:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</guid><description>黑色騎士團的逆襲野望 https://tioj.ck.tp.edu.tw/problems/1394
 Description 自從黑色騎士團上次的最終野望被白色騎士豬殺苦破滅之後，黑色騎士團銷聲滅跡了一陣子，不過他們仍繼續計畫著侵略神聖的大不列顛帝國。
-終於他們發現了一個機會：原來大不列顛帝國的命脈就是對外輸出的藥品&amp;rdquo;REBRAIN&amp;rdquo;，只要能控制住它所有的運輸與加工途徑，那大不列顛帝國就完了！
+終於他們發現了一個機會：原來大不列顛帝國的命脈就是對外輸出的藥品&amp;quot;REBRAIN&amp;quot;，只要能控制住它所有的運輸與加工途徑，那大不列顛帝國就完了！
 與之前一樣，他們只要佔領一個據點就可以控制與他相鄰的運輸途徑了！
-&amp;ldquo;REBRAIN&amp;rdquo;的運輸過程十分有趣，他有一個總工廠來製造&amp;rdquo;REBRAIN&amp;rdquo;的一些半成品，再依序經過幾個有向道路到下個加工地點進行加工，就這樣一直到完成成品，並且為了不讓產品流程出問題，他們的運輸路徑不會出現環狀或逆向的情況。
+&amp;ldquo;REBRAIN&amp;quot;的運輸過程十分有趣，他有一個總工廠來製造&amp;quot;REBRAIN&amp;quot;的一些半成品，再依序經過幾個有向道路到下個加工地點進行加工，就這樣一直到完成成品，並且為了不讓產品流程出問題，他們的運輸路徑不會出現環狀或逆向的情況。
 不過黑色騎士團的人手有限，所以他們希望佔據最少的據點就可以完全控制整個運輸與加工途徑。
 註: 雖然是有向邊，不過相鄰的關係依然是互相的；另外雖然沒有講的很清楚，題目是有保證0號節點可以走到所有其他節點
 Solution 題目所求是最小點覆蓋，也就是在給定圖上要選幾個點才能保證所有邊都有一個端點被選到

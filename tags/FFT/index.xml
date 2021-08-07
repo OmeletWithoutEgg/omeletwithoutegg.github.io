@@ -14,8 +14,8 @@ Description 給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串
 請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。
 ex.
 對於
-&amp;gt; ababa
-&amp;gt; babab
+ababa
+babab
 來說，
 ababa
 =babab
