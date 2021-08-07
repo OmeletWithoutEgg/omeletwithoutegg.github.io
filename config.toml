@@ -80,6 +80,7 @@ weight = 6
     tagsOverview = false
     # showProjectsList = false # show projects list by default (if projects data file exists).
     # projectsUrl = "https://github.com/gohugoio" # title link for projects list
+    showAllPostsArchive = false
   
     # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
     dateFormat = "2006-01-02" # default
@@ -89,7 +90,7 @@ weight = 6
     defaultAuthor = "2qbingxuan"
 
     mathjax = true
-    css = ["css/highlight.css", "css/btn-copy.css", "css/search.css", "css/highlight-table.css"]
+    css = ["css/highlight.css", "css/style-dark.css", "css/search.css"]
   
     [params.comments]
     enabled = true # default
