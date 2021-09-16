@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>geometry on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/geometry/</link><description>Recent content in geometry on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 23 Dec 2020 13:31:04 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/geometry/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>賽車問題 https://tioj.ck.tp.edu.tw/submissions/231136
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>geometry on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/geometry/</link><description>Recent content in geometry on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 12 Sep 2021 00:05:19 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/geometry/index.xml" rel="self" type="application/rss+xml"/><item><title>BSUIR Cherry Orchard</title><link>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</link><pubDate>Sun, 12 Sep 2021 00:05:19 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</guid><description>https://codeforces.com/problemset/gymProblem/101193/J
+這題是上禮拜團練沒人寫的某一題，因為我一直覺得自己的想法是對的所以花了好久來寫這題。
+網路上也找不太到題解:P
+Cherry orchard Description 左下角和右上角分別是 $(0,0)$ 和 $(1,1)$ 的正方形裡面有 $n$ 個點
+現在隨機在正方形的兩條不同的邊各選一個點，並畫出一條直線把這 $n$ 個點分成兩部份。
+請問兩部份中點數的 min 的期望值是多少？
+$n \leq 50$
+Solution 有一個比較聰明的解與一個很複雜的解。先來講我一開始想到的比較複雜的解。
+考慮枚舉所有點對，可以得到所有可能的分法（把點分成兩部份的方法），對於每種分法想辦法計算選到這種分法的機率。
+先蓋好兩部份的凸包。枚舉隨機選到的其中一個點所在的邊 $E$ ，不失一般性可以當作他是正方形左邊那條邊。
+假設我們已經選好上面一個點 $P$ ，那可以「和 $P$ 連成直線，把 $n$ 個點切成這兩個凸包」的 $Q$ 會是另一條邊上的一個範圍。
+這個範圍和 $P$ 與兩個凸包的切線有關，可以枚舉兩個凸包的上下關係， $P$ 只會切到上面那個凸包的下凸包與下面那個凸包的上凸包。
+$E$ 上可以分成 $\mathcal{O}(n)$ 個區間，每個區間內切到下凸包的點和切到上凸包的點是固定的。
+接下來是最後也是最難的部份：對於 $P=(0,y)$ 來說，假設他切到上面那個凸包的 $A$、下面那個凸包的 $B$，那 $\overrightarrow{PA}$ 和 $\overrightarrow{PB}$ 中間的區域就是 $Q$ 可以在的區域，對於另外三條邊來說是一段區間，而這樣的區間左右界會是只跟 $y$ 有關的一個函數。
+雖然他題敘沒有講清楚選中點的機率分佈是不是連續均勻分佈，但大概可以假設是，因此如果 $P=(0,y)$ 對應到的區間長度是 $f(y)$ ，最後的答案就是 $\int _ 0 ^ 1 f(y)$。</description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>賽車問題 https://tioj.ck.tp.edu.tw/submissions/231136
 Description 現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。
 你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。
 可以假設車速都不相同
