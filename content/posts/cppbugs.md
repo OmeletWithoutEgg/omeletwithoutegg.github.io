@@ -1,6 +1,6 @@
 ---
 title: "Cppbugs"
-date: 2021-01-21T00:11:31+08:00
+date: 2021-09-19T16:32:00+08:00
 draft: false
 mathjax: true
 tags: [cpp, experience]
@@ -90,5 +90,52 @@ signed main() {
     std::cout << abs(n) << std::endl; // overflow!
     std::cout << llabs(n) << std::endl;
     std::cout << std::abs(n) << std::endl;
+}
+```
+
+# Array in Temporary Object
+(Update: 2021/9/19)
+如果要在 struct 裡面使用指標或是原生陣列的話，要注意如果你保留一個臨時物件的這種成員，可能會讓這個指標在臨時物件被銷毀之後變得指向一塊不合法的記憶體。
+
+```cpp
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+struct F {
+    int a[2];
+    F() : a{0, 1} {}
+};
+
+void print(int a[2]) {
+    for (int i = 0; i < 2; i++)
+        cerr << a[i];
+    cerr << '\n';
+}
+
+map<int,F> mp;
+F GET(int i) {
+    return mp[i];
+}
+void safe() {
+    cerr << "--- safe BEGIN ---\n";
+    auto B = GET(0);
+    auto a = B.a;
+    print(a);
+    cerr << "--- safe END -----\n";
+}
+void notsafe() {
+    cerr << "--- notsafe BEGIN ---\n";
+    auto a = GET(0).a;
+    print(a);
+    cerr << "--- notsafe END -----\n";
+}
+signed main() {
+    F A;
+    mp[0] = A;
+    print(A.a);
+    safe();
+    notsafe();
 }
 ```
