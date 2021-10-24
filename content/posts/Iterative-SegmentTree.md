@@ -90,9 +90,17 @@ node query(int l, int r) {
     }
     return combine(resl, resr);
 }
+void pull(int p) {
+    while(p > 1) {
+        p >>= 1;
+        tr[p] = combine(tr[p<<1],tr[p<<1|1])
+        tr[p] = applyTag(tr[p], tag[p]);
+    }
+}
 ```
 
 畢竟區間 `query` 的原理就是拿每一層前後的區間，所以只要對前後分開存就好了
+應王勻的要求把 `pull` 也補上，因為沒有交換律的時候不能用 `combine(tr[p], tr[p^1])` @@
 什麼? 你問我沒有結合律怎麼辦?
 一個小常識是線段樹必須滿足結合律才能使用......
 
