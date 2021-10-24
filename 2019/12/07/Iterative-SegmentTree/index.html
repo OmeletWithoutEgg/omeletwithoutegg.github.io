@@ -55,14 +55,21 @@
     <span class=p>}</span>
     <span class=k>return</span> <span class=n>res</span><span class=p>;</span>
 <span class=p>}</span>
-</code></pre></td></tr></table></div></div><p>嗯&mldr;如果看不懂的話也可以接受這就是把$[l,r)$區間拆成線段樹上$2\log n$個節點就好</p><p>和那些噁心的遞迴參數say goodbye吧! \迭代式線段樹/</p><h3 id=如果n不是2的冪次>如果n不是2的冪次?</h3><p>如果題目需要的運算有單位元素的話，可以在後面補上單位元素直到n是2的冪次<br>不過令人意外的是， <strong>上面的程式碼對任意的n都正確</strong>!<br>讓我們來看看 n = 13 的例子</p><p><img src=/images/Iterative-SegmentTree/arbitrary.png alt></p><p>現在它不是一棵完美二元樹了，而是很多棵: 以 <code>2</code> 為根高度4的、以 <code>13</code> 為根高度1的、以 <code>7</code> 為根高度2的<br>畫上底線的節點在 <code>query</code> 的時候不會被動到，所以實際上它們是什麼值都沒有差<br>n不是2的冪次的時候這個演算法仍然正確的原因，可能是它可以被證明和另一個更大二元樹同構吧，不過我也不會證明所以請讀者自己參透(X)</p><p>不把n提高到2的冪次，除了讓程式碼更好看之外，空間使用量也從 $4n$ 減少到了 $2n$<br>不過同時也有一些缺點，例如不好在線段樹上二分搜，沒有 <code>1</code> 號節點代表全域的答案等等(如果沒有交換律)</p><h3 id=不遵守交換律的區間查詢>不遵守交換律的區間查詢?</h3><p>其實這很容易解決，直接上code</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span><span class=lnt>6
-</span><span class=lnt>7
-</span><span class=lnt>8
+</code></pre></td></tr></table></div></div><p>嗯&mldr;如果看不懂的話也可以接受這就是把$[l,r)$區間拆成線段樹上$2\log n$個節點就好</p><p>和那些噁心的遞迴參數say goodbye吧! \迭代式線段樹/</p><h3 id=如果n不是2的冪次>如果n不是2的冪次?</h3><p>如果題目需要的運算有單位元素的話，可以在後面補上單位元素直到n是2的冪次<br>不過令人意外的是， <strong>上面的程式碼對任意的n都正確</strong>!<br>讓我們來看看 n = 13 的例子</p><p><img src=/images/Iterative-SegmentTree/arbitrary.png alt></p><p>現在它不是一棵完美二元樹了，而是很多棵: 以 <code>2</code> 為根高度4的、以 <code>13</code> 為根高度1的、以 <code>7</code> 為根高度2的<br>畫上底線的節點在 <code>query</code> 的時候不會被動到，所以實際上它們是什麼值都沒有差<br>n不是2的冪次的時候這個演算法仍然正確的原因，可能是它可以被證明和另一個更大二元樹同構吧，不過我也不會證明所以請讀者自己參透(X)</p><p>不把n提高到2的冪次，除了讓程式碼更好看之外，空間使用量也從 $4n$ 減少到了 $2n$<br>不過同時也有一些缺點，例如不好在線段樹上二分搜，沒有 <code>1</code> 號節點代表全域的答案等等(如果沒有交換律)</p><h3 id=不遵守交換律的區間查詢>不遵守交換律的區間查詢?</h3><p>其實這很容易解決，直接上code</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
 </span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cpp data-lang=cpp><span class=n>node</span> <span class=nf>query</span><span class=p>(</span><span class=kt>int</span> <span class=n>l</span><span class=p>,</span> <span class=kt>int</span> <span class=n>r</span><span class=p>)</span> <span class=p>{</span>
     <span class=n>node</span> <span class=n>resl</span><span class=p>,</span> <span class=n>resr</span><span class=p>;</span> <span class=c1>// initialized as identity
 </span><span class=c1></span>    <span class=k>for</span><span class=p>(</span><span class=n>l</span><span class=o>+=</span><span class=n>n</span><span class=p>,</span><span class=n>r</span><span class=o>+=</span><span class=n>n</span><span class=p>;</span> <span class=n>l</span><span class=o>&lt;</span><span class=n>r</span><span class=p>;</span> <span class=n>l</span><span class=o>&gt;&gt;=</span><span class=mi>1</span><span class=p>,</span><span class=n>r</span><span class=o>&gt;&gt;=</span><span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
@@ -71,7 +78,14 @@
     <span class=p>}</span>
     <span class=k>return</span> <span class=n>combine</span><span class=p>(</span><span class=n>resl</span><span class=p>,</span> <span class=n>resr</span><span class=p>);</span>
 <span class=p>}</span>
-</code></pre></td></tr></table></div></div><p>畢竟區間 <code>query</code> 的原理就是拿每一層前後的區間，所以只要對前後分開存就好了<br>什麼? 你問我沒有結合律怎麼辦?<br>一個小常識是線段樹必須滿足結合律才能使用&mldr;&mldr;</p><h2 id=迭代型線段樹-with-懶標>迭代型線段樹 with 懶標</h2><p>進到了大家最需要，也是最常寫爛的部分了owo<br>zkw自己似乎是喜歡差分、懶標永久化之類的寫法，不過太精妙了先不解釋XD</p><p>現在題目的單點修改操作變成了區間修改</p><blockquote><ol><li>把區間$[l,r)$的數字都增加$x$</li></ol></blockquote><p>首先我們需要額外的陣列代表懶標，而其長度只需要n，因為葉子節點不需再往下傳遞懶標</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+<span class=kt>void</span> <span class=nf>pull</span><span class=p>(</span><span class=kt>int</span> <span class=n>p</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>while</span><span class=p>(</span><span class=n>p</span> <span class=o>&gt;</span> <span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+        <span class=n>p</span> <span class=o>&gt;&gt;=</span> <span class=mi>1</span><span class=p>;</span>
+        <span class=n>tr</span><span class=p>[</span><span class=n>p</span><span class=p>]</span> <span class=o>=</span> <span class=n>combine</span><span class=p>(</span><span class=n>tr</span><span class=p>[</span><span class=n>p</span><span class=o>&lt;&lt;</span><span class=mi>1</span><span class=p>],</span><span class=n>tr</span><span class=p>[</span><span class=n>p</span><span class=o>&lt;&lt;</span><span class=mi>1</span><span class=o>|</span><span class=mi>1</span><span class=p>])</span>
+        <span class=n>tr</span><span class=p>[</span><span class=n>p</span><span class=p>]</span> <span class=o>=</span> <span class=n>applyTag</span><span class=p>(</span><span class=n>tr</span><span class=p>[</span><span class=n>p</span><span class=p>],</span> <span class=n>tag</span><span class=p>[</span><span class=n>p</span><span class=p>]);</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></td></tr></table></div></div><p>畢竟區間 <code>query</code> 的原理就是拿每一層前後的區間，所以只要對前後分開存就好了<br>應王勻的要求把 <code>pull</code> 也補上，因為沒有交換律的時候不能用 <code>combine(tr[p], tr[p^1])</code> @@<br>什麼? 你問我沒有結合律怎麼辦?<br>一個小常識是線段樹必須滿足結合律才能使用&mldr;&mldr;</p><h2 id=迭代型線段樹-with-懶標>迭代型線段樹 with 懶標</h2><p>進到了大家最需要，也是最常寫爛的部分了owo<br>zkw自己似乎是喜歡差分、懶標永久化之類的寫法，不過太精妙了先不解釋XD</p><p>現在題目的單點修改操作變成了區間修改</p><blockquote><ol><li>把區間$[l,r)$的數字都增加$x$</li></ol></blockquote><p>首先我們需要額外的陣列代表懶標，而其長度只需要n，因為葉子節點不需再往下傳遞懶標</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cpp data-lang=cpp><span class=kt>int</span> <span class=n>tag</span><span class=p>[</span><span class=n>N</span><span class=p>];</span>
 </code></pre></td></tr></table></div></div><h3 id=helper-methods>Helper Methods</h3><p>區間修改時，我們就在存取到的那些節點的答案和懶標都加上$x$，因此有了</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
