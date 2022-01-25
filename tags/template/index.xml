@@ -12,8 +12,7 @@ Fast Linear Recurrence 首先先來介紹如何快速求線性遞迴。
 我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X
 Usage https://github.com/ifsmirnov/jngen
 要使用jngen，你只需要下載jngen.h並引用標頭檔。下載來的標頭檔可以放在 /usr/include 之類的地方，或是跟你的C++原始碼相同目錄當中。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #include &amp;#34;jngen.h&amp;#34;#include &amp;lt;iostream&amp;gt; using std::cout, std::endl; int main(int argc, char *argv[]) { parseArgs(argc, argv); int n, m; getPositional(n, m); Tree t = Tree::bamboo(n).link(n - 1, Tree::star(m), 0); if (getOpt(&amp;#34;shuffled&amp;#34;, false)) { t.shuffle(); } cout &amp;lt;&amp;lt; t.printN().add1() &amp;lt;&amp;lt; endl; } 下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。
-Random jngen跟testlib一樣會使用你執行時傳入的參數做一些hash之類的當作偽隨機的種子，所以如果不是每次呼叫main都用不同參數呼叫，就得乾脆把一個種子在一個generator裡面重複利用。</description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>我只是想做一下筆記
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 #include &amp;#34;jngen.h&amp;#34;#include &amp;lt;iostream&amp;gt; using std::cout, std::endl; int main(int argc, char *argv[]) { registerGen(argc, argv); parseArgs(argc, argv); int n, m; getPositional(n, m); Tree t = Tree::bamboo(n).link(n - 1, Tree::star(m), 0); if (getOpt(&amp;#34;shuffled&amp;#34;, false)) { t.shuffle(); } cout &amp;lt;&amp;lt; t.printN().add1() &amp;lt;&amp;lt; endl; } 下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。</description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>我只是想做一下筆記
 然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配
 先備知識 看得懂$\sum$
 然後會(不帶權)二分圖匹配的匈牙利演算法
