@@ -23,6 +23,7 @@ https://github.com/ifsmirnov/jngen
 using std::cout, std::endl;
 
 int main(int argc, char *argv[]) {
+    registerGen(argc, argv);
     parseArgs(argc, argv);
     int n, m;
     getPositional(n, m);
