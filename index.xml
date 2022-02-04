@@ -117,7 +117,7 @@ registers實在有點長，當然只能先去看dungeons
 平行化大概需要170個操作左右，和最後一個subtask要求150只差一點但是怎麼都壓不過，傷心
 後來看著dungeons一直想他怎麼樣會加倍，突然就想到2的冪次分層
 也就是說如果現在的強度 $z\in[2^i,2^{i+1})$ 就說現在在第 $i$ 層，那一定會輸 $2^{i+1}$ 以上的人、贏 $2^i$ 以下的人，而一旦贏了中間的人就會跳到下一層!</description></item><item><title>Resources</title><link>https://omeletwithoutegg.github.io/resources/</link><pubDate>Sun, 14 Feb 2021 20:15:17 +0800</pubDate><guid>https://omeletwithoutegg.github.io/resources/</guid><description>這裡是放各種友情連結(X)
-其他人的 blog https://www.wiwiho.me/ https://www.jikuai.codes/ https://fhvirus.github.io/ https://casperwang.github.io/ https://erdone.github.io/ https://emanlaicepsa.github.io/ https://simba-fs.github.io/ https://blog.tommydong.live/ 年久失修（？）的 blog 其實我猜我的 blog 很快也要年久失修ㄌ
+其他人的 blog https://www.wiwiho.me/ https://www.jikuai.codes/ https://fhvirus.github.io/ https://casperwang.pages.dev/ https://erdone.github.io/ https://emanlaicepsa.github.io/ https://simba-fs.github.io/ https://blog.tommydong.live/ 年久失修（？）的 blog 其實我猜我的 blog 很快也要年久失修ㄌ
 https://brian.su/ https://codingsimplifylife.blogspot.com/ http://sunmoon-template.blogspot.com/ http://cbdcoding.blogspot.com/ https://oi.ototot.tw/ https://tmt514.github.io/blog http://baluteshih.blogspot.com/ for 競程的工具 OI checklist CF, TIOJ, AtCoder USACO Guide Draw Graph Library Checker vim、vim-plug 蹭熱度蹭起來啦。雖然不知道這樣算不算蹭。</description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。
 主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。
 Fast Linear Recurrence 首先先來介紹如何快速求線性遞迴。
