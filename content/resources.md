@@ -12,7 +12,7 @@ tags: []
 - https://www.wiwiho.me/
 - https://www.jikuai.codes/
 - https://fhvirus.github.io/
-- https://casperwang.github.io/
+- https://casperwang.pages.dev/
 - https://erdone.github.io/
 - https://emanlaicepsa.github.io/
 - https://simba-fs.github.io/
