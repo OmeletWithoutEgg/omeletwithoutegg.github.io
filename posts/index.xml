@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 22 Sep 2021 01:15:50 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>2021 TOI 模考 可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 04 Feb 2022 09:28:40 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>第一學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</link><pubDate>Fri, 04 Feb 2022 09:28:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</guid><description>First semester in csie 部落格已經年久失修ㄌ…
+來講講這學期都在做什麼好了
+計算機程式設計 系上大一必修，大致上是教 C 的語法，從基本 IO 到指標、檔案操作、簡單遞迴等等。
+在高中有參加過程式競賽可以向教授申請當「真強者」，可以不用小考、上課就會在學期末拿到 A+，而通常「真強者」負責的工作是讓這門課的學生可以問問題，並且要負責驗題，整學期總共 30 題吧。
+劉邦鋒教授很毒舌（？）常常嘴砲學生跟助教，然後這學期說助教出的測資太爛，我們又多了一個出測資的工作。
+普通物理學甲上 另一個大一必修，上課教授是呂榮祥教授。
+上課不點名（超優！！），所以我後面都沒有去上課XD
+作業每個禮拜有似乎是從課本挑的題目，以及 VPython 模擬。
+VPython 照著 pdf 做大概就可以抄掉九成的 code 了，真的不想認真的話可以找到網路上一模一樣的題目。
+推薦每個禮拜好好做作業，因為段考會出作業題，剩下的大概就佛系看投影片吧（？）
+沒去上課還能抱佛腳拿到 A+ 應該算甜涼課吧。
+微積分一二（？） 在高三的時候有修所以抵免掉了。
+計算機概論 就教計概。
+作業是 nand2tetris 前面的幾個 project，要學會寫一些奇怪的語言。
+沒有期末考，只有 Final Project，我們的 Final Project 是用很像組合語言的 Jack 語言做一個小遊戲。
+期中考考上課有講的東西，應該不算難（？）
+可是我只有拿到 A-，但也沒有追根究底因為 C+ 根本稀釋不了ㄌ。
+可能還有一個原因是罪惡感，前半有比較認真看影片但後面就沒看QQ
+線性代數 在學期初努力（？）加簽到的大二必修。單班李明穗教授。
+我們這群有修線代的人因為老師上課沒有留任何投影片或是紀錄檔，所以有一起做一個共筆，把上課的東西抄下來。
+學期前半我沒怎麼上課，後面有跟著有去修的人借教室一起聽線上課。
+大部分人都覺得教的內容太少，不如自己看課本學比較快。
+然後每個禮拜有作業、有三次期末考，其實大部分都是熟練計算，和我想像的有差距。
+說得誇張一點，這門課就是教你怎麼做高斯消去法的。期末考計算量真的死人。
+順帶一提這學期的考試有至少兩次題目有問題，然後後來考完才說是題意不清，讓人很煩躁，不過反正最後還是 A+。
+醫學與生活 和王勻一起修的通識，但拿到 C+ 有夠慘…
+據說是學期當中有兩次抽點名我們都沒點到，有一次甚至還是因為為了體育分數去參加拔河@@
+反正是一個每週三要去醫學院聽兩小時左右的東西的課程，每次的講者都不同，另外還有一次實體參訪醫學人文博物館。</description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>2021 TOI 模考 可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。
 今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！
 如果想在 hackmd 上看的話可以戳 https://hackmd.io/@omeletwithoutegg/TOI-2021-sols
 如果只想看題目可以戳
