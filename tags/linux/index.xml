@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/linux/</link><description>Recent content in linux on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 08 Feb 2022 08:30:33 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Arch Install 202202</title><link>https://omeletwithoutegg.github.io/2022/02/08/arch-install-202202/</link><pubDate>Tue, 08 Feb 2022 08:30:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/08/arch-install-202202/</guid><description>安裝 arch 這篇文章是分享與紀錄我在筆電上裝 arch-linux 的過程，其實要裝還是直接看 arch wiki 最快XD 不過那個頁面沒有講怎麼裝 bootloader 與桌面環境。
+製作開機隨身碟（Live USB） 下載 .iso 檔案，並將其寫入 USB 當中（假設 USB 是 /dev/sdb）。
+1 dd bs=4M if=~/Downloads/archlinux-2022.02.01-x86_64.iso of=/dev/sdb &amp;amp;&amp;amp; sync 使用隨身碟開機 通常在開機時按下某個按鍵可以進入選擇開機媒介的選單，例如我現在這台 ASUS 的筆電就是在出現 logo 時按 F2 就會出現選單，在 boot 的地方可以選擇用
+usb 開機。
+在使用隨身碟（使用 live 環境）開機時會有 .iso 裡面自帶的套件可以用，例如 vim、iwd、zsh 等等指令，但這些套件在安裝完成的 arch 裡面不會自動附上。
+確認啟動模式 1 ls /sys/firmware/efi/efivars 如果指令沒有報錯，則系統在 UEFI 模式下啓動。如果目錄不存在，系統可能以 BIOS 或 CSM 模式啓動。
+連上網路 使用 iwctl 連上 Wi-Fi 網路</description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</guid><description>vim ?! vim : 古老的編輯器
+來由 之前 ZCK 很早就開始一直推坑 vim ，而我大概是在開始瘋狂玩 OJDL 之後才開始使用 vim 的
+因為在遠端 server 上改 code 最直接的方式就是使用遠端主機上的 vim 直接在 ssh 的介面改
+所以經過幾個月(我也不知道具體多久)我大概熟悉 vim 了之後，在我的筆電上也裝了 gvim
+因為是 windows 的所以用起來很怪，不過經過 Google 一些設定之後變得正常一些了
+至於我的筆電呢，我覺得裝 linux 的必要性還沒有麻煩性高(X
+而且感覺arch &amp;gt; Ubuntu但是裝了arch又會因為更新速度出現各種神奇的事件
+所以姑且先不裝(?)
+一些心得 我覺得 vim 的優點可能就是讓你可以只使用鍵盤編輯文件，
+再來就是你可以依照自己的喜好更改 vimrc 或是安裝插件
+此外記憶這些快捷鍵也是很有成就感的事情(?)
+變魔法的快速鍵就跟突然講起德語或上古漢語一樣吸引人目光
+my vimrc 附上我自己的 vimrc
+一開始我沒有裝任何插件，後來查到一篇使用 Vundle 的就去載了
+最後跟風(?)改成用 vim-plug 管理所有插件
+物色自己喜歡的插件真的很難，可能害我熬夜了好幾次QQ
+不知道過了一段時間之後我的 vimrc 又會變成什麼樣子
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 set nocompatibleset encoding=utf8set fileencoding=utf8&amp;#34;&amp;#34;&amp;#34; Plugins, use &amp;#39;vim-plug&amp;#39; to manage pluginscall plug#begin(&amp;#39;~/.</description></item></channel></rss>
