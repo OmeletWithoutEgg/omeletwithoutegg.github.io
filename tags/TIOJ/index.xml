@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TIOJ on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/TIOJ/</link><description>Recent content in TIOJ on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 30 Dec 2020 12:57:24 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/TIOJ/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</guid><description>變動的過路費 https://tioj.ck.tp.edu.tw/problems/1597
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TIOJ on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/TIOJ/</link><description>Recent content in TIOJ on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 11 Feb 2022 10:03:10 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/TIOJ/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</guid><description>好．傳囉！ Nice Boat！ Description 給定一個長度 $N$ 的整數序列 $A_i$。
+如果你可以找出一個區間，他的前綴和每個數字都大於等於0，而且他的後綴和的每個數字也都大於等於0，我們就稱他是安全區間，請你找出最長的安全區間長度是多少。
+Solution 考慮原序列的前綴和 $p_i = A_1+A_2+\cdots+A_i$，$p_0=0$，一個區間 $(l, r]$ 是安全區間若且唯若：
+$$
+\begin{cases}
+\forall l \leq x &amp;lt; r ,&amp;amp; p_r - p_x \geq 0 \\
+\forall l &amp;lt; x \leq r ,&amp;amp; p_x - p_l \geq 0 \\
+\end{cases}
+$$
+也就是說，$p_r$ 和 $p_l$ 分別必須要是這段區間的最大值與最小值。
+可以用單調隊列對於每個 $r$ 求出它左邊第一個嚴格比 $p_r$ 大的數字 $left_r$，以及對於每個 $l$ 求出它右邊第一個嚴格比 $p_l$ 小的數字 $right_l$。
+那麼，安全區間的定義又可以寫成
+$$
+left_r &amp;lt; l \leq r &amp;lt; right_l</description></item><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</guid><description>變動的過路費 https://tioj.ck.tp.edu.tw/problems/1597
 Description 給你一張有向圖，每個邊會有隨時間變動的權重，並且邊的權重對時間是一個線性函數。
 再給你兩個點 $A,B$，現在你想要從 $A$ 走到 $B$ 再走回 $A$，
 問你在時間 $[0, D-1]$ 中，最長的最短路徑和最短的最短路徑相差多少。
