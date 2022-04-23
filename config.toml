@@ -70,7 +70,7 @@ weight = 6
 
     colortheme = "dark" # dark, light, white, or classic
     # rss = true # generate rss feed. default value is false
-    googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
+    googleAnalyticsAsync = false # use asynchronous tracking. Synchronous tracking by default
   
     # Home page settings
     description = "一個廢人想寫題解，所以他想辦法弄網站"
