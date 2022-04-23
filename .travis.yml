@@ -9,7 +9,7 @@ branches:
 language: generic
 
 install:
-- wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.79.1/hugo_0.79.1_Linux-ARM64.deb
+- wget -O /tmp/hugo.dev https://github.com/gohugoio/hugo/releases/download/v0.96.0/hugo_0.96.0_Linux-ARM64.deb
 - sudo dpkg -i /tmp/hugo.deb
 
 script:
