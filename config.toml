@@ -5,7 +5,7 @@ theme = "cactus"
 copyright = "Omelet" # cactus will use title if copyright is not set
 
 disqusShortname = "omeletwithoutegg" # Used when comments is enabled. Cactus will use site title if not set
-googleAnalytics = "UA-153846761-1"
+googleAnalytics = "G-0ME10Z2L0D"
 # summaryLength = 2
 disablePathToLower = true
 
