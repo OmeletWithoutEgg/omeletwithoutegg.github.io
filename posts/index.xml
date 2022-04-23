@@ -515,7 +515,7 @@ Solution 呃&amp;hellip;就是一大堆噁心輸出
 計算魔術數字的方法就是用while迴圈一直加，跑到在題敘指定的情況下A隊的勝率會大於B隊的勝率
 噢名次的地方也是要注意QQ很容易沒注意就寫錯
 還有他的空行是在測試資料之間(?)雖然我不知道有沒有差啦
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 #include &amp;lt;cstdio&amp;gt;#include &amp;lt;cmath&amp;gt;#include &amp;lt;algorithm&amp;gt;struct Team { char name[10]; int W, T, L, id; double rate; friend bool operator&amp;lt;(const Team &amp;amp;a, const Team &amp;amp;b) { return a.</description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>照亮的山景 https://tioj.ck.tp.edu.tw/problems/1404
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 #include &amp;lt;cstdio&amp;gt;#include &amp;lt;cmath&amp;gt;#include &amp;lt;algorithm&amp;gt;struct Team { char name[10]; int W, T, L, id; double rate; friend bool operator&amp;lt;(const Team &amp;amp;a, const Team &amp;amp;b) { return a.</description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>照亮的山景 https://tioj.ck.tp.edu.tw/problems/1404
 Description 在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。
 如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。
 請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？
@@ -1184,7 +1184,7 @@ Description 給定一個序列 $a_i$ ，問有多少區間 $[l,r]$ 使得存在�
 Solution 先對 $a_i$ 做前綴 $s_k = \sum\limits _ {i=1}^k a_i$
 對於一個固定的 $l$ 來說，題目等價於找到一個最小的 $m$ 使得 $s_m - s _ {l-1} &amp;lt; 0$
 在 $m$ 之後的 $r$ 都會被算在答案裡面
-可以用單調隊列幫每個 $i$ 找到最小的 $i'$ 使得 $s _ {i'} &amp;lt; s_i$ ，複雜度 $\mathcal{O}(n)$
+可以用單調隊列幫每個 $i$ 找到最小的 $i&amp;rsquo;$ 使得 $s _ {i&amp;rsquo;} &amp;lt; s_i$ ，複雜度 $\mathcal{O}(n)$
 AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</guid><description>販賣機耶 https://tioj.ck.tp.edu.tw/problems/1614
 Description 蝴蝶在路旁玩壞一台販賣機，它一次只能投一枚硬幣（故障？）。
 重點是：投進一枚x元的硬幣，然後按退幣鈕，居然會吐出一枚價值 $f(x)$ 的硬幣耶！
@@ -1226,7 +1226,7 @@ Solution 可能算是經典題吧，這邊提供兩種寫法: 重心剖分和輕
 重心剖分 重心剖分的核心想法是樹分治，每次拔掉一個點，並統計有經過這個點的答案並遞迴計算沒經過該點的答案
 為了確保複雜度，每次拔掉重心是一個好選擇
 也許可以發現每個頂點都會當一次重心(?)
-並且若把每次拔掉的重心$c$和分治下去的每個子樹找到的重心$c'$都連邊，也會是一棵樹，稱為重心樹
+並且若把每次拔掉的重心$c$和分治下去的每個子樹找到的重心$c&amp;rsquo;$都連邊，也會是一棵樹，稱為重心樹
 假設我要查詢$x$這個點，我們就枚舉$x$在重心樹上的祖先
 對於所有黑色頂點$b$來說都可以找到恰一個祖先$c$使得$b,x$最後是被$c$分開的
 可以想到紀錄$cnt_c, sum_c$分別代表分治到以$c$為重心的時候的子樹中，黑色節點的數量以及與$c$的距離和
