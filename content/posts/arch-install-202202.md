@@ -50,9 +50,14 @@ timedatectl set-ntp true
 ```
 
 ### 切割與格式化硬碟
-把你的硬碟分區，至少要切出用來當 root（```/```）跟 boot（```/boot```）的兩塊，其中 boot 要至少大約 260 MB。非常推薦把（```/home```）也切成獨立的一塊，到時候重裝的時候比較方便。
+把你的硬碟分區，至少要切出用來當 root（```/```）跟 boot（```/boot```）的兩塊，其中 boot 要至少 512 MB。非常推薦把（```/home```）也切成獨立的一塊，到時候重裝的時候比較方便。如果是 BIOS 的話則不需要切出 `/boot` 分區。
+
 另外還可以切一塊來當作 swap，我自己切大約 2G（？）
 假設你的硬碟是 ```/dev/sda```，那麼可以用 ```fdisk /dev/sda``` 來修改與查詢分割區。
+
+`fdisk` 按 n 會新增一個分區，接著會要輸入分區編號、First Sector、Last Sector、分區類型，其中 Last Sector 可以打 +{N}G 來設定磁碟大小，其他參數都可以預設就好。
+
+按 p 會顯示目前的分區狀態，按 d 則是可以刪除分區。
 
 基本上 ```fdisk``` 指令按 m 就可以獲得很多提示，此外在下 w （儲存）指令之前都不會真正的修改分割區，因此 w 要小心一點下。
 
@@ -143,14 +148,23 @@ passwd
 
 ## 安裝 bootloader
 
-我使用的 bootloader 是 GRUB。
+我使用的 bootloader 是 GRUB。若是 UEFI 的話：
 ```bash
 pacman -S grub efibootmgr
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## 安裝 KDE 桌面環境
+若是 BIOS 則可以
+
+```bash
+pacman -S grub
+grub-install --target=i386-pc /dev/sda # 可以是原本 root partition 同樣的硬碟
+```
+
+
+
+## 安裝 KDE (plasma) 桌面環境
 
 ```bash
 pacman -S xorg plasma sddm networkmanager
