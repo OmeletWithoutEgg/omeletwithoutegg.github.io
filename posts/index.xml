@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 14 Jul 2022 09:16:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>Second semester 年久失修的部落格，繼續只更新修課心得（流水帳）
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 17 Jul 2022 07:07:20 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Kde Zoom Shortcut</title><link>https://omeletwithoutegg.github.io/2022/07/17/kde-zoom-shortcut/</link><pubDate>Sun, 17 Jul 2022 07:07:20 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/17/kde-zoom-shortcut/</guid><description>KDE Zoom In/Out 一篇已知用火的廢文。
+在第一次換成 linux 之後發現的一個 windows 的好處就是，我只要用觸控版兩根手指同時向外滑，就可以滑順的放大螢幕某個部份，並且是以游標為中心被放大。
+換成 Ubuntu 之後，沒有了這樣的手勢其實有點不習慣。
+在換成 Arch+KDE 之後，也早就已經習慣用瀏覽器內建的 ctrl + =、 ctrl + - 來縮放了，但缺點是不會以游標為中心放大，並且會 trigger RWS，改變排版，此外放大的比例比較離散，會有一段一段跳的感覺。
+不過前幾天意外按到 meta + =（meta 鍵相當於 win 鍵），發現自己螢幕被放大了！已知用火的感覺真好。
+經過一番探索之後，我發現這是 KDE 中 KWin 的 Zoom In / Zoom Out 功能，只要按 meta + = 或 meta + - 就可以放大整個螢幕，並且游標超出去的時候會跟著平移放大的部份。
+今天要發文的時候發現有 magnify 這個功能，在 Desktop Effect 當中可以調整，用起來感覺使用者體驗更好一點
+用起來大概長這樣</description></item><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>Second semester 年久失修的部落格，繼續只更新修課心得（流水帳）
 網路管理與系統管理 (NASA) 禮拜一早九（？）可以選三學分跟一學分，如果選一學分的似乎可以拿來抵服務學習，不過我選了三學分的。
 這門課有一個必須要在寒假左右完成的 HW0，事後看起來有點奇怪的點是學期中有不少課在教的反而是在 HW0 中感覺有用到的東西。
 在學期開始時可以到 204 去實體上課，不過下雨的時候還要早起到 204 真的很折磨。
