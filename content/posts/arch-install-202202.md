@@ -50,26 +50,26 @@ timedatectl set-ntp true
 ```
 
 ### 切割與格式化硬碟
-把你的硬碟分區，至少要切出用來當 root（```/```）跟 boot（```/boot```）的兩塊，其中 boot 要至少 512 MB。非常推薦把（```/home```）也切成獨立的一塊，到時候重裝的時候比較方便。如果是 BIOS 的話則不需要切出 `/boot` 分區。
+把你的硬碟分區，至少要切出用來當 root（`/`）跟 boot（`/boot`）的兩塊，其中 boot 要至少 512 MB。非常推薦把（`/home`）也切成獨立的一塊，到時候重裝的時候比較方便。如果是 BIOS 的話則不需要切出 `/boot` 分區。
 
 另外還可以切一塊來當作 swap，我自己切大約 2G（？）
-假設你的硬碟是 ```/dev/sda```，那麼可以用 ```fdisk /dev/sda``` 來修改與查詢分割區。
+假設你的硬碟是 `/dev/sda`，那麼可以用 `fdisk /dev/sda` 來修改與查詢分割區。
 
 `fdisk` 按 n 會新增一個分區，接著會要輸入分區編號、First Sector、Last Sector、分區類型，其中 Last Sector 可以打 +{N}G 來設定磁碟大小，其他參數都可以預設就好。
 
 按 p 會顯示目前的分區狀態，按 d 則是可以刪除分區。
 
-基本上 ```fdisk``` 指令按 m 就可以獲得很多提示，此外在下 w （儲存）指令之前都不會真正的修改分割區，因此 w 要小心一點下。
+基本上 `fdisk` 指令按 m 就可以獲得很多提示，此外在下 w （儲存）指令之前都不會真正的修改分割區，因此 w 要小心一點下。
 
 接著就是要格式化每個切割出來的分區。
-格式化一般的 linux 檔案系統（通常是 ext4）的指令如下，假設要格式化的是 ```/dev/sda3``` 與 ```/dev/sda4``` 分區，分別當作根分區（root partition）與 home 分區。
+格式化一般的 linux 檔案系統（通常是 ext4）的指令如下，假設要格式化的是 `/dev/sda3` 與 `/dev/sda4` 分區，分別當作根分區（root partition）與 home 分區。
 
 ```bash
 mkfs.ext4 /dev/sda3
 mkfs.ext4 /dev/sda4
 ```
 
-swap 分割區可以用 ```mkswap``` 格式化。
+swap 分割區可以用 `mkswap` 格式化。
 ```bash
 mkswap /dev/dev/sda2
 ```
@@ -80,7 +80,7 @@ mkfs.fat -F 32 /dev/sda1
 ```
 
 ### 掛載處理好的硬碟
-將根分區掛載到 ```/mnt```，其他對應的硬碟分區也掛載到對應的掛載點。
+將根分區掛載到 `/mnt`，其他對應的硬碟分區也掛載到對應的掛載點。
 例如：
 ```bash
 mount /dev/sda3 /mnt
@@ -91,17 +91,17 @@ swapon /dev/sda2 # enable swap
 ```
 
 ### 安裝
-使用 ```pacstrap``` 指令在 /mnt 安裝以下三個 package
+使用 `pacstrap` 指令在 /mnt 安裝以下三個 package
 ```bash
 pacstrap /mnt base linux linux-firmware
 ```
 
-再次注意 base 軟體包中不包含 live 環境中的所有工具，因此像是 ```vi```、```git``` 等基礎設施（？）可以記得安裝。
+再次注意 base 軟體包中不包含 live 環境中的所有工具，因此像是 `vi`、`git` 等基礎設施（？）可以記得安裝。
 
 ## 配置系統
 接下來我們會換根成 /mnt 並對裡面的文件做一些修改
 
-首先把 fstab 文件放到 ```etc/fstab```
+首先把 fstab 文件放到 `etc/fstab`
 ```bash
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
@@ -124,18 +124,18 @@ hwclock --systohc
 ```
 
 ### locale
-編輯 ```/etc/locale.gen```，取消註釋 en_US.UTF-8 UTF-8 和其它需要的 locale，然後執行以下指令來生成它們：
+編輯 `/etc/locale.gen`，取消註釋 en_US.UTF-8 UTF-8 和其它需要的 locale，然後執行以下指令來生成它們：
 ```bash
 locale-gen
 ```
 
-在 ```/etc/locale.conf``` 設定
+在 `/etc/locale.conf` 設定
 ```bash
 LANG=en_US.UTF-8
 ```
 
 ### host name
-編輯 ```/etc/hostname``` 成自己喜歡的名字（？）
+編輯 `/etc/hostname` 成自己喜歡的名字（？）
 順帶一提前面所說的編輯只可以用已經安裝在新根的軟體，例如 vi 之類的。
 ```bash
 pacman -S vi
@@ -204,7 +204,7 @@ usermod -aG sudo USER
 會需要新增一個 user 是因為 plasma 不允許 root 直接登入桌面環境，而讓其有 sudo 權限是因為做任何事情像是裝套件都會需要有 sudo 權限。
 
 ## 結束！
-退出 chroot（exit 或 Ctrl + D），並 ```reboot```
+退出 chroot（exit 或 Ctrl + D），並 `reboot`
 一切搞定，可以去用 GUI 改 KDE 的一些設定，像是 theme、工作列或是觸控版方向（？）
 還有可以裝一個 web browser，我自己常用 google-chrome，可以用 AUR 安裝。
 
