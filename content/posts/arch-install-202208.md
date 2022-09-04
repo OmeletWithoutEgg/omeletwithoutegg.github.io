@@ -1,7 +1,7 @@
 ---
 title: "又是 Arch Install：在 HP 筆電上面雙系統與 secure boot"
 date: 2022-08-31T17:16:20+08:00
-draft: true
+draft: false
 mathjax: true
 tags: [arch, linux, pacman, KDE, plasma, grub, systemd-boot, secure-boot]
 ---
