@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>plasma on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/plasma/</link><description>Recent content in plasma on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 31 Aug 2022 17:16:20 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/plasma/index.xml" rel="self" type="application/rss+xml"/><item><title>又是 Arch Install：在 HP 筆電上面雙系統與 secure boot</title><link>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</link><pubDate>Wed, 31 Aug 2022 17:16:20 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</guid><description>緣由 這麼快的時間就發下一篇 archlinux 的文，我真的覺得我越來越是 BTW I use arch 的人了XD
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>plasma on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/plasma/</link><description>Recent content in plasma on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 07 Sep 2022 00:57:23 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/plasma/index.xml" rel="self" type="application/rss+xml"/><item><title>KDE connect</title><link>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</link><pubDate>Wed, 07 Sep 2022 00:57:23 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</guid><description>KDE connect 之前一個用 Mac 的同學表示他覺得蘋果系列的東西很方便，因為蘋果他們家把手機跟平板整合得很好，例如：可以把手機上的照片、影片等等直接傳到電腦，用手機掃了 QR code 之後用電腦開啟，同步手機與電腦的剪貼版等等。
+最近看到一篇很有料的文章
+https://blog.ryey.icu/archlinux-and-software-on-yoga-14s-2021-part-2.html
+裡面講到了 KDE connect 這個東西，實際用過之後我覺得真的是相當實用的一個工具，而且這個工具也沒有限制平台的，Mac OS 似乎也可以用（？）
+根據 apple 官網有關「接續互通」的部份 來看，雖然還是有少一些 feature 像是同步/延伸畫面，或是一些自動解鎖的 feature，
+不過我認為已經相當好用了。
+What is KDE connect KDE connect 提供了裝置之間整合的功能，我目前比較常用的是手機與電腦的一些同步功能。
+雖然叫做 KDE connect 不過聽說其他桌面環境也可以用（？）沒有試過不知道整合得怎麼樣。
+這個 app 必須要在電腦跟手機都要安裝才可以使用，並且要求裝置們必須要處在同一個區域網，例如手機和筆電連同樣的 wifi 等等。
+安裝了 app 之後大部分常用的功能不需要開啟 app 就可以使用，例如多媒體控制會跟普通播音樂一樣在下拉通知頁面或是解鎖螢幕有一個小 widget 出現。
+我用過的 feature 多媒體控制 可以互相控制裝置的多媒體播放，使用情境可能像是離電腦很遠但離手機很近的時候。
+手機上的圖示跟放音樂的時候會出現的圖示差不多，所以用起來也很直覺。
+聽說在接聽電話的時候會自動暫停正在播放的音樂或是影片。
+遠端控制 可以用手機控制滑鼠，或是用手機鍵盤打字。
+用起來手感跟我的筆電觸控版差不多（沒有三指或四指手勢就是了啦）可以干擾想要對你的電腦做怪事的人(X
+投影片控制 可以把手機當成簡報筆來用，有兩個按鍵代表 page up / page down 以及有一個按鍵對應到雷射的部份，長按會出現一個圓圈並且會跟著手機的旋轉在畫面上移動，告訴大家焦點在哪裡。
+雖然我覺得是一個很棒的功能，不過我目前沒有很重度的簡報需求。
+尋找裝置 有點有用但又有點沒用的 feature。
+按下去會讓手機響鈴以方便找手機。
+因為 KDE connect 必須要在同一個 LAN 才可以用，所以手機沒有連網路是不能用的。</description></item><item><title>又是 Arch Install：在 HP 筆電上面雙系統與 secure boot</title><link>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</link><pubDate>Wed, 31 Aug 2022 17:16:20 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</guid><description>緣由 這麼快的時間就發下一篇 archlinux 的文，我真的覺得我越來越是 BTW I use arch 的人了XD
 不過這次裝 archlinux 也是有理由的，因為我從 NPSC 拿到的筆電的電池壞掉了，如果沒有插著電就會直接關機，想說就順便換了一台新的筆電。因為奇怪的堅持不想用 Mac，選了選之後最後是挑 HP pavilion plus 14。
 上次因為是想要整台變成 Linux 所以比較不用煩惱一些問題，這次我希望能夠雙系統 Windows 並且可以玩一些遊戲，會需要有 secure boot 的功能所以也有比較不同的設定；此外這次也有碰到各種不同的問題，作為紀錄以及希望能幫助有遇到類似問題的人就發一篇文吧 :P
 流水帳 事前需要的材料 不一定要用但我有用到
