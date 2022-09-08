@@ -45,19 +45,20 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 例如 `curl XXXXX.content.pkg | fzf` 之類的，就會把使用者在 `fzf` 選定的選項用標準輸出印出來。
 
 ## history widget
-按 `CTRL+R` 用 `fzf` 找到以前的路徑。XXDDDD
-然後按 Enter 就會把該調指令貼到 shell prompt 前面。
+按 `CTRL+R` 用 `fzf` 會由新到舊列出打過的指令，可以打一些字過濾指令或是用 `CTRL+J/CTRL+K` 上下移動
+然後按 Enter 就會把該條指令貼到 shell prompt。
 
 ## CTRL-T widget
 模糊搜尋當前目錄的所有檔案（遞迴尋找）
 使用情境：例如 `vim XXX` 突然不知道要開什麼的話
 
-## Alt-C widget
+## ALT-C widget
 用 `fzf` 切換到當前目錄以下的目錄（遞迴尋找）
 
 ## double asterisk
 在任何指令中（通常是在打路徑時）填入兩個星號再按 tab 就就會用 `fzf` 嘗試自動完全成或是補全大部分。
 
 # 結語
-推薦大家都 `fzf` 因為這真的是一個很有料的 CLI app，而且他的歷史提示應該是我體驗過蠻好的，直接用 `fzf` 就可以取代很多東西了。
+推薦大家都 `fzf` 因為這真的是一個很有料的 CLI app，而且他的 history widget 應該是我體驗過蠻好的歷史補全的東西。
+一個小缺點就是他的 history widget ，沒有 syntax highlight 而且我在 `fzf` 的自訂 keybind 中 accept/abort 會有些小 bug。
 寫這篇時很想睡覺歡迎抓錯字或是亂寫…
