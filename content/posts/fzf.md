@@ -39,6 +39,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 （我個人比較不喜歡這樣的方法）
 
+要在 shell 當中使用以下提到的快捷鍵的話，你必須在 `.bashrc/.zshrc` 當中 source 由你選擇的安裝方法提供的 keybind script。
+以 Archlinux 來說會被放在 `/usr/share/fzf/key-bindings.zsh`，而用 `vim` 安裝的應該會放在 `~/.fzf.zsh` 之類的。
+
 ## 簡單用法
 
 `fzf` 比較一般化的用法是用別的程式的輸出 pipe 到 `fzf`，然後 `fzf` 會跳出一個 TUI 介面讓我們模糊搜尋，按下 enter 應該等於是選擇該行項目，會被印到標準輸出當中。
