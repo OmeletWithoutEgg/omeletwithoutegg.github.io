@@ -1,4 +1,5 @@
-name: Hugo Build Github Pages
+# https://github.com/peaceiris/actions-hugo
+name: build hugo gh-pages
 
 on:
   push:
