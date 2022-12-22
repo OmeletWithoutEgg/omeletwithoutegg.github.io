@@ -4,7 +4,8 @@
 而這個功能我認為我目前找到用起來最順手的就是 fzf 的 history widget 了。
 安裝 可以用 linux distro 提供的 package manager 安裝
 1 sudo pacman -S fzf 1 sudo apt-get install fzf 1 brew install fzf 或者也可以透過 vim 的 plugin manager 作為一個 vim 的 plugin 安裝。
-1 Plug &amp;#39;junegunn/fzf&amp;#39;, { &amp;#39;do&amp;#39;: { -&amp;gt; fzf#install() } } （我個人比較不喜歡這樣的方法）</description></item><item><title>Qutebrowser 瀏覽器</title><link>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</link><pubDate>Tue, 29 Mar 2022 10:13:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</guid><description>Qutebrowser: vim-like browser 這是一篇推薦文與介紹文。
+1 Plug &amp;#39;junegunn/fzf&amp;#39;, { &amp;#39;do&amp;#39;: { -&amp;gt; fzf#install() } } （我個人比較不喜歡這樣的方法）
+要在 shell 當中使用以下提到的快捷鍵的話，你必須在 .bashrc/.zshrc 當中 source 由你選擇的安裝方法提供的 keybind script。</description></item><item><title>Qutebrowser 瀏覽器</title><link>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</link><pubDate>Tue, 29 Mar 2022 10:13:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</guid><description>Qutebrowser: vim-like browser 這是一篇推薦文與介紹文。
 已經忘記開始使用 qutebrowser 的契機是什麼了，可能是看到（東東）學長用覺得很酷。
 在熟悉 vim 之後，qutebrowser 作為一個「Keyboard-driven」的瀏覽器吸引力會大大提昇，其 UI 簡潔與配置的靈活也讓我愛不釋手
 Installation https://qutebrowser.org/doc/install.html
@@ -30,4 +31,4 @@ my vimrc 附上我自己的 vimrc
 最後跟風(?)改成用 vim-plug 管理所有插件
 物色自己喜歡的插件真的很難，可能害我熬夜了好幾次QQ
 不知道過了一段時間之後我的 vimrc 又會變成什麼樣子
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 set nocompatibleset encoding=utf8set fileencoding=utf8&amp;#34;&amp;#34;&amp;#34; Plugins, use &amp;#39;vim-plug&amp;#39; to manage pluginscall plug#begin(&amp;#39;~/.</description></item></channel></rss>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 set nocompatible set encoding=utf8 set fileencoding=utf8 &amp;#34;&amp;#34;&amp;#34; Plugins, use &amp;#39;vim-plug&amp;#39; to manage plugins call plug#begin(&amp;#39;~/.</description></item></channel></rss>

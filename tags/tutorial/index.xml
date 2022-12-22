@@ -50,16 +50,21 @@ naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意
 1 2 3 4 5 for(int i = 0; i &amp;lt; A.size(); i++) { for(int j = 0; j &amp;lt; B.size(); j++) { res[i+j] += A[i] * B[j]; } } DFT 先假設我們有兩個多項式
 $$
 A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline
-C(x) = A(x)B(x)</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>迭代式線段樹 先備知識: 線段樹(帶懶標) + 位元運算(吧)
+C(x) = A(x)B(x)
+$$
+除了上述利用分配律乘開以外
+因為$C$的次數已經可以確定</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>迭代式線段樹 先備知識: 線段樹(帶懶標) + 位元運算(吧)
 如果讀者還不知道線段樹的原理最好看遞迴的(?)
 單點修改 例題仍然是萬年RMQ
 給定一個長度$n$的序列，請支援以下操作
 將位置$p$的值改為$x$ 查詢區間$[l,r)$的最大值 完美二元樹 首先假定$n$是2的冪次，思考可能可以簡單一些
 我們一樣用1當根，並且節點i的左右子樹會是i*2和i*2+1或寫成i&amp;lt;&amp;lt;1, i&amp;lt;&amp;lt;1|1
 1 2 const int N = 1&amp;lt;&amp;lt;18; int tr[N&amp;lt;&amp;lt;1], n; 對於初始化來說，可以發現葉子節點對應的都是長度$1$的區間，正好是原序列的值，所以可以直接讀入或另外傳入賦值給 tr[i+n]，接著可以用遞減的順序把其他長度的區間的答案算好
-1 2 3 4 void build(int v[]) { for(int i = 0; i &amp;lt; n; i++) tr[i+n] = v[i]; for(int i = n-1; i &amp;gt; 0; i--) tr[i] = max(tr[i&amp;lt;&amp;lt;1], tr[i&amp;lt;&amp;lt;1|1]); } 更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到</description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>常用的輸入(出)優化 cin / cout 因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用
+1 2 3 4 void build(int v[]) { for(int i = 0; i &amp;lt; n; i++) tr[i+n] = v[i]; for(int i = n-1; i &amp;gt; 0; i--) tr[i] = max(tr[i&amp;lt;&amp;lt;1], tr[i&amp;lt;&amp;lt;1|1]); } 更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到
+注意 p^1 代表 p 的兄弟節點，也就是 p 父親的另一個兒子
+1 2 3 4 void modify(int p, int x) { for(tr[p+=n] = x; p &amp;gt; 1; p&amp;gt;&amp;gt;=1) tr[p&amp;gt;&amp;gt;1] = max(tr[p],tr[p^1]); } 至於區間的查詢就沒有那麼顯然了，我們一樣必須把詢問的區間拆分成線段樹上的一些區間，而且數量不能超過$\mathcal{O}(\log n)$</description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>常用的輸入(出)優化 cin / cout 因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用
 競程的時候記得開下面兩個東西
 1 ios_base::sync_with_stdio(0), cin.tie(0); 開了之後就不要使用 stdio 裡面的東西啦
 另外若非互動題也不要使用 endl 之類會flush的函式，請用 '\n' 代替
 scanf / printf 常用的也就那些
-1 2 3 4 5 6 7 8 9 10 11 #include &amp;lt;cstdio&amp;gt;int main() { int x,y; long long L; scanf(&amp;#34;%d%d%lld&amp;#34;, &amp;amp;x, &amp;amp;y, &amp;amp;L); printf(&amp;#34;%lld\n&amp;#34;, x+y+L); char s[100]; scanf(&amp;#34;%s&amp;#34;, s); for(int i = 0; s[i]; i++) s[i] = (s[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;; printf(&amp;#34;%s\n&amp;#34;, s); } 值得注意的是 iostream 的空間有點大，所以想要壓空間用 stdio 就對了</description></item></channel></rss>
+1 2 3 4 5 6 7 8 9 10 11 #include &amp;lt;cstdio&amp;gt; int main() { int x,y; long long L; scanf(&amp;#34;%d%d%lld&amp;#34;, &amp;amp;x, &amp;amp;y, &amp;amp;L); printf(&amp;#34;%lld\n&amp;#34;, x+y+L); char s[100]; scanf(&amp;#34;%s&amp;#34;, s); for(int i = 0; s[i]; i++) s[i] = (s[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;; printf(&amp;#34;%s\n&amp;#34;, s); } 值得注意的是 iostream 的空間有點大，所以想要壓空間用 stdio 就對了</description></item></channel></rss>

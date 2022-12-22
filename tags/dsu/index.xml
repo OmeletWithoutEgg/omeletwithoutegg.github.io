@@ -3,4 +3,4 @@ Description 給定二維平面上$N$個點，若編號$i,j$的點之間的距離
 問最後的連通塊數量以及每個連通塊的大小
 Solution 我想不到比$\mathcal{O}(N^2)$枚舉直接連邊更好的解了XD
 比起DFS我更喜歡用DSU因此code是DSU
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 #include &amp;lt;cstdio&amp;gt;#include &amp;lt;algorithm&amp;gt;#include &amp;lt;vector&amp;gt; const int N = 4001; int s, n, r; std::pair&amp;lt;int,int&amp;gt; p[N]; int pa[N], sz[N]; std::vector&amp;lt;int&amp;gt; ans; int dis(std::pair&amp;lt;int,int&amp;gt; a, std::pair&amp;lt;int,int&amp;gt; b) {return (a.</description></item></channel></rss>
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 #include &amp;lt;cstdio&amp;gt; #include &amp;lt;algorithm&amp;gt; #include &amp;lt;vector&amp;gt; const int N = 4001; int s, n, r; std::pair&amp;lt;int,int&amp;gt; p[N]; int pa[N], sz[N]; std::vector&amp;lt;int&amp;gt; ans; int dis(std::pair&amp;lt;int,int&amp;gt; a, std::pair&amp;lt;int,int&amp;gt; b) {return (a.</description></item></channel></rss>

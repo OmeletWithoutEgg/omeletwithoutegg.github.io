@@ -1,10 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>arch on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/arch/</link><description>Recent content in arch on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 08 Sep 2022 21:26:22 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/arch/index.xml" rel="self" type="application/rss+xml"/><item><title>Fzf fuzzy finder - best shell history picker</title><link>https://omeletwithoutegg.github.io/2022/09/08/fzf/</link><pubDate>Thu, 08 Sep 2022 21:26:22 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/08/fzf/</guid><description>FZF fuzzy finder fzf 是一個通用的模糊搜尋（fuzzy find）工具，用 go 寫成。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>arch on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/arch/</link><description>Recent content in arch on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 21 Dec 2022 16:33:11 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/arch/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://omeletwithoutegg.github.io/2022/12/21/mpv-pulseaudio/</link><pubDate>Wed, 21 Dec 2022 16:33:11 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/12/21/mpv-pulseaudio/</guid><description>mpv suspends pulseaudio sink mpv 是一個簡單、輕量的 media player。
+Description 最近在用 mpv 播放影片的時候發現有時候暫停 youtube 的影片用 mpv 一下下再轉回去瀏覽器，就瘋狂轉圈圈然後表示「如果經過一段時間仍未開始播放，請試著重新啟動您的裝置」
+Solution 找 log 找了很久究竟誰是犯人， systemctl restart --user pulseaudio 之後影片就可以播了所以確定犯人是它。
+1 systemctl status --user pulseaudio 然後就是一大堆的 Failed to create sink input: sink is suspended.
+拿去搜尋得知應該是因為 pulseaudio 預設有打開某種 idle 時候自動 suspend 的機制，改掉預設的 config file 就可以了
+1 vim /etc/pulse/default.pa ... ### Automatically suspend sinks/sources that become idle for too long #load-module module-suspend-on-idle # comment this ... Another solution 看 Reference 那篇有說到安裝 pipewire-pulse 也可以解決問題，目前試起來沒什麼問題。</description></item><item><title>Fzf fuzzy finder - best shell history picker</title><link>https://omeletwithoutegg.github.io/2022/09/08/fzf/</link><pubDate>Thu, 08 Sep 2022 21:26:22 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/08/fzf/</guid><description>FZF fuzzy finder fzf 是一個通用的模糊搜尋（fuzzy find）工具，用 go 寫成。
 很久以前就聽過它了，但以為自己不太需要這種東西。
 前陣子在尋找類似於 zsh-history-substring-search 的工具，也就是我可以打一些關鍵的字之後讓 zsh 從歷史紀錄裡面找類似的指令幫我貼到 shell 裡面。
 而這個功能我認為我目前找到用起來最順手的就是 fzf 的 history widget 了。
 安裝 可以用 linux distro 提供的 package manager 安裝
 1 sudo pacman -S fzf 1 sudo apt-get install fzf 1 brew install fzf 或者也可以透過 vim 的 plugin manager 作為一個 vim 的 plugin 安裝。
-1 Plug &amp;#39;junegunn/fzf&amp;#39;, { &amp;#39;do&amp;#39;: { -&amp;gt; fzf#install() } } （我個人比較不喜歡這樣的方法）</description></item><item><title>又是 Arch Install：在 HP 筆電上面雙系統與 secure boot</title><link>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</link><pubDate>Wed, 31 Aug 2022 17:16:20 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</guid><description>緣由 這麼快的時間就發下一篇 archlinux 的文，我真的覺得我越來越是 BTW I use arch 的人了XD
+1 Plug &amp;#39;junegunn/fzf&amp;#39;, { &amp;#39;do&amp;#39;: { -&amp;gt; fzf#install() } } （我個人比較不喜歡這樣的方法）
+要在 shell 當中使用以下提到的快捷鍵的話，你必須在 .bashrc/.zshrc 當中 source 由你選擇的安裝方法提供的 keybind script。</description></item><item><title>又是 Arch Install：在 HP 筆電上面雙系統與 secure boot</title><link>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</link><pubDate>Wed, 31 Aug 2022 17:16:20 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</guid><description>緣由 這麼快的時間就發下一篇 archlinux 的文，我真的覺得我越來越是 BTW I use arch 的人了XD
 不過這次裝 archlinux 也是有理由的，因為我從 NPSC 拿到的筆電的電池壞掉了，如果沒有插著電就會直接關機，想說就順便換了一台新的筆電。因為奇怪的堅持不想用 Mac，選了選之後最後是挑 HP pavilion plus 14。
 上次因為是想要整台變成 Linux 所以比較不用煩惱一些問題，這次我希望能夠雙系統 Windows 並且可以玩一些遊戲，會需要有 secure boot 的功能所以也有比較不同的設定；此外這次也有碰到各種不同的問題，作為紀錄以及希望能幫助有遇到類似問題的人就發一篇文吧 :P
 流水帳 事前需要的材料 不一定要用但我有用到
@@ -31,17 +37,5 @@ command keybinding 功能 :open {url} o 在目前的分頁開啟某個 URL :open
 usb 開機。
 在使用隨身碟（使用 live 環境）開機時會有 .iso 裡面自帶的套件可以用，例如 vim、iwd、zsh 等等指令，但這些套件在安裝完成的 arch 裡面不會自動附上。
 確認啟動模式 1 ls /sys/firmware/efi/efivars 如果指令沒有報錯，則系統在 UEFI 模式下啓動。如果目錄不存在，系統可能以 BIOS 或 CSM 模式啓動。
-連上網路 使用 iwctl 連上 Wi-Fi 網路</description></item><item><title>Miku Cursor on Arch Linux</title><link>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</link><pubDate>Thu, 10 Dec 2020 17:05:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</guid><description>在Arch的初音游標 因為在Windows有下載一個可愛的初音游標，但是之前換成Ubuntu後就沒有把他裝回來，覺得很可惜。
-因此現在換成Arch之後，想說應該有一些社群的package可以用了，直接抓來就好，但是怎麼google都google不到？
-因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。
-找到巴哈姆特上面的原始檔（是.ani跟.cur） 利用cursor-converter把.ani和.cur換成x-cursor的icon類型 手動把對應的圖案複製到 ~/.icons/$THEME/cursors 裡面
-如果不知道哪個檔名是什麼的話，可以先複製別的theme的資料夾，接著用 xcur2png 換成 png看某個檔案實際上是對應哪個圖案。 加上 index.theme。反正只要有Name就可以了吧我猜 中間踩了各種怪東西XD
-我原本先去下載了其他主題，想說看別的主題的游標應該是什麼對應到什麼，尤其是有動畫的。
-不過似乎有動畫的游標和沒動畫的檔名一樣QQ
-然後有找到一個ani2png，但是畫質會爆炸而且沒有幫忙放到對應的位置（雖然最後也是我們自己放到對應的位置）
-接著找到CSDN上面有人說用CursorXP從Windows上面把游標主題包起來，接著在Linux下載一個用來轉換成icon類型的Perl腳本，
-會轉換成一個tar.gz然後就可以安裝的樣子了，不過還是偏糟，從Windows上面看就發現畫質還是大小大爆炸了
-最後終於走對路，找到github上面一個比較新的repo是把.ani跟.cur轉成linux的x-cursor檔案
-真是要感謝他們www
-話說我發現其實可以直接把檔案放到github上面，這樣也可以推廣或是找人來修改(X
-裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ，所以希望放到github上之後有人可以把其他那些icon改成統一的風格owo</description></item></channel></rss>
+連上網路 使用 iwctl 連上 Wi-Fi 網路
+1 2 3 4 iwctl [iwd]# device list [iwd]# station DEVICE scan [iwd]# station DEVICE connect SSID 其中 DEVICE 是你的網路介面裝置的名稱</description></item></channel></rss>

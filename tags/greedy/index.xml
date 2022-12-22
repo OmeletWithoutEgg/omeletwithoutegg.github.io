@@ -39,7 +39,7 @@ Solution 霍夫曼編碼XD老題目
 結論是：每次把最小和次小的節點合併成一個節點，一定可以得到最佳解
 (QQ我覺得我不會查也不會寫證明)
 要怎麼維護所有節點的最小和次小呢？用一個heap就可以啦
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; const int N = 100025; #define int ll int v[N]; signed main() { ios_base::sync_with_stdio(0), cin.tie(0); int n,ans; while(cin &amp;gt;&amp;gt; n) { ans = 0; for(int i = 0; i &amp;lt; n; i++) cin &amp;gt;&amp;gt; v[i]; std::priority_queue&amp;lt;int,vector&amp;lt;int&amp;gt;,greater&amp;lt;int&amp;gt;&amp;gt; pq(v,v+n); while(pq.</description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>我很忙 https://tioj.ck.tp.edu.tw/problems/1408
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #include &amp;lt;bits/stdc++.h&amp;gt; using namespace std; const int N = 100025; #define int ll int v[N]; signed main() { ios_base::sync_with_stdio(0), cin.tie(0); int n,ans; while(cin &amp;gt;&amp;gt; n) { ans = 0; for(int i = 0; i &amp;lt; n; i++) cin &amp;gt;&amp;gt; v[i]; std::priority_queue&amp;lt;int,vector&amp;lt;int&amp;gt;,greater&amp;lt;int&amp;gt;&amp;gt; pq(v,v+n); while(pq.</description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>我很忙 https://tioj.ck.tp.edu.tw/problems/1408
 Description 給定$n$個時段$[l_i, r_i)$
 問至少有多少單位時間要是忙碌的才能滿足
 「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)
@@ -66,7 +66,7 @@ n是奇數 若$i$是偶數，則$a_i$必須小於相鄰的項 若$i$是奇數，
 若h比tail大，那就直接接上去(並更新tail)，否則就把tail替換成h
 反之亦然
 證明大概可以用數歸吧(?)我也不太會說明QQ
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #include &amp;lt;iostream&amp;gt;signed main() { ios_base::sync_with_stdio(0), cin.tie(0); int n, tail = -1, inc = 1, ans = 0; cin &amp;gt;&amp;gt; n; while(n--) { cin &amp;gt;&amp;gt; h; if(h == tail) continue; if(h &amp;lt; tail ^ inc) ++ans, inc = !</description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</guid><description>黑色騎士團的飛彈野望 https://tioj.ck.tp.edu.tw/problems/1567
+AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #include &amp;lt;iostream&amp;gt; signed main() { ios_base::sync_with_stdio(0), cin.tie(0); int n, tail = -1, inc = 1, ans = 0; cin &amp;gt;&amp;gt; n; while(n--) { cin &amp;gt;&amp;gt; h; if(h == tail) continue; if(h &amp;lt; tail ^ inc) ++ans, inc = !</description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</guid><description>黑色騎士團的飛彈野望 https://tioj.ck.tp.edu.tw/problems/1567
 Description 給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點
 若不可行輸出-1
 Solution 首先我們對每個點都可以知道包覆它的圓的圓心範圍在$x$軸的哪段區間

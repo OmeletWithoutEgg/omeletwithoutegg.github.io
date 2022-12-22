@@ -8,7 +8,10 @@ naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意
 1 2 3 4 5 for(int i = 0; i &amp;lt; A.size(); i++) { for(int j = 0; j &amp;lt; B.size(); j++) { res[i+j] += A[i] * B[j]; } } DFT 先假設我們有兩個多項式
 $$
 A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline
-C(x) = A(x)B(x)</description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</guid><description>通關密語 https://tioj.ck.tp.edu.tw/problems/1035
+C(x) = A(x)B(x)
+$$
+除了上述利用分配律乘開以外
+因為$C$的次數已經可以確定</description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</guid><description>通關密語 https://tioj.ck.tp.edu.tw/problems/1035
 Description 給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串 $S,T$
 定義「最佳擬合」，就是將 $S$ 經過平移後和 $T$ 比對，同樣的字元數最多的那一種方法。
 請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。

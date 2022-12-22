@@ -10,4 +10,5 @@ prepare installation medium 請參考 archwiki
 usb 開機。
 在使用隨身碟（使用 live 環境）開機時會有 .iso 裡面自帶的套件可以用，例如 vim、iwd、zsh 等等指令，但這些套件在安裝完成的 arch 裡面不會自動附上。
 確認啟動模式 1 ls /sys/firmware/efi/efivars 如果指令沒有報錯，則系統在 UEFI 模式下啓動。如果目錄不存在，系統可能以 BIOS 或 CSM 模式啓動。
-連上網路 使用 iwctl 連上 Wi-Fi 網路</description></item></channel></rss>
+連上網路 使用 iwctl 連上 Wi-Fi 網路
+1 2 3 4 iwctl [iwd]# device list [iwd]# station DEVICE scan [iwd]# station DEVICE connect SSID 其中 DEVICE 是你的網路介面裝置的名稱</description></item></channel></rss>

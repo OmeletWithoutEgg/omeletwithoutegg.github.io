@@ -3,4 +3,4 @@
 1 ios_base::sync_with_stdio(0), cin.tie(0); 開了之後就不要使用 stdio 裡面的東西啦
 另外若非互動題也不要使用 endl 之類會flush的函式，請用 '\n' 代替
 scanf / printf 常用的也就那些
-1 2 3 4 5 6 7 8 9 10 11 #include &amp;lt;cstdio&amp;gt;int main() { int x,y; long long L; scanf(&amp;#34;%d%d%lld&amp;#34;, &amp;amp;x, &amp;amp;y, &amp;amp;L); printf(&amp;#34;%lld\n&amp;#34;, x+y+L); char s[100]; scanf(&amp;#34;%s&amp;#34;, s); for(int i = 0; s[i]; i++) s[i] = (s[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;; printf(&amp;#34;%s\n&amp;#34;, s); } 值得注意的是 iostream 的空間有點大，所以想要壓空間用 stdio 就對了</description></item></channel></rss>
+1 2 3 4 5 6 7 8 9 10 11 #include &amp;lt;cstdio&amp;gt; int main() { int x,y; long long L; scanf(&amp;#34;%d%d%lld&amp;#34;, &amp;amp;x, &amp;amp;y, &amp;amp;L); printf(&amp;#34;%lld\n&amp;#34;, x+y+L); char s[100]; scanf(&amp;#34;%s&amp;#34;, s); for(int i = 0; s[i]; i++) s[i] = (s[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;; printf(&amp;#34;%s\n&amp;#34;, s); } 值得注意的是 iostream 的空間有點大，所以想要壓空間用 stdio 就對了</description></item></channel></rss>
