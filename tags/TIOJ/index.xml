@@ -171,7 +171,7 @@ $$
 $$
 \begin{align*}
 \sum _ {i=1}^n \sum _ {j=1}^m [\gcd(i, j) = g] &amp;amp;= \sum _ {i=1}^{\lfloor n/g \rfloor} \sum _ {j=1}^{\lfloor m/g \rfloor} [\gcd(i, j) = 1]\newline
-\sum _ {i=1}^N \sum _ {j=1}^M [\gcd(i, j) = 1] &amp;amp;= \sum _ {i=1}^N \sum _ {j=1}^M \sum_d \mu(d) \cdot [d | \gcd(i, j)]\newline</description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</guid><description>殿壬愛序列 https://tioj.ck.tp.edu.tw/problems/1102
+\sum _ {i=1}^N \sum _ {j=1}^M [\gcd(i, j) = 1] &amp;amp;= \sum _ {i=1}^N \sum _ {j=1}^M \sum_d \mu(d) \cdot [d | \gcd(i, j)]\newline</description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</guid><description>殿壬愛序列 https://tioj.ck.tp.edu.tw/problems/2140
 Description 給你一個長度為$N$的序列$a_1, a_2, \dots, a_N$，並且依序執行$Q$個操作，每個操作可能是
 1 x y ：把$a_x$設成$y$
 2 L R k ：對於每個$i \in [L, R]$，把$a_i$設成$\lfloor \frac{a_i}{k} \rfloor$。其中$\lfloor x \rfloor$代表不大於$x$的最大整數

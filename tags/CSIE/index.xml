@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSIE on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/CSIE/</link><description>Recent content in CSIE on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 14 Jul 2022 09:16:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/CSIE/index.xml" rel="self" type="application/rss+xml"/><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>Second semester 年久失修的部落格，繼續只更新修課心得（流水帳）
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSIE on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/CSIE/</link><description>Recent content in CSIE on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 15 Jan 2023 22:52:47 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/CSIE/index.xml" rel="self" type="application/rss+xml"/><item><title>第三學期修課心得</title><link>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</link><pubDate>Sun, 15 Jan 2023 22:52:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</guid><description>Third semester 感覺時間過好快，雖然才第三個學期而已。
+足球初級 修了個體育。
+老師上課的方式是每個禮拜會先教一下子基本動作，然後就讓我們分組比賽。
+分數來源除了考規則、考基本動作以外，還有在比賽中有好表現可以加分。
+分組是期初分完就固定的，但依照我的社恐力和組員相處還是很吃力（？）
+其實每個禮拜跑動一下，結束之後心情還是不錯的（但社交能量會喪失（？））
+預設是在操場上課，有下雨的話會換到舊體。
+因為是在下半年，所以即便是在操場上，大多數時間也不太會熱。
+最後拿到 A，不知道在什麼地方加強有機會拿到 A+。
+系統程式設計 簡稱 SP 的一門大二必修。
+課程內容幾乎都在講 system call 跟 Unix-like 的系統會有的特性。
+system call 從例如 open read write 到 fcntl 或 fork 或 mmap 都有講一下怎麼用、怎麼用不好以及怎麼用比較好。
+Unix-like 系統的特性則是比如說 process、thread、signal、file、pipe 好多好多。
+這堂課有四次程式作業還有一些手寫作業，手寫作業在 ChatGPT 出來之後輕鬆很多(X
+程式作業是我覺得很麻煩的地方。
+程式作業的形式是助教會寫一份 spec 然後我們就照著上面的 implement，並且沒有什麼即時反饋的機制，比如說第一次作業是要我們擔任一個借書系統的後端部份（跟網路互動的部份有寫好部份的 code 了），用 open read write 以及一些 IO multiplexing 的 syscall 去同步處理多個 request。
+很煩的部份是，常常在作業出來一陣子之後又更新一些檔案/spec 等等，尤其是 spec 不太清楚還要一直到 github 討論區問助教，第四次作業我覺得甚至你會需要把討論區給全部翻過一遍才能理解 spec 足夠的細節，總之就是很煩。
+(Update: OS 比 SP 煩更多)</description></item><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>Second semester 年久失修的部落格，繼續只更新修課心得（流水帳）
 網路管理與系統管理 (NASA) 禮拜一早九（？）可以選三學分跟一學分，如果選一學分的似乎可以拿來抵服務學習，不過我選了三學分的。
 這門課有一個必須要在寒假左右完成的 HW0，事後看起來有點奇怪的點是學期中有不少課在教的反而是在 HW0 中感覺有用到的東西。
 在學期開始時可以到 204 去實體上課，不過下雨的時候還要早起到 204 真的很折磨。
