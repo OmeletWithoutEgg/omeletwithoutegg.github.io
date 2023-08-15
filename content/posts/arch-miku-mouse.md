@@ -2,7 +2,7 @@
 title: "Miku Cursor on Arch Linux"
 date: 2020-12-10T17:05:06+08:00
 draft: false
-tags: [Arch, experience, miku]
+tags: [arch, experience, miku]
 ---
 
 # 在Arch的初音游標

@@ -3,7 +3,7 @@ title: pulseaudio problems with mpv
 date: 2022-12-21T16:33:11+08:00
 draft: false
 mathjax: true
-tags: [linux, arch]
+tags: [arch, linux]
 ---
 
 # mpv suspends pulseaudio sink
