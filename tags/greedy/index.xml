@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>greedy on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/greedy/</link><description>Recent content in greedy on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 22 Sep 2021 01:15:50 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>2021 TOI 模考 可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>greedy on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/greedy/</link><description>Recent content in greedy on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 15 Aug 2023 17:22:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>$(\min, +)$ convolution: convex-arbitrary 因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。
+先放兩個 yosupo library checker 的模板題連結。
+https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex
+https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary
+Description 兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足
+$$
+c_k = \min_{i+j=k} (a_i + b_j)
+$$
+對於一般的這個問題，目前似乎沒有任何 $O(n^{2 - \epsilon})$ 的演算法 ($\epsilon &amp;gt; 0$)
+不過如果 $a, b$ 兩個序列都是凸的話，就可以很輕鬆的求出 $c$ 序列。
+更一般的，只要 $a$ 是凸的，就算 $b$ 不是凸的也可以快速在 $O(n\log n)$ 求出 $c$ 序列。
+一個序列 $x_0, x_1,\dots, x_n$ 是凸的如果他的差分遞增，即 $x_{i+1}-x_i \leq x_{i+2}-x_{i+1}$。
+可以想像如果把 $x_i$ 表示要拿 $i$ 個物品的成本，那 $x_i$ 是凸的就代表拿越多東西會因為邊際效應單位成本會越來越貴的感覺。</description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>2021 TOI 模考 可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。
 今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！
 如果想在 hackmd 上看的話可以戳 https://hackmd.io/@omeletwithoutegg/TOI-2021-sols
 如果只想看題目可以戳

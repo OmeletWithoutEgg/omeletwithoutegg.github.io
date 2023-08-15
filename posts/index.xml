@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 09 Jul 2023 02:26:08 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>Codeforces 793 F Julia the snail Description 有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 15 Aug 2023 17:22:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>$(\min, +)$ convolution: convex-arbitrary 因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。
+先放兩個 yosupo library checker 的模板題連結。
+https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex
+https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary
+Description 兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足
+$$
+c_k = \min_{i+j=k} (a_i + b_j)
+$$
+對於一般的這個問題，目前似乎沒有任何 $O(n^{2 - \epsilon})$ 的演算法 ($\epsilon &amp;gt; 0$)
+不過如果 $a, b$ 兩個序列都是凸的話，就可以很輕鬆的求出 $c$ 序列。
+更一般的，只要 $a$ 是凸的，就算 $b$ 不是凸的也可以快速在 $O(n\log n)$ 求出 $c$ 序列。
+一個序列 $x_0, x_1,\dots, x_n$ 是凸的如果他的差分遞增，即 $x_{i+1}-x_i \leq x_{i+2}-x_{i+1}$。
+可以想像如果把 $x_i$ 表示要拿 $i$ 個物品的成本，那 $x_i$ 是凸的就代表拿越多東西會因為邊際效應單位成本會越來越貴的感覺。</description></item><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>Codeforces 793 F Julia the snail Description 有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。
 你除了傳送以外的移動方式只有向數線的左邊走（把 $x$ 變小）
 接著有 $Q$ 筆詢問問，每筆詢問給 $x, y$，
 問你從 $x$ 開始走，在不超出 $[x, y]$ 這個區間的前提下可以走最右邊是多右邊。
