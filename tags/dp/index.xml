@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dp on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dp/</link><description>Recent content in dp on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 22 Sep 2021 01:15:50 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dp/index.xml" rel="self" type="application/rss+xml"/><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>2021 TOI 模考 可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dp on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dp/</link><description>Recent content in dp on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 06 Sep 2023 14:47:03 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dp/index.xml" rel="self" type="application/rss+xml"/><item><title>Seoul 2022 A : Card Game</title><link>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-A-card-game/</link><pubDate>Wed, 06 Sep 2023 14:47:03 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-A-card-game/</guid><description>Card Game Description 給定一個 $N \times M$ 的棋盤，上面每格各擺了一個 $R, G, B$ 三種顏色之一的棋子
+接著雙方開始輪流操作，不能操作者就輸了，問你先手還是後手贏。
+輪到一個人時他可以做的操作有三種：
+選一個顏色 $B$ 的棋子，從該棋子的位置開始分別沿著主對角線方向走直到走到一個沒有棋子的格子或走出棋盤外，並移除那些路上經過的有棋子的格子裡面的棋子。 選一個顏色 $G$ 的棋子，從該棋子的位置開始分別沿著主及副對角線方向走直到走到一個沒有棋子的格子或走出棋盤外，並移除那些路上經過的有棋子的格子裡面的棋子。 選一個顏色 $R$ 的棋子，從該棋子的位置開始分別沿著副對角線方向走直到走到一個沒有棋子的格子或走出棋盤外，並移除那些路上經過的有棋子的格子裡面的棋子。 可以看圖更清楚：
+$1 \leq N, M \leq 25$
+Solution 順便用這題來講一下 SG 定理。
+無偏博奕 / 不偏賽局 在組合賽局理論裡，不偏賽局是一類任意局勢對於遊戲雙方都是平等的回合制雙人遊戲。
+我們在這篇文章中對遊戲做以下的假設：
+遊戲是兩個玩家輪流玩。 遊戲沒有平局，在有限步後一定會分出勝負。 完全訊息，所有玩家都能看到整個局勢。 局面對雙方來說平等，也就是說如果給定目前的局面，輪到哪個玩家玩可以做的動作以及導致的新盤面都要一樣。 沒有動作可以動的人輸。 可以證明給定一個局面之後，一定是「下一個玩的人贏」或是「下一個玩的人輸」。
+分別簡稱兩者為必勝態和必敗態。
+因為遊戲在有限步內會分出勝負，所以如果把局面當成節點，並且把做動作之後可以到達的局面連有向邊，形成的圖會是一張 DAG。
+按照 DAG 的拓樸順序就可以算出每個局面是必勝態或必敗態。
+然而通常來說所有從起始局面可以走到的局面會是指數級的，例如 nim game 會是 $\prod {h_i}$ 之類的，我們通常不能真的這樣建出 DAG。
+SG 定理 上述的無偏博奕裡，每一個局面可以唯一對應到一個 nimber，或者我們常稱這個局面的 SG value。
+可以把 nimber 當成一個非負整數 $x$。在 nim game 當中只有一堆的 $x$ 個石頭的局面對應的 nimber 就是 $x$。</description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>2021 TOI 模考 可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。
 今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！
 如果想在 hackmd 上看的話可以戳 https://hackmd.io/@omeletwithoutegg/TOI-2021-sols
 如果只想看題目可以戳
