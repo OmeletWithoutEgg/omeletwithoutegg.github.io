@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>archlinux on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/archlinux/</link><description>Recent content in archlinux on 蛋餅的競程隨筆</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 02 Oct 2023 00:33:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/archlinux/index.xml" rel="self" type="application/rss+xml"/><item><title>Pandoc HackMD to pdf</title><link>https://omeletwithoutegg.github.io/2023/10/02/pandoc-hackmd/</link><pubDate>Mon, 02 Oct 2023 00:33:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/10/02/pandoc-hackmd/</guid><description>Convert HackMD to PDF via pandoc HackMD 是一個很好用的線上筆記協作工具，即使沒有重度協作拿來當個雲端 markdown 編輯器也是非常好用。
+不過當需要印成紙本或是轉成 pdf 的時候就很麻煩了，有時候 CSS 直接都會跑掉。
+Markdown 轉 pdf 一直都是一件百家爭鳴的事情，比較主流的可能是用 typora / obsidian 等等匯出成 pdf。
+這邊打算介紹一個我學到的用 pandoc 轉 pdf 的方法。
+pandoc 1 sudo pacman -S pandoc dependency 有點多，一大堆 haskell 模組。
+pandoc 在把 markdown 轉成 pdf 前會某種先轉成 tex 的感覺，所以如果也熟悉 tex 的話會更上手。
+basic 一個簡單的 .md 檔案不需要多加什麼參數就可以直接轉成 pdf
+1 pandoc hw.md -o hw.pdf 不過有幾個問題可能會遇到：
+沒有中文字 旁邊留白太多 有些語法沒有被翻譯到，例如 ::: info :::。 程式碼區塊 syntax highlighting 問題 以下就來解決以上幾個問題。</description></item></channel></rss>

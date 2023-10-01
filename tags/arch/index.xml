@@ -5,12 +5,12 @@ solution 使用
 1 sudo journalctl -b 看 log 發現在 start VM 的時刻有跳一個 error 是寫說 trap 之類的，長得大概很像這行
 kernel: kernel BUG at arch/x86/kernel/traps.c:252! 拿去搜尋之後搜尋到一個完全不同的東西但是是幾乎一樣的 error message 的類似東西有在討論問題，看起來是在某個版本之後，linux 的 kernel parameter 中 ibt 被預設開啟了，把這個參數手動調成 off 就可以解決這個問題了。
 以 systemd-boot 為例，可以在後面加上 ibt=off 的參數就可以關掉了。disclaimer: 我也不知道有什麼影響。
-1 2 3 4 title Arch Linux linux /vmlinuz-linux initrd /initramfs-linux.img options root=PARTUUID=blablablabla rw loglevel=3 quiet ibt=off Reference https://github.</description></item><item><title>pulseaudio problems with mpv</title><link>https://omeletwithoutegg.github.io/2022/12/21/mpv-pulseaudio/</link><pubDate>Wed, 21 Dec 2022 16:33:11 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/12/21/mpv-pulseaudio/</guid><description>mpv suspends pulseaudio sink mpv 是一個簡單、輕量的 media player。
+title Arch Linux linux /vmlinuz-linux initrd /initramfs-linux.img options root=PARTUUID=blablablabla rw loglevel=3 quiet ibt=off Reference https://github.</description></item><item><title>pulseaudio problems with mpv</title><link>https://omeletwithoutegg.github.io/2022/12/21/mpv-pulseaudio/</link><pubDate>Wed, 21 Dec 2022 16:33:11 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/12/21/mpv-pulseaudio/</guid><description>mpv suspends pulseaudio sink mpv 是一個簡單、輕量的 media player。
 Description 最近在用 mpv 播放影片的時候發現有時候暫停 youtube 的影片用 mpv 一下下再轉回去瀏覽器，就瘋狂轉圈圈然後表示「如果經過一段時間仍未開始播放，請試著重新啟動您的裝置」
 Solution 找 log 找了很久究竟誰是犯人， systemctl restart --user pulseaudio 之後影片就可以播了所以確定犯人是它。
 1 systemctl status --user pulseaudio 然後就是一大堆的 Failed to create sink input: sink is suspended.
 拿去搜尋得知應該是因為 pulseaudio 預設有打開某種 idle 時候自動 suspend 的機制，改掉預設的 config file 就可以了
-1 vim /etc/pulse/default.pa 1 2 3 4 ... ### Automatically suspend sinks/sources that become idle for too long #load-module module-suspend-on-idle # comment this .</description></item><item><title>Fzf fuzzy finder - best shell history picker</title><link>https://omeletwithoutegg.github.io/2022/09/08/fzf/</link><pubDate>Thu, 08 Sep 2022 21:26:22 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/08/fzf/</guid><description>FZF fuzzy finder fzf 是一個通用的模糊搜尋（fuzzy find）工具，用 go 寫成。
+1 vim /etc/pulse/default.pa ... ### Automatically suspend sinks/sources that become idle for too long #load-module module-suspend-on-idle # comment this ... Another solution 看 Reference 那篇有說到安裝 pipewire-pulse 也可以解決問題，目前試起來沒什麼問題。</description></item><item><title>Fzf fuzzy finder - best shell history picker</title><link>https://omeletwithoutegg.github.io/2022/09/08/fzf/</link><pubDate>Thu, 08 Sep 2022 21:26:22 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/08/fzf/</guid><description>FZF fuzzy finder fzf 是一個通用的模糊搜尋（fuzzy find）工具，用 go 寫成。
 很久以前就聽過它了，但以為自己不太需要這種東西。
 前陣子在尋找類似於 zsh-history-substring-search 的工具，也就是我可以打一些關鍵的字之後讓 zsh 從歷史紀錄裡面找類似的指令幫我貼到 shell 裡面。
 而這個功能我認為我目前找到用起來最順手的就是 fzf 的 history widget 了。
