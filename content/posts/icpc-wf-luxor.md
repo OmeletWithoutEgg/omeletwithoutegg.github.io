@@ -22,39 +22,21 @@ tags: [experience, blog]
 
 往 Luxor 的旅程從桃機開始，週六的晚上十一點的飛機，我們七個人包含教授在櫃檯集合並登機；在同一個櫃檯也已經看到交大清大他們。這是我第一次搭日本或台灣以外的航空公司（阿聯酋航空，回來台灣之後學習到我是第一次坐所謂 A380），有點開眼界的感覺，經濟艙的座位上竟然有萬用插座（雖然九小時應該非常需要xd），而且還有一個被擋住的樓梯，往上層艙看起來有一個像是酒吧的東西；他們的餐點也還不錯吃。飛到杜拜的飛機坐得很滿，而且我們是半夜起飛，所以大家都在睡覺，我原本帶書來看但我也不好意思在他把機上燈光關掉的時侯開自己的座位燈xd。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1805.JPG">
-  <figcaption>上機前可以看到是個四個引擎的大客機</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1805.JPG "上機前可以看到是個四個引擎的大客機")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1806.JPG">
-  <figcaption>插頭和娛樂系統</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1806.JPG "插頭和娛樂系統")
 
 坐在中間的位子蠻難睡的，努力消磨時間跟睡覺總算到達杜拜，是當地凌晨五點。到杜拜又是另一種開眼界，我們還待在轉乘的區域可以逛的商店就已經非常多，有很多的精品店還有偶爾會遇到emirates的周邊商品店。這裡已經可以遇到很多來 icpc 的人了，我們在杜拜的麥當勞買了一個約五美元的大薯四個人分著吃（好貴），剛好對面坐 NUS 的 coach；回到登機口之後還有澳洲跟日本的東工大跟京大的樣子，不過我幾乎不敢搭話，而且不知道是吃太飽還是吃壞肚子，有點肚子痛再加上很累不太能專心。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1815.JPG">
-  <figcaption>在杜拜的 WIN THIS CAR</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1815.JPG "在杜拜的 WIN THIS CAR")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1816.JPG">
-  <figcaption>四個人分一包薯條</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1816.JPG "四個人分一包薯條")
 
 杜拜到開羅的飛機上我終於打開我筆電上預先載好的 mygo 來看。在起飛前聽說伊朗又跟以色列開打，我看確實飛機的航線就往下彎不通過以色列。入境後我們需要扛著行李移動到另一個航廈，十二點的氣溫大概是 26 度，沒有想像中熱。國內線的安檢反而更加頻繁，我們在到埃及航空櫃檯前過了一個關卡（有分男女，而且不知道標示在哪裡很酷），然後登機口前又過了一個，而且都會摸一次全身檢查。在埃及航空的櫃檯看到更多人了，包含東大的 yutaka 他們還有 stanford 的一些人。最後從開羅到 Luxor 搭埃及航空，~~他們的起飛和降落非常可怕~~，幸好一小時就到了。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1818.JPG">
-  <figcaption>Emirates 機上的早餐，誰不喜歡蛋捲呢？</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1818.JPG "Emirates 機上的早餐，誰不喜歡蛋捲呢？")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1821.JPG">
-  <figcaption>埃及航空上塞牙縫的小蛋糕</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1821.JPG "埃及航空上塞牙縫的小蛋糕")
 
 ## 度假
 ### Day 0
@@ -62,73 +44,43 @@ tags: [experience, blog]
 到達的飯店是尼羅河島中的一個像是度假村 jolie ville，我們數台遊覽車的人擠進櫃檯可以說非常混亂。這裡蠻大的，居住的區域是一個一個的多邊形，每個多邊形是一圈的房間；我們一隊住的地方是兩個互通的房間，一間放了一張雙人床，隔壁則是兩張單人床，看起來非常寬敞。房間裡放好了兩整大箱的瓶裝水，看起來不用擔心渴死了。
 真正坐下來休息大約是週一的下午。感受到什麼叫做風塵僕僕，洗了個澡之後，我們逛了一下整個 jolie ville，到處都是 icpc 的牌子，並且還有官方提供的 chill zone，有大型 connect four、拉密、桌子足球、飛碟球、西洋棋還有桌球。周老師終於得償所願打到桌球，但在河邊的室外風超級大，而且太陽也很刺眼，根本沒辦法好好打XD。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1823.JPG">
-  <figcaption>所謂室外桌球</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1823.JPG "所謂室外桌球")
 
 似乎落地之後我的肚子痛就解除了，可喜可賀。晚上的行程表是 welcome dinner 加上 team registration，我們這隊的 registration 時間是比較晚的九點，於是就悠哉的在餐廳吃完晚餐之後回房間休息，結果我果然在房間開始大爆睡（畢竟下午又死不睡跑去逛街），要不是 ot 把我們叫醒可能還會遲到更久。總之就是跟著 coach 去「Nile Hall」開始跑十個櫃台，繳交一些文件以及比賽當天要放桌上的 codebook 跟文具，還有領取一大堆的紀念品、文件，以及每人三件的 T-shirt。這個 T-shirt 的字跟底的顏色是我們自己選的，但太久以前導致我們幾乎都忘記是什麼顏色了XD。回去之後繼續我的大爆睡，順帶一提我佔走的是那張雙人床，抱著我的軟軟owo。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1824.JPG">
-  <figcaption>晚餐</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1824.JPG "晚餐")
 
 ### Day 1
 隔天的行程是去 karnak 神廟的 excursion，我們一大群人從 jolie ville 裡面分批搭上船，稍微欣賞一下尼羅河美景。
 跟我們同一艘船的有馬里蘭大學南京大學還有偶像（？）東工大，不過船開的時候聲音蠻大的，不知道是導遊還是開船的人又把非常埃及的爆音音樂開得很大聲所以我其實隔一個人的聲音就聽不太到了。一開船我的帽子就差一點被河上的強風吹走，接著因為我坐在船頭的位子，船加速之後前面的水花就開始會濺到我，只好用書包稍微擋一下。導遊是一個感覺四五十歲的婦人，稍微介紹了河岸兩邊的東西之後我們就接近上岸了。上岸後又接著跑去搭遊覽車xd，似乎不知道為什麼我們今天 excursion 的分組就是上了同一艘船就是同一組了，導遊問我們這組的名字要叫 future 還是 lamesis，沒有人知道怎麼回答不過傅老師就幫我們這一團決定就叫 future xd。我們在等遊覽車的時候後面的南京大學突然就有人在說「你是不是開始想回飯店玩原神啦」超級好笑。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1830.JPG">
-  <figcaption>船頭滿滿的水花</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1830.JPG "船頭滿滿的水花")
 
 下車抵達 karnak 神廟的入口後，導遊讓我們先去廁所，一到廁所前才知道還得收錢的？一美元可以給三個人進去上，但裡面也不是說特別厲害。聽到後面的中國人真的會說美刀覺得很稀奇。接著就把入場票發給大家進去，然後是熟悉的安檢環節。進去之後導遊就邊介紹邊帶著我們向內走，一走出室外就感受到埃及好熱，確實乾的熱是比溼的熱舒服一點，但彷彿會真的熱暈你，許多人都戴上了帽子。
 在這個神聖的神廟裡 ot 抓到時機跟東工大他們搭話，然後我也趁機跟著上去貼臉成功要到 tatyam 的合照，因為語彙力不足不知道該說什麼跟對方是什麼意思但不知道為什麼就握手了？？？我有一種簡直是偶像見面會突然握到手的感覺，這好微妙xd。然後過了一陣子才想到說沒找 noshi 合照是不是失禮的一種。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1832.JPG">
-  <figcaption>入口附近的 GOAT 雕像（無誤）</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1832.JPG "入口附近的 GOAT 雕像（無誤）")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1847.JPG">
-  <figcaption>聖甲蟲</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1847.JPG "聖甲蟲")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1849.JPG">
-  <figcaption>埃及這裡很多貓貓</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1849.JPG "埃及這裡很多貓貓")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1842.JPG">
-  <figcaption>跟 tatyam 的合照就不放出來了，只放這個就好</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1842.JPG "跟 tatyam 的合照就不放出來了，只放這個就好")
 
 導遊講解完並帶我們走到深處之後我們有自由時間十五分鐘，去紀念品店逛了一下買了汽水喝。上車回去之前我們順便領取了 lunch box，lunch box 的領取是蠻混亂的，他會問我們之前填的口味是什麼，但我印象中官網的 survey 只有問後面三天的午餐盒而已。我就跟著前面的人講了 chicken，總之領取到餐盒之後趕快上車。我們直接就搭遊覽車回到飯店（沒有經過船），今天的導遊也在這時跟我們道別，他直接在一個 Y 字路口的正中心下車有夠狂XD。
 回到飯店後才有辦法好好吃 lunch box，其實不太好吃（伏筆）。
 雙人床上擺滿了花，而且軟軟也乖乖坐著很可愛，看起來明天是該給清潔人員小費了。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1827.JPG">
-  <figcaption>軟軟跟花花</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1827.JPG "軟軟跟花花")
 
 晚上吃完晚餐後準備又要上車去 open ceremony。這個晚餐 buffet 五天都差不多是一樣的，也就是說 welcome dinner 不是什麼特別的 welcome；有室內跟室外兩邊，菜差不多，但今天日落後蚊子多得瘋狂，很多人都躲到室內吃晚餐。吃完走到大廳蚊子仍然非常多，拿出防蚊噴霧用了一下。搭車抵達的地點是 luxor 神廟，還沒下車就聽到旁邊的清真寺用很大的聲音廣播一個像是在大叫的東西，應該是某種宗教儀式？然後安檢的隊伍又排了好長。一出安檢就可以看到為了 open ceremony 而鋪設的場地，大致上應該是由木板為底上面鋪了一層黑色的布，還有一堆舞台跟螢幕。稍微逛了一下 luxor 神廟，但走回去到一半的時候大部分的照明就陸續被關掉，彷彿是在催促我們趕快回到座位，選手們就像有趨光性一樣慢慢往會場移動。
 開場照慣例是個表演，很搶眼的是後面直接在神廟上雷射投影了 ICPC 2023 的字樣，字一直在閃爍而且還一直偷偷調整角度跟位置XD。
 在這個就在神廟旁邊的會場周圍用探照燈到處照來照去的，頭頂上還有無人機在拍攝我們，感受到某種科技跟古文物的衝突感。
 幾個人出來講講話之後，比較有趣的就是介紹所有有參加的大學，分不同區介紹，按照順序會先講只有參加 46 屆的大學、只有參加 47 屆的大學，以及兩屆都有隊伍參加的大學；昨天 team registration 的時候拍的照片這時候會被放出來。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1861.JPG">
-  <figcaption>Luxor 神廟一塊似乎寫著希臘字母的石板</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1861.JPG "Luxor 神廟一塊似乎寫著希臘字母的石板")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/MOV_1863.gif">
-  <figcaption>logo 直接投影在神廟上，而且邊閃爍邊調大小</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/MOV_1863.gif "logo 直接投影在神廟上，而且邊閃爍邊調大小")
 
 結束之後似乎 ucup 有一群人聚集拍照，我們沒有拍到就先回飯店了。我們很晚才到飯店加上我在床上打混了蠻久，拖到洗完澡都快一點了，吹完頭髮出來才想到，糟糕會不會吵到他們。
 
@@ -136,10 +88,7 @@ tags: [experience, blog]
 ### Day 2
 早上大方的 ot 放了五美金當小費。今天是第二天在這邊吃早餐，昨天的早餐我只有拿一個 omelet 而已，今天是拿了大概三盤 omelet，瘋狂排隊拿蛋。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1866.JPG">
-  <figcaption>早餐參考圖樣</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1866.JPG "早餐參考圖樣")
 
 早上先是在 Nile Hall 的 JetBrains 的 blind coding challenge，這裡是少數 46 屆跟 47 屆分開來的行程。JetBrains 先工商了一下他們自己之後，就是期待的 blind coding challenge 了。台上兩個人面對面坐，距離一個稍微長的桌子，一個負責看螢幕跟動滑鼠，另一個人操控鍵盤。目標就是解一個放在 codeforces 上的 mashup contest 盡量解越多題。選用的語言是 kotlin，似乎是用 JetBrains 他們的編輯器；解了一題之後似乎兩人會交換，A 跟 B 過的時候大家是用力歡呼加拍手，但沒能在時間內解出 C，大家看著兩個人在台上坐牢，身歷其境 XD。結束之後換 47 屆的，他們的兩人組是 tourist 跟 ecnerwala，聽說他們破台了，真羨慕。
 
@@ -177,19 +126,13 @@ team registration 的東西就放在桌上，包含 team reference document（�
 
 測機結束後螢幕被強制關閉，我們原本以為必須待在原地，但看周圍其實有不少隊伍拿到手機了。原來似乎一般來說是要請 coach 拿行李，然後一結束馬上就能去旁觀席找他們拿，但今天我們的 coach no show，聽說 8BQube 他們直接原地坐牢兩小時，不過我的手機是就跟著 ot 的背包寄放在 Nile Hall，結束後憑著行李牌就能領。回到帳篷是 challenge 的頒獎典禮，不知道為什麼要遮住前三名後天才頒。然後是一個有關深度學習跟 GPU 硬體紅利的演講。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1870.JPG">
-  <figcaption>演講時拍的我們的 workstation 的模樣，包含難吃的 lunch box</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1870.JPG "演講時拍的我們的 workstation 的模樣，包含難吃的 lunch box")
 
 演講結束之後意外的還有一個 coach award，PJ 拿到兩個獎牌，但我們 coach 都 no show，所以不知道為什麼就變成有點尷尬是奇怪的四人組合上去領獎。
 最後 coach award 也頒完了，竟然他把我們的螢幕重新打開，並且 domjudge 上還可以繼續傳，這表示其實看手機測機的行動可以現在執行 www（再不看行程表啊），稍微測了一下之後變成 ot 想偷打 kernel 的環節(X
 聊了一下天之後就悠閒回飯店吃晚餐，畢竟要是今天再跟昨天一樣練應該反而會累死自己所以就不練了，還好昨天有把握時間暖一手。sean liu 是住另一個飯店的不過他今天跑來跟我們偷偷吃 jolie ville 的晚餐順便聊聊，不得不說他來 Luxor 的路上真的是多災多難。今天晚餐拿了兩罐放在冰桶裡面的汽水，飯店餐廳有很多寫著 ICPC only 的冰桶或是咖啡機之類的，sean liu 也拿了兩罐xd。晚餐用完後稍微又到處逛了一下，我是大概洗完澡十點半就睡了。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1872.JPG">
-  <figcaption>玩了一局超大 Connect four</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1872.JPG "玩了一局超大 Connect four")
 
 ## 正賽
 ### Day 4
@@ -235,10 +178,7 @@ ot 表示他剛剛 U debug 到吐了去看了一下 T 題不是就三分搜套�
 ot 和周柏宇發揮社牛力到處去問，然後 chenjb 甚至也跑來問我們有沒有八題。
 最後還是有一兩隊沒有問到，心上仍然綁著大石頭。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1874.JPG">
-  <figcaption>終於結束正賽</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1874.JPG "終於結束正賽")
 
 因為接下來就要去 secret place 開板+閉幕儀式了（這時候滑推特才學到日本那邊把滾榜/開板是叫 Yes/No(?)），所以大家被趕上遊覽車，我們匆忙的把氣球底座和一些東西放到飯店再跑上車。
 車程非常意外的久，大概四十分鐘，在車上小睡了二十分鐘。
@@ -247,30 +187,15 @@ ot 和周柏宇發揮社牛力到處去問，然後 chenjb 甚至也跑來問我
 這邊順便頒了前幾天偷偷遮住的 challenge 前三名，恭喜東工大優勝（據說有 USD 13000 獎金）。
 一個小插曲是不知道為什麼有一群 staff 像是喝了酒超級 high，把人抬起來歡呼，而且他們離舞台有點距離感覺沒人制止他們，最後也不知道怎麼就停下來了。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1875.JPG">
-  <figcaption>夜晚的沙漠中有一個一堆探照燈的舞台</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1875.JPG "夜晚的沙漠中有一個一堆探照燈的舞台")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1876.JPG">
-  <figcaption>閉幕式晚餐</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1876.JPG "閉幕式晚餐")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1877.JPG">
-  <figcaption>甜點，跟 lunch box 裡面的一樣不過多了擺盤跟一抹醬</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1877.JPG "甜點，跟 lunch box 裡面的一樣不過多了擺盤跟一抹醬")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1878.JPG">
-  <figcaption>人超級多，應該很少位子能直接看到舞台，都是看螢幕</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1878.JPG "人超級多，應該很少位子能直接看到舞台，都是看螢幕")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1884.JPG">
-  <figcaption>不知道為什麼 high 到抬人歡呼的團體</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1884.JPG "不知道為什麼 high 到抬人歡呼的團體")
 
 總之最後來到了開板環節，主持人穆罕默德有點吵，而且大會決定 46 屆和 47 屆的板交替開，輪流把低題數的開一部分之後念獎項再換另一邊，中途還會有各種獎項例如首殺或是 regional champion 要頒，等得心急如焚。
 U of wroclaw，ITMO 都沒有開出第八題，stanford 也是兩題 pending 都沒開出來，最後我們沉一沉沒有沉到銅牌線下，剛好維持在第十二名，也是解出八題的隊伍中罰時最高的。可以說幸運拿到了銅牌。
@@ -278,15 +203,9 @@ U of wroclaw，ITMO 都沒有開出第八題，stanford 也是兩題 pending 都
 上台的時候一直不知道該或不該握手或鞠躬，該面對哪裡手要怎麼擺，總之是過去了。現在回去看直播看得我尬癌發作。
 銅牌的四隊有一起合照，意外的得到跟傳說中的 yutaka 的一張合照（？）雖然是很多人的。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1885.JPG">
-  <figcaption>坐在等候頒獎座位的視角。前方就是北大，最右邊是 jiangly</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1885.JPG "坐在等候頒獎座位的視角。前方就是北大，最右邊是 jiangly")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1887.JPG">
-  <figcaption>舞台の裏：站在舞台往後拍的視角，大殿上有 ICPC logo 投影</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1887.JPG "舞台の裏：站在舞台往後拍的視角，大殿上有 ICPC logo 投影")
 
 ### comment about 本次表現
 如果我們想要得更好的牌的話，首先最重要的是不要在 T 和 U 卡題導致第二小時黑洞，接著應該就是 Q 範測算錯拖超級晚才 AC，然後就是必須賭 R 賭的更用力，直接相信他遲早會過而另外兩個隊友在底下做 X 題。如果沒做出 X 的話罰時必須要超級好才能銀牌，但如果以上幾個問題都改善的話，我們應該會有一小時多可以做 X 題，稍微偷看了一下解，我認為三個人討論是有機會做出 X 的（當然也可能我們風向歪向 S，而且我們當天結束到回飯店其實也沒有討論出 X 該怎麼做）。
@@ -298,27 +217,15 @@ U of wroclaw，ITMO 都沒有開出第八題，stanford 也是兩題 pending 都
 ### Day 5
 隔天原本 sean liu 有問我們要不要去一個 excursion，但那個行程要早上八點集合，我們最後因為實在太累也不敢跟這個行程了。傅老師說中午十一點半集合，我們差不多睡自然醒睡到八點半之後吃個早餐再混一下，洗個澡就差不多了。老師中午集合後表示我們中餐跟晚餐就吃 KFC 跟麥當勞，決定先去 KFC，搭計程車雖然遇到一點小風波不過 KFC 是很快的順利就到了。門口旁的髒亂程度讓人不敢恭維，但入店吹冷氣實在很爽。菜單有寫英文，而且店員懂英文，價格體感和台灣差不多，不過不收美金現金只好請 BB 刷卡。漢堡炸雞跟薯條都中規中矩，小瓶裝的百事可樂也沒有減低我們吃了數天飯店 buffet、lunch box 後吃到速食的感動。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1896.JPG">
-  <figcaption>中規中矩的漢堡</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1896.JPG "中規中矩的漢堡")
 
 吃完之後老師表示我們先回飯店的話太虧，就在附近繞繞慢慢走去麥當勞，但一走出冷氣房真的很讓人後悔沒有多帶一瓶水出門，感覺隨時都會中暑或是脫水。越走越覺得我的穿著跟儲水量都沒有準備好在這種太陽下待一個下午。原本打算去木乃伊博物館，結果走到一半發現他是下午五點才開，原來凡是一個正常人都不會在正中午出來活動。最後我們總算轉向麥當勞先每個人買了一杯 large 的飲料止渴。店裡看到一個在剪片的人，而且他上的字幕竟然是日文很有趣。在冷氣房待好待足之後我們才又走出去慢慢走到木乃伊博物館參觀。門口一樣有安檢。參觀結束後大約也日落了，我們回到麥當勞買晚餐，但是幾乎都坐滿人了，於是我們都覺得應該要外帶回飯店吃了。跟 KFC 比起來麥當勞的內容和台灣更加一致，我因為蠻餓的所以點了好多好多，所以甚至比我在台灣會點的還貴一點，回去之後才想起來還有前一天的 lunch box 沒吃，最終 lunch box 還是浪費了 2.5 人份。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1898.JPG">
-  <figcaption>large 的雪碧，是台灣沒有的特大 size</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1898.JPG "large 的雪碧，是台灣沒有的特大 size")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1899.JPG">
-  <figcaption>木乃伊博物館的木乃伊</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1899.JPG "木乃伊博物館的木乃伊")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1903.JPG">
-  <figcaption>暴飲暴食之麥當勞</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1903.JPG "暴飲暴食之麥當勞")
 
 今天一整天走在路上常常會有人喊說 taxi taxi，或是問你搭船或馬車，或是推銷你隨機紀念品的，有的人還會用中文說你好。他們幾乎都會強調只要一美元、很便宜，我猜是真的很便宜，但我也沒有想去搭船、買紀念品的理由。
 
@@ -331,24 +238,15 @@ U of wroclaw，ITMO 都沒有開出第八題，stanford 也是兩題 pending 都
 
 到了目的地之後可以說是沙塵滾滾，幸好有獎勵元發給大家口罩才不會太不舒服。熱氣球的組裝跟加熱比想像中的大聲很多，我們靠近一點之後幾乎都要大吼才能聽到對方講話。升空之後很怕手機掉下去但還是努力拍了一些照片，而且從空中可以俯瞰閉幕典禮的那個大殿，大殿前的舞台已經幾乎拆除完了。在空中的時候機長（？）一開火加熱空氣就會大聲到沒人可以講話。裝著我們的籃子在慢慢旋轉，並且風有慢慢的把我們往東邊吹，稍微可以近一點的看到尼羅河。最終我們正常降落在一塊田旁邊，是很特別的經驗。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1905.JPG">
-  <figcaption>一大堆熱氣球與沙塵滾滾</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1905.JPG "一大堆熱氣球與沙塵滾滾")
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1908.JPG">
-  <figcaption>升空後看得到閉幕典禮的場地那個大殿</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1908.JPG "升空後看得到閉幕典禮的場地那個大殿")
 
 ## 結束了？
 
 回到飯店後，因為是下午兩點半的飛機所以我們打算搭乘十二點官方的 shuttle bus，但好像其實這一天就已經不會有 shuttle bus 了，大部分隊伍例如交大、東大都是在前一天就搭飛機走了。ICPC 給的紀念品真的好多，花了一點時間盡量塞進行李裡，並把行李整理好。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1921.JPG">
-  <figcaption>消氣的氣球</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1921.JPG "消氣的氣球")
 
 還沒搭上車埃及航空就宣告他們會延遲一小時，我們意識到不會有 shuttle bus 之後才趕快搖了計程車前往機場，叫來的計程車實在很狂野，把行李用綁的綁在車頂上的置物空間，速度計沒有在工作而且他又開超級快，每次轉彎我都怕七個人的行李會不會全掉下去。
 這裡比去程的時候混亂多了，還沒進航廈不知道為什麼就要我們出示護照，然後那個要我們出示護照的工作人員還問我們是不是 China，旁邊就有兩個女的就說 one china one china，莫名其妙。一進去又是安檢。然後 olmrgcsi 的護照因為神秘原因從門口走過安檢再走到 checkin 櫃台的二十公尺內消失了兩次，嚇死人。機場共有兩個人幫我們推行李之後要了小費，其中過了安檢幫我們推五公尺到 checkin 櫃台的那個超級無恥要了三美金 wtf，真的是回程比去程可怕多了。
@@ -367,24 +265,15 @@ U of wroclaw，ITMO 都沒有開出第八題，stanford 也是兩題 pending 都
 凌晨兩點趕上機，大部分都是讀阿拉伯文的中東乘客，此外很討厭的是我右邊坐了一個起飛還在一直講電話又一直擠過來的胖子。
 這架飛機只有一個走到，右邊那個胖子又吃完後很快就睡著，導致我整體感受是非常擠的。甚至上方行李櫃沒有地方可以放我的背包只能放前方座位底下，腳快縮到斷掉。坐定位才發現自己好渴，但我又非常累，邊懷疑自己會渴死一邊沉睡，聞到飛機餐出來的香味時彷彿是救世主降臨，畢竟我們除了小蛋糕以外是沒有吃午餐，趕緊的扒完後好好珍惜他順便給的那瓶水，省著慢慢喝。稍微玩了一點機上的遊戲結果玩到睡著，實在是很睏，畢竟前一天還早起去熱氣球。中間的座位真的很不舒服很難睡，保持著很睏的狀態到了阿曼。終於不用再像埃及那樣有事沒事就瘋狂安檢了，這裡的流程快也人性化很多，轉機還有麥當勞可以吃，不過我們這群人好像只有買了一小瓶飲料就要價台幣一百三十。很重要的是這邊有飲水機跟乾淨的廁所，可以說至少我們看得到的地方很人性化。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1924.JPG">
-  <figcaption>救世主飛機餐</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1924.JPG "救世主飛機餐")
 
 等待了不久我們坐上了往曼谷的飛機，這架阿曼-曼谷的飛機看起來比開羅-阿曼的飛機好多了，首先他有兩個走道看起來就比較厲害xd。飛機餐跟前一班飛機一樣是 chicken rice：用很長很中東的米包住一些雞肉作為主食，不過這班班機的主食醬汁和甜點都讓我感覺比較好吃，沒有理由。依然是中間的座位依然很難睡。抵達曼谷之後在機場逛了一下，這邊好多日式料理是想被吐槽嗎xd 我們吃了久違的東亞食物泰式料理，喝到泰奶有種莫名感動。這也是意外的第一次入境泰國，不過我們沒有離開機場，只在機場吃晚餐，等待最後回家的華航班機。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1932.JPG">
-  <figcaption>我們看到的唯一一家超商 LAWSON</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1932.JPG "我們看到的唯一一家超商 LAWSON")
 
 華航上面的飛機餐我選了雞肉義大利麵，入口時有種終於吃到像在家會吃到的食物的感覺，果然飛機餐還是習慣台灣的不習慣中東航空的。明明是台灣的航空但機上娛樂的麻將卻是日麻（richi mahjong），所以我跟波路都打開來玩了一下，但好像不知道怎麼結束，打到西場都還繼續打，似乎要打飛才能結束，而且也沒有流局罰符，感覺細節規則蠻微妙的，最終我吃完飛機餐後是玩到睡著了，在打瞌睡下回到台灣。不得不吐槽這趟不知道是亂流很強還是怎樣，起飛降落的搖晃跟去程埃及航空有得比。
 
-<figure>
-  <img src="/images/icpc-wf-luxor/DSC_1934.JPG">
-  <figcaption>美味飛機餐</figcaption>
-</figure>
+![](/images/icpc-wf-luxor/DSC_1934.JPG "美味飛機餐")
 
 回到家已經是十點的事情，全身髒兮兮巴不得趕緊去洗澡完睡覺，這才是真的感受到風塵僕僕吧？
 
