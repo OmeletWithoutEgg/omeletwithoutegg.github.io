@@ -52,6 +52,7 @@ weight = 6
 [markup]
     [markup.goldmark.renderer]
         hardWraps = true
+        unsafe = true
     [markup.tableOfContents]
         endLevel = 4
         ordered = false
