@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matching on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/matching/</link><description>Recent content in Matching on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 16 Nov 2020 13:31:22 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/matching/index.xml" rel="self" type="application/rss+xml"/><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>我只是想做一下筆記
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matching on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/matching/</link><description>Recent content in Matching on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 16 Nov 2020 13:31:22 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/matching/index.xml" rel="self" type="application/rss+xml"/><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</guid><description>我只是想做一下筆記
 然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配
 先備知識 看得懂$\sum$
 然後會(不帶權)二分圖匹配的匈牙利演算法
@@ -13,7 +13,7 @@ Description 給你一張完全二分圖 $K _ {n,n}$ ，每條邊 $e = (x_i,y_j)$
 對偶問題 首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。
 在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$
 那麼很顯然的，對於任何一種合法的頂標來說，頂標的總和會大於等於最大權完美匹配的值。
-因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$</description></item><item><title>TIOJ-2037</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</link><pubDate>Tue, 31 Dec 2019 16:06:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</guid><description>警力配置 https://tioj.ck.tp.edu.tw/problems/2037
+因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$</description></item><item><title>TIOJ-2037</title><link>https://omeletwithoutegg.github.io/2019/12/31/tioj-2037/</link><pubDate>Tue, 31 Dec 2019 16:06:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/tioj-2037/</guid><description>警力配置 https://tioj.ck.tp.edu.tw/problems/2037
 Description 裸的二分圖匹配
 Solution 這邊給匈牙利算法
 有一個subtask是給一個點數很多的樹

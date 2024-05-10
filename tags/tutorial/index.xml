@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tutorial/</link><description>Recent content in Tutorial on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 16 Nov 2020 13:31:22 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>我只是想做一下筆記
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tutorial/</link><description>Recent content in Tutorial on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 16 Nov 2020 13:31:22 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</guid><description>我只是想做一下筆記
 然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配
 先備知識 看得懂$\sum$
 然後會(不帶權)二分圖匹配的匈牙利演算法
@@ -13,7 +13,7 @@ Description 給你一張完全二分圖 $K _ {n,n}$ ，每條邊 $e = (x_i,y_j)$
 對偶問題 首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。
 在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$
 那麼很顯然的，對於任何一種合法的頂標來說，頂標的總和會大於等於最大權完美匹配的值。
-因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$</description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>同餘算數 定義 $$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$
+因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$</description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</guid><description>同餘算數 定義 $$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$
 或者說$a,b$同餘於$m$
 基本性質 當一個題目要求答案模一個數字$m$時
 通常我們都可以不用先算出一個很大的答案再取模
@@ -40,7 +40,7 @@ $$
 也就是說找一個$x$使得$ax = 1$
 而在模$m$的情況下，我們同樣也可以用一個使得$ax \equiv 1$的$x$來代替除以$a$的運算，稱為模逆元
 (如果常常打CF的話應該常常看見上面模逆元的敘述)
-求取模逆元$x = a^{-1}$只要把同餘關係改寫成$ax = my+1$就可以用擴展歐幾里得求解了</description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</guid><description>捲積方法 OAO 本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速
+求取模逆元$x = a^{-1}$只要把同餘關係改寫成$ax = my+1$就可以用擴展歐幾里得求解了</description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</guid><description>捲積方法 OAO 本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速
 這邊先定義一下捲積$ * $是什麼
 $$
 (a * b) _ x = \sum _ {i+j=x} a_i b_j
@@ -53,7 +53,7 @@ A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline
 C(x) = A(x)B(x)
 $$
 除了上述利用分配律乘開以外
-因為$C$的次數已經可以確定</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>迭代式線段樹 先備知識: 線段樹(帶懶標) + 位元運算(吧)
+因為$C$的次數已經可以確定</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</guid><description>迭代式線段樹 先備知識: 線段樹(帶懶標) + 位元運算(吧)
 如果讀者還不知道線段樹的原理最好看遞迴的(?)
 單點修改 例題仍然是萬年RMQ
 給定一個長度$n$的序列，請支援以下操作
@@ -62,7 +62,7 @@ $$
 1 2 const int N = 1&amp;lt;&amp;lt;18; int tr[N&amp;lt;&amp;lt;1], n; 對於初始化來說，可以發現葉子節點對應的都是長度$1$的區間，正好是原序列的值，所以可以直接讀入或另外傳入賦值給 tr[i+n]，接著可以用遞減的順序把其他長度的區間的答案算好
 1 2 3 4 void build(int v[]) { for(int i = 0; i &amp;lt; n; i++) tr[i+n] = v[i]; for(int i = n-1; i &amp;gt; 0; i--) tr[i] = max(tr[i&amp;lt;&amp;lt;1], tr[i&amp;lt;&amp;lt;1|1]); } 更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到
 注意 p^1 代表 p 的兄弟節點，也就是 p 父親的另一個兒子
-1 2 3 4 void modify(int p, int x) { for(tr[p+=n] = x; p &amp;gt; 1; p&amp;gt;&amp;gt;=1) tr[p&amp;gt;&amp;gt;1] = max(tr[p],tr[p^1]); } 至於區間的查詢就沒有那麼顯然了，我們一樣必須把詢問的區間拆分成線段樹上的一些區間，而且數量不能超過$\mathcal{O}(\log n)$</description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>常用的輸入(出)優化 cin / cout 因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用
+1 2 3 4 void modify(int p, int x) { for(tr[p+=n] = x; p &amp;gt; 1; p&amp;gt;&amp;gt;=1) tr[p&amp;gt;&amp;gt;1] = max(tr[p],tr[p^1]); } 至於區間的查詢就沒有那麼顯然了，我們一樣必須把詢問的區間拆分成線段樹上的一些區間，而且數量不能超過$\mathcal{O}(\log n)$</description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</guid><description>常用的輸入(出)優化 cin / cout 因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用
 競程的時候記得開下面兩個東西
 1 ios_base::sync_with_stdio(0), cin.tie(0); 開了之後就不要使用 stdio 裡面的東西啦
 另外若非互動題也不要使用 endl 之類會flush的函式，請用 '\n' 代替

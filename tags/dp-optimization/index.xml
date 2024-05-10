@@ -10,7 +10,7 @@ $$
 不過如果 $a, b$ 兩個序列都是凸的話，就可以很輕鬆的求出 $c$ 序列。
 更一般的，只要 $a$ 是凸的，就算 $b$ 不是凸的也可以快速在 $O(n\log n)$ 求出 $c$ 序列。
 一個序列 $x_0, x_1,\dots, x_n$ 是凸的如果他的差分遞增，即 $x_{i+1}-x_i \leq x_{i+2}-x_{i+1}$。
-可以想像如果把 $x_i$ 表示要拿 $i$ 個物品的成本，那 $x_i$ 是凸的就代表拿越多東西會因為邊際效應單位成本會越來越貴的感覺。</description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</guid><description>&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;
+可以想像如果把 $x_i$ 表示要拿 $i$ 個物品的成本，那 $x_i$ 是凸的就代表拿越多東西會因為邊際效應單位成本會越來越貴的感覺。</description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/tioj-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/tioj-1283/</guid><description>&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;
 超大畫框設置 https://tioj.ck.tp.edu.tw/problems/1283
 Description 在一個「漸進式框架」當中，你想要找到一個最大面積的矩形位置放置你最喜愛的一幅畫。
 當然地，畫框必須掛正，所以矩形的四個邊都必須與框架的邊平行或垂直。

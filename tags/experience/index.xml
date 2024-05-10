@@ -74,7 +74,7 @@ T分數其實不太記得了，只記得化學跟生物應該都蠻低的，有�
 今天晚上是謝師宴，如果有什麼我想補充的會再更新。</description></item><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>除錯模板的重要 這是一篇很短的廢文。
 當你發現你寫出的程式有 bug 的時候，就會是你花上很多時間的時候。
 尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 // An AC a day keeps the doctor away. #pragma GCC optimize(&amp;#34;Ofast&amp;#34;) #include &amp;lt;bits/stdc++.h&amp;gt; #ifdef local #define safe std::cerr&amp;lt;&amp;lt;__PRETTY_FUNCTION__&amp;lt;&amp;lt;&amp;#34; line &amp;#34;&amp;lt;&amp;lt;__LINE__&amp;lt;&amp;lt;&amp;#34; safe\n&amp;#34; #define debug(args...) qqbx(#args, args) #define orange(args.</description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>IOI 2021 只是想打一下IOI的心得而已
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 // An AC a day keeps the doctor away. #pragma GCC optimize(&amp;#34;Ofast&amp;#34;) #include &amp;lt;bits/stdc++.h&amp;gt; #ifdef local #define safe std::cerr&amp;lt;&amp;lt;__PRETTY_FUNCTION__&amp;lt;&amp;lt;&amp;#34; line &amp;#34;&amp;lt;&amp;lt;__LINE__&amp;lt;&amp;lt;&amp;#34; safe\n&amp;#34; #define debug(args...) qqbx(#args, args) #define orange(args.</description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</guid><description>IOI 2021 只是想打一下IOI的心得而已
 可能還是流水帳請多多包含(?)
 Before 其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強
 因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西
@@ -126,7 +126,7 @@ registers實在有點長，當然只能先去看dungeons
 先做了取min的subtask，實作比較的方式我是先做減法，然後就可以有絕對值，就有min了
 平行化大概需要170個操作左右，和最後一個subtask要求150只差一點但是怎麼都壓不過，傷心
 後來看著dungeons一直想他怎麼樣會加倍，突然就想到2的冪次分層
-也就是說如果現在的強度 $z\in[2^i,2^{i+1})$ 就說現在在第 $i$ 層，那一定會輸 $2^{i+1}$ 以上的人、贏 $2^i$ 以下的人，而一旦贏了中間的人就會跳到下一層!</description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</guid><description>IOIC 2021 去年就來過一次了，今年再次造訪這困難的營隊。
+也就是說如果現在的強度 $z\in[2^i,2^{i+1})$ 就說現在在第 $i$ 層，那一定會輸 $2^{i+1}$ 以上的人、贏 $2^i$ 以下的人，而一旦贏了中間的人就會跳到下一層!</description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/ioicamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/ioicamp-2021/</guid><description>IOIC 2021 去年就來過一次了，今年再次造訪這困難的營隊。
 其實幾乎沒有什麼特別不一樣的地方，不過我想說還是寫個短短的紀錄。
 吃的東西 IOIC有準備早餐、午餐跟晚餐讓我們不用擔心時間太可怕的問題（？）
 然後還有下午的點心，大致上都不錯吃，除了有魚刺的便當QQ
@@ -173,7 +173,7 @@ casper說看懂code就解完了（？）不過他沒辦法編譯所以也不知�
 最後終於走對路，找到github上面一個比較新的repo是把.ani跟.cur轉成linux的x-cursor檔案
 真是要感謝他們www
 話說我發現其實可以直接把檔案放到github上面，這樣也可以推廣或是找人來修改(X
-裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ，所以希望放到github上之後有人可以把其他那些icon改成統一的風格owo</description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>好久又沒有發文了
+裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ，所以希望放到github上之後有人可以把其他那些icon改成統一的風格owo</description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-ioi/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-ioi/</guid><description>好久又沒有發文了
 來講講上一次發文之後我都在做什麼好了
 Before IOI 首先在8/17開始所謂的賽前集訓
 總共為期三周，分別在台南、新竹和台北
@@ -224,7 +224,7 @@ After IOI 回到教室有種更尷尬的感覺
 現在我的書包裡面除了筆電跟軟軟以外還多了鍵盤這個常駐物品
 Esc離手指超近而且方向鍵又被拔掉超爽的XDDDD
 可是有一個重大問題是用注音打字的時候我習慣按方向鍵XDD 所以還是得跑去弄組合鍵
-總之，希望我以後還能夠常常用到這把鍵盤，還有希望他能陪我很久</description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</guid><description>二階奇幻之旅 原本一段剛好和一階撞到，可以免考，但是因為疫情的緣故又錯過了
+總之，希望我以後還能夠常常用到這把鍵盤，還有希望他能陪我很久</description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/toi-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/toi-2/</guid><description>二階奇幻之旅 原本一段剛好和一階撞到，可以免考，但是因為疫情的緣故又錯過了
 不過在我們從一階回來之後傳出師大那邊有確診的消息，而且還跟我們用過同一間教室(?)
 所以我們就剛好利用防疫公假得到免考的資格，嘻嘻
 防疫公假? 在自主健康管理的這段期間，我除了家裡基本上都待在王政祺家地下室
@@ -269,7 +269,7 @@ AY來的時候他會丟CF的題目，然後帶我們吃超多拉麵
 pC沒有拿滿很可惜，pD也是和大家一樣沒想法不過可惜我沒去拿一條鏈的case
 接下來? 因為我在學校嘗試待了一個禮拜之後發現真的待不太下去(這就是奧林匹亞回歸症候群嗎&amp;hellip;)
 於是成功的用準備資奧的理由請了假，罪惡感爆棚呢XD
-現在該做的事可能就是編講義、寫題解吧，希望自己不要頹廢OvO</description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>選訓生活(?) 最近部落格停更好久喔&amp;gt;&amp;lt;
+現在該做的事可能就是編講義、寫題解吧，希望自己不要頹廢OvO</description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/toi-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/toi-1/</guid><description>選訓生活(?) 最近部落格停更好久喔&amp;gt;&amp;lt;
 不知道有沒有沒有追蹤我facebook的人在看我的部落格，嘻嘻
 入營考當天? 我和蕭梓宏還有王品翔一起去師大看好戲(X)
 然後電石似乎在旁邊寫作業和嘴砲(?)
@@ -320,7 +320,7 @@ joy一直推薦西西里雞腿堡加蛋加起司，不過我覺得沒有傳言�
 不過撈部分分的能力應該才是真正決勝的地方，有請品翔喇分大師分享入營考0AC的經驗
 列舉事項 因為一階遇到很多酷哥，所以我要從facebook抄過來那段列舉
 幾件神奇的事情：
-thomaswang和ericxiao分別站在爛梗光譜的兩端 西餐廳的拉麵超糟 午餐吃早餐部唯一真理吧 天天喝微舒打好爽 吃飯店的早餐有夠爽 晚餐或晚上超常打拿破崙 seanliu打了兩個禮拜竟然有規則不知道 然後蕭電超強 YoJaHuang&amp;amp;品翔歌神了吧 實中的人都超酷 除了tommydong比較正常一點 仲群病毒大家都一直學www 「我燒雞」 「呃 我弱」 casperwang洗澡專家 不過還是教不會品翔 好多東西都是第一次接觸到 例如十二人狼人殺或是學生餐廳的點餐方法www 待續&amp;hellip; 因為打這篇的時候我在學校努力上課(?</description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>2020 IOIC 小記 五天都11點回家 好累喔
+thomaswang和ericxiao分別站在爛梗光譜的兩端 西餐廳的拉麵超糟 午餐吃早餐部唯一真理吧 天天喝微舒打好爽 吃飯店的早餐有夠爽 晚餐或晚上超常打拿破崙 seanliu打了兩個禮拜竟然有規則不知道 然後蕭電超強 YoJaHuang&amp;amp;品翔歌神了吧 實中的人都超酷 除了tommydong比較正常一點 仲群病毒大家都一直學www 「我燒雞」 「呃 我弱」 casperwang洗澡專家 不過還是教不會品翔 好多東西都是第一次接觸到 例如十二人狼人殺或是學生餐廳的點餐方法www 待續&amp;hellip; 因為打這篇的時候我在學校努力上課(?</description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/ioicamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/ioicamp-2020/</guid><description>2020 IOIC 小記 五天都11點回家 好累喔
 不過聽到很多神奇技巧和神奇題目(?)
 Day 1 早上是常數優化與電腦結構，看到一些毒瘤的東東還有會造成我常數大的一些寫法
 中午有貓貓時間，電仁分享了他競程的心得之後，丟給我們一些題目

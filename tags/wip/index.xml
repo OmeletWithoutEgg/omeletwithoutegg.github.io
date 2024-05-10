@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WIP on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/wip/</link><description>Recent content in WIP on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 24 Dec 2019 12:41:46 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/wip/index.xml" rel="self" type="application/rss+xml"/><item><title>Sieving-Method</title><link>https://omeletwithoutegg.github.io/2019/12/24/sieving-method/</link><pubDate>Tue, 24 Dec 2019 12:41:46 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/24/sieving-method/</guid><description>!待補QQ
+質數篩與快樂的積性函數 想必大家都精通各種質數篩法，最簡單的$\mathcal{O}(n\sqrt{n})$就不提啦
+$n\log n$篩 1 2 3 4 5 for(int i = 2; i &amp;lt;= n; i++) { for(int j = i*2; j &amp;lt;= n; j+=i) { sieve[j] = 1; } } $\sum \frac{1}{i}$的調和級數是$\mathcal{O}(\log n)$量級的，故複雜度為$\mathcal{O}(n\log n)$
+這個寫法也可以很簡單的統計每個數字的因數個數
+1 for(int i = 1; i &amp;lt;= n; i++) for(int j = i; j &amp;lt;= n; j+=i) ++d[j]; 其中 d[i] 代表 i 的因數個數
+容易發現$\sum\limits _ {i=1}^n d[i]$也是$\mathcal{O}(n\log n)$量級的
+埃式篩 1 2 3 4 5 for(int i = 2; i &amp;lt;= n; i++) if(!</description></item></channel></rss>

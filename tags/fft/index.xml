@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/fft/</link><description>Recent content in FFT on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 25 Dec 2019 14:56:54 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/fft/index.xml" rel="self" type="application/rss+xml"/><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</guid><description>捲積方法 OAO 本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速
+這邊先定義一下捲積$ * $是什麼
+$$
+(a * b) _ x = \sum _ {i+j=x} a_i b_j
+$$
+實際上就等價於我們常見的多項式乘法
+naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意
+1 2 3 4 5 for(int i = 0; i &amp;lt; A.size(); i++) { for(int j = 0; j &amp;lt; B.size(); j++) { res[i+j] += A[i] * B[j]; } } DFT 先假設我們有兩個多項式
+$$
+A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline
+C(x) = A(x)B(x)
+$$
+除了上述利用分配律乘開以外
+因為$C$的次數已經可以確定</description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/tioj-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/tioj-1035/</guid><description>通關密語 https://tioj.ck.tp.edu.tw/problems/1035
+Description 給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串 $S,T$
+定義「最佳擬合」，就是將 $S$ 經過平移後和 $T$ 比對，同樣的字元數最多的那一種方法。
+請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。
+ex.
+對於
+ababa
+babab
+來說，
+ababa
+=babab
+這是一種最佳擬合的方法，$S$經過向左平移之後$S,T$有四個位置的字元相同
+Solution naive的$n^2$做法可以AC本題，只要妥當控制常數即可
+不過這裡提供一個NTT的$\mathcal{O}(C\cdot n\log n)$解
+假設$S$對$T$的平移量是$x$(可以為負的)，題目所求為
+$$
+\sum _ {i-j = x} [S_i = T_j]
+$$
+的最大值
+那我們枚舉26種英文字母，可以寫成
+$$
+\sum _ {c \in \sigma} \sum _ {i-j = x} [S_i = c] \cdot [T_j = c]
+$$
+令$F_i = [S_i = c], G_j = [T _ {-j} = c]$</description></item></channel></rss>
