@@ -83,8 +83,6 @@ nim game 不同堆之間是獨立的並且每次遊戲必須恰好在一堆做�
 
 因為這題是培訓班作業所以先把 code 遮起來
 
-<!--
-
 ```cpp
 #pragma GCC optimize("Ofast")
 #include <bits/stdc++.h>
@@ -187,4 +185,3 @@ signed main() {
   }
 }
 ```
--->
