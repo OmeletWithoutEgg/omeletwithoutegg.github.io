@@ -4,8 +4,12 @@ title = "蛋餅的競程隨筆"
 theme = "cactus"
 copyright = "Omelet" # cactus will use title if copyright is not set
 
-disqusShortname = "omeletwithoutegg" # Used when comments is enabled. Cactus will use site title if not set
-googleAnalytics = "G-0ME10Z2L0D"
+[services]
+  [services.disqus]
+    shortname = "omeletwithoutegg" # Used when comments is enabled. Cactus will use site title if not set
+  [services.googleAnalytics]
+    id = "G-0ME10Z2L0D"
+
 # summaryLength = 2
 disablePathToLower = true
 
@@ -68,9 +72,7 @@ weight = 6
 
 [params]
 
-    colortheme = "dark" # dark, light, white, or classic
     # rss = true # generate rss feed. default value is false
-    googleAnalyticsAsync = false # use asynchronous tracking. Synchronous tracking by default
   
     # Home page settings
     description = "一個廢人想寫題解，所以他想辦法弄網站"
@@ -90,6 +92,8 @@ weight = 6
     defaultAuthor = "2qbingxuan"
 
     mathjax = true
+
+    # colortheme = "dark" # dark, light, white, or classic
     css = ["css/highlight.css", "css/style-dark.css", "css/search.css"]
   
     [params.comments]
