@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 25 Apr 2024 03:27:52 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>ICPC World Finals @Luxor 世界總決賽紀錄 部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 01 Jul 2024 01:19:05 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>第五學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</link><pubDate>Mon, 01 Jul 2024 01:19:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</guid><description>Fifth semester 這個學期（大三上）原本預期是要在十一月參加 ICPC World Finals 的，所以選課除了必修以外都是選自己想選的，盡量只選到不用填低修單的學分。
+很貪心的還想要 4.3，但最後大失敗。
+室內五人制足球初級 跟 ZCK 一起來修的我的第三門體育課。
+跟之前（室外）足球的老師是同一個老師，課程也大同小異，只是從室外十一人制變成室內五人制，球也換成室內五人制一般會使用的低彈力球。
+不過畢竟是在室內，所以不太會在室外踩泥土曬太陽，而是踩體育館的地板有屋頂，也許比較舒服。
+看到許多之前在室外足球課的熟面孔，好課一修再修。
+這次一樣有分組比賽，分組後我們這組看起來似乎是四組裡面最菜的XD 之前的熟面孔強者都在別組。
+不過除了跟最強的那一隊比賽以外其實都打得還可以？
+我們這隊有幾個印尼人，他們感覺比較會踢，有大局觀的感覺，帶著我們也算是可以跟一些隊打平。
+除了比賽部份會加分以外，術科項目的考試有兩個，一個是兩人互相傳球，一個是帶球繞一圈。
+帶球繞一圈就吃小學的老本，感覺帶得還不錯（可能整堂課都有吃老本的部份，小學有在踢足球）。
+另外這次有 ZCK 當隊友，兩人互相傳球的部份配合得比較好，總之最後拿到了 A+。
+數值線性代數 來修一門感覺很數學的課。
+這門課一開始先介紹高斯消去法，然後講 condition number，也就是什麼樣的線性系統是病態的，只要一開始出了一點誤差就會被放大數倍。
+前半學期講了 matrix norm 以及 SVD 等（整個學期都不會講 SVD 實際上怎麼有效率計算 :P）。
+後半學期介紹 iteration method，重心會放在 conjugate gradient method。
+一些簡單的矩陣分解（LU, LDU, QR, cholesky 等）也會講到，但感覺都 focus 在手算的方法（畢竟真的實用的方法是都頗複雜），再稍微給我們一些 QR 的數值穩定度比較好、LU 比較快之類的概念。
+這門課使用的教材是 ALAFF，會要求我們預習看影片等等。
+另外每堂課後幾乎都有實驗課，是助教用 google colab 讓我們用 numpy 跟 scipy 的套件寫一些有關矩陣運算的東西。感覺我應該還算熟這些套件所以很輕鬆。
+最後還有一個算分的作業是每個人要上台分享一次一個 topic 的環節，但我沒有上去分享，再加上蹺了數次課，有幾次實驗課沒作到。
+考試期中考了 89 期末考了 92，但 lab 分數只有 75、作業分數只有 78，拿了一個難看的 B+。</description></item><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>ICPC World Finals @Luxor 世界總決賽紀錄 部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。
 如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。
 前言 在大一IOI結束後ot和olmrgcsi邀請我同隊，暑假就組成ckiseki開始團練。ckiseki 這個隊名應該是由他們前一個隊伍的名字 kiseki 改過來的，我們三個人其中一個共通點是都是建中的，所以前頭加了一個 c 湊成 ck 的縮寫（？）總之我們那時候練得蠻多的，在當年（2021）的下半年在臺北站用線段樹和一些壓常得到了 46th world final 門票。本來預定應該是 2022 比賽的，但因為 covid 的關係延後得遙遙無期，直到 2023 年初才得到會在 11 月去 SSH，結果因為以巴問題又延期，2024 的 1 月才得知 2024 年 4 月改在 Luxor 舉辦。如果是大四才拿到票的學生，可能都已經工作兩三年了，可以說非常消磨熱情。
 我們隊在進 wf 後參加了三次的ptz camp兩次的ocpc，以及很多的 universal cup。雖然感覺我們是有成長的，但越接近 final 越發現前排隊伍有點太過耀眼。如果我們跟以前的隊伍比的話，看排行榜有機會是可以拿到銀牌，但本次比賽的隊伍名單一字排開大概十隊有紅黑人，再把一些平常團練打得很好的隊伍算進去的話，悲觀一點連拿牌都很難，如果看我們 ucup 的成績大概有一半是超級拉垮的。不過賽前一個禮拜 vir 某場 WF 的時候看到東大也是最近 vir 的而且跟我們同題數只輸 5 分鐘罰時，雖然大概是他們太老導致很少練但還是讓我稍微感到樂觀一點，努力帶著這種樂觀啟程。
