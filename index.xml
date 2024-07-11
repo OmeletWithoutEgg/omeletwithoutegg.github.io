@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 01 Jul 2024 01:19:05 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>第五學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</link><pubDate>Mon, 01 Jul 2024 01:19:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</guid><description>Fifth semester 這個學期（大三上）原本預期是要在十一月參加 ICPC World Finals 的，所以選課除了必修以外都是選自己想選的，盡量只選到不用填低修單的學分。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 07 Jul 2024 21:31:21 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>第六學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</link><pubDate>Sun, 07 Jul 2024 21:31:21 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</guid><description>Sixth semester 在大約一月底我們得知 ICPC 會在四月舉辦。於是這學期我還是盡量把課排少，學期初的時候我原本選了一個國文課，但後來退掉了，學分也剩下 14 學分需要低修單。剩下只有五門課看起來真的超級少的。
+密碼學導論 學期初的時候去聽了一下覺得可以修，而且資工系一堆人都搶著要修的樣子。三類加簽，所以只要在網路上加選等抽中，雖然是個兩百多人的課但抽中也不難，會有不少人退選。
+學期初會先講一些簡單的抽象代數，基本上都是會討論像是 $Z_n$ 或是 $GF_{q^n}$ 這種有好性質的 ring/field，主要是為了 AES 鋪路。
+後半學期會講 RSA 以及一些旁通道攻擊的例子，然後還有 ECB/CBC 等加密模式或是像是金鑰分發、certificate authority、bitcoin、區塊鏈這種比較分散的對我來說感覺沒什麼動力學的東西。最後雖然確實有講後量子密碼學，但其實也就是維基百科上查得到的東西而已，沒有得到什麼太有用的知識的感覺。
+每個禮拜都有一個小考，雖然只算最高六次但我到學期末都沒湊滿，大概差一兩分。大概到差不多期中考的時候一開始幾個一起來修的資工系同學停修掉了，雖然我沒有停修但後來的小考和上課有點後悔，一直考一些奇怪的細節或是背誦的東西，然後好幾次的問答題我寫了一大篇作文沒拿滿分真的哭。
+期中考我有點考爆，拿了個 82 分。
+整學期只有一個作業，大部份都是課本上的題目，加上一些看影片寫心得跟用 sage 做一些超簡單的練習。
+課本的題目感覺其實也沒什麼品味，而且有一些題目感覺像是有問題。
+作業有一個提早交加分的機制，從大概 16 題裡面選最好的 12 題。我那時候就卷這份作業，想要把全部的題目都在提早交的期限前寫完，雖然最後一些看影片寫心得的部份沒有寫但還是花了蠻多力氣，最後這邊的分數有拿滿；其實我懷疑我又抄題目又用 $\LaTeX$ 又每題都寫，如果我是助教肯定是心想「這麼長誰想改乾脆直接給滿分好了」(X。
+期末考考了 91 分，我那時候心想完蛋了這樣考試平均也不到 90 怎麼 A+，但還是太小看作業的分數了。
+人工智慧導論 忘記是上一屆還是這一屆開始是系上必修。
+前半學期講了什麼是人工智慧跟一些比較古早的方法，主要是像是 A* 或是 alpha-beta 剪枝等 exhaustive search 以及一些機率的 bayesian inference 之類的東西。
+後半學期則是開始談機器學習，講 supervised 和 unsupervised 的一些方法，最後比 HTML（林軒田教授開的 ML）多的東西可能就是 reinforcement learning 吧。
+不過我都沒有去上課，唯一一次去 103 教室是期中考的時候。期中考有夠擠，座位連梅花座都做不到，整排都是人。</description></item><item><title>第五學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</link><pubDate>Mon, 01 Jul 2024 01:19:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</guid><description>Fifth semester 這個學期（大三上）原本預期是要在十一月參加 ICPC World Finals 的，所以選課除了必修以外都是選自己想選的，盡量只選到不用填低修單的學分。
 很貪心的還想要 4.3，但最後大失敗。
 室內五人制足球初級 跟 ZCK 一起來修的我的第三門體育課。
 跟之前（室外）足球的老師是同一個老師，課程也大同小異，只是從室外十一人制變成室內五人制，球也換成室內五人制一般會使用的低彈力球。
