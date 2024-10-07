@@ -94,3 +94,14 @@ template 比直接寫死一個型別好，vector 比使用陣列好。
 目前 ckiseki 的 codebook repo 沒有 CI/CD 在 GH action 之類的跑這些自動測試，不過我們有維護一份 markdown + yaml 文件，除了寫每個模板有在哪裡測試過以外，也有稍微寫一下模板的注意事項、效率等等。
 
 本文所講的許多重點都是實際上無法完美兼顧的，例如有時候會想要犧牲一些空間來放註釋，或是有時候想要讓程式碼直接獨立能夠使用而犧牲了一些一般化的能力。平時不管是比賽還是刷題，多使用多測試隊上的模板，才能找到適合的平衡點。
+
+## 簡單的例子
+
+- https://github.com/kth-competitive-programming/kactl
+- https://github.com/brianbbsu/8BQube
+- https://omeletwithoutegg.github.io/ckiseki/
+- https://github.com/ToxicPie/NaOCl
+
+以下幾項不是 25 頁的。
+- https://tatyam-prime.github.io/ICPC_notebook/
+- https://maspypy.github.io/library/
