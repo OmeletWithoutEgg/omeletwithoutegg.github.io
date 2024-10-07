@@ -1,37 +1,66 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/fft/</link><description>Recent content in FFT on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 25 Dec 2019 14:56:54 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/fft/index.xml" rel="self" type="application/rss+xml"/><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</guid><description>捲積方法 OAO 本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速
-這邊先定義一下捲積$ * $是什麼
-$$
-(a * b) _ x = \sum _ {i+j=x} a_i b_j
-$$
-實際上就等價於我們常見的多項式乘法
-naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意
-1 2 3 4 5 for(int i = 0; i &amp;lt; A.size(); i++) { for(int j = 0; j &amp;lt; B.size(); j++) { res[i+j] += A[i] * B[j]; } } DFT 先假設我們有兩個多項式
-$$
-A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline
-C(x) = A(x)B(x)
-$$
-除了上述利用分配律乘開以外
-因為$C$的次數已經可以確定</description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/tioj-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/tioj-1035/</guid><description>通關密語 https://tioj.ck.tp.edu.tw/problems/1035
-Description 給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串 $S,T$
-定義「最佳擬合」，就是將 $S$ 經過平移後和 $T$ 比對，同樣的字元數最多的那一種方法。
-請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。
-ex.
-對於
-ababa
-babab
-來說，
-ababa
-=babab
-這是一種最佳擬合的方法，$S$經過向左平移之後$S,T$有四個位置的字元相同
-Solution naive的$n^2$做法可以AC本題，只要妥當控制常數即可
-不過這裡提供一個NTT的$\mathcal{O}(C\cdot n\log n)$解
-假設$S$對$T$的平移量是$x$(可以為負的)，題目所求為
-$$
-\sum _ {i-j = x} [S_i = T_j]
-$$
-的最大值
-那我們枚舉26種英文字母，可以寫成
-$$
-\sum _ {c \in \sigma} \sum _ {i-j = x} [S_i = c] \cdot [T_j = c]
-$$
-令$F_i = [S_i = c], G_j = [T _ {-j} = c]$</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/fft/</link><description>Recent content in FFT on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 25 Dec 2019 14:56:54 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/fft/index.xml" rel="self" type="application/rss+xml"/><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
+&lt;p>本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速&lt;br>
+這邊先定義一下捲積$ * $是什麼&lt;/p>
+&lt;p>$$&lt;br>
+(a * b) _ x = \sum _ {i+j=x} a_i b_j&lt;br>
+$$&lt;/p>
+&lt;p>實際上就等價於我們常見的多項式乘法&lt;br>
+naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> A.size(); i&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> j &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; j &lt;span style="color:#f92672">&amp;lt;&lt;/span> B.size(); j&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		res[i&lt;span style="color:#f92672">+&lt;/span>j] &lt;span style="color:#f92672">+=&lt;/span> A[i] &lt;span style="color:#f92672">*&lt;/span> B[j];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="dft">DFT&lt;/h2>
+&lt;p>先假設我們有兩個多項式&lt;br>
+$$&lt;br>
+A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline&lt;br>
+C(x) = A(x)B(x)&lt;br>
+$$&lt;br>
+除了上述利用分配律乘開以外&lt;br>
+因為$C$的次數已經可以確定&lt;br>
+我們也可以在$A(x)$和$B(x)$找出$n$個相異的點，相乘之後再利用插值法代入得到$C$&lt;br>
+其中$n = \deg C + 1$&lt;br>
+也就是&lt;/p></description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/tioj-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/tioj-1035/</guid><description>&lt;h1 id="通關密語">通關密語&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1035">https://tioj.ck.tp.edu.tw/problems/1035&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串 $S,T$&lt;br>
+定義「最佳擬合」，就是將 $S$ 經過平移後和 $T$ 比對，同樣的字元數最多的那一種方法。&lt;br>
+請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。&lt;/p>
+&lt;p>ex.&lt;br>
+對於&lt;/p>
+&lt;blockquote>
+&lt;p>ababa&lt;br>
+babab&lt;/p>
+&lt;/blockquote>
+&lt;p>來說，&lt;/p>
+&lt;blockquote>
+&lt;p>ababa&lt;br>
+=babab&lt;/p>
+&lt;/blockquote>
+&lt;p>這是一種最佳擬合的方法，$S$經過向左平移之後$S,T$有四個位置的字元相同&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>naive的$n^2$做法可以AC本題，只要妥當控制常數即可&lt;br>
+不過這裡提供一個NTT的$\mathcal{O}(C\cdot n\log n)$解&lt;/p>
+&lt;p>假設$S$對$T$的平移量是$x$(可以為負的)，題目所求為&lt;/p>
+&lt;p>$$&lt;br>
+\sum _ {i-j = x} [S_i = T_j]&lt;br>
+$$&lt;/p>
+&lt;p>的最大值&lt;/p>
+&lt;p>那我們枚舉26種英文字母，可以寫成&lt;/p>
+&lt;p>$$&lt;br>
+\sum _ {c \in \sigma} \sum _ {i-j = x} [S_i = c] \cdot [T_j = c]&lt;br>
+$$&lt;/p>
+&lt;p>令$F_i = [S_i = c], G_j = [T _ {-j} = c]$&lt;br>
+答案便是&lt;/p></description></item></channel></rss>

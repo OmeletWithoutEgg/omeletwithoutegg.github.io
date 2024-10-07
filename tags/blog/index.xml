@@ -1,23 +1,126 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/blog/</link><description>Recent content in Blog on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 25 Apr 2024 03:27:52 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>ICPC World Finals @Luxor 世界總決賽紀錄 部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。
-如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。
-前言 在大一IOI結束後ot和olmrgcsi邀請我同隊，暑假就組成ckiseki開始團練。ckiseki 這個隊名應該是由他們前一個隊伍的名字 kiseki 改過來的，我們三個人其中一個共通點是都是建中的，所以前頭加了一個 c 湊成 ck 的縮寫（？）總之我們那時候練得蠻多的，在當年（2021）的下半年在臺北站用線段樹和一些壓常得到了 46th world final 門票。本來預定應該是 2022 比賽的，但因為 covid 的關係延後得遙遙無期，直到 2023 年初才得到會在 11 月去 SSH，結果因為以巴問題又延期，2024 的 1 月才得知 2024 年 4 月改在 Luxor 舉辦。如果是大四才拿到票的學生，可能都已經工作兩三年了，可以說非常消磨熱情。
-我們隊在進 wf 後參加了三次的ptz camp兩次的ocpc，以及很多的 universal cup。雖然感覺我們是有成長的，但越接近 final 越發現前排隊伍有點太過耀眼。如果我們跟以前的隊伍比的話，看排行榜有機會是可以拿到銀牌，但本次比賽的隊伍名單一字排開大概十隊有紅黑人，再把一些平常團練打得很好的隊伍算進去的話，悲觀一點連拿牌都很難，如果看我們 ucup 的成績大概有一半是超級拉垮的。不過賽前一個禮拜 vir 某場 WF 的時候看到東大也是最近 vir 的而且跟我們同題數只輸 5 分鐘罰時，雖然大概是他們太老導致很少練但還是讓我稍微感到樂觀一點，努力帶著這種樂觀啟程。
-啟程 結束落落長的前言，開始本次旅遊的流水帳。
-往 Luxor 的旅程從桃機開始，週六的晚上十一點的飛機，我們七個人包含教授在櫃檯集合並登機；在同一個櫃檯也已經看到交大清大他們。這是我第一次搭日本或台灣以外的航空公司（阿聯酋航空，回來台灣之後學習到我是第一次坐所謂 A380），有點開眼界的感覺，經濟艙的座位上竟然有萬用插座（雖然九小時應該非常需要xd），而且還有一個被擋住的樓梯，往上層艙看起來有一個像是酒吧的東西；他們的餐點也還不錯吃。飛到杜拜的飛機坐得很滿，而且我們是半夜起飛，所以大家都在睡覺，我原本帶書來看但我也不好意思在他把機上燈光關掉的時侯開自己的座位燈xd。
-上機前可以看到是個四個引擎的大客機 插頭和娛樂系統 坐在中間的位子蠻難睡的，努力消磨時間跟睡覺總算到達杜拜，是當地凌晨五點。到杜拜又是另一種開眼界，我們還待在轉乘的區域可以逛的商店就已經非常多，有很多的精品店還有偶爾會遇到emirates的周邊商品店。這裡已經可以遇到很多來 icpc 的人了，我們在杜拜的麥當勞買了一個約五美元的大薯四個人分著吃（好貴），剛好對面坐 NUS 的 coach；回到登機口之後還有澳洲跟日本的東工大跟京大的樣子，不過我幾乎不敢搭話，而且不知道是吃太飽還是吃壞肚子，有點肚子痛再加上很累不太能專心。</description></item><item><title>Hugo Framework</title><link>https://omeletwithoutegg.github.io/2020/11/25/hugo-framework/</link><pubDate>Wed, 25 Nov 2020 11:20:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/25/hugo-framework/</guid><description>Hugo! 似乎因為casper而嘗試從hexo跳槽到hugo。
-hexo似乎是對windows比較友善？檔名都一堆底線之類的
-啊hugo好像是對macOS比較友善QQ
-Startup Hugo沒有預設的theme，所以如果不想無中生有一定要裝一個theme。
-我原本用的Hexo Theme Cactus在Hugo也有人維護一個theme，不過feature就沒有那麼多了。
-總之試著寫一個markdown然後 hugo server
-驚訝的發現他超快XDD應該說是Hexo太慢了，我想node.js天生本來就有一些缺點吧。
-既然可以拋棄噁心的 node_modules 還有底線，而且還可以讓他 generate 的時間變超快，我決定試看看能不能把整個網站從Hexo改成用Hugo寫，並且同時大部份東西仍然保持跟之前相同，例如Repo、網址、code highlight、search/tag feature等等
-一些遇到的問題 Hard Line Break 這個蠻可怕的。在用Hexo的時候沒什麼感覺，但是我的Markdown全部都是用直接換行來換行；而Hugo預設不是，也就是說他應該要用兩個空格或是反斜線的方式來換行。這其實是Markdown預設的換行方式，但是真的很不習慣，不知道該怎麼說。而且也不可能一個一個檔案調整XD Solution:
-一開始查到可以在 config.html 裡面加 1 2 [blackfriday] extensions = [&amp;#34;hardLineBreak&amp;#34;] 不過都沒有效。後來才知道Blackfriday是Hugo原本拿來render markdown的東西，而某次更新之後已經換成Goldmark這個套件了。 基於我找不到怎麼在Goldmark加上 Hard Line Break 的選項，我選擇改回用Blackfriday render就好。 1 2 [markup] defaultMarkdownHandler = &amp;#34;blackfriday&amp;#34; 沒有search Solution:
-Google了一陣子。中間找到這個使用Fuse.js的一個實作，不知道為什麼是放在討論區：https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae
-雖然蠻快找到，不過我踩了很多雷。
-首先是他寫法是 define &amp;quot;footerfiles&amp;quot;，但是我的theme的基底模板沒有block &amp;quot;footerfiles&amp;quot;的區塊。所以我目前是把那段script跟他定義的main放在一起。
-再來是mark.js，一直出現 $(...).mark is not a function，我也不知道為什麼用 jquery 的 mark.js 就會出事，總之我最後是把 search.js 換成上面連結裡面有人提出來的不帶 jquery 的版本。CSS直接抄原本Hexo那邊的搜尋框XD 各種格式不一樣(日期、TOML v.</description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description>這是一篇測試用的文章
-A quick brown fox jumps over the lazy dog.
-引用文字
-標題 二級標題 1 2 3 4 5 #include &amp;lt;iostream&amp;gt; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;Hello hexo&amp;#34; &amp;lt;&amp;lt; std::endl; } 1 2 3 $ hexo clean $ hexo s -g $ echo 7122</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/blog/</link><description>Recent content in Blog on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 25 Apr 2024 03:27:52 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>&lt;h1 id="icpc-world-finals-luxor-世界總決賽紀錄">ICPC World Finals @Luxor 世界總決賽紀錄&lt;/h1>
+&lt;p>部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。&lt;br>
+如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。&lt;/p>
+&lt;hr>
+&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>在大一IOI結束後ot和olmrgcsi邀請我同隊，暑假就組成ckiseki開始團練。ckiseki 這個隊名應該是由他們前一個隊伍的名字 kiseki 改過來的，我們三個人其中一個共通點是都是建中的，所以前頭加了一個 c 湊成 ck 的縮寫（？）總之我們那時候練得蠻多的，在當年（2021）的下半年在臺北站用線段樹和一些壓常得到了 46th world final 門票。本來預定應該是 2022 比賽的，但因為 covid 的關係延後得遙遙無期，直到 2023 年初才得到會在 11 月去 SSH，結果因為以巴問題又延期，2024 的 1 月才得知 2024 年 4 月改在 Luxor 舉辦。如果是大四才拿到票的學生，可能都已經工作兩三年了，可以說非常消磨熱情。&lt;br>
+我們隊在進 wf 後參加了三次的ptz camp兩次的ocpc，以及很多的 universal cup。雖然感覺我們是有成長的，但越接近 final 越發現前排隊伍有點太過耀眼。如果我們跟以前的隊伍比的話，看排行榜有機會是可以拿到銀牌，但本次比賽的隊伍名單一字排開大概十隊有紅黑人，再把一些平常團練打得很好的隊伍算進去的話，悲觀一點連拿牌都很難，如果看我們 ucup 的成績大概有一半是超級拉垮的。不過賽前一個禮拜 vir 某場 WF 的時候看到東大也是最近 vir 的而且跟我們同題數只輸 5 分鐘罰時，雖然大概是他們太老導致很少練但還是讓我稍微感到樂觀一點，努力帶著這種樂觀啟程。&lt;/p>
+&lt;h2 id="啟程">啟程&lt;/h2>
+&lt;p>結束落落長的前言，開始本次旅遊的流水帳。&lt;/p>
+&lt;p>往 Luxor 的旅程從桃機開始，週六的晚上十一點的飛機，我們七個人包含教授在櫃檯集合並登機；在同一個櫃檯也已經看到交大清大他們。這是我第一次搭日本或台灣以外的航空公司（阿聯酋航空，回來台灣之後學習到我是第一次坐所謂 A380），有點開眼界的感覺，經濟艙的座位上竟然有萬用插座（雖然九小時應該非常需要xd），而且還有一個被擋住的樓梯，往上層艙看起來有一個像是酒吧的東西；他們的餐點也還不錯吃。飛到杜拜的飛機坐得很滿，而且我們是半夜起飛，所以大家都在睡覺，我原本帶書來看但我也不好意思在他把機上燈光關掉的時侯開自己的座位燈xd。&lt;/p>
+&lt;p>
+ &lt;figure>
+ &lt;img src="https://omeletwithoutegg.github.io/images/icpc-wf-luxor/DSC_1805.JPG" alt="">
+ &lt;figcaption>上機前可以看到是個四個引擎的大客機&lt;/figcaption>
+ &lt;/figure>
+
+&lt;/p>
+&lt;p>
+ &lt;figure>
+ &lt;img src="https://omeletwithoutegg.github.io/images/icpc-wf-luxor/DSC_1806.JPG" alt="">
+ &lt;figcaption>插頭和娛樂系統&lt;/figcaption>
+ &lt;/figure>
+
+&lt;/p>
+&lt;p>坐在中間的位子蠻難睡的，努力消磨時間跟睡覺總算到達杜拜，是當地凌晨五點。到杜拜又是另一種開眼界，我們還待在轉乘的區域可以逛的商店就已經非常多，有很多的精品店還有偶爾會遇到emirates的周邊商品店。這裡已經可以遇到很多來 icpc 的人了，我們在杜拜的麥當勞買了一個約五美元的大薯四個人分著吃（好貴），剛好對面坐 NUS 的 coach；回到登機口之後還有澳洲跟日本的東工大跟京大的樣子，不過我幾乎不敢搭話，而且不知道是吃太飽還是吃壞肚子，有點肚子痛再加上很累不太能專心。&lt;/p></description></item><item><title>Hugo Framework</title><link>https://omeletwithoutegg.github.io/2020/11/25/hugo-framework/</link><pubDate>Wed, 25 Nov 2020 11:20:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/25/hugo-framework/</guid><description>&lt;h1 id="hugo">Hugo!&lt;/h1>
+&lt;p>似乎因為casper而嘗試從hexo跳槽到hugo。&lt;br>
+hexo似乎是對windows比較友善？檔名都一堆底線之類的&lt;br>
+啊hugo好像是對macOS比較友善QQ&lt;/p>
+&lt;h2 id="startup">Startup&lt;/h2>
+&lt;p>Hugo沒有預設的theme，所以如果不想無中生有一定要裝一個theme。&lt;br>
+我原本用的Hexo Theme Cactus在Hugo也有人維護一個theme，不過feature就沒有那麼多了。&lt;br>
+總之試著寫一個markdown然後 &lt;code>hugo server&lt;/code>&lt;br>
+驚訝的發現他超快XDD應該說是Hexo太慢了，我想node.js天生本來就有一些缺點吧。&lt;br>
+既然可以拋棄噁心的 &lt;code>node_modules&lt;/code> 還有底線，而且還可以讓他 generate 的時間變超快，我決定試看看能不能把整個網站從Hexo改成用Hugo寫，並且同時大部份東西仍然保持跟之前相同，例如Repo、網址、code highlight、search/tag feature等等&lt;/p>
+&lt;h2 id="一些遇到的問題">一些遇到的問題&lt;/h2>
+&lt;ul>
+&lt;li>Hard Line Break
+&lt;ul>
+&lt;li>這個蠻可怕的。在用Hexo的時候沒什麼感覺，但是我的Markdown全部都是用直接換行來換行；而Hugo預設不是，也就是說他應該要用兩個空格或是反斜線的方式來換行。這其實是Markdown預設的換行方式，但是真的很不習慣，不知道該怎麼說。而且也不可能一個一個檔案調整XD&lt;/li>
+&lt;li>Solution:&lt;br>
+一開始查到可以在 &lt;code>config.html&lt;/code> 裡面加&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#a6e22e">blackfriday&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">extensions&lt;/span> = [&lt;span style="color:#e6db74">&amp;#34;hardLineBreak&amp;#34;&lt;/span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;pre>&lt;code>不過都沒有效。後來才知道Blackfriday是Hugo原本拿來render markdown的東西，而某次更新之後已經換成Goldmark這個套件了。
+基於我找不到怎麼在Goldmark加上 Hard Line Break 的選項，我選擇改回用Blackfriday render就好。
+&lt;/code>&lt;/pre>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#a6e22e">markup&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">defaultMarkdownHandler&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;blackfriday&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>沒有search
+&lt;ul>
+&lt;li>Solution:&lt;br>
+Google了一陣子。中間找到這個使用Fuse.js的一個實作，不知道為什麼是放在討論區：https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae&lt;br>
+雖然蠻快找到，不過我踩了很多雷。&lt;br>
+首先是他寫法是 &lt;code>define &amp;quot;footerfiles&amp;quot;&lt;/code>，但是我的theme的基底模板沒有&lt;code>block &amp;quot;footerfiles&amp;quot;&lt;/code>的區塊。所以我目前是把那段script跟他定義的main放在一起。&lt;br>
+再來是mark.js，一直出現 &lt;code>$(...).mark is not a function&lt;/code>，我也不知道為什麼用 jquery 的 mark.js 就會出事，總之我最後是把 &lt;code>search.js&lt;/code> 換成上面連結裡面有人提出來的不帶 &lt;code>jquery&lt;/code> 的版本。CSS直接抄原本Hexo那邊的搜尋框XD&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>各種格式不一樣(日期、TOML v.s. YAML)&lt;br>
+這個其實還好，很快就能看懂TOML，畢竟他是設計給人看的。vim有插件可以幫TOML syntax highlight，如果是vim的使用者要記得學習使用工具wwww&lt;/li>
+&lt;li>Code highlight and copy button&lt;br>
+我原本highlight的主題是 &lt;code>monokai-sublime&lt;/code>，而Hugo是用Chroma這個套件幫程式碼區塊syntax highlight。研究了好久CSS之後終於調成跟原本差不多了www有夠難wwww&lt;br>
+另外原本我有一個Copy按鍵可以Copy整段Code，但是Hugo跟Hexo的程式碼區塊也被render得超不一樣，所以改那部份的JS、CSS跟調整Selector花了一些時間。&lt;/li>
+&lt;li>Background Animation&lt;br>
+我在之前就有用Canvas.js讓背景有奇怪的幾何線段，而在Hugo中要再做一遍這個太簡單了，就把code貼到可以include的地方就好。&lt;/li>
+&lt;li>mathjax escape&lt;br>
+以為自己快做完的時候發現出大事，好幾篇的LaTeX出事了。經過一些觀察我發現是 &lt;code>_&lt;/code> 前面沒有空格就可能會出事被解讀成粗體，還有在math裡面的 &lt;code>\\&lt;/code> 不知道為什麼沒用。&lt;br>
+因為幾乎查不到Hugo或Blackfriday Mathjax的選項或是解決方法，所以我的解法是妥協，在 &lt;code>_&lt;/code> 前後各加一個空格以示安全，而 &lt;code>\\&lt;/code>則是換成&lt;code>\newline&lt;/code>；希望我之後寫文章會記得。由於這些修改都是針對很多文章，因此我是用&lt;code>grep&lt;/code>跟&lt;code>sed&lt;/code>批次解決的。&lt;/li>
+&lt;/ul>
+&lt;h3 id="小撇步">小撇步&lt;/h3>
+&lt;p>在本機測試的時候，如果只是為了 &lt;code>hugo server&lt;/code> 就得耗掉一個terminal的視窗有點浪費，可以用 &lt;code>hugo server &amp;gt;server.log &amp;amp;&lt;/code>來讓他在背景執行，並且使用 &lt;code>fg&lt;/code> 把他叫回前台以讓我們停止他。&lt;br>
+當然如果是用GUI文字編輯器就沒什麼差了XD&lt;/p></description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description>&lt;p>這是一篇測試用的文章&lt;br>
+A quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;blockquote>
+&lt;p>引用文字&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="標題">標題&lt;/h1>
+&lt;h2 id="二級標題">二級標題&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	std&lt;span style="color:#f92672">::&lt;/span>cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello hexo&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> std&lt;span style="color:#f92672">::&lt;/span>endl;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ hexo clean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ hexo s -g
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ echo &lt;span style="color:#ae81ff">7122&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

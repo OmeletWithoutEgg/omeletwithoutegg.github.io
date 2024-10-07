@@ -1,6 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Library on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/library/</link><description>Recent content in Library on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 13 Jul 2024 22:44:05 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/library/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC 競賽中如何製作 codebook</title><link>https://omeletwithoutegg.github.io/2024/07/13/icpc-codebook/</link><pubDate>Sat, 13 Jul 2024 22:44:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/13/icpc-codebook/</guid><description>How to make team reference document in ICPC 前言 在 ICPC 競賽中一個不可或缺的元素就是在 規則 裡面被稱為 Team Reference Document 的東西。台大這邊俗稱叫 codebook。
-在上一次的 WF 當中是規定每一隊可以帶至多 25 頁的紙本參考資料，必須是單面印刷，字體大小需要「0.5 公尺的距離下正常視力的人可以直接閱讀」，並且可以帶總共三份完全相同的拷貝。
-codebook 是 ICPC 比賽與高中競賽相當不同的一點，平時就開始準備 codebook 可以讓你對這些模板更加熟悉，節省三人一機規則下寶貴的上機時間。
-要放什麼？ 環境設定
-我們隊上使用 vim，因此理所當然的會有一份 vimrc。
-在 vimrc 中最佔篇幅的是我們設定的編譯快捷鍵 mapping，我們設定了三個快捷鍵： F8 是加了 sanitizer 跟 warning 的編譯，平常正常寫題時就按這個編譯。我們盡量把幾乎所有 warning 跟 sanitizer 都開起來，這樣比較容易在還沒上傳前就找到錯誤，也養成寫程式碼的好習慣。 F9 是加了 O2 flag 的編譯。sanitizer 會讓程式跑得慢很多，有許多情況會需要在本機測速度，例如「跑跑看這個爆搜多快，會過乾脆就這樣傳」、「worst case 跑多久」或是「這題 TL 有點緊繃，用一下 time 看隨機大測資怎麼樣」。 F10 是執行。我們隊的習慣是會把每題的執行檔都編譯成不同的檔案，例如 a.cpp 會編譯成 a，c2.cpp 會編譯成 c2。如果沒 precompile 的話，通常編譯的速度不算快，在 ICPC 當中有不少時間會同時開兩題以上，因此會想要能夠快速的想要切換到另外一題測試。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Library on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/library/</link><description>Recent content in Library on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 13 Jul 2024 22:44:05 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/library/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC 競賽中如何製作 codebook</title><link>https://omeletwithoutegg.github.io/2024/07/13/icpc-codebook/</link><pubDate>Sat, 13 Jul 2024 22:44:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/13/icpc-codebook/</guid><description>&lt;h1 id="how-to-make-team-reference-document-in-icpc">How to make team reference document in ICPC&lt;/h1>
+&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>在 ICPC 競賽中一個不可或缺的元素就是在 &lt;a href="https://icpc.global/worldfinals/rules">規則&lt;/a> 裡面被稱為 Team Reference Document 的東西。台大這邊俗稱叫 codebook。&lt;br>
+在上一次的 WF 當中是規定每一隊可以帶至多 25 頁的紙本參考資料，必須是單面印刷，字體大小需要「0.5 公尺的距離下正常視力的人可以直接閱讀」，並且可以帶總共三份完全相同的拷貝。&lt;/p>
+&lt;p>codebook 是 ICPC 比賽與高中競賽相當不同的一點，平時就開始準備 codebook 可以讓你對這些模板更加熟悉，節省三人一機規則下寶貴的上機時間。&lt;/p>
+&lt;h2 id="要放什麼">要放什麼？&lt;/h2>
+&lt;ul>
+&lt;li>環境設定&lt;br>
+我們隊上使用 vim，因此理所當然的會有一份 vimrc。&lt;br>
+在 vimrc 中最佔篇幅的是我們設定的編譯快捷鍵 mapping，我們設定了三個快捷鍵：
+&lt;ul>
+&lt;li>F8 是加了 sanitizer 跟 warning 的編譯，平常正常寫題時就按這個編譯。我們盡量把幾乎所有 warning 跟 sanitizer 都開起來，這樣比較容易在還沒上傳前就找到錯誤，也養成寫程式碼的好習慣。&lt;/li>
+&lt;li>F9 是加了 O2 flag 的編譯。sanitizer 會讓程式跑得慢很多，有許多情況會需要在本機測速度，例如「跑跑看這個爆搜多快，會過乾脆就這樣傳」、「worst case 跑多久」或是「這題 TL 有點緊繃，用一下 time 看隨機大測資怎麼樣」。&lt;/li>
+&lt;li>F10 是執行。我們隊的習慣是會把每題的執行檔都編譯成不同的檔案，例如 &lt;code>a.cpp&lt;/code> 會編譯成 &lt;code>a&lt;/code>，&lt;code>c2.cpp&lt;/code> 會編譯成 &lt;code>c2&lt;/code>。如果沒 precompile 的話，通常編譯的速度不算快，在 ICPC 當中有不少時間會同時開兩題以上，因此會想要能夠快速的想要切換到另外一題測試。&lt;br>
+如果你平常有使用一些簡單的 default code / macro 而且可以塞進 codebook 的話可以就放進來，平時寫題的環境和比賽能夠盡量一致是最好的。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>有一定頻率考，但比較難當場寫出來的東西&lt;br>
+例如 Dinic / HopcroftKarp 系列、半平面交、Suffix Array 等等。&lt;br>
+有些 regional 當中也會考察 formal power series 的模板，雖然據說 world finals 不會考模 998244353 的題目，我們還是不敢拿掉。&lt;/li>
+&lt;li>一些細節容易搞錯的東西&lt;br>
+例如：找歐拉迴路、二維凸包、KMP、字串 rolling hash、1D/1D DP 優化等等。&lt;br>
+一些敘述簡短的數學公式也會放上去，例如常考的線性規劃對偶、球座標公式，或是之前我們團練時推了超級久都推不出來的微分公式。這些數學公式可能基本上可以在比賽中自己推出來或背出來，但放在 codebook 上除了也許能加快速度就是不怕一萬只怕萬一推錯。&lt;br>
+&lt;strong>「如果有 codebook 可以抄，你沒有理由不抄 codebook」&lt;/strong>&lt;/li>
+&lt;li>一些莫名其妙的邪教&lt;br>
+這些東西考的機率都非常低，但我們之前在省 codebook 空間的時候實在太省了，於是比起線段樹那些我們隊伍平常自己就可以寫出來的東西就留下了這些。&lt;br>
+舉例來說有一般圖最大權匹配（護國神題？）、HLPP、擬陣交、min 25 篩。&lt;br>
+這些東西在一個正常的比賽通常不會是考點，可能就是擺在那邊當吉祥物，或是偶爾想吃毒直接砸下去就過了。&lt;/li>
+&lt;/ul>
+&lt;h2 id="hash">Hash&lt;/h2>
+&lt;p>抄模板的時候，最怕的就是抄錯，更怕的是不知道是在其他地方錯了還是模板抄錯，或是模板本來就是錯的。&lt;/p></description></item></channel></rss>

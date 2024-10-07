@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codeforces on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/codeforces/</link><description>Recent content in Codeforces on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 09 Jul 2023 02:26:08 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/codeforces/index.xml" rel="self" type="application/rss+xml"/><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>Codeforces 793 F Julia the snail Description 有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。
-你除了傳送以外的移動方式只有向數線的左邊走（把 $x$ 變小）
-接著有 $Q$ 筆詢問問，每筆詢問給 $x, y$，
-問你從 $x$ 開始走，在不超出 $[x, y]$ 這個區間的前提下可以走最右邊是多右邊。
-$r_i$ 全部相異（雖然我感覺好像沒用）
-Solution 想了很久之後看官解發現是 $\mathcal{O}(\sqrt{n})$ 氣死
-留言說有一個 log 的解但他不願透露
-網路上查到很多類似吉如一線段樹的解但我覺得他們都沒什麼說服力
-先從 naive 的想法開始說明。
-這邊的說明都是用左閉右閉的。
-如果把所有被 $[x, y]$ 包含的 $[l_i, r_i]$ 拿出來，那他們會把整個區間分成一些連通塊的感覺。
-具體來說，會有一些分界線 $z$，
-使得我們可以把 $[l_i, r_i]$ 分成兩部分，一部分完全落在 $[x, z]$ 而另一部分完全落在 $[z+1, y]$。
-注意到 $z = y$ 一定是一個合法的分界線（？）</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codeforces on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/codeforces/</link><description>Recent content in Codeforces on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 09 Jul 2023 02:26:08 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/codeforces/index.xml" rel="self" type="application/rss+xml"/><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>&lt;h1 id="codeforces-793-f-julia-the-snail">Codeforces 793 F Julia the snail&lt;/h1>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。&lt;br>
+你除了傳送以外的移動方式只有向數線的左邊走（把 $x$ 變小）&lt;br>
+接著有 $Q$ 筆詢問問，每筆詢問給 $x, y$，&lt;br>
+問你從 $x$ 開始走，在不超出 $[x, y]$ 這個區間的前提下可以走最右邊是多右邊。&lt;/p>
+&lt;p>$r_i$ 全部相異（雖然我感覺好像沒用）&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>想了很久之後看官解發現是 $\mathcal{O}(\sqrt{n})$ 氣死&lt;br>
+留言說有一個 log 的解但他不願透露&lt;br>
+網路上查到很多類似吉如一線段樹的解但我覺得他們都沒什麼說服力&lt;/p>
+&lt;p>先從 naive 的想法開始說明。&lt;br>
+這邊的說明都是用左閉右閉的。&lt;br>
+如果把所有被 $[x, y]$ 包含的 $[l_i, r_i]$ 拿出來，那他們會把整個區間分成一些連通塊的感覺。&lt;br>
+具體來說，會有一些分界線 $z$，&lt;br>
+使得我們可以把 $[l_i, r_i]$ 分成兩部分，一部分完全落在 $[x, z]$ 而另一部分完全落在 $[z+1, y]$。&lt;br>
+注意到 $z = y$ 一定是一個合法的分界線（？）&lt;br>
+可以知道從 $x$ 開始走最遠可以走到的境界一定就是最左邊的分界線（一定不可能走超過最左的分界線，而如果把被完全包含的 $[l_i, r_i]$ 拿掉就會剩下 $l_i, r_i$ 一起遞增的一堆區間，並且每個 $l_i$ 都落在前一個區間裡面）&lt;/p></description></item></channel></rss>

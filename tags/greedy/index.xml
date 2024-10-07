@@ -1,91 +1,673 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Greedy on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/greedy/</link><description>Recent content in Greedy on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 15 Aug 2023 17:22:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>$(\min, +)$ convolution: convex-arbitrary 因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。
-先放兩個 yosupo library checker 的模板題連結。
-https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex
-https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary
-Description 兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足
-$$
-c_k = \min_{i+j=k} (a_i + b_j)
-$$
-對於一般的這個問題，目前似乎沒有任何 $O(n^{2 - \epsilon})$ 的演算法 ($\epsilon &amp;gt; 0$)
-不過如果 $a, b$ 兩個序列都是凸的話，就可以很輕鬆的求出 $c$ 序列。
-更一般的，只要 $a$ 是凸的，就算 $b$ 不是凸的也可以快速在 $O(n\log n)$ 求出 $c$ 序列。
-一個序列 $x_0, x_1,\dots, x_n$ 是凸的如果他的差分遞增，即 $x_{i+1}-x_i \leq x_{i+2}-x_{i+1}$。
-可以想像如果把 $x_i$ 表示要拿 $i$ 個物品的成本，那 $x_i$ 是凸的就代表拿越多東西會因為邊際效應單位成本會越來越貴的感覺。</description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>2021 TOI 模考 可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。
-今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！
-如果想在 hackmd 上看的話可以戳 https://hackmd.io/@omeletwithoutegg/TOI-2021-sols
-如果只想看題目可以戳
-https://www.facebook.com/notes/%E8%B3%87%E8%A8%8A%E7%AB%B6%E8%B3%BD%E9%81%B8%E6%89%8B%E6%96%B0%E6%89%8B%E6%9D%91/toi-2021/823380795202246/
-免責條款 因為測資不一定夠強，有些解也是賽後討論才AC或是甚至只有精神AC的
-所以這裡的解有可能任何錯誤或是唬爛，不可全盤相信。
-註：三模跟四模的 code 幾乎都沒有丟到師大開放的臨時 judge 上跑，所以不保證正確。
-一模 p1 shortcut 題意 定義一張圖的總花費是所有點對之間的最短距離總和。
-給定一張 $n$ 點 $m$ 邊的簡單無向連通圖，在你可以加一條邊的情況下，和原圖相比最多可以減少多少總花費？又有幾種加邊的方式可以減少那麼多花費？
-限制 $3 \leq n \leq 500; n-1 \leq m \leq n(n-1)/2-1$
-subtask 1 (9) $n \leq 40$ subtask 2 (22) $n \leq 150$ subtask 3 (18) $m = n-1$ subtask 4 (51) 無額外限制 作法 $\mathcal{O}(n^5)$</description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</guid><description>照亮的山景 https://tioj.ck.tp.edu.tw/problems/1404
-Description 在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。
-如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。
-請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？
-$1 \leq M, N \leq 10^5$
-所有座標的絕對值小於$10^5$
-Solution 發現到每個燈泡可以照到的範圍可能會長的非常奇怪
-於是我們轉換思維，考慮每個轉折點如果要被照到要有什麼條件
-可以發現，對於每個轉折點來說有一個區間，只要區間內有一個燈泡有開，這個轉折點就會被照到
-找出那些區間之後這題就是經典的greedy題目了（按照右界由小到大，有拿過的跳過沒拿過的拿右界那個點）
-那麼要怎麼找出這些區間呢？某個轉折點$p_i$對應的右界，正好是他和他右邊所有其他點所連出的射線中斜率最大者
-維護一個上凸包能夠找到對應的那個點，再用直線求交點公式找出高度恰好是$T$的位置就好
-左界也是同樣方式處理
-因為題目給定的點已經幫我們排序好了，所以做凸包是$\mathcal{O}(M)$，而greedy的部分也可以做到$\mathcal{O}(N)$不過我這邊是放了$\mathcal{O}(N\log N)$的，因為找到交點之後必須二分搜求出到底涵蓋了哪些燈泡
-總複雜度是$\mathcal{O}((M+N)\log N)$
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/tioj-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/tioj-1861/</guid><description>蘿莉切割問題 https://tioj.ck.tp.edu.tw/problems/1861
-Description 請你把一個數字$L$切成$a_1, a_2, \dots, a_n$
-切一個數字$x$的代價是$x$，可以把它切成$b, x-b$兩個數字
-找出最小的代價
-Solution 霍夫曼編碼XD老題目
-把切割的過程看成一個二元樹，每個$a_i$都代表一個葉子
-其餘的節點代表合併中會出現的數字(?)
-那麼總代價就是所有葉子的權重乘上各自的深度的和
-我們想要讓這個代價越小越好
-可以發現，在最優解$T$中：
-沒有節點只有一個兒子，只要不是葉子的節點都恰好有兩個子節點 深度最大的那層節點一定是權重最小的，否則可以直接交換得到更優解 由上面兩點可以發現，權重最小的兩個節點一定都在最深的那一層
-並且可以在不影響代價的情況下交換節點使得最小的兩個節點互為兄弟
-結論是：每次把最小和次小的節點合併成一個節點，一定可以得到最佳解
-(QQ我覺得我不會查也不會寫證明)
-要怎麼維護所有節點的最小和次小呢？用一個heap就可以啦
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #include &amp;lt;bits/stdc++.h&amp;gt; using namespace std; const int N = 100025; #define int ll int v[N]; signed main() { ios_base::sync_with_stdio(0), cin.tie(0); int n,ans; while(cin &amp;gt;&amp;gt; n) { ans = 0; for(int i = 0; i &amp;lt; n; i++) cin &amp;gt;&amp;gt; v[i]; std::priority_queue&amp;lt;int,vector&amp;lt;int&amp;gt;,greater&amp;lt;int&amp;gt;&amp;gt; pq(v,v+n); while(pq.</description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</guid><description>我很忙 https://tioj.ck.tp.edu.tw/problems/1408
-Description 給定$n$個時段$[l_i, r_i)$
-問至少有多少單位時間要是忙碌的才能滿足
-「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)
-註: 題目保證有解
-Solution 看到這種很多區間的題目，就會很想把它們照右界從小到大排序
-可以想到一個greedy策略
-按右界遞增排序好之後，遇到一個時段就看是否已經滿足條件
-如果已經滿足了就跳過
-如果還沒有的話就必須選一些時間由空閒變為忙碌，而這些時間依照貪心的原則是從越右邊開始選越好
-(選左邊的不會對之後右界更大的時段有比較多幫助)
-檢查是否滿足條件只要維護區間和
-於是我的作法是用一棵線段樹配上一個 stack
-每次新插入一個時段，先以線段樹查詢這個區間內忙碌的時間總共是多少
-接著對於剩下需要再增加的時間，維持 stack 內是不相交且排序好的一些時段，代表那些時間必須要是忙碌的
-只要看目前最右邊的忙碌時段就能處理好
-這份AC code中我沒有值域壓縮(因為我懶)
-一臉在CF上欠hack
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/tioj-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/tioj-1441/</guid><description>萬里長城 https://tioj.ck.tp.edu.tw/problems/1441
-Description 給定一個序列，找出最長的「長城」子序列
-一個序列$&amp;lt; a_1,a_2,\dots,a_n &amp;gt;$必須符合下列幾點才算是「長城」
-n是奇數 若$i$是偶數，則$a_i$必須小於相鄰的項 若$i$是奇數，則$a_i$必須大於相鄰的項 Solution 貪心法
-維護一個tail表示前$i$項滿足點2. 3.的最佳解，其結尾是多少
-假設下一個項h必須比tail大
-若h比tail大，那就直接接上去(並更新tail)，否則就把tail替換成h
-反之亦然
-證明大概可以用數歸吧(?)我也不太會說明QQ
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #include &amp;lt;iostream&amp;gt; signed main() { ios_base::sync_with_stdio(0), cin.tie(0); int n, tail = -1, inc = 1, ans = 0; cin &amp;gt;&amp;gt; n; while(n--) { cin &amp;gt;&amp;gt; h; if(h == tail) continue; if(h &amp;lt; tail ^ inc) ++ans, inc = !</description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/tioj-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/tioj-1567/</guid><description>黑色騎士團的飛彈野望 https://tioj.ck.tp.edu.tw/problems/1567
-Description 給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點
-若不可行輸出-1
-Solution 首先我們對每個點都可以知道包覆它的圓的圓心範圍在$x$軸的哪段區間
-那題目就轉換成在$x$軸上放一些圓心，使得每個點對應的區間內都至少有一個點被選到
-此為greedy經典題，按照右界排序後，由小到大檢查若某個區間還沒有放東西就放一個在它的右界
-證明很簡單，右界最小的區間內一定至少要選一個點放
-假設沒有選右界$r$而選了某個點$i$放，則改選右界，不會有其他右界更大的區間$I$包含$i$卻不包含$r$
-故選右界最小的區間的右界不會錯過最佳解
-無解的判斷就是只要有一個點和$x$軸距離超過$r$就不可行，否則顯然至多用$n$個圓可以覆蓋所有點
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 // __________________ // | ________________ | // || ____ || // || /\ | || // || /__\ | || // || / \ |____ || // ||________________|| // |__________________| // \###################\ // \###################\ // \ ____ \ // \_______\___\_______\ // An AC a day keeps the doctor away.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Greedy on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/greedy/</link><description>Recent content in Greedy on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 15 Aug 2023 17:22:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>&lt;h1 id="min--convolution-convex-arbitrary">$(\min, +)$ convolution: convex-arbitrary&lt;/h1>
+&lt;p>因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。&lt;br>
+先放兩個 yosupo library checker 的模板題連結。&lt;br>
+&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex">https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex&lt;/a>&lt;br>
+&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary">https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足&lt;br>
+$$&lt;br>
+c_k = \min_{i+j=k} (a_i + b_j)&lt;br>
+$$&lt;/p>
+&lt;p>對於一般的這個問題，目前似乎沒有任何 $O(n^{2 - \epsilon})$ 的演算法 ($\epsilon &amp;gt; 0$)&lt;/p>
+&lt;p>不過如果 $a, b$ 兩個序列都是凸的話，就可以很輕鬆的求出 $c$ 序列。&lt;br>
+更一般的，只要 $a$ 是凸的，就算 $b$ 不是凸的也可以快速在 $O(n\log n)$ 求出 $c$ 序列。&lt;/p>
+&lt;p>一個序列 $x_0, x_1,\dots, x_n$ 是凸的如果他的差分遞增，即 $x_{i+1}-x_i \leq x_{i+2}-x_{i+1}$。&lt;br>
+可以想像如果把 $x_i$ 表示要拿 $i$ 個物品的成本，那 $x_i$ 是凸的就代表拿越多東西會因為邊際效應單位成本會越來越貴的感覺。&lt;/p></description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考">2021 TOI 模考&lt;/h1>
+&lt;p>可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br>
+今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p>
+&lt;p>如果想在 hackmd 上看的話可以戳 &lt;a href="https://hackmd.io/@omeletwithoutegg/TOI-2021-sols">https://hackmd.io/@omeletwithoutegg/TOI-2021-sols&lt;/a>&lt;br>
+如果只想看題目可以戳&lt;br>
+&lt;a href="https://www.facebook.com/notes/%E8%B3%87%E8%A8%8A%E7%AB%B6%E8%B3%BD%E9%81%B8%E6%89%8B%E6%96%B0%E6%89%8B%E6%9D%91/toi-2021/823380795202246/">https://www.facebook.com/notes/%E8%B3%87%E8%A8%8A%E7%AB%B6%E8%B3%BD%E9%81%B8%E6%89%8B%E6%96%B0%E6%89%8B%E6%9D%91/toi-2021/823380795202246/&lt;/a>&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="免責條款">免責條款&lt;/h2>
+&lt;p>因為測資不一定夠強，有些解也是賽後討論才AC或是甚至只有精神AC的&lt;br>
+所以這裡的解有可能任何錯誤或是唬爛，不可全盤相信。&lt;/p>
+&lt;p>註：三模跟四模的 code 幾乎都沒有丟到師大開放的臨時 judge 上跑，所以不保證正確。&lt;/p>
+&lt;h2 id="一模">一模&lt;/h2>
+&lt;h3 id="p1-shortcut">p1 shortcut&lt;/h3>
+&lt;h4 id="題意">題意&lt;/h4>
+&lt;p>定義一張圖的總花費是所有點對之間的最短距離總和。&lt;br>
+給定一張 $n$ 點 $m$ 邊的簡單無向連通圖，在你可以加一條邊的情況下，和原圖相比最多可以減少多少總花費？又有幾種加邊的方式可以減少那麼多花費？&lt;/p>
+&lt;h4 id="限制">限制&lt;/h4>
+&lt;p>$3 \leq n \leq 500; n-1 \leq m \leq n(n-1)/2-1$&lt;/p>
+&lt;ul>
+&lt;li>subtask 1 (9) $n \leq 40$&lt;/li>
+&lt;li>subtask 2 (22) $n \leq 150$&lt;/li>
+&lt;li>subtask 3 (18) $m = n-1$&lt;/li>
+&lt;li>subtask 4 (51) 無額外限制&lt;/li>
+&lt;/ul>
+&lt;h4 id="作法">作法&lt;/h4>
+&lt;ul>
+&lt;li>$\mathcal{O}(n^5)$&lt;br>
+$\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{O}(n+m)$)或是Floyd-Warshall&lt;/li>
+&lt;li>$\mathcal{O}(n^4)$&lt;br>
+每次枚舉要加的邊$(a,b)$時，計算每個點對的距離減少了多少，也就是$\sum_{i &amp;lt; j} \max(0, d(i,j) - (d(i,a)+1+d(b,j)), d(i,j)-(d(i,b)+1+d(a,j)))$，其中$d(i,j)$是原圖中$i$與$j$的最短距離，可以$\mathcal{O}(n^3)$預處理。&lt;/li>
+&lt;li>$\mathcal{O}(n^3)$&lt;br>
+前面的那個式子裡面的項代表的分別是$i\to a\to b\to j$和$i\to b\to a\to j$兩條路徑所減少的距離。可以發現這兩條路徑只有其中一條可能比原圖$i\to j$的路徑短，因為如果兩條都比原本的最短路徑短的話，那麼$i\to a\to j$或是$i\to b\to j$其中一個會是更短路徑，矛盾。&lt;br>
+也就是說，我們在算總花費減少多少的時候可以改為計算$\sum_{ i,j}\max(0,d(i,j)-(d(i,a)+1+d(b,j)))$&lt;br>
+考慮固定 $i,b$，那麼$j,a$之間是獨立的，我們可以拆成$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$，而對於每個$A_i$，$\sum_{j} \max(0,B_j-A_i)$是一個經典的問題，可以利用前綴和、後綴和的概念，或是排序（counting sort）+爬行法在線性時間內解決。總複雜度是枚舉所有$i,b$所需的$\mathcal{O}(n^2)$乘上對每個$a$計算$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$所需要的複雜度$\mathcal{O}(n)$，也就是$\mathcal{O}(n^3)$。&lt;/li>
+&lt;/ul>
+&lt;h4 id="code">code&lt;/h4>
+&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404">https://tioj.ck.tp.edu.tw/problems/1404&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>
+ &lt;img src="https://omeletwithoutegg.github.io/images/TIOJ-1404/description.gif" alt="404 QQ">
+
+&lt;br>
+在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。&lt;br>
+如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。&lt;br>
+請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？&lt;/p>
+&lt;p>$1 \leq M, N \leq 10^5$&lt;br>
+所有座標的絕對值小於$10^5$&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>發現到每個燈泡可以照到的範圍可能會長的非常奇怪&lt;br>
+於是我們轉換思維，考慮每個轉折點如果要被照到要有什麼條件&lt;br>
+可以發現，對於每個轉折點來說有一個區間，只要區間內有一個燈泡有開，這個轉折點就會被照到&lt;br>
+找出那些區間之後這題就是經典的greedy題目了（按照右界由小到大，有拿過的跳過沒拿過的拿右界那個點）&lt;/p>
+&lt;p>那麼要怎麼找出這些區間呢？某個轉折點$p_i$對應的右界，正好是他和他右邊所有其他點所連出的射線中斜率最大者&lt;br>
+維護一個上凸包能夠找到對應的那個點，再用直線求交點公式找出高度恰好是$T$的位置就好&lt;br>
+左界也是同樣方式處理&lt;/p>
+&lt;p>因為題目給定的點已經幫我們排序好了，所以做凸包是$\mathcal{O}(M)$，而greedy的部分也可以做到$\mathcal{O}(N)$不過我這邊是放了$\mathcal{O}(N\log N)$的，因為找到交點之後必須二分搜求出到底涵蓋了哪些燈泡&lt;br>
+總複雜度是$\mathcal{O}((M+N)\log N)$&lt;/p>
+&lt;h2 id="ac-code">AC code&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define debug(x) cerr&amp;lt;&amp;lt;#x&amp;lt;&amp;lt;&amp;#34; = &amp;#34;&amp;lt;&amp;lt;x&amp;lt;&amp;lt;&amp;#39;\n&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">100025&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> m, n, T;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> m) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> v(m);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&lt;/span>[x, y]&lt;span style="color:#f92672">:&lt;/span> v) cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> x &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> y;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> n &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> T;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> bulb(n);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#f92672">&amp;amp;&lt;/span>x: bulb) cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> x;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> seg(m, pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>(&lt;span style="color:#ae81ff">0&lt;/span>, n));
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">auto&lt;/span> better &lt;span style="color:#f92672">=&lt;/span> [](pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> a, pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> b, pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> c) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> AB(b.first&lt;span style="color:#f92672">-&lt;/span>a.first, b.second&lt;span style="color:#f92672">-&lt;/span>a.second);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> BC(c.first&lt;span style="color:#f92672">-&lt;/span>b.first, c.second&lt;span style="color:#f92672">-&lt;/span>b.second);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">1LL&lt;/span> &lt;span style="color:#f92672">*&lt;/span> AB.first &lt;span style="color:#f92672">*&lt;/span> BC.second &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">1LL&lt;/span> &lt;span style="color:#f92672">*&lt;/span> BC.first &lt;span style="color:#f92672">*&lt;/span> AB.second &lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> };
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> stk;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> m; i&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(stk.size() &lt;span style="color:#f92672">&amp;gt;=&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> better(stk[stk.size()&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span>], stk[stk.size()&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>], v[i]))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> stk.pop_back();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(stk.size() &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> stk.back().second &lt;span style="color:#f92672">&amp;gt;&lt;/span> v[i].second) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">double&lt;/span> x &lt;span style="color:#f92672">=&lt;/span> v[i].first &lt;span style="color:#f92672">+&lt;/span> (T &lt;span style="color:#f92672">-&lt;/span> v[i].second) &lt;span style="color:#f92672">*&lt;/span> (stk.back().first &lt;span style="color:#f92672">-&lt;/span> v[i].first) &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span>(stk.back().second &lt;span style="color:#f92672">-&lt;/span> v[i].second);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> seg[i].first &lt;span style="color:#f92672">=&lt;/span> upper_bound(bulb.begin(), bulb.end(), x) &lt;span style="color:#f92672">-&lt;/span> bulb.begin();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> stk.push_back(v[i]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">auto&lt;/span> better &lt;span style="color:#f92672">=&lt;/span> [](pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> a, pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> b, pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> c) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> AB(b.first&lt;span style="color:#f92672">-&lt;/span>a.first, b.second&lt;span style="color:#f92672">-&lt;/span>a.second);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> BC(c.first&lt;span style="color:#f92672">-&lt;/span>b.first, c.second&lt;span style="color:#f92672">-&lt;/span>b.second);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">1LL&lt;/span> &lt;span style="color:#f92672">*&lt;/span> AB.first &lt;span style="color:#f92672">*&lt;/span> BC.second &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">1LL&lt;/span> &lt;span style="color:#f92672">*&lt;/span> BC.first &lt;span style="color:#f92672">*&lt;/span> AB.second &lt;span style="color:#f92672">&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> };
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> stk;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> m&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;gt;=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i&lt;span style="color:#f92672">--&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(stk.size() &lt;span style="color:#f92672">&amp;gt;=&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> better(stk[stk.size()&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span>], stk[stk.size()&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>], v[i]))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> stk.pop_back();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(stk.size() &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> stk.back().second &lt;span style="color:#f92672">&amp;gt;&lt;/span> v[i].second) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">double&lt;/span> x &lt;span style="color:#f92672">=&lt;/span> v[i].first &lt;span style="color:#f92672">+&lt;/span> (T &lt;span style="color:#f92672">-&lt;/span> v[i].second) &lt;span style="color:#f92672">*&lt;/span> (stk.back().first &lt;span style="color:#f92672">-&lt;/span> v[i].first) &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span>(stk.back().second &lt;span style="color:#f92672">-&lt;/span> v[i].second);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> seg[i].second &lt;span style="color:#f92672">=&lt;/span> lower_bound(bulb.begin(), bulb.end(), x) &lt;span style="color:#f92672">-&lt;/span> bulb.begin();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> stk.push_back(v[i]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">bool&lt;/span> ok &lt;span style="color:#f92672">=&lt;/span> true;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> m; i&lt;span style="color:#f92672">++&lt;/span>) &lt;span style="color:#66d9ef">if&lt;/span>(seg[i].first &lt;span style="color:#f92672">==&lt;/span> seg[i].second) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;you need more bulbs!&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ok &lt;span style="color:#f92672">=&lt;/span> false;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>ok) &lt;span style="color:#66d9ef">continue&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sort(seg.begin(), seg.end(), [](pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> a, pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> b){&lt;span style="color:#66d9ef">return&lt;/span> a.second &lt;span style="color:#f92672">&amp;lt;&lt;/span> b.second;});
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> last &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, ans &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> [l, r]&lt;span style="color:#f92672">:&lt;/span> seg) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(l &lt;span style="color:#f92672">&amp;gt;=&lt;/span> last) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> last &lt;span style="color:#f92672">=&lt;/span> r;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">++&lt;/span>ans;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> ans &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/tioj-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/tioj-1861/</guid><description>&lt;h1 id="蘿莉切割問題">蘿莉切割問題&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1861">https://tioj.ck.tp.edu.tw/problems/1861&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>請你把一個數字$L$切成$a_1, a_2, \dots, a_n$&lt;br>
+切一個數字$x$的代價是$x$，可以把它切成$b, x-b$兩個數字&lt;br>
+找出最小的代價&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>霍夫曼編碼XD老題目&lt;br>
+把切割的過程看成一個二元樹，每個$a_i$都代表一個葉子&lt;br>
+其餘的節點代表合併中會出現的數字(?)&lt;br>
+那麼總代價就是所有葉子的權重乘上各自的深度的和&lt;br>
+我們想要讓這個代價越小越好&lt;br>
+可以發現，在最優解$T$中：&lt;/p>
+&lt;ol>
+&lt;li>沒有節點只有一個兒子，只要不是葉子的節點都恰好有兩個子節點&lt;/li>
+&lt;li>深度最大的那層節點一定是權重最小的，否則可以直接交換得到更優解&lt;/li>
+&lt;/ol>
+&lt;p>由上面兩點可以發現，權重最小的兩個節點一定都在最深的那一層&lt;br>
+並且可以在不影響代價的情況下交換節點使得最小的兩個節點互為兄弟&lt;br>
+結論是：每次把最小和次小的節點合併成一個節點，一定可以得到最佳解&lt;/p>
+&lt;p>(QQ我覺得我不會查也不會寫證明)&lt;/p>
+&lt;p>要怎麼維護所有節點的最小和次小呢？用一個heap就可以啦&lt;/p>
+&lt;h2 id="ac-code">AC code&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">100025&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define int ll
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> v[N];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> n,ans;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> n) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ans &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> v[i];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> std&lt;span style="color:#f92672">::&lt;/span>priority_queue&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>,greater&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> pq(v,v&lt;span style="color:#f92672">+&lt;/span>n);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(pq.size() &lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> x &lt;span style="color:#f92672">=&lt;/span> pq.top(); pq.pop();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> y &lt;span style="color:#f92672">=&lt;/span> pq.top(); pq.pop();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ans &lt;span style="color:#f92672">+=&lt;/span> (x&lt;span style="color:#f92672">+&lt;/span>y);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pq.push(x&lt;span style="color:#f92672">+&lt;/span>y);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> ans &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408">https://tioj.ck.tp.edu.tw/problems/1408&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>給定$n$個時段$[l_i, r_i)$&lt;br>
+問至少有多少單位時間要是忙碌的才能滿足&lt;br>
+「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)&lt;/p>
+&lt;p>註: 題目保證有解&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>&lt;del>看到這種很多區間的題目，就會很想把它們照右界從小到大排序&lt;/del>&lt;/p>
+&lt;p>可以想到一個greedy策略&lt;br>
+按右界遞增排序好之後，遇到一個時段就看是否已經滿足條件&lt;br>
+如果已經滿足了就跳過&lt;br>
+如果還沒有的話就必須選一些時間由空閒變為忙碌，而這些時間依照貪心的原則是從越右邊開始選越好&lt;br>
+(選左邊的不會對之後右界更大的時段有比較多幫助)&lt;/p>
+&lt;p>檢查是否滿足條件只要維護區間和&lt;br>
+於是我的作法是用一棵線段樹配上一個 &lt;code>stack&lt;/code>&lt;br>
+每次新插入一個時段，先以線段樹查詢這個區間內忙碌的時間總共是多少&lt;br>
+接著對於剩下需要再增加的時間，維持 &lt;code>stack&lt;/code> 內是不相交且排序好的一些時段，代表那些時間必須要是忙碌的&lt;br>
+只要看目前最右邊的忙碌時段就能處理好&lt;/p>
+&lt;p>這份AC code中我沒有值域壓縮(因為我懶)&lt;br>
+一臉在CF上欠hack&lt;/p>
+&lt;h2 id="ac-code">AC code&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">71
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">72
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">73
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">74
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">75
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">76
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define pb emplace_back
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define mem(v,x) memset(v, x, sizeof(v))
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define ff first
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define ss second
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">100025&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> sum[N&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>],tag[N];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">upd&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> p, &lt;span style="color:#66d9ef">int&lt;/span> d, &lt;span style="color:#66d9ef">int&lt;/span> h) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sum[p] &lt;span style="color:#f92672">+=&lt;/span> d &lt;span style="color:#f92672">*&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>h);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(p &lt;span style="color:#f92672">&amp;lt;&lt;/span> N) tag[p] &lt;span style="color:#f92672">+=&lt;/span> d;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">push&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> p) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> h &lt;span style="color:#f92672">=&lt;/span> __lg(N); h &lt;span style="color:#f92672">&amp;gt;=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; h&lt;span style="color:#f92672">--&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> p&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>h;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>tag[i&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>]) &lt;span style="color:#66d9ef">continue&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> upd(i, tag[i&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>], h);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> upd(i&lt;span style="color:#f92672">^&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, tag[i&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>], h);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tag[i&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">pull&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> p) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> h &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; p &lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; h&lt;span style="color:#f92672">++&lt;/span>, p&lt;span style="color:#f92672">&amp;gt;&amp;gt;=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) sum[p&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> sum[p]&lt;span style="color:#f92672">+&lt;/span>sum[p&lt;span style="color:#f92672">^&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">+&lt;/span> tag[p&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">*&lt;/span> (&lt;span style="color:#ae81ff">2&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>h);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">modify&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> l, &lt;span style="color:#66d9ef">int&lt;/span> r, &lt;span style="color:#66d9ef">int&lt;/span> d) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> L &lt;span style="color:#f92672">=&lt;/span> l, R &lt;span style="color:#f92672">=&lt;/span> r, h &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(l&lt;span style="color:#f92672">+=&lt;/span>N, r&lt;span style="color:#f92672">+=&lt;/span>N; l&lt;span style="color:#f92672">&amp;lt;&lt;/span>r; l&lt;span style="color:#f92672">&amp;gt;&amp;gt;=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, r&lt;span style="color:#f92672">&amp;gt;&amp;gt;=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, h&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(l&lt;span style="color:#f92672">&amp;amp;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) upd(l&lt;span style="color:#f92672">++&lt;/span>, d, h);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(r&lt;span style="color:#f92672">&amp;amp;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) upd(&lt;span style="color:#f92672">--&lt;/span>r, d, h);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pull(L&lt;span style="color:#f92672">+&lt;/span>N), pull(R&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">+&lt;/span>N);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">query&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> l, &lt;span style="color:#66d9ef">int&lt;/span> r) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> push(l&lt;span style="color:#f92672">+&lt;/span>N), push(r&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">+&lt;/span>N);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> res &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(l&lt;span style="color:#f92672">+=&lt;/span>N, r&lt;span style="color:#f92672">+=&lt;/span>N; l&lt;span style="color:#f92672">&amp;lt;&lt;/span>r; l&lt;span style="color:#f92672">&amp;gt;&amp;gt;=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, r&lt;span style="color:#f92672">&amp;gt;&amp;gt;=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(l&lt;span style="color:#f92672">&amp;amp;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) res &lt;span style="color:#f92672">+=&lt;/span> sum[l&lt;span style="color:#f92672">++&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(r&lt;span style="color:#f92672">&amp;amp;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) res &lt;span style="color:#f92672">+=&lt;/span> sum[&lt;span style="color:#f92672">--&lt;/span>r];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> res;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> stk;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">ins&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> l, &lt;span style="color:#66d9ef">int&lt;/span> r, &lt;span style="color:#66d9ef">int&lt;/span> c) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> c &lt;span style="color:#f92672">-=&lt;/span> query(l, r);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(c &lt;span style="color:#f92672">&amp;lt;=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>) &lt;span style="color:#66d9ef">return&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> now &lt;span style="color:#f92672">=&lt;/span> r;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(stk.size() &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> now &lt;span style="color:#f92672">-&lt;/span> stk.back().ss &lt;span style="color:#f92672">&amp;lt;=&lt;/span> c) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> c &lt;span style="color:#f92672">-=&lt;/span> now &lt;span style="color:#f92672">-&lt;/span> stk.back().ss;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> now &lt;span style="color:#f92672">=&lt;/span> stk.back().ff;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> modify(stk.back().ff, stk.back().ss, &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> stk.pop_back();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> stk.pb(now&lt;span style="color:#f92672">-&lt;/span>c, r);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> modify(now&lt;span style="color:#f92672">-&lt;/span>c, r, &lt;span style="color:#ae81ff">1&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//for(auto s: stk) cout &amp;lt;&amp;lt; &amp;#39;[&amp;#39; &amp;lt;&amp;lt; s.ff &amp;lt;&amp;lt; &amp;#39;,&amp;#39; &amp;lt;&amp;lt; s.ss-1 &amp;lt;&amp;lt; &amp;#39;]&amp;#39; &amp;lt;&amp;lt; &amp;#39; &amp;#39;; cout &amp;lt;&amp;lt; &amp;#39;\n&amp;#39;;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">struct&lt;/span> &lt;span style="color:#a6e22e">seg&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> l, r, c;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} v[N];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> n;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> n &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> n) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> v[i].l &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> v[i].r &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> v[i].c;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sort(v,v&lt;span style="color:#f92672">+&lt;/span>n, [](seg &lt;span style="color:#f92672">&amp;amp;&lt;/span>a, seg &lt;span style="color:#f92672">&amp;amp;&lt;/span>b){&lt;span style="color:#66d9ef">return&lt;/span> a.r&lt;span style="color:#f92672">&amp;lt;&lt;/span>b.r;});
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> stk.clear();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mem(sum, &lt;span style="color:#ae81ff">0&lt;/span>), mem(tag, &lt;span style="color:#ae81ff">0&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) ins(v[i].l, v[i].r, v[i].c);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> sum &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> s: stk) sum &lt;span style="color:#f92672">+=&lt;/span> s.ss &lt;span style="color:#f92672">-&lt;/span> s.ff;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> sum &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/tioj-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/tioj-1441/</guid><description>&lt;h1 id="萬里長城">萬里長城&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1441">https://tioj.ck.tp.edu.tw/problems/1441&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>給定一個序列，找出最長的「長城」子序列&lt;br>
+一個序列$&amp;lt; a_1,a_2,\dots,a_n &amp;gt;$必須符合下列幾點才算是「長城」&lt;/p>
+&lt;ol>
+&lt;li>n是奇數&lt;/li>
+&lt;li>若$i$是偶數，則$a_i$必須小於相鄰的項&lt;/li>
+&lt;li>若$i$是奇數，則$a_i$必須大於相鄰的項&lt;/li>
+&lt;/ol>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>貪心法&lt;br>
+維護一個tail表示前$i$項滿足點2. 3.的最佳解，其結尾是多少&lt;br>
+假設下一個項h必須比tail大&lt;br>
+若h比tail大，那就直接接上去(並更新tail)，否則就把tail替換成h&lt;br>
+反之亦然&lt;/p>
+&lt;p>證明大概可以用數歸吧(?)我也不太會說明QQ&lt;/p>
+&lt;h2 id="ac-code">AC code&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> n, tail &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, inc &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>, ans &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> n;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(n&lt;span style="color:#f92672">--&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 	cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> h;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(h &lt;span style="color:#f92672">==&lt;/span> tail) &lt;span style="color:#66d9ef">continue&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(h &lt;span style="color:#f92672">&amp;lt;&lt;/span> tail &lt;span style="color:#f92672">^&lt;/span> inc) &lt;span style="color:#f92672">++&lt;/span>ans, inc &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">!&lt;/span>inc;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tail &lt;span style="color:#f92672">=&lt;/span> h;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(inc) &lt;span style="color:#f92672">--&lt;/span>ans;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> ans &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/tioj-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/tioj-1567/</guid><description>&lt;h1 id="黑色騎士團的飛彈野望">黑色騎士團的飛彈野望&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1567">https://tioj.ck.tp.edu.tw/problems/1567&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點&lt;br>
+若不可行輸出-1&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>首先我們對每個點都可以知道包覆它的圓的圓心範圍在$x$軸的哪段區間&lt;br>
+那題目就轉換成在$x$軸上放一些圓心，使得每個點對應的區間內都至少有一個點被選到&lt;br>
+此為greedy經典題，按照右界排序後，由小到大檢查若某個區間還沒有放東西就放一個在它的右界&lt;/p>
+&lt;p>證明很簡單，右界最小的區間內一定至少要選一個點放&lt;br>
+假設沒有選右界$r$而選了某個點$i$放，則改選右界，不會有其他右界更大的區間$I$包含$i$卻不包含$r$&lt;br>
+故選右界最小的區間的右界不會錯過最佳解&lt;/p>
+&lt;p>無解的判斷就是只要有一個點和$x$軸距離超過$r$就不可行，否則顯然至多用$n$個圓可以覆蓋所有點&lt;/p>
+&lt;h2 id="ac-code">AC code&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// __________________
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// | ________________ |
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// || ____ ||
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// || /\ | ||
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// || /__\ | ||
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// || / \ |____ ||
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// ||________________||
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// |__________________|
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// \###################\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// \###################\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// \ ____ \
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// \_______\___\_______\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// An AC a day keeps the doctor away.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#pragma g++ optimize(&amp;#34;Ofast&amp;#34;)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#pragma loop_opt(on)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/extc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#ifdef local
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define debug(x) (cerr&amp;lt;&amp;lt;#x&amp;lt;&amp;lt;&amp;#34; = &amp;#34;&amp;lt;&amp;lt;(x)&amp;lt;&amp;lt;&amp;#39;\n&amp;#39;)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#else
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define debug(x) ((void)0)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#endif &lt;/span>&lt;span style="color:#75715e">// local
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e">#define all(v) begin(v),end(v)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define siz(v) (ll(v.size()))
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define get_pos(v,x) (lower_bound(all(v),x)-begin(v))
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define sort_uni(v) sort(begin(v),end(v)),v.erase(unique(begin(v),end(v)),end(v))
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define pb emplace_back
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define ff first
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define ss second
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define mem(v,x) memset(v,x,sizeof v)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> __gnu_pbds;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">typedef&lt;/span> &lt;span style="color:#66d9ef">int64_t&lt;/span> ll;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">typedef&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> ld;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">typedef&lt;/span> pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>ll,ll&lt;span style="color:#f92672">&amp;gt;&lt;/span> pll;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">typedef&lt;/span> pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>ld,ld&lt;span style="color:#f92672">&amp;gt;&lt;/span> pld;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">using&lt;/span> max_heap &lt;span style="color:#f92672">=&lt;/span> __gnu_pbds&lt;span style="color:#f92672">::&lt;/span>priority_queue&lt;span style="color:#f92672">&amp;lt;&lt;/span>T,less&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#f92672">&amp;gt;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">using&lt;/span> min_heap &lt;span style="color:#f92672">=&lt;/span> __gnu_pbds&lt;span style="color:#f92672">::&lt;/span>priority_queue&lt;span style="color:#f92672">&amp;lt;&lt;/span>T,greater&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#f92672">&amp;gt;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">using&lt;/span> rbt &lt;span style="color:#f92672">=&lt;/span> tree&lt;span style="color:#f92672">&amp;lt;&lt;/span>T,null_type,less&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span>,rb_tree_tag,tree_order_statistics_node_update&lt;span style="color:#f92672">&amp;gt;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">constexpr&lt;/span> ld PI &lt;span style="color:#f92672">=&lt;/span> acos(&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>), eps &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1e-8&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">constexpr&lt;/span> ll N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1000025&lt;/span>, INF &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1e18&lt;/span>, MOD &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">998244353&lt;/span>, K &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">256&lt;/span>, inf &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1e9&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">constexpr&lt;/span> &lt;span style="color:#66d9ef">inline&lt;/span> ll &lt;span style="color:#a6e22e">cdiv&lt;/span>(ll x, ll m) { &lt;span style="color:#66d9ef">return&lt;/span> x&lt;span style="color:#f92672">/&lt;/span>m &lt;span style="color:#f92672">+&lt;/span> (x&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#f92672">^&lt;/span> m&lt;span style="color:#f92672">&amp;gt;&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>) &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> (x&lt;span style="color:#f92672">%&lt;/span>m); } &lt;span style="color:#75715e">// ceiling divide
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">constexpr&lt;/span> ll &lt;span style="color:#a6e22e">modpow&lt;/span>(ll e,ll p,ll m&lt;span style="color:#f92672">=&lt;/span>MOD) {ll r&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>; &lt;span style="color:#66d9ef">for&lt;/span>(e&lt;span style="color:#f92672">%=&lt;/span>m;p;p&lt;span style="color:#f92672">&amp;gt;&amp;gt;=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>,e&lt;span style="color:#f92672">=&lt;/span>e&lt;span style="color:#f92672">*&lt;/span>e&lt;span style="color:#f92672">%&lt;/span>m) &lt;span style="color:#66d9ef">if&lt;/span>(p&lt;span style="color:#f92672">&amp;amp;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) r&lt;span style="color:#f92672">=&lt;/span>r&lt;span style="color:#f92672">*&lt;/span>e&lt;span style="color:#f92672">%&lt;/span>m; &lt;span style="color:#66d9ef">return&lt;/span> r;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ll n,r,x,y,ans;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pld seg[N];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> n &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> r;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> x &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> y;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(abs(y) &lt;span style="color:#f92672">&amp;gt;&lt;/span> r) &lt;span style="color:#66d9ef">return&lt;/span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ld d &lt;span style="color:#f92672">=&lt;/span> sqrt(r&lt;span style="color:#f92672">*&lt;/span>r&lt;span style="color:#f92672">-&lt;/span>y&lt;span style="color:#f92672">*&lt;/span>y);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> seg[i] &lt;span style="color:#f92672">=&lt;/span> {x&lt;span style="color:#f92672">+&lt;/span>d, x&lt;span style="color:#f92672">-&lt;/span>d}; &lt;span style="color:#75715e">// {r, l}
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sort(seg, seg&lt;span style="color:#f92672">+&lt;/span>n);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ld last &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">-&lt;/span>INF;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) &lt;span style="color:#66d9ef">if&lt;/span>(seg[i].ss &lt;span style="color:#f92672">&amp;gt;&lt;/span> last) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">++&lt;/span>ans;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> last &lt;span style="color:#f92672">=&lt;/span> seg[i].ff;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> ans &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

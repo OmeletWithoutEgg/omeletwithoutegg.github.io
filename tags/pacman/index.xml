@@ -1,14 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pacman on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/pacman/</link><description>Recent content in Pacman on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 31 Aug 2022 17:16:20 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/pacman/index.xml" rel="self" type="application/rss+xml"/><item><title>又是 Arch Install：在 HP 筆電上面雙系統與 secure boot</title><link>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</link><pubDate>Wed, 31 Aug 2022 17:16:20 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</guid><description>緣由 這麼快的時間就發下一篇 archlinux 的文，我真的覺得我越來越是 BTW I use arch 的人了XD
-不過這次裝 archlinux 也是有理由的，因為我從 NPSC 拿到的筆電的電池壞掉了，如果沒有插著電就會直接關機，想說就順便換了一台新的筆電。因為奇怪的堅持不想用 Mac，選了選之後最後是挑 HP pavilion plus 14。
-上次因為是想要整台變成 Linux 所以比較不用煩惱一些問題，這次我希望能夠雙系統 Windows 並且可以玩一些遊戲，會需要有 secure boot 的功能所以也有比較不同的設定；此外這次也有碰到各種不同的問題，作為紀錄以及希望能幫助有遇到類似問題的人就發一篇文吧 :P
-流水帳 事前需要的材料 不一定要用但我有用到
-USB device * 2 （一支會要灌 iso 進去讓資料整個不見，另一支是拿來備份一些小東西的） 可以上網的手機 &amp;amp; 電腦 &amp;amp; wifi-AP 電源線 大綱 首先直接跑 Windows 安裝引導把 Windows 用正常的方式安裝好，接著使用 USB 開機的方式啟動 live environment，在各種 trial-and-error 之後終於把各種硬體問題排除，最後再裝 Desktop Environment 與各種 GUI/CLI apps。
-prepare installation medium 請參考 archwiki
-將一支可以清空的隨身碟插在可以上網的電腦當中 下載 archlinux_iso。假設下載的 iso 檔放在 $HOME/Downloads/archlinux-2022.</description></item><item><title>Arch Install 202202</title><link>https://omeletwithoutegg.github.io/2022/02/08/arch-install-202202/</link><pubDate>Tue, 08 Feb 2022 08:30:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/08/arch-install-202202/</guid><description>安裝 arch 這篇文章是分享與紀錄我在筆電上裝 arch-linux 的過程，其實要裝還是直接看 arch wiki 最快XD 不過那個頁面沒有講怎麼裝 bootloader 與桌面環境。
-製作開機隨身碟（Live USB） 下載 .iso 檔案，並將其寫入 USB 當中（假設 USB 是 /dev/sdb）。
-1 dd bs=4M if=~/Downloads/archlinux-2022.02.01-x86_64.iso of=/dev/sdb &amp;amp;&amp;amp; sync 使用隨身碟開機 通常在開機時按下某個按鍵可以進入選擇開機媒介的選單，例如我現在這台 ASUS 的筆電就是在出現 logo 時按 F2 就會出現選單，在 boot 的地方可以選擇用
-usb 開機。
-在使用隨身碟（使用 live 環境）開機時會有 .iso 裡面自帶的套件可以用，例如 vim、iwd、zsh 等等指令，但這些套件在安裝完成的 arch 裡面不會自動附上。
-確認啟動模式 1 ls /sys/firmware/efi/efivars 如果指令沒有報錯，則系統在 UEFI 模式下啓動。如果目錄不存在，系統可能以 BIOS 或 CSM 模式啓動。
-連上網路 使用 iwctl 連上 Wi-Fi 網路
-1 2 3 4 iwctl [iwd]# device list [iwd]# station DEVICE scan [iwd]# station DEVICE connect SSID 其中 DEVICE 是你的網路介面裝置的名稱</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pacman on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/pacman/</link><description>Recent content in Pacman on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 31 Aug 2022 17:16:20 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/pacman/index.xml" rel="self" type="application/rss+xml"/><item><title>又是 Arch Install：在 HP 筆電上面雙系統與 secure boot</title><link>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</link><pubDate>Wed, 31 Aug 2022 17:16:20 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/08/31/arch-install-202208/</guid><description>&lt;h1 id="緣由">緣由&lt;/h1>
+&lt;p>這麼快的時間就發下一篇 archlinux 的文，我真的覺得我越來越是 &lt;code>BTW I use arch&lt;/code> 的人了XD&lt;br>
+不過這次裝 archlinux 也是有理由的，因為我從 NPSC 拿到的筆電的電池壞掉了，如果沒有插著電就會直接關機，想說就順便換了一台新的筆電。因為奇怪的堅持不想用 Mac，選了選之後最後是挑 HP pavilion plus 14。&lt;/p>
+&lt;p>上次因為是想要整台變成 Linux 所以比較不用煩惱一些問題，這次我希望能夠雙系統 Windows 並且可以玩一些遊戲，會需要有 secure boot 的功能所以也有比較不同的設定；此外這次也有碰到各種不同的問題，作為紀錄以及希望能幫助有遇到類似問題的人就發一篇文吧 :P&lt;/p>
+&lt;h1 id="流水帳">流水帳&lt;/h1>
+&lt;h2 id="事前需要的材料">事前需要的材料&lt;/h2>
+&lt;p>不一定要用但我有用到&lt;/p>
+&lt;ul>
+&lt;li>USB device * 2 （一支會要灌 iso 進去讓資料整個不見，另一支是拿來備份一些小東西的）&lt;/li>
+&lt;li>可以上網的手機 &amp;amp; 電腦 &amp;amp; wifi-AP&lt;/li>
+&lt;li>電源線&lt;/li>
+&lt;/ul>
+&lt;h2 id="大綱">大綱&lt;/h2>
+&lt;p>首先直接跑 Windows 安裝引導把 Windows 用正常的方式安裝好，接著使用 USB 開機的方式啟動 live environment，在各種 trial-and-error 之後終於把各種硬體問題排除，最後再裝 Desktop Environment 與各種 GUI/CLI apps。&lt;/p>
+&lt;h2 id="prepare-installation-medium">prepare installation medium&lt;/h2>
+&lt;p>請參考 &lt;a href="https://wiki.archlinux.org/title/USB_flash_installation_medium#Using_win32diskimager">archwiki&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>將一支可以清空的隨身碟插在可以上網的電腦當中&lt;/li>
+&lt;li>下載 &lt;a href="https://archlinux.org/download/">archlinux_iso&lt;/a>。假設下載的 iso 檔放在 &lt;code>$HOME/Downloads/archlinux-2022.08.05-x86_64.iso&lt;/code>。&lt;/li>
+&lt;li>將 iso 檔寫入隨身碟。&lt;br>
+如果是 linux 的話，可以看插入前後 &lt;code>/dev/&lt;/code> 多了什麼東西去看隨身碟對應的 character device 是什麼，這邊假設是 &lt;code>/dev/sda&lt;/code> 並使用 &lt;code>dd&lt;/code> 指令寫入。
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo dd bs&lt;span style="color:#f92672">=&lt;/span>4M &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">=&lt;/span>$HOME/Downloads/archlinux-2022.08.05-x86_64.iso of&lt;span style="color:#f92672">=&lt;/span>/dev/sda status&lt;span style="color:#f92672">=&lt;/span>progress
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>如果是 windows 可以用 Rufus 等等。&lt;/li>
+&lt;/ol>
+&lt;h2 id="in-windows">In Windows&lt;/h2>
+&lt;h3 id="windows-安裝">Windows 安裝&lt;/h3>
+&lt;p>下一步、下一步、下一步。&lt;/p></description></item><item><title>Arch Install 202202</title><link>https://omeletwithoutegg.github.io/2022/02/08/arch-install-202202/</link><pubDate>Tue, 08 Feb 2022 08:30:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/08/arch-install-202202/</guid><description>&lt;h1 id="安裝-arch">安裝 arch&lt;/h1>
+&lt;p>這篇文章是分享與紀錄我在筆電上裝 arch-linux 的過程，其實要裝還是直接看 arch wiki 最快XD 不過那個頁面沒有講怎麼裝 bootloader 與桌面環境。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="製作開機隨身碟live-usb">製作開機隨身碟（Live USB）&lt;/h2>
+&lt;p>下載 .iso 檔案，並將其寫入 USB 當中（假設 USB 是 /dev/sdb）。&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>dd bs&lt;span style="color:#f92672">=&lt;/span>4M &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">=&lt;/span>~/Downloads/archlinux-2022.02.01-x86_64.iso of&lt;span style="color:#f92672">=&lt;/span>/dev/sdb &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> sync
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="使用隨身碟開機">使用隨身碟開機&lt;/h2>
+&lt;p>通常在開機時按下某個按鍵可以進入選擇開機媒介的選單，例如我現在這台 ASUS 的筆電就是在出現 logo 時按 F2 就會出現選單，在 boot 的地方可以選擇用&lt;br>
+usb 開機。&lt;/p>
+&lt;p>在使用隨身碟（使用 live 環境）開機時會有 .iso 裡面自帶的套件可以用，例如 vim、iwd、zsh 等等指令，但這些套件在安裝完成的 arch 裡面不會自動附上。&lt;/p>
+&lt;h3 id="確認啟動模式">確認啟動模式&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ls /sys/firmware/efi/efivars
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果指令沒有報錯，則系統在 UEFI 模式下啓動。如果目錄不存在，系統可能以 BIOS 或 CSM 模式啓動。&lt;/p></description></item></channel></rss>

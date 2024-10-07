@@ -1,33 +1,120 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitmask on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/bitmask/</link><description>Recent content in Bitmask on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 24 Jan 2020 10:33:31 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/bitmask/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/tioj-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/tioj-1094/</guid><description>C.幼稚國王的獎賞 https://tioj.ck.tp.edu.tw/problems/1094
-Description 定義一個非負整數集合的價值是裡面所有數字XOR起來
-給定一些非負整數，問你能選出價值最高的子集價值是多少？
-Solution 經典題 maximum subset xor
-線性基 首先可以把每個數字的二進位看成模2的$k$維向量
-span 我們說一群向量$S = {\textbf{v}_ 1, \textbf{v}_ 2, \dots, \textbf{v}_ n}$的線性生成空間是
-$$
-\textrm{span}(S) = { \sum _ {i=1}^n\lambda _ i \textbf{v} _ i }
-$$
-也就是說$\textrm{span}(S)$代表的是所有$S$內的元素的有限線性組合
-linear independent 對於一組向量${\textbf{v}_ 1, \textbf{v}_ 2, \dots, \textbf{v} _ n}$
-若存在不全為$0$的$\lambda_1, \lambda_2, \dots, \lambda_n$使得
-$$
-\sum _ {i=1}^n\lambda_ i \textbf{v}_ i = \textbf{0}
-$$
-則我們說這群向量是線性相關的；反之則稱為線性獨立(linear independent)
-一組線性相關的向量至少有一個向量可以用其他向量表示
-說明: 不失一般性設$\lambda _ 1 \neq 0$，則</description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</guid><description>排教室問題 https://tioj.ck.tp.edu.tw/problems/1197
-Description 某校有M種不同的課程，其中有些課程的時間會有衝堂。如果學校中總共有N間不同的教室，請問共有多少種安排各課程上課教室的方式？最少要用到幾間教室？
-$M,N \leq 10$
-註: 衝堂的意思是他們不能被安排在同一個教室
-Solution 題目可以想成給定一張圖，每個頂點有$k$種顏色可以塗，定義合法塗色是讓相鄰頂點無同色的塗色方式，問有幾種合法塗色的方式以及至少要用多少顏色才能合法塗色
-一開始覺得這是暴搜題，但忽然想到可能不連通也可能會有環之後就不太知道怎麼實作
-另外題敘好像沒有講到，不過這題讀邊的時候要用EOF讀
-這題我的寫法是位元DP，考慮狀態$dp[S][c]$代表$c$之前的顏色都用過了，並且$S$這個subset已經被塗過了
-那轉移可以想成把$S$的一個subset$X$都塗上$c$這個顏色，當然$X$中任意兩個頂點都不相鄰(也就是說$X$是獨立集)，式子長得像
-$$
-dp[S][c] = \sum\limits _ {X \subseteq S, Valid(X)} dp[S \setminus X][c-1]
-$$
-其中$Valid(X)$代表$X$是否為獨立集，可以先預處理
-預處理獨立集可以做到$\mathcal{O}(n \cdot 2^n)$，而後面枚舉$k$次子集則是$\mathcal{O}(k \cdot 3^n)$
-註: 一次枚舉複雜度是$\mathcal{O}(3^n)$的原因可以參考 https://cp-algorithms.com/algebra/all-submasks.html
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 #include &amp;lt;cstdio&amp;gt; #include &amp;lt;algorithm&amp;gt; using namespace std; const int N = 10; typedef long long ll; int k,n,a,b,valid[1&amp;lt;&amp;lt;N],g[N][N]; ll dp[1&amp;lt;&amp;lt;N][N]; signed main() { scanf(&amp;#34;%d%d&amp;#34;,&amp;amp;n,&amp;amp;k); while(~scanf(&amp;#34;%d%d&amp;#34;,&amp;amp;a,&amp;amp;b)) --a, --b, g[a][b] = g[b][a] = true; for(int s = 0; s &amp;lt; (1&amp;lt;&amp;lt;n); s++) valid[s] = true; for(int s = 0; s &amp;lt; (1&amp;lt;&amp;lt;n); s++) { for(int i = n-1; i &amp;gt;= 0; i--) if(s &amp;amp; (1&amp;lt;&amp;lt;i)) { if(!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitmask on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/bitmask/</link><description>Recent content in Bitmask on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 24 Jan 2020 10:33:31 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/bitmask/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/tioj-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/tioj-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞">C.幼稚國王的獎賞&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1094">https://tioj.ck.tp.edu.tw/problems/1094&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>定義一個非負整數集合的價值是裡面所有數字XOR起來&lt;br>
+給定一些非負整數，問你能選出價值最高的子集價值是多少？&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>經典題 maximum subset xor&lt;/p>
+&lt;h3 id="線性基">線性基&lt;/h3>
+&lt;p>首先可以把每個數字的二進位看成模2的$k$維向量&lt;/p>
+&lt;h4 id="span">span&lt;/h4>
+&lt;p>我們說一群向量$S = {\textbf{v}_ 1, \textbf{v}_ 2, \dots, \textbf{v}_ n}$的線性生成空間是&lt;/p>
+&lt;p>$$&lt;br>
+\textrm{span}(S) = { \sum _ {i=1}^n\lambda _ i \textbf{v} _ i }&lt;br>
+$$&lt;/p>
+&lt;p>也就是說$\textrm{span}(S)$代表的是所有$S$內的元素的有限線性組合&lt;/p>
+&lt;h4 id="linear-independent">linear independent&lt;/h4>
+&lt;p>對於一組向量${\textbf{v}_ 1, \textbf{v}_ 2, \dots, \textbf{v} _ n}$&lt;br>
+若存在不全為$0$的$\lambda_1, \lambda_2, \dots, \lambda_n$使得&lt;br>
+$$&lt;br>
+\sum _ {i=1}^n\lambda_ i \textbf{v}_ i = \textbf{0}&lt;br>
+$$&lt;br>
+則我們說這群向量是線性相關的；反之則稱為線性獨立(linear independent)&lt;/p>
+&lt;p>一組線性相關的向量至少有一個向量可以用其他向量表示&lt;br>
+說明: 不失一般性設$\lambda _ 1 \neq 0$，則&lt;br>
+$$&lt;br>
+\textbf{v} _ 1 = \sum _ {i=2}^n \frac{-\lambda _ i}{\lambda _ 1} \textbf{v} _ i&lt;br>
+$$&lt;/p></description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</guid><description>&lt;h1 id="排教室問題">排教室問題&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1197">https://tioj.ck.tp.edu.tw/problems/1197&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>某校有M種不同的課程，其中有些課程的時間會有衝堂。如果學校中總共有N間不同的教室，請問共有多少種安排各課程上課教室的方式？最少要用到幾間教室？&lt;br>
+$M,N \leq 10$&lt;/p>
+&lt;p>註: 衝堂的意思是他們不能被安排在同一個教室&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>題目可以想成給定一張圖，每個頂點有$k$種顏色可以塗，定義合法塗色是讓相鄰頂點無同色的塗色方式，問有幾種合法塗色的方式以及至少要用多少顏色才能合法塗色&lt;br>
+一開始覺得這是暴搜題，但忽然想到可能不連通也可能會有環之後就不太知道怎麼實作&lt;br>
+另外題敘好像沒有講到，不過這題讀邊的時候要用&lt;code>EOF&lt;/code>讀&lt;/p>
+&lt;p>這題我的寫法是位元DP，考慮狀態$dp[S][c]$代表$c$之前的顏色都用過了，並且$S$這個subset已經被塗過了&lt;br>
+那轉移可以想成把$S$的一個subset$X$都塗上$c$這個顏色，當然$X$中任意兩個頂點都不相鄰(也就是說$X$是獨立集)，式子長得像&lt;br>
+$$&lt;br>
+dp[S][c] = \sum\limits _ {X \subseteq S, Valid(X)} dp[S \setminus X][c-1]&lt;br>
+$$&lt;br>
+其中$Valid(X)$代表$X$是否為獨立集，可以先預處理&lt;br>
+預處理獨立集可以做到$\mathcal{O}(n \cdot 2^n)$，而後面枚舉$k$次子集則是$\mathcal{O}(k \cdot 3^n)$&lt;/p>
+&lt;p>註: 一次枚舉複雜度是$\mathcal{O}(3^n)$的原因可以參考 &lt;a href="https://cp-algorithms.com/algebra/all-submasks.html">https://cp-algorithms.com/algebra/all-submasks.html&lt;/a>&lt;/p>
+&lt;h2 id="ac-code">AC code&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;cstdio&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;algorithm&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">10&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">typedef&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span> ll;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> k,n,a,b,valid[&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>N],g[N][N];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ll dp[&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>N][N];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> scanf(&lt;span style="color:#e6db74">&amp;#34;%d%d&amp;#34;&lt;/span>,&lt;span style="color:#f92672">&amp;amp;&lt;/span>n,&lt;span style="color:#f92672">&amp;amp;&lt;/span>k);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(&lt;span style="color:#f92672">~&lt;/span>scanf(&lt;span style="color:#e6db74">&amp;#34;%d%d&amp;#34;&lt;/span>,&lt;span style="color:#f92672">&amp;amp;&lt;/span>a,&lt;span style="color:#f92672">&amp;amp;&lt;/span>b)) &lt;span style="color:#f92672">--&lt;/span>a, &lt;span style="color:#f92672">--&lt;/span>b, g[a][b] &lt;span style="color:#f92672">=&lt;/span> g[b][a] &lt;span style="color:#f92672">=&lt;/span> true;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> s &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; s &lt;span style="color:#f92672">&amp;lt;&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>n); s&lt;span style="color:#f92672">++&lt;/span>) valid[s] &lt;span style="color:#f92672">=&lt;/span> true;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> s &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; s &lt;span style="color:#f92672">&amp;lt;&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>n); s&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> n&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;gt;=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i&lt;span style="color:#f92672">--&lt;/span>) &lt;span style="color:#66d9ef">if&lt;/span>(s &lt;span style="color:#f92672">&amp;amp;&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>i)) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>valid[s &lt;span style="color:#f92672">^&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>i)]) valid[s] &lt;span style="color:#f92672">=&lt;/span> false;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> j &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; j &lt;span style="color:#f92672">&amp;lt;&lt;/span> i; j&lt;span style="color:#f92672">++&lt;/span>) &lt;span style="color:#66d9ef">if&lt;/span>(s &lt;span style="color:#f92672">&amp;amp;&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>j)) &lt;span style="color:#66d9ef">if&lt;/span>(g[i][j]) valid[s] &lt;span style="color:#f92672">=&lt;/span> false;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> ans &lt;span style="color:#f92672">=&lt;/span> n;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ll sum &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> S &lt;span style="color:#f92672">=&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>n)&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[&lt;span style="color:#ae81ff">0&lt;/span>][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> c &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; c &lt;span style="color:#f92672">&amp;lt;=&lt;/span> max(k,n); c&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> s &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; s &lt;span style="color:#f92672">&amp;lt;&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>n); s&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[s][c] &lt;span style="color:#f92672">=&lt;/span> dp[s][c&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> f &lt;span style="color:#f92672">=&lt;/span> s; f; f &lt;span style="color:#f92672">=&lt;/span> (f&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">&amp;amp;&lt;/span>s) &lt;span style="color:#66d9ef">if&lt;/span>(valid[f]) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[s][c] &lt;span style="color:#f92672">+=&lt;/span> dp[s&lt;span style="color:#f92672">^&lt;/span>f][c&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(dp[S][c]) ans &lt;span style="color:#f92672">=&lt;/span> min(ans, c);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;%lld&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">%d&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>,dp[S][k],ans);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>話說雖然感覺會需要&lt;code>long long&lt;/code>不過TIOJ上似乎沒有會超過&lt;code>int&lt;/code>的測資&lt;/p></description></item></channel></rss>

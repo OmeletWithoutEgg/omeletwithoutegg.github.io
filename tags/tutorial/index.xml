@@ -1,70 +1,183 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tutorial/</link><description>Recent content in Tutorial on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 16 Nov 2020 13:31:22 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</guid><description>我只是想做一下筆記
-然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配
-先備知識 看得懂$\sum$
-然後會(不帶權)二分圖匹配的匈牙利演算法
-Kuhn Munkres 這裡介紹KM演算法，而若要求解二分圖上的最大權匹配等相關問題可以透過下面的演算法轉換成KM的模型。
-KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法，其中邊的權重都是非負的。
-演算法轉換 最大權匹配 $\to$ 最大權完全二分圖完美匹配(非負邊權)
-把不存在的邊以及負邊權的邊邊權設成0 最大權完美匹配(有負邊權) $\to$ 最大權完全二分圖完美匹配(非負邊權)
-把不存在的邊邊權設成0，並且把剩下每條邊的邊權加上一個夠大的數$M$，這樣就會傾向於選出儘量多邊。最後的答案記得要扣掉這些$M$ 可以想想看為什麼上面兩種轉換是對的
-把問題敘述再好好的寫一遍
-Description 給你一張完全二分圖 $K _ {n,n}$ ，每條邊 $e = (x_i,y_j)$ 有邊權 $w _ e$
-請選出 $n$ 條邊 $e_1, e_2, \cdots e_n$ 兩兩不共端點，使得邊權和$\sum\limits _ {i=1}^n w _ {e _ i}$最大
-對偶問題 首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。
-在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$
-那麼很顯然的，對於任何一種合法的頂標來說，頂標的總和會大於等於最大權完美匹配的值。
-因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$</description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</guid><description>同餘算數 定義 $$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$
-或者說$a,b$同餘於$m$
-基本性質 當一個題目要求答案模一個數字$m$時
-通常我們都可以不用先算出一個很大的答案再取模
-利用下面的規則能夠在計算的過程中一邊取模(加減乘不會改變等價關係)
-設
-$$
-\left \{
-\begin{matrix}
-a_0 \equiv a_1 \pmod m\newline
-b_0 \equiv b_1 \pmod m
-\end{matrix}
-\right .
-$$
-則易得到
-$$
-\left \{
-\begin{matrix}
-a_0 \pm b_0 \equiv a_1 \pm b_1 \pmod m\newline
-a_0b_0 \equiv a_1b_1 \pmod m
-\end{matrix}
-\right .
-$$
-模逆元 在一般實數的除法時，如果我們想知道除以$a$的結果，可以看成乘上倒數$1/a$
-也就是說找一個$x$使得$ax = 1$
-而在模$m$的情況下，我們同樣也可以用一個使得$ax \equiv 1$的$x$來代替除以$a$的運算，稱為模逆元
-(如果常常打CF的話應該常常看見上面模逆元的敘述)
-求取模逆元$x = a^{-1}$只要把同餘關係改寫成$ax = my+1$就可以用擴展歐幾里得求解了</description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</guid><description>捲積方法 OAO 本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速
-這邊先定義一下捲積$ * $是什麼
-$$
-(a * b) _ x = \sum _ {i+j=x} a_i b_j
-$$
-實際上就等價於我們常見的多項式乘法
-naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意
-1 2 3 4 5 for(int i = 0; i &amp;lt; A.size(); i++) { for(int j = 0; j &amp;lt; B.size(); j++) { res[i+j] += A[i] * B[j]; } } DFT 先假設我們有兩個多項式
-$$
-A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline
-C(x) = A(x)B(x)
-$$
-除了上述利用分配律乘開以外
-因為$C$的次數已經可以確定</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</guid><description>迭代式線段樹 先備知識: 線段樹(帶懶標) + 位元運算(吧)
-如果讀者還不知道線段樹的原理最好看遞迴的(?)
-單點修改 例題仍然是萬年RMQ
-給定一個長度$n$的序列，請支援以下操作
-將位置$p$的值改為$x$ 查詢區間$[l,r)$的最大值 完美二元樹 首先假定$n$是2的冪次，思考可能可以簡單一些
-我們一樣用1當根，並且節點i的左右子樹會是i*2和i*2+1或寫成i&amp;lt;&amp;lt;1, i&amp;lt;&amp;lt;1|1
-1 2 const int N = 1&amp;lt;&amp;lt;18; int tr[N&amp;lt;&amp;lt;1], n; 對於初始化來說，可以發現葉子節點對應的都是長度$1$的區間，正好是原序列的值，所以可以直接讀入或另外傳入賦值給 tr[i+n]，接著可以用遞減的順序把其他長度的區間的答案算好
-1 2 3 4 void build(int v[]) { for(int i = 0; i &amp;lt; n; i++) tr[i+n] = v[i]; for(int i = n-1; i &amp;gt; 0; i--) tr[i] = max(tr[i&amp;lt;&amp;lt;1], tr[i&amp;lt;&amp;lt;1|1]); } 更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到
-注意 p^1 代表 p 的兄弟節點，也就是 p 父親的另一個兒子
-1 2 3 4 void modify(int p, int x) { for(tr[p+=n] = x; p &amp;gt; 1; p&amp;gt;&amp;gt;=1) tr[p&amp;gt;&amp;gt;1] = max(tr[p],tr[p^1]); } 至於區間的查詢就沒有那麼顯然了，我們一樣必須把詢問的區間拆分成線段樹上的一些區間，而且數量不能超過$\mathcal{O}(\log n)$</description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</guid><description>常用的輸入(出)優化 cin / cout 因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用
-競程的時候記得開下面兩個東西
-1 ios_base::sync_with_stdio(0), cin.tie(0); 開了之後就不要使用 stdio 裡面的東西啦
-另外若非互動題也不要使用 endl 之類會flush的函式，請用 '\n' 代替
-scanf / printf 常用的也就那些
-1 2 3 4 5 6 7 8 9 10 11 #include &amp;lt;cstdio&amp;gt; int main() { int x,y; long long L; scanf(&amp;#34;%d%d%lld&amp;#34;, &amp;amp;x, &amp;amp;y, &amp;amp;L); printf(&amp;#34;%lld\n&amp;#34;, x+y+L); char s[100]; scanf(&amp;#34;%s&amp;#34;, s); for(int i = 0; s[i]; i++) s[i] = (s[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;; printf(&amp;#34;%s\n&amp;#34;, s); } 值得注意的是 iostream 的空間有點大，所以想要壓空間用 stdio 就對了</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tutorial/</link><description>Recent content in Tutorial on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 16 Nov 2020 13:31:22 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
+然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p>
+&lt;h1 id="先備知識">先備知識&lt;/h1>
+&lt;p>看得懂$\sum$&lt;br>
+然後會(不帶權)二分圖匹配的匈牙利演算法&lt;/p>
+&lt;h1 id="kuhn-munkres">Kuhn Munkres&lt;/h1>
+&lt;p>這裡介紹KM演算法，而若要求解二分圖上的最大權匹配等相關問題可以透過下面的演算法轉換成KM的模型。&lt;br>
+KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法，其中邊的權重都是非負的。&lt;/p>
+&lt;h2 id="演算法轉換">演算法轉換&lt;/h2>
+&lt;ul>
+&lt;li>最大權匹配 $\to$ 最大權完全二分圖完美匹配(非負邊權)&lt;br>
+把不存在的邊以及負邊權的邊邊權設成0&lt;/li>
+&lt;li>最大權完美匹配(有負邊權) $\to$ 最大權完全二分圖完美匹配(非負邊權)&lt;br>
+把不存在的邊邊權設成0，並且把剩下每條邊的邊權加上一個夠大的數$M$，這樣就會傾向於選出儘量多邊。最後的答案記得要扣掉這些$M$&lt;/li>
+&lt;/ul>
+&lt;p>可以想想看為什麼上面兩種轉換是對的&lt;/p>
+&lt;p>把問題敘述再好好的寫一遍&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;blockquote>
+&lt;p>給你一張完全二分圖 $K _ {n,n}$ ，每條邊 $e = (x_i,y_j)$ 有邊權 $w _ e$&lt;br>
+請選出 $n$ 條邊 $e_1, e_2, \cdots e_n$ 兩兩不共端點，使得邊權和$\sum\limits _ {i=1}^n w _ {e _ i}$最大&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="對偶問題">對偶問題&lt;/h2>
+&lt;p>首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。&lt;br>
+在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$&lt;br>
+那麼很顯然的，對於任何一種合法的頂標來說，頂標的總和會大於等於最大權完美匹配的值。&lt;br>
+因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
+&lt;h2 id="定義">定義&lt;/h2>
+&lt;p>$$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$&lt;br>
+或者說$a,b$同餘於$m$&lt;/p>
+&lt;h2 id="基本性質">基本性質&lt;/h2>
+&lt;p>當一個題目要求答案模一個數字$m$時&lt;br>
+通常我們都可以不用先算出一個很大的答案再取模&lt;br>
+利用下面的規則能夠在計算的過程中一邊取模(加減乘不會改變等價關係)&lt;br>
+設&lt;br>
+$$&lt;br>
+\left \{&lt;br>
+\begin{matrix}&lt;br>
+a_0 \equiv a_1 \pmod m\newline&lt;br>
+b_0 \equiv b_1 \pmod m&lt;br>
+\end{matrix}&lt;br>
+\right .&lt;br>
+$$&lt;br>
+則易得到&lt;br>
+$$&lt;br>
+\left \{&lt;br>
+\begin{matrix}&lt;br>
+a_0 \pm b_0 \equiv a_1 \pm b_1 \pmod m\newline&lt;br>
+a_0b_0 \equiv a_1b_1 \pmod m&lt;br>
+\end{matrix}&lt;br>
+\right .&lt;br>
+$$&lt;/p>
+&lt;h2 id="模逆元">模逆元&lt;/h2>
+&lt;p>在一般實數的除法時，如果我們想知道除以$a$的結果，可以看成乘上倒數$1/a$&lt;br>
+也就是說找一個$x$使得$ax = 1$&lt;br>
+而在模$m$的情況下，我們同樣也可以用一個使得$ax \equiv 1$的$x$來代替除以$a$的運算，稱為模逆元&lt;br>
+(如果常常打CF的話應該常常看見上面模逆元的敘述)&lt;br>
+求取模逆元$x = a^{-1}$只要把同餘關係改寫成$ax = my+1$就可以用擴展歐幾里得求解了&lt;br>
+注意$a,m$必須互質才會有模逆元&lt;/p></description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
+&lt;p>本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速&lt;br>
+這邊先定義一下捲積$ * $是什麼&lt;/p>
+&lt;p>$$&lt;br>
+(a * b) _ x = \sum _ {i+j=x} a_i b_j&lt;br>
+$$&lt;/p>
+&lt;p>實際上就等價於我們常見的多項式乘法&lt;br>
+naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> A.size(); i&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> j &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; j &lt;span style="color:#f92672">&amp;lt;&lt;/span> B.size(); j&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		res[i&lt;span style="color:#f92672">+&lt;/span>j] &lt;span style="color:#f92672">+=&lt;/span> A[i] &lt;span style="color:#f92672">*&lt;/span> B[j];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="dft">DFT&lt;/h2>
+&lt;p>先假設我們有兩個多項式&lt;br>
+$$&lt;br>
+A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline&lt;br>
+C(x) = A(x)B(x)&lt;br>
+$$&lt;br>
+除了上述利用分配律乘開以外&lt;br>
+因為$C$的次數已經可以確定&lt;br>
+我們也可以在$A(x)$和$B(x)$找出$n$個相異的點，相乘之後再利用插值法代入得到$C$&lt;br>
+其中$n = \deg C + 1$&lt;br>
+也就是&lt;/p></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
+&lt;p>先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br>
+如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p>
+&lt;h2 id="單點修改">單點修改&lt;/h2>
+&lt;p>例題仍然是萬年RMQ&lt;/p>
+&lt;blockquote>
+&lt;p>給定一個長度$n$的序列，請支援以下操作&lt;/p>
+&lt;ol>
+&lt;li>將位置$p$的值改為$x$&lt;/li>
+&lt;li>查詢區間$[l,r)$的最大值&lt;/li>
+&lt;/ol>
+&lt;/blockquote>
+&lt;h3 id="完美二元樹">完美二元樹&lt;/h3>
+&lt;p>首先假定$n$是2的冪次，思考可能可以簡單一些&lt;br>
+我們一樣用&lt;code>1&lt;/code>當根，並且節點&lt;code>i&lt;/code>的左右子樹會是&lt;code>i*2&lt;/code>和&lt;code>i*2+1&lt;/code>或寫成&lt;code>i&amp;lt;&amp;lt;1, i&amp;lt;&amp;lt;1|1&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">18&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> tr[N&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>], n;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>
+ &lt;img src="https://omeletwithoutegg.github.io/images/Iterative-SegmentTree/perfect.png" alt="">
+
+&lt;/p>
+&lt;p>對於初始化來說，可以發現葉子節點對應的都是長度$1$的區間，正好是原序列的值，所以可以直接讀入或另外傳入賦值給 &lt;code>tr[i+n]&lt;/code>，接著可以用遞減的順序把其他長度的區間的答案算好&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">build&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> v[]) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) tr[i&lt;span style="color:#f92672">+&lt;/span>n] &lt;span style="color:#f92672">=&lt;/span> v[i];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> n&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i&lt;span style="color:#f92672">--&lt;/span>) tr[i] &lt;span style="color:#f92672">=&lt;/span> max(tr[i&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>], tr[i&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">|&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到&lt;br>
+注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
+&lt;h2 id="cin--cout">cin / cout&lt;/h2>
+&lt;p>因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用&lt;br>
+競程的時候記得開下面兩個東西&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>開了之後就不要使用 stdio 裡面的東西啦&lt;br>
+另外若非互動題也不要使用 &lt;code>endl&lt;/code> 之類會flush的函式，請用 &lt;code>'\n'&lt;/code> 代替&lt;/p>
+&lt;h2 id="scanf--printf">scanf / printf&lt;/h2>
+&lt;p>常用的也就那些&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;cstdio&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">int&lt;/span> x,y;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">long&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span> L;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	scanf(&lt;span style="color:#e6db74">&amp;#34;%d%d%lld&amp;#34;&lt;/span>, &lt;span style="color:#f92672">&amp;amp;&lt;/span>x, &lt;span style="color:#f92672">&amp;amp;&lt;/span>y, &lt;span style="color:#f92672">&amp;amp;&lt;/span>L);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	printf(&lt;span style="color:#e6db74">&amp;#34;%lld&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, x&lt;span style="color:#f92672">+&lt;/span>y&lt;span style="color:#f92672">+&lt;/span>L);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">char&lt;/span> s[&lt;span style="color:#ae81ff">100&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	scanf(&lt;span style="color:#e6db74">&amp;#34;%s&amp;#34;&lt;/span>, s);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; s[i]; i&lt;span style="color:#f92672">++&lt;/span>) s[i] &lt;span style="color:#f92672">=&lt;/span> (s[i]&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#e6db74">&amp;#39;a&amp;#39;&lt;/span>&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>&lt;span style="color:#ae81ff">26&lt;/span>&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#e6db74">&amp;#39;a&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	printf(&lt;span style="color:#e6db74">&amp;#34;%s&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, s);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>值得注意的是 iostream 的空間有點大，所以想要壓空間用 stdio 就對了&lt;br>
+另外 &lt;code>printf&lt;/code> 格式化輸出也常常會在毒瘤題派上用場XD，例如TIOJ 1845&lt;/p></description></item></channel></rss>

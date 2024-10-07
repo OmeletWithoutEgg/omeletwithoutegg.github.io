@@ -1,91 +1,268 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IOI on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/ioi/</link><description>Recent content in IOI on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 01 Jul 2021 07:11:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/ioi/index.xml" rel="self" type="application/rss+xml"/><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</guid><description>IOI 2021 只是想打一下IOI的心得而已
-可能還是流水帳請多多包含(?)
-Before 其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強
-因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西
-另外很好笑的是我這學期比前兩個學期還努力追學分，因為之前太混了XD這學期剛好要全部過才夠畢業的學分竟然夠了
-謝謝所有即使我交作業很混還是讓我過的老師!
-四模拿了一個不錯看的分數，如果我在國手線下150分甚至可以抵回來(?)因為這件事我大概可以claim二階很好追分(並沒有)
-因為疫情的關係國培燒雞，我超期待的說，還想說今年想再寫一次國培紀錄QQ
-唯一比較算是訓練的東西是tmt(卡恩)和我們google meet討論一些題目
-第一次meet的時候是先丟題目討論，然後也講了去年的模考題，像是expected LCS那題好像就是暴力DP(雖然我不知道複雜度是什麼)
-ZCK真的超級積極，丟了好多POI或是JOI、CSAcademy的題目，好多題目我都是第一次見
-基本上沒有什麼想法，不過就算只是聽解也蠻困難的，有一些證明因為卡恩也是當場想所以有點久，我也沒注意聽就做自己的事了XD
-第二次meet主要討論IOI2019，有事前看過題目之後感覺就好一點了(?)不過因為一直想要把line得多一點分所以也沒有太專心(X
-感謝卡恩與zisk讓我腦袋有在動(?)
-Day0 看到好久沒看到的ZCK與wiwi還有(隔著口罩)呼吸到新鮮空氣心情還不錯
-晚上是練習賽
-題目都跟去年一樣
-唯一不一樣的是一題BFS
-結果還不能破台，好好笑
-不過差點在賽中因為唬爛弄出正解(?)
-結束之後問了一下ZCK解，果然他會只是剛好在兩小時的最後才想到(?)
-Day1 day1前一天打了一場div.2寫完ABCD看完F猜他的式子很漂亮就亂推AC了 然後E寫好久總算寫完
-這讓我感覺狀態還不錯，對我來說可能寫水題也是一個穩定心情的方法(?)
-我們三個人還有監考人員占用一整個會議室，間隔開來坐
-原本是用acer的筆電但是後來變成msi的樣子，因為好像跑比較快
-開賽的時候先打了模板
-ZCK帶來的鍵盤的聲音來讓人滿是壓力XD
-然後看紙本題目想
-然後&amp;hellip;就沒有然後了
-parks看起來有點困難先放著了一下
-candies看起來就很經典題，而keys也是沒有什麼想法
-一直畫圖交替想兩題，大概花了一小時還是沒有什麼想法
-三個人維持了安靜好久，然後ZCK開始動鍵盤的時候有夠可怕
-只好姑且先去撈分，撈了keys的基本分跟candies的一點分數
-仔細看了parks發現可以弄成類似2SAT的東西不過實作異常麻煩，而且我也忘記tarjan怎麼寫甚至跑去寫kosaraju(?)
-不過花了好久拿到了70分，我覺得還算值得
-接下來就繼續把candies的分數撈一撈，有一個subtask似乎是我唬爛得到的分數賽後才發現，唬爛就是爽
-最後一直在想candies $l=0, r=n-1$ 的subtask就結束了
-結束之後有點怕自己又是銅牌命，趕快問分數，結果大家都一樣好好笑，而且都是銀牌左右的分數，看來 day1 實在蠻難的
-Day2 day1/2中間似乎吃了雙豚還是山嵐
-day2前一天因為睡不著跑去看了IOI2014之類的，然後發現做不出來趕快看解以免影響比賽，好好笑
-心中不想太多的雜事，很快就開賽了
-打完模板開始讀題目，然後就遇到很欠嘴砲的水題(?)大概在25分鐘內就AC了，有點帶給我小小信心(X
-剩下兩題開始讀
-registers實在有點長，當然只能先去看dungeons
-因為想說贏了好像強度就會加倍，所以原本想說只會贏log次，寫到一半突然覺得怪怪
-後來發現應該是「贏了輸過的人的話那麼強度會加倍」，然後就不知道怎麼做了
-跑去讀registers題敘發現實在超級長，結果是要實作取min跟排序，感覺就是跟19的vision或是12的odometer這種題一樣噁心
-想一想覺得應該可以做很多平行化，而且去年的國培蔡孟宗甚至還講過平行化的bitonic sort，結果今年沒國培，好慘
-先做了取min的subtask，實作比較的方式我是先做減法，然後就可以有絕對值，就有min了
-平行化大概需要170個操作左右，和最後一個subtask要求150只差一點但是怎麼都壓不過，傷心
-後來看著dungeons一直想他怎麼樣會加倍，突然就想到2的冪次分層
-也就是說如果現在的強度 $z\in[2^i,2^{i+1})$ 就說現在在第 $i$ 層，那一定會輸 $2^{i+1}$ 以上的人、贏 $2^i$ 以下的人，而一旦贏了中間的人就會跳到下一層!</description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/tioj-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/tioj-1629/</guid><description>快樂規劃路徑 https://tioj.ck.tp.edu.tw/problems/1629
-Description 樹朋友們生活在一個湖邊，湖邊的樹依照順時針方向編號為$1, 2, \dots n$。
-他們想要讓自己更快樂，所以發明了一種娛樂方式，就是找到一條路徑遍歷全部$n$棵樹剛好一遍。
-要從A樹到B樹唯一的方法就是架一條很長的梯子直直伸過去。
-可是當然不是任何兩棵樹都可以架梯子，所以他們會先把所有可能架梯子的樹對(沒有錯字!)給你。
-當然，(A,B)表示A可以到B、B也可以到A。
-但是給定的遊歷路徑不能出現任兩條梯子交叉，不然可能會讓想要快樂的樹朋友發生危險。
-例如上圖粗線所示就是一個合法的快樂路徑。
-給你樹的個數以及樹對，請輸出一組快樂路徑。
-若有很多組解，樹朋友希望看到字典順序最小的那一組。
-$5 \leq n \leq 1000$
-Solution 由不能交叉的條件可以推出，在某個時刻已經遍歷過的點一定是環上的一個連續區間
-所以可以2D/0D的區間DP，並記錄最小的轉移來源
-我的dp$[i][L][0]$代表的是現在站在$i$，往順時鐘方向的$L$個都已經遍歷過了，$dp[i][L][1]$也相似只是換成逆時鐘
-因為實在想不到更好的實作方式所以寫的有夠醜，但是只要好好選到最小的轉移來源就會是字典序最小的路徑了
-AC code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 #include &amp;lt;bits/stdc++.</description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/tioj-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/tioj-1884/</guid><description>【IOI2015】Boxes 一堆盒子 https://tioj.ck.tp.edu.tw/problems/1884
-Description 有$L$個地區排成一環狀，依序編號為$0, 1, \dots, L-1$
-從任何一個地區移動到相鄰的地區所需要的時間均為一單位時間
-現在有$N$個人需要寄送貨物，他們分別住在編號為$p_1, p_2, \dots, p_n$的地區(已經依非遞減順序排序)
-貨物中心位在編號$0$的地區，並且郵差每次只能帶至多$K$件貨物移動
-(世界上只有一個郵差&amp;hellip;真辛苦)
-身上所有的貨物都送到後，必須回到$0$號地區，才能進行下一輪的送貨
-你的任務就是幫送貨的郵差計算他最少要花多少時間
-才能從貨物中心出發，寄送完所有貨物，最後再回到貨物中心
-(其中可能會回貨物中心很多次以補充貨物)
-$
-1 \leq K \leq N \leq 10^7,
-1 \leq L \leq 10^9,
-0 \leq p_i &amp;lt; L
-$
-Solution 首先有$K=1$的Subtask，可以確定自己對題意的理解
-可以發現題目就是要把這$N$個點分成很多堆，每堆不超過$K$個，使得總成本最小
-一個關鍵的觀察是分的方式肯定是排序過後切成很多連續區間
-不需要考慮$i &amp;lt; x &amp;lt; j$但$x$卻不和$i,j$同一堆的情形，否則可以想辦法交換一下使得答案不會變更差
-至此可以列出DP式
-$$
-dp[i] = \min\limits _ {\max(0, i-k) \leq j &amp;lt; i} { dp[j] + cost(j+1, i) }
-$$
-其中$cost(l, r) = \min {L, 2p_r, 2(L-p_l)}$</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IOI on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/ioi/</link><description>Recent content in IOI on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 01 Jul 2021 07:11:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/ioi/index.xml" rel="self" type="application/rss+xml"/><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
+&lt;p>只是想打一下IOI的心得而已&lt;br>
+可能還是流水帳請多多包含(?)&lt;/p>
+&lt;h2 id="before">Before&lt;/h2>
+&lt;p>其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強&lt;br>
+因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西&lt;br>
+另外很好笑的是我這學期比前兩個學期還努力追學分，因為之前太混了XD這學期剛好要全部過才夠畢業的學分竟然夠了&lt;br>
+謝謝所有即使我交作業很混還是讓我過的老師!&lt;/p>
+&lt;p>四模拿了一個不錯看的分數，如果我在國手線下150分甚至可以抵回來(?)因為這件事我大概可以claim二階很好追分(並沒有)&lt;br>
+因為疫情的關係國培燒雞，我超期待的說，還想說今年想再寫一次國培紀錄QQ&lt;br>
+唯一比較算是訓練的東西是tmt(卡恩)和我們google meet討論一些題目&lt;br>
+第一次meet的時候是先丟題目討論，然後也講了去年的模考題，像是expected LCS那題好像就是暴力DP(雖然我不知道複雜度是什麼)&lt;br>
+ZCK真的超級積極，丟了好多POI或是JOI、CSAcademy的題目，好多題目我都是第一次見&lt;br>
+基本上沒有什麼想法，不過就算只是聽解也蠻困難的，有一些證明因為卡恩也是當場想所以有點久，我也沒注意聽就做自己的事了XD&lt;br>
+第二次meet主要討論IOI2019，有事前看過題目之後感覺就好一點了(?)不過因為一直想要把line得多一點分所以也沒有太專心(X&lt;br>
+感謝卡恩與zisk讓我腦袋有在動(?)&lt;/p>
+&lt;h2 id="day0">Day0&lt;/h2>
+&lt;p>看到好久沒看到的ZCK與wiwi還有(隔著口罩)呼吸到新鮮空氣心情還不錯&lt;br>
+晚上是練習賽&lt;br>
+題目都跟去年一樣&lt;br>
+唯一不一樣的是一題BFS&lt;br>
+結果還不能破台，好好笑&lt;br>
+不過差點在賽中因為唬爛弄出正解(?)&lt;br>
+結束之後問了一下ZCK解，果然他會只是剛好在兩小時的最後才想到(?)&lt;/p>
+&lt;h2 id="day1">Day1&lt;/h2>
+&lt;p>day1前一天打了一場div.2寫完ABCD看完F猜他的式子很漂亮就亂推AC了 然後E寫好久總算寫完&lt;br>
+這讓我感覺狀態還不錯，對我來說可能寫水題也是一個穩定心情的方法(?)&lt;/p>
+&lt;p>我們三個人還有監考人員占用一整個會議室，間隔開來坐&lt;br>
+原本是用acer的筆電但是後來變成msi的樣子，因為好像跑比較快&lt;/p>
+&lt;p>開賽的時候先打了模板&lt;br>
+ZCK帶來的鍵盤的聲音來讓人滿是壓力XD&lt;br>
+然後看紙本題目想&lt;br>
+然後&amp;hellip;就沒有然後了&lt;br>
+parks看起來有點困難先放著了一下&lt;br>
+candies看起來就很經典題，而keys也是沒有什麼想法&lt;br>
+一直畫圖交替想兩題，大概花了一小時還是沒有什麼想法&lt;br>
+三個人維持了安靜好久，然後ZCK開始動鍵盤的時候有夠可怕&lt;br>
+只好姑且先去撈分，撈了keys的基本分跟candies的一點分數&lt;br>
+仔細看了parks發現可以弄成類似2SAT的東西不過實作異常麻煩，而且我也忘記tarjan怎麼寫甚至跑去寫kosaraju(?)&lt;br>
+不過花了好久拿到了70分，我覺得還算值得&lt;br>
+接下來就繼續把candies的分數撈一撈，有一個subtask似乎是我唬爛得到的分數賽後才發現，唬爛就是爽&lt;br>
+最後一直在想candies $l=0, r=n-1$ 的subtask就結束了&lt;/p>
+&lt;p>結束之後有點怕自己又是銅牌命，趕快問分數，結果大家都一樣好好笑，而且都是銀牌左右的分數，看來 day1 實在蠻難的&lt;/p>
+&lt;h2 id="day2">Day2&lt;/h2>
+&lt;p>day1/2中間似乎吃了雙豚還是山嵐&lt;br>
+day2前一天因為睡不著跑去看了IOI2014之類的，然後發現做不出來趕快看解以免影響比賽，好好笑&lt;br>
+心中不想太多的雜事，很快就開賽了&lt;/p>
+&lt;p>打完模板開始讀題目，然後就遇到很欠嘴砲的水題(?)大概在25分鐘內就AC了，有點帶給我小小信心(X&lt;br>
+剩下兩題開始讀&lt;br>
+registers實在有點長，當然只能先去看dungeons&lt;br>
+因為想說贏了好像強度就會加倍，所以原本想說只會贏log次，寫到一半突然覺得怪怪&lt;br>
+後來發現應該是「贏了輸過的人的話那麼強度會加倍」，然後就不知道怎麼做了&lt;br>
+跑去讀registers題敘發現實在超級長，結果是要實作取min跟排序，感覺就是跟19的vision或是12的odometer這種題一樣噁心&lt;br>
+想一想覺得應該可以做很多平行化，而且去年的國培蔡孟宗甚至還講過平行化的bitonic sort，結果今年沒國培，好慘&lt;br>
+先做了取min的subtask，實作比較的方式我是先做減法，然後就可以有絕對值，就有min了&lt;br>
+平行化大概需要170個操作左右，和最後一個subtask要求150只差一點但是怎麼都壓不過，傷心&lt;br>
+後來看著dungeons一直想他怎麼樣會加倍，突然就想到2的冪次分層&lt;br>
+也就是說如果現在的強度 $z\in[2^i,2^{i+1})$ 就說現在在第 $i$ 層，那一定會輸 $2^{i+1}$ 以上的人、贏 $2^i$ 以下的人，而一旦贏了中間的人就會跳到下一層!&lt;br>
+啊待在某一層的時候一定是一直輸大的、贏小的直到贏了一個大的，因為是一張functional graph所以可以用倍增法&lt;br>
+總之整理了一下寫寫倍增法就有了時間 $(n+q)\log^2C$ 空間 $n\log^2C$ 的解，不過 $n=400000$ 開不下，開 $n=50000$ 丟上去六十幾分覺得還不錯&lt;br>
+後來測了一下發現記憶體少一點就可以開得下了，所以嘗試壓常(?)原本想說用分根號、立方根的，後來發現可以開到 $10n\log C$ 的記憶體就想說可以一次跳 $(10^7)^{\frac{1}{10}}$ 倍，然後一直亂改改就 AC 了??&lt;br>
+這應該是第一次在賽中遇到二的冪次分層，實在覺得出出這些題目的人都很厲害&lt;br>
+比賽最後在努力修改 registers 的情況下結束，可惜沒有再撈到分數&lt;/p></description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/tioj-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/tioj-1629/</guid><description>&lt;h1 id="快樂規劃路徑">快樂規劃路徑&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1629">https://tioj.ck.tp.edu.tw/problems/1629&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>樹朋友們生活在一個湖邊，湖邊的樹依照順時針方向編號為$1, 2, \dots n$。&lt;br>
+他們想要讓自己更快樂，所以發明了一種娛樂方式，就是找到一條路徑遍歷全部$n$棵樹剛好一遍。&lt;br>
+要從A樹到B樹唯一的方法就是架一條很長的梯子直直伸過去。&lt;br>
+可是當然不是任何兩棵樹都可以架梯子，所以他們會先把所有可能架梯子的樹對(沒有錯字!)給你。&lt;br>
+當然，(A,B)表示A可以到B、B也可以到A。&lt;br>
+但是給定的遊歷路徑不能出現任兩條梯子交叉，不然可能會讓想要快樂的樹朋友發生危險。&lt;/p>
+&lt;p>
+ &lt;img src="https://omeletwithoutegg.github.io/images/TIOJ-1629/description.jpg" alt="404 QQ">
+
+&lt;/p>
+&lt;p>例如上圖粗線所示就是一個合法的快樂路徑。&lt;br>
+給你樹的個數以及樹對，請輸出一組快樂路徑。&lt;br>
+若有很多組解，樹朋友希望看到字典順序最小的那一組。&lt;/p>
+&lt;p>$5 \leq n \leq 1000$&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>由不能交叉的條件可以推出，在某個時刻已經遍歷過的點一定是環上的一個連續區間&lt;br>
+所以可以2D/0D的區間DP，並記錄最小的轉移來源&lt;/p>
+&lt;p>我的dp$[i][L][0]$代表的是現在站在$i$，往順時鐘方向的$L$個都已經遍歷過了，$dp[i][L][1]$也相似只是換成逆時鐘&lt;br>
+因為實在想不到更好的實作方式所以寫的有夠醜，但是只要好好選到最小的轉移來源就會是字典序最小的路徑了&lt;/p>
+&lt;h2 id="ac-code">AC code&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">71
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">72
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">73
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">74
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1025&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> n, m;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">bool&lt;/span> dp[N][N][&lt;span style="color:#ae81ff">2&lt;/span>], fr[N][N][&lt;span style="color:#ae81ff">2&lt;/span>], g[N][N];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> n &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> m;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> m; i&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> a, b;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> a &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> b, &lt;span style="color:#f92672">--&lt;/span>a, &lt;span style="color:#f92672">--&lt;/span>b;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> g[a][b] &lt;span style="color:#f92672">=&lt;/span> g[b][a] &lt;span style="color:#f92672">=&lt;/span> true;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) dp[i][&lt;span style="color:#ae81ff">1&lt;/span>][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> dp[i][&lt;span style="color:#ae81ff">1&lt;/span>][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> true;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> L &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>; L &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; L&lt;span style="color:#f92672">++&lt;/span>) &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// dp[i][L][0]
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>(dp[(i&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n][L&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> g[(i&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n][i]) { &lt;span style="color:#75715e">// (i+1)%n
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> fr[i][L][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[i][L][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> true;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(dp[(i&lt;span style="color:#f92672">+&lt;/span>L&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n][L&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> g[(i&lt;span style="color:#f92672">+&lt;/span>L&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n][i]) { &lt;span style="color:#75715e">// (i+L-1)%n
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>dp[i][L][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">||&lt;/span> (i&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n &lt;span style="color:#f92672">&amp;gt;&lt;/span> (i&lt;span style="color:#f92672">+&lt;/span>L&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fr[i][L][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[i][L][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> true;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// dp[i][L][1]
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>(dp[(i&lt;span style="color:#f92672">+&lt;/span>n&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n][L&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> g[(i&lt;span style="color:#f92672">+&lt;/span>n&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n][i]) { &lt;span style="color:#75715e">// (i+n-1)%n
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> fr[i][L][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[i][L][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> true;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(dp[(i&lt;span style="color:#f92672">+&lt;/span>n&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">-&lt;/span>L)&lt;span style="color:#f92672">%&lt;/span>n][L&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> g[(i&lt;span style="color:#f92672">+&lt;/span>n&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">-&lt;/span>L)&lt;span style="color:#f92672">%&lt;/span>n][i]) { &lt;span style="color:#75715e">// (i+n+1-L)%n
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>dp[i][L][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">||&lt;/span> (i&lt;span style="color:#f92672">+&lt;/span>n&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n &lt;span style="color:#f92672">&amp;gt;&lt;/span> (i&lt;span style="color:#f92672">+&lt;/span>n&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">-&lt;/span>L)&lt;span style="color:#f92672">%&lt;/span>n)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fr[i][L][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[i][L][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> true;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(dp[i][n][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">||&lt;/span> dp[i][n][&lt;span style="color:#ae81ff">1&lt;/span>]) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> ans;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> c &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; c &lt;span style="color:#f92672">&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>; c&lt;span style="color:#f92672">++&lt;/span>) &lt;span style="color:#66d9ef">if&lt;/span>(dp[i][n][c]) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> d &lt;span style="color:#f92672">=&lt;/span> c;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> vv;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> L &lt;span style="color:#f92672">=&lt;/span> n; L &lt;span style="color:#f92672">&amp;gt;=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; L&lt;span style="color:#f92672">--&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vv.push_back(i);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// cerr&amp;lt;&amp;lt;dp[i][L][d]&amp;lt;&amp;lt;&amp;#39;,&amp;#39;;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> f &lt;span style="color:#f92672">=&lt;/span> fr[i][L][d];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(d) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(f) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> i &lt;span style="color:#f92672">=&lt;/span> (i&lt;span style="color:#f92672">+&lt;/span>n&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">-&lt;/span>L)&lt;span style="color:#f92672">%&lt;/span>n;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> d &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }&lt;span style="color:#66d9ef">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> i &lt;span style="color:#f92672">=&lt;/span> (i&lt;span style="color:#f92672">+&lt;/span>n&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> d &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }&lt;span style="color:#66d9ef">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(f) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> i &lt;span style="color:#f92672">=&lt;/span> (i&lt;span style="color:#f92672">+&lt;/span>L&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> d &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }&lt;span style="color:#66d9ef">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> i &lt;span style="color:#f92672">=&lt;/span> (i&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>n;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> d &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(ans.empty() &lt;span style="color:#f92672">||&lt;/span> vv &lt;span style="color:#f92672">&amp;lt;&lt;/span> ans) ans &lt;span style="color:#f92672">=&lt;/span> vv;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> x: ans) cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> x&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/tioj-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/tioj-1884/</guid><description>&lt;h1 id="ioi2015boxes-一堆盒子">【IOI2015】Boxes 一堆盒子&lt;/h1>
+&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1884">https://tioj.ck.tp.edu.tw/problems/1884&lt;/a>&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>有$L$個地區排成一環狀，依序編號為$0, 1, \dots, L-1$&lt;br>
+從任何一個地區移動到相鄰的地區所需要的時間均為一單位時間&lt;/p>
+&lt;p>現在有$N$個人需要寄送貨物，他們分別住在編號為$p_1, p_2, \dots, p_n$的地區(已經依非遞減順序排序)&lt;br>
+貨物中心位在編號$0$的地區，並且郵差每次只能帶至多$K$件貨物移動&lt;br>
+(世界上只有一個郵差&amp;hellip;真辛苦)&lt;br>
+身上所有的貨物都送到後，必須回到$0$號地區，才能進行下一輪的送貨&lt;br>
+你的任務就是幫送貨的郵差計算他最少要花多少時間&lt;br>
+才能從貨物中心出發，寄送完所有貨物，最後再回到貨物中心&lt;br>
+(其中可能會回貨物中心很多次以補充貨物)&lt;/p>
+&lt;p>$&lt;br>
+1 \leq K \leq N \leq 10^7,&lt;br>
+1 \leq L \leq 10^9,&lt;br>
+0 \leq p_i &amp;lt; L&lt;br>
+$&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>首先有$K=1$的Subtask，可以確定自己對題意的理解&lt;br>
+可以發現題目就是要把這$N$個點分成很多堆，每堆不超過$K$個，使得總成本最小&lt;br>
+一個關鍵的觀察是分的方式肯定是排序過後切成很多連續區間&lt;br>
+不需要考慮$i &amp;lt; x &amp;lt; j$但$x$卻不和$i,j$同一堆的情形，否則可以想辦法交換一下使得答案不會變更差&lt;br>
+至此可以列出DP式&lt;/p>
+&lt;p>$$&lt;br>
+dp[i] = \min\limits _ {\max(0, i-k) \leq j &amp;lt; i} { dp[j] + cost(j+1, i) }&lt;br>
+$$&lt;/p>
+&lt;p>其中$cost(l, r) = \min {L, 2p_r, 2(L-p_l)}$&lt;br>
+代表從$0$號節點開始經過$p_l, p _ {l+1}, \dots, p_r$再回到$0$號節點所需要的最少時間&lt;br>
+複雜度$\mathcal{O}(NK)$&lt;/p></description></item></channel></rss>
