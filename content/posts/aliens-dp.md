@@ -1,9 +1,9 @@
 ---
 title: "Aliens DP 備忘錄"
 date: 2024-10-05T23:20:59+08:00
-draft: true
+draft: false
 mathjax: true
-tags: []
+tags: [dp, dp-optimization, tutorial]
 ---
 
 # Aliens trick 的一些事實列舉與說明
@@ -28,13 +28,16 @@ tags: []
     其中，$I$ 必須是足夠大的 compact set（不懂的話可以想像 $I$ 就是區間）。足夠大指的是 $[-\Delta f(k), -\nabla f(k)]$ 和 $I$ 的交集非空。以後知道上下界要取多少了！
 3. $\textrm{argmin} _ {x \in X}(f(x) + px) = \mathbb{Z} \cap [l_p, r_p]$ 是一個區間。
 4. 對於所有整數的 $p$，$l_p$ 和 $r_p$ 就是 $g(p + 1) - g(p)$ 和 $g(p) - g(p - 1)$。
-5. 對於所有非整數的 $p$，$l_p = r_p = \frac{g(p) - g(\lfloor p \rfloor)}{p - \lfloor p \rfloor} = \frac{g(\lceil p \rceil) - g(p)}{\lceil p \rceil - p}$，即 $g$ 在每個整數段呈線性。這是因為 $f$ 的值域是整數而有的特性。
+5. 對於所有非整數的 $p$，$l_p = r_p = \frac{g(p) - g(\lfloor p \rfloor)}{p - \lfloor p \rfloor} = \frac{g(\lceil p \rceil) - g(p)}{\lceil p \rceil - p}$，即 $g$ 在每個整數段呈線性。
+這是因為 $f$ 的值域是整數而有的特性。
 
 ## Explanation
 
 1 和 2 是兩個相關的較有用的事實。由於 $g(p)$ 和 $-kp$ 兩個（對 $p$ 的）上凸函數的和仍是上凸函數，尋找 $g(p) - pk$ 的最大值可以用三分搜、對差分二分搜，或是黃金比例搜來計算。使用強對偶性，便不需要還原 $x_p^\*$ 也可以在 $\mathcal{O}(\log C)$ 次求解 $g(p)$ 的時間以內計算 $f(k)$。
 Aliens trick 的上下界也是件需要小心的事情，根據本文中的證明，上下界的範圍只要包含 $f$ 在 $k$ 兩旁的差分的相反數，就可以得到答案。
+
 3, 4, 5 的定位比較接近幾個和 $g$ 有關的小知識，主要是幫助理解和想像 $f$ 與 $g$ 函數的關係。
+額外的，由 5 我們可以知道我們如果選擇非整數的 $p$ 則 $\textrm{argmin}_{x\in X}{f(x)+px)$ 是一元集合，所以可以用例如 $n + 0.5$ 或是 $n + \epsilon$ 等想法去搜就不用處理 tie-breaking。
 
 ### g 是上凸函數
 
