@@ -165,7 +165,7 @@ Minecraft 官網上對這個警告的指示是這樣子的：&lt;br>
 &lt;p>使用 &lt;code>:&lt;/code> 就可以進入 command mode，當然一樣可以使用各種快捷鍵來做各種瀏覽器內的操作。&lt;br>
 以下是平常最常用的 keybindings！&lt;/p></description></item><item><title>Arch Install 202202</title><link>https://omeletwithoutegg.github.io/2022/02/08/arch-install-202202/</link><pubDate>Tue, 08 Feb 2022 08:30:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/08/arch-install-202202/</guid><description>&lt;h1 id="安裝-arch">安裝 arch&lt;/h1>
 &lt;p>這篇文章是分享與紀錄我在筆電上裝 arch-linux 的過程，其實要裝還是直接看 arch wiki 最快XD 不過那個頁面沒有講怎麼裝 bootloader 與桌面環境。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- 選用的桌面環境是 KDE （plasma）。-->
 &lt;h2 id="製作開機隨身碟live-usb">製作開機隨身碟（Live USB）&lt;/h2>
 &lt;p>下載 .iso 檔案，並將其寫入 USB 當中（假設 USB 是 /dev/sdb）。&lt;/p>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">

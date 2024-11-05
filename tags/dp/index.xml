@@ -45,7 +45,7 @@
 &lt;/ol>
 &lt;p>可以證明給定一個局面之後，一定是「下一個玩的人贏」或是「下一個玩的人輸」。&lt;br>
 分別簡稱兩者為必勝態和必敗態。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- （後面我可能會交替用局面/狀態來指稱同一個意思） -->
 &lt;p>因為遊戲在有限步內會分出勝負，所以如果把局面當成節點，並且把做動作之後可以到達的局面連有向邊，形成的圖會是一張 DAG。&lt;br>
 按照 DAG 的拓樸順序就可以算出每個局面是必勝態或必敗態。&lt;/p>
 &lt;p>然而通常來說所有從起始局面可以走到的局面會是指數級的，例如 nim game 會是 $\prod {h_i}$ 之類的，我們通常不能真的這樣建出 DAG。&lt;/p>
@@ -58,7 +58,7 @@
 &lt;p>如果想在 hackmd 上看的話可以戳 &lt;a href="https://hackmd.io/@omeletwithoutegg/TOI-2021-sols">https://hackmd.io/@omeletwithoutegg/TOI-2021-sols&lt;/a>&lt;br>
 如果只想看題目可以戳&lt;br>
 &lt;a href="https://www.facebook.com/notes/%E8%B3%87%E8%A8%8A%E7%AB%B6%E8%B3%BD%E9%81%B8%E6%89%8B%E6%96%B0%E6%89%8B%E6%9D%91/toi-2021/823380795202246/">https://www.facebook.com/notes/%E8%B3%87%E8%A8%8A%E7%AB%B6%E8%B3%BD%E9%81%B8%E6%89%8B%E6%96%B0%E6%89%8B%E6%9D%91/toi-2021/823380795202246/&lt;/a>&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- [TOC] -->
 &lt;h2 id="免責條款">免責條款&lt;/h2>
 &lt;p>因為測資不一定夠強，有些解也是賽後討論才AC或是甚至只有精神AC的&lt;br>
 所以這裡的解有可能任何錯誤或是唬爛，不可全盤相信。&lt;/p>
