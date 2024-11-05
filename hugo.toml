@@ -56,6 +56,7 @@ weight = 6
 [markup]
     [markup.goldmark.renderer]
         hardWraps = true
+        unsafe = true # https://discourse.gohugo.io/t/warning-when-mixing-html-and-markdown/52280
     [markup.tableOfContents]
         endLevel = 4
         ordered = false
