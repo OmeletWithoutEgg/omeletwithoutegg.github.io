@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/blog/</link><description>Recent content in Blog on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 25 Apr 2024 03:27:52 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>&lt;h1 id="icpc-world-finals-luxor-世界總決賽紀錄">ICPC World Finals @Luxor 世界總決賽紀錄&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/blog/</link><description>Recent content in Blog on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 22 Nov 2024 19:34:43 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC Korea Regional 2024</title><link>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</link><pubDate>Fri, 22 Nov 2024 19:34:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</guid><description>&lt;h1 id="icpc-首爾站-2024-遊記">ICPC 首爾站 2024 遊記&lt;/h1>
+&lt;p>以下用 C 跟 R 簡稱我的隊友。Day 2 正式賽會有分隔線，怕暴雷自己小心。&lt;/p>
+&lt;h2 id="day--2">Day -2&lt;/h2>
+&lt;p>飆趕國文作業，寫完之後倒頭大睡。&lt;/p>
+&lt;h2 id="day--1">Day -1&lt;/h2>
+&lt;p>作息亂掉然後被硬拉去下午五點到十點團練。&lt;/p>
+&lt;h2 id="day-0">Day 0&lt;/h2>
+&lt;p>從桃機飛往仁川機場。&lt;/p>
+&lt;p>搭上飛機之前各種意外，C 宣告他去買鍵盤所以會晚到，然後我們先報到的時候被提醒說原本 C 說要到的時間就是最後報到時間；然後就變成我和 R 去摩斯買了東西吃結果四十分鐘之後要安檢、出關、到登機口的局面，R 先吃完離開之後我吃完，我安檢出關很迅速但登機門走反方向搞得好趕。整個龜兔賽跑。&lt;/p>
+&lt;p>這次長榮的飛機餐是豬肉炒米粉，我覺得不是很好吃，大概也有一些原因是我們嘴饞偷偷吃摩斯以及我本來就不喜歡米粉。抵達首爾只要兩小時，意外的很快。&lt;/p>
+&lt;p>出關之後我們搭機場巴士離開機場到會場所在的高陽市一山東區，票價大概 27000 韓圜，要搭約一小時。然後下車等轉乘公車才感受到 12 度的冷。跟台灣的公車一樣用現金會很迷茫怎麼投，又有語言障礙所以更難投。最後從公車站走到飯店 KINTEX by KTree，check in 之後感覺這家飯店各方面都不錯，房間裡面還有洗衣機、電磁爐（不會用到）。不過淋浴間跟馬桶之間沒有門所以地會弄濕，而且也沒有免費提供牙刷。&lt;/p>
+&lt;p>落地後的第一餐晚餐就是吃飯店樓下剛好有一個韓式烤肉店。CP 值感覺不算太高，不過好油好多肉好爽。很多小菜和點套餐附的豆腐煲都好辣，我一直拿水跟拿奶油玉米吃。吃完之後去一樣在飯店樓下的 7-11 逛了一下又買了香蕉牛奶跟冰淇淋。&lt;/p>
+&lt;p>回飯店之後發現買的鍵盤的 enter 鍵佔據了美式鍵盤的 enter 右部和整個反斜線的位子，反斜線變到 enter 的左部。打了一下字，看來是白買了。&lt;/p>
+&lt;h2 id="day-1">Day 1&lt;/h2>
+&lt;p>早上好晚起。睡前被問有沒有準備在學證明，事前沒有想到，只好隔天起來想辦法把在學證明印出來，C 去問飯店櫃台剛好櫃台可以印。&lt;/p>
+&lt;p>下午一點半報到，所以我們大概十二點就去找會場。官網寫說會場在 KINTEX 二號展覽館四樓，不過展覽館蠻大的，一樓有一些吃的地方但不太看得到哪裡是 ICPC，我們先進去一家土耳其 kebab 捲店吃了午餐（感覺小貴），出來找個電梯結果就看到 ICPC 的立牌了，搭到四樓就是報到處。順帶一提好像剛好是 BlueArchive 的什麼活動所以展覽館外牆上有 BlueArchive 的大廣告，而且報到處正好就是那個廣告的內側，因為是透明的外牆所以可以從內側看那個廣告。蔚藍檔案．啟動！&lt;/p>
+&lt;p>被華為的人稍微搭話，似乎是因為我穿著新加坡 IOI T。報到的時候有一個櫃台專門給 foreign teams 好評，但馬上就扣回去因為他要我們填一個上面全部寫韓文的單子，似乎是個資收集書以及填要寄放哪些物品到時候比賽用，雖然櫃台的人有講解但還是嚇到。&lt;/p></description></item><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>&lt;h1 id="icpc-world-finals-luxor-世界總決賽紀錄">ICPC World Finals @Luxor 世界總決賽紀錄&lt;/h1>
 &lt;p>部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。&lt;br>
 如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。&lt;/p>
 &lt;hr>
