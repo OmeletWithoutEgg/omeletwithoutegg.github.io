@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 22 Nov 2024 19:34:43 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC Korea Regional 2024</title><link>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</link><pubDate>Fri, 22 Nov 2024 19:34:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</guid><description>&lt;h1 id="icpc-首爾站-2024-遊記">ICPC 首爾站 2024 遊記&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 29 Nov 2024 23:52:40 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>第四學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</link><pubDate>Fri, 29 Nov 2024 23:52:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</guid><description>&lt;h1 id="fourth-semester">Fourth semester&lt;/h1>
+&lt;p>拖到了大四上快結束才寫，基本上是看著課表回憶一下大概而已。&lt;br>
+這學期的成績看起來不是很好看。&lt;/p>
+&lt;h2 id="桌球初級">桌球初級&lt;/h2>
+&lt;p>可以說是蠻輕鬆的課，老師會從看起來真的很基本的握拍開始教起，然後發球、回球等等，最後面會用餵球的方式讓我們試著左推右攻。&lt;br>
+老師讓全班的人每四個人分一組，每節課就是先集合起來講解動作之後，四個人回到同一桌輪流互相練習。我們這一桌有一個日本人，不過剛好也有一位日文系的同學，感覺有點形成他們兩位女生的小泡泡（？）&lt;/p>
+&lt;p>因為小學的時候就有打過一點點桌球（超級一點點），所以至少發球跟握拍還是會的。從考試成績看起來看似我在這組的實力還算不錯，但考的東西應該算是非常簡單，而且後面有一些課的練習是會讓贏家輪換到別桌去，也遇到很多很厲害的同學 (a.k.a. 他們在炸魚）。&lt;/p>
+&lt;p>A+ 率是 76.92%，非常高，我也拿了 A+。後半學期的考試我個人覺得隊友的餵球影響會很重，所以如果自己真的真的完全沒有基礎的話最好找厲害一點的隊友餵球。&lt;/p>
+&lt;h2 id="語言的邏輯分析">語言的邏輯分析&lt;/h2>
+&lt;p>因為之前上過探索語言覺得語言很有趣就想說來聽聽看，第一堂課就丟給我們語奧那種題目試著做（老師稱作「語言遊戲」）。因為是第一堂課所以難度非常簡單，我就修下去這門課了。&lt;/p>
+&lt;p>不過其實是上了賊船。每個禮拜都會有作業，形式一樣是語奧的題目，但是要順便交上合理的解題過程，而且感覺要好好引用上課教的一些語言 feature，這個作業寫到後面越來越不會寫，而且在講解的部份我也聽不太懂為什麼某些回答是合理的理由。總之就是太菜了。&lt;/p>
+&lt;p>但真正困難的其實是期末報告。期末我們要分組製作一個「語言遊戲」，但在分組的時候所有積極的人迅速的就找好組了，所以我就變成跟剩下來的人想辦法湊成一組。然後大家都不太知道能做什麼以及到報告前一週都沒什麼進度，想辦法用 chatgpt 生出一個題目來但報告也報得蠻爛的，醜到不能再醜了。最後竟然還可以拿 A-，比預期好了。&lt;/p>
+&lt;h2 id="存活分析">存活分析&lt;/h2>
+&lt;p>跟著 zihongxiao 去修的一個數學系開的課。這門課的主軸是 survivor function，$S(t)$ 代表某個實體能「存活」到時間 $t$ 的機率。整門課程會用不同的方法去想辦法從 experimental results 去 inference 出原本真正的母體的 survivor function 等統計資料，並證明誤差在抽樣夠多時會趨近於 $0$ 或是用什麼速度趨近於 $0$，也就是在證明一些 estimator 的性質。&lt;/p>
+&lt;p>課程進行到途中會講到測度公理的機率論、stochastic process、martingale，但跟課中提的其他定理差不多，定義或是一些結論大概帶過去之後就會比較直覺的使用這些物件。例如在 martingale 的 filtration 那邊，雖然講了定義但我們超少用到，用到的時候感覺也是馬虎帶過去。&lt;/p>
+&lt;p>作業就是把玩定義跟直接開一些定理去證一些事情，最後面會讓我們完成上課沒有證明完的一些 lemma。老實說，我覺得這些統計的定理越到後半學期都越來越醜，但可能學問就得是這樣子吧。雖然我覺得我這門課有盡力，但拿這個 A+ 感覺還是有點不踏實。&lt;/p>
+&lt;h2 id="數位系統與實驗">數位系統與實驗&lt;/h2>
+&lt;p>講的主題大概是布林代數，怎麼用簡單的 logic gate 去拼出一個 boolean expression，例如 minterm expansion、kmap 等，大多是用來手算的方法。後半學期會講 flip-flop，即正反器，以及類似 finite state machine 的應用。&lt;/p>
+&lt;p>有四次手寫作業跟兩次 lab 作業，lab 作業是讓我們寫一些 verilog 並計算一些能優化的 latency 之類的部份。期中考跟期末考印象中都可以帶大抄，分別考了 98 跟 90，最後是拿了 A+。&lt;/p></description></item><item><title>ICPC Korea Regional 2024</title><link>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</link><pubDate>Fri, 22 Nov 2024 19:34:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</guid><description>&lt;h1 id="icpc-首爾站-2024-遊記">ICPC 首爾站 2024 遊記&lt;/h1>
 &lt;p>以下用 C 跟 R 簡稱我的隊友。Day 2 正式賽會有分隔線，怕暴雷自己小心。&lt;/p>
 &lt;h2 id="day--2">Day -2&lt;/h2>
 &lt;p>飆趕國文作業，寫完之後倒頭大睡。&lt;/p>
