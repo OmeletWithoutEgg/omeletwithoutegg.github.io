@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/math/</link><description>Recent content in Math on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 21 Oct 2024 21:17:34 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>Zobrist Hash / XOR hash</title><link>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</link><pubDate>Mon, 21 Oct 2024 21:17:34 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</guid><description>&lt;h1 id="zobrist-hash--xor-hash">Zobrist Hash / XOR hash&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/math/</link><description>Recent content in Math on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 10 Dec 2024 21:29:00 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>min 25 模板使用說明</title><link>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</link><pubDate>Tue, 10 Dec 2024 21:29:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</guid><description>&lt;h1 id="min-25-模板使用說明">min 25 模板使用說明&lt;/h1>
+&lt;p>前幾個月（WF 之前）忘記為什麼就想去學 min25 篩，然後就把他模版化放進 codebook 裡了。我是看 &lt;a href="https://oi-wiki.org/math/number-theory/min-25/">https://oi-wiki.org/math/number-theory/min-25/&lt;/a> 學的，不過本文不會提到太多細節。&lt;/p>
+&lt;p>先貼上 code：&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> U, &lt;span style="color:#66d9ef">typename&lt;/span> V&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">struct&lt;/span> &lt;span style="color:#a6e22e">min25&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> lld n; &lt;span style="color:#66d9ef">int&lt;/span> sq;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>U&lt;span style="color:#f92672">&amp;gt;&lt;/span> Ss, Sl, Spre; vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>V&lt;span style="color:#f92672">&amp;gt;&lt;/span> Rs, Rl;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Sieve sv; vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>lld&lt;span style="color:#f92672">&amp;gt;&lt;/span> quo;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> U &lt;span style="color:#f92672">&amp;amp;&lt;/span>S(lld d) { &lt;span style="color:#66d9ef">return&lt;/span> d &lt;span style="color:#f92672">&amp;lt;&lt;/span> sq &lt;span style="color:#f92672">?&lt;/span> Ss[d] &lt;span style="color:#f92672">:&lt;/span> Sl[n &lt;span style="color:#f92672">/&lt;/span> d]; }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> V &lt;span style="color:#f92672">&amp;amp;&lt;/span>R(lld d) { &lt;span style="color:#66d9ef">return&lt;/span> d &lt;span style="color:#f92672">&amp;lt;&lt;/span> sq &lt;span style="color:#f92672">?&lt;/span> Rs[d] &lt;span style="color:#f92672">:&lt;/span> Rl[n &lt;span style="color:#f92672">/&lt;/span> d]; }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> min25(lld n_) &lt;span style="color:#f92672">:&lt;/span> n(n_), sq((&lt;span style="color:#66d9ef">int&lt;/span>)sqrt(n) &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Ss(sq), Sl(sq), Spre(sq), Rs(sq), Rl(sq), sv(sq) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>, Q; i &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; i &lt;span style="color:#f92672">=&lt;/span> n &lt;span style="color:#f92672">/&lt;/span> Q &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> quo.push_back(Q &lt;span style="color:#f92672">=&lt;/span> n &lt;span style="color:#f92672">/&lt;/span> i);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> U &lt;span style="color:#a6e22e">F_prime&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>f, &lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>F) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld p : sv.primes) Spre[p] &lt;span style="color:#f92672">=&lt;/span> f(p);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> sq; i&lt;span style="color:#f92672">++&lt;/span>) Spre[i] &lt;span style="color:#f92672">+=&lt;/span> Spre[i &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) S(i) &lt;span style="color:#f92672">=&lt;/span> F(i) &lt;span style="color:#f92672">-&lt;/span> F(&lt;span style="color:#ae81ff">1&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld p : sv.primes)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (p &lt;span style="color:#f92672">*&lt;/span> p &lt;span style="color:#f92672">&amp;gt;&lt;/span> i) &lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> S(i) &lt;span style="color:#f92672">-=&lt;/span> f(p) &lt;span style="color:#f92672">*&lt;/span> (S(i &lt;span style="color:#f92672">/&lt;/span> p) &lt;span style="color:#f92672">-&lt;/span> Spre[p &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> S(n);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#75715e">// F_prime: \sum _ {p is prime, p &amp;lt;= n} f(p)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> V &lt;span style="color:#a6e22e">F_comp&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>g, &lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>h) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) R(i) &lt;span style="color:#f92672">=&lt;/span> h(S(i));
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld p : sv.primes &lt;span style="color:#f92672">|&lt;/span> views&lt;span style="color:#f92672">::&lt;/span>reverse)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (p &lt;span style="color:#f92672">*&lt;/span> p &lt;span style="color:#f92672">&amp;gt;&lt;/span> i) &lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> lld prod &lt;span style="color:#f92672">=&lt;/span> p;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">int&lt;/span> c &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; prod &lt;span style="color:#f92672">*&lt;/span> p &lt;span style="color:#f92672">&amp;lt;=&lt;/span> i; &lt;span style="color:#f92672">++&lt;/span>c, prod &lt;span style="color:#f92672">*=&lt;/span> p) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> R(i) &lt;span style="color:#f92672">+=&lt;/span> g(p, c) &lt;span style="color:#f92672">*&lt;/span> (R(i &lt;span style="color:#f92672">/&lt;/span> prod) &lt;span style="color:#f92672">-&lt;/span> h(Spre[p]));
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> R(i) &lt;span style="color:#f92672">+=&lt;/span> g(p, c &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> R(n);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#75715e">// F_comp: \sum _ {2 &amp;lt;= i &amp;lt;= n} g(i)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}; &lt;span style="color:#75715e">// O(n^{3/4} / log n)
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果去看我們 &lt;a href="https://github.com/1011cychien/R-12-forked-codebook/blob/master/codes/Math/Min25Sieve.cpp">codebook 的連結&lt;/a> 會看到還有一串中文的註解，以下大概就是仔細的講那一串中文的註解然後隨機補充一些東西。&lt;/p></description></item><item><title>Zobrist Hash / XOR hash</title><link>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</link><pubDate>Mon, 21 Oct 2024 21:17:34 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</guid><description>&lt;h1 id="zobrist-hash--xor-hash">Zobrist Hash / XOR hash&lt;/h1>
 &lt;p>非常簡單的一篇文章，只是看到沒有什麼中文材料就來科普（？）一下。&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>Zobrist hash 的用處是快速比較集合之間是否一樣。先令 $U$ 是我們所關心的物件的集合，對於每個物件 $u \in U$，我們都指定一個隨機的 $w$-bit 的二進位數字 $h(u)$ 給他，接著我們在比較兩個集合 $S, T \subseteq U$ 是否一樣的時候，我們直接當作比較 $\bigoplus _ {u \in S} h(u)$ 和 $\bigoplus _ {u \in T} h(u)$ 是否一樣，這樣只要 $w$ 夠大的話就有夠高的機率正確了。&lt;br>
