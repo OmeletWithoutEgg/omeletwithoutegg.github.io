@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 10 Dec 2024 21:29:00 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>min 25 模板使用說明</title><link>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</link><pubDate>Tue, 10 Dec 2024 21:29:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</guid><description>&lt;h1 id="min-25-模板使用說明">min 25 模板使用說明&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 14 Dec 2024 00:55:34 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>更新 Resource 和 About</title><link>https://omeletwithoutegg.github.io/2024/12/14/update-notification-2024/</link><pubDate>Sat, 14 Dec 2024 00:55:34 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/14/update-notification-2024/</guid><description>&lt;p>此文只是宣告我有把 resource 和 about 大更新了一遍，不過部落格大概還是會繼續長灰塵。&lt;/p></description></item><item><title>min 25 模板使用說明</title><link>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</link><pubDate>Tue, 10 Dec 2024 21:29:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</guid><description>&lt;h1 id="min-25-模板使用說明">min 25 模板使用說明&lt;/h1>
 &lt;p>前幾個月（WF 之前）忘記為什麼就想去學 min25 篩，然後就把他模版化放進 codebook 裡了。我是看 &lt;a href="https://oi-wiki.org/math/number-theory/min-25/">https://oi-wiki.org/math/number-theory/min-25/&lt;/a> 學的，不過本文不會提到太多細節。&lt;/p>
 &lt;p>先貼上 code：&lt;/p>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -1098,39 +1098,68 @@ registers實在有點長，當然只能先去看dungeons&lt;br>
 總之整理了一下寫寫倍增法就有了時間 $(n+q)\log^2C$ 空間 $n\log^2C$ 的解，不過 $n=400000$ 開不下，開 $n=50000$ 丟上去六十幾分覺得還不錯&lt;br>
 後來測了一下發現記憶體少一點就可以開得下了，所以嘗試壓常(?)原本想說用分根號、立方根的，後來發現可以開到 $10n\log C$ 的記憶體就想說可以一次跳 $(10^7)^{\frac{1}{10}}$ 倍，然後一直亂改改就 AC 了??&lt;br>
 這應該是第一次在賽中遇到二的冪次分層，實在覺得出出這些題目的人都很厲害&lt;br>
-比賽最後在努力修改 registers 的情況下結束，可惜沒有再撈到分數&lt;/p></description></item><item><title>Resources</title><link>https://omeletwithoutegg.github.io/resources/</link><pubDate>Sun, 14 Feb 2021 20:15:17 +0800</pubDate><guid>https://omeletwithoutegg.github.io/resources/</guid><description>&lt;p>這裡是放各種友情連結(X)&lt;/p>
-&lt;h1 id="其他人的-blog">其他人的 blog&lt;/h1>
+比賽最後在努力修改 registers 的情況下結束，可惜沒有再撈到分數&lt;/p></description></item><item><title>Resources</title><link>https://omeletwithoutegg.github.io/resources/</link><pubDate>Sun, 14 Feb 2021 20:15:17 +0800</pubDate><guid>https://omeletwithoutegg.github.io/resources/</guid><description>&lt;h1 id="外部資源">外部資源&lt;/h1>
+&lt;h2 id="一些其他人的-blog">一些其他人的 blog&lt;/h2>
+&lt;p>友情（？）連結&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.wiwiho.me/">https://www.wiwiho.me/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.jikuai.codes/">https://www.jikuai.codes/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://fhvirus.github.io/">https://fhvirus.github.io/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://casperwang.pages.dev/">https://casperwang.pages.dev/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://erdone.github.io/">https://erdone.github.io/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://emanlaicepsa.github.io/">https://emanlaicepsa.github.io/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://simba-fs.github.io/">https://simba-fs.github.io/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.tommydong.live/">https://blog.tommydong.live/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.jikuai.dev/">https://www.jikuai.dev/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.simbafs.cc/">https://blog.simbafs.cc/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://littlecube8152.github.io/">https://littlecube8152.github.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://yunxiurz.github.io/">https://yunxiurz.github.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://forever-codingnoob.github.io/">https://forever-codingnoob.github.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tmt514.github.io/">https://tmt514.github.io/&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://tmt514.github.io/algorithm-analysis/">https://tmt514.github.io/algorithm-analysis/&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h1 id="年久失修的-blog">年久失修（？）的 blog&lt;/h1>
+&lt;/li>
+&lt;li>&lt;a href="https://baluteshih.blogspot.com/">https://baluteshih.blogspot.com/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="年久失修的-blog">年久失修（？）的 blog&lt;/h2>
 &lt;p>其實我猜我的 blog 很快也要年久失修ㄌ&lt;/p>
+&lt;!-- 註：目前分類依據姑且先依照更新本文時一年內有沒有新文章 -->
 &lt;ul>
 &lt;li>&lt;a href="https://brian.su/">https://brian.su/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://codingsimplifylife.blogspot.com/">https://codingsimplifylife.blogspot.com/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://sunmoon-template.blogspot.com/">http://sunmoon-template.blogspot.com/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://cbdcoding.blogspot.com/">http://cbdcoding.blogspot.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sunmoon-template.blogspot.com/">https://sunmoon-template.blogspot.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cbdcoding.blogspot.com/">https://cbdcoding.blogspot.com/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://oi.ototot.tw/">https://oi.ototot.tw/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://tmt514.github.io/blog">https://tmt514.github.io/blog&lt;/a>&lt;/li>
-&lt;li>&lt;a href="http://baluteshih.blogspot.com/">http://baluteshih.blogspot.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.nerde.pw/">https://blog.nerde.pw/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sorahisa.github.io/">https://sorahisa.github.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://casperwang.pages.dev/">https://casperwang.pages.dev/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fhvirus.github.io/">https://fhvirus.github.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://erdone.github.io/">https://erdone.github.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://emanlaicepsa.github.io/">https://emanlaicepsa.github.io/&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h1 id="for-競程的工具">for 競程的工具&lt;/h1>
+&lt;!-- - https://codingsimplifylife.blogspot.com/ -->
+&lt;!-- - https://blog.tommydong.live/ -->
+&lt;h2 id="一些隨機的外國資料">一些隨機的外國資料&lt;/h2>
 &lt;ul>
+&lt;li>&lt;a href="https://shanlunjiajian.github.io/">https://shanlunjiajian.github.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhoukangyang.blog.uoj.ac/">https://zhoukangyang.blog.uoj.ac/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/enkerewpo/OI-Public-Library/tree/master/IOI%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%80%99%E9%80%89%E9%98%9F%E8%AE%BA%E6%96%87">https://github.com/enkerewpo/OI-Public-Library/tree/master/IOI%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%80%99%E9%80%89%E9%98%9F%E8%AE%BA%E6%96%87&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://maspypy.com/">https://maspypy.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://noshi91.hatenablog.com/">https://noshi91.hatenablog.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.shift.moe/">https://blog.shift.moe/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="一些網站">一些網站&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://guide.ntucpc.org/topics/">NTUCPC Guide&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://oichecklist.pythonanywhere.com/">OI checklist&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://codeforces.com/">CF&lt;/a>, &lt;a href="https://tioj.ck.tp.edu.tw/">TIOJ&lt;/a>, &lt;a href="https://atcoder.jp/">AtCoder&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://usaco.guide/">USACO Guide&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://domen111.github.io/Draw-Graph/">Draw Graph&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://oiwiki.org/">OI wiki&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://ucup.ac/">Universal Cup&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://judge.yosupo.jp/">Library Checker&lt;/a>&lt;/li>
-&lt;li>&lt;del>&lt;a href="https://www.vim.org/download.php">vim&lt;/a>、&lt;a href="https://github.com/junegunn/vim-plug">vim-plug&lt;/a>&lt;/del>&lt;/li>
 &lt;/ul>
-&lt;p>蹭熱度蹭起來啦。雖然不知道這樣算不算蹭。&lt;/p></description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>&lt;p>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。&lt;br>
+&lt;h2 id="一些工具">一些工具&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://domen111.github.io/Draw-Graph/">Draw Graph&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://yuantiji.ac/en/">is-my-problem-new&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://icpcapac.solved.ac/2025">Asia Pacific site score table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.twpca.org/">TWPCA&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sorahisa-rank.github.io/">區域賽記分板紀錄&lt;/a>&lt;/li>
+&lt;li>&lt;del>&lt;a href="https://www.vim.org/download.php">vim&lt;/a>、&lt;a href="https://github.com/junegunn/vim-plug">vim-plug&lt;/a>&lt;/del>&lt;/li>
+&lt;/ul></description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>&lt;p>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。&lt;br>
 主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。&lt;/p>
 &lt;h1 id="fast-linear-recurrence">Fast Linear Recurrence&lt;/h1>
 &lt;p>首先先來介紹如何快速求線性遞迴。&lt;/p>
@@ -8195,16 +8224,33 @@ $1 \leq n,q \leq 10^5$&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>註: 寫題解的時候一直TLE，後來發現是我的edit宣告成ll卻沒回傳東西orz&amp;hellip;&lt;br>
-似乎在TIOJ上宣告成非&lt;code>void&lt;/code>的函數而不回傳值有機會出問題&amp;hellip;&lt;/p></description></item><item><title>about</title><link>https://omeletwithoutegg.github.io/about/</link><pubDate>Tue, 03 Dec 2019 16:23:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/about/</guid><description>&lt;h1 id="在刷tioj的時候都查不到解所以我想來當那個查的到的解">在刷TIOJ的時候都查不到解，所以我想來當那個查的到的解!&lt;/h1>
-&lt;p>&lt;del>希望能進選訓營(*’ｰ’*)&lt;/del>&lt;br>
-&lt;del>全國賽打得好像算好，能夠跳過入營考去選訓了&amp;gt;W&amp;lt;&lt;/del>&lt;br>
-&lt;del>開心&amp;gt;w&amp;lt; 選訓2!第三&lt;/del>&lt;br>
-&lt;del>IOI2020 打好爛，想要重新再來。不過似乎被 &lt;span style="color: red">Enjoy_the_game&lt;/span> 電爆了&lt;/del>&lt;br>
-大家好，我是一塊蛋餅，一塊APIO沒拿過牌不過IOI2021撈到金牌的蛋餅&lt;br>
+似乎在TIOJ上宣告成非&lt;code>void&lt;/code>的函數而不回傳值有機會出問題&amp;hellip;&lt;/p></description></item><item><title>about</title><link>https://omeletwithoutegg.github.io/about/</link><pubDate>Tue, 03 Dec 2019 16:23:16 +0800</pubDate><guid>https://omeletwithoutegg.github.io/about/</guid><description>&lt;!-- # 在刷TIOJ的時候都查不到解，所以我想來當那個查的到的解! -->
+&lt;!-- ~~希望能進選訓營~~ -->
+&lt;!-- ~~全國賽打得好像算好，能夠跳過入營考去選訓了>W&lt;~~ -->
+&lt;!-- ~~開心>w&lt; 選訓2!第三~~ -->
+&lt;!-- ~~IOI2020 打好爛，想要重新再來。不過似乎被 &lt;span style="color: red">Enjoy_the_game&lt;/span> 電爆了~~ -->
+&lt;!-- 大家好，我是一塊蛋餅，一塊APIO沒拿過牌不過IOI2021撈到金牌的蛋餅 -->
+&lt;!-- ![404 QQ](omelet.jpg) -->
+&lt;p>一塊蛋餅 (*’ｰ’*)&lt;br>
+喜歡初音軟軟。初音軟軟是對&lt;a href="https://x.com/sanpati38">三月八日&lt;/a>老師設計的初音未來玩偶的愛稱，或稱 ふわ、fufu。&lt;br>
 
  &lt;img src="omelet.jpg" alt="404 QQ">
 
-&lt;/p></description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description>&lt;p>這是一篇測試用的文章&lt;br>
+&lt;/p>
+&lt;blockquote>
+&lt;p>在刷TIOJ的時候都查不到解，所以我想來當那個查的到的解!&lt;/p>
+&lt;/blockquote>
+&lt;p>部落格的初衷是寫題解，會出現的內容大概包含但不限於競程。&lt;/p>
+&lt;ul>
+&lt;li>IOI 2020 Bronze Medal&lt;/li>
+&lt;li>2020 北市資訊學科能力競賽第一名（500/500）、全國資訊學科能力競賽第三名&lt;/li>
+&lt;li>2020 網際網路程式設計全國大賽決賽第一名&lt;/li>
+&lt;li>IOI 2021 Gold Medal&lt;/li>
+&lt;li>Gold Award (4th place), 2023 ICPC Asia Hue City Regional&lt;/li>
+&lt;li>Bronze Medal (12th place), 2022 ICPC World Finals Luxor (held in Apr. 2024)&lt;/li>
+&lt;li>6th place, 2024 ICPC Asia Seoul Regional&lt;/li>
+&lt;/ul>
+&lt;p>以上是一些感覺不錯的頭銜，雖然感覺都在提當年勇。&lt;/p></description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description>&lt;p>這是一篇測試用的文章&lt;br>
 A quick brown fox jumps over the lazy dog.&lt;/p>
 &lt;blockquote>
 &lt;p>引用文字&lt;/p>
