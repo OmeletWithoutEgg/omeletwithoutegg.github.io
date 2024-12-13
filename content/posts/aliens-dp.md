@@ -171,7 +171,7 @@ $$
 - <https://zh.wikipedia.org/zh-tw/%E5%B7%AE%E5%88%86>
 - <https://twifor.github.io/2021/01/16/%E6%B5%85%E8%B0%88wqs%E4%BA%8C%E5%88%86/>
 - <https://taodaling.github.io/blog/2020/07/31/WQS%E4%BA%8C%E5%88%86/>
-- <http://www.doc88.com/p-949564862405.html>
+- <https://www.doc88.com/p-949564862405.html>
 
 ## 加註
 本來這篇文章想說會短短的，但想說要好好證明一些事情結果就不小心放太多又臭又長的證明了，捨不得刪掉。而且因為懶惰所以引入好多符號，然後正負號選擇也讓有些定理的敘述變得非常不優美，可惜了。
