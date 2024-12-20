@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "蛋餅的競程隨筆"
 theme = "cactus"
 copyright = "Omelet" # cactus will use title if copyright is not set
+disablePathToLower = true
 
 [services]
   [services.disqus]
