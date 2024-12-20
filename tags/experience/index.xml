@@ -278,7 +278,7 @@ T分數其實不太記得了，只記得化學跟生物應該都蠻低的，有�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>利用 C++17 的 fold expression 可以讓 code 變得超級短。 &lt;code>&amp;quot;\e[1;32m&amp;quot;&lt;/code> 是代表綠色的代碼，可能在 windows 上不能用。當然，GDB 等等也是一個選擇，自己習慣最重要。&lt;/p></description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
+&lt;/div>&lt;p>利用 C++17 的 fold expression 可以讓 code 變得超級短。 &lt;code>&amp;quot;\e[1;32m&amp;quot;&lt;/code> 是代表綠色的代碼，可能在 windows 上不能用。當然，GDB 等等也是一個選擇，自己習慣最重要。&lt;/p></description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
 &lt;p>只是想打一下IOI的心得而已&lt;br>
 可能還是流水帳請多多包含(?)&lt;/p>
 &lt;h2 id="before">Before&lt;/h2>
@@ -340,7 +340,7 @@ registers實在有點長，當然只能先去看dungeons&lt;br>
 總之整理了一下寫寫倍增法就有了時間 $(n+q)\log^2C$ 空間 $n\log^2C$ 的解，不過 $n=400000$ 開不下，開 $n=50000$ 丟上去六十幾分覺得還不錯&lt;br>
 後來測了一下發現記憶體少一點就可以開得下了，所以嘗試壓常(?)原本想說用分根號、立方根的，後來發現可以開到 $10n\log C$ 的記憶體就想說可以一次跳 $(10^7)^{\frac{1}{10}}$ 倍，然後一直亂改改就 AC 了??&lt;br>
 這應該是第一次在賽中遇到二的冪次分層，實在覺得出出這些題目的人都很厲害&lt;br>
-比賽最後在努力修改 registers 的情況下結束，可惜沒有再撈到分數&lt;/p></description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/ioicamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/ioicamp-2021/</guid><description>&lt;h1 id="ioic-2021">IOIC 2021&lt;/h1>
+比賽最後在努力修改 registers 的情況下結束，可惜沒有再撈到分數&lt;/p></description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</guid><description>&lt;h1 id="ioic-2021">IOIC 2021&lt;/h1>
 &lt;p>去年就來過一次了，今年再次造訪這困難的營隊。&lt;br>
 其實幾乎沒有什麼特別不一樣的地方，不過我想說還是寫個短短的紀錄。&lt;/p>
 &lt;h1 id="吃的東西">吃的東西&lt;/h1>
@@ -469,7 +469,7 @@ casper說看懂code就解完了（？）不過他沒辦法編譯所以也不知�
 &lt;p>最後終於走對路，找到github上面一個比較新的repo是把.ani跟.cur轉成linux的x-cursor檔案&lt;br>
 真是要感謝他們www&lt;/p>
 &lt;p>話說我發現其實可以直接把檔案放到&lt;a href="https://github.com/OmeletWithoutEgg/miku-cursor-theme">github&lt;/a>上面，這樣也可以推廣或是找人來修改(X&lt;br>
-裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ，所以希望放到github上之後有人可以把其他那些icon改成統一的風格owo&lt;/p></description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-ioi/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-ioi/</guid><description>&lt;p>好久又沒有發文了&lt;br>
+裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ，所以希望放到github上之後有人可以把其他那些icon改成統一的風格owo&lt;/p></description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>&lt;p>好久又沒有發文了&lt;br>
 來講講上一次發文之後我都在做什麼好了&lt;/p>
 &lt;h2 id="before-ioi">Before IOI&lt;/h2>
 &lt;p>首先在8/17開始所謂的賽前集訓&lt;br>
@@ -526,7 +526,7 @@ Esc離手指超近而且方向鍵又被拔掉超爽的XDDDD&lt;br>
 &lt;p>
  &lt;img src="https://omeletwithoutegg.github.io/images/after-IOI/duckyone.jpg" alt="Ducky One 2 Mini">
 
-&lt;/p></description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/toi-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/toi-2/</guid><description>&lt;h1 id="二階奇幻之旅">二階奇幻之旅&lt;/h1>
+&lt;/p></description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</guid><description>&lt;h1 id="二階奇幻之旅">二階奇幻之旅&lt;/h1>
 &lt;p>原本一段剛好和一階撞到，可以免考，但是因為疫情的緣故又錯過了&lt;br>
 不過在我們從一階回來之後傳出師大那邊有確診的消息，而且還跟我們用過同一間教室(?)&lt;br>
 所以我們就剛好利用防疫公假得到免考的資格，嘻嘻&lt;/p>
@@ -579,7 +579,7 @@ pC沒有拿滿很可惜，pD也是和大家一樣沒想法不過可惜我沒去�
 &lt;h2 id="接下來">接下來?&lt;/h2>
 &lt;p>因為我在學校嘗試待了一個禮拜之後發現真的待不太下去(這就是奧林匹亞回歸症候群嗎&amp;hellip;)&lt;br>
 於是成功的用準備資奧的理由請了假，罪惡感爆棚呢XD&lt;br>
-現在該做的事可能就是編講義、寫題解吧，希望自己不要頹廢OvO&lt;/p></description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/toi-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/toi-1/</guid><description>&lt;h1 id="選訓生活">選訓生活(?)&lt;/h1>
+現在該做的事可能就是編講義、寫題解吧，希望自己不要頹廢OvO&lt;/p></description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>&lt;h1 id="選訓生活">選訓生活(?)&lt;/h1>
 &lt;p>最近部落格停更好久喔&amp;gt;&amp;lt;&lt;br>
 不知道有沒有沒有追蹤我facebook的人在看我的部落格，嘻嘻&lt;/p>
 &lt;h2 id="入營考當天">入營考當天?&lt;/h2>
@@ -654,7 +654,7 @@ joy一直推薦西西里雞腿堡加蛋加起司，不過我覺得沒有傳言�
 待在學校真的好可怕，所謂奧林匹亞回歸症候群就是這樣嗎QQ&lt;br>
 英文國文化學物理一直打瞌睡，然後我也不敢(或懶得)要之前沒拿的講義，完美詮釋社交障礙&lt;br>
 問了一些學長，明天問問看特教組申請推薦的方法和能不能請公假好了&lt;br>
-我要跑去看FF7實況了，TIFA真香&lt;/p></description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/ioicamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/ioicamp-2020/</guid><description>&lt;h1 id="2020-ioic-小記">2020 IOIC 小記&lt;/h1>
+我要跑去看FF7實況了，TIFA真香&lt;/p></description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>&lt;h1 id="2020-ioic-小記">2020 IOIC 小記&lt;/h1>
 &lt;p>五天都11點回家 好累喔&lt;br>
 不過聽到很多神奇技巧和神奇題目(?)&lt;/p>
 &lt;h2 id="day-1">Day 1&lt;/h2>

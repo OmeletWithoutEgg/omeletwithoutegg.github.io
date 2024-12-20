@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AtCoder on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/AtCoder/</link><description>Recent content in AtCoder on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 26 Oct 2020 19:44:23 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/AtCoder/index.xml" rel="self" type="application/rss+xml"/><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</guid><description>&lt;h1 id="atcoder-regular-contest-106">AtCoder Regular Contest 106&lt;/h1>
+&lt;p>最近一直被ZCK推坑，vir了好幾場ARC&lt;br>
+然後打完AGC才發現自己rating太低unrated，爛死XD&lt;br>
+結果打完這場還是不到能夠rated的標準1200 QQ&lt;br>
+然後想說寫一下題解好了 :P&lt;/p>
+&lt;h2 id="a-106">A. 106&lt;/h2>
+&lt;h3 id="statement">Statement&lt;/h3>
+&lt;p>給你$N$，問你有沒有正整數$A,B$使得$3^A+5^B = N$，$N \leq 10^{18}$&lt;/p>
+&lt;h3 id="solution">Solution&lt;/h3>
+&lt;p>因為$A,B$最多都是$\log$量級的所以亂枚舉就好了&lt;br>
+基本上也不太會溢位&lt;br>
+&lt;a href="https://atcoder.jp/contests/arc106/submissions/17615332">AC CODE&lt;/a>&lt;/p>
+&lt;h2 id="b-values">B. Values&lt;/h2>
+&lt;h3 id="statement-1">Statement&lt;/h3>
+&lt;p>給你一張無向圖，還有每個點一開始寫的數字$a_i$&lt;br>
+每次可以把兩個相鄰的點$x,y$一個數字+1一個數字-1&lt;br>
+問你是否能讓最後第$i$個點寫的數字是$b_i$&lt;br>
+$1 \leq N \leq 2 \times 10^5$&lt;br>
+$0 \leq M \leq 2 \times 10^5$&lt;br>
+$-10^9 \leq a_i, b_i \leq 10^9$&lt;/p>
+&lt;h3 id="solution-1">Solution&lt;/h3>
+&lt;p>只要一個連通塊裡$a_i$的總和和$b_i$的總和相同就做的到&lt;br>
+於是用 dsu 維護總和&lt;br>
+&lt;a href="https://atcoder.jp/contests/arc106/submissions/17617055">AC CODE&lt;/a>&lt;/p>
+&lt;h2 id="c-solutions">C. Solutions&lt;/h2>
+&lt;p>一開始想說這題題敘很長先跑去做 pD&lt;br>
+結果是水題，不過還是WA慘QQ&lt;/p>
+&lt;h3 id="statement-2">Statement&lt;/h3>
+&lt;p>「給你$N$個線段，請選出最多條兩兩完全不相交的線段。。」&lt;br>
+現在有兩種演算法$A,B$分別嘗試解決上述問題：&lt;/p>
+&lt;ul>
+&lt;li>$A$演算法：按照右界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小&lt;/li>
+&lt;li>$B$演算法：按照左界由小到大排序，並按照順序考慮線段。如果現在考慮的線段不會和當前的解的任何一條相交，則將其加入當前的解中。輸出最後的解的大小&lt;/li>
+&lt;/ul>
+&lt;p>請構造一組輸出使得「$A$輸出的答案 - $B$輸出的答案 = $M$」&lt;br>
+&lt;strong>注意你構造的線段端點必須是不大於$10^9$的正整數，而且全部相異&lt;/strong>&lt;br>
+$1 \leq N \leq 10^5$&lt;br>
+$-N \leq M \leq N$&lt;/p></description></item></channel></rss>

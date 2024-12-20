@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ternary-Search on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/ternary-search/</link><description>Recent content in Ternary-Search on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 30 Dec 2020 12:57:24 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/ternary-search/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/tioj-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/tioj-1597/</guid><description>&lt;h1 id="變動的過路費">變動的過路費&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ternary-Search on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/ternary-search/</link><description>Recent content in Ternary-Search on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 30 Dec 2020 12:57:24 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/ternary-search/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</guid><description>&lt;h1 id="變動的過路費">變動的過路費&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1597">https://tioj.ck.tp.edu.tw/problems/1597&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給你一張有向圖，每個邊會有隨時間變動的權重，並且邊的權重對時間是一個線性函數。&lt;br>
@@ -194,7 +194,7 @@
 現在應該做的事，大概就是在寒假左右把專題弄一個段落，然後把選訓好好走完吧。&lt;br>
 也許今年還是有機會國手，但是我認真覺得不可能贏balbit跟ZCK，他們實在太強了&lt;br>
 而且我因為專題被催根本沒辦法好好練習QQ&lt;br>
-不過我的目標也不是贏過他們，希望至少有機會明年拿個更好的牌，為此我得先做完專題給自己一個好的練習環境（&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/tioj-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/tioj-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
+不過我的目標也不是贏過他們，希望至少有機會明年拿個更好的牌，為此我得先做完專題給自己一個好的練習環境（&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136">https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br>

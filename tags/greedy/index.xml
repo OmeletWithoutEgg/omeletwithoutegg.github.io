@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Greedy on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/greedy/</link><description>Recent content in Greedy on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 20:17:38 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1619/</guid><description>&lt;h1 id="巨大密室問題">巨大密室問題&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Greedy on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/greedy/</link><description>Recent content in Greedy on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 20:17:38 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</guid><description>&lt;h1 id="巨大密室問題">巨大密室問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1619">https://tioj.ck.tp.edu.tw/problems/1619&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有長度 $n$ 的 $P_i$ 和 $O_i$ 兩個正整數序列，請任意排列這兩個序列使得 $\prod _ i (P_i + O_i)$ 盡量大。&lt;/p>
@@ -11,7 +11,7 @@ $$&lt;br>
 = P_i O_j + P_j O_i - P_i O_i - P_j O_j&lt;br>
 = (P_i - P_j) (O_j - O_i)&lt;br>
 $$&lt;br>
-如果沒有排好的話就必定存在 $i &amp;lt; j$ 使得 $O_i &amp;gt; O_j$，又 $P_i \leq P_j$，所以交換之後乘積不會變小。&lt;/p></description></item><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me">Every time you&amp;rsquo;re next to me&lt;/h1>
+如果沒有排好的話就必定存在 $i &amp;lt; j$ 使得 $O_i &amp;gt; O_j$，又 $P_i \leq P_j$，所以交換之後乘積不會變小。&lt;/p></description></item><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me">Every time you&amp;rsquo;re next to me&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1502">https://tioj.ck.tp.edu.tw/problems/1502&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有一個字串 $T$ 和一個 pattern $P$，其中 $P$ 有一些字元是 &lt;code>*&lt;/code>，&lt;code>*&lt;/code> 可以匹配一個或以上的任意字元，且 &lt;code>*&lt;/code> 不會連續出現，請問 $T$ 裡面有沒有一個子字串符合 $P$？&lt;/p>
@@ -244,7 +244,7 @@ $\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{
 考慮固定 $i,b$，那麼$j,a$之間是獨立的，我們可以拆成$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$，而對於每個$A_i$，$\sum_{j} \max(0,B_j-A_i)$是一個經典的問題，可以利用前綴和、後綴和的概念，或是排序（counting sort）+爬行法在線性時間內解決。總複雜度是枚舉所有$i,b$所需的$\mathcal{O}(n^2)$乘上對每個$a$計算$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$所需要的複雜度$\mathcal{O}(n)$，也就是$\mathcal{O}(n^3)$。&lt;/li>
 &lt;/ul>
 &lt;h4 id="code">code&lt;/h4>
-&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
+&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404">https://tioj.ck.tp.edu.tw/problems/1404&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>
@@ -413,7 +413,7 @@ $\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/tioj-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/tioj-1861/</guid><description>&lt;h1 id="蘿莉切割問題">蘿莉切割問題&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</guid><description>&lt;h1 id="蘿莉切割問題">蘿莉切割問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1861">https://tioj.ck.tp.edu.tw/problems/1861&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>請你把一個數字$L$切成$a_1, a_2, \dots, a_n$&lt;br>
@@ -484,7 +484,7 @@ $\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408">https://tioj.ck.tp.edu.tw/problems/1408&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定$n$個時段$[l_i, r_i)$&lt;br>
@@ -664,7 +664,7 @@ $\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/tioj-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/tioj-1441/</guid><description>&lt;h1 id="萬里長城">萬里長城&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</guid><description>&lt;h1 id="萬里長城">萬里長城&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1441">https://tioj.ck.tp.edu.tw/problems/1441&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個序列，找出最長的「長城」子序列&lt;br>
@@ -716,7 +716,7 @@ $\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/tioj-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/tioj-1567/</guid><description>&lt;h1 id="黑色騎士團的飛彈野望">黑色騎士團的飛彈野望&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</guid><description>&lt;h1 id="黑色騎士團的飛彈野望">黑色騎士團的飛彈野望&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1567">https://tioj.ck.tp.edu.tw/problems/1567&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點&lt;br>

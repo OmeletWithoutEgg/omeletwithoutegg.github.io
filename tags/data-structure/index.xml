@@ -15,7 +15,7 @@
 具體來說，會有一些分界線 $z$，&lt;br>
 使得我們可以把 $[l_i, r_i]$ 分成兩部分，一部分完全落在 $[x, z]$ 而另一部分完全落在 $[z+1, y]$。&lt;br>
 注意到 $z = y$ 一定是一個合法的分界線（？）&lt;br>
-可以知道從 $x$ 開始走最遠可以走到的境界一定就是最左邊的分界線（一定不可能走超過最左的分界線，而如果把被完全包含的 $[l_i, r_i]$ 拿掉就會剩下 $l_i, r_i$ 一起遞增的一堆區間，並且每個 $l_i$ 都落在前一個區間裡面）&lt;/p></description></item><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/tioj-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/tioj-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat">好．傳囉！ Nice Boat！&lt;/h1>
+可以知道從 $x$ 開始走最遠可以走到的境界一定就是最左邊的分界線（一定不可能走超過最左的分界線，而如果把被完全包含的 $[l_i, r_i]$ 拿掉就會剩下 $l_i, r_i$ 一起遞增的一堆區間，並且每個 $l_i$ 都落在前一個區間裡面）&lt;/p></description></item><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat">好．傳囉！ Nice Boat！&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個長度 $N$ 的整數序列 $A_i$。&lt;br>
 如果你可以找出一個區間，他的前綴和每個數字都大於等於0，而且他的後綴和的每個數字也都大於等於0，我們就稱他是安全區間，請你找出最長的安全區間長度是多少。&lt;/p>
@@ -149,7 +149,7 @@ $\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{
 &lt;/div>
 &lt;/div>&lt;h2 id="真正累的地方">真正累的地方&lt;/h2>
 &lt;p>因為好奇所以把 &lt;code>/usr/include/c++/11.1.0/ext/pb_ds/&lt;/code> 翻出來看，真的有夠難看懂，到處 include 又有繼承關係，最後還是不知道為什麼會那麼慢QQ&lt;br>
-大概花了我一個小時以上吧？也可能是一個下午。&lt;/p></description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/tioj-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/tioj-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件">Ch2. Section 9. 補魔力的條件&lt;/h1>
+大概花了我一個小時以上吧？也可能是一個下午。&lt;/p></description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件">Ch2. Section 9. 補魔力的條件&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1764">https://tioj.ck.tp.edu.tw/problems/1764&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;ul>
@@ -291,7 +291,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1633</title><link>https://omeletwithoutegg.github.io/2020/05/08/tioj-1633/</link><pubDate>Fri, 08 May 2020 13:43:30 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/08/tioj-1633/</guid><description>&lt;h1 id="序列維護問題">序列維護問題&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1633</title><link>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</link><pubDate>Fri, 08 May 2020 13:43:30 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</guid><description>&lt;h1 id="序列維護問題">序列維護問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1633">https://tioj.ck.tp.edu.tw/problems/1633&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有一個由1到N的數字排成的序列。&lt;br>
@@ -510,7 +510,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/tioj-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/tioj-2140/</guid><description>&lt;h1 id="殿壬愛序列">殿壬愛序列&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</guid><description>&lt;h1 id="殿壬愛序列">殿壬愛序列&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2140">https://tioj.ck.tp.edu.tw/problems/2140&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給你一個長度為$N$的序列$a_1, a_2, \dots, a_N$，並且依序執行$Q$個操作，每個操作可能是&lt;/p>
@@ -545,7 +545,7 @@ $$&lt;/p>
 對每個節點維護val和win，分別表示那個區間打贏的數字以及他贏了多少(?)&lt;br>
 合併的時候假如兩個區間的val一樣，那麼他們的win就會相加&lt;br>
 不同的話就是讓他們打架! win比較多的一方獲勝，但是必須減去對方的win&lt;br>
-詳細請看&lt;code>node operator+&lt;/code>的部分&lt;/p></description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/tioj-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/tioj-1798/</guid><description>&lt;h1 id="can-you-arrive">Can You Arrive?&lt;/h1>
+詳細請看&lt;code>node operator+&lt;/code>的部分&lt;/p></description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>&lt;h1 id="can-you-arrive">Can You Arrive?&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1798">https://tioj.ck.tp.edu.tw/problems/1798&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>地鐵有$N$個站，$M$條軌道，$K$段行駛路線&lt;br>
@@ -809,7 +809,7 @@ $K \leq N \leq 10^6, M = N-1, Q \leq 10^6$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/tioj-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/tioj-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶">殿壬看蝴蝶&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶">殿壬看蝴蝶&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2124">https://tioj.ck.tp.edu.tw/problems/2124&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>太長了，略&lt;/p>
@@ -1259,7 +1259,7 @@ Splay只需要實現查一個節點在中序是第個、查中序第k個節點�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/tioj-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/tioj-1202/</guid><description>&lt;h1 id="重疊的天際線">重疊的天際線&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</guid><description>&lt;h1 id="重疊的天際線">重疊的天際線&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1202">https://tioj.ck.tp.edu.tw/problems/1202&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>地平線上有許多房子，而這些房子在夕陽的照射之下形成有趣的輪廓，我們稱之為天際線(Skyline)。為了方便起見，你可以假設所有的房子都是一個位在2D平面上的矩形，並且有一條邊貼在這個假想2D平面上的X軸。&lt;/p>
@@ -1355,7 +1355,7 @@ $(1, 11, 3, 13, 9, 0, 12, 7, 16, 3, 19, 18, 22, 3, 23, 13, 29, 0)$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/tioj-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/tioj-1168/</guid><description>&lt;h1 id="進階的入門">進階的入門&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</guid><description>&lt;h1 id="進階的入門">進階的入門&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1168">https://tioj.ck.tp.edu.tw/problems/1168&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>你需要實作五個函式：&lt;/p>
@@ -1389,7 +1389,7 @@ $(1, 11, 3, 13, 9, 0, 12, 7, 16, 3, 19, 18, 22, 3, 23, 13, 29, 0)$&lt;/p>
 不過這樣寫的locality很差，似乎會讓常數暴增&lt;/p>
 &lt;p>改成用struct包住之後剩下最後兩筆TLE，試了好久之後才想到 &lt;code>priority_queue&lt;/code> 是用 &lt;code>vector&lt;/code> 實作，動態開的空間顯然會浪費很多常數，不如自己靜態開一個大陣列&lt;br>
 注意到 &lt;code>pop&lt;/code> 操作最多就是呼叫次數的一半，所以 &lt;code>heap&lt;/code> 只要開 5e5 就好了， &lt;code>push&lt;/code> 的時候多出去的可以直接丟掉&lt;br>
-至於 &lt;code>popped&lt;/code> 陣列應該還是要開到 1e6 ，因為被 &lt;code>pop&lt;/code> 的東西有可能編號很大，TIOJ上的測資似乎沒考慮到這個地方所以開 5e5 也能AC&lt;/p></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
+至於 &lt;code>popped&lt;/code> 陣列應該還是要開到 1e6 ，因為被 &lt;code>pop&lt;/code> 的東西有可能編號很大，TIOJ上的測資似乎沒考慮到這個地方所以開 5e5 也能AC&lt;/p></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408">https://tioj.ck.tp.edu.tw/problems/1408&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定$n$個時段$[l_i, r_i)$&lt;br>
@@ -1569,7 +1569,7 @@ $(1, 11, 3, 13, 9, 0, 12, 7, 16, 3, 19, 18, 22, 3, 23, 13, 29, 0)$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1739</title><link>https://omeletwithoutegg.github.io/2019/12/11/tioj-1739/</link><pubDate>Wed, 11 Dec 2019 15:26:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/tioj-1739/</guid><description>&lt;h1 id="apio-08-beads-interactive">[APIO &amp;lsquo;08] Beads [Interactive]&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1739</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</link><pubDate>Wed, 11 Dec 2019 15:26:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</guid><description>&lt;h1 id="apio-08-beads-interactive">[APIO &amp;lsquo;08] Beads [Interactive]&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1739">https://tioj.ck.tp.edu.tw/problems/1739&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有一個長度$n$的序列$a$，一開始$a_i = i$&lt;br>
@@ -1758,7 +1758,7 @@ $n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
+&lt;/div></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
 &lt;p>先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br>
 如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p>
 &lt;h2 id="單點修改">單點修改&lt;/h2>
@@ -1803,7 +1803,7 @@ $n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到&lt;br>
-注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1171/</guid><description>&lt;h1 id="我要成為海賊王">我要成為海賊王&lt;/h1>
+注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>&lt;h1 id="我要成為海賊王">我要成為海賊王&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1171">https://tioj.ck.tp.edu.tw/problems/1171&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和&lt;/p>
@@ -1831,7 +1831,7 @@ $$&lt;br>
 把所求寫成&lt;br>
 $$&lt;br>
 \sum _ {b\in B} dis_x + \sum _ {b\in B} dis_b - 2\sum _ {b\in B} dis _ {LCA(b,x)} = |B|dis_x + \sum _ {b\in B}dis_b - 2 \sum _ {b\in B} dis _ {LCA(b,x)}&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2">愛蜜利雅的作業2&lt;/h1>
+$$&lt;/p></description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2">愛蜜利雅的作業2&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1282">https://tioj.ck.tp.edu.tw/problems/1282&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數&lt;br>
