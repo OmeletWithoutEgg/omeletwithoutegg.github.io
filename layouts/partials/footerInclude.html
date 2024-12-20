@@ -4,17 +4,17 @@
 <script>
   $(function () {
     // copy-btn HTML
-    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\" style=\"z-index: 9999\">";
+    let btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\" style=\"z-index: 9999\">";
     btn += '<i class="far fa-clone"></i>';
     btn += '</span>'; 
     // mount it!
     $(".highlight table").before(btn);
-    var clip = new ClipboardJS('.btn-copy', {
+    const clip = new ClipboardJS('.btn-copy', {
       text: function(trigger) {
-          var selector = 'code[data-lang]:not([data-lang=""])';
-          var ret = Array.from(trigger.nextElementSibling.querySelectorAll(selector)).reduce((str,it) => str+it.innerText+'\n','')
-          // console.log(ret);
-          return ret;
+          const selector = 'code[data-lang]:not([data-lang=""]) > span';
+          const elements = Array.from(trigger.nextElementSibling.querySelectorAll(selector));
+          const code = elements.map(e => e.innerText).join('');
+          return code;
       }
     });
     clip.on("success", function(e) {
