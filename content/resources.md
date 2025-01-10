@@ -19,6 +19,7 @@ tags: []
 - https://forever-codingnoob.github.io/
 - https://tmt514.github.io/
     - https://tmt514.github.io/algorithm-analysis/
+- https://sunmoon-template.blogspot.com/
 - https://baluteshih.blogspot.com/
 
 ## 年久失修（？）的 blog
@@ -26,7 +27,6 @@ tags: []
 <!-- 註：目前分類依據姑且先依照更新本文時一年內有沒有新文章 -->
 
 - https://brian.su/
-- https://sunmoon-template.blogspot.com/
 - https://cbdcoding.blogspot.com/
 - https://oi.ototot.tw/
 - https://blog.nerde.pw/
@@ -35,7 +35,8 @@ tags: []
 - https://fhvirus.github.io/
 - https://erdone.github.io/
 - https://emanlaicepsa.github.io/
-<!-- - https://codingsimplifylife.blogspot.com/ -->
+- https://hiiragi4000.blogspot.com/
+- https://codingsimplifylife.blogspot.com/
 <!-- - https://blog.tommydong.live/ -->
 
 ## 一些隨機的外國資料
@@ -43,9 +44,16 @@ tags: []
 - https://shanlunjiajian.github.io/
 - https://zhoukangyang.blog.uoj.ac/
 - https://github.com/enkerewpo/OI-Public-Library/tree/master/IOI%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%80%99%E9%80%89%E9%98%9F%E8%AE%BA%E6%96%87
+- https://ei1333.github.io/
+- https://www.mathenachia.blog/
+- https://rsk0315.github.io/
+    - https://rsk0315.github.io/playground/gutcha.html
 - https://maspypy.com/
 - https://noshi91.hatenablog.com/
 - https://blog.shift.moe/
+- https://zhuanlan.zhihu.com/p/697429479 （有空的話 dump 內容出來）
+
+<!-- 如何打ICPC（详细揭秘） - 知乎，是 https://cphof.org/profile/topcoder:moorhsum 寫的 -->
 
 ## 一些網站
 - [NTUCPC Guide](https://guide.ntucpc.org/topics/)
