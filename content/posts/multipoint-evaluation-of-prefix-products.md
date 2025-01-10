@@ -1,7 +1,7 @@
 ---
 title: "Multipoint Evaluation of Prefix Products"
 date: 2025-01-09T23:10:09+08:00
-draft: true
+draft: false
 mathjax: true
 tags: [tutorial, math, fft, matrix]
 ---
