@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 09 Jan 2025 23:10:09 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣">一次式前綴積的多點求值與推廣&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 19 Jan 2025 23:46:42 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>cmake: Could NOT find libxxx on Archlinux</title><link>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</link><pubDate>Sun, 19 Jan 2025 23:46:42 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</guid><description>&lt;h1 id="在-archlinux-踩到的-cmake-坑">在 Archlinux 踩到的 CMake 坑&lt;/h1>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>最近在修改 TIOJ，但一直沒辦法 native 的在 archlinux 上編譯 &lt;a href="https://github.com/TIOJ-INFOR-Online-Judge/tioj-judge/">tioj-judge&lt;/a>，只能用 docker 跑 ubuntu。於是今天就跳進這個坑裡研究為什麼。&lt;/p>
+&lt;p>節錄部份錯誤訊息&lt;/p>
+&lt;pre tabindex="0">&lt;code>-- The C compiler identification is GNU 14.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+Build Type: Release
+-- Found PkgConfig: /usr/bin/pkg-config (found version &amp;#34;2.3.0&amp;#34;)
+-- Checking for module &amp;#39;libseccomp&amp;#39;
+-- Found libseccomp, version 2.5.5
+CMake Error at /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:233 (message):
+ Could NOT find libseccomp (missing: LIBSECCOMP_LIBRARIES) (found version
+ &amp;#34;2.5.5&amp;#34;)
+Call Stack (most recent call first):
+ /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:603 (_FPHSA_FAILURE_MESSAGE)
+ build/_deps/cjail-src/cmake/Findlibseccomp.cmake:57 (find_package_handle_standard_args)
+ build/_deps/cjail-src/CMakeLists.txt:19 (find_package)
+&lt;/code>&lt;/pre>&lt;p>也就是說，他在抱怨 &lt;code>find_library&lt;/code> 找不到 &lt;code>libseccomp&lt;/code> 這個 library。但是我已經 &lt;code>sudo pacman -S libseccomp&lt;/code> 了，而且 &lt;code>/usr/lib/libseccomp.so&lt;/code> 也好好的存在。&lt;/p></description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣">一次式前綴積的多點求值與推廣&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定序列 $a_1, \dots, a_N$。考慮一次式的序列 $x - a_i$，定義其第 $i$ 個前綴積為&lt;/p>
 &lt;p>$$&lt;br>
