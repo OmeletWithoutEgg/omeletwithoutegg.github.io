@@ -42,6 +42,8 @@ $$
 
 這裡我們也需要用到「多項式除法可以做很快」這個性質，具體來說是跟多項式乘法一樣，兩個 degree 大約是 $k$ 的多項式除法可以做到 $\mathcal{O}(k\log k)$。通常來說 ICPC 的 codebook 都應該要有這個操作。
 
+註：有人會覺得求出 $f_N(x)$ 要用 huffman tree 當作這個平衡的二元樹，但其實這邊我指的平衡二元樹會是簡單每次將葉子序列切兩半得到的跟線段樹一樣的結構，這樣在 DFS 中序當中葉子序列才會是原本的完整順序。
+
 ## Examples
 
 ### Many Factorials
@@ -57,11 +59,11 @@ https://judge.yosupo.jp/problem/many_factorials
 
 前者相當於要算出 $(1 \cdot 2 \cdots (B-1) \cdot B)$、$(B+1 \cdots 2B)$ 等等，這等價於計算多項式 $x(x+1)(x+2)\dots (x+B-1)$ 在 $x=1, B+1, \dots$ 的值。可以花總共 $B\log ^2 B$ 左右的時間算出來之後，前綴積就得到 $(iB)!$ 了。
 
-後者可以 reduce 到本次介紹的問題。$a_i = 0, 1, \dots, B-1$，而一個 $n = B \cdot \lfloor n/B \rfloor + (n\mod B)$ 則是對應到詢問 $((-n)\mod B, n)$，花費 $\mathcal{O}((B+Q)\log^2(B+Q))$ 的時間。
+後者可以 reduce 到本次介紹的問題。$a_i = 0, 1, \dots, B-1$，而一個 $n = B \cdot \lfloor n/B \rfloor + (n\mod B)$ 則是對應到詢問 $(n\mod B, n)$，花費 $\mathcal{O}((B+Q)\log^2(B+Q))$ 的時間。
 
 總共花費 $\mathcal{O}((B+Q)\log^2(B+Q))$ 的時間。
 
-順便補充一個[小知識](https://judge.yosupo.jp/problem/stirling_number_of_the_first_kind)就是 $s_n(x) = x(x-1)\dots (x-(n-1))$ 這個多項式可以在 $\mathcal{O}(n\log n)$ 時間求得，方法是利用分治以及 Polynomial Taylor Shift，在分治時只需要往一邊的分支跑（也可以想成快速冪）。
+順便補充一個[小知識](https://judge.yosupo.jp/problem/stirling_number_of_the_first_kind)就是 $s_n(x) = x(x-1)\dots (x-(n-1))$ 這個多項式（的各次項係數）可以在 $\mathcal{O}(n\log n)$ 時間求得，方法是利用分治以及 Polynomial Taylor Shift，在分治時只需要往一邊的分支跑（也可以想成快速冪）。
 
 ### Many Sum of Binomial Coefficients
 > 有 $Q$ 個詢問 $n_i, m_i$，每次要你回答 $\binom{n_i}{0} + \binom{n_i}{1} + \cdots + \binom{n_i}{m_i} \mod 998244353$ 的值。$Q, n_i, m_i \leq 10^5$
