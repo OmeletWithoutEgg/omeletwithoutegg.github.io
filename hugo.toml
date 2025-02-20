@@ -114,6 +114,9 @@ weight = 6
     [[params.social]]
     name = "email"
     link = "2qbingxuan@gmail.com"  # no need for "mailto:" in the head
+    [[params.social]]
+    name = "rss"
+    link = "/index.xml"
 
 [outputs]
     home = ["HTML", "RSS", "JSON"]
