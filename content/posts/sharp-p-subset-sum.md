@@ -12,7 +12,9 @@ tags: [tutorial, FFT, math, adhoc, template]
 
 https://judge.yosupo.jp/problem/sharp_p_subset_sum
 
-有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t \leq T$，計算有幾個 $I \subseteq \\{0,1,\dots,N-1\\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數
+有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \\{0,1,\dots,N-1\\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數
+
+$N, T \leq 5 \times 10 ^ 5$
 
 ## Solution
 
