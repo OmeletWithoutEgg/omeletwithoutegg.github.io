@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hexo on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/hexo/</link><description>Recent content in Hexo on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 01 Dec 2019 23:25:02 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description>&lt;p>這是一篇測試用的文章&lt;br>
 A quick brown fox jumps over the lazy dog.&lt;/p>
 &lt;blockquote>
-&lt;p>引用文字&lt;/p>
-&lt;/blockquote>
+&lt;p>引用文字&lt;/p>&lt;/blockquote>
 &lt;h1 id="標題">標題&lt;/h1>
 &lt;h2 id="二級標題">二級標題&lt;/h2>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">

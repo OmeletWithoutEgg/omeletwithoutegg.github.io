@@ -1768,8 +1768,7 @@ $n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p>
 &lt;ol>
 &lt;li>將位置$p$的值改為$x$&lt;/li>
 &lt;li>查詢區間$[l,r)$的最大值&lt;/li>
-&lt;/ol>
-&lt;/blockquote>
+&lt;/ol>&lt;/blockquote>
 &lt;h3 id="完美二元樹">完美二元樹&lt;/h3>
 &lt;p>首先假定$n$是2的冪次，思考可能可以簡單一些&lt;br>
 我們一樣用&lt;code>1&lt;/code>當根，並且節點&lt;code>i&lt;/code>的左右子樹會是&lt;code>i*2&lt;/code>和&lt;code>i*2+1&lt;/code>或寫成&lt;code>i&amp;lt;&amp;lt;1, i&amp;lt;&amp;lt;1|1&lt;/code>&lt;/p>

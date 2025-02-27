@@ -4760,13 +4760,11 @@ $$&lt;/p>
 對於&lt;/p>
 &lt;blockquote>
 &lt;p>ababa&lt;br>
-babab&lt;/p>
-&lt;/blockquote>
+babab&lt;/p>&lt;/blockquote>
 &lt;p>來說，&lt;/p>
 &lt;blockquote>
 &lt;p>ababa&lt;br>
-=babab&lt;/p>
-&lt;/blockquote>
+=babab&lt;/p>&lt;/blockquote>
 &lt;p>這是一種最佳擬合的方法，$S$經過向左平移之後$S,T$有四個位置的字元相同&lt;/p>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>naive的$n^2$做法可以AC本題，只要妥當控制常數即可&lt;br>

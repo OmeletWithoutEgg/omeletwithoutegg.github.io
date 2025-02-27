@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/FFT/</link><description>Recent content in FFT on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 09 Jan 2025 23:10:09 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/FFT/index.xml" rel="self" type="application/rss+xml"/><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣">一次式前綴積的多點求值與推廣&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/FFT/</link><description>Recent content in FFT on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 27 Feb 2025 10:27:49 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/FFT/index.xml" rel="self" type="application/rss+xml"/><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum">https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a>&lt;/p>
+&lt;p>有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t \leq T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>從 library-checker 學到的像是冷知識的東西。&lt;/p>
+&lt;p>簡單來說就是要算多項式&lt;br>
+$$&lt;br>
+f(x) = \prod _ {i=0} ^ {N-1} (1 + x^{s_i})&lt;br>
+$$&lt;br>
+的前 $T + 1$ 項係數。&lt;/p>
+&lt;p>看到連乘先想能不能多項式分治，但這邊總度數可能會很大。於是我們改對 $f$ 取 log。&lt;/p>
+&lt;p>$$&lt;br>
+\begin{aligned}&lt;br>
+\log f(x)&lt;br>
+&amp;amp;= \sum _ {i=0} ^ {N-1} \log (1 + x^{s_i}) \\&lt;br>
+&amp;amp;= \sum _ {i=0} ^ {N-1} \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^{s_i})^j \\&lt;br>
+&amp;amp;= \sum _ {i=0} ^ {N-1} \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^{s_i})^j \\&lt;br>
+&amp;amp;= \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^k)^j \\&lt;br>
+&amp;amp;= \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} x^{kj} \\&lt;br>
+&amp;amp;\equiv \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ {\lfloor T / k \rfloor} \frac{(-1)^{j+1}}{j} x^{kj} \pmod {x^{T+1}} \\&lt;br>
+\end{aligned}&lt;br>
+$$&lt;/p></description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣">一次式前綴積的多點求值與推廣&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定序列 $a_1, \dots, a_N$。考慮一次式的序列 $x - a_i$，定義其第 $i$ 個前綴積為&lt;/p>
 &lt;p>$$&lt;br>
@@ -51,13 +73,11 @@ $$&lt;br>
 對於&lt;/p>
 &lt;blockquote>
 &lt;p>ababa&lt;br>
-babab&lt;/p>
-&lt;/blockquote>
+babab&lt;/p>&lt;/blockquote>
 &lt;p>來說，&lt;/p>
 &lt;blockquote>
 &lt;p>ababa&lt;br>
-=babab&lt;/p>
-&lt;/blockquote>
+=babab&lt;/p>&lt;/blockquote>
 &lt;p>這是一種最佳擬合的方法，$S$經過向左平移之後$S,T$有四個位置的字元相同&lt;/p>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>naive的$n^2$做法可以AC本題，只要妥當控制常數即可&lt;br>

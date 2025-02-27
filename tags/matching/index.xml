@@ -27,8 +27,7 @@ KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法
 &lt;h2 id="description">Description&lt;/h2>
 &lt;blockquote>
 &lt;p>給你一張完全二分圖 $K _ {n,n}$ ，每條邊 $e = (x_i,y_j)$ 有邊權 $w _ e$&lt;br>
-請選出 $n$ 條邊 $e_1, e_2, \cdots e_n$ 兩兩不共端點，使得邊權和$\sum\limits _ {i=1}^n w _ {e _ i}$最大&lt;/p>
-&lt;/blockquote>
+請選出 $n$ 條邊 $e_1, e_2, \cdots e_n$ 兩兩不共端點，使得邊權和$\sum\limits _ {i=1}^n w _ {e _ i}$最大&lt;/p>&lt;/blockquote>
 &lt;h2 id="對偶問題">對偶問題&lt;/h2>
 &lt;p>首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。&lt;br>
 在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$&lt;br>
