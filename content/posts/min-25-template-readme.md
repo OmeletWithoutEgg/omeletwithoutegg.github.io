@@ -3,7 +3,7 @@ title: "min 25 模板使用說明"
 date: 2024-12-10T21:29:00+08:00
 draft: false
 mathjax: true
-tags: [math, number-theory, codebook]
+tags: [math, number-theory, template]
 ---
 
 # min 25 模板使用說明
