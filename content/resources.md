@@ -52,6 +52,10 @@ tags: []
 - https://maspypy.com/
 - https://noshi91.hatenablog.com/
 - https://blog.shift.moe/
+- https://www.comp.nus.edu.sg/~stevenha/
+    - https://visualgo.net/en
+    - https://cpbook.net/
+- https://thisisadi.yoga/ICPC/
 - https://zhuanlan.zhihu.com/p/697429479 （有空的話 dump 內容出來）
 
 <!-- 如何打ICPC（详细揭秘） - 知乎，是 https://cphof.org/profile/topcoder:moorhsum 寫的 -->
