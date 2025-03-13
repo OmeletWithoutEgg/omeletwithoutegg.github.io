@@ -8,6 +8,9 @@ tags: [vim, linux]
 # vim ?!
 vim : 古老的編輯器
 
+[新文章]({{< ref "vim-fern.md" >}})
+<!-- https://gohugo.io/content-management/cross-references/ -->
+
 ## 來由
 之前 ZCK 很早就開始一直推坑 vim ，而我大概是在開始瘋狂玩 OJDL 之後才開始使用 vim 的
 因為在遠端 server 上改 code 最直接的方式就是使用遠端主機上的 vim 直接在 ssh 的介面改
