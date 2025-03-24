@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 27 Feb 2025 10:27:49 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 10 Mar 2025 23:21:06 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Vim-fern</title><link>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</link><pubDate>Mon, 10 Mar 2025 23:21:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</guid><description>&lt;h1 id="推銷-vim-fern">推銷 vim-fern&lt;/h1>
+&lt;p>推銷用 &lt;a href="https://github.com/lambdalisue/vim-fern">vim-fern&lt;/a> 取代 NERDTree。我大概是 2023 年初換掉的，現在想說來寫個推銷 post。&lt;br>
+那時候會想要改用 vim-fern 有幾點原因：&lt;/p>
+&lt;ul>
+&lt;li>看到 NERDTree 好像要停止更新了的&lt;a href="https://github.com/preservim/nerdtree/issues/1280">通知&lt;/a>。那時候 NERDTree 非常 inactive。&lt;/li>
+&lt;li>偶爾就會踩到一些怪怪的情況（忘記是什麼了）&lt;/li>
+&lt;li>那時候在玩 nvim，想要在 nvim 和 vim 兩棲，而大部分查到的 nvim 套件 &lt;a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree.lua&lt;/a>、&lt;a href="https://github.com/nvim-neo-tree/neo-tree.nvim">neo-tree.nvim&lt;/a>、&lt;a href="https://github.com/ms-jpq/chadtree">chadtree&lt;/a> 都不能在 vim 使用。&lt;/li>
+&lt;li>原本用 NERDTree 在 startify 的頁面沒有顏色，而在 file explorer 有&lt;/li>
+&lt;/ul>
+&lt;p>換去 vim-fern 之後，覺得有以下幾點優點：&lt;/p>
+&lt;ul>
+&lt;li>好看（？）反正就是看起來蠻現代的，而且搭配 &lt;code>fern-renderer-nerdfont.vim&lt;/code> 一樣可以有 icon，再配合 &lt;code>glyph-palette.vim&lt;/code> 一樣可以有有顏色的 icon。&lt;/li>
+&lt;li>nvim 和 vim 的界面可以一致&lt;/li>
+&lt;li>當游標在一個檔案上面的時候，可以按大寫 &lt;code>R&lt;/code> 改名，改名會開另一個可以像普通文字一樣編輯的 buffer，而不是在 cmd 那一行只能 backspace 不然就是要用一些不一樣的快捷鍵。&lt;/li>
+&lt;li>當游標在一個檔案上面的時候，可以按小寫 &lt;code>x&lt;/code> 打開&lt;/li>
+&lt;li>速度蠻快的：在 NERDTree 上面開比較大的 directory 會有有感的延遲，感覺 vim-fern 有改進。&lt;/li>
+&lt;li>我不確定以上 feature 在 NERDTree 裡面有沒有，但至少我可以在 vim-fern 的 buffer 裡面按 &lt;code>?&lt;/code> 來簡單的看到 cheatsheet 知道可以做什麼動作。&lt;/li>
+&lt;/ul>
+&lt;p>節錄一下 vimrc 相關的部份。&lt;/p></description></item><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum">https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a>&lt;/p>
 &lt;p>有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p>
@@ -1627,6 +1645,13 @@ registers實在有點長，當然只能先去看dungeons&lt;br>
 &lt;li>&lt;a href="https://maspypy.com/">https://maspypy.com/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://noshi91.hatenablog.com/">https://noshi91.hatenablog.com/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.shift.moe/">https://blog.shift.moe/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.comp.nus.edu.sg/~stevenha/">https://www.comp.nus.edu.sg/~stevenha/&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://visualgo.net/en">https://visualgo.net/en&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cpbook.net/">https://cpbook.net/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://thisisadi.yoga/ICPC/">https://thisisadi.yoga/ICPC/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/697429479">https://zhuanlan.zhihu.com/p/697429479&lt;/a> （有空的話 dump 內容出來）&lt;/li>
 &lt;/ul>
 &lt;!-- 如何打ICPC（详细揭秘） - 知乎，是 https://cphof.org/profile/topcoder:moorhsum 寫的 -->
@@ -2690,6 +2715,8 @@ Esc離手指超近而且方向鍵又被拔掉超爽的XDDDD&lt;br>
 教授也分享了很多相關的結果，例如壓掉一個log或是在某種條件下變成超級好的複雜度之類的&lt;br>
 總之很難理解但是我大致上就邊開水題邊聽他講證明，可能因為我前一天晚睡超想睡覺的，最後真的累到不行了XD&lt;/p></description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</guid><description>&lt;h1 id="vim-">vim ?!&lt;/h1>
 &lt;p>vim : 古老的編輯器&lt;/p>
+&lt;p>&lt;a href="https://omeletwithoutegg.github.io/2025/03/10/vim-fern/">新文章&lt;/a>&lt;/p>
+&lt;!-- https://gohugo.io/content-management/cross-references/ -->
 &lt;h2 id="來由">來由&lt;/h2>
 &lt;p>之前 ZCK 很早就開始一直推坑 vim ，而我大概是在開始瘋狂玩 OJDL 之後才開始使用 vim 的&lt;br>
 因為在遠端 server 上改 code 最直接的方式就是使用遠端主機上的 vim 直接在 ssh 的介面改&lt;br>
