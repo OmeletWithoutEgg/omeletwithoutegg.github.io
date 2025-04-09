@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dp on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dp/</link><description>Recent content in Dp on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 05 Oct 2024 23:20:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dp/index.xml" rel="self" type="application/rss+xml"/><item><title>Aliens DP 備忘錄</title><link>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</link><pubDate>Sat, 05 Oct 2024 23:20:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</guid><description>&lt;h1 id="aliens-trick-的一些事實列舉與說明">Aliens trick 的一些事實列舉與說明&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dp on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dp/</link><description>Recent content in Dp on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 09 Apr 2025 18:22:32 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dp/index.xml" rel="self" type="application/rss+xml"/><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</guid><description>&lt;h1 id="rerooting--全方位木-dp">rerooting / 全方位木 DP&lt;/h1>
+&lt;p>因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p>
+&lt;p>大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;blockquote>
+&lt;p>例題： &lt;a href="https://atcoder.jp/contests/dp/tasks/dp_v">https://atcoder.jp/contests/dp/tasks/dp_v&lt;/a>&lt;br>
+給定一棵 $N$ 個點的樹。對於每個點 $i$，輸出有幾種把 $N$ 個頂點都塗成黑色或白色的方式，使得所有黑色頂點連通，且頂點 $i$ 是黑色的。&lt;br>
+$2 \leq N \leq 10^5$&lt;/p>&lt;/blockquote>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>我們可以先考慮如果只要輸出 $i = 1$ 的答案該怎麼辦。&lt;br>
+相信大家都會簡單的樹上連通塊的 DP：令 $dp_u$ 代表 $u$ 的子樹裡面有幾種塗色方式使得黑色是一個連通塊且這個子樹的根 $u$ 是黑色的。在一個合法的塗色方案當中，$u$ 已經固定是黑色，而 $u$ 的每個小孩 $v$ 都有兩種情形：黑色或白色，如果是黑色的話方案數是 $dp_v$，若是白色則 $v$ 這個子樹固定是全白的，方案數是 $1$。寫下來就是&lt;br>
+$$&lt;br>
+dp_u = \prod\limits _ {v \in child(u)} (1 + dp_v)&lt;br>
+$$&lt;/p>
+&lt;p>接著，如果根從 $1$ 變成 $x$ 了之後，哪些點的 DP 值有變呢？從下面的圖我們可以發現，因為 DP 值是對整個子樹定義的，而圖中紅色和藍色的節點對應的子樹完全沒有變化，所以其實只有 $1$ 和 $x$ 這兩個點的 DP 值有可能會有變化！&lt;/p></description></item><item><title>Aliens DP 備忘錄</title><link>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</link><pubDate>Sat, 05 Oct 2024 23:20:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</guid><description>&lt;h1 id="aliens-trick-的一些事實列舉與說明">Aliens trick 的一些事實列舉與說明&lt;/h1>
 &lt;p>本文主要基於 &lt;a href="https://noshi91.hatenablog.com/entry/2023/11/20/052227">https://noshi91.hatenablog.com/entry/2023/11/20/052227&lt;/a> 撰寫。&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>令 $X = \mathbb{Z} \cap [L, R]$ 為一非空集合。&lt;br>
