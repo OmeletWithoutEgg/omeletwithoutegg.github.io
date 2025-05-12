@@ -81,7 +81,7 @@
 &lt;h2 id="keybind-簡介">Keybind 簡介&lt;/h2>
 &lt;p>首先，hjkl 跟 vim 一樣是上下左右。&lt;/p>
 &lt;p>使用 &lt;code>:&lt;/code> 就可以進入 command mode，當然一樣可以使用各種快捷鍵來做各種瀏覽器內的操作。&lt;br>
-以下是平常最常用的 keybindings！&lt;/p></description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</guid><description>&lt;h1 id="vim-">vim ?!&lt;/h1>
+以下是平常最常用的 keybindings！&lt;/p></description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/using-vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/using-vim/</guid><description>&lt;h1 id="vim-">vim ?!&lt;/h1>
 &lt;p>vim : 古老的編輯器&lt;/p>
 &lt;p>&lt;a href="https://omeletwithoutegg.github.io/2025/03/10/vim-fern/">新文章&lt;/a>&lt;/p>
 &lt;!-- https://gohugo.io/content-management/cross-references/ -->

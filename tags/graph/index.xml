@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Graph on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/graph/</link><description>Recent content in Graph on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 18:33:14 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</guid><description>&lt;h1 id="殿壬與最大流">殿壬與最大流&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Graph on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/graph/</link><description>Recent content in Graph on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 18:33:14 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-2117/</guid><description>&lt;h1 id="殿壬與最大流">殿壬與最大流&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2117">https://tioj.ck.tp.edu.tw/problems/2117&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>$Q \leq 2 \times 10^5$ 次詢問無向圖 $G$ 上面任兩點的最大流（邊權是 $1$）。但是，$G$ 是一張 $N$ 點 $N$ 邊連通圖。&lt;/p>
@@ -160,7 +160,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</guid><description>&lt;h1 id="邀請函invitation">邀請函（Invitation）&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/tioj-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/tioj-1978/</guid><description>&lt;h1 id="邀請函invitation">邀請函（Invitation）&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1978">https://tioj.ck.tp.edu.tw/problems/1978&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給你一張圖，求出最大點獨立集。&lt;br>
@@ -440,7 +440,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
+&lt;/div></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
 然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p>
 &lt;h1 id="先備知識">先備知識&lt;/h1>
 &lt;p>看得懂$\sum$&lt;br>
@@ -465,7 +465,7 @@ KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法
 &lt;p>首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。&lt;br>
 在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$&lt;br>
 那麼很顯然的，對於任何一種合法的頂標來說，頂標的總和會大於等於最大權完美匹配的值。&lt;br>
-因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</guid><description>&lt;h1 id="atcoder-regular-contest-106">AtCoder Regular Contest 106&lt;/h1>
+因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/arc-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/arc-106/</guid><description>&lt;h1 id="atcoder-regular-contest-106">AtCoder Regular Contest 106&lt;/h1>
 &lt;p>最近一直被ZCK推坑，vir了好幾場ARC&lt;br>
 然後打完AGC才發現自己rating太低unrated，爛死XD&lt;br>
 結果打完這場還是不到能夠rated的標準1200 QQ&lt;br>

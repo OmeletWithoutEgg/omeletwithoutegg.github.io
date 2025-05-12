@@ -79,7 +79,7 @@
 &lt;/div>
 &lt;/div>&lt;h2 id="真正累的地方">真正累的地方&lt;/h2>
 &lt;p>因為好奇所以把 &lt;code>/usr/include/c++/11.1.0/ext/pb_ds/&lt;/code> 翻出來看，真的有夠難看懂，到處 include 又有繼承關係，最後還是不知道為什麼會那麼慢QQ&lt;br>
-大概花了我一個小時以上吧？也可能是一個下午。&lt;/p></description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶">殿壬看蝴蝶&lt;/h1>
+大概花了我一個小時以上吧？也可能是一個下午。&lt;/p></description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/tioj-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/tioj-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶">殿壬看蝴蝶&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2124">https://tioj.ck.tp.edu.tw/problems/2124&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>太長了，略&lt;/p>
@@ -529,7 +529,7 @@ Splay只需要實現查一個節點在中序是第個、查中序第k個節點�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1950</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</link><pubDate>Fri, 13 Dec 2019 23:26:11 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</guid><description>&lt;h1 id="小向的試煉-2-3轉rotate">小向的試煉 2-3：轉！(Rotate!)&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1950</title><link>https://omeletwithoutegg.github.io/2019/12/13/tioj-1950/</link><pubDate>Fri, 13 Dec 2019 23:26:11 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/tioj-1950/</guid><description>&lt;h1 id="小向的試煉-2-3轉rotate">小向的試煉 2-3：轉！(Rotate!)&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1950">https://tioj.ck.tp.edu.tw/problems/1950&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定長度$N$的排列，問「以交換任意兩個數字的方式排序這個序列需要多少次數」&lt;br>

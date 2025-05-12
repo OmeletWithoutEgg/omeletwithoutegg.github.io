@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monotone-Queue on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/monotone-queue/</link><description>Recent content in Monotone-Queue on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 11 Feb 2022 10:03:10 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/monotone-queue/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat">好．傳囉！ Nice Boat！&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monotone-Queue on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/monotone-queue/</link><description>Recent content in Monotone-Queue on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 11 Feb 2022 10:03:10 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/monotone-queue/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/tioj-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/tioj-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat">好．傳囉！ Nice Boat！&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個長度 $N$ 的整數序列 $A_i$。&lt;br>
 如果你可以找出一個區間，他的前綴和每個數字都大於等於0，而且他的後綴和的每個數字也都大於等於0，我們就稱他是安全區間，請你找出最長的安全區間長度是多少。&lt;/p>
@@ -15,7 +15,7 @@ $$&lt;/p>
 那麼，安全區間的定義又可以寫成&lt;/p>
 &lt;p>$$&lt;br>
 left_r &amp;lt; l \leq r &amp;lt; right_l&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ-2017</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</link><pubDate>Fri, 06 Dec 2019 13:03:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</guid><description>&lt;h1 id="b廢文大資料-mining">B.廢文大資料 mining&lt;/h1>
+$$&lt;/p></description></item><item><title>TIOJ-2017</title><link>https://omeletwithoutegg.github.io/2019/12/06/tioj-2017/</link><pubDate>Fri, 06 Dec 2019 13:03:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/tioj-2017/</guid><description>&lt;h1 id="b廢文大資料-mining">B.廢文大資料 mining&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2017">https://tioj.ck.tp.edu.tw/problems/2017&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個序列 $a_i$ ，問有多少區間 $[l,r]$ 使得存在一個 $m \leq r$ 滿足 $\sum\limits _ {i=l}^m a_i &amp;lt; 0$？&lt;/p>

@@ -3,7 +3,7 @@
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>Zobrist hash 的用處是快速比較集合之間是否一樣。先令 $U$ 是我們所關心的物件的集合，對於每個物件 $u \in U$，我們都指定一個隨機的 $w$-bit 的二進位數字 $h(u)$ 給他，接著我們在比較兩個集合 $S, T \subseteq U$ 是否一樣的時候，我們直接當作比較 $\bigoplus _ {u \in S} h(u)$ 和 $\bigoplus _ {u \in T} h(u)$ 是否一樣，這樣只要 $w$ 夠大的話就有夠高的機率正確了。&lt;br>
 兩者一樣等價於 $\bigoplus _ {u\in S\oplus T} h(u)$ 為 $0$，其中 $S\oplus T$ 是對稱差集。兩個集合不一樣若且唯若對稱差集非空，而由於我們每個數字每個 bit 都是隨機的，所以當對稱差集非空的時候，這個 hash 的這個 bit 為 0 的機率是 $1/2$。&lt;br>
-因為要 $w$ 個 bit 都是 $0$ 才會把不一樣誤判成一樣，我們可以知道一次比較只有 $2^{-w}$ 的機率錯誤。常取的值會是 $w=64$。&lt;/p></description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞">C.幼稚國王的獎賞&lt;/h1>
+因為要 $w$ 個 bit 都是 $0$ 才會把不一樣誤判成一樣，我們可以知道一次比較只有 $2^{-w}$ 的機率錯誤。常取的值會是 $w=64$。&lt;/p></description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/tioj-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/tioj-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞">C.幼稚國王的獎賞&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1094">https://tioj.ck.tp.edu.tw/problems/1094&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>定義一個非負整數集合的價值是裡面所有數字XOR起來&lt;br>
@@ -29,7 +29,7 @@ $$&lt;br>
 說明: 不失一般性設$\lambda _ 1 \neq 0$，則&lt;br>
 $$&lt;br>
 \textbf{v} _ 1 = \sum _ {i=2}^n \frac{-\lambda _ i}{\lambda _ 1} \textbf{v} _ i&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</guid><description>&lt;h1 id="排教室問題">排教室問題&lt;/h1>
+$$&lt;/p></description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</guid><description>&lt;h1 id="排教室問題">排教室問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1197">https://tioj.ck.tp.edu.tw/problems/1197&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>某校有M種不同的課程，其中有些課程的時間會有衝堂。如果學校中總共有N間不同的教室，請問共有多少種安排各課程上課教室的方式？最少要用到幾間教室？&lt;br>

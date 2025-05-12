@@ -287,7 +287,7 @@ $$&lt;/p></description></item><item><title>min 25 模板使用說明</title><lin
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。&lt;/p></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
+&lt;/div>&lt;p>下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。&lt;/p></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
 然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p>
 &lt;h1 id="先備知識">先備知識&lt;/h1>
 &lt;p>看得懂$\sum$&lt;br>
@@ -312,7 +312,7 @@ KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法
 &lt;p>首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。&lt;br>
 在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$&lt;br>
 那麼很顯然的，對於任何一種合法的頂標來說，頂標的總和會大於等於最大權完美匹配的值。&lt;br>
-因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</guid><description>&lt;h1 id="動態樹的奮鬥">動態樹的奮鬥&lt;/h1>
+因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/tioj-1171-lct/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/tioj-1171-lct/</guid><description>&lt;h1 id="動態樹的奮鬥">動態樹的奮鬥&lt;/h1>
 &lt;p>為了這題的Link-Cut-Tree解我花了不只一整天XD&lt;br>
 壓常實在是神奇的事，把 &lt;code>long long&lt;/code> 改成 &lt;code>int&lt;/code> 再加上幾個 &lt;code>pragma&lt;/code> 終於成功壓過唯一奇怪的那筆= =&lt;br>
 而且 &lt;code>push&lt;/code> 竟然還不能用遞迴寫，到底三小&lt;br>
@@ -571,7 +571,7 @@ LCT怎麼這麼可撥XD&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
+&lt;/div></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
 &lt;p>先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br>
 如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p>
 &lt;h2 id="單點修改">單點修改&lt;/h2>
@@ -615,7 +615,7 @@ LCT怎麼這麼可撥XD&lt;br>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到&lt;br>
-注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
+注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
 &lt;h2 id="cin--cout">cin / cout&lt;/h2>
 &lt;p>因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用&lt;br>
 競程的時候記得開下面兩個東西&lt;/p>

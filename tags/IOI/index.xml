@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IOI on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/IOI/</link><description>Recent content in IOI on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 01 Jul 2021 07:11:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/IOI/index.xml" rel="self" type="application/rss+xml"/><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IOI on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/IOI/</link><description>Recent content in IOI on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 01 Jul 2021 07:11:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/IOI/index.xml" rel="self" type="application/rss+xml"/><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
 &lt;p>只是想打一下IOI的心得而已&lt;br>
 可能還是流水帳請多多包含(?)&lt;/p>
 &lt;h2 id="before">Before&lt;/h2>
@@ -60,7 +60,7 @@ registers實在有點長，當然只能先去看dungeons&lt;br>
 總之整理了一下寫寫倍增法就有了時間 $(n+q)\log^2C$ 空間 $n\log^2C$ 的解，不過 $n=400000$ 開不下，開 $n=50000$ 丟上去六十幾分覺得還不錯&lt;br>
 後來測了一下發現記憶體少一點就可以開得下了，所以嘗試壓常(?)原本想說用分根號、立方根的，後來發現可以開到 $10n\log C$ 的記憶體就想說可以一次跳 $(10^7)^{\frac{1}{10}}$ 倍，然後一直亂改改就 AC 了??&lt;br>
 這應該是第一次在賽中遇到二的冪次分層，實在覺得出出這些題目的人都很厲害&lt;br>
-比賽最後在努力修改 registers 的情況下結束，可惜沒有再撈到分數&lt;/p></description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</guid><description>&lt;h1 id="快樂規劃路徑">快樂規劃路徑&lt;/h1>
+比賽最後在努力修改 registers 的情況下結束，可惜沒有再撈到分數&lt;/p></description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/tioj-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/tioj-1629/</guid><description>&lt;h1 id="快樂規劃路徑">快樂規劃路徑&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1629">https://tioj.ck.tp.edu.tw/problems/1629&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>樹朋友們生活在一個湖邊，湖邊的樹依照順時針方向編號為$1, 2, \dots n$。&lt;br>
@@ -237,7 +237,7 @@ registers實在有點長，當然只能先去看dungeons&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</guid><description>&lt;h1 id="ioi2015boxes-一堆盒子">【IOI2015】Boxes 一堆盒子&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/tioj-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/tioj-1884/</guid><description>&lt;h1 id="ioi2015boxes-一堆盒子">【IOI2015】Boxes 一堆盒子&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1884">https://tioj.ck.tp.edu.tw/problems/1884&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有$L$個地區排成一環狀，依序編號為$0, 1, \dots, L-1$&lt;br>

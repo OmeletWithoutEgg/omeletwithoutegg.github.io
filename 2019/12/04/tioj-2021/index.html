@@ -1,0 +1,234 @@
+<!doctype html><html lang=en-us><head><link rel=preload href=/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script type=text/javascript src=https://latest.cactus.chat/cactus.js></script><link rel=stylesheet href=https://latest.cactus.chat/style.css type=text/css><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>TIOJ-2021 | 蛋餅的競程隨筆</title>
+<link rel=canonical href=https://omeletwithoutegg.github.io/2019/12/04/tioj-2021/><meta name=description content="一個廢人想寫題解，所以他想辦法弄網站"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="all,follow"><meta name=googlebot content="index,follow,snippet,archive"><meta property="og:url" content="https://omeletwithoutegg.github.io/2019/12/04/tioj-2021/"><meta property="og:site_name" content="蛋餅的競程隨筆"><meta property="og:title" content="TIOJ-2021"><meta property="og:description" content="F.無限兔子問題 https://tioj.ck.tp.edu.tw/problems/2021
+Description 令$F_i$是費式數列
+給定$s,t$，求$\sum\limits _ {i=s}^t\binom{F_i}{2}$
+Solution 這題也是有夠數學OwO
+題目所求是$\sum\limits _ {i=s}^t\frac{1}{2}{F_i(F_i - 1)}$
+可以想到分別求$\sum\limits _ {i=1}^nF_i$和$\sum\limits _ {i=1}^nF_i^2$
+前者可以用
+$$
+\left[
+\begin{matrix}
+0 & 1 & 0 \newline
+1 & 1 & 0 \newline
+1 & 1 & 1
+\end{matrix}
+\right]
+\left[
+\begin{matrix}
+F _ {i-2} \newline
+F _ {i-1} \newline
+S _ {i-1}
+\end{matrix}
+\right] =
+\left[
+\begin{matrix}
+F _ {i-1} \newline
+F_i \newline
+S_i
+\end{matrix}
+\right]
+$$
+來得到前綴$S_i$的值"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-12-04T11:34:34+00:00"><meta property="article:modified_time" content="2019-12-04T11:34:34+00:00"><meta property="article:tag" content="TIOJ"><meta property="article:tag" content="Math"><meta property="article:tag" content="Matrix"><meta name=twitter:card content="summary"><meta name=twitter:title content="TIOJ-2021"><meta name=twitter:description content="F.無限兔子問題 https://tioj.ck.tp.edu.tw/problems/2021
+Description 令$F_i$是費式數列
+給定$s,t$，求$\sum\limits _ {i=s}^t\binom{F_i}{2}$
+Solution 這題也是有夠數學OwO
+題目所求是$\sum\limits _ {i=s}^t\frac{1}{2}{F_i(F_i - 1)}$
+可以想到分別求$\sum\limits _ {i=1}^nF_i$和$\sum\limits _ {i=1}^nF_i^2$
+前者可以用
+$$
+\left[
+\begin{matrix}
+0 & 1 & 0 \newline
+1 & 1 & 0 \newline
+1 & 1 & 1
+\end{matrix}
+\right]
+\left[
+\begin{matrix}
+F _ {i-2} \newline
+F _ {i-1} \newline
+S _ {i-1}
+\end{matrix}
+\right] =
+\left[
+\begin{matrix}
+F _ {i-1} \newline
+F_i \newline
+S_i
+\end{matrix}
+\right]
+$$
+來得到前綴$S_i$的值"><link rel=stylesheet href=https://omeletwithoutegg.github.io/css/styles.f0dfa32909faa2750dc7e754bad2d1afb18c45afb01ca8bf8159fe24d8c444e0211dbedf25457d282e149442086b14381ad49a063844d41f4c1db57709e5eeb6.css integrity="sha512-8N+jKQn6onUNx+dUutLRr7GMRa+wHKi/gVn+JNjEROAhHb7fJUV9KC4UlEIIaxQ4GtSaBjhE1B9MHbV3CeXutg=="><link rel=stylesheet href=https://omeletwithoutegg.github.io/css/highlight.css><link rel=stylesheet href=https://omeletwithoutegg.github.io/css/style-dark.css><link rel=stylesheet href=https://omeletwithoutegg.github.io/css/search.css><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script><script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=icon type=image/png href=https://omeletwithoutegg.github.io/images/favicon.ico><script async src="https://www.googletagmanager.com/gtag/js?id=G-0ME10Z2L0D"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-0ME10Z2L0D")}</script></head><body class="max-width mx-auto px3 ltr"><div class="content index py4"><div id=header-post><a id=menu-icon href=#><i class="fas fa-bars fa-lg"></i></a>
+<a id=menu-icon-tablet href=#><i class="fas fa-bars fa-lg"></i></a>
+<a id=top-icon-tablet href=# onclick='$("html, body").animate({scrollTop:0},"fast")' style=display:none aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+<span id=menu><span id=nav><ul><li><a href=/>Home</a></li><li><a href=/about/>About</a></li><li><a href=/posts/>Posts</a></li><li><a href=/resources/>Resources</a></li><li><a href=/search/>Search</a></li><li><a href=/tags/>Tags</a></li></ul></span><br><span id=actions><ul><li><a class=icon href=https://omeletwithoutegg.github.io/2019/12/04/tioj-1282/ aria-label=Previous><i class="fas fa-chevron-left" aria-hidden=true onmouseover='$("#i-prev").toggle()' onmouseout='$("#i-prev").toggle()'></i></a></li><li><a class=icon href=https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/ aria-label=Next><i class="fas fa-chevron-right" aria-hidden=true onmouseover='$("#i-next").toggle()' onmouseout='$("#i-next").toggle()'></i></a></li><li><a class=icon href=# onclick='$("html, body").animate({scrollTop:0},"fast")' aria-label="Top of Page"><i class="fas fa-chevron-up" aria-hidden=true onmouseover='$("#i-top").toggle()' onmouseout='$("#i-top").toggle()'></i></a></li><li><a class=icon href=# aria-label=Share><i class="fas fa-share-alt" aria-hidden=true onmouseover='$("#i-share").toggle()' onmouseout='$("#i-share").toggle()' onclick='return $("#share").toggle(),!1'></i></a></li></ul><span id=i-prev class=info style=display:none>Previous post</span>
+<span id=i-next class=info style=display:none>Next post</span>
+<span id=i-top class=info style=display:none>Back to top</span>
+<span id=i-share class=info style=display:none>Share post</span></span><br><div id=share style=display:none><ul><li><a class=icon href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f" aria-label=Facebook><i class="fab fa-facebook" aria-hidden=true></i></a></li><li><a class=icon href="https://twitter.com/share?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&text=TIOJ-2021" aria-label=Twitter><i class="fab fa-twitter" aria-hidden=true></i></a></li><li><a class=icon href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&title=TIOJ-2021" aria-label=Linkedin><i class="fab fa-linkedin" aria-hidden=true></i></a></li><li><a class=icon href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&is_video=false&description=TIOJ-2021" aria-label=Pinterest><i class="fab fa-pinterest" aria-hidden=true></i></a></li><li><a class=icon href="mailto:?subject=TIOJ-2021&body=Check out this article: https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f" aria-label=Email><i class="fas fa-envelope" aria-hidden=true></i></a></li><li><a class=icon href="https://getpocket.com/save?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&title=TIOJ-2021" aria-label=Pocket><i class="fab fa-get-pocket" aria-hidden=true></i></a></li><li><a class=icon href="http://reddit.com/submit?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&title=TIOJ-2021" aria-label=reddit><i class="fab fa-reddit" aria-hidden=true></i></a></li><li><a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&name=TIOJ-2021&description=%3ch1%20id%3d%22f%e7%84%a1%e9%99%90%e5%85%94%e5%ad%90%e5%95%8f%e9%a1%8c%22%3eF.%e7%84%a1%e9%99%90%e5%85%94%e5%ad%90%e5%95%8f%e9%a1%8c%3c%2fh1%3e%0a%3cp%3e%3ca%20href%3d%22https%3a%2f%2ftioj.ck.tp.edu.tw%2fproblems%2f2021%22%3ehttps%3a%2f%2ftioj.ck.tp.edu.tw%2fproblems%2f2021%3c%2fa%3e%3c%2fp%3e%0a%3ch2%20id%3d%22description%22%3eDescription%3c%2fh2%3e%0a%3cp%3e%e4%bb%a4%24F_i%24%e6%98%af%e8%b2%bb%e5%bc%8f%e6%95%b8%e5%88%97%3cbr%3e%0a%e7%b5%a6%e5%ae%9a%24s%2ct%24%ef%bc%8c%e6%b1%82%24%5csum%5climits%20_%20%7bi%3ds%7d%5et%5cbinom%7bF_i%7d%7b2%7d%24%3c%2fp%3e%0a%3ch2%20id%3d%22solution%22%3eSolution%3c%2fh2%3e%0a%3cp%3e%e9%80%99%e9%a1%8c%e4%b9%9f%e6%98%af%e6%9c%89%e5%a4%a0%e6%95%b8%e5%ad%b8OwO%3cbr%3e%0a%e9%a1%8c%e7%9b%ae%e6%89%80%e6%b1%82%e6%98%af%24%5csum%5climits%20_%20%7bi%3ds%7d%5et%5cfrac%7b1%7d%7b2%7d%7bF_i%28F_i%20-%201%29%7d%24%3cbr%3e%0a%e5%8f%af%e4%bb%a5%e6%83%b3%e5%88%b0%e5%88%86%e5%88%a5%e6%b1%82%24%5csum%5climits%20_%20%7bi%3d1%7d%5enF_i%24%e5%92%8c%24%5csum%5climits%20_%20%7bi%3d1%7d%5enF_i%5e2%24%3c%2fp%3e%0a%3cp%3e%e5%89%8d%e8%80%85%e5%8f%af%e4%bb%a5%e7%94%a8%3cbr%3e%0a%24%24%3cbr%3e%0a%5cleft%5b%3cbr%3e%0a%5cbegin%7bmatrix%7d%3cbr%3e%0a0%20%26amp%3b%201%20%26amp%3b%200%20%5cnewline%3cbr%3e%0a1%20%26amp%3b%201%20%26amp%3b%200%20%5cnewline%3cbr%3e%0a1%20%26amp%3b%201%20%26amp%3b%201%3cbr%3e%0a%5cend%7bmatrix%7d%3cbr%3e%0a%5cright%5d%3cbr%3e%0a%5cleft%5b%3cbr%3e%0a%5cbegin%7bmatrix%7d%3cbr%3e%0aF%20_%20%7bi-2%7d%20%5cnewline%3cbr%3e%0aF%20_%20%7bi-1%7d%20%5cnewline%3cbr%3e%0aS%20_%20%7bi-1%7d%3cbr%3e%0a%5cend%7bmatrix%7d%3cbr%3e%0a%5cright%5d%20%3d%3cbr%3e%0a%5cleft%5b%3cbr%3e%0a%5cbegin%7bmatrix%7d%3cbr%3e%0aF%20_%20%7bi-1%7d%20%5cnewline%3cbr%3e%0aF_i%20%5cnewline%3cbr%3e%0aS_i%3cbr%3e%0a%5cend%7bmatrix%7d%3cbr%3e%0a%5cright%5d%3cbr%3e%0a%24%24%3cbr%3e%0a%e4%be%86%e5%be%97%e5%88%b0%e5%89%8d%e7%b6%b4%24S_i%24%e7%9a%84%e5%80%bc%3c%2fp%3e" aria-label=Tumblr><i class="fab fa-tumblr" aria-hidden=true></i></a></li><li><a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&t=TIOJ-2021" aria-label="Hacker News"><i class="fab fa-hacker-news" aria-hidden=true></i></a></li></ul></div><div id=toc><nav id=TableOfContents><ul><li><a href=#description>Description</a></li><li><a href=#solution>Solution</a></li><li><a href=#ac-code>AC code</a></li></ul></nav></div></span></div><article class=post itemscope itemtype=http://schema.org/BlogPosting><header><h1 class=posttitle itemprop="name headline">TIOJ-2021</h1><div class=meta><span class=author itemprop=author itemscope itemtype=http://schema.org/Person><span itemprop=name>2qbingxuan</span></span><div class=postdate><time datetime="2019-12-04 11:34:34 +0000 UTC" itemprop=datePublished>2019-12-04</time></div><div class=article-tag><i class="fas fa-tag"></i>
+<a class=tag-link href=/tags/TIOJ/ rel=tag>TIOJ</a>
+,
+<a class=tag-link href=/tags/math/ rel=tag>math</a>
+,
+<a class=tag-link href=/tags/matrix/ rel=tag>matrix</a></div></div></header><div class=content itemprop=articleBody><h1 id=f無限兔子問題>F.無限兔子問題</h1><p><a href=https://tioj.ck.tp.edu.tw/problems/2021>https://tioj.ck.tp.edu.tw/problems/2021</a></p><h2 id=description>Description</h2><p>令$F_i$是費式數列<br>給定$s,t$，求$\sum\limits _ {i=s}^t\binom{F_i}{2}$</p><h2 id=solution>Solution</h2><p>這題也是有夠數學OwO<br>題目所求是$\sum\limits _ {i=s}^t\frac{1}{2}{F_i(F_i - 1)}$<br>可以想到分別求$\sum\limits _ {i=1}^nF_i$和$\sum\limits _ {i=1}^nF_i^2$</p><p>前者可以用<br>$$<br>\left[<br>\begin{matrix}<br>0 & 1 & 0 \newline<br>1 & 1 & 0 \newline<br>1 & 1 & 1<br>\end{matrix}<br>\right]<br>\left[<br>\begin{matrix}<br>F _ {i-2} \newline<br>F _ {i-1} \newline<br>S _ {i-1}<br>\end{matrix}<br>\right] =<br>\left[<br>\begin{matrix}<br>F _ {i-1} \newline<br>F_i \newline<br>S_i<br>\end{matrix}<br>\right]<br>$$<br>來得到前綴$S_i$的值</p><p>然後$F_i^2 = (F _ {i-1}+F _ {i-2})^2 = F _ {i-1}^2 + F _ {i-2}^2 + 2F _ {i-1}F _ {i-2}$<br>又有$F_iF _ {i-1} = (F _ {i-1}+F _ {i-2})F _ {i-1} = F _ {i-1}F _ {i-2} + F _ {i-1}^2$<br>所以寫成<br>$$<br>\left[<br>\begin{matrix}<br>0 & 0 & 1 & 0\newline<br>0 & 1 & 1 & 0\newline<br>1 & 2 & 1 & 0\newline<br>1 & 2 & 1 & 1<br>\end{matrix}<br>\right]<br>\left[<br>\begin{matrix}<br>F _ {i-2}^2\newline<br>F _ {i-1}F _ {i-2}\newline<br>F _ {i-1}^2\newline<br>Q _ {i-1}<br>\end{matrix}<br>\right] =<br>\left[<br>\begin{matrix}<br>F _ {i-1}^2\newline<br>F_iF _ {i-1}\newline<br>F_i^2\newline<br>Q_i<br>\end{matrix}<br>\right]<br>$$<br>可以得到二次的前綴</p><p>套上矩陣快速冪即可AC本題</p><h2 id=ac-code>AC code</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">79
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>//   __________________
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//  | ________________ |
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//  ||          ____  ||
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//  ||   /\    |      ||
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//  ||  /__\   |      ||
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//  || /    \  |____  ||
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//  ||________________||
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//  |__________________|
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//  \###################\
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//   \###################\
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//    \        ____       \
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//     \_______\___\_______\
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// An AC a day keeps the doctor away.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#pragma g++ optimize(&#34;Ofast&#34;)
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#pragma loop_opt(on)
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;bits/extc++.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#ifdef local
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define debug(x) (cerr&lt;&lt;#x&lt;&lt;&#34; = &#34;&lt;&lt;(x)&lt;&lt;&#39;\n&#39;)
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#else
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define debug(x) ((void)0)
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#endif </span><span style=color:#75715e>// local
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>typedef</span> <span style=color:#66d9ef>int64_t</span> ll;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>constexpr</span> ll N <span style=color:#f92672>=</span> <span style=color:#ae81ff>1025</span>, INF <span style=color:#f92672>=</span> <span style=color:#ae81ff>1e18</span>, MOD <span style=color:#f92672>=</span> <span style=color:#ae81ff>1000000007</span>, K <span style=color:#f92672>=</span> <span style=color:#ae81ff>512</span>, inf <span style=color:#f92672>=</span> <span style=color:#ae81ff>1e9</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>constexpr</span> ll <span style=color:#a6e22e>modpow</span>(ll e,ll p,ll m<span style=color:#f92672>=</span>MOD) {ll r<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>; <span style=color:#66d9ef>for</span>(;p;p<span style=color:#f92672>&gt;&gt;=</span><span style=color:#ae81ff>1</span>,e<span style=color:#f92672>=</span>e<span style=color:#f92672>*</span>e<span style=color:#f92672>%</span>m) <span style=color:#66d9ef>if</span>(p<span style=color:#f92672>&amp;</span><span style=color:#ae81ff>1</span>) r<span style=color:#f92672>=</span>r<span style=color:#f92672>*</span>e<span style=color:#f92672>%</span>m; <span style=color:#66d9ef>return</span> r;}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>ll inv2 <span style=color:#f92672>=</span> modpow(<span style=color:#ae81ff>2</span>,MOD<span style=color:#f92672>-</span><span style=color:#ae81ff>2</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>typedef</span> vector<span style=color:#f92672>&lt;</span>vector<span style=color:#f92672>&lt;</span>ll<span style=color:#f92672>&gt;&gt;</span> matrix;
+</span></span><span style=display:flex><span>matrix <span style=color:#66d9ef>operator</span><span style=color:#f92672>*</span>(<span style=color:#66d9ef>const</span> matrix <span style=color:#f92672>&amp;</span>a, <span style=color:#66d9ef>const</span> matrix <span style=color:#f92672>&amp;</span>b) {
+</span></span><span style=display:flex><span>    matrix <span style=color:#a6e22e>c</span>(a.size(), vector<span style=color:#f92672>&lt;</span>ll<span style=color:#f92672>&gt;</span>(b[<span style=color:#ae81ff>0</span>].size()));
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> a.size(); i<span style=color:#f92672>++</span>) <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> k <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; k <span style=color:#f92672>&lt;</span> b.size(); k<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>        ll r <span style=color:#f92672>=</span> a[i][k];
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> j <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; j <span style=color:#f92672>&lt;</span> b[k].size(); j<span style=color:#f92672>++</span>) c[i][j] <span style=color:#f92672>=</span> (c[i][j] <span style=color:#f92672>+</span> r<span style=color:#f92672>*</span>b[k][j]) <span style=color:#f92672>%</span> MOD;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> c;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>matrix <span style=color:#66d9ef>operator</span><span style=color:#f92672>^</span>(matrix e, ll p) {
+</span></span><span style=display:flex><span>    matrix <span style=color:#a6e22e>r</span>(e.size(), vector<span style=color:#f92672>&lt;</span>ll<span style=color:#f92672>&gt;</span>(e.size()));
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> e.size(); i<span style=color:#f92672>++</span>) r[i][i] <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span>(p) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span>(p<span style=color:#f92672>&amp;</span><span style=color:#ae81ff>1</span>) r <span style=color:#f92672>=</span> r<span style=color:#f92672>*</span>e;
+</span></span><span style=display:flex><span>        e <span style=color:#f92672>=</span> e<span style=color:#f92672>*</span>e, p<span style=color:#f92672>&gt;&gt;=</span><span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> r;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>ll <span style=color:#a6e22e>solve</span>(ll n) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span>(n <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#75715e>/*
+</span></span></span><span style=display:flex><span><span style=color:#75715e>        [F _ {n-1}, F_n, S_n]
+</span></span></span><span style=display:flex><span><span style=color:#75715e>        [F _ {n-1}^2, F _ {n-1}F_n, F_n^2, Q_n]
+</span></span></span><span style=display:flex><span><span style=color:#75715e>    */</span>
+</span></span><span style=display:flex><span>    matrix S {
+</span></span><span style=display:flex><span>        {<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>0</span>},
+</span></span><span style=display:flex><span>        {<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>0</span>},
+</span></span><span style=display:flex><span>        {<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>1</span>},
+</span></span><span style=display:flex><span>    };
+</span></span><span style=display:flex><span>    matrix Q {
+</span></span><span style=display:flex><span>        {<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>0</span>},
+</span></span><span style=display:flex><span>        {<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>0</span>},
+</span></span><span style=display:flex><span>        {<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>0</span>},
+</span></span><span style=display:flex><span>        {<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>1</span>},
+</span></span><span style=display:flex><span>    };
+</span></span><span style=display:flex><span>    matrix Rs <span style=color:#f92672>=</span> {{<span style=color:#ae81ff>0</span>},{<span style=color:#ae81ff>1</span>},{<span style=color:#ae81ff>1</span>}};
+</span></span><span style=display:flex><span>    matrix Rq <span style=color:#f92672>=</span> {{<span style=color:#ae81ff>0</span>},{<span style=color:#ae81ff>0</span>},{<span style=color:#ae81ff>1</span>},{<span style=color:#ae81ff>1</span>}};
+</span></span><span style=display:flex><span>    S <span style=color:#f92672>=</span> (S<span style=color:#f92672>^</span>(n<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>)) <span style=color:#f92672>*</span> Rs;
+</span></span><span style=display:flex><span>    Q <span style=color:#f92672>=</span> (Q<span style=color:#f92672>^</span>(n<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>)) <span style=color:#f92672>*</span> Rq;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> (Q[<span style=color:#ae81ff>3</span>][<span style=color:#ae81ff>0</span>] <span style=color:#f92672>-</span> S[<span style=color:#ae81ff>2</span>][<span style=color:#ae81ff>0</span>] <span style=color:#f92672>+</span> MOD) <span style=color:#f92672>*</span> inv2 <span style=color:#f92672>%</span> MOD;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>signed</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    ios_base<span style=color:#f92672>::</span>sync_with_stdio(<span style=color:#ae81ff>0</span>), cin.tie(<span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>    ll t,a,b;
+</span></span><span style=display:flex><span>    cin <span style=color:#f92672>&gt;&gt;</span> t;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span>(t<span style=color:#f92672>--</span>) {
+</span></span><span style=display:flex><span>        cin <span style=color:#f92672>&gt;&gt;</span> a <span style=color:#f92672>&gt;&gt;</span> b;
+</span></span><span style=display:flex><span>        cout <span style=color:#f92672>&lt;&lt;</span> (solve(b) <span style=color:#f92672>-</span> solve(a<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>) <span style=color:#f92672>+</span> MOD) <span style=color:#f92672>%</span> MOD <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#39;\n&#39;</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></td></tr></table></div></div><p>這題的題源好像是NPSC? 不過我還是查不太到題解，可能太水了吧QQ</p></div></article><div class=blog-post-comments><div id=disqus_thread><script type=text/javascript>(function(){var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="omeletwithoutegg",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></div><div id=footer-post-container><div id=footer-post><div id=nav-footer style=display:none><ul><li><a href=/>Home</a></li><li><a href=/about/>About</a></li><li><a href=/posts/>Posts</a></li><li><a href=/resources/>Resources</a></li><li><a href=/search/>Search</a></li><li><a href=/tags/>Tags</a></li></ul></div><div id=toc-footer style=display:none><nav id=TableOfContents><ul><li><a href=#description>Description</a></li><li><a href=#solution>Solution</a></li><li><a href=#ac-code>AC code</a></li></ul></nav></div><div id=share-footer style=display:none><ul><li><a class=icon href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f" aria-label=Facebook><i class="fab fa-facebook fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://twitter.com/share?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&text=TIOJ-2021" aria-label=Twitter><i class="fab fa-twitter fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&title=TIOJ-2021" aria-label=Linkedin><i class="fab fa-linkedin fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&is_video=false&description=TIOJ-2021" aria-label=Pinterest><i class="fab fa-pinterest fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="mailto:?subject=TIOJ-2021&body=Check out this article: https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f" aria-label=Email><i class="fas fa-envelope fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://getpocket.com/save?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&title=TIOJ-2021" aria-label=Pocket><i class="fab fa-get-pocket fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="http://reddit.com/submit?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&title=TIOJ-2021" aria-label=reddit><i class="fab fa-reddit fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&name=TIOJ-2021&description=%3ch1%20id%3d%22f%e7%84%a1%e9%99%90%e5%85%94%e5%ad%90%e5%95%8f%e9%a1%8c%22%3eF.%e7%84%a1%e9%99%90%e5%85%94%e5%ad%90%e5%95%8f%e9%a1%8c%3c%2fh1%3e%0a%3cp%3e%3ca%20href%3d%22https%3a%2f%2ftioj.ck.tp.edu.tw%2fproblems%2f2021%22%3ehttps%3a%2f%2ftioj.ck.tp.edu.tw%2fproblems%2f2021%3c%2fa%3e%3c%2fp%3e%0a%3ch2%20id%3d%22description%22%3eDescription%3c%2fh2%3e%0a%3cp%3e%e4%bb%a4%24F_i%24%e6%98%af%e8%b2%bb%e5%bc%8f%e6%95%b8%e5%88%97%3cbr%3e%0a%e7%b5%a6%e5%ae%9a%24s%2ct%24%ef%bc%8c%e6%b1%82%24%5csum%5climits%20_%20%7bi%3ds%7d%5et%5cbinom%7bF_i%7d%7b2%7d%24%3c%2fp%3e%0a%3ch2%20id%3d%22solution%22%3eSolution%3c%2fh2%3e%0a%3cp%3e%e9%80%99%e9%a1%8c%e4%b9%9f%e6%98%af%e6%9c%89%e5%a4%a0%e6%95%b8%e5%ad%b8OwO%3cbr%3e%0a%e9%a1%8c%e7%9b%ae%e6%89%80%e6%b1%82%e6%98%af%24%5csum%5climits%20_%20%7bi%3ds%7d%5et%5cfrac%7b1%7d%7b2%7d%7bF_i%28F_i%20-%201%29%7d%24%3cbr%3e%0a%e5%8f%af%e4%bb%a5%e6%83%b3%e5%88%b0%e5%88%86%e5%88%a5%e6%b1%82%24%5csum%5climits%20_%20%7bi%3d1%7d%5enF_i%24%e5%92%8c%24%5csum%5climits%20_%20%7bi%3d1%7d%5enF_i%5e2%24%3c%2fp%3e%0a%3cp%3e%e5%89%8d%e8%80%85%e5%8f%af%e4%bb%a5%e7%94%a8%3cbr%3e%0a%24%24%3cbr%3e%0a%5cleft%5b%3cbr%3e%0a%5cbegin%7bmatrix%7d%3cbr%3e%0a0%20%26amp%3b%201%20%26amp%3b%200%20%5cnewline%3cbr%3e%0a1%20%26amp%3b%201%20%26amp%3b%200%20%5cnewline%3cbr%3e%0a1%20%26amp%3b%201%20%26amp%3b%201%3cbr%3e%0a%5cend%7bmatrix%7d%3cbr%3e%0a%5cright%5d%3cbr%3e%0a%5cleft%5b%3cbr%3e%0a%5cbegin%7bmatrix%7d%3cbr%3e%0aF%20_%20%7bi-2%7d%20%5cnewline%3cbr%3e%0aF%20_%20%7bi-1%7d%20%5cnewline%3cbr%3e%0aS%20_%20%7bi-1%7d%3cbr%3e%0a%5cend%7bmatrix%7d%3cbr%3e%0a%5cright%5d%20%3d%3cbr%3e%0a%5cleft%5b%3cbr%3e%0a%5cbegin%7bmatrix%7d%3cbr%3e%0aF%20_%20%7bi-1%7d%20%5cnewline%3cbr%3e%0aF_i%20%5cnewline%3cbr%3e%0aS_i%3cbr%3e%0a%5cend%7bmatrix%7d%3cbr%3e%0a%5cright%5d%3cbr%3e%0a%24%24%3cbr%3e%0a%e4%be%86%e5%be%97%e5%88%b0%e5%89%8d%e7%b6%b4%24S_i%24%e7%9a%84%e5%80%bc%3c%2fp%3e" aria-label=Tumblr><i class="fab fa-tumblr fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fomeletwithoutegg.github.io%2f2019%2f12%2f04%2ftioj-2021%2f&t=TIOJ-2021" aria-label="Hacker News"><i class="fab fa-hacker-news fa-lg" aria-hidden=true></i></a></li></ul></div><div id=actions-footer><a id=menu-toggle class=icon href=# onclick='return $("#nav-footer").toggle(),!1' aria-label=Menu><i class="fas fa-bars fa-lg" aria-hidden=true></i> Menu</a>
+<a id=toc-toggle class=icon href=# onclick='return $("#toc-footer").toggle(),!1' aria-label=TOC><i class="fas fa-list fa-lg" aria-hidden=true></i> TOC</a>
+<a id=share-toggle class=icon href=# onclick='return $("#share-footer").toggle(),!1' aria-label=Share><i class="fas fa-share-alt fa-lg" aria-hidden=true></i> share</a>
+<a id=top style=display:none class=icon href=# onclick='$("html, body").animate({scrollTop:0},"fast")' aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg" aria-hidden=true></i> Top</a></div></div></div><footer id=footer><div class=footer-left>Copyright &copy; 2025 Omelet</div><div class=footer-right><nav><ul><li><a href=/>Home</a></li><li><a href=/about/>About</a></li><li><a href=/posts/>Posts</a></li><li><a href=/resources/>Resources</a></li><li><a href=/search/>Search</a></li><li><a href=/tags/>Tags</a></li></ul></nav></div></footer></div><link rel=stylesheet href=/lib/font-awesome/css/all.min.css><script src=/lib/jquery/jquery.min.js></script><script src=/js/main.js></script><script src=/js/code-copy.js></script><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]},svg:{fontCache:"global"}}</script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=/lib/clipboard/clipboard.min.js></script><script>$(function(){let e='<span class="btn-copy tooltipped tooltipped-sw" aria-label="Copy to clipboard!" style="z-index: 9999">';e+='<i class="far fa-clone"></i>',e+="</span>",$(".highlight table").before(e);const t=new ClipboardJS(".btn-copy",{text:function(e){const t='code[data-lang]:not([data-lang=""]) > span',n=Array.from(e.nextElementSibling.querySelectorAll(t)),s=n.map(e=>e.innerText).join("");return s}});t.on("success",function(e){e.trigger.setAttribute("aria-label","Copied!"),e.clearSelection()}),t.on("error",function(e){console.error("Action:",e.action),console.error("Trigger:",e.trigger)})})</script><script type=text/javascript src=/js/canvas-nest.js count=90 color=0,200,100 opacity=0.5></script></body></html>

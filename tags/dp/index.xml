@@ -19,7 +19,7 @@ $$&lt;/p>
 考慮下凸函數 $f : X \to \mathbb{Z}$（註：即 $f(x) - f(x - 1) \leq f(x + 1) - f(x)$，可以用 U 型來想像）。&lt;br>
 令 $g: \mathbb{R} \to \mathbb{R}, g(p) = \min _ {x \in X}(f(x) + px)$，代表 penalty 為 p 時算出的最佳解。&lt;/p>
 &lt;p>在以前大家學過的 Aliens trick 當中的設定會是特定的 $f(k)$ 很難算（例如郵局設置問題中設置 $k$ 個郵局的最小花費）而 $g(p)$ 比較好算（例如郵局設置問題中每個郵局多花 $p$ 的最佳解），我們需要二分搜出恰當的 penalty，使得取到最佳解的 $x$ 恰好是 $k$，或至少介在小於 $k$ 和大於 $k$ 之間的分界點。&lt;br>
-在二分搜的判定中，會需要計算 $x_p^* \in \textrm{argmin} _ {x\in X}(f(x) + px)$（註：本文中 argmin 的定義會採用集合版本的），也就是在目前的 penalty 底下的最佳解當中 $x$ 是取值多少，或者可以說是被罰了幾個 penalty。這件事在 tie-breaking 的時候會變得比較麻煩，若 $f(x) + px$ 在多個 $x$ 都可以取到最小值，則我們會需要取最小的這種 $x$（也可以取最大的，但細節會稍微改變）；若無法算出最小的 $x$ 的話就無法直接以此作為二分搜的判定。本文目的為介紹一個不需要還原 $x_p^*$ 的一個 Aliens trick 寫法。&lt;/p></description></item><item><title>Seoul 2022 A : Card Game</title><link>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-A-card-game/</link><pubDate>Wed, 06 Sep 2023 14:47:03 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-A-card-game/</guid><description>&lt;h1 id="card-game">Card Game&lt;/h1>
+在二分搜的判定中，會需要計算 $x_p^* \in \textrm{argmin} _ {x\in X}(f(x) + px)$（註：本文中 argmin 的定義會採用集合版本的），也就是在目前的 penalty 底下的最佳解當中 $x$ 是取值多少，或者可以說是被罰了幾個 penalty。這件事在 tie-breaking 的時候會變得比較麻煩，若 $f(x) + px$ 在多個 $x$ 都可以取到最小值，則我們會需要取最小的這種 $x$（也可以取最大的，但細節會稍微改變）；若無法算出最小的 $x$ 的話就無法直接以此作為二分搜的判定。本文目的為介紹一個不需要還原 $x_p^*$ 的一個 Aliens trick 寫法。&lt;/p></description></item><item><title>Seoul 2022 A : Card Game</title><link>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-a-card-game/</link><pubDate>Wed, 06 Sep 2023 14:47:03 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-a-card-game/</guid><description>&lt;h1 id="card-game">Card Game&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個 $N \times M$ 的棋盤，上面每格各擺了一個 $R, G, B$ 三種顏色之一的棋子&lt;br>
 接著雙方開始輪流操作，不能操作者就輸了，問你先手還是後手贏。&lt;/p>
@@ -101,7 +101,7 @@ $\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{
 考慮固定 $i,b$，那麼$j,a$之間是獨立的，我們可以拆成$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$，而對於每個$A_i$，$\sum_{j} \max(0,B_j-A_i)$是一個經典的問題，可以利用前綴和、後綴和的概念，或是排序（counting sort）+爬行法在線性時間內解決。總複雜度是枚舉所有$i,b$所需的$\mathcal{O}(n^2)$乘上對每個$a$計算$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$所需要的複雜度$\mathcal{O}(n)$，也就是$\mathcal{O}(n^3)$。&lt;/li>
 &lt;/ul>
 &lt;h4 id="code">code&lt;/h4>
-&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件">Ch2. Section 9. 補魔力的條件&lt;/h1>
+&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/tioj-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/tioj-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件">Ch2. Section 9. 補魔力的條件&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1764">https://tioj.ck.tp.edu.tw/problems/1764&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;ul>
@@ -243,7 +243,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1628</title><link>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</link><pubDate>Sun, 03 May 2020 15:02:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</guid><description>&lt;h1 id="組合布丁">組合布丁&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1628</title><link>https://omeletwithoutegg.github.io/2020/05/03/tioj-1628/</link><pubDate>Sun, 03 May 2020 15:02:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/03/tioj-1628/</guid><description>&lt;h1 id="組合布丁">組合布丁&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1628">https://tioj.ck.tp.edu.tw/problems/1628&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>記得在快樂暑假營開始前，你曾經說過：「只要我有一次比賽沒有破台，就要請全快樂營的人吃布丁。」&lt;br>
@@ -322,7 +322,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1102</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</link><pubDate>Tue, 25 Feb 2020 08:33:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</guid><description>&lt;h1 id="e海賊王">E.海賊王&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1102</title><link>https://omeletwithoutegg.github.io/2020/02/25/tioj-1102/</link><pubDate>Tue, 25 Feb 2020 08:33:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/tioj-1102/</guid><description>&lt;h1 id="e海賊王">E.海賊王&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1102">https://tioj.ck.tp.edu.tw/problems/1102&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>你是一位海賊，現在有$P$個敵人與$T$個寶藏等間距圍成一圓形&lt;br>
@@ -479,7 +479,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1553</title><link>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</link><pubDate>Wed, 19 Feb 2020 16:54:42 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</guid><description>&lt;h1 id="b-game">B-Game&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1553</title><link>https://omeletwithoutegg.github.io/2020/02/19/tioj-1553/</link><pubDate>Wed, 19 Feb 2020 16:54:42 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/19/tioj-1553/</guid><description>&lt;h1 id="b-game">B-Game&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1553">https://tioj.ck.tp.edu.tw/problems/1553&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>B-Game是個殘酷的兩人卡片對戰遊戲(Battle Game)&lt;br>
@@ -569,7 +569,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</guid><description>&lt;p>&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;&lt;/p>
+&lt;/div></description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/tioj-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/tioj-1283/</guid><description>&lt;p>&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;&lt;/p>
 &lt;h1 id="超大畫框設置">超大畫框設置&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1283">https://tioj.ck.tp.edu.tw/problems/1283&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
@@ -763,7 +763,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社">1.銀河帝國旅行社&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/tioj-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/tioj-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社">1.銀河帝國旅行社&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1152">https://tioj.ck.tp.edu.tw/problems/1152&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給一棵樹，找最遠的兩個點的距離&lt;/p>
@@ -836,7 +836,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-2037</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</link><pubDate>Tue, 31 Dec 2019 16:06:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</guid><description>&lt;h1 id="警力配置">警力配置&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-2037</title><link>https://omeletwithoutegg.github.io/2019/12/31/tioj-2037/</link><pubDate>Tue, 31 Dec 2019 16:06:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/tioj-2037/</guid><description>&lt;h1 id="警力配置">警力配置&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2037">https://tioj.ck.tp.edu.tw/problems/2037&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>裸的二分圖匹配&lt;/p>
@@ -1079,7 +1079,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1394</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</link><pubDate>Fri, 13 Dec 2019 06:36:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</guid><description>&lt;h1 id="黑色騎士團的逆襲野望">黑色騎士團的逆襲野望&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1394</title><link>https://omeletwithoutegg.github.io/2019/12/13/tioj-1394/</link><pubDate>Fri, 13 Dec 2019 06:36:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/tioj-1394/</guid><description>&lt;h1 id="黑色騎士團的逆襲野望">黑色騎士團的逆襲野望&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1394">https://tioj.ck.tp.edu.tw/problems/1394&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>自從黑色騎士團上次的最終野望被白色騎士豬殺苦破滅之後，黑色騎士團銷聲滅跡了一陣子，不過他們仍繼續計畫著侵略神聖的大不列顛帝國。&lt;/p>
@@ -1162,7 +1162,7 @@ $$dp[i][1] = 1 + \sum\limits _ {j\in son(i)} \min(dp[j][0],dp[j][1])$$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1774</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</link><pubDate>Thu, 05 Dec 2019 21:30:24 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</guid><description>&lt;h1 id="ch3-section-9-妁艷的頭髮">Ch3. Section 9. 妁艷的頭髮&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1774</title><link>https://omeletwithoutegg.github.io/2019/12/05/tioj-1774/</link><pubDate>Thu, 05 Dec 2019 21:30:24 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/tioj-1774/</guid><description>&lt;h1 id="ch3-section-9-妁艷的頭髮">Ch3. Section 9. 妁艷的頭髮&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1774">https://tioj.ck.tp.edu.tw/problems/1774&lt;/a>&lt;/p>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>裸背包，被值域嚇到XD&lt;br>
@@ -1198,7 +1198,7 @@ $$dp[i][1] = 1 + \sum\limits _ {j\in son(i)} \min(dp[j][0],dp[j][1])$$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</guid><description>&lt;h1 id="排教室問題">排教室問題&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</guid><description>&lt;h1 id="排教室問題">排教室問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1197">https://tioj.ck.tp.edu.tw/problems/1197&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>某校有M種不同的課程，其中有些課程的時間會有衝堂。如果學校中總共有N間不同的教室，請問共有多少種安排各課程上課教室的方式？最少要用到幾間教室？&lt;br>

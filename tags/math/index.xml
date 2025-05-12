@@ -30,7 +30,7 @@ $$&lt;/p>
 &lt;p>接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>naive 可以做到 $\mathcal{O}(NQ)$。以下介紹一個 $\mathcal{O}((N+Q)\log^2(N+Q))$ 的離線作法。&lt;/p>
-&lt;p>先問一個問題：我們要怎麼快速的求出 $f_N(x)$ 這個多項式呢？如果用 $f_i(x) = f_{i-1}(x) \cdot (x - a_i)$ 每次直接 $\mathcal{O}(N)$ 乘的話，總共會花上 $\mathcal{O}(N^2)$ 的時間。然而，我們可以建出一棵平衡的二元樹，樹的葉子是這些一次式，如果按照由下到上的順序計算每個節點的小孩的乘積，並使用 FFT 等比較快的多項式乘法的話，總時間就會是 $\mathcal{O}(N\log^2N)$。這是因為使用 FFT 把兩個多項式 $f, g$ 相乘會需要 $\mathcal{O}(k\log k)$ 的時間，其中 $k=\deg (fg)$；而在這棵二元樹中每個節點所存的多項式 degree 會等於該節點的子樹裡面的葉子數量，所有節點的多項式 degree 總和又更進一步的等於每個葉子的深度和（可以想想為什麼），因此只要二元樹夠平衡，深度是 $\mathcal{O}(\log N)$ 的話，總共乘法所需的時間就會是 $\mathcal{O}(N\log ^2N)$。&lt;/p></description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
+&lt;p>先問一個問題：我們要怎麼快速的求出 $f_N(x)$ 這個多項式呢？如果用 $f_i(x) = f_{i-1}(x) \cdot (x - a_i)$ 每次直接 $\mathcal{O}(N)$ 乘的話，總共會花上 $\mathcal{O}(N^2)$ 的時間。然而，我們可以建出一棵平衡的二元樹，樹的葉子是這些一次式，如果按照由下到上的順序計算每個節點的小孩的乘積，並使用 FFT 等比較快的多項式乘法的話，總時間就會是 $\mathcal{O}(N\log^2N)$。這是因為使用 FFT 把兩個多項式 $f, g$ 相乘會需要 $\mathcal{O}(k\log k)$ 的時間，其中 $k=\deg (fg)$；而在這棵二元樹中每個節點所存的多項式 degree 會等於該節點的子樹裡面的葉子數量，所有節點的多項式 degree 總和又更進一步的等於每個葉子的深度和（可以想想為什麼），因此只要二元樹夠平衡，深度是 $\mathcal{O}(\log N)$ 的話，總共乘法所需的時間就會是 $\mathcal{O}(N\log ^2N)$。&lt;/p></description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829">https://tioj.ck.tp.edu.tw/problems/1829&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p>
@@ -45,7 +45,7 @@ f(0) &amp;amp;= 0 \\&lt;br>
 f(N) &amp;amp;= 1 \\&lt;br>
 f(i) &amp;amp;= pf(i - 1) + (1 - p) f(i + 1), \forall {0 &amp;lt; i &amp;lt; N}&lt;br>
 \end{cases}&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</guid><description>&lt;h1 id="巨大密室問題">巨大密室問題&lt;/h1>
+$$&lt;/p></description></item><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1619/</guid><description>&lt;h1 id="巨大密室問題">巨大密室問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1619">https://tioj.ck.tp.edu.tw/problems/1619&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有長度 $n$ 的 $P_i$ 和 $O_i$ 兩個正整數序列，請任意排列這兩個序列使得 $\prod _ i (P_i + O_i)$ 盡量大。&lt;/p>
@@ -58,7 +58,7 @@ $$&lt;br>
 = P_i O_j + P_j O_i - P_i O_i - P_j O_j&lt;br>
 = (P_i - P_j) (O_j - O_i)&lt;br>
 $$&lt;br>
-如果沒有排好的話就必定存在 $i &amp;lt; j$ 使得 $O_i &amp;gt; O_j$，又 $P_i \leq P_j$，所以交換之後乘積不會變小。&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
+如果沒有排好的話就必定存在 $i &amp;lt; j$ 使得 $O_i &amp;gt; O_j$，又 $P_i \leq P_j$，所以交換之後乘積不會變小。&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2116">https://tioj.ck.tp.edu.tw/problems/2116&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>科學家發現了一種神奇的細菌，他們的繁殖方式很奇怪。這個世界上目前有 $N$ 隻細菌，第 $i$ 隻細菌的體積是 $A_i$ 立方公分。每過一年，對於一隻體積為 $x$ 立方公分的細菌，假設 $x$ 的所有正因數分別是&lt;br>
@@ -250,7 +250,7 @@ $n \leq 50$&lt;/p>
 &lt;h2 id="通靈">通靈&lt;/h2>
 &lt;p>定義一個函數 $G$，對於形式冪級數 $f(x) = \sum c_i x^i, G(f) = \sum c_i a_i$ 。&lt;br>
 顯然$G(f \pm g) = G(f) \pm G(g)$。&lt;br>
-根據 $s$ 構造一個多項式 $S$&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
+根據 $s$ 構造一個多項式 $S$&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/tioj-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/tioj-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136">https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br>
@@ -417,7 +417,7 @@ $n \leq 50$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</guid><description>&lt;h1 id="atcoder-regular-contest-106">AtCoder Regular Contest 106&lt;/h1>
+&lt;/div></description></item><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/arc-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/arc-106/</guid><description>&lt;h1 id="atcoder-regular-contest-106">AtCoder Regular Contest 106&lt;/h1>
 &lt;p>最近一直被ZCK推坑，vir了好幾場ARC&lt;br>
 然後打完AGC才發現自己rating太低unrated，爛死XD&lt;br>
 結果打完這場還是不到能夠rated的標準1200 QQ&lt;br>
@@ -454,7 +454,7 @@ $-10^9 \leq a_i, b_i \leq 10^9$&lt;/p>
 &lt;p>請構造一組輸出使得「$A$輸出的答案 - $B$輸出的答案 = $M$」&lt;br>
 &lt;strong>注意你構造的線段端點必須是不大於$10^9$的正整數，而且全部相異&lt;/strong>&lt;br>
 $1 \leq N \leq 10^5$&lt;br>
-$-N \leq M \leq N$&lt;/p></description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</guid><description>&lt;h1 id="assssss">Assssss!!&lt;/h1>
+$-N \leq M \leq N$&lt;/p></description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/tioj-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/tioj-1505/</guid><description>&lt;h1 id="assssss">Assssss!!&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1505">https://tioj.ck.tp.edu.tw/problems/1505&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>現在有一個正整數構成的除法數列&lt;/p>
@@ -527,7 +527,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1219</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</link><pubDate>Tue, 25 Feb 2020 09:55:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</guid><description>&lt;h1 id="發糖果囉">發糖果囉&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1219</title><link>https://omeletwithoutegg.github.io/2020/02/25/tioj-1219/</link><pubDate>Tue, 25 Feb 2020 09:55:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/tioj-1219/</guid><description>&lt;h1 id="發糖果囉">發糖果囉&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1219">https://tioj.ck.tp.edu.tw/problems/1219&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>求符合$1 \leq x \leq n, 1 \leq y \leq m$且$x,y$的最大公因數是$g$的數對有多少對&lt;br>
@@ -547,7 +547,7 @@ $$&lt;br>
 &amp;amp;= \sum_d \mu(d) {\lfloor \frac{N}{d} \rfloor} {\lfloor \frac{M}{d} \rfloor}&lt;br>
 \end{align*}&lt;br>
 $$&lt;br>
-預處理$\mu$的前綴，利用數論分塊可以做到$\mathcal{O}(N + Q \sqrt{N})$&lt;/p></description></item><item><title>TIOJ-1511</title><link>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</link><pubDate>Sat, 15 Feb 2020 13:25:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</guid><description>&lt;h1 id="problem-a-雷射防護網">Problem A. 雷射防護網&lt;/h1>
+預處理$\mu$的前綴，利用數論分塊可以做到$\mathcal{O}(N + Q \sqrt{N})$&lt;/p></description></item><item><title>TIOJ-1511</title><link>https://omeletwithoutegg.github.io/2020/02/15/tioj-1511/</link><pubDate>Sat, 15 Feb 2020 13:25:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/15/tioj-1511/</guid><description>&lt;h1 id="problem-a-雷射防護網">Problem A. 雷射防護網&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1511">https://tioj.ck.tp.edu.tw/problems/1511&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>考慮在正$n$邊形的頂點中任選三點形成的三角形，請統計分別有幾個銳角三角形、直角三角形和鈍角三角形&lt;br>
@@ -566,7 +566,7 @@ $$&lt;br>
 $$&lt;br>
 記得要乘上$n$，代表以每個頂點當作鈍角頂點&lt;br>
 又所有三角形的個數就是$\binom{n}{3} = \frac{n(n-1)(n-2)}{6}$&lt;br>
-扣掉直角及鈍角的個數就是銳角的個數了&lt;/p></description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</guid><description>&lt;h1 id="爆炸吧現充">爆炸吧現充~&lt;/h1>
+扣掉直角及鈍角的個數就是銳角的個數了&lt;/p></description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/tioj-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/tioj-1600/</guid><description>&lt;h1 id="爆炸吧現充">爆炸吧現充~&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1600">https://tioj.ck.tp.edu.tw/problems/1600&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>求共有幾個滿足&lt;/p>
@@ -592,7 +592,7 @@ $$&lt;/p>
 &amp;amp;= &amp;amp; \sum -\mu(k) |S_k|\newline&lt;br>
 &amp;amp;= &amp;amp; -\sum\limits _ {k=2}^\sqrt{n} \mu(k) \frac{n}{k^2}&lt;br>
 \end{matrix}&lt;br>
-$$&lt;/p></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
+$$&lt;/p></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
 &lt;h2 id="定義">定義&lt;/h2>
 &lt;p>$$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$&lt;br>
 或者說$a,b$同餘於$m$&lt;/p>
@@ -624,7 +624,7 @@ $$&lt;/p>
 而在模$m$的情況下，我們同樣也可以用一個使得$ax \equiv 1$的$x$來代替除以$a$的運算，稱為模逆元&lt;br>
 (如果常常打CF的話應該常常看見上面模逆元的敘述)&lt;br>
 求取模逆元$x = a^{-1}$只要把同餘關係改寫成$ax = my+1$就可以用擴展歐幾里得求解了&lt;br>
-注意$a,m$必須互質才會有模逆元&lt;/p></description></item><item><title>TIOJ-1674</title><link>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</link><pubDate>Thu, 19 Dec 2019 10:58:57 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</guid><description>&lt;h1 id="新專輯">新專輯&lt;/h1>
+注意$a,m$必須互質才會有模逆元&lt;/p></description></item><item><title>TIOJ-1674</title><link>https://omeletwithoutegg.github.io/2019/12/19/tioj-1674/</link><pubDate>Thu, 19 Dec 2019 10:58:57 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/19/tioj-1674/</guid><description>&lt;h1 id="新專輯">新專輯&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1674">https://tioj.ck.tp.edu.tw/problems/1674&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>最近你打算訂購$N^2$張水樹奈奈的專輯《極限魅惑IMPACT EXCITER》。&lt;br>
@@ -667,7 +667,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>回到剛剛的式子，把他改寫成&lt;/p></description></item><item><title>TIOJ-1948</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</link><pubDate>Wed, 11 Dec 2019 13:24:35 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</guid><description>&lt;h1 id="小向的試煉-2-1洞穴cave">小向的試煉 2-1：洞穴(Cave)&lt;/h1>
+&lt;/div>&lt;p>回到剛剛的式子，把他改寫成&lt;/p></description></item><item><title>TIOJ-1948</title><link>https://omeletwithoutegg.github.io/2019/12/11/tioj-1948/</link><pubDate>Wed, 11 Dec 2019 13:24:35 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/tioj-1948/</guid><description>&lt;h1 id="小向的試煉-2-1洞穴cave">小向的試煉 2-1：洞穴(Cave)&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1948">https://tioj.ck.tp.edu.tw/problems/1948&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>小向在洞穴裡偵察到了$N$個烏龍，不知道是本尊還是分身。不過他們在洞穴中都是以每秒1公分的速度前進，只是有的朝著左邊的入口前進，而有的朝著右邊的入口前進。而由於洞穴相當狹窄，兩個相向的烏龍相撞時會回頭。小向大膽猜測，本尊一定會在所有分身都出洞穴被小向打敗後才出洞穴，瞄準小向用盡魔力的那剎那攻擊小向。不過她也沒那麼多時間等所有分身慢慢走出來再找到本尊，所以小向希望能直接用她剛剛偵察到的資訊判斷哪個是本尊。($N\leq10^6$，洞穴的長度$L\leq10^9$)&lt;/p>
@@ -728,7 +728,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</guid><description>&lt;h1 id="販賣機耶">販賣機耶&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/tioj-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/tioj-1614/</guid><description>&lt;h1 id="販賣機耶">販賣機耶&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1614">https://tioj.ck.tp.edu.tw/problems/1614&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>蝴蝶在路旁玩壞一台販賣機，它一次只能投一枚硬幣（故障？）。&lt;br>
@@ -782,7 +782,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>&lt;h1 id="同步sync">同步(Sync)&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/tioj-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/tioj-1927/</guid><description>&lt;h1 id="同步sync">同步(Sync)&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1927">https://tioj.ck.tp.edu.tw/problems/1927&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。&lt;br>
@@ -1018,7 +1018,7 @@ $$&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</guid><description>&lt;h1 id="d番茄大戰爭">D.番茄大戰爭&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/tioj-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/tioj-2019/</guid><description>&lt;h1 id="d番茄大戰爭">D.番茄大戰爭&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2019">https://tioj.ck.tp.edu.tw/problems/2019&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>兩個人在玩剪刀石頭布，而他們兩個人玩了$T$個回合。兩個人（此處稱為小奕和小安）各自有一個「策略」，分別為兩個字串$A$和$B$。兩個字串皆由&lt;code>R&lt;/code>、&lt;code>P&lt;/code>、&lt;code>S&lt;/code>三個字元組成，分別代表小奕和小安會出石頭、布、剪刀。兩個人都會根據他們的「策略」出題，在第$i$個回合，小奕將會出$A _ {i \mod {|A|}}$，而小安將出$B _ {i \mod{|B|}}$，從$i = 0$開始。請輸出：經過$T$個回合後，兩人分別贏了幾局，平手了幾局。&lt;/p>
@@ -1026,7 +1026,7 @@ $$&lt;br>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>首先，看到$1 \leq T \leq 10^9$當然想說直接給他寫個$\mathcal{O}(T)$，寫了五分鐘之後傳上去——AC——了前幾筆，之後就TLE了。所以，當然就來想怪做法嘍！&lt;/p>
 &lt;p>先假設$|A| \leq |B|$。第一個想法就是，對於$A$裏頭的每一個字元$A_i$，我都看一次我會遇到哪些字元（$B_i, B _ {i + |A|}, B _ {i + 2\times|A|}, \dots$，也就是所有滿足$(i + k|A|) \mod{|B|} \leq T$的$B _ {(i + k|A|)\mod{|B|}}$，然後再$\mathcal{O}(1)$更新答案。這樣複雜度依然為$\mathcal{O}(T)$，因為還是每一個時間點都有戳到一次，只是改變順序而已了。不過！這個順序很重要，因為可以優化！&lt;/p>
-&lt;p>若我們看$A_i$，我們先考慮它會遇到那些$B$的字元$$B_i, B _ {i + |A|}, B _ {i + 2\times|A|}, \dots $$，也就是所有的$B _ {i + k|A| \mod{|B|}}$。可以知道，這樣分可以將$B$的所有字元分成若干個相斥的群組$G_t$！具體做法就是，先看$A_i$，如果$B_i$尚未在一個群組裡面，就創立一個新的群組然後將所有的$B _ {i + k|A|}$加進去這個群組裡面。現在，就想要用這個新的資料儲存方式來加快我們的運算。&lt;/p></description></item><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</guid><description>&lt;h1 id="f無限兔子問題">F.無限兔子問題&lt;/h1>
+&lt;p>若我們看$A_i$，我們先考慮它會遇到那些$B$的字元$$B_i, B _ {i + |A|}, B _ {i + 2\times|A|}, \dots $$，也就是所有的$B _ {i + k|A| \mod{|B|}}$。可以知道，這樣分可以將$B$的所有字元分成若干個相斥的群組$G_t$！具體做法就是，先看$A_i$，如果$B_i$尚未在一個群組裡面，就創立一個新的群組然後將所有的$B _ {i + k|A|}$加進去這個群組裡面。現在，就想要用這個新的資料儲存方式來加快我們的運算。&lt;/p></description></item><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-2021/</guid><description>&lt;h1 id="f無限兔子問題">F.無限兔子問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2021">https://tioj.ck.tp.edu.tw/problems/2021&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>令$F_i$是費式數列&lt;br>
@@ -1059,7 +1059,7 @@ S_i&lt;br>
 \end{matrix}&lt;br>
 \right]&lt;br>
 $$&lt;br>
-來得到前綴$S_i$的值&lt;/p></description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2">愛蜜利雅的作業2&lt;/h1>
+來得到前綴$S_i$的值&lt;/p></description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2">愛蜜利雅的作業2&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1282">https://tioj.ck.tp.edu.tw/problems/1282&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數&lt;br>

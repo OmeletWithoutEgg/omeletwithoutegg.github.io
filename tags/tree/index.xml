@@ -12,7 +12,7 @@ $2 \leq N \leq 10^5$&lt;/p>&lt;/blockquote>
 $$&lt;br>
 dp_u = \prod\limits _ {v \in child(u)} (1 + dp_v)&lt;br>
 $$&lt;/p>
-&lt;p>接著，如果根從 $1$ 變成 $x$ 了之後，哪些點的 DP 值有變呢？從下面的圖我們可以發現，因為 DP 值是對整個子樹定義的，而圖中紅色和藍色的節點對應的子樹完全沒有變化，所以其實只有 $1$ 和 $x$ 這兩個點的 DP 值有可能會有變化！&lt;/p></description></item><item><title>TIOJ 1724</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</link><pubDate>Wed, 18 Dec 2024 20:57:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</guid><description>&lt;h1 id="spacechem">SpaceChem&lt;/h1>
+&lt;p>接著，如果根從 $1$ 變成 $x$ 了之後，哪些點的 DP 值有變呢？從下面的圖我們可以發現，因為 DP 值是對整個子樹定義的，而圖中紅色和藍色的節點對應的子樹完全沒有變化，所以其實只有 $1$ 和 $x$ 這兩個點的 DP 值有可能會有變化！&lt;/p></description></item><item><title>TIOJ 1724</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1724/</link><pubDate>Wed, 18 Dec 2024 20:57:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1724/</guid><description>&lt;h1 id="spacechem">SpaceChem&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1724">https://tioj.ck.tp.edu.tw/problems/1724&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>差點看不懂的題敘。&lt;/p>
@@ -21,7 +21,7 @@ $$&lt;/p>
 &lt;p>$N \leq 100, M \leq 10000$&lt;/p>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>如果 $T \subseteq G$ 是一個最小生成樹，則對於每一條不在 $T$ 上的邊 $e = (u, v)$，$e$ 的邊權必須大於等於任何 $\textrm{path}_T(u, v)$ 的邊的邊權，其中 $\textrm{path}_T(u, v)$ 是指 $T$ 上 $u$ 到 $v$ 的簡單路徑。不然的話，就可以把一個樹邊斷掉換成 $e$。不難證明滿足這個條件的話，$T$ 必定也會是一個最小生成樹。&lt;/p>
-&lt;p>我們可以知道我們只會把樹邊改小、把非樹邊改大。對於一條非樹邊 $e_i = (u, v)$，假設他的權重被改成 $C_i + x_i$，而樹邊 $e_j$ 則改成 $C_j - y_j$，那麼前一段的條件就可以寫成 $C_i + x_i \geq C_j - y_j$，改寫成線性規劃標準式的話就變成&lt;/p></description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</guid><description>&lt;h1 id="殿壬與最大流">殿壬與最大流&lt;/h1>
+&lt;p>我們可以知道我們只會把樹邊改小、把非樹邊改大。對於一條非樹邊 $e_i = (u, v)$，假設他的權重被改成 $C_i + x_i$，而樹邊 $e_j$ 則改成 $C_j - y_j$，那麼前一段的條件就可以寫成 $C_i + x_i \geq C_j - y_j$，改寫成線性規劃標準式的話就變成&lt;/p></description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-2117/</guid><description>&lt;h1 id="殿壬與最大流">殿壬與最大流&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2117">https://tioj.ck.tp.edu.tw/problems/2117&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>$Q \leq 2 \times 10^5$ 次詢問無向圖 $G$ 上面任兩點的最大流（邊權是 $1$）。但是，$G$ 是一張 $N$ 點 $N$ 邊連通圖。&lt;/p>
@@ -219,7 +219,7 @@ $\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{
 考慮固定 $i,b$，那麼$j,a$之間是獨立的，我們可以拆成$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$，而對於每個$A_i$，$\sum_{j} \max(0,B_j-A_i)$是一個經典的問題，可以利用前綴和、後綴和的概念，或是排序（counting sort）+爬行法在線性時間內解決。總複雜度是枚舉所有$i,b$所需的$\mathcal{O}(n^2)$乘上對每個$a$計算$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$所需要的複雜度$\mathcal{O}(n)$，也就是$\mathcal{O}(n^3)$。&lt;/li>
 &lt;/ul>
 &lt;h4 id="code">code&lt;/h4>
-&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>&lt;h1 id="can-you-arrive">Can You Arrive?&lt;/h1>
+&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/tioj-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/tioj-1798/</guid><description>&lt;h1 id="can-you-arrive">Can You Arrive?&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1798">https://tioj.ck.tp.edu.tw/problems/1798&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>地鐵有$N$個站，$M$條軌道，$K$段行駛路線&lt;br>
@@ -483,7 +483,7 @@ $K \leq N \leq 10^6, M = N-1, Q \leq 10^6$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社">1.銀河帝國旅行社&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/tioj-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/tioj-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社">1.銀河帝國旅行社&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1152">https://tioj.ck.tp.edu.tw/problems/1152&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給一棵樹，找最遠的兩個點的距離&lt;/p>
@@ -556,7 +556,7 @@ $K \leq N \leq 10^6, M = N-1, Q \leq 10^6$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</guid><description>&lt;h1 id="動態樹的奮鬥">動態樹的奮鬥&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/tioj-1171-lct/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/tioj-1171-lct/</guid><description>&lt;h1 id="動態樹的奮鬥">動態樹的奮鬥&lt;/h1>
 &lt;p>為了這題的Link-Cut-Tree解我花了不只一整天XD&lt;br>
 壓常實在是神奇的事，把 &lt;code>long long&lt;/code> 改成 &lt;code>int&lt;/code> 再加上幾個 &lt;code>pragma&lt;/code> 終於成功壓過唯一奇怪的那筆= =&lt;br>
 而且 &lt;code>push&lt;/code> 竟然還不能用遞迴寫，到底三小&lt;br>
@@ -815,7 +815,7 @@ LCT怎麼這麼可撥XD&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>&lt;h1 id="我要成為海賊王">我要成為海賊王&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1171/</guid><description>&lt;h1 id="我要成為海賊王">我要成為海賊王&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1171">https://tioj.ck.tp.edu.tw/problems/1171&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和&lt;/p>

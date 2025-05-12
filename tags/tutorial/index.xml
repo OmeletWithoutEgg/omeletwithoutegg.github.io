@@ -56,7 +56,7 @@ $$&lt;/p>
 考慮下凸函數 $f : X \to \mathbb{Z}$（註：即 $f(x) - f(x - 1) \leq f(x + 1) - f(x)$，可以用 U 型來想像）。&lt;br>
 令 $g: \mathbb{R} \to \mathbb{R}, g(p) = \min _ {x \in X}(f(x) + px)$，代表 penalty 為 p 時算出的最佳解。&lt;/p>
 &lt;p>在以前大家學過的 Aliens trick 當中的設定會是特定的 $f(k)$ 很難算（例如郵局設置問題中設置 $k$ 個郵局的最小花費）而 $g(p)$ 比較好算（例如郵局設置問題中每個郵局多花 $p$ 的最佳解），我們需要二分搜出恰當的 penalty，使得取到最佳解的 $x$ 恰好是 $k$，或至少介在小於 $k$ 和大於 $k$ 之間的分界點。&lt;br>
-在二分搜的判定中，會需要計算 $x_p^* \in \textrm{argmin} _ {x\in X}(f(x) + px)$（註：本文中 argmin 的定義會採用集合版本的），也就是在目前的 penalty 底下的最佳解當中 $x$ 是取值多少，或者可以說是被罰了幾個 penalty。這件事在 tie-breaking 的時候會變得比較麻煩，若 $f(x) + px$ 在多個 $x$ 都可以取到最小值，則我們會需要取最小的這種 $x$（也可以取最大的，但細節會稍微改變）；若無法算出最小的 $x$ 的話就無法直接以此作為二分搜的判定。本文目的為介紹一個不需要還原 $x_p^*$ 的一個 Aliens trick 寫法。&lt;/p></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
+在二分搜的判定中，會需要計算 $x_p^* \in \textrm{argmin} _ {x\in X}(f(x) + px)$（註：本文中 argmin 的定義會採用集合版本的），也就是在目前的 penalty 底下的最佳解當中 $x$ 是取值多少，或者可以說是被罰了幾個 penalty。這件事在 tie-breaking 的時候會變得比較麻煩，若 $f(x) + px$ 在多個 $x$ 都可以取到最小值，則我們會需要取最小的這種 $x$（也可以取最大的，但細節會稍微改變）；若無法算出最小的 $x$ 的話就無法直接以此作為二分搜的判定。本文目的為介紹一個不需要還原 $x_p^*$ 的一個 Aliens trick 寫法。&lt;/p></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
 然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p>
 &lt;h1 id="先備知識">先備知識&lt;/h1>
 &lt;p>看得懂$\sum$&lt;br>
@@ -81,7 +81,7 @@ KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法
 &lt;p>首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。&lt;br>
 在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$&lt;br>
 那麼很顯然的，對於任何一種合法的頂標來說，頂標的總和會大於等於最大權完美匹配的值。&lt;br>
-因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
+因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
 &lt;h2 id="定義">定義&lt;/h2>
 &lt;p>$$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$&lt;br>
 或者說$a,b$同餘於$m$&lt;/p>
@@ -113,7 +113,7 @@ $$&lt;/p>
 而在模$m$的情況下，我們同樣也可以用一個使得$ax \equiv 1$的$x$來代替除以$a$的運算，稱為模逆元&lt;br>
 (如果常常打CF的話應該常常看見上面模逆元的敘述)&lt;br>
 求取模逆元$x = a^{-1}$只要把同餘關係改寫成$ax = my+1$就可以用擴展歐幾里得求解了&lt;br>
-注意$a,m$必須互質才會有模逆元&lt;/p></description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
+注意$a,m$必須互質才會有模逆元&lt;/p></description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
 &lt;p>本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速&lt;br>
 這邊先定義一下捲積$ * $是什麼&lt;/p>
 &lt;p>$$&lt;br>
@@ -147,7 +147,7 @@ $$&lt;br>
 因為$C$的次數已經可以確定&lt;br>
 我們也可以在$A(x)$和$B(x)$找出$n$個相異的點，相乘之後再利用插值法代入得到$C$&lt;br>
 其中$n = \deg C + 1$&lt;br>
-也就是&lt;/p></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
+也就是&lt;/p></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
 &lt;p>先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br>
 如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p>
 &lt;h2 id="單點修改">單點修改&lt;/h2>
@@ -191,7 +191,7 @@ $$&lt;br>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到&lt;br>
-注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
+注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
 &lt;h2 id="cin--cout">cin / cout&lt;/h2>
 &lt;p>因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用&lt;br>
 競程的時候記得開下面兩個東西&lt;/p>
