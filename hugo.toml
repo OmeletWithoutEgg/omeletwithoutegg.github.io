@@ -18,7 +18,7 @@ pygmentsStyle = "pygments"
 pygmentsUseClasses = true
 
 [permalinks]
-posts = ":year/:month/:day/:filename/"
+posts = ":year/:month/:day/:contentbasename/"
 
 # Navigation
 ## Main menu which appears below site header.
