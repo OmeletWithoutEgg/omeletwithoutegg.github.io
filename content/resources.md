@@ -11,22 +11,24 @@ tags: []
 ## 一些其他人的 blog
 友情（？）連結
 
-- https://www.wiwiho.me/
 - https://www.jikuai.dev/
 - https://blog.simbafs.cc/
 - https://littlecube8152.github.io/
 - https://yunxiurz.github.io/
-- https://forever-codingnoob.github.io/
 - https://tmt514.github.io/
     - https://tmt514.github.io/algorithm-analysis/
 - https://sunmoon-template.blogspot.com/
-- https://baluteshih.blogspot.com/
 - https://alvingogo.github.io/
+- https://caidocode.blogspot.com/
+- https://the-coding-pooh.github.io/
 
 ## 年久失修（？）的 blog
-其實我猜我的 blog 很快也要年久失修ㄌ
+我的 blog 隨時也會年久失修。
 <!-- 註：目前分類依據姑且先依照更新本文時一年內有沒有新文章 -->
 
+- https://www.wiwiho.me/
+<!-- - https://forever-codingnoob.github.io/ -->
+- https://baluteshih.blogspot.com/
 - https://brian.su/
 - https://cbdcoding.blogspot.com/
 - https://oi.ototot.tw/
@@ -37,7 +39,7 @@ tags: []
 - https://erdone.github.io/
 - https://emanlaicepsa.github.io/
 - https://hiiragi4000.blogspot.com/
-- https://codingsimplifylife.blogspot.com/
+<!-- - https://codingsimplifylife.blogspot.com/ -->
 <!-- - https://blog.tommydong.live/ -->
 
 ## 一些隨機的外國資料
@@ -56,6 +58,7 @@ tags: []
     - https://visualgo.net/en
     - https://cpbook.net/
 - https://thisisadi.yoga/ICPC/
+- https://byvoid.com/zht/
 - https://zhuanlan.zhihu.com/p/697429479 （有空的話 dump 內容出來）
 
 <!-- 如何打ICPC（详细揭秘） - 知乎，是 https://cphof.org/profile/topcoder:moorhsum 寫的 -->
