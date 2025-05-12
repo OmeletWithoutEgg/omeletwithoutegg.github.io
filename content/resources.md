@@ -14,6 +14,7 @@ tags: []
 - https://www.jikuai.dev/
 - https://blog.simbafs.cc/
 - https://littlecube8152.github.io/
+- https://blog.forvkusa.csie.org/
 - https://yunxiurz.github.io/
 - https://tmt514.github.io/
     - https://tmt514.github.io/algorithm-analysis/
@@ -27,7 +28,6 @@ tags: []
 <!-- 註：目前分類依據姑且先依照更新本文時一年內有沒有新文章 -->
 
 - https://www.wiwiho.me/
-<!-- - https://forever-codingnoob.github.io/ -->
 - https://baluteshih.blogspot.com/
 - https://brian.su/
 - https://cbdcoding.blogspot.com/
