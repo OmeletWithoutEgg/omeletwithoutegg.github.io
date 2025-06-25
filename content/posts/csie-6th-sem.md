@@ -3,7 +3,7 @@ title: "第六學期修課心得"
 date: 2024-07-07T21:31:21+08:00
 draft: false
 mathjax: true
-tags: [CSIE]
+tags: [CSIE, experience]
 ---
 
 # Sixth semester

@@ -3,7 +3,7 @@ title: "第三學期修課心得"
 date: 2023-01-15T22:52:47+08:00
 draft: false
 mathjax: true
-tags: [CSIE]
+tags: [CSIE, experience]
 ---
 
 # Third semester
