@@ -287,7 +287,7 @@ usb 開機。&lt;/p>
 &lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ls /sys/firmware/efi/efivars
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>如果指令沒有報錯，則系統在 UEFI 模式下啓動。如果目錄不存在，系統可能以 BIOS 或 CSM 模式啓動。&lt;/p></description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/using-vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/using-vim/</guid><description>&lt;h1 id="vim-">vim ?!&lt;/h1>
+&lt;/div>&lt;p>如果指令沒有報錯，則系統在 UEFI 模式下啓動。如果目錄不存在，系統可能以 BIOS 或 CSM 模式啓動。&lt;/p></description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</guid><description>&lt;h1 id="vim-">vim ?!&lt;/h1>
 &lt;p>vim : 古老的編輯器&lt;/p>
 &lt;p>&lt;a href="https://omeletwithoutegg.github.io/2025/03/10/vim-fern/">新文章&lt;/a>&lt;/p>
 &lt;!-- https://gohugo.io/content-management/cross-references/ -->

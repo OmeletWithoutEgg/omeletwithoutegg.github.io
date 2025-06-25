@@ -1,0 +1,429 @@
+<!doctype html><html lang=en-us><head><link rel=preload href=/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script type=text/javascript src=https://latest.cactus.chat/cactus.js></script><link rel=stylesheet href=https://latest.cactus.chat/style.css type=text/css><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>TIOJ 1724 | 蛋餅的競程隨筆</title><link rel=canonical href=https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/><meta name=description content="一個廢人想寫題解，所以他想辦法弄網站"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="all,follow"><meta name=googlebot content="index,follow,snippet,archive"><meta property="og:url" content="https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/"><meta property="og:site_name" content="蛋餅的競程隨筆"><meta property="og:title" content="TIOJ 1724"><meta property="og:description" content="SpaceChem https://tioj.ck.tp.edu.tw/problems/1724
+Description 差點看不懂的題敘。
+簡單來說，現在有一張 $N$ 點 $M$ 邊的圖 $G$，第 $i$ 條邊權重是 $C_i$，保證前 $N-1$ 條邊是一棵樹。你希望修改一些邊的權重，使得前 $N-1$ 條邊組成的樹恰好是修改後的圖的一個最小生成樹。第 $i$ 條邊修改成 $D_i$ 的代價是 $|C_i - D_i|$，請輸出最小的代價是多少。
+請注意可以修改樹邊也可以修改非樹邊。
+$N \leq 100, M \leq 10000$
+Solution 如果 $T \subseteq G$ 是一個最小生成樹，則對於每一條不在 $T$ 上的邊 $e = (u, v)$，$e$ 的邊權必須大於等於任何 $\textrm{path}_T(u, v)$ 的邊的邊權，其中 $\textrm{path}_T(u, v)$ 是指 $T$ 上 $u$ 到 $v$ 的簡單路徑。不然的話，就可以把一個樹邊斷掉換成 $e$。不難證明滿足這個條件的話，$T$ 必定也會是一個最小生成樹。
+我們可以知道我們只會把樹邊改小、把非樹邊改大。對於一條非樹邊 $e_i = (u, v)$，假設他的權重被改成 $C_i + x_i$，而樹邊 $e_j$ 則改成 $C_j - y_j$，那麼前一段的條件就可以寫成 $C_i + x_i \geq C_j - y_j$，改寫成線性規劃標準式的話就變成"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-12-18T20:57:33+08:00"><meta property="article:modified_time" content="2024-12-18T20:57:33+08:00"><meta property="article:tag" content="TIOJ"><meta property="article:tag" content="Matching"><meta property="article:tag" content="Tree"><meta property="article:tag" content="Linear-Programming"><meta property="article:tag" content="Dual"><meta property="article:tag" content="Flow"><meta name=twitter:card content="summary"><meta name=twitter:title content="TIOJ 1724"><meta name=twitter:description content="SpaceChem https://tioj.ck.tp.edu.tw/problems/1724
+Description 差點看不懂的題敘。
+簡單來說，現在有一張 $N$ 點 $M$ 邊的圖 $G$，第 $i$ 條邊權重是 $C_i$，保證前 $N-1$ 條邊是一棵樹。你希望修改一些邊的權重，使得前 $N-1$ 條邊組成的樹恰好是修改後的圖的一個最小生成樹。第 $i$ 條邊修改成 $D_i$ 的代價是 $|C_i - D_i|$，請輸出最小的代價是多少。
+請注意可以修改樹邊也可以修改非樹邊。
+$N \leq 100, M \leq 10000$
+Solution 如果 $T \subseteq G$ 是一個最小生成樹，則對於每一條不在 $T$ 上的邊 $e = (u, v)$，$e$ 的邊權必須大於等於任何 $\textrm{path}_T(u, v)$ 的邊的邊權，其中 $\textrm{path}_T(u, v)$ 是指 $T$ 上 $u$ 到 $v$ 的簡單路徑。不然的話，就可以把一個樹邊斷掉換成 $e$。不難證明滿足這個條件的話，$T$ 必定也會是一個最小生成樹。
+我們可以知道我們只會把樹邊改小、把非樹邊改大。對於一條非樹邊 $e_i = (u, v)$，假設他的權重被改成 $C_i + x_i$，而樹邊 $e_j$ 則改成 $C_j - y_j$，那麼前一段的條件就可以寫成 $C_i + x_i \geq C_j - y_j$，改寫成線性規劃標準式的話就變成"><link rel=stylesheet href=https://omeletwithoutegg.github.io/css/styles.f0dfa32909faa2750dc7e754bad2d1afb18c45afb01ca8bf8159fe24d8c444e0211dbedf25457d282e149442086b14381ad49a063844d41f4c1db57709e5eeb6.css integrity="sha512-8N+jKQn6onUNx+dUutLRr7GMRa+wHKi/gVn+JNjEROAhHb7fJUV9KC4UlEIIaxQ4GtSaBjhE1B9MHbV3CeXutg=="><link rel=stylesheet href=https://omeletwithoutegg.github.io/css/highlight.css><link rel=stylesheet href=https://omeletwithoutegg.github.io/css/style-dark.css><link rel=stylesheet href=https://omeletwithoutegg.github.io/css/search.css><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script><script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=icon type=image/png href=https://omeletwithoutegg.github.io/images/favicon.ico><script async src="https://www.googletagmanager.com/gtag/js?id=G-0ME10Z2L0D"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-0ME10Z2L0D")}</script></head><body class="max-width mx-auto px3 ltr"><div class="content index py4"><div id=header-post><a id=menu-icon href=#><i class="fas fa-bars fa-lg"></i></a>
+<a id=menu-icon-tablet href=#><i class="fas fa-bars fa-lg"></i></a>
+<a id=top-icon-tablet href=# onclick='$("html, body").animate({scrollTop:0},"fast")' style=display:none aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+<span id=menu><span id=nav><ul><li><a href=/>Home</a></li><li><a href=/about/>About</a></li><li><a href=/posts/>Posts</a></li><li><a href=/resources/>Resources</a></li><li><a href=/search/>Search</a></li><li><a href=/tags/>Tags</a></li></ul></span><br><span id=actions><ul><li><a class=icon href=https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/ aria-label=Previous><i class="fas fa-chevron-left" aria-hidden=true onmouseover='$("#i-prev").toggle()' onmouseout='$("#i-prev").toggle()'></i></a></li><li><a class=icon href=https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/ aria-label=Next><i class="fas fa-chevron-right" aria-hidden=true onmouseover='$("#i-next").toggle()' onmouseout='$("#i-next").toggle()'></i></a></li><li><a class=icon href=# onclick='$("html, body").animate({scrollTop:0},"fast")' aria-label="Top of Page"><i class="fas fa-chevron-up" aria-hidden=true onmouseover='$("#i-top").toggle()' onmouseout='$("#i-top").toggle()'></i></a></li><li><a class=icon href=# aria-label=Share><i class="fas fa-share-alt" aria-hidden=true onmouseover='$("#i-share").toggle()' onmouseout='$("#i-share").toggle()' onclick='return $("#share").toggle(),!1'></i></a></li></ul><span id=i-prev class=info style=display:none>Previous post</span>
+<span id=i-next class=info style=display:none>Next post</span>
+<span id=i-top class=info style=display:none>Back to top</span>
+<span id=i-share class=info style=display:none>Share post</span></span><br><div id=share style=display:none><ul><li><a class=icon href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f" aria-label=Facebook><i class="fab fa-facebook" aria-hidden=true></i></a></li><li><a class=icon href="https://twitter.com/share?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&text=TIOJ%201724" aria-label=Twitter><i class="fab fa-twitter" aria-hidden=true></i></a></li><li><a class=icon href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&title=TIOJ%201724" aria-label=Linkedin><i class="fab fa-linkedin" aria-hidden=true></i></a></li><li><a class=icon href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&is_video=false&description=TIOJ%201724" aria-label=Pinterest><i class="fab fa-pinterest" aria-hidden=true></i></a></li><li><a class=icon href="mailto:?subject=TIOJ%201724&body=Check out this article: https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f" aria-label=Email><i class="fas fa-envelope" aria-hidden=true></i></a></li><li><a class=icon href="https://getpocket.com/save?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&title=TIOJ%201724" aria-label=Pocket><i class="fab fa-get-pocket" aria-hidden=true></i></a></li><li><a class=icon href="http://reddit.com/submit?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&title=TIOJ%201724" aria-label=reddit><i class="fab fa-reddit" aria-hidden=true></i></a></li><li><a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&name=TIOJ%201724&description=%3ch1%20id%3d%22spacechem%22%3eSpaceChem%3c%2fh1%3e%0a%3cp%3e%3ca%20href%3d%22https%3a%2f%2ftioj.ck.tp.edu.tw%2fproblems%2f1724%22%3ehttps%3a%2f%2ftioj.ck.tp.edu.tw%2fproblems%2f1724%3c%2fa%3e%3c%2fp%3e%0a%3ch2%20id%3d%22description%22%3eDescription%3c%2fh2%3e%0a%3cp%3e%e5%b7%ae%e9%bb%9e%e7%9c%8b%e4%b8%8d%e6%87%82%e7%9a%84%e9%a1%8c%e6%95%98%e3%80%82%3c%2fp%3e%0a%3cp%3e%e7%b0%a1%e5%96%ae%e4%be%86%e8%aa%aa%ef%bc%8c%e7%8f%be%e5%9c%a8%e6%9c%89%e4%b8%80%e5%bc%b5%20%24N%24%20%e9%bb%9e%20%24M%24%20%e9%82%8a%e7%9a%84%e5%9c%96%20%24G%24%ef%bc%8c%e7%ac%ac%20%24i%24%20%e6%a2%9d%e9%82%8a%e6%ac%8a%e9%87%8d%e6%98%af%20%24C_i%24%ef%bc%8c%e4%bf%9d%e8%ad%89%e5%89%8d%20%24N-1%24%20%e6%a2%9d%e9%82%8a%e6%98%af%e4%b8%80%e6%a3%b5%e6%a8%b9%e3%80%82%e4%bd%a0%e5%b8%8c%e6%9c%9b%e4%bf%ae%e6%94%b9%e4%b8%80%e4%ba%9b%e9%82%8a%e7%9a%84%e6%ac%8a%e9%87%8d%ef%bc%8c%e4%bd%bf%e5%be%97%e5%89%8d%20%24N-1%24%20%e6%a2%9d%e9%82%8a%e7%b5%84%e6%88%90%e7%9a%84%e6%a8%b9%e6%81%b0%e5%a5%bd%e6%98%af%e4%bf%ae%e6%94%b9%e5%be%8c%e7%9a%84%e5%9c%96%e7%9a%84%e4%b8%80%e5%80%8b%e6%9c%80%e5%b0%8f%e7%94%9f%e6%88%90%e6%a8%b9%e3%80%82%e7%ac%ac%20%24i%24%20%e6%a2%9d%e9%82%8a%e4%bf%ae%e6%94%b9%e6%88%90%20%24D_i%24%20%e7%9a%84%e4%bb%a3%e5%83%b9%e6%98%af%20%24%7cC_i%20-%20D_i%7c%24%ef%bc%8c%e8%ab%8b%e8%bc%b8%e5%87%ba%e6%9c%80%e5%b0%8f%e7%9a%84%e4%bb%a3%e5%83%b9%e6%98%af%e5%a4%9a%e5%b0%91%e3%80%82%3c%2fp%3e%0a%3cp%3e%e8%ab%8b%e6%b3%a8%e6%84%8f%e5%8f%af%e4%bb%a5%e4%bf%ae%e6%94%b9%e6%a8%b9%e9%82%8a%e4%b9%9f%e5%8f%af%e4%bb%a5%e4%bf%ae%e6%94%b9%e9%9d%9e%e6%a8%b9%e9%82%8a%e3%80%82%3c%2fp%3e%0a%3cp%3e%24N%20%5cleq%20100%2c%20M%20%5cleq%2010000%24%3c%2fp%3e%0a%3ch2%20id%3d%22solution%22%3eSolution%3c%2fh2%3e%0a%3cp%3e%e5%a6%82%e6%9e%9c%20%24T%20%5csubseteq%20G%24%20%e6%98%af%e4%b8%80%e5%80%8b%e6%9c%80%e5%b0%8f%e7%94%9f%e6%88%90%e6%a8%b9%ef%bc%8c%e5%89%87%e5%b0%8d%e6%96%bc%e6%af%8f%e4%b8%80%e6%a2%9d%e4%b8%8d%e5%9c%a8%20%24T%24%20%e4%b8%8a%e7%9a%84%e9%82%8a%20%24e%20%3d%20%28u%2c%20v%29%24%ef%bc%8c%24e%24%20%e7%9a%84%e9%82%8a%e6%ac%8a%e5%bf%85%e9%a0%88%e5%a4%a7%e6%96%bc%e7%ad%89%e6%96%bc%e4%bb%bb%e4%bd%95%20%24%5ctextrm%7bpath%7d_T%28u%2c%20v%29%24%20%e7%9a%84%e9%82%8a%e7%9a%84%e9%82%8a%e6%ac%8a%ef%bc%8c%e5%85%b6%e4%b8%ad%20%24%5ctextrm%7bpath%7d_T%28u%2c%20v%29%24%20%e6%98%af%e6%8c%87%20%24T%24%20%e4%b8%8a%20%24u%24%20%e5%88%b0%20%24v%24%20%e7%9a%84%e7%b0%a1%e5%96%ae%e8%b7%af%e5%be%91%e3%80%82%e4%b8%8d%e7%84%b6%e7%9a%84%e8%a9%b1%ef%bc%8c%e5%b0%b1%e5%8f%af%e4%bb%a5%e6%8a%8a%e4%b8%80%e5%80%8b%e6%a8%b9%e9%82%8a%e6%96%b7%e6%8e%89%e6%8f%9b%e6%88%90%20%24e%24%e3%80%82%e4%b8%8d%e9%9b%a3%e8%ad%89%e6%98%8e%e6%bb%bf%e8%b6%b3%e9%80%99%e5%80%8b%e6%a2%9d%e4%bb%b6%e7%9a%84%e8%a9%b1%ef%bc%8c%24T%24%20%e5%bf%85%e5%ae%9a%e4%b9%9f%e6%9c%83%e6%98%af%e4%b8%80%e5%80%8b%e6%9c%80%e5%b0%8f%e7%94%9f%e6%88%90%e6%a8%b9%e3%80%82%3c%2fp%3e%0a%3cp%3e%e6%88%91%e5%80%91%e5%8f%af%e4%bb%a5%e7%9f%a5%e9%81%93%e6%88%91%e5%80%91%e5%8f%aa%e6%9c%83%e6%8a%8a%e6%a8%b9%e9%82%8a%e6%94%b9%e5%b0%8f%e3%80%81%e6%8a%8a%e9%9d%9e%e6%a8%b9%e9%82%8a%e6%94%b9%e5%a4%a7%e3%80%82%e5%b0%8d%e6%96%bc%e4%b8%80%e6%a2%9d%e9%9d%9e%e6%a8%b9%e9%82%8a%20%24e_i%20%3d%20%28u%2c%20v%29%24%ef%bc%8c%e5%81%87%e8%a8%ad%e4%bb%96%e7%9a%84%e6%ac%8a%e9%87%8d%e8%a2%ab%e6%94%b9%e6%88%90%20%24C_i%20%2b%20x_i%24%ef%bc%8c%e8%80%8c%e6%a8%b9%e9%82%8a%20%24e_j%24%20%e5%89%87%e6%94%b9%e6%88%90%20%24C_j%20-%20y_j%24%ef%bc%8c%e9%82%a3%e9%ba%bc%e5%89%8d%e4%b8%80%e6%ae%b5%e7%9a%84%e6%a2%9d%e4%bb%b6%e5%b0%b1%e5%8f%af%e4%bb%a5%e5%af%ab%e6%88%90%20%24C_i%20%2b%20x_i%20%5cgeq%20C_j%20-%20y_j%24%ef%bc%8c%e6%94%b9%e5%af%ab%e6%88%90%e7%b7%9a%e6%80%a7%e8%a6%8f%e5%8a%83%e6%a8%99%e6%ba%96%e5%bc%8f%e7%9a%84%e8%a9%b1%e5%b0%b1%e8%ae%8a%e6%88%90%3c%2fp%3e" aria-label=Tumblr><i class="fab fa-tumblr" aria-hidden=true></i></a></li><li><a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&t=TIOJ%201724" aria-label="Hacker News"><i class="fab fa-hacker-news" aria-hidden=true></i></a></li></ul></div><div id=toc><nav id=TableOfContents><ul><li><a href=#description>Description</a></li><li><a href=#solution>Solution</a></li><li><a href=#ac-code>AC code</a></li><li><a href=#後記>後記</a></li></ul></nav></div></span></div><article class=post itemscope itemtype=http://schema.org/BlogPosting><header><h1 class=posttitle itemprop="name headline">TIOJ 1724</h1><div class=meta><span class=author itemprop=author itemscope itemtype=http://schema.org/Person><span itemprop=name>2qbingxuan</span></span><div class=postdate><time datetime="2024-12-18 20:57:33 +0800 +0800" itemprop=datePublished>2024-12-18</time></div><div class=article-tag><i class="fas fa-tag"></i>
+<a class=tag-link href=/tags/TIOJ/ rel=tag>TIOJ</a>
+,
+<a class=tag-link href=/tags/matching/ rel=tag>matching</a>
+,
+<a class=tag-link href=/tags/tree/ rel=tag>tree</a>
+,
+<a class=tag-link href=/tags/linear-programming/ rel=tag>linear-programming</a>
+,
+<a class=tag-link href=/tags/dual/ rel=tag>dual</a>
+,
+<a class=tag-link href=/tags/flow/ rel=tag>flow</a></div></div></header><div class=content itemprop=articleBody><h1 id=spacechem>SpaceChem</h1><p><a href=https://tioj.ck.tp.edu.tw/problems/1724>https://tioj.ck.tp.edu.tw/problems/1724</a></p><h2 id=description>Description</h2><p>差點看不懂的題敘。</p><p>簡單來說，現在有一張 $N$ 點 $M$ 邊的圖 $G$，第 $i$ 條邊權重是 $C_i$，保證前 $N-1$ 條邊是一棵樹。你希望修改一些邊的權重，使得前 $N-1$ 條邊組成的樹恰好是修改後的圖的一個最小生成樹。第 $i$ 條邊修改成 $D_i$ 的代價是 $|C_i - D_i|$，請輸出最小的代價是多少。</p><p>請注意可以修改樹邊也可以修改非樹邊。</p><p>$N \leq 100, M \leq 10000$</p><h2 id=solution>Solution</h2><p>如果 $T \subseteq G$ 是一個最小生成樹，則對於每一條不在 $T$ 上的邊 $e = (u, v)$，$e$ 的邊權必須大於等於任何 $\textrm{path}_T(u, v)$ 的邊的邊權，其中 $\textrm{path}_T(u, v)$ 是指 $T$ 上 $u$ 到 $v$ 的簡單路徑。不然的話，就可以把一個樹邊斷掉換成 $e$。不難證明滿足這個條件的話，$T$ 必定也會是一個最小生成樹。</p><p>我們可以知道我們只會把樹邊改小、把非樹邊改大。對於一條非樹邊 $e_i = (u, v)$，假設他的權重被改成 $C_i + x_i$，而樹邊 $e_j$ 則改成 $C_j - y_j$，那麼前一段的條件就可以寫成 $C_i + x_i \geq C_j - y_j$，改寫成線性規劃標準式的話就變成</p><p>$$<br>\text{maximize } -\left(\sum x_i + \sum y_i\right)<br>\text{ s.t. }<br>\begin{cases}<br>x_i \geq 0 \\<br>y_j \geq 0 \\<br>-x_i - y_j \leq C_i - C_j, \forall {j: e_j\in\textrm{path}_T(e_i)}<br>\end{cases}<br>$$</p><p>對偶之後變成</p><p>$$<br>\text{minimize } \sum (C_i - C_j) z_{ij}<br>\text{ s.t. }<br>\begin{cases}<br>z_{ij} \geq 0 \\<br>\sum _ {j: e_j\in \textrm{path} _ T(e_i)} -z_{ij} \geq -1, \forall i \\<br>\sum _ {i: e_j\in \textrm{path} _ T(e_i)} -z_{ij} \geq -1, \forall j \\<br>\end{cases}<br>$$</p><p>這個 $\sum z_{ij} \leq 1$ 的形式正好就是二分圖匹配的形式：$z_{ij}$ 表示選了 $(i,j)$ 這條邊，而 $i$ 和 $j$ 的限制分別表示左邊和右邊的頂點的所有鄰邊當中只能選一條。因此本題就歸約到一個二分圖最小權匹配問題，左右部的頂點分別代表非樹邊跟樹邊。</p><p>直接建圖的話會有 $N+M$ 個頂點跟 $\mathcal{O}(NM)$ 條邊，在上面跑一般的 min cost flow 的話，流量是 $\mathcal{O}(N)$ 而每次最短路徑需要的時間理論上應該要是 $\mathcal{O}(N^2M)$（$NM$ 條邊並且 bellman ford 要更新 $N$ 輪），總時間應該是 $\mathcal{O}(N^3M)$，因此我認為這樣就過有點誇張。</p><p>雖然本題測資直接建圖會過（或者應該說 min cost flow 就是 $\mathcal{O}(會過)$），但我還是寫了倍增法優化建圖。基本上就是在建 flow model 的時候先蓋一個類似樹上倍增法的結構，然後每次一個非樹邊加邊到樹上所有路徑就可以用四個倍增的節點解決。這樣就只有 $\mathcal{O}(M+N\log N)$ 條邊了。可以證明 bellman ford 也至多只要更新 $\mathcal{O}(N\log N)$ 輪，所以複雜度就是妥妥的 $\mathcal{O}(N \cdot N\log N \cdot (M + N\log N))$&mldr; 代進去一點都不妥。反正就是過了。用 potential + dijkstra 的 演算法大概可以壓更好。</p><p>一個值得注意的點是，我們推出來的式子是「最小權匹配」而不是「最小權完美匹配」，所以在用 min cost max flow 模板求解的時候要小心模板會盡量流滿而讓一些權重正的邊也被選上了。如果是直接建圖的話就直接把那些邊刪掉就好了，而優化建圖則是需要加一些邊或是把 min cost max flow 模板小修改一下來處理。</p><h2 id=ac-code>AC code</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">100
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">101
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">102
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">103
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">104
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">105
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">106
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">107
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">108
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">109
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">110
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">111
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">112
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">113
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">114
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">115
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">116
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">117
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">118
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">119
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">120
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">121
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">122
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">123
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">124
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">125
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">126
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">127
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">128
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">129
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">130
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">131
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">132
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">133
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">134
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">135
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">136
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">137
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">138
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">139
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">140
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">141
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">142
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">143
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">144
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">145
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">146
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">147
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">148
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">149
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">150
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">151
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">152
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">153
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">154
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">155
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">156
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">157
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">158
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">159
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">160
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">161
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">162
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">163
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">164
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">165
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">166
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">167
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">168
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">169
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">170
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">171
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">172
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">173
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">174
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">175
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">176
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">177
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">178
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">179
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">180
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">181
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">182
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">183
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">184
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">185
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">186
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">187
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">188
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">189
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">190
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">191
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">192
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">193
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">194
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">195
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">196
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">197
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">198
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#pragma GCC optimize(&#34;Ofast&#34;)
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;bits/stdc++.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#define all(x) begin(x), end(x)
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#ifdef local
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define safe cerr &lt;&lt; __LINE__ &lt;&lt; &#34; line &#34; &lt;&lt; __LINE__ &lt;&lt; &#34; safe\n&#34;
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define debug(a...) debug_(#a, a)
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define orange(a...) orange_(#a, a)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span><span style=color:#66d9ef>typename</span> ...T<span style=color:#f92672>&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> debug_(<span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>s, T ...a) {
+</span></span><span style=display:flex><span>  cerr <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;\e[1;32m(&#34;</span> <span style=color:#f92672>&lt;&lt;</span> s <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;) = (&#34;</span>;
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>int</span> cnt <span style=color:#f92672>=</span> <span style=color:#66d9ef>sizeof</span>...(T);
+</span></span><span style=display:flex><span>  (..., (cerr <span style=color:#f92672>&lt;&lt;</span> a <span style=color:#f92672>&lt;&lt;</span> (<span style=color:#f92672>--</span>cnt <span style=color:#f92672>?</span> <span style=color:#e6db74>&#34;, &#34;</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;)\e[0m</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>)));
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span><span style=color:#66d9ef>typename</span> I<span style=color:#f92672>&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> orange_(<span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>s, I L, I R) {
+</span></span><span style=display:flex><span>  cerr <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;\e[1;32m[ &#34;</span> <span style=color:#f92672>&lt;&lt;</span> s <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34; ] = [ &#34;</span>;
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> f <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; L <span style=color:#f92672>!=</span> R; <span style=color:#f92672>++</span>L)
+</span></span><span style=display:flex><span>    cerr <span style=color:#f92672>&lt;&lt;</span> (f<span style=color:#f92672>++</span> <span style=color:#f92672>?</span> <span style=color:#e6db74>&#34;, &#34;</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;&#34;</span>) <span style=color:#f92672>&lt;&lt;</span> <span style=color:#f92672>*</span>L;
+</span></span><span style=display:flex><span>  cerr <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34; ]\e[0m</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#75715e>#else
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define safe ((void)0)
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define debug(...) safe
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define orange(...) safe
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#endif
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> lld <span style=color:#f92672>=</span> <span style=color:#66d9ef>int64_t</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span><span style=color:#66d9ef>typename</span> F, <span style=color:#66d9ef>typename</span> C<span style=color:#f92672>&gt;</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>MCMF</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>constexpr</span> F INF_F <span style=color:#f92672>=</span> numeric_limits<span style=color:#f92672>&lt;</span>F<span style=color:#f92672>&gt;::</span>max();
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>constexpr</span> C INF_C <span style=color:#f92672>=</span> numeric_limits<span style=color:#f92672>&lt;</span>C<span style=color:#f92672>&gt;::</span>max();
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>E</span> { <span style=color:#66d9ef>int</span> to, r; F f; C c; };
+</span></span><span style=display:flex><span>  vector<span style=color:#f92672>&lt;</span>vector<span style=color:#f92672>&lt;</span>E<span style=color:#f92672>&gt;&gt;</span> g; vector<span style=color:#f92672>&lt;</span>pair<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span>, <span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;&gt;</span> f;
+</span></span><span style=display:flex><span>  vector<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;</span> inq; vector<span style=color:#f92672>&lt;</span>F<span style=color:#f92672>&gt;</span> up; vector<span style=color:#f92672>&lt;</span>C<span style=color:#f92672>&gt;</span> d;
+</span></span><span style=display:flex><span>  optional<span style=color:#f92672>&lt;</span>pair<span style=color:#f92672>&lt;</span>F, C<span style=color:#f92672>&gt;&gt;</span> step(<span style=color:#66d9ef>int</span> S, <span style=color:#66d9ef>int</span> T) {
+</span></span><span style=display:flex><span>    queue<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;</span> q;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (q.push(S), d[S] <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>, up[S] <span style=color:#f92672>=</span> INF_F;
+</span></span><span style=display:flex><span>        not q.empty(); q.pop()) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>int</span> u <span style=color:#f92672>=</span> q.front(); inq[u] <span style=color:#f92672>=</span> false;
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (up[u] <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) <span style=color:#66d9ef>continue</span>;
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>int</span>(g[u].size()); <span style=color:#f92672>++</span>i) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>auto</span> e <span style=color:#f92672>=</span> g[u][i]; <span style=color:#66d9ef>int</span> v <span style=color:#f92672>=</span> e.to;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (e.f <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>0</span> or d[v] <span style=color:#f92672>&lt;=</span> d[u] <span style=color:#f92672>+</span> e.c) <span style=color:#66d9ef>continue</span>;
+</span></span><span style=display:flex><span>        d[v] <span style=color:#f92672>=</span> d[u] <span style=color:#f92672>+</span> e.c; f[v] <span style=color:#f92672>=</span> {u, i};
+</span></span><span style=display:flex><span>        up[v] <span style=color:#f92672>=</span> min(up[u], e.f);
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (not inq[v]) q.push(v);
+</span></span><span style=display:flex><span>        inq[v] <span style=color:#f92672>=</span> true;
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (d[T] <span style=color:#f92672>==</span> INF_C) <span style=color:#66d9ef>return</span> nullopt;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> T; i <span style=color:#f92672>!=</span> S; i <span style=color:#f92672>=</span> f[i].first) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>auto</span> <span style=color:#f92672>&amp;</span>eg <span style=color:#f92672>=</span> g[f[i].first][f[i].second];
+</span></span><span style=display:flex><span>      eg.f <span style=color:#f92672>-=</span> up[T]; g[eg.to][eg.r].f <span style=color:#f92672>+=</span> up[T];
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> pair{up[T], d[T]};
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>  MCMF(<span style=color:#66d9ef>int</span> n) <span style=color:#f92672>:</span> g(n),f(n),inq(n),up(n),d(n,INF_C) {}
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>add_edge</span>(<span style=color:#66d9ef>int</span> s, <span style=color:#66d9ef>int</span> t, F c, C w) {
+</span></span><span style=display:flex><span>    g[s].emplace_back(t, <span style=color:#66d9ef>int</span>(g[t].size()), c, w);
+</span></span><span style=display:flex><span>    g[t].emplace_back(s, <span style=color:#66d9ef>int</span>(g[s].size()) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>0</span>, <span style=color:#f92672>-</span>w);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>  pair<span style=color:#f92672>&lt;</span>F, C<span style=color:#f92672>&gt;</span> solve(<span style=color:#66d9ef>int</span> a, <span style=color:#66d9ef>int</span> b) {
+</span></span><span style=display:flex><span>    F c <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; C w <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (<span style=color:#66d9ef>auto</span> r <span style=color:#f92672>=</span> step(a, b)) {
+</span></span><span style=display:flex><span>      c <span style=color:#f92672>+=</span> r<span style=color:#f92672>-&gt;</span>first, w <span style=color:#f92672>+=</span> r<span style=color:#f92672>-&gt;</span>first <span style=color:#f92672>*</span> r<span style=color:#f92672>-&gt;</span>second;
+</span></span><span style=display:flex><span>      ranges<span style=color:#f92672>::</span>fill(inq, false); ranges<span style=color:#f92672>::</span>fill(d, INF_C);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {c, w};
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>signed</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>  cin.tie(<span style=color:#66d9ef>nullptr</span>)<span style=color:#f92672>-&gt;</span>sync_with_stdio(false);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>int</span> N, M;
+</span></span><span style=display:flex><span>  cin <span style=color:#f92672>&gt;&gt;</span> N <span style=color:#f92672>&gt;&gt;</span> M;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  vector<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;</span> c(M);
+</span></span><span style=display:flex><span>  vector<span style=color:#f92672>&lt;</span>pair<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span>, <span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;&gt;</span> es;
+</span></span><span style=display:flex><span>  vector<span style=color:#f92672>&lt;</span>vector<span style=color:#f92672>&lt;</span>pair<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span>,<span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;&gt;&gt;</span> g(N);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> M; i<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> a, b;
+</span></span><span style=display:flex><span>    cin <span style=color:#f92672>&gt;&gt;</span> a <span style=color:#f92672>&gt;&gt;</span> b;
+</span></span><span style=display:flex><span>    <span style=color:#f92672>--</span>a, <span style=color:#f92672>--</span>b;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (i <span style=color:#f92672>&lt;</span> N <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>) {
+</span></span><span style=display:flex><span>      g[a].emplace_back(b, i);
+</span></span><span style=display:flex><span>      g[b].emplace_back(a, i);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    es.emplace_back(a, b);
+</span></span><span style=display:flex><span>    cin <span style=color:#f92672>&gt;&gt;</span> c[i];
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  vector<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;</span> pa(N), pa_edge(N), dep(N);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>auto</span> dfs <span style=color:#f92672>=</span> [<span style=color:#f92672>&amp;</span>](<span style=color:#66d9ef>auto</span> <span style=color:#f92672>&amp;&amp;</span>self, <span style=color:#66d9ef>int</span> i, <span style=color:#66d9ef>int</span> p <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>) <span style=color:#f92672>-&gt;</span> <span style=color:#66d9ef>void</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>auto</span> [j, id] <span style=color:#f92672>:</span> g[i]) <span style=color:#66d9ef>if</span> (j <span style=color:#f92672>!=</span> p) {
+</span></span><span style=display:flex><span>      pa[j] <span style=color:#f92672>=</span> i;
+</span></span><span style=display:flex><span>      pa_edge[j] <span style=color:#f92672>=</span> id;
+</span></span><span style=display:flex><span>      dep[j] <span style=color:#f92672>=</span> dep[i] <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>      self(self, j, i);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  };
+</span></span><span style=display:flex><span>  pa[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>  pa_edge[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>  dfs(dfs, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>int</span> inf <span style=color:#f92672>=</span> <span style=color:#ae81ff>1e9</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>int</span> tot <span style=color:#f92672>=</span> M;
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>int</span> LG <span style=color:#f92672>=</span> <span style=color:#ae81ff>15</span>;
+</span></span><span style=display:flex><span>  vector<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;</span> sparse_table[LG];
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> l <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; l <span style=color:#f92672>&lt;</span> LG; l<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>    sparse_table[l].resize(N);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> N; i<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>      sparse_table[l][i] <span style=color:#f92672>=</span> tot<span style=color:#f92672>++</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>auto</span> anc <span style=color:#f92672>=</span> [<span style=color:#f92672>&amp;</span>](<span style=color:#66d9ef>int</span> v, <span style=color:#66d9ef>int</span> step) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (step<span style=color:#f92672>--</span>) {
+</span></span><span style=display:flex><span>      v <span style=color:#f92672>=</span> pa[v];
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (v <span style=color:#f92672>==</span> pa[v]) <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> v;
+</span></span><span style=display:flex><span>  };
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>auto</span> get_max <span style=color:#f92672>=</span> [<span style=color:#f92672>&amp;</span>](<span style=color:#66d9ef>int</span> u, <span style=color:#66d9ef>int</span> v) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> res <span style=color:#f92672>=</span> <span style=color:#f92672>-</span>inf;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (u <span style=color:#f92672>!=</span> v) {
+</span></span><span style=display:flex><span>      res <span style=color:#f92672>=</span> max(res, c[pa_edge[u]]);
+</span></span><span style=display:flex><span>      u <span style=color:#f92672>=</span> pa[u];
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> res;
+</span></span><span style=display:flex><span>  };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>auto</span> lca <span style=color:#f92672>=</span> [<span style=color:#f92672>&amp;</span>](<span style=color:#66d9ef>int</span> a, <span style=color:#66d9ef>int</span> b) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (a <span style=color:#f92672>!=</span> b) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (dep[a] <span style=color:#f92672>&lt;</span> dep[b]) swap(a, b);
+</span></span><span style=display:flex><span>      a <span style=color:#f92672>=</span> pa[a];
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> a;
+</span></span><span style=display:flex><span>  };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>int</span> S <span style=color:#f92672>=</span> tot, T <span style=color:#f92672>=</span> tot <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>  MCMF<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int64_t</span>, <span style=color:#66d9ef>int64_t</span><span style=color:#f92672>&gt;</span> flow(tot <span style=color:#f92672>+</span> <span style=color:#ae81ff>2</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> N; i<span style=color:#f92672>++</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (pa_edge[i] <span style=color:#f92672>!=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>      flow.add_edge(pa_edge[i], sparse_table[<span style=color:#ae81ff>0</span>][i], inf, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> l <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; l <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>&lt;</span> LG; l<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> N; i<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>int</span> j <span style=color:#f92672>=</span> anc(i, <span style=color:#ae81ff>1</span> <span style=color:#f92672>&lt;&lt;</span> l);
+</span></span><span style=display:flex><span>      flow.add_edge(sparse_table[l][i], sparse_table[l <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>][i], inf, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>      flow.add_edge(sparse_table[l][j], sparse_table[l <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>][i], inf, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> N <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>; i <span style=color:#f92672>&lt;</span> M; i<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>auto</span> [a, b] <span style=color:#f92672>=</span> es[i];
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> l <span style=color:#f92672>=</span> lca(a, b);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// int mx = max(get_max(a, l), get_max(b, l));
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// if (mx &lt;= c[i]) continue;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> u : {a, b}) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (u <span style=color:#f92672>==</span> l) <span style=color:#66d9ef>continue</span>;
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>int</span> d <span style=color:#f92672>=</span> dep[u] <span style=color:#f92672>-</span> dep[l];
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>int</span> lg <span style=color:#f92672>=</span> __lg(d);
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>int</span> v <span style=color:#f92672>=</span> anc(u, d <span style=color:#f92672>-</span> (<span style=color:#ae81ff>1</span> <span style=color:#f92672>&lt;&lt;</span> lg));
+</span></span><span style=display:flex><span>      debug(u<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, v<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, lg);
+</span></span><span style=display:flex><span>      <span style=color:#75715e>// assert(anc(v, 1 &lt;&lt; lg) == l &amp;&amp; anc(v, (1 &lt;&lt; lg) - 1) != l);
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      flow.add_edge(sparse_table[lg][u], i, inf, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>      flow.add_edge(sparse_table[lg][v], i, inf, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> N <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>; i<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>    flow.add_edge(S, i, <span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span>c[i]);
+</span></span><span style=display:flex><span>    flow.add_edge(i, T, <span style=color:#ae81ff>1</span>, c[i]); <span style=color:#75715e>// not match anything
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  }
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> N <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>; i <span style=color:#f92672>&lt;</span> M; i<span style=color:#f92672>++</span>)
+</span></span><span style=display:flex><span>    flow.add_edge(i, T, <span style=color:#ae81ff>1</span>, c[i]);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>auto</span> [_, ans] <span style=color:#f92672>=</span> flow.solve(S, T);
+</span></span><span style=display:flex><span>  cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#f92672>-</span>ans <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#39;\n&#39;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// C_i - x_i &lt;= C_j + y_j
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>// x_i &gt;= 0
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>// y_j &gt;= 0
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>// x_i + y_j &gt;= C_i - C_j
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>// minimize \sum x_i + \sum y_j
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// dual -&gt;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>// minimize (C_j - C_i) e_{ij}
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>// s.t. \sum _ j e_{ij} &lt;= 1, \sum _ i e_{ij} &lt;= 1
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>// e_{ij} &gt;= 0
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></td></tr></table></div></div><h2 id=後記>後記</h2><p>改寫 <code>/about</code> 的時候有感於是去一連串刷了好幾題 TIOJ 的題目。各種焦慮加上冬天很寒冷的憂鬱，不過至少寫 TIOJ 跟寫題解帶給我還有活力的感覺。</p><p>最近一個很煩的事情是藍芽耳機用一陣子就會莫名奇妙斷線連不回來，必須關機後再開機（對，不能 reboot）才能修好。懷疑是 kernel 的問題但怎麼樣都找不到哪裡有有用的錯誤訊息。不知道要不要改用 lts kernel。</p><p>去玩了一下之前 steam 買的小遊戲們（例如 baba is you 或是 <a href=https://store.steampowered.com/app/2770160/Maxwells_puzzling_demon/>這個</a>），但感覺自己沒有定力玩這些小遊戲太久。這是不是就是所謂的電子&mldr;</p></div></article><div class=blog-post-comments><div id=disqus_thread><script type=text/javascript>(function(){var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="omeletwithoutegg",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></div><div id=footer-post-container><div id=footer-post><div id=nav-footer style=display:none><ul><li><a href=/>Home</a></li><li><a href=/about/>About</a></li><li><a href=/posts/>Posts</a></li><li><a href=/resources/>Resources</a></li><li><a href=/search/>Search</a></li><li><a href=/tags/>Tags</a></li></ul></div><div id=toc-footer style=display:none><nav id=TableOfContents><ul><li><a href=#description>Description</a></li><li><a href=#solution>Solution</a></li><li><a href=#ac-code>AC code</a></li><li><a href=#後記>後記</a></li></ul></nav></div><div id=share-footer style=display:none><ul><li><a class=icon href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f" aria-label=Facebook><i class="fab fa-facebook fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://twitter.com/share?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&text=TIOJ%201724" aria-label=Twitter><i class="fab fa-twitter fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&title=TIOJ%201724" aria-label=Linkedin><i class="fab fa-linkedin fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&is_video=false&description=TIOJ%201724" aria-label=Pinterest><i class="fab fa-pinterest fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="mailto:?subject=TIOJ%201724&body=Check out this article: https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f" aria-label=Email><i class="fas fa-envelope fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://getpocket.com/save?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&title=TIOJ%201724" aria-label=Pocket><i class="fab fa-get-pocket fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="http://reddit.com/submit?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&title=TIOJ%201724" aria-label=reddit><i class="fab fa-reddit fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&name=TIOJ%201724&description=%3ch1%20id%3d%22spacechem%22%3eSpaceChem%3c%2fh1%3e%0a%3cp%3e%3ca%20href%3d%22https%3a%2f%2ftioj.ck.tp.edu.tw%2fproblems%2f1724%22%3ehttps%3a%2f%2ftioj.ck.tp.edu.tw%2fproblems%2f1724%3c%2fa%3e%3c%2fp%3e%0a%3ch2%20id%3d%22description%22%3eDescription%3c%2fh2%3e%0a%3cp%3e%e5%b7%ae%e9%bb%9e%e7%9c%8b%e4%b8%8d%e6%87%82%e7%9a%84%e9%a1%8c%e6%95%98%e3%80%82%3c%2fp%3e%0a%3cp%3e%e7%b0%a1%e5%96%ae%e4%be%86%e8%aa%aa%ef%bc%8c%e7%8f%be%e5%9c%a8%e6%9c%89%e4%b8%80%e5%bc%b5%20%24N%24%20%e9%bb%9e%20%24M%24%20%e9%82%8a%e7%9a%84%e5%9c%96%20%24G%24%ef%bc%8c%e7%ac%ac%20%24i%24%20%e6%a2%9d%e9%82%8a%e6%ac%8a%e9%87%8d%e6%98%af%20%24C_i%24%ef%bc%8c%e4%bf%9d%e8%ad%89%e5%89%8d%20%24N-1%24%20%e6%a2%9d%e9%82%8a%e6%98%af%e4%b8%80%e6%a3%b5%e6%a8%b9%e3%80%82%e4%bd%a0%e5%b8%8c%e6%9c%9b%e4%bf%ae%e6%94%b9%e4%b8%80%e4%ba%9b%e9%82%8a%e7%9a%84%e6%ac%8a%e9%87%8d%ef%bc%8c%e4%bd%bf%e5%be%97%e5%89%8d%20%24N-1%24%20%e6%a2%9d%e9%82%8a%e7%b5%84%e6%88%90%e7%9a%84%e6%a8%b9%e6%81%b0%e5%a5%bd%e6%98%af%e4%bf%ae%e6%94%b9%e5%be%8c%e7%9a%84%e5%9c%96%e7%9a%84%e4%b8%80%e5%80%8b%e6%9c%80%e5%b0%8f%e7%94%9f%e6%88%90%e6%a8%b9%e3%80%82%e7%ac%ac%20%24i%24%20%e6%a2%9d%e9%82%8a%e4%bf%ae%e6%94%b9%e6%88%90%20%24D_i%24%20%e7%9a%84%e4%bb%a3%e5%83%b9%e6%98%af%20%24%7cC_i%20-%20D_i%7c%24%ef%bc%8c%e8%ab%8b%e8%bc%b8%e5%87%ba%e6%9c%80%e5%b0%8f%e7%9a%84%e4%bb%a3%e5%83%b9%e6%98%af%e5%a4%9a%e5%b0%91%e3%80%82%3c%2fp%3e%0a%3cp%3e%e8%ab%8b%e6%b3%a8%e6%84%8f%e5%8f%af%e4%bb%a5%e4%bf%ae%e6%94%b9%e6%a8%b9%e9%82%8a%e4%b9%9f%e5%8f%af%e4%bb%a5%e4%bf%ae%e6%94%b9%e9%9d%9e%e6%a8%b9%e9%82%8a%e3%80%82%3c%2fp%3e%0a%3cp%3e%24N%20%5cleq%20100%2c%20M%20%5cleq%2010000%24%3c%2fp%3e%0a%3ch2%20id%3d%22solution%22%3eSolution%3c%2fh2%3e%0a%3cp%3e%e5%a6%82%e6%9e%9c%20%24T%20%5csubseteq%20G%24%20%e6%98%af%e4%b8%80%e5%80%8b%e6%9c%80%e5%b0%8f%e7%94%9f%e6%88%90%e6%a8%b9%ef%bc%8c%e5%89%87%e5%b0%8d%e6%96%bc%e6%af%8f%e4%b8%80%e6%a2%9d%e4%b8%8d%e5%9c%a8%20%24T%24%20%e4%b8%8a%e7%9a%84%e9%82%8a%20%24e%20%3d%20%28u%2c%20v%29%24%ef%bc%8c%24e%24%20%e7%9a%84%e9%82%8a%e6%ac%8a%e5%bf%85%e9%a0%88%e5%a4%a7%e6%96%bc%e7%ad%89%e6%96%bc%e4%bb%bb%e4%bd%95%20%24%5ctextrm%7bpath%7d_T%28u%2c%20v%29%24%20%e7%9a%84%e9%82%8a%e7%9a%84%e9%82%8a%e6%ac%8a%ef%bc%8c%e5%85%b6%e4%b8%ad%20%24%5ctextrm%7bpath%7d_T%28u%2c%20v%29%24%20%e6%98%af%e6%8c%87%20%24T%24%20%e4%b8%8a%20%24u%24%20%e5%88%b0%20%24v%24%20%e7%9a%84%e7%b0%a1%e5%96%ae%e8%b7%af%e5%be%91%e3%80%82%e4%b8%8d%e7%84%b6%e7%9a%84%e8%a9%b1%ef%bc%8c%e5%b0%b1%e5%8f%af%e4%bb%a5%e6%8a%8a%e4%b8%80%e5%80%8b%e6%a8%b9%e9%82%8a%e6%96%b7%e6%8e%89%e6%8f%9b%e6%88%90%20%24e%24%e3%80%82%e4%b8%8d%e9%9b%a3%e8%ad%89%e6%98%8e%e6%bb%bf%e8%b6%b3%e9%80%99%e5%80%8b%e6%a2%9d%e4%bb%b6%e7%9a%84%e8%a9%b1%ef%bc%8c%24T%24%20%e5%bf%85%e5%ae%9a%e4%b9%9f%e6%9c%83%e6%98%af%e4%b8%80%e5%80%8b%e6%9c%80%e5%b0%8f%e7%94%9f%e6%88%90%e6%a8%b9%e3%80%82%3c%2fp%3e%0a%3cp%3e%e6%88%91%e5%80%91%e5%8f%af%e4%bb%a5%e7%9f%a5%e9%81%93%e6%88%91%e5%80%91%e5%8f%aa%e6%9c%83%e6%8a%8a%e6%a8%b9%e9%82%8a%e6%94%b9%e5%b0%8f%e3%80%81%e6%8a%8a%e9%9d%9e%e6%a8%b9%e9%82%8a%e6%94%b9%e5%a4%a7%e3%80%82%e5%b0%8d%e6%96%bc%e4%b8%80%e6%a2%9d%e9%9d%9e%e6%a8%b9%e9%82%8a%20%24e_i%20%3d%20%28u%2c%20v%29%24%ef%bc%8c%e5%81%87%e8%a8%ad%e4%bb%96%e7%9a%84%e6%ac%8a%e9%87%8d%e8%a2%ab%e6%94%b9%e6%88%90%20%24C_i%20%2b%20x_i%24%ef%bc%8c%e8%80%8c%e6%a8%b9%e9%82%8a%20%24e_j%24%20%e5%89%87%e6%94%b9%e6%88%90%20%24C_j%20-%20y_j%24%ef%bc%8c%e9%82%a3%e9%ba%bc%e5%89%8d%e4%b8%80%e6%ae%b5%e7%9a%84%e6%a2%9d%e4%bb%b6%e5%b0%b1%e5%8f%af%e4%bb%a5%e5%af%ab%e6%88%90%20%24C_i%20%2b%20x_i%20%5cgeq%20C_j%20-%20y_j%24%ef%bc%8c%e6%94%b9%e5%af%ab%e6%88%90%e7%b7%9a%e6%80%a7%e8%a6%8f%e5%8a%83%e6%a8%99%e6%ba%96%e5%bc%8f%e7%9a%84%e8%a9%b1%e5%b0%b1%e8%ae%8a%e6%88%90%3c%2fp%3e" aria-label=Tumblr><i class="fab fa-tumblr fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fomeletwithoutegg.github.io%2f2024%2f12%2f18%2fTIOJ-1724%2f&t=TIOJ%201724" aria-label="Hacker News"><i class="fab fa-hacker-news fa-lg" aria-hidden=true></i></a></li></ul></div><div id=actions-footer><a id=menu-toggle class=icon href=# onclick='return $("#nav-footer").toggle(),!1' aria-label=Menu><i class="fas fa-bars fa-lg" aria-hidden=true></i> Menu</a>
+<a id=toc-toggle class=icon href=# onclick='return $("#toc-footer").toggle(),!1' aria-label=TOC><i class="fas fa-list fa-lg" aria-hidden=true></i> TOC</a>
+<a id=share-toggle class=icon href=# onclick='return $("#share-footer").toggle(),!1' aria-label=Share><i class="fas fa-share-alt fa-lg" aria-hidden=true></i> share</a>
+<a id=top style=display:none class=icon href=# onclick='$("html, body").animate({scrollTop:0},"fast")' aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg" aria-hidden=true></i> Top</a></div></div></div><footer id=footer><div class=footer-left>Copyright &copy; 2025 Omelet</div><div class=footer-right><nav><ul><li><a href=/>Home</a></li><li><a href=/about/>About</a></li><li><a href=/posts/>Posts</a></li><li><a href=/resources/>Resources</a></li><li><a href=/search/>Search</a></li><li><a href=/tags/>Tags</a></li></ul></nav></div></footer></div><link rel=stylesheet href=/lib/font-awesome/css/all.min.css><script src=/lib/jquery/jquery.min.js></script><script src=/js/main.js></script><script src=/js/code-copy.js></script><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]},svg:{fontCache:"global"}}</script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=/lib/clipboard/clipboard.min.js></script><script>$(function(){let e='<span class="btn-copy tooltipped tooltipped-sw" aria-label="Copy to clipboard!" style="z-index: 9999">';e+='<i class="far fa-clone"></i>',e+="</span>",$(".highlight table").before(e);const t=new ClipboardJS(".btn-copy",{text:function(e){const t='code[data-lang]:not([data-lang=""]) > span',n=Array.from(e.nextElementSibling.querySelectorAll(t)),s=n.map(e=>e.innerText).join("");return s}});t.on("success",function(e){e.trigger.setAttribute("aria-label","Copied!"),e.clearSelection()}),t.on("error",function(e){console.error("Action:",e.action),console.error("Trigger:",e.trigger)})})</script><script type=text/javascript src=/js/canvas-nest.js count=90 color=0,200,100 opacity=0.5></script></body></html>

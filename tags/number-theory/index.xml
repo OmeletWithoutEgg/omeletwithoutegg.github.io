@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Number-Theory on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/number-theory/</link><description>Recent content in Number-Theory on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 20:42:31 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/number-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Number-Theory on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/number-theory/</link><description>Recent content in Number-Theory on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 20:42:31 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/number-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829">https://tioj.ck.tp.edu.tw/problems/1829&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p>
@@ -13,7 +13,7 @@ f(0) &amp;amp;= 0 \\&lt;br>
 f(N) &amp;amp;= 1 \\&lt;br>
 f(i) &amp;amp;= pf(i - 1) + (1 - p) f(i + 1), \forall {0 &amp;lt; i &amp;lt; N}&lt;br>
 \end{cases}&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
+$$&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2116">https://tioj.ck.tp.edu.tw/problems/2116&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>科學家發現了一種神奇的細菌，他們的繁殖方式很奇怪。這個世界上目前有 $N$ 隻細菌，第 $i$ 隻細菌的體積是 $A_i$ 立方公分。每過一年，對於一隻體積為 $x$ 立方公分的細菌，假設 $x$ 的所有正因數分別是&lt;br>

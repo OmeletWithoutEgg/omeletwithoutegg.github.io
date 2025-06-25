@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 09 Apr 2025 18:22:32 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</guid><description>&lt;h1 id="rerooting--全方位木-dp">rerooting / 全方位木 DP&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/posts/</link><description>Recent content in Posts on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 24 Jun 2025 21:05:38 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>第八學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</link><pubDate>Tue, 24 Jun 2025 21:05:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</guid><description>&lt;h1 id="eighth-semester">Eighth semester&lt;/h1>
+&lt;p>已經是最後一個學期了。雖然一兩個禮拜前學期的最後一堂課就結束了但一直沒有提筆開寫。&lt;br>
+感覺沒什麼臉寫修課心得但還是想有始有終。&lt;/p>
+&lt;h2 id="日文二下">日文二下&lt;/h2>
+&lt;p>本學期理論上唯一（？）可能讓我畢不了業的課（如果被當的話）。&lt;br>
+從藍色那本課本變成綠色了。沒有修到日文三讓人感覺這課本只用一學期很浪費。&lt;br>
+不得不說感覺進度真的好緩慢。兩次段考各考三課，感覺範圍小到填空能填錯的選項也沒多少個。&lt;br>
+以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p>
+&lt;p>本學期的最後還有一個在 NTU COOL 上做的 N4 模擬測驗。不知道是版權還是怎麼樣的還需要老師給密碼才能參加。反正不算分而且 N3 都過了就沒管這個測驗做得怎麼樣（？）&lt;/p>
+&lt;h2 id="高等資料結構">高等資料結構&lt;/h2>
+&lt;p>卡恩開的一門不知道之後會不會再開的課。帶著憧憬（？）來修。&lt;/p>
+&lt;p>每次作業大致上分成兩部份，Part I 是證明題，Part II 則可以選擇要做 Benchmark 還是 Paper Reading。Benchmark 是針對選定的課題寫程式 Benchmark，而 Paper Reading 是從論文清單裡面挑出來 summarize 以及提「有用的問題」。&lt;/p>
+&lt;p>期初的時候小看了 HW1，最後一個禮拜才開始看，Part I 四題裡面兩題都跑去看了提示。一題是題敘裡面說存在一篇 CF 文章，放棄自尊心跑去 google 就可以&lt;a href="https://codeforces.com/blog/entry/130521">找到了&lt;/a>，一題是讀懂題敘有 reference 的原論文，並想辦法弄簡單一點（原論文是樹但這題是鏈）。死線是週一的中午十二點，但因為後量子密碼學是週一早上，所以我是把死線當作星期天 23:59。Part I 拖到了週六晚上才寫完，六晚+日早讀了幾篇論文之後發現好像一天做不完 paper reading 就跳槽到 benchmark。意外的覺得老師建議的框架 Google Benchmark 很好上手，因為會產出完整的 json 檔描述 benchmark 每個 task 的時間之類的，我就丟給 GPT 生一個生圖表的 python script（再自己改一下），總之寫一下觀察拼湊出一個報告。做的時間非常少，但我覺得看上去的完成度應該很不錯。&lt;/p>
+&lt;p>接著 HW2 馬上又來了。雖然老師一直宣稱這比 HW1 還要簡單，但我怎麼看都是比 HW1 難。&lt;br>
+一題 split tree 我根本找不到有誰好好證明過，都是在說明概念（我覺得我找到 &lt;a href="https://courses.csail.mit.edu/6.851/spring21/lectures/L05.html?notes=11">這個影片的最後五分鐘&lt;/a> 有講已經蠻神奇的了但還是好難看懂）。&lt;br>
+另一題要證 wilber-1 bound 的反例，雖然好像原則上解答應該要約是一頁 A4 紙，但我真的想不到怎麼把原本論文裡面有大概十頁在證的東西弱化或怎樣之後塞進一頁。感覺不是給人寫的。想辦法模仿論文改寫成自己的話，寫了十個 lemma 跟 theorem 都還證不完。證的還是已經弱化的版本。&lt;br>
+HW2 一樣不會讀 paper 選了 benchmark，但因為 Part I 那題耗費太多心力（？）感覺這次的完成度不太高，就只是做完 benchmark 的題目敘述裡面的最低要求而已。&lt;/p></description></item><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</guid><description>&lt;h1 id="rerooting--全方位木-dp">rerooting / 全方位木 DP&lt;/h1>
 &lt;p>因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p>
 &lt;p>大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
@@ -118,7 +134,7 @@ $$&lt;/p>
 &lt;p>接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>naive 可以做到 $\mathcal{O}(NQ)$。以下介紹一個 $\mathcal{O}((N+Q)\log^2(N+Q))$ 的離線作法。&lt;/p>
-&lt;p>先問一個問題：我們要怎麼快速的求出 $f_N(x)$ 這個多項式呢？如果用 $f_i(x) = f_{i-1}(x) \cdot (x - a_i)$ 每次直接 $\mathcal{O}(N)$ 乘的話，總共會花上 $\mathcal{O}(N^2)$ 的時間。然而，我們可以建出一棵平衡的二元樹，樹的葉子是這些一次式，如果按照由下到上的順序計算每個節點的小孩的乘積，並使用 FFT 等比較快的多項式乘法的話，總時間就會是 $\mathcal{O}(N\log^2N)$。這是因為使用 FFT 把兩個多項式 $f, g$ 相乘會需要 $\mathcal{O}(k\log k)$ 的時間，其中 $k=\deg (fg)$；而在這棵二元樹中每個節點所存的多項式 degree 會等於該節點的子樹裡面的葉子數量，所有節點的多項式 degree 總和又更進一步的等於每個葉子的深度和（可以想想為什麼），因此只要二元樹夠平衡，深度是 $\mathcal{O}(\log N)$ 的話，總共乘法所需的時間就會是 $\mathcal{O}(N\log ^2N)$。&lt;/p></description></item><item><title>TIOJ 1724</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1724/</link><pubDate>Wed, 18 Dec 2024 20:57:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1724/</guid><description>&lt;h1 id="spacechem">SpaceChem&lt;/h1>
+&lt;p>先問一個問題：我們要怎麼快速的求出 $f_N(x)$ 這個多項式呢？如果用 $f_i(x) = f_{i-1}(x) \cdot (x - a_i)$ 每次直接 $\mathcal{O}(N)$ 乘的話，總共會花上 $\mathcal{O}(N^2)$ 的時間。然而，我們可以建出一棵平衡的二元樹，樹的葉子是這些一次式，如果按照由下到上的順序計算每個節點的小孩的乘積，並使用 FFT 等比較快的多項式乘法的話，總時間就會是 $\mathcal{O}(N\log^2N)$。這是因為使用 FFT 把兩個多項式 $f, g$ 相乘會需要 $\mathcal{O}(k\log k)$ 的時間，其中 $k=\deg (fg)$；而在這棵二元樹中每個節點所存的多項式 degree 會等於該節點的子樹裡面的葉子數量，所有節點的多項式 degree 總和又更進一步的等於每個葉子的深度和（可以想想為什麼），因此只要二元樹夠平衡，深度是 $\mathcal{O}(\log N)$ 的話，總共乘法所需的時間就會是 $\mathcal{O}(N\log ^2N)$。&lt;/p></description></item><item><title>TIOJ 1724</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</link><pubDate>Wed, 18 Dec 2024 20:57:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</guid><description>&lt;h1 id="spacechem">SpaceChem&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1724">https://tioj.ck.tp.edu.tw/problems/1724&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>差點看不懂的題敘。&lt;/p>
@@ -127,7 +143,7 @@ $$&lt;/p>
 &lt;p>$N \leq 100, M \leq 10000$&lt;/p>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>如果 $T \subseteq G$ 是一個最小生成樹，則對於每一條不在 $T$ 上的邊 $e = (u, v)$，$e$ 的邊權必須大於等於任何 $\textrm{path}_T(u, v)$ 的邊的邊權，其中 $\textrm{path}_T(u, v)$ 是指 $T$ 上 $u$ 到 $v$ 的簡單路徑。不然的話，就可以把一個樹邊斷掉換成 $e$。不難證明滿足這個條件的話，$T$ 必定也會是一個最小生成樹。&lt;/p>
-&lt;p>我們可以知道我們只會把樹邊改小、把非樹邊改大。對於一條非樹邊 $e_i = (u, v)$，假設他的權重被改成 $C_i + x_i$，而樹邊 $e_j$ 則改成 $C_j - y_j$，那麼前一段的條件就可以寫成 $C_i + x_i \geq C_j - y_j$，改寫成線性規劃標準式的話就變成&lt;/p></description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
+&lt;p>我們可以知道我們只會把樹邊改小、把非樹邊改大。對於一條非樹邊 $e_i = (u, v)$，假設他的權重被改成 $C_i + x_i$，而樹邊 $e_j$ 則改成 $C_j - y_j$，那麼前一段的條件就可以寫成 $C_i + x_i \geq C_j - y_j$，改寫成線性規劃標準式的話就變成&lt;/p></description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829">https://tioj.ck.tp.edu.tw/problems/1829&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p>
@@ -142,7 +158,7 @@ f(0) &amp;amp;= 0 \\&lt;br>
 f(N) &amp;amp;= 1 \\&lt;br>
 f(i) &amp;amp;= pf(i - 1) + (1 - p) f(i + 1), \forall {0 &amp;lt; i &amp;lt; N}&lt;br>
 \end{cases}&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1619/</guid><description>&lt;h1 id="巨大密室問題">巨大密室問題&lt;/h1>
+$$&lt;/p></description></item><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</guid><description>&lt;h1 id="巨大密室問題">巨大密室問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1619">https://tioj.ck.tp.edu.tw/problems/1619&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有長度 $n$ 的 $P_i$ 和 $O_i$ 兩個正整數序列，請任意排列這兩個序列使得 $\prod _ i (P_i + O_i)$ 盡量大。&lt;/p>
@@ -155,7 +171,7 @@ $$&lt;br>
 = P_i O_j + P_j O_i - P_i O_i - P_j O_j&lt;br>
 = (P_i - P_j) (O_j - O_i)&lt;br>
 $$&lt;br>
-如果沒有排好的話就必定存在 $i &amp;lt; j$ 使得 $O_i &amp;gt; O_j$，又 $P_i \leq P_j$，所以交換之後乘積不會變小。&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
+如果沒有排好的話就必定存在 $i &amp;lt; j$ 使得 $O_i &amp;gt; O_j$，又 $P_i \leq P_j$，所以交換之後乘積不會變小。&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2116">https://tioj.ck.tp.edu.tw/problems/2116&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>科學家發現了一種神奇的細菌，他們的繁殖方式很奇怪。這個世界上目前有 $N$ 隻細菌，第 $i$ 隻細菌的體積是 $A_i$ 立方公分。每過一年，對於一隻體積為 $x$ 立方公分的細菌，假設 $x$ 的所有正因數分別是&lt;br>
@@ -171,7 +187,7 @@ f_t(x) &amp;amp;= \sum _ {d | x} f_{t-1} (d) &amp;amp; \text{ if } t &amp;gt; 0 
 f_0(x) &amp;amp;= x&lt;br>
 \end{cases}&lt;br>
 $$&lt;/p>
-&lt;p>最後的答案是 $\sum _ i f_K(A_i)$。&lt;/p></description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-2117/</guid><description>&lt;h1 id="殿壬與最大流">殿壬與最大流&lt;/h1>
+&lt;p>最後的答案是 $\sum _ i f_K(A_i)$。&lt;/p></description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</guid><description>&lt;h1 id="殿壬與最大流">殿壬與最大流&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2117">https://tioj.ck.tp.edu.tw/problems/2117&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>$Q \leq 2 \times 10^5$ 次詢問無向圖 $G$ 上面任兩點的最大流（邊權是 $1$）。但是，$G$ 是一張 $N$ 點 $N$ 邊連通圖。&lt;/p>
@@ -333,7 +349,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/tioj-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/tioj-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me">Every time you&amp;rsquo;re next to me&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me">Every time you&amp;rsquo;re next to me&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1502">https://tioj.ck.tp.edu.tw/problems/1502&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有一個字串 $T$ 和一個 pattern $P$，其中 $P$ 有一些字元是 &lt;code>*&lt;/code>，&lt;code>*&lt;/code> 可以匹配一個或以上的任意字元，且 &lt;code>*&lt;/code> 不會連續出現，請問 $T$ 裡面有沒有一個子字串符合 $P$？&lt;/p>
@@ -770,7 +786,7 @@ pandoc 在把 markdown 轉成 pdf 前會某種先轉成 tex 的感覺，所以�
 &lt;li>有些語法沒有被翻譯到，例如 &lt;code>::: info :::&lt;/code>。&lt;/li>
 &lt;li>程式碼區塊 syntax highlighting 問題&lt;/li>
 &lt;/ul>
-&lt;p>以下就來解決以上幾個問題。&lt;/p></description></item><item><title>Seoul 2022 A : Card Game</title><link>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-a-card-game/</link><pubDate>Wed, 06 Sep 2023 14:47:03 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-a-card-game/</guid><description>&lt;h1 id="card-game">Card Game&lt;/h1>
+&lt;p>以下就來解決以上幾個問題。&lt;/p></description></item><item><title>Seoul 2022 A : Card Game</title><link>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-A-card-game/</link><pubDate>Wed, 06 Sep 2023 14:47:03 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/09/06/seoul-2022-A-card-game/</guid><description>&lt;h1 id="card-game">Card Game&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個 $N \times M$ 的棋盤，上面每格各擺了一個 $R, G, B$ 三種顏色之一的棋子&lt;br>
 接著雙方開始輪流操作，不能操作者就輸了，問你先手還是後手贏。&lt;/p>
@@ -1172,7 +1188,7 @@ Minecraft 官網上對這個警告的指示是這樣子的：&lt;br>
 被問說要不要一起打，刷了卡之後，又是暴龍天，雖然我覺得我很冷靜但我其實不知道我那時候表情怎麼樣（？？）&lt;br>
 總之選歌也很尷尬、打完也很尷尬，彷彿是因為我太弱而沒有資格有發語權一樣（我知道基本上並沒有這種事）&lt;/p>
 &lt;p>有點像道德又有點像自我心態管理，我本來以為自己不會這樣子想的，但我果然還是會有不健康的心態。&lt;br>
-就像 HNO2 說過和別人比較只會讓自己不開心，相信自己在做自己喜歡的事情，還有對自己有自信真的是很重要的事情。&lt;/p></description></item><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/tioj-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/tioj-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat">好．傳囉！ Nice Boat！&lt;/h1>
+就像 HNO2 說過和別人比較只會讓自己不開心，相信自己在做自己喜歡的事情，還有對自己有自信真的是很重要的事情。&lt;/p></description></item><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat">好．傳囉！ Nice Boat！&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個長度 $N$ 的整數序列 $A_i$。&lt;br>
 如果你可以找出一個區間，他的前綴和每個數字都大於等於0，而且他的後綴和的每個數字也都大於等於0，我們就稱他是安全區間，請你找出最長的安全區間長度是多少。&lt;/p>
@@ -1553,7 +1569,7 @@ T分數其實不太記得了，只記得化學跟生物應該都蠻低的，有�
 &lt;/div>
 &lt;/div>&lt;h2 id="真正累的地方">真正累的地方&lt;/h2>
 &lt;p>因為好奇所以把 &lt;code>/usr/include/c++/11.1.0/ext/pb_ds/&lt;/code> 翻出來看，真的有夠難看懂，到處 include 又有繼承關係，最後還是不知道為什麼會那麼慢QQ&lt;br>
-大概花了我一個小時以上吧？也可能是一個下午。&lt;/p></description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/ioi2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
+大概花了我一個小時以上吧？也可能是一個下午。&lt;/p></description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
 &lt;p>只是想打一下IOI的心得而已&lt;br>
 可能還是流水帳請多多包含(?)&lt;/p>
 &lt;h2 id="before">Before&lt;/h2>
@@ -1627,7 +1643,7 @@ registers實在有點長，當然只能先去看dungeons&lt;br>
 &lt;h2 id="通靈">通靈&lt;/h2>
 &lt;p>定義一個函數 $G$，對於形式冪級數 $f(x) = \sum c_i x^i, G(f) = \sum c_i a_i$ 。&lt;br>
 顯然$G(f \pm g) = G(f) \pm G(g)$。&lt;br>
-根據 $s$ 構造一個多項式 $S$&lt;/p></description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/ioicamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/ioicamp-2021/</guid><description>&lt;h1 id="ioic-2021">IOIC 2021&lt;/h1>
+根據 $s$ 構造一個多項式 $S$&lt;/p></description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</guid><description>&lt;h1 id="ioic-2021">IOIC 2021&lt;/h1>
 &lt;p>去年就來過一次了，今年再次造訪這困難的營隊。&lt;br>
 其實幾乎沒有什麼特別不一樣的地方，不過我想說還是寫個短短的紀錄。&lt;/p>
 &lt;h1 id="吃的東西">吃的東西&lt;/h1>
@@ -1736,7 +1752,7 @@ casper說看懂code就解完了（？）不過他沒辦法編譯所以也不知�
 &lt;/div>
 &lt;/div>&lt;p>但是關鍵的加密部份怎麼樣都不確定我看的對不對，所以我先把nimber的乘法表弄成一個文字檔存起來，再另外寫一個python跟Haskell的輸出比對&lt;br>
 整理一下之後發現，欸這個式子不就是傅立葉轉換嗎？！（而且還是用Nimber做DFT，酷爆）就想說可能要用多項式插值或是寫inverse FFT&lt;br>
-之後用python寫inverse DFT寫掉了，基本上只要把key的乘法反元素找出來帶進去傅立葉轉換的式子就好了&lt;/p></description></item><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/tioj-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/tioj-1597/</guid><description>&lt;h1 id="變動的過路費">變動的過路費&lt;/h1>
+之後用python寫inverse DFT寫掉了，基本上只要把key的乘法反元素找出來帶進去傅立葉轉換的式子就好了&lt;/p></description></item><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</guid><description>&lt;h1 id="變動的過路費">變動的過路費&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1597">https://tioj.ck.tp.edu.tw/problems/1597&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給你一張有向圖，每個邊會有隨時間變動的權重，並且邊的權重對時間是一個線性函數。&lt;br>
@@ -1932,7 +1948,7 @@ casper說看懂code就解完了（？）不過他沒辦法編譯所以也不知�
 現在應該做的事，大概就是在寒假左右把專題弄一個段落，然後把選訓好好走完吧。&lt;br>
 也許今年還是有機會國手，但是我認真覺得不可能贏balbit跟ZCK，他們實在太強了&lt;br>
 而且我因為專題被催根本沒辦法好好練習QQ&lt;br>
-不過我的目標也不是贏過他們，希望至少有機會明年拿個更好的牌，為此我得先做完專題給自己一個好的練習環境（&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/tioj-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/tioj-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
+不過我的目標也不是贏過他們，希望至少有機會明年拿個更好的牌，為此我得先做完專題給自己一個好的練習環境（&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136">https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br>
@@ -2185,7 +2201,7 @@ Google了一陣子。中間找到這個使用Fuse.js的一個實作，不知道�
 &lt;/ul>
 &lt;h3 id="小撇步">小撇步&lt;/h3>
 &lt;p>在本機測試的時候，如果只是為了 &lt;code>hugo server&lt;/code> 就得耗掉一個terminal的視窗有點浪費，可以用 &lt;code>hugo server &amp;gt;server.log &amp;amp;&lt;/code>來讓他在背景執行，並且使用 &lt;code>fg&lt;/code> 把他叫回前台以讓我們停止他。&lt;br>
-當然如果是用GUI文字編輯器就沒什麼差了XD&lt;/p></description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/tioj-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/tioj-1978/</guid><description>&lt;h1 id="邀請函invitation">邀請函（Invitation）&lt;/h1>
+當然如果是用GUI文字編輯器就沒什麼差了XD&lt;/p></description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</guid><description>&lt;h1 id="邀請函invitation">邀請函（Invitation）&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1978">https://tioj.ck.tp.edu.tw/problems/1978&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給你一張圖，求出最大點獨立集。&lt;br>
@@ -2465,7 +2481,7 @@ Google了一陣子。中間找到這個使用Fuse.js的一個實作，不知道�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/maximum-weight-bipartite-matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
+&lt;/div></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
 然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p>
 &lt;h1 id="先備知識">先備知識&lt;/h1>
 &lt;p>看得懂$\sum$&lt;br>
@@ -2490,7 +2506,7 @@ KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法
 &lt;p>首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。&lt;br>
 在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$&lt;br>
 那麼很顯然的，對於任何一種合法的頂標來說，頂標的總和會大於等於最大權完美匹配的值。&lt;br>
-因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/arc-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/arc-106/</guid><description>&lt;h1 id="atcoder-regular-contest-106">AtCoder Regular Contest 106&lt;/h1>
+因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</guid><description>&lt;h1 id="atcoder-regular-contest-106">AtCoder Regular Contest 106&lt;/h1>
 &lt;p>最近一直被ZCK推坑，vir了好幾場ARC&lt;br>
 然後打完AGC才發現自己rating太低unrated，爛死XD&lt;br>
 結果打完這場還是不到能夠rated的標準1200 QQ&lt;br>
@@ -2527,7 +2543,7 @@ $-10^9 \leq a_i, b_i \leq 10^9$&lt;/p>
 &lt;p>請構造一組輸出使得「$A$輸出的答案 - $B$輸出的答案 = $M$」&lt;br>
 &lt;strong>注意你構造的線段端點必須是不大於$10^9$的正整數，而且全部相異&lt;/strong>&lt;br>
 $1 \leq N \leq 10^5$&lt;br>
-$-N \leq M \leq N$&lt;/p></description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-ioi/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-ioi/</guid><description>&lt;p>好久又沒有發文了&lt;br>
+$-N \leq M \leq N$&lt;/p></description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>&lt;p>好久又沒有發文了&lt;br>
 來講講上一次發文之後我都在做什麼好了&lt;/p>
 &lt;h2 id="before-ioi">Before IOI&lt;/h2>
 &lt;p>首先在8/17開始所謂的賽前集訓&lt;br>
@@ -2584,7 +2600,7 @@ Esc離手指超近而且方向鍵又被拔掉超爽的XDDDD&lt;br>
 &lt;p>
  &lt;img src="https://omeletwithoutegg.github.io/images/after-IOI/duckyone.jpg" alt="Ducky One 2 Mini">
 
-&lt;/p></description></item><item><title>國培 week 2</title><link>https://omeletwithoutegg.github.io/2020/08/05/toi-2020-7-26-weekend/</link><pubDate>Wed, 05 Aug 2020 11:39:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/08/05/toi-2020-7-26-weekend/</guid><description>&lt;h1 id="國培第二周">國培第二周&lt;/h1>
+&lt;/p></description></item><item><title>國培 week 2</title><link>https://omeletwithoutegg.github.io/2020/08/05/TOI-2020-7-26-weekend/</link><pubDate>Wed, 05 Aug 2020 11:39:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/08/05/TOI-2020-7-26-weekend/</guid><description>&lt;h1 id="國培第二周">國培第二周&lt;/h1>
 &lt;p>原本的課是在周六和周日的上午&lt;br>
 似乎因為需要電力檢修還是什麼的都被移到周日了&lt;/p>
 &lt;h2 id="週日">週日&lt;/h2>
@@ -2612,7 +2628,7 @@ Esc離手指超近而且方向鍵又被拔掉超爽的XDDDD&lt;br>
 
  &lt;img src="https://omeletwithoutegg.github.io/images/TOI-2020-7-26-weekend/eat.JPG" alt="404 QQ">
 
-&lt;/p></description></item><item><title>國培 week 1</title><link>https://omeletwithoutegg.github.io/2020/07/20/toi-2020-7-18-weekend/</link><pubDate>Mon, 20 Jul 2020 09:35:32 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/20/toi-2020-7-18-weekend/</guid><description>&lt;h1 id="國培第一週">國培第一週&lt;/h1>
+&lt;/p></description></item><item><title>國培 week 1</title><link>https://omeletwithoutegg.github.io/2020/07/20/TOI-2020-7-18-weekend/</link><pubDate>Mon, 20 Jul 2020 09:35:32 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/20/TOI-2020-7-18-weekend/</guid><description>&lt;h1 id="國培第一週">國培第一週&lt;/h1>
 &lt;h2 id="週五">週五&lt;/h2>
 &lt;p>前一天東東跟曹宸睿跑去住宿，似乎是住在捷絲旅（好好），不過他們的晚餐費只有一百元XD&lt;br>
 至於我則是在考完資格考後又忙著去YTP初賽，並且發現自己被最後一題電爆QQ&lt;br>
@@ -2655,7 +2671,7 @@ Esc離手指超近而且方向鍵又被拔掉超爽的XDDDD&lt;br>
 他仍然超酷，講的主題是 subexponential algorithms。首先講了subset sum和0/1背包的meet in the middle作法，中途還一直說「這個部分我不會……所以時間複雜度就是 $2^{N/2}$ + 我不會 + $2^{N/2} \cdot (N/2)$ ……」，超好笑，O(我不會)的演算法。接著講了一個 $O^{ \star }(3^{N/2})$ 的3-SAT確定性演算法，並且還有講了 $O^{ \star }(3^{N/4})$的隨機演算法和一個O(我不會)的隨機演算法XD。&lt;br>
 接下來就變成討論「1-median selection in metric space」的一大堆東西， 這個問題主要是在問給一堆點，你要找到與其他點平均距離最小的一個點，很神奇的是可以隨機選一個夠多點的subset，然後對每個點只算與這個subset的平均距離之類的，會得到一個近似解。&lt;br>
 教授也分享了很多相關的結果，例如壓掉一個log或是在某種條件下變成超級好的複雜度之類的&lt;br>
-總之很難理解但是我大致上就邊開水題邊聽他講證明，可能因為我前一天晚睡超想睡覺的，最後真的累到不行了XD&lt;/p></description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/using-vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/using-vim/</guid><description>&lt;h1 id="vim-">vim ?!&lt;/h1>
+總之很難理解但是我大致上就邊開水題邊聽他講證明，可能因為我前一天晚睡超想睡覺的，最後真的累到不行了XD&lt;/p></description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</guid><description>&lt;h1 id="vim-">vim ?!&lt;/h1>
 &lt;p>vim : 古老的編輯器&lt;/p>
 &lt;p>&lt;a href="https://omeletwithoutegg.github.io/2025/03/10/vim-fern/">新文章&lt;/a>&lt;/p>
 &lt;!-- https://gohugo.io/content-management/cross-references/ -->
@@ -2862,7 +2878,7 @@ Esc離手指超近而且方向鍵又被拔掉超爽的XDDDD&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">endfunction&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>順帶一提在windows的gvim底下的vimrc路徑是 &lt;code>$HOME/_vimrc&lt;/code>&lt;/p></description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/tioj-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/tioj-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件">Ch2. Section 9. 補魔力的條件&lt;/h1>
+&lt;/div>&lt;p>順帶一提在windows的gvim底下的vimrc路徑是 &lt;code>$HOME/_vimrc&lt;/code>&lt;/p></description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件">Ch2. Section 9. 補魔力的條件&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1764">https://tioj.ck.tp.edu.tw/problems/1764&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;ul>
@@ -3004,7 +3020,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1633</title><link>https://omeletwithoutegg.github.io/2020/05/08/tioj-1633/</link><pubDate>Fri, 08 May 2020 13:43:30 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/08/tioj-1633/</guid><description>&lt;h1 id="序列維護問題">序列維護問題&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1633</title><link>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</link><pubDate>Fri, 08 May 2020 13:43:30 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</guid><description>&lt;h1 id="序列維護問題">序列維護問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1633">https://tioj.ck.tp.edu.tw/problems/1633&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有一個由1到N的數字排成的序列。&lt;br>
@@ -3223,7 +3239,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/toi-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/toi-2/</guid><description>&lt;h1 id="二階奇幻之旅">二階奇幻之旅&lt;/h1>
+&lt;/div></description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</guid><description>&lt;h1 id="二階奇幻之旅">二階奇幻之旅&lt;/h1>
 &lt;p>原本一段剛好和一階撞到，可以免考，但是因為疫情的緣故又錯過了&lt;br>
 不過在我們從一階回來之後傳出師大那邊有確診的消息，而且還跟我們用過同一間教室(?)&lt;br>
 所以我們就剛好利用防疫公假得到免考的資格，嘻嘻&lt;/p>
@@ -3276,7 +3292,7 @@ pC沒有拿滿很可惜，pD也是和大家一樣沒想法不過可惜我沒去�
 &lt;h2 id="接下來">接下來?&lt;/h2>
 &lt;p>因為我在學校嘗試待了一個禮拜之後發現真的待不太下去(這就是奧林匹亞回歸症候群嗎&amp;hellip;)&lt;br>
 於是成功的用準備資奧的理由請了假，罪惡感爆棚呢XD&lt;br>
-現在該做的事可能就是編講義、寫題解吧，希望自己不要頹廢OvO&lt;/p></description></item><item><title>TIOJ-1039</title><link>https://omeletwithoutegg.github.io/2020/05/06/tioj-1039/</link><pubDate>Wed, 06 May 2020 16:36:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/06/tioj-1039/</guid><description>&lt;h1 id="b魔術數字">B.魔術數字&lt;/h1>
+現在該做的事可能就是編講義、寫題解吧，希望自己不要頹廢OvO&lt;/p></description></item><item><title>TIOJ-1039</title><link>https://omeletwithoutegg.github.io/2020/05/06/TIOJ-1039/</link><pubDate>Wed, 06 May 2020 16:36:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/06/TIOJ-1039/</guid><description>&lt;h1 id="b魔術數字">B.魔術數字&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1039">https://tioj.ck.tp.edu.tw/problems/1039&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>超級長orz&lt;br>
@@ -3386,7 +3402,7 @@ pC沒有拿滿很可惜，pD也是和大家一樣沒想法不過可惜我沒去�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404">https://tioj.ck.tp.edu.tw/problems/1404&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>
@@ -3555,7 +3571,7 @@ pC沒有拿滿很可惜，pD也是和大家一樣沒想法不過可惜我沒去�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1628</title><link>https://omeletwithoutegg.github.io/2020/05/03/tioj-1628/</link><pubDate>Sun, 03 May 2020 15:02:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/03/tioj-1628/</guid><description>&lt;h1 id="組合布丁">組合布丁&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1628</title><link>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</link><pubDate>Sun, 03 May 2020 15:02:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</guid><description>&lt;h1 id="組合布丁">組合布丁&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1628">https://tioj.ck.tp.edu.tw/problems/1628&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>記得在快樂暑假營開始前，你曾經說過：「只要我有一次比賽沒有破台，就要請全快樂營的人吃布丁。」&lt;br>
@@ -3634,7 +3650,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/tioj-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/tioj-1861/</guid><description>&lt;h1 id="蘿莉切割問題">蘿莉切割問題&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</guid><description>&lt;h1 id="蘿莉切割問題">蘿莉切割問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1861">https://tioj.ck.tp.edu.tw/problems/1861&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>請你把一個數字$L$切成$a_1, a_2, \dots, a_n$&lt;br>
@@ -3705,7 +3721,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/toi-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/toi-1/</guid><description>&lt;h1 id="選訓生活">選訓生活(?)&lt;/h1>
+&lt;/div></description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>&lt;h1 id="選訓生活">選訓生活(?)&lt;/h1>
 &lt;p>最近部落格停更好久喔&amp;gt;&amp;lt;&lt;br>
 不知道有沒有沒有追蹤我facebook的人在看我的部落格，嘻嘻&lt;/p>
 &lt;h2 id="入營考當天">入營考當天?&lt;/h2>
@@ -3780,7 +3796,7 @@ joy一直推薦西西里雞腿堡加蛋加起司，不過我覺得沒有傳言�
 待在學校真的好可怕，所謂奧林匹亞回歸症候群就是這樣嗎QQ&lt;br>
 英文國文化學物理一直打瞌睡，然後我也不敢(或懶得)要之前沒拿的講義，完美詮釋社交障礙&lt;br>
 問了一些學長，明天問問看特教組申請推薦的方法和能不能請公假好了&lt;br>
-我要跑去看FF7實況了，TIFA真香&lt;/p></description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/tioj-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/tioj-1629/</guid><description>&lt;h1 id="快樂規劃路徑">快樂規劃路徑&lt;/h1>
+我要跑去看FF7實況了，TIFA真香&lt;/p></description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</guid><description>&lt;h1 id="快樂規劃路徑">快樂規劃路徑&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1629">https://tioj.ck.tp.edu.tw/problems/1629&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>樹朋友們生活在一個湖邊，湖邊的樹依照順時針方向編號為$1, 2, \dots n$。&lt;br>
@@ -3957,7 +3973,7 @@ joy一直推薦西西里雞腿堡加蛋加起司，不過我覺得沒有傳言�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/tioj-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/tioj-1505/</guid><description>&lt;h1 id="assssss">Assssss!!&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</guid><description>&lt;h1 id="assssss">Assssss!!&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1505">https://tioj.ck.tp.edu.tw/problems/1505&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>現在有一個正整數構成的除法數列&lt;/p>
@@ -4030,7 +4046,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1219</title><link>https://omeletwithoutegg.github.io/2020/02/25/tioj-1219/</link><pubDate>Tue, 25 Feb 2020 09:55:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/tioj-1219/</guid><description>&lt;h1 id="發糖果囉">發糖果囉&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1219</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</link><pubDate>Tue, 25 Feb 2020 09:55:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</guid><description>&lt;h1 id="發糖果囉">發糖果囉&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1219">https://tioj.ck.tp.edu.tw/problems/1219&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>求符合$1 \leq x \leq n, 1 \leq y \leq m$且$x,y$的最大公因數是$g$的數對有多少對&lt;br>
@@ -4050,7 +4066,7 @@ $$&lt;br>
 &amp;amp;= \sum_d \mu(d) {\lfloor \frac{N}{d} \rfloor} {\lfloor \frac{M}{d} \rfloor}&lt;br>
 \end{align*}&lt;br>
 $$&lt;br>
-預處理$\mu$的前綴，利用數論分塊可以做到$\mathcal{O}(N + Q \sqrt{N})$&lt;/p></description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/tioj-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/tioj-2140/</guid><description>&lt;h1 id="殿壬愛序列">殿壬愛序列&lt;/h1>
+預處理$\mu$的前綴，利用數論分塊可以做到$\mathcal{O}(N + Q \sqrt{N})$&lt;/p></description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</guid><description>&lt;h1 id="殿壬愛序列">殿壬愛序列&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2140">https://tioj.ck.tp.edu.tw/problems/2140&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給你一個長度為$N$的序列$a_1, a_2, \dots, a_N$，並且依序執行$Q$個操作，每個操作可能是&lt;/p>
@@ -4085,7 +4101,7 @@ $$&lt;br>
 對每個節點維護val和win，分別表示那個區間打贏的數字以及他贏了多少(?)&lt;br>
 合併的時候假如兩個區間的val一樣，那麼他們的win就會相加&lt;br>
 不同的話就是讓他們打架! win比較多的一方獲勝，但是必須減去對方的win&lt;br>
-詳細請看&lt;code>node operator+&lt;/code>的部分&lt;/p></description></item><item><title>TIOJ-1102</title><link>https://omeletwithoutegg.github.io/2020/02/25/tioj-1102/</link><pubDate>Tue, 25 Feb 2020 08:33:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/tioj-1102/</guid><description>&lt;h1 id="e海賊王">E.海賊王&lt;/h1>
+詳細請看&lt;code>node operator+&lt;/code>的部分&lt;/p></description></item><item><title>TIOJ-1102</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</link><pubDate>Tue, 25 Feb 2020 08:33:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</guid><description>&lt;h1 id="e海賊王">E.海賊王&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1102">https://tioj.ck.tp.edu.tw/problems/1102&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>你是一位海賊，現在有$P$個敵人與$T$個寶藏等間距圍成一圓形&lt;br>
@@ -4242,7 +4258,7 @@ $$&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/tioj-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/tioj-1798/</guid><description>&lt;h1 id="can-you-arrive">Can You Arrive?&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>&lt;h1 id="can-you-arrive">Can You Arrive?&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1798">https://tioj.ck.tp.edu.tw/problems/1798&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>地鐵有$N$個站，$M$條軌道，$K$段行駛路線&lt;br>
@@ -4506,7 +4522,7 @@ $K \leq N \leq 10^6, M = N-1, Q \leq 10^6$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1129</title><link>https://omeletwithoutegg.github.io/2020/02/23/tioj-1129/</link><pubDate>Sun, 23 Feb 2020 11:26:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/tioj-1129/</guid><description>&lt;h1 id="聚集問題">聚集問題&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1129</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</link><pubDate>Sun, 23 Feb 2020 11:26:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</guid><description>&lt;h1 id="聚集問題">聚集問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1129">https://tioj.ck.tp.edu.tw/problems/1129&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定二維平面上$N$個點，若編號$i,j$的點之間的距離不大於$C$則他們之間有連邊&lt;br>
@@ -4601,7 +4617,7 @@ $K \leq N \leq 10^6, M = N-1, Q \leq 10^6$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/tioj-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/tioj-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶">殿壬看蝴蝶&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶">殿壬看蝴蝶&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2124">https://tioj.ck.tp.edu.tw/problems/2124&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>太長了，略&lt;/p>
@@ -5051,7 +5067,7 @@ Splay只需要實現查一個節點在中序是第個、查中序第k個節點�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/tioj-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/tioj-1884/</guid><description>&lt;h1 id="ioi2015boxes-一堆盒子">【IOI2015】Boxes 一堆盒子&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</guid><description>&lt;h1 id="ioi2015boxes-一堆盒子">【IOI2015】Boxes 一堆盒子&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1884">https://tioj.ck.tp.edu.tw/problems/1884&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有$L$個地區排成一環狀，依序編號為$0, 1, \dots, L-1$&lt;br>
@@ -5079,7 +5095,7 @@ dp[i] = \min\limits _ {\max(0, i-k) \leq j &amp;lt; i} { dp[j] + cost(j+1, i) }&
 $$&lt;/p>
 &lt;p>其中$cost(l, r) = \min {L, 2p_r, 2(L-p_l)}$&lt;br>
 代表從$0$號節點開始經過$p_l, p _ {l+1}, \dots, p_r$再回到$0$號節點所需要的最少時間&lt;br>
-複雜度$\mathcal{O}(NK)$&lt;/p></description></item><item><title>TIOJ-1828</title><link>https://omeletwithoutegg.github.io/2020/02/20/tioj-1828/</link><pubDate>Thu, 20 Feb 2020 04:56:05 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/tioj-1828/</guid><description>&lt;h1 id="控控控之蘿莉控">控控控之蘿莉控&lt;/h1>
+複雜度$\mathcal{O}(NK)$&lt;/p></description></item><item><title>TIOJ-1828</title><link>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1828/</link><pubDate>Thu, 20 Feb 2020 04:56:05 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1828/</guid><description>&lt;h1 id="控控控之蘿莉控">控控控之蘿莉控&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1828">https://tioj.ck.tp.edu.tw/problems/1828&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>你走在路上遇到了一個可愛小蘿莉，因為你的控屬性，所以你跑上去問了她的名字：「小妹妹～你叫什麼名字啊？」&lt;br>
@@ -5179,7 +5195,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1553</title><link>https://omeletwithoutegg.github.io/2020/02/19/tioj-1553/</link><pubDate>Wed, 19 Feb 2020 16:54:42 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/19/tioj-1553/</guid><description>&lt;h1 id="b-game">B-Game&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1553</title><link>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</link><pubDate>Wed, 19 Feb 2020 16:54:42 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</guid><description>&lt;h1 id="b-game">B-Game&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1553">https://tioj.ck.tp.edu.tw/problems/1553&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>B-Game是個殘酷的兩人卡片對戰遊戲(Battle Game)&lt;br>
@@ -5269,7 +5285,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1274</title><link>https://omeletwithoutegg.github.io/2020/02/16/tioj-1274/</link><pubDate>Sun, 16 Feb 2020 21:07:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/16/tioj-1274/</guid><description>&lt;h1 id="純屬無聊-tie-breaker">[純屬無聊] Tie Breaker&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1274</title><link>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</link><pubDate>Sun, 16 Feb 2020 21:07:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</guid><description>&lt;h1 id="純屬無聊-tie-breaker">[純屬無聊] Tie Breaker&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1274">https://tioj.ck.tp.edu.tw/problems/1274&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>本題考驗你對小向的試煉題敘的理解程度。請回答以下三個問題：&lt;/p>
@@ -5306,7 +5322,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1511</title><link>https://omeletwithoutegg.github.io/2020/02/15/tioj-1511/</link><pubDate>Sat, 15 Feb 2020 13:25:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/15/tioj-1511/</guid><description>&lt;h1 id="problem-a-雷射防護網">Problem A. 雷射防護網&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1511</title><link>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</link><pubDate>Sat, 15 Feb 2020 13:25:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</guid><description>&lt;h1 id="problem-a-雷射防護網">Problem A. 雷射防護網&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1511">https://tioj.ck.tp.edu.tw/problems/1511&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>考慮在正$n$邊形的頂點中任選三點形成的三角形，請統計分別有幾個銳角三角形、直角三角形和鈍角三角形&lt;br>
@@ -5325,7 +5341,7 @@ $$&lt;br>
 $$&lt;br>
 記得要乘上$n$，代表以每個頂點當作鈍角頂點&lt;br>
 又所有三角形的個數就是$\binom{n}{3} = \frac{n(n-1)(n-2)}{6}$&lt;br>
-扣掉直角及鈍角的個數就是銳角的個數了&lt;/p></description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/tioj-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/tioj-1202/</guid><description>&lt;h1 id="重疊的天際線">重疊的天際線&lt;/h1>
+扣掉直角及鈍角的個數就是銳角的個數了&lt;/p></description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</guid><description>&lt;h1 id="重疊的天際線">重疊的天際線&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1202">https://tioj.ck.tp.edu.tw/problems/1202&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>地平線上有許多房子，而這些房子在夕陽的照射之下形成有趣的輪廓，我們稱之為天際線(Skyline)。為了方便起見，你可以假設所有的房子都是一個位在2D平面上的矩形，並且有一條邊貼在這個假想2D平面上的X軸。&lt;/p>
@@ -5421,7 +5437,7 @@ $(1, 11, 3, 13, 9, 0, 12, 7, 16, 3, 19, 18, 22, 3, 23, 13, 29, 0)$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1156</title><link>https://omeletwithoutegg.github.io/2020/02/08/tioj-1156/</link><pubDate>Sat, 08 Feb 2020 12:29:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/08/tioj-1156/</guid><description>&lt;h1 id="5高中運動會">5.高中運動會&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1156</title><link>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</link><pubDate>Sat, 08 Feb 2020 12:29:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</guid><description>&lt;h1 id="5高中運動會">5.高中運動會&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1156">https://tioj.ck.tp.edu.tw/problems/1156&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>夢幻城市每年為全市高中生舉辦一次運動大會。為促進各校同學之間的交流，採用特別的分隊方式：每一個學校的同學，必須被均勻分散到各隊，使得每一隊中該校的人數皆相同。為增加比賽的競爭性，希望分成越多隊越好。你的任務是由各校的人數，決定最多可分成的隊數。&lt;/p>
@@ -5483,7 +5499,7 @@ $(1, 11, 3, 13, 9, 0, 12, 7, 16, 3, 19, 18, 22, 3, 23, 13, 29, 0)$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/tioj-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/tioj-1600/</guid><description>&lt;h1 id="爆炸吧現充">爆炸吧現充~&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</guid><description>&lt;h1 id="爆炸吧現充">爆炸吧現充~&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1600">https://tioj.ck.tp.edu.tw/problems/1600&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>求共有幾個滿足&lt;/p>
@@ -5509,7 +5525,7 @@ $$&lt;/p>
 &amp;amp;= &amp;amp; \sum -\mu(k) |S_k|\newline&lt;br>
 &amp;amp;= &amp;amp; -\sum\limits _ {k=2}^\sqrt{n} \mu(k) \frac{n}{k^2}&lt;br>
 \end{matrix}&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/tioj-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/tioj-1283/</guid><description>&lt;p>&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;&lt;/p>
+$$&lt;/p></description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</guid><description>&lt;p>&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;&lt;/p>
 &lt;h1 id="超大畫框設置">超大畫框設置&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1283">https://tioj.ck.tp.edu.tw/problems/1283&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
@@ -5703,7 +5719,7 @@ $$&lt;/p></description></item><item><title>TIOJ-1283</title><link>https://omelet
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/ioicamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/ioicamp-2020/</guid><description>&lt;h1 id="2020-ioic-小記">2020 IOIC 小記&lt;/h1>
+&lt;/div></description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>&lt;h1 id="2020-ioic-小記">2020 IOIC 小記&lt;/h1>
 &lt;p>五天都11點回家 好累喔&lt;br>
 不過聽到很多神奇技巧和神奇題目(?)&lt;/p>
 &lt;h2 id="day-1">Day 1&lt;/h2>
@@ -5760,7 +5776,7 @@ Pattern這東西好神奇喔，我想還要好久我才能通透，感覺題目�
 &lt;p>個人賽一開始有想法只有pB，看到Scoreboard上面大家都AC pD就猜是水結論題直接給他猜結論下去XDD&lt;br>
 接著花時間把pB寫掉了，雖然看到一些人在丟pC不過沒什麼想法，反而翻到pE是今天電石上課直接講過的東西XD&lt;br>
 因為印象很深所以想說要自己刻出來，不過最後還是參考了一些講義的細節想法QQ&lt;br>
-幸運的搶到pF首殺之後發現pC其實好水，寫掉之後就沒事做了(?)&lt;/p></description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/tioj-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/tioj-1168/</guid><description>&lt;h1 id="進階的入門">進階的入門&lt;/h1>
+幸運的搶到pF首殺之後發現pC其實好水，寫掉之後就沒事做了(?)&lt;/p></description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</guid><description>&lt;h1 id="進階的入門">進階的入門&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1168">https://tioj.ck.tp.edu.tw/problems/1168&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>你需要實作五個函式：&lt;/p>
@@ -5794,7 +5810,7 @@ Pattern這東西好神奇喔，我想還要好久我才能通透，感覺題目�
 不過這樣寫的locality很差，似乎會讓常數暴增&lt;/p>
 &lt;p>改成用struct包住之後剩下最後兩筆TLE，試了好久之後才想到 &lt;code>priority_queue&lt;/code> 是用 &lt;code>vector&lt;/code> 實作，動態開的空間顯然會浪費很多常數，不如自己靜態開一個大陣列&lt;br>
 注意到 &lt;code>pop&lt;/code> 操作最多就是呼叫次數的一半，所以 &lt;code>heap&lt;/code> 只要開 5e5 就好了， &lt;code>push&lt;/code> 的時候多出去的可以直接丟掉&lt;br>
-至於 &lt;code>popped&lt;/code> 陣列應該還是要開到 1e6 ，因為被 &lt;code>pop&lt;/code> 的東西有可能編號很大，TIOJ上的測資似乎沒考慮到這個地方所以開 5e5 也能AC&lt;/p></description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/tioj-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/tioj-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞">C.幼稚國王的獎賞&lt;/h1>
+至於 &lt;code>popped&lt;/code> 陣列應該還是要開到 1e6 ，因為被 &lt;code>pop&lt;/code> 的東西有可能編號很大，TIOJ上的測資似乎沒考慮到這個地方所以開 5e5 也能AC&lt;/p></description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞">C.幼稚國王的獎賞&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1094">https://tioj.ck.tp.edu.tw/problems/1094&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>定義一個非負整數集合的價值是裡面所有數字XOR起來&lt;br>
@@ -5820,7 +5836,7 @@ $$&lt;br>
 說明: 不失一般性設$\lambda _ 1 \neq 0$，則&lt;br>
 $$&lt;br>
 \textbf{v} _ 1 = \sum _ {i=2}^n \frac{-\lambda _ i}{\lambda _ 1} \textbf{v} _ i&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/tioj-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
+$$&lt;/p></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408">https://tioj.ck.tp.edu.tw/problems/1408&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定$n$個時段$[l_i, r_i)$&lt;br>
@@ -6000,7 +6016,7 @@ $$&lt;/p></description></item><item><title>TIOJ-1408</title><link>https://omelet
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/tioj-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/tioj-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社">1.銀河帝國旅行社&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社">1.銀河帝國旅行社&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1152">https://tioj.ck.tp.edu.tw/problems/1152&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給一棵樹，找最遠的兩個點的距離&lt;/p>
@@ -6148,7 +6164,7 @@ Land-2碰了好久一直CE，QQ&lt;/p>
 &lt;p>題目給了一張圖片，是一張棋盤，上面有一些位置有不同字元&lt;br>
 還有一個奇怪的Hint，不過看不懂&lt;br>
 和Joy討論之後我丟出是不是「依照AlphaGo某場比賽下子順序看棋盤上的字元」的想法&lt;br>
-Joy就把他給AC了XD，通靈死&lt;/p></description></item><item><title>TIOJ-2037</title><link>https://omeletwithoutegg.github.io/2019/12/31/tioj-2037/</link><pubDate>Tue, 31 Dec 2019 16:06:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/tioj-2037/</guid><description>&lt;h1 id="警力配置">警力配置&lt;/h1>
+Joy就把他給AC了XD，通靈死&lt;/p></description></item><item><title>TIOJ-2037</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</link><pubDate>Tue, 31 Dec 2019 16:06:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</guid><description>&lt;h1 id="警力配置">警力配置&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2037">https://tioj.ck.tp.edu.tw/problems/2037&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>裸的二分圖匹配&lt;/p>
@@ -6391,7 +6407,7 @@ Joy就把他給AC了XD，通靈死&lt;/p></description></item><item><title>TIOJ-
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/tioj-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/tioj-1441/</guid><description>&lt;h1 id="萬里長城">萬里長城&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</guid><description>&lt;h1 id="萬里長城">萬里長城&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1441">https://tioj.ck.tp.edu.tw/problems/1441&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個序列，找出最長的「長城」子序列&lt;br>
@@ -6443,7 +6459,7 @@ Joy就把他給AC了XD，通靈死&lt;/p></description></item><item><title>TIOJ-
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/modulo-arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
+&lt;/div></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
 &lt;h2 id="定義">定義&lt;/h2>
 &lt;p>$$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$&lt;br>
 或者說$a,b$同餘於$m$&lt;/p>
@@ -6475,7 +6491,7 @@ $$&lt;/p>
 而在模$m$的情況下，我們同樣也可以用一個使得$ax \equiv 1$的$x$來代替除以$a$的運算，稱為模逆元&lt;br>
 (如果常常打CF的話應該常常看見上面模逆元的敘述)&lt;br>
 求取模逆元$x = a^{-1}$只要把同餘關係改寫成$ax = my+1$就可以用擴展歐幾里得求解了&lt;br>
-注意$a,m$必須互質才會有模逆元&lt;/p></description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/tioj-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/tioj-1567/</guid><description>&lt;h1 id="黑色騎士團的飛彈野望">黑色騎士團的飛彈野望&lt;/h1>
+注意$a,m$必須互質才會有模逆元&lt;/p></description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</guid><description>&lt;h1 id="黑色騎士團的飛彈野望">黑色騎士團的飛彈野望&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1567">https://tioj.ck.tp.edu.tw/problems/1567&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點&lt;br>
@@ -6625,7 +6641,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/fft-ntt/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
+&lt;/div></description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
 &lt;p>本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速&lt;br>
 這邊先定義一下捲積$ * $是什麼&lt;/p>
 &lt;p>$$&lt;br>
@@ -6659,7 +6675,7 @@ $$&lt;br>
 因為$C$的次數已經可以確定&lt;br>
 我們也可以在$A(x)$和$B(x)$找出$n$個相異的點，相乘之後再利用插值法代入得到$C$&lt;br>
 其中$n = \deg C + 1$&lt;br>
-也就是&lt;/p></description></item><item><title>Sieving-Method</title><link>https://omeletwithoutegg.github.io/2019/12/24/sieving-method/</link><pubDate>Tue, 24 Dec 2019 12:41:46 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/24/sieving-method/</guid><description>&lt;p>!待補QQ&lt;/p>
+也就是&lt;/p></description></item><item><title>Sieving-Method</title><link>https://omeletwithoutegg.github.io/2019/12/24/Sieving-Method/</link><pubDate>Tue, 24 Dec 2019 12:41:46 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/24/Sieving-Method/</guid><description>&lt;p>!待補QQ&lt;/p>
 &lt;h1 id="質數篩與快樂的積性函數">質數篩與快樂的積性函數&lt;/h1>
 &lt;p>想必大家都精通各種質數篩法，最簡單的$\mathcal{O}(n\sqrt{n})$就不提啦&lt;/p>
 &lt;h2 id="nlog-n篩">$n\log n$篩&lt;/h2>
@@ -6690,7 +6706,7 @@ $$&lt;br>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>其中 &lt;code>d[i]&lt;/code> 代表 &lt;code>i&lt;/code> 的因數個數&lt;br>
-容易發現$\sum\limits _ {i=1}^n d[i]$也是$\mathcal{O}(n\log n)$量級的&lt;/p></description></item><item><title>TIOJ-1726</title><link>https://omeletwithoutegg.github.io/2019/12/23/tioj-1726/</link><pubDate>Mon, 23 Dec 2019 22:14:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/23/tioj-1726/</guid><description>&lt;h1 id="dice-wars">Dice Wars&lt;/h1>
+容易發現$\sum\limits _ {i=1}^n d[i]$也是$\mathcal{O}(n\log n)$量級的&lt;/p></description></item><item><title>TIOJ-1726</title><link>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</link><pubDate>Mon, 23 Dec 2019 22:14:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</guid><description>&lt;h1 id="dice-wars">Dice Wars&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1726">https://tioj.ck.tp.edu.tw/problems/1726&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>Dice Wars是一款兼具謀略和運氣的遊戲。&lt;br>
@@ -6870,7 +6886,7 @@ $$&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1674</title><link>https://omeletwithoutegg.github.io/2019/12/19/tioj-1674/</link><pubDate>Thu, 19 Dec 2019 10:58:57 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/19/tioj-1674/</guid><description>&lt;h1 id="新專輯">新專輯&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1674</title><link>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</link><pubDate>Thu, 19 Dec 2019 10:58:57 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</guid><description>&lt;h1 id="新專輯">新專輯&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1674">https://tioj.ck.tp.edu.tw/problems/1674&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>最近你打算訂購$N^2$張水樹奈奈的專輯《極限魅惑IMPACT EXCITER》。&lt;br>
@@ -6913,7 +6929,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>回到剛剛的式子，把他改寫成&lt;/p></description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/tioj-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/tioj-1035/</guid><description>&lt;h1 id="通關密語">通關密語&lt;/h1>
+&lt;/div>&lt;p>回到剛剛的式子，把他改寫成&lt;/p></description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</guid><description>&lt;h1 id="通關密語">通關密語&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1035">https://tioj.ck.tp.edu.tw/problems/1035&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串 $S,T$&lt;br>
@@ -6942,7 +6958,7 @@ $$&lt;/p>
 \sum _ {c \in \sigma} \sum _ {i-j = x} [S_i = c] \cdot [T_j = c]&lt;br>
 $$&lt;/p>
 &lt;p>令$F_i = [S_i = c], G_j = [T _ {-j} = c]$&lt;br>
-答案便是&lt;/p></description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/tioj-1171-lct/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/tioj-1171-lct/</guid><description>&lt;h1 id="動態樹的奮鬥">動態樹的奮鬥&lt;/h1>
+答案便是&lt;/p></description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</guid><description>&lt;h1 id="動態樹的奮鬥">動態樹的奮鬥&lt;/h1>
 &lt;p>為了這題的Link-Cut-Tree解我花了不只一整天XD&lt;br>
 壓常實在是神奇的事，把 &lt;code>long long&lt;/code> 改成 &lt;code>int&lt;/code> 再加上幾個 &lt;code>pragma&lt;/code> 終於成功壓過唯一奇怪的那筆= =&lt;br>
 而且 &lt;code>push&lt;/code> 竟然還不能用遞迴寫，到底三小&lt;br>
@@ -7201,7 +7217,7 @@ LCT怎麼這麼可撥XD&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1950</title><link>https://omeletwithoutegg.github.io/2019/12/13/tioj-1950/</link><pubDate>Fri, 13 Dec 2019 23:26:11 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/tioj-1950/</guid><description>&lt;h1 id="小向的試煉-2-3轉rotate">小向的試煉 2-3：轉！(Rotate!)&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1950</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</link><pubDate>Fri, 13 Dec 2019 23:26:11 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</guid><description>&lt;h1 id="小向的試煉-2-3轉rotate">小向的試煉 2-3：轉！(Rotate!)&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1950">https://tioj.ck.tp.edu.tw/problems/1950&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定長度$N$的排列，問「以交換任意兩個數字的方式排序這個序列需要多少次數」&lt;br>
@@ -7519,7 +7535,7 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1394</title><link>https://omeletwithoutegg.github.io/2019/12/13/tioj-1394/</link><pubDate>Fri, 13 Dec 2019 06:36:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/tioj-1394/</guid><description>&lt;h1 id="黑色騎士團的逆襲野望">黑色騎士團的逆襲野望&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1394</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</link><pubDate>Fri, 13 Dec 2019 06:36:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</guid><description>&lt;h1 id="黑色騎士團的逆襲野望">黑色騎士團的逆襲野望&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1394">https://tioj.ck.tp.edu.tw/problems/1394&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>自從黑色騎士團上次的最終野望被白色騎士豬殺苦破滅之後，黑色騎士團銷聲滅跡了一陣子，不過他們仍繼續計畫著侵略神聖的大不列顛帝國。&lt;/p>
@@ -7602,7 +7618,7 @@ $$dp[i][1] = 1 + \sum\limits _ {j\in son(i)} \min(dp[j][0],dp[j][1])$$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1739</title><link>https://omeletwithoutegg.github.io/2019/12/11/tioj-1739/</link><pubDate>Wed, 11 Dec 2019 15:26:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/tioj-1739/</guid><description>&lt;h1 id="apio-08-beads-interactive">[APIO &amp;lsquo;08] Beads [Interactive]&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1739</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</link><pubDate>Wed, 11 Dec 2019 15:26:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</guid><description>&lt;h1 id="apio-08-beads-interactive">[APIO &amp;lsquo;08] Beads [Interactive]&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1739">https://tioj.ck.tp.edu.tw/problems/1739&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>有一個長度$n$的序列$a$，一開始$a_i = i$&lt;br>
@@ -7791,7 +7807,7 @@ $n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1948</title><link>https://omeletwithoutegg.github.io/2019/12/11/tioj-1948/</link><pubDate>Wed, 11 Dec 2019 13:24:35 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/tioj-1948/</guid><description>&lt;h1 id="小向的試煉-2-1洞穴cave">小向的試煉 2-1：洞穴(Cave)&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1948</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</link><pubDate>Wed, 11 Dec 2019 13:24:35 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</guid><description>&lt;h1 id="小向的試煉-2-1洞穴cave">小向的試煉 2-1：洞穴(Cave)&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1948">https://tioj.ck.tp.edu.tw/problems/1948&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>小向在洞穴裡偵察到了$N$個烏龍，不知道是本尊還是分身。不過他們在洞穴中都是以每秒1公分的速度前進，只是有的朝著左邊的入口前進，而有的朝著右邊的入口前進。而由於洞穴相當狹窄，兩個相向的烏龍相撞時會回頭。小向大膽猜測，本尊一定會在所有分身都出洞穴被小向打敗後才出洞穴，瞄準小向用盡魔力的那剎那攻擊小向。不過她也沒那麼多時間等所有分身慢慢走出來再找到本尊，所以小向希望能直接用她剛剛偵察到的資訊判斷哪個是本尊。($N\leq10^6$，洞穴的長度$L\leq10^9$)&lt;/p>
@@ -7852,7 +7868,7 @@ $n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/iterative-segmenttree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
+&lt;/div></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
 &lt;p>先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br>
 如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p>
 &lt;h2 id="單點修改">單點修改&lt;/h2>
@@ -7896,7 +7912,7 @@ $n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到&lt;br>
-注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>TIOJ-2017</title><link>https://omeletwithoutegg.github.io/2019/12/06/tioj-2017/</link><pubDate>Fri, 06 Dec 2019 13:03:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/tioj-2017/</guid><description>&lt;h1 id="b廢文大資料-mining">B.廢文大資料 mining&lt;/h1>
+注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>TIOJ-2017</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</link><pubDate>Fri, 06 Dec 2019 13:03:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</guid><description>&lt;h1 id="b廢文大資料-mining">B.廢文大資料 mining&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2017">https://tioj.ck.tp.edu.tw/problems/2017&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個序列 $a_i$ ，問有多少區間 $[l,r]$ 使得存在一個 $m \leq r$ 滿足 $\sum\limits _ {i=l}^m a_i &amp;lt; 0$？&lt;/p>
@@ -7950,7 +7966,7 @@ $n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/tioj-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/tioj-1614/</guid><description>&lt;h1 id="販賣機耶">販賣機耶&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</guid><description>&lt;h1 id="販賣機耶">販賣機耶&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1614">https://tioj.ck.tp.edu.tw/problems/1614&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>蝴蝶在路旁玩壞一台販賣機，它一次只能投一枚硬幣（故障？）。&lt;br>
@@ -8004,7 +8020,7 @@ $n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/fast-io/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
+&lt;/div></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
 &lt;h2 id="cin--cout">cin / cout&lt;/h2>
 &lt;p>因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用&lt;br>
 競程的時候記得開下面兩個東西&lt;/p>
@@ -8049,7 +8065,7 @@ $n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>值得注意的是 iostream 的空間有點大，所以想要壓空間用 stdio 就對了&lt;br>
-另外 &lt;code>printf&lt;/code> 格式化輸出也常常會在毒瘤題派上用場XD，例如TIOJ 1845&lt;/p></description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/tioj-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/tioj-1927/</guid><description>&lt;h1 id="同步sync">同步(Sync)&lt;/h1>
+另外 &lt;code>printf&lt;/code> 格式化輸出也常常會在毒瘤題派上用場XD，例如TIOJ 1845&lt;/p></description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>&lt;h1 id="同步sync">同步(Sync)&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1927">https://tioj.ck.tp.edu.tw/problems/1927&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。&lt;br>
@@ -8285,7 +8301,7 @@ $$&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1774</title><link>https://omeletwithoutegg.github.io/2019/12/05/tioj-1774/</link><pubDate>Thu, 05 Dec 2019 21:30:24 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/tioj-1774/</guid><description>&lt;h1 id="ch3-section-9-妁艷的頭髮">Ch3. Section 9. 妁艷的頭髮&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1774</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</link><pubDate>Thu, 05 Dec 2019 21:30:24 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</guid><description>&lt;h1 id="ch3-section-9-妁艷的頭髮">Ch3. Section 9. 妁艷的頭髮&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1774">https://tioj.ck.tp.edu.tw/problems/1774&lt;/a>&lt;/p>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>裸背包，被值域嚇到XD&lt;br>
@@ -8321,7 +8337,7 @@ $$&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/tioj-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/tioj-2019/</guid><description>&lt;h1 id="d番茄大戰爭">D.番茄大戰爭&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</guid><description>&lt;h1 id="d番茄大戰爭">D.番茄大戰爭&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2019">https://tioj.ck.tp.edu.tw/problems/2019&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>兩個人在玩剪刀石頭布，而他們兩個人玩了$T$個回合。兩個人（此處稱為小奕和小安）各自有一個「策略」，分別為兩個字串$A$和$B$。兩個字串皆由&lt;code>R&lt;/code>、&lt;code>P&lt;/code>、&lt;code>S&lt;/code>三個字元組成，分別代表小奕和小安會出石頭、布、剪刀。兩個人都會根據他們的「策略」出題，在第$i$個回合，小奕將會出$A _ {i \mod {|A|}}$，而小安將出$B _ {i \mod{|B|}}$，從$i = 0$開始。請輸出：經過$T$個回合後，兩人分別贏了幾局，平手了幾局。&lt;/p>
@@ -8329,7 +8345,7 @@ $$&lt;br>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>首先，看到$1 \leq T \leq 10^9$當然想說直接給他寫個$\mathcal{O}(T)$，寫了五分鐘之後傳上去——AC——了前幾筆，之後就TLE了。所以，當然就來想怪做法嘍！&lt;/p>
 &lt;p>先假設$|A| \leq |B|$。第一個想法就是，對於$A$裏頭的每一個字元$A_i$，我都看一次我會遇到哪些字元（$B_i, B _ {i + |A|}, B _ {i + 2\times|A|}, \dots$，也就是所有滿足$(i + k|A|) \mod{|B|} \leq T$的$B _ {(i + k|A|)\mod{|B|}}$，然後再$\mathcal{O}(1)$更新答案。這樣複雜度依然為$\mathcal{O}(T)$，因為還是每一個時間點都有戳到一次，只是改變順序而已了。不過！這個順序很重要，因為可以優化！&lt;/p>
-&lt;p>若我們看$A_i$，我們先考慮它會遇到那些$B$的字元$$B_i, B _ {i + |A|}, B _ {i + 2\times|A|}, \dots $$，也就是所有的$B _ {i + k|A| \mod{|B|}}$。可以知道，這樣分可以將$B$的所有字元分成若干個相斥的群組$G_t$！具體做法就是，先看$A_i$，如果$B_i$尚未在一個群組裡面，就創立一個新的群組然後將所有的$B _ {i + k|A|}$加進去這個群組裡面。現在，就想要用這個新的資料儲存方式來加快我們的運算。&lt;/p></description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1171/</guid><description>&lt;h1 id="我要成為海賊王">我要成為海賊王&lt;/h1>
+&lt;p>若我們看$A_i$，我們先考慮它會遇到那些$B$的字元$$B_i, B _ {i + |A|}, B _ {i + 2\times|A|}, \dots $$，也就是所有的$B _ {i + k|A| \mod{|B|}}$。可以知道，這樣分可以將$B$的所有字元分成若干個相斥的群組$G_t$！具體做法就是，先看$A_i$，如果$B_i$尚未在一個群組裡面，就創立一個新的群組然後將所有的$B _ {i + k|A|}$加進去這個群組裡面。現在，就想要用這個新的資料儲存方式來加快我們的運算。&lt;/p></description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>&lt;h1 id="我要成為海賊王">我要成為海賊王&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1171">https://tioj.ck.tp.edu.tw/problems/1171&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和&lt;/p>
@@ -8357,7 +8373,7 @@ $$&lt;br>
 把所求寫成&lt;br>
 $$&lt;br>
 \sum _ {b\in B} dis_x + \sum _ {b\in B} dis_b - 2\sum _ {b\in B} dis _ {LCA(b,x)} = |B|dis_x + \sum _ {b\in B}dis_b - 2 \sum _ {b\in B} dis _ {LCA(b,x)}&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1197/</guid><description>&lt;h1 id="排教室問題">排教室問題&lt;/h1>
+$$&lt;/p></description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</guid><description>&lt;h1 id="排教室問題">排教室問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1197">https://tioj.ck.tp.edu.tw/problems/1197&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>某校有M種不同的課程，其中有些課程的時間會有衝堂。如果學校中總共有N間不同的教室，請問共有多少種安排各課程上課教室的方式？最少要用到幾間教室？&lt;br>
@@ -8450,7 +8466,7 @@ $$&lt;br>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>話說雖然感覺會需要&lt;code>long long&lt;/code>不過TIOJ上似乎沒有會超過&lt;code>int&lt;/code>的測資&lt;/p></description></item><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-2021/</guid><description>&lt;h1 id="f無限兔子問題">F.無限兔子問題&lt;/h1>
+&lt;/div>&lt;p>話說雖然感覺會需要&lt;code>long long&lt;/code>不過TIOJ上似乎沒有會超過&lt;code>int&lt;/code>的測資&lt;/p></description></item><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</guid><description>&lt;h1 id="f無限兔子問題">F.無限兔子問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2021">https://tioj.ck.tp.edu.tw/problems/2021&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>令$F_i$是費式數列&lt;br>
@@ -8483,7 +8499,7 @@ S_i&lt;br>
 \end{matrix}&lt;br>
 \right]&lt;br>
 $$&lt;br>
-來得到前綴$S_i$的值&lt;/p></description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/tioj-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/tioj-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2">愛蜜利雅的作業2&lt;/h1>
+來得到前綴$S_i$的值&lt;/p></description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2">愛蜜利雅的作業2&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1282">https://tioj.ck.tp.edu.tw/problems/1282&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數&lt;br>

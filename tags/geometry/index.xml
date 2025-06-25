@@ -51,7 +51,7 @@ $n \leq 50$&lt;/p>
 這個範圍和 $P$ 與兩個凸包的切線有關，可以枚舉兩個凸包的上下關係， $P$ 只會切到上面那個凸包的下凸包與下面那個凸包的上凸包。&lt;/p>
 &lt;p>$E$ 上可以分成 $\mathcal{O}(n)$ 個區間，每個區間內切到下凸包的點和切到上凸包的點是固定的。&lt;br>
 接下來是最後也是最難的部份：對於 $P=(0,y)$ 來說，假設他切到上面那個凸包的 $A$、下面那個凸包的 $B$，那 $\overrightarrow{PA}$ 和 $\overrightarrow{PB}$ 中間的區域就是 $Q$ 可以在的區域，對於另外三條邊來說是一段區間，而這樣的區間左右界會是只跟 $y$ 有關的一個函數。&lt;br>
-雖然他題敘沒有講清楚選中點的機率分佈是不是連續均勻分佈，但大概可以假設是，因此如果 $P=(0,y)$ 對應到的區間長度是 $f(y)$ ，最後的答案就是 $\int _ 0 ^ 1 f(y)$。&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/tioj-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/tioj-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
+雖然他題敘沒有講清楚選中點的機率分佈是不是連續均勻分佈，但大概可以假設是，因此如果 $P=(0,y)$ 對應到的區間長度是 $f(y)$ ，最後的答案就是 $\int _ 0 ^ 1 f(y)$。&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136">https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br>
@@ -218,7 +218,7 @@ $n \leq 50$&lt;/p>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/tioj-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
+&lt;/div></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404">https://tioj.ck.tp.edu.tw/problems/1404&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>

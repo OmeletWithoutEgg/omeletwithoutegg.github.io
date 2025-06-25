@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSIE on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/CSIE/</link><description>Recent content in CSIE on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 13 Feb 2025 22:31:27 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/CSIE/index.xml" rel="self" type="application/rss+xml"/><item><title>第七學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</link><pubDate>Thu, 13 Feb 2025 22:31:27 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</guid><description>&lt;h1 id="seventh-semester">Seventh semester&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSIE on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/CSIE/</link><description>Recent content in CSIE on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 24 Jun 2025 21:05:38 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/CSIE/index.xml" rel="self" type="application/rss+xml"/><item><title>第八學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</link><pubDate>Tue, 24 Jun 2025 21:05:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</guid><description>&lt;h1 id="eighth-semester">Eighth semester&lt;/h1>
+&lt;p>已經是最後一個學期了。雖然一兩個禮拜前學期的最後一堂課就結束了但一直沒有提筆開寫。&lt;br>
+感覺沒什麼臉寫修課心得但還是想有始有終。&lt;/p>
+&lt;h2 id="日文二下">日文二下&lt;/h2>
+&lt;p>本學期理論上唯一（？）可能讓我畢不了業的課（如果被當的話）。&lt;br>
+從藍色那本課本變成綠色了。沒有修到日文三讓人感覺這課本只用一學期很浪費。&lt;br>
+不得不說感覺進度真的好緩慢。兩次段考各考三課，感覺範圍小到填空能填錯的選項也沒多少個。&lt;br>
+以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p>
+&lt;p>本學期的最後還有一個在 NTU COOL 上做的 N4 模擬測驗。不知道是版權還是怎麼樣的還需要老師給密碼才能參加。反正不算分而且 N3 都過了就沒管這個測驗做得怎麼樣（？）&lt;/p>
+&lt;h2 id="高等資料結構">高等資料結構&lt;/h2>
+&lt;p>卡恩開的一門不知道之後會不會再開的課。帶著憧憬（？）來修。&lt;/p>
+&lt;p>每次作業大致上分成兩部份，Part I 是證明題，Part II 則可以選擇要做 Benchmark 還是 Paper Reading。Benchmark 是針對選定的課題寫程式 Benchmark，而 Paper Reading 是從論文清單裡面挑出來 summarize 以及提「有用的問題」。&lt;/p>
+&lt;p>期初的時候小看了 HW1，最後一個禮拜才開始看，Part I 四題裡面兩題都跑去看了提示。一題是題敘裡面說存在一篇 CF 文章，放棄自尊心跑去 google 就可以&lt;a href="https://codeforces.com/blog/entry/130521">找到了&lt;/a>，一題是讀懂題敘有 reference 的原論文，並想辦法弄簡單一點（原論文是樹但這題是鏈）。死線是週一的中午十二點，但因為後量子密碼學是週一早上，所以我是把死線當作星期天 23:59。Part I 拖到了週六晚上才寫完，六晚+日早讀了幾篇論文之後發現好像一天做不完 paper reading 就跳槽到 benchmark。意外的覺得老師建議的框架 Google Benchmark 很好上手，因為會產出完整的 json 檔描述 benchmark 每個 task 的時間之類的，我就丟給 GPT 生一個生圖表的 python script（再自己改一下），總之寫一下觀察拼湊出一個報告。做的時間非常少，但我覺得看上去的完成度應該很不錯。&lt;/p>
+&lt;p>接著 HW2 馬上又來了。雖然老師一直宣稱這比 HW1 還要簡單，但我怎麼看都是比 HW1 難。&lt;br>
+一題 split tree 我根本找不到有誰好好證明過，都是在說明概念（我覺得我找到 &lt;a href="https://courses.csail.mit.edu/6.851/spring21/lectures/L05.html?notes=11">這個影片的最後五分鐘&lt;/a> 有講已經蠻神奇的了但還是好難看懂）。&lt;br>
+另一題要證 wilber-1 bound 的反例，雖然好像原則上解答應該要約是一頁 A4 紙，但我真的想不到怎麼把原本論文裡面有大概十頁在證的東西弱化或怎樣之後塞進一頁。感覺不是給人寫的。想辦法模仿論文改寫成自己的話，寫了十個 lemma 跟 theorem 都還證不完。證的還是已經弱化的版本。&lt;br>
+HW2 一樣不會讀 paper 選了 benchmark，但因為 Part I 那題耗費太多心力（？）感覺這次的完成度不太高，就只是做完 benchmark 的題目敘述裡面的最低要求而已。&lt;/p></description></item><item><title>第七學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</link><pubDate>Thu, 13 Feb 2025 22:31:27 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</guid><description>&lt;h1 id="seventh-semester">Seventh semester&lt;/h1>
 &lt;p>因為第六學期的最後感覺太捲了，於是這學期就決定躺平。本來有想要修密碼學的理論基礎，但他還要分組報告報論文，然後課上沒一個認識的，就逃走了。課表於是看起來非常羞恥。&lt;/p>
 &lt;h2 id="日文二上">日文二上&lt;/h2>
 &lt;p>因為必須要修一門外文才能畢業，學期初跑去加簽日文一。跑了好幾個班（平均一班的中獎機率是四十人裡面十人）抽中加簽之後，畢竟我高中也有修過日文，從零開始上課實在也有點枯燥，剛好老師又說到如果我們都會了那不要浪費彼此的時間。於是跟系辦問過可以直接把日文二上下當作畢業的這門學分，再加上寄信給老師確定可以加簽，就跑去日文二上了。雖然課程網上寫擋修，但日文二上下非常的不擁擠，教室也坐不滿，只要確定自己可以而且老師同意（彭誼芝老師看起來很乾脆的同意了）看起來就直接可以修了。&lt;/p>

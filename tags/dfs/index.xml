@@ -48,7 +48,7 @@ $\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{
 考慮固定 $i,b$，那麼$j,a$之間是獨立的，我們可以拆成$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$，而對於每個$A_i$，$\sum_{j} \max(0,B_j-A_i)$是一個經典的問題，可以利用前綴和、後綴和的概念，或是排序（counting sort）+爬行法在線性時間內解決。總複雜度是枚舉所有$i,b$所需的$\mathcal{O}(n^2)$乘上對每個$a$計算$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$所需要的複雜度$\mathcal{O}(n)$，也就是$\mathcal{O}(n^3)$。&lt;/li>
 &lt;/ul>
 &lt;h4 id="code">code&lt;/h4>
-&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/tioj-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/tioj-1978/</guid><description>&lt;h1 id="邀請函invitation">邀請函（Invitation）&lt;/h1>
+&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</guid><description>&lt;h1 id="邀請函invitation">邀請函（Invitation）&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1978">https://tioj.ck.tp.edu.tw/problems/1978&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給你一張圖，求出最大點獨立集。&lt;br>
