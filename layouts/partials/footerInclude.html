@@ -28,9 +28,45 @@
   });
 </script>
 
-<script type="text/javascript" src={{ "/js/canvas-nest.js" | relURL }}
-  count=90
-  color="0,200,100"
-  opacity=0.5
->
+<script type="text/javascript" src={{ "/js/canvas-nest.js" | relURL }}></script>
+<canvas id="bganim-canvas"></canvas>
+
+<script>
+  const mp = createMovingPoints({
+    canvas: document.getElementById("bganim-canvas"),
+    config: {
+      count: 90,
+      color: "0,200,100",
+      opacity: 0.5,
+    }
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const localStorageKey = 'bganim-enabled';
+
+    const saved = localStorage.getItem(localStorageKey);
+    const defaultEnabled = window.innerWidth >= 480;
+    const savedEnabled = saved === 'true';
+    const enabled = saved === null ? defaultEnabled : savedEnabled;
+
+    if (enabled) {
+      mp.startAnimation();
+    } else {
+      mp.stopAnimation();
+    }
+
+    const btn = document.getElementById('bganim-toggle-btn');
+    if (!btn) return;
+    btn.setAttribute('aria-pressed', enabled);
+    btn.addEventListener('click', () => {
+      const current = btn.getAttribute('aria-pressed') === 'true';
+      const next = !current;
+      btn.setAttribute('aria-pressed', next);
+      localStorage.setItem(localStorageKey, next);
+      if (next) {
+        mp.startAnimation();
+      } else {
+        mp.stopAnimation();
+      }
+    });
+  });
 </script>

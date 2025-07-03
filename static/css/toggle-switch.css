@@ -1,0 +1,45 @@
+.bganim-toggle-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bganim-toggle {
+  cursor: pointer;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 10%;
+  place-items: center;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s;
+  user-select: none;
+  text-align: center;
+  margin: 5px;
+}
+
+.bganim-state {
+  display: none;
+}
+
+.bganim-toggle[aria-pressed="true"] {
+  background-color: #4caf50; /* green */
+}
+
+.bganim-toggle[aria-pressed="false"] {
+  background-color: #f44336; /* red */
+}
+
+.bganim-toggle[aria-pressed="true"] .on {
+  display: inline;
+}
+
+.bganim-toggle[aria-pressed="false"] .off {
+  display: inline;
+}
+
+.bganim-toggle:hover {
+  filter: brightness(1.1);
+}
