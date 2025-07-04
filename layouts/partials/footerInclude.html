@@ -100,7 +100,9 @@
       initMovingPoints();
       movingPoints.startAnimation();
     } else {
-      movingPoints.stopAnimation();
+      if (movingPoints !== null) {
+        movingPoints.stopAnimation();
+      }
     }
   }
   function toggleEnabledState() {
