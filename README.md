@@ -7,6 +7,3 @@
 
 網頁原本是用 hexo，現在是以 Hugo 用 cactus theme 生成
 另外我還加了 canvas.js 當作背景，不過希望不會讓讀者的瀏覽器太卡XD
-
-## TODO
-- [ ] Update theme, add dark-mode/light-mode switch
