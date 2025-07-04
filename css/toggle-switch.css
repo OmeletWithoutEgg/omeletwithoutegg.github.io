@@ -1,0 +1,40 @@
+#bganim-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+html[data-bganim-enabled="true"] .hexagon {
+  transform-origin: 100px 100px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#dark-mode-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#dark-mode-toggle-btn .sun,
+#dark-mode-toggle-btn .moon {
+  display: none;
+}
+
+html[data-theme="white"] #dark-mode-toggle-btn .moon {
+  display: block;
+}
+html[data-theme="dark"] #dark-mode-toggle-btn .sun {
+  display: block;
+}
