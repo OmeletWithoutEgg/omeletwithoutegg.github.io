@@ -1,5 +1,6 @@
 <!-- May include footer scripts here -->
 
+<!-- Add button to copy code block -->
 <script src={{ "/lib/clipboard/clipboard.min.js" | relURL }}></script>
 <script>
   $(function () {
@@ -11,10 +12,10 @@
     $(".highlight table").before(btn);
     const clip = new ClipboardJS('.btn-copy', {
       text: function(trigger) {
-          const selector = 'code[data-lang]:not([data-lang=""]) > span';
-          const elements = Array.from(trigger.nextElementSibling.querySelectorAll(selector));
-          const code = elements.map(e => e.innerText).join('');
-          return code;
+        const selector = 'code[data-lang]:not([data-lang=""]) > span';
+        const elements = Array.from(trigger.nextElementSibling.querySelectorAll(selector));
+        const code = elements.map(e => e.innerText).join('');
+        return code;
       }
     });
     clip.on("success", function(e) {
@@ -28,45 +29,98 @@
   });
 </script>
 
+<!-- Dark mode toggle button -->
+<button id="dark-mode-toggle-btn" aria-label="Toggle dark mode">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path class="sun" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"></path>
+    <path class="moon" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
+<script>
+  function getSavedTheme() {
+    return localStorage.getItem('theme') || 'dark';
+  }
+  function saveTheme(theme) {
+    localStorage.setItem('theme', theme);
+  }
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+  }
+  // Cycle to next theme
+  function toggleTheme() {
+    const currentTheme = getSavedTheme();
+    const newTheme = currentTheme === 'dark' ? 'white' : 'dark';
+    applyTheme(newTheme);
+    saveTheme(newTheme);
+  }
+  applyTheme(getSavedTheme());
+  // Optional: Listen for storage changes from other tabs
+  window.addEventListener('storage', function(e) {
+    if (e.key === 'theme') {
+      applyTheme(e.newValue);
+    }
+  });
+</script>
+
+<!-- Add background animation and toggle button -->
 <script type="text/javascript" src={{ "/js/canvas-nest.js" | relURL }}></script>
 <canvas id="bganim-canvas"></canvas>
 
+<button id="bganim-toggle-btn" aria-label="Toggle background animation">
+  <svg width="30" height="25" viewBox="0 0 200 200">
+    <polygon class="hexagon" points="100,20 170,60 170,140 100,180 30,140 30,60"
+                      fill="none" stroke="currentColor" stroke-width="15" />
+  </svg>
+</button>
 <script>
-  const mp = createMovingPoints({
-    canvas: document.getElementById("bganim-canvas"),
-    config: {
-      count: 90,
-      color: "0,200,100",
-      opacity: 0.5,
-    }
-  });
-  document.addEventListener('DOMContentLoaded', () => {
-    const localStorageKey = 'bganim-enabled';
-
-    const saved = localStorage.getItem(localStorageKey);
-    const defaultEnabled = window.innerWidth >= 480;
-    const savedEnabled = saved === 'true';
-    const enabled = saved === null ? defaultEnabled : savedEnabled;
-
-    if (enabled) {
-      mp.startAnimation();
-    } else {
-      mp.stopAnimation();
-    }
-
-    const btn = document.getElementById('bganim-toggle-btn');
-    if (!btn) return;
-    btn.setAttribute('aria-pressed', enabled);
-    btn.addEventListener('click', () => {
-      const current = btn.getAttribute('aria-pressed') === 'true';
-      const next = !current;
-      btn.setAttribute('aria-pressed', next);
-      localStorage.setItem(localStorageKey, next);
-      if (next) {
-        mp.startAnimation();
-      } else {
-        mp.stopAnimation();
+  let movingPoints = null;
+  function initMovingPoints() {
+    if (movingPoints !== null) return;
+    movingPoints = createMovingPoints({
+      canvas: document.getElementById("bganim-canvas"),
+      config: {
+        count: 90,
+        color: "0,200,100",
+        opacity: 0.5,
       }
     });
+  }
+  function getSavedEnabledState() {
+    const saved = localStorage.getItem('bganim-enabled');
+    const defaultEnabled = window.innerWidth >= 480;
+    const savedEnabled = saved === 'true';
+    return saved === null ? defaultEnabled : savedEnabled;
+  }
+  function saveEnabledState(enabled) {
+    localStorage.setItem('bganim-enabled', enabled);
+  }
+  function applyEnabledState(enabled) {
+    document.documentElement.setAttribute('data-bganim-enabled', enabled);
+    if (enabled) {
+      initMovingPoints();
+      movingPoints.startAnimation();
+    } else {
+      movingPoints.stopAnimation();
+    }
+  }
+  function toggleEnabledState() {
+    const currentEnabledState = getSavedEnabledState();
+    const newEnabledState = !currentEnabledState;
+    applyEnabledState(newEnabledState);
+    saveEnabledState(newEnabledState);
+  }
+  applyEnabledState(getSavedEnabledState());
+  window.addEventListener('storage', function(e) {
+    if (e.key === 'theme') {
+      applyEnabledState(e.newValue === 'true');
+    }
   });
+</script>
+
+<script>
+  $("#nav > ul").append("<li></li>");
+  $("#dark-mode-toggle-btn").appendTo("#nav > ul > li:last-child");
+  $("#dark-mode-toggle-btn").click(toggleTheme);
+  $("#bganim-toggle-btn").appendTo("#nav > ul > li:last-child");
+  $("#bganim-toggle-btn").click(toggleEnabledState);
 </script>
