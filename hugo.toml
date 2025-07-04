@@ -95,8 +95,8 @@ weight = 6
 
     mathjax = true
 
-    # colortheme = "dark" # dark, light, white, or classic
-    css = ["css/highlight.css", "css/style-dark.css", "css/search.css", "css/toggle-switch.css"]
+    colortheme = "dark" # dark, light, white, or classic
+    css = ["css/highlight-block.css", "css/highlight-code.css", "css/search.css", "css/toggle-switch.css"]
   
     [params.comments]
     enabled = true # default
