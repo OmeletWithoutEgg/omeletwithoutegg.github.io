@@ -13,3 +13,4 @@
 - [ ] navbar 有時候會不見
 - [ ] 看要不要加 showReadTime
 - https://gohugo.io/templates/new-templatesystem-overview/
+- [ ] disable JS 的時候 toggle switch 會有破綻
