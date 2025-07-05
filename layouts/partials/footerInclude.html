@@ -111,7 +111,9 @@
     applyEnabledState(newEnabledState);
     saveEnabledState(newEnabledState);
   }
-  applyEnabledState(getSavedEnabledState());
+  $(function() {
+    applyEnabledState(getSavedEnabledState());
+  });
   window.addEventListener('storage', function(e) {
     if (e.key === 'theme') {
       applyEnabledState(e.newValue === 'true');
