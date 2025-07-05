@@ -73,9 +73,6 @@ weight = 6
         tabWidth = 4
 
 [params]
-
-    # rss = true # generate rss feed. default value is false
-  
     # Home page settings
     description = "一個廢人想寫題解，所以他想辦法弄網站"
     mainSection = "posts" # your main section
@@ -85,6 +82,7 @@ weight = 6
     # showProjectsList = false # show projects list by default (if projects data file exists).
     # projectsUrl = "https://github.com/gohugoio" # title link for projects list
     showAllPostsArchive = false
+    # showReadTime = true
   
     # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
     dateFormat = "2006-01-02" # default
