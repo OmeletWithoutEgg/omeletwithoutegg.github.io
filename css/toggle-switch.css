@@ -8,7 +8,7 @@
   vertical-align: middle;
 }
 
-html[data-bganim-enabled="true"] .hexagon {
+html[data-bganim-enabled="true"] #bganim-toggle-btn .hexagon {
   transform-origin: 100px 100px;
   animation: spin 4s linear infinite;
 }
