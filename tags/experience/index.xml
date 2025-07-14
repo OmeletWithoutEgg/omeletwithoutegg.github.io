@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Experience on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/experience/</link><description>Recent content in Experience on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 24 Jun 2025 21:05:38 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml"/><item><title>第八學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</link><pubDate>Tue, 24 Jun 2025 21:05:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</guid><description>&lt;h1 id="eighth-semester">Eighth semester&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Experience on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/experience/</link><description>Recent content in Experience on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 14 Jul 2025 00:08:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml"/><item><title>Farewell NPSC</title><link>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</link><pubDate>Mon, 14 Jul 2025 00:08:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</guid><description>&lt;h1 id="npsc-之於我">NPSC 之於我&lt;/h1>
+&lt;p>稍微來講點古。&lt;/p>
+&lt;p>NPSC 可以說是我開始競程的一個重要的比賽。國中的時候，因為參加資優課程，資訊科的老師開始教我們 C 語言。刷了不少 zerojudge。忘了為什麼但總之就組隊去打 NPSC。&lt;/p>
+&lt;p>國中組是兩人一隊，那時候應該是和 joylintp 一隊？&lt;br>
+決賽的題目現在都還會記得。&lt;/p>
+&lt;ul>
+&lt;li>水題真的是水題&lt;/li>
+&lt;li>密密麻麻密碼鎖被念一輩子（那時候剛學遞迴覺得很神就很想遞迴但寫不出來）&lt;/li>
+&lt;li>有一題模擬 &lt;code>cd&lt;/code> &lt;code>touch&lt;/code> &lt;code>ls&lt;/code> 以為自己會寫但寫不出來&lt;/li>
+&lt;li>有一題跟三角形有關但只要輸出 $(a + b + c) / 2$ 的數學（？）結論題&lt;/li>
+&lt;li>有一題算扔 $k$ 次骰子有幾種組合方式組出 $m$ 點的題目&lt;/li>
+&lt;/ul>
+&lt;p>（我原本以為都是國三的但 fact check 發現有些國二那年的混進來了）&lt;br>
+國三拿到第七名，跟前六名擦肩而過。好像有一隊同校的拿到了第二名。印象中來參賽的都有拿到 Darry Ho 出的那本書。雖然說來話長但多虧 NPSC 我們幾位國中生得到了考隔年（2018）選訓營的資格。同學裡最高的分數是 140，而我只拿了 50 之類的。而那年是特別簡單的一次選訓營，要進一階必須在滿分五百分裡面拿四百多分。&lt;br>
+註：具體來說是能夠去一個新北市的營隊，地點在板中，而在該營隊得到前面的名次可以去考選訓營。印象中我在那個營隊也第一次學到了包含快速冪或是線段樹等等競程界特有的知識。&lt;/p>
+&lt;p>高一時我並沒有進 NPSC 決賽。決賽當天去逛了中山校慶。誰都不認識的校慶蠻無聊的。&lt;br>
+高二跟高三分別拿了五跟一。一算是撿到的，那場的重點是早早發現 E 是水題，又剛好大家都沒做出剩下的題。&lt;br>
+從 NPSC 那邊拿到了一台非常輕薄的筆電。因為換新筆電，我第一次裝 Arch Linux，而且沒有 dual boot 是直接當主力用。持續用著直到大二左右電源壞了才換成下一台筆電。&lt;/p>
+&lt;p>即使已經去好幾次 NPSC 決賽去計中去到熟門熟路了，升上大學之後換到裁判視角又是另一種有趣的視角。出題是一種特別的經驗，看到有人寫自己的題目很開心，看到有人被自己準備好的測資卡也很開心。裁判視角還得早起，在選手開始報到之前進去計中大樓，否則就得從側門偷偷摸摸的進去，進去前還得請樓上其他人幫忙開門。在比賽時看記分板預測記分板也是一大樂趣，而最好玩的就是看大量的參賽者送進來的 submission 怎麼錯的，然後在題解的時候鞭屍。&lt;/p>
+&lt;!-- 抓抄襲好玩嗎？ -->
+&lt;p>疫情無法實體舉辦的那年，NPSC 的賽制變得有點奇怪，雖然隔年又有正常舉辦了，但不知道為什麼計中那邊決定從 2024 開始就停辦了。這幾天發現 NPSC 的官網 &lt;a href="https://contest.cc.ntu.edu.tw/">https://contest.cc.ntu.edu.tw/&lt;/a> 不知道為什麼連不上了，連過去的資料都無法檢閱，還是有點愕然。&lt;br>
+雖然希望只是單純機器在維修而已，但如果連官網都消失在歷史上的話，我也只能說 有緣再見。&lt;/p></description></item><item><title>第八學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</link><pubDate>Tue, 24 Jun 2025 21:05:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</guid><description>&lt;h1 id="eighth-semester">Eighth semester&lt;/h1>
 &lt;p>已經是最後一個學期了。雖然一兩個禮拜前學期的最後一堂課就結束了但一直沒有提筆開寫。&lt;br>
 感覺沒什麼臉寫修課心得但還是想有始有終。&lt;/p>
 &lt;h2 id="日文二下">日文二下&lt;/h2>
