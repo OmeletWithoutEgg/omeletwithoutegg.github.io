@@ -33,6 +33,7 @@ tags: []
 - https://cbdcoding.blogspot.com/
 - https://oi.ototot.tw/
 - https://blog.nerde.pw/
+- https://ltf0501.github.io/
 - https://sorahisa.github.io/
 - https://casperwang.pages.dev/
 - https://fhvirus.github.io/
