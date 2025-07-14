@@ -46,7 +46,6 @@
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
   }
-  // Cycle to next theme
   function toggleTheme() {
     const currentTheme = getSavedTheme();
     const newTheme = currentTheme === 'dark' ? 'white' : 'dark';
@@ -54,7 +53,7 @@
     saveTheme(newTheme);
   }
   applyTheme(getSavedTheme());
-  // Optional: Listen for storage changes from other tabs
+  // listen for storage changes from other tabs
   window.addEventListener('storage', function(e) {
     if (e.key === 'theme') {
       applyTheme(e.newValue);
@@ -115,7 +114,7 @@
     applyEnabledState(getSavedEnabledState());
   });
   window.addEventListener('storage', function(e) {
-    if (e.key === 'theme') {
+    if (e.key === 'bganim-enabled') {
       applyEnabledState(e.newValue === 'true');
     }
   });
