@@ -30,7 +30,7 @@
 </script>
 
 <!-- Dark mode toggle button -->
-<button id="dark-mode-toggle-btn" aria-label="Toggle dark mode">
+<button id="dark-mode-toggle-btn" aria-label="Toggle dark mode" style="display:none;">
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path class="sun" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"></path>
     <path class="moon" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -65,7 +65,7 @@
 <script type="text/javascript" src={{ "/js/canvas-nest.js" | relURL }}></script>
 <canvas id="bganim-canvas"></canvas>
 
-<button id="bganim-toggle-btn" aria-label="Toggle background animation">
+<button id="bganim-toggle-btn" aria-label="Toggle background animation" style="display:none;">
   <svg width="30" height="25" viewBox="0 0 200 200">
     <polygon class="hexagon" points="100,20 170,60 170,140 100,180 30,140 30,60"
                       fill="none" stroke="currentColor" stroke-width="15" />
@@ -124,6 +124,8 @@
   $("#nav > ul").append("<li></li>");
   $("#dark-mode-toggle-btn").appendTo("#nav > ul > li:last-child");
   $("#dark-mode-toggle-btn").click(toggleTheme);
+  $("#dark-mode-toggle-btn").show();
   $("#bganim-toggle-btn").appendTo("#nav > ul > li:last-child");
   $("#bganim-toggle-btn").click(toggleEnabledState);
+  $("#bganim-toggle-btn").show();
 </script>

@@ -9,8 +9,10 @@
 另外我還加了 canvas.js 當作背景，不過希望不會讓讀者的瀏覽器太卡XD
 
 ## TODO
+- [x] add dark mode toggle switch
+- [x] disable JS 的時候 toggle switch 會有破綻
 - [ ] 改進搜尋功能
 - [ ] navbar 有時候會不見
 - [ ] 看要不要加 showReadTime
 - https://gohugo.io/templates/new-templatesystem-overview/
-- [ ] disable JS 的時候 toggle switch 會有破綻
+- 整理檔案架構（theme 跟 blog）
