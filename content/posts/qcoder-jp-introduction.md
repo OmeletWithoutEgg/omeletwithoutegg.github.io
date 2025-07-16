@@ -43,3 +43,5 @@ pip install qiskit
 ## 結
 
 最近剛好要開始久違的 [一個 round](https://www.qcoder.jp/en/contests/QPC005) 了，時間是 7/27，趕緊把這篇拖延好久的推銷文寫了。
+順帶一提，比賽是有獎品的！第一名會拿到 10000 yen 的 amazon 禮品卡（詳細規則請見網站），不過必須要住在日本才有領獎資格。
+
