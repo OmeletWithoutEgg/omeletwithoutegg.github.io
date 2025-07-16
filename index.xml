@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 14 Jul 2025 00:08:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Farewell NPSC</title><link>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</link><pubDate>Mon, 14 Jul 2025 00:08:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</guid><description>&lt;h1 id="npsc-之於我">NPSC 之於我&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/</link><description>Recent content on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 15 Jul 2025 17:06:52 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>量子刷題</title><link>https://omeletwithoutegg.github.io/2025/07/15/qcoder-jp-introduction/</link><pubDate>Tue, 15 Jul 2025 17:06:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/15/qcoder-jp-introduction/</guid><description>&lt;h1 id="推銷-qcoderjp">推銷 qcoder.jp&lt;/h1>
+&lt;p>&lt;a href="https://www.qcoder.jp/en">qcoder&lt;/a> 是一個專注在量子演算法的 Online Judge 平台。&lt;/p>
+&lt;p>和 codeforces 上的 Microsoft Q# Coding Contest 有點類似，不過在 qcoder 上是使用 python 的 &lt;code>qiskit&lt;/code> 套件。我個人覺得這比較親民，畢竟我不會安裝 Q# 的環境但 qiskit 很簡單就可以弄起來了（？）&lt;/p>
+&lt;p>qcoder 裡面並沒有直接的題目列表，想要練習的話可以點開過去比賽的題目寫。比賽的題目大致上會按照字母 + 數字編號，同一個字母代表是同一個大題。通常一個大題內的難度是有按照順序排好的，此外過去問都有完整的 editorial，所以我認為很適合學習，應該很適合正在修量子資訊與計算的人（？），特別是裡面會出現不少「只要你有從頭到尾學過經典演算法就高機率會」的題目，例如 Grover&amp;rsquo;s algorithm 的細節。&lt;br>
+註：此經典非彼經典&lt;/p>
+&lt;p>qcoder 評測時並非使用真正的量子電腦，而是（消耗指數量級資源的）模擬。因此實際上題目的 qubit 數並不太多，通常在 5 到 10 左右。在一般的競程當中一個很重要的點是要壓時間複雜度，避免 TLE；而在 qcoder 有一些題目是要求你構造出的 circuit 深度不能超過某個限度，也就是說除了要求「正確的」構造一個 circuit 以外，也可能要求要「有效率」。&lt;/p>
+&lt;h2 id="如何安裝-qiskit">如何安裝 qiskit&lt;/h2>
+&lt;p>首先要有 &lt;code>python&lt;/code> 且可以 &lt;code>pip install&lt;/code>。如果條件允許的話，建議可以創一個 &lt;a href="https://docs.python.org/zh-tw/3.13/library/venv.html">virtual environment&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>python3 -m venv myenv
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>. myenv/bin/activate
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>pip install qiskit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="參考資料">參考資料&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.qcoder.jp/en/qa">https://www.qcoder.jp/en/qa&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://www.qubitfactory.io/">網頁式遊戲 qubit factory&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learning.quantum.ibm.com/course/basics-of-quantum-information">IBM 對量子計算的介紹&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.Gate">IBM 對 qiskit 的 docs&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://codeforces.com/blog/entry/77614">Announcement: Microsoft Q# Coding Contest – Summer 2020&lt;/a>
+&lt;ul>
+&lt;li>2018, 2019, 2020 分別各有 warm round 跟正式賽。我有在其中一個 round 幸運抽到一件 T-shirt，可惜 2021 以後好像沒了。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>一個有用的 &lt;a href="https://algassert.com/quirk">量子電路模擬器&lt;/a>，可以拿來手玩。&lt;/li>
+&lt;/ul>
+&lt;h2 id="結">結&lt;/h2>
+&lt;p>最近剛好要開始久違的 &lt;a href="https://www.qcoder.jp/en/contests/QPC005">一個 round&lt;/a> 了，時間是 7/27，趕緊把這篇拖延好久的推銷文寫了。&lt;/p></description></item><item><title>Farewell NPSC</title><link>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</link><pubDate>Mon, 14 Jul 2025 00:08:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</guid><description>&lt;h1 id="npsc-之於我">NPSC 之於我&lt;/h1>
 &lt;p>稍微來講點古。&lt;/p>
 &lt;p>NPSC 可以說是我開始競程的一個重要的比賽。國中的時候，因為參加資優課程，資訊科的老師開始教我們 C 語言。刷了不少 zerojudge。忘了為什麼但總之就組隊去打 NPSC。&lt;/p>
 &lt;p>國中組是兩人一隊，那時候應該是和 joylintp 一隊？&lt;br>
@@ -1681,6 +1724,7 @@ registers實在有點長，當然只能先去看dungeons&lt;br>
 &lt;li>&lt;a href="https://cbdcoding.blogspot.com/">https://cbdcoding.blogspot.com/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://oi.ototot.tw/">https://oi.ototot.tw/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.nerde.pw/">https://blog.nerde.pw/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ltf0501.github.io/">https://ltf0501.github.io/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://sorahisa.github.io/">https://sorahisa.github.io/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://casperwang.pages.dev/">https://casperwang.pages.dev/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://fhvirus.github.io/">https://fhvirus.github.io/&lt;/a>&lt;/li>
