@@ -4,14 +4,13 @@ title = "蛋餅的競程隨筆"
 theme = "cactus"
 copyright = "Omelet" # cactus will use title if copyright is not set
 disablePathToLower = true
+hasCJKLanguage = true
 
 [services]
   [services.disqus]
     shortname = "omeletwithoutegg" # Used when comments is enabled. Cactus will use site title if not set
   [services.googleAnalytics]
     id = "G-0ME10Z2L0D"
-
-disablePathToLower = true
 
 [permalinks]
 posts = ":year/:month/:day/:contentbasename/"
@@ -79,12 +78,13 @@ weight = 6
     # projectsUrl = "https://github.com/gohugoio" # title link for projects list
     showAllPostsArchive = false
     # showReadTime = true
+    rss = true
   
     # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
     dateFormat = "2006-01-02" # default
   
     # Post page settings
-    show_updated = false # default
+    showUpdated = false # default
     defaultAuthor = "2qbingxuan"
 
     mathjax = true
