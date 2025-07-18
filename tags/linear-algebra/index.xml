@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linear-Algebra on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/linear-algebra/</link><description>Recent content in Linear-Algebra on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 01 Feb 2025 02:47:28 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>求解二維網格圖上的線性方程組：關鍵變數法</title><link>https://omeletwithoutegg.github.io/2025/02/01/grid-linear-system/</link><pubDate>Sat, 01 Feb 2025 02:47:28 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/01/grid-linear-system/</guid><description>&lt;h1 id="關鍵變數法">關鍵變數法&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>上個例題 &lt;a href="https://codeforces.com/problemset/problem/963/E">https://codeforces.com/problemset/problem/963/E&lt;/a>&lt;/p>
-&lt;p>有一個人在二維網格圖上隨機上下左右走，一開始在原點 $(0, 0)$，每秒有 $p_1, p_2, p_3, p_4$ 的機率分別往上下左右走一格，問期望幾秒會走到跟原點距離超過 $r$ 的點？答案模 $10^9+7$。$p_i = a_i/\sum a_i$ 而 $1 \leq a_i \leq 1000$。&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>令 $f(i, j)$ 代表期望走幾步會停下來，則邊界的 $f(i, j) = 0$，而對於內部的 $f(i, j)$ 則有&lt;/p>
-&lt;p>$$&lt;br>
-f(i, j) = 1 + p_1 f(i - 1, j) + p_2 f(i + 1, j) + p_3 f(i, j - 1) + p_4 f(i, j + 1)&lt;br>
-$$&lt;/p>
-&lt;p>因為變數之間依賴的關係有環所以不能簡單的用 DP 求解。高斯消去要花 $\mathcal{O}(n^3)$ 的時間求解，其中 $n$ 是變數數量，也就是大約 $\pi r^3$ 個，所以總共是 $\mathcal{O}(r^6)$。官解是利用類似 band matrix 的性質做到 $\mathcal{O}(r^4)$。&lt;/p></description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞">C.幼稚國王的獎賞&lt;/h1>
+&lt;p>有一個人在二維網格圖上隨機上下左右走，一開始在原點 $(0, 0)$，每秒有 $p_1, p_2, p_3, p_4$ 的機率分別往上下左右走一格，問期望幾秒會走到跟原點距離超過 $r$ 的點？答案模 $10^9+7$。$p_i = a_i/\sum a_i$ 而 $1 \leq a_i \leq 1000$。&lt;/p></description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞">C.幼稚國王的獎賞&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1094">https://tioj.ck.tp.edu.tw/problems/1094&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>定義一個非負整數集合的價值是裡面所有數字XOR起來&lt;br>
@@ -15,22 +9,4 @@ $$&lt;/p>
 &lt;h2 id="solution">Solution&lt;/h2>
 &lt;p>經典題 maximum subset xor&lt;/p>
 &lt;h3 id="線性基">線性基&lt;/h3>
-&lt;p>首先可以把每個數字的二進位看成模2的$k$維向量&lt;/p>
-&lt;h4 id="span">span&lt;/h4>
-&lt;p>我們說一群向量$S = {\textbf{v}_ 1, \textbf{v}_ 2, \dots, \textbf{v}_ n}$的線性生成空間是&lt;/p>
-&lt;p>$$&lt;br>
-\textrm{span}(S) = { \sum _ {i=1}^n\lambda _ i \textbf{v} _ i }&lt;br>
-$$&lt;/p>
-&lt;p>也就是說$\textrm{span}(S)$代表的是所有$S$內的元素的有限線性組合&lt;/p>
-&lt;h4 id="linear-independent">linear independent&lt;/h4>
-&lt;p>對於一組向量${\textbf{v}_ 1, \textbf{v}_ 2, \dots, \textbf{v} _ n}$&lt;br>
-若存在不全為$0$的$\lambda_1, \lambda_2, \dots, \lambda_n$使得&lt;br>
-$$&lt;br>
-\sum _ {i=1}^n\lambda_ i \textbf{v}_ i = \textbf{0}&lt;br>
-$$&lt;br>
-則我們說這群向量是線性相關的；反之則稱為線性獨立(linear independent)&lt;/p>
-&lt;p>一組線性相關的向量至少有一個向量可以用其他向量表示&lt;br>
-說明: 不失一般性設$\lambda _ 1 \neq 0$，則&lt;br>
-$$&lt;br>
-\textbf{v} _ 1 = \sum _ {i=2}^n \frac{-\lambda _ i}{\lambda _ 1} \textbf{v} _ i&lt;br>
-$$&lt;/p></description></item></channel></rss>
+&lt;p>首先可以把每個數字的二進位看成模2的$k$維向量&lt;/p></description></item></channel></rss>

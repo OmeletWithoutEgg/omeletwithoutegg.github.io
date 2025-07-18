@@ -1,50 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tutorial/</link><description>Recent content in Tutorial on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 09 Apr 2025 18:22:32 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</guid><description>&lt;h1 id="rerooting--全方位木-dp">rerooting / 全方位木 DP&lt;/h1>
 &lt;p>因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p>
-&lt;p>大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;blockquote>
-&lt;p>例題： &lt;a href="https://atcoder.jp/contests/dp/tasks/dp_v">https://atcoder.jp/contests/dp/tasks/dp_v&lt;/a>&lt;br>
-給定一棵 $N$ 個點的樹。對於每個點 $i$，輸出有幾種把 $N$ 個頂點都塗成黑色或白色的方式，使得所有黑色頂點連通，且頂點 $i$ 是黑色的。&lt;br>
-$2 \leq N \leq 10^5$&lt;/p>&lt;/blockquote>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>我們可以先考慮如果只要輸出 $i = 1$ 的答案該怎麼辦。&lt;br>
-相信大家都會簡單的樹上連通塊的 DP：令 $dp_u$ 代表 $u$ 的子樹裡面有幾種塗色方式使得黑色是一個連通塊且這個子樹的根 $u$ 是黑色的。在一個合法的塗色方案當中，$u$ 已經固定是黑色，而 $u$ 的每個小孩 $v$ 都有兩種情形：黑色或白色，如果是黑色的話方案數是 $dp_v$，若是白色則 $v$ 這個子樹固定是全白的，方案數是 $1$。寫下來就是&lt;br>
-$$&lt;br>
-dp_u = \prod\limits _ {v \in child(u)} (1 + dp_v)&lt;br>
-$$&lt;/p>
-&lt;p>接著，如果根從 $1$ 變成 $x$ 了之後，哪些點的 DP 值有變呢？從下面的圖我們可以發現，因為 DP 值是對整個子樹定義的，而圖中紅色和藍色的節點對應的子樹完全沒有變化，所以其實只有 $1$ 和 $x$ 這兩個點的 DP 值有可能會有變化！&lt;/p></description></item><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
+&lt;p>大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p></description></item><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum">https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a>&lt;/p>
-&lt;p>有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p>
-&lt;p>$N, T \leq 5 \times 10 ^ 5$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>從 library-checker 學到的像是冷知識的東西。&lt;/p>
-&lt;p>簡單來說就是要算多項式&lt;br>
-$$&lt;br>
-f(x) = \prod _ {i=0} ^ {N-1} (1 + x^{s_i})&lt;br>
-$$&lt;br>
-的前 $T + 1$ 項係數。&lt;/p>
-&lt;p>看到連乘先想能不能多項式分治，但這邊總度數可能會很大。於是我們改對 $f$ 取 log。&lt;/p>
-&lt;p>$$&lt;br>
-\begin{aligned}&lt;br>
-\log f(x)&lt;br>
-&amp;amp;= \sum _ {i=0} ^ {N-1} \log (1 + x^{s_i}) \\&lt;br>
-&amp;amp;= \sum _ {i=0} ^ {N-1} \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^{s_i})^j \\&lt;br>
-&amp;amp;= \sum _ {i=0} ^ {N-1} \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^{s_i})^j \\&lt;br>
-&amp;amp;= \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^k)^j \\&lt;br>
-&amp;amp;= \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} x^{kj} \\&lt;br>
-&amp;amp;\equiv \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ {\lfloor T / k \rfloor} \frac{(-1)^{j+1}}{j} x^{kj} \pmod {x^{T+1}} \\&lt;br>
-\end{aligned}&lt;br>
-$$&lt;/p></description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣">一次式前綴積的多點求值與推廣&lt;/h1>
+&lt;p>有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p></description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣">一次式前綴積的多點求值與推廣&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>給定序列 $a_1, \dots, a_N$。考慮一次式的序列 $x - a_i$，定義其第 $i$ 個前綴積為&lt;/p>
 &lt;p>$$&lt;br>
 f_i(x) = \prod _ {j \leq i} (x - a_j)&lt;br>
 $$&lt;/p>
-&lt;p>接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>naive 可以做到 $\mathcal{O}(NQ)$。以下介紹一個 $\mathcal{O}((N+Q)\log^2(N+Q))$ 的離線作法。&lt;/p>
-&lt;p>先問一個問題：我們要怎麼快速的求出 $f_N(x)$ 這個多項式呢？如果用 $f_i(x) = f_{i-1}(x) \cdot (x - a_i)$ 每次直接 $\mathcal{O}(N)$ 乘的話，總共會花上 $\mathcal{O}(N^2)$ 的時間。然而，我們可以建出一棵平衡的二元樹，樹的葉子是這些一次式，如果按照由下到上的順序計算每個節點的小孩的乘積，並使用 FFT 等比較快的多項式乘法的話，總時間就會是 $\mathcal{O}(N\log^2N)$。這是因為使用 FFT 把兩個多項式 $f, g$ 相乘會需要 $\mathcal{O}(k\log k)$ 的時間，其中 $k=\deg (fg)$；而在這棵二元樹中每個節點所存的多項式 degree 會等於該節點的子樹裡面的葉子數量，所有節點的多項式 degree 總和又更進一步的等於每個葉子的深度和（可以想想為什麼），因此只要二元樹夠平衡，深度是 $\mathcal{O}(\log N)$ 的話，總共乘法所需的時間就會是 $\mathcal{O}(N\log ^2N)$。&lt;/p></description></item><item><title>Zobrist Hash / XOR hash</title><link>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</link><pubDate>Mon, 21 Oct 2024 21:17:34 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</guid><description>&lt;h1 id="zobrist-hash--xor-hash">Zobrist Hash / XOR hash&lt;/h1>
+&lt;p>接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p></description></item><item><title>Zobrist Hash / XOR hash</title><link>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</link><pubDate>Mon, 21 Oct 2024 21:17:34 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</guid><description>&lt;h1 id="zobrist-hash--xor-hash">Zobrist Hash / XOR hash&lt;/h1>
 &lt;p>非常簡單的一篇文章，只是看到沒有什麼中文材料就來科普（？）一下。&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>Zobrist hash 的用處是快速比較集合之間是否一樣。先令 $U$ 是我們所關心的物件的集合，對於每個物件 $u \in U$，我們都指定一個隨機的 $w$-bit 的二進位數字 $h(u)$ 給他，接著我們在比較兩個集合 $S, T \subseteq U$ 是否一樣的時候，我們直接當作比較 $\bigoplus _ {u \in S} h(u)$ 和 $\bigoplus _ {u \in T} h(u)$ 是否一樣，這樣只要 $w$ 夠大的話就有夠高的機率正確了。&lt;br>
@@ -54,34 +19,11 @@ $$&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>令 $X = \mathbb{Z} \cap [L, R]$ 為一非空集合。&lt;br>
 考慮下凸函數 $f : X \to \mathbb{Z}$（註：即 $f(x) - f(x - 1) \leq f(x + 1) - f(x)$，可以用 U 型來想像）。&lt;br>
-令 $g: \mathbb{R} \to \mathbb{R}, g(p) = \min _ {x \in X}(f(x) + px)$，代表 penalty 為 p 時算出的最佳解。&lt;/p>
-&lt;p>在以前大家學過的 Aliens trick 當中的設定會是特定的 $f(k)$ 很難算（例如郵局設置問題中設置 $k$ 個郵局的最小花費）而 $g(p)$ 比較好算（例如郵局設置問題中每個郵局多花 $p$ 的最佳解），我們需要二分搜出恰當的 penalty，使得取到最佳解的 $x$ 恰好是 $k$，或至少介在小於 $k$ 和大於 $k$ 之間的分界點。&lt;br>
-在二分搜的判定中，會需要計算 $x_p^* \in \textrm{argmin} _ {x\in X}(f(x) + px)$（註：本文中 argmin 的定義會採用集合版本的），也就是在目前的 penalty 底下的最佳解當中 $x$ 是取值多少，或者可以說是被罰了幾個 penalty。這件事在 tie-breaking 的時候會變得比較麻煩，若 $f(x) + px$ 在多個 $x$ 都可以取到最小值，則我們會需要取最小的這種 $x$（也可以取最大的，但細節會稍微改變）；若無法算出最小的 $x$ 的話就無法直接以此作為二分搜的判定。本文目的為介紹一個不需要還原 $x_p^*$ 的一個 Aliens trick 寫法。&lt;/p></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
+令 $g: \mathbb{R} \to \mathbb{R}, g(p) = \min _ {x \in X}(f(x) + px)$，代表 penalty 為 p 時算出的最佳解。&lt;/p></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
 然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p>
 &lt;h1 id="先備知識">先備知識&lt;/h1>
 &lt;p>看得懂$\sum$&lt;br>
-然後會(不帶權)二分圖匹配的匈牙利演算法&lt;/p>
-&lt;h1 id="kuhn-munkres">Kuhn Munkres&lt;/h1>
-&lt;p>這裡介紹KM演算法，而若要求解二分圖上的最大權匹配等相關問題可以透過下面的演算法轉換成KM的模型。&lt;br>
-KM演算法是用來求一張完全二分圖的最大權完美匹配的演算法，其中邊的權重都是非負的。&lt;/p>
-&lt;h2 id="演算法轉換">演算法轉換&lt;/h2>
-&lt;ul>
-&lt;li>最大權匹配 $\to$ 最大權完全二分圖完美匹配(非負邊權)&lt;br>
-把不存在的邊以及負邊權的邊邊權設成0&lt;/li>
-&lt;li>最大權完美匹配(有負邊權) $\to$ 最大權完全二分圖完美匹配(非負邊權)&lt;br>
-把不存在的邊邊權設成0，並且把剩下每條邊的邊權加上一個夠大的數$M$，這樣就會傾向於選出儘量多邊。最後的答案記得要扣掉這些$M$&lt;/li>
-&lt;/ul>
-&lt;p>可以想想看為什麼上面兩種轉換是對的&lt;/p>
-&lt;p>把問題敘述再好好的寫一遍&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;blockquote>
-&lt;p>給你一張完全二分圖 $K _ {n,n}$ ，每條邊 $e = (x_i,y_j)$ 有邊權 $w _ e$&lt;br>
-請選出 $n$ 條邊 $e_1, e_2, \cdots e_n$ 兩兩不共端點，使得邊權和$\sum\limits _ {i=1}^n w _ {e _ i}$最大&lt;/p>&lt;/blockquote>
-&lt;h2 id="對偶問題">對偶問題&lt;/h2>
-&lt;p>首先引入頂標的概念。對於每個頂點$v$我們維護一個數字$L_v$，稱為頂標。&lt;br>
-在演算法的過程中，我們必須妥當的維護頂標，使得對於所有邊$e=(a,b)$都有$L_a+L_b \geq w_e$&lt;br>
-那麼很顯然的，對於任何一種合法的頂標來說，頂標的總和會大於等於最大權完美匹配的值。&lt;br>
-因為對於任何匹配$M$都有$\sum\limits _ {e\in M} w_e \leq \sum\limits _ {e\in M, e = (a,b)} (L_a + L_b) \leq \sum\limits _ {v\in V} L_v$&lt;/p></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
+然後會(不帶權)二分圖匹配的匈牙利演算法&lt;/p></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
 &lt;h2 id="定義">定義&lt;/h2>
 &lt;p>$$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$&lt;br>
 或者說$a,b$同餘於$m$&lt;/p>
@@ -106,92 +48,20 @@ a_0 \pm b_0 \equiv a_1 \pm b_1 \pmod m\newline&lt;br>
 a_0b_0 \equiv a_1b_1 \pmod m&lt;br>
 \end{matrix}&lt;br>
 \right .&lt;br>
-$$&lt;/p>
-&lt;h2 id="模逆元">模逆元&lt;/h2>
-&lt;p>在一般實數的除法時，如果我們想知道除以$a$的結果，可以看成乘上倒數$1/a$&lt;br>
-也就是說找一個$x$使得$ax = 1$&lt;br>
-而在模$m$的情況下，我們同樣也可以用一個使得$ax \equiv 1$的$x$來代替除以$a$的運算，稱為模逆元&lt;br>
-(如果常常打CF的話應該常常看見上面模逆元的敘述)&lt;br>
-求取模逆元$x = a^{-1}$只要把同餘關係改寫成$ax = my+1$就可以用擴展歐幾里得求解了&lt;br>
-注意$a,m$必須互質才會有模逆元&lt;/p></description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
+$$&lt;/p></description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
 &lt;p>本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速&lt;br>
 這邊先定義一下捲積$ * $是什麼&lt;/p>
 &lt;p>$$&lt;br>
 (a * b) _ x = \sum _ {i+j=x} a_i b_j&lt;br>
 $$&lt;/p>
 &lt;p>實際上就等價於我們常見的多項式乘法&lt;br>
-naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> A.size(); i&lt;span style="color:#f92672">++&lt;/span>) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> j &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; j &lt;span style="color:#f92672">&amp;lt;&lt;/span> B.size(); j&lt;span style="color:#f92672">++&lt;/span>) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		res[i&lt;span style="color:#f92672">+&lt;/span>j] &lt;span style="color:#f92672">+=&lt;/span> A[i] &lt;span style="color:#f92672">*&lt;/span> B[j];
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="dft">DFT&lt;/h2>
-&lt;p>先假設我們有兩個多項式&lt;br>
-$$&lt;br>
-A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline&lt;br>
-C(x) = A(x)B(x)&lt;br>
-$$&lt;br>
-除了上述利用分配律乘開以外&lt;br>
-因為$C$的次數已經可以確定&lt;br>
-我們也可以在$A(x)$和$B(x)$找出$n$個相異的點，相乘之後再利用插值法代入得到$C$&lt;br>
-其中$n = \deg C + 1$&lt;br>
-也就是&lt;/p></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
+naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意&lt;/p></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
 &lt;p>先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br>
 如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p>
 &lt;h2 id="單點修改">單點修改&lt;/h2>
 &lt;p>例題仍然是萬年RMQ&lt;/p>
 &lt;blockquote>
-&lt;p>給定一個長度$n$的序列，請支援以下操作&lt;/p>
-&lt;ol>
-&lt;li>將位置$p$的值改為$x$&lt;/li>
-&lt;li>查詢區間$[l,r)$的最大值&lt;/li>
-&lt;/ol>&lt;/blockquote>
-&lt;h3 id="完美二元樹">完美二元樹&lt;/h3>
-&lt;p>首先假定$n$是2的冪次，思考可能可以簡單一些&lt;br>
-我們一樣用&lt;code>1&lt;/code>當根，並且節點&lt;code>i&lt;/code>的左右子樹會是&lt;code>i*2&lt;/code>和&lt;code>i*2+1&lt;/code>或寫成&lt;code>i&amp;lt;&amp;lt;1, i&amp;lt;&amp;lt;1|1&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">18&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> tr[N&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>], n;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>
- &lt;img src="https://omeletwithoutegg.github.io/images/Iterative-SegmentTree/perfect.png" alt="">
-
-&lt;/p>
-&lt;p>對於初始化來說，可以發現葉子節點對應的都是長度$1$的區間，正好是原序列的值，所以可以直接讀入或另外傳入賦值給 &lt;code>tr[i+n]&lt;/code>，接著可以用遞減的順序把其他長度的區間的答案算好&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">build&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> v[]) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) tr[i&lt;span style="color:#f92672">+&lt;/span>n] &lt;span style="color:#f92672">=&lt;/span> v[i];
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> n&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i&lt;span style="color:#f92672">--&lt;/span>) tr[i] &lt;span style="color:#f92672">=&lt;/span> max(tr[i&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>], tr[i&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">|&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>]);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>更新一個節點$p$，那麼只有$p$的所有祖先的答案會被影響到&lt;br>
-注意 &lt;code>p^1&lt;/code> 代表 &lt;code>p&lt;/code> 的兄弟節點，也就是 &lt;code>p&lt;/code> 父親的另一個兒子&lt;/p></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
+&lt;p>給定一個長度$n$的序列，請支援以下操作&lt;/p></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
 &lt;h2 id="cin--cout">cin / cout&lt;/h2>
 &lt;p>因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用&lt;br>
 競程的時候記得開下面兩個東西&lt;/p>
@@ -204,36 +74,4 @@ $$&lt;br>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>開了之後就不要使用 stdio 裡面的東西啦&lt;br>
-另外若非互動題也不要使用 &lt;code>endl&lt;/code> 之類會flush的函式，請用 &lt;code>'\n'&lt;/code> 代替&lt;/p>
-&lt;h2 id="scanf--printf">scanf / printf&lt;/h2>
-&lt;p>常用的也就那些&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;cstdio&amp;gt;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">int&lt;/span> x,y;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">long&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span> L;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	scanf(&lt;span style="color:#e6db74">&amp;#34;%d%d%lld&amp;#34;&lt;/span>, &lt;span style="color:#f92672">&amp;amp;&lt;/span>x, &lt;span style="color:#f92672">&amp;amp;&lt;/span>y, &lt;span style="color:#f92672">&amp;amp;&lt;/span>L);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	printf(&lt;span style="color:#e6db74">&amp;#34;%lld&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, x&lt;span style="color:#f92672">+&lt;/span>y&lt;span style="color:#f92672">+&lt;/span>L);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">char&lt;/span> s[&lt;span style="color:#ae81ff">100&lt;/span>];
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	scanf(&lt;span style="color:#e6db74">&amp;#34;%s&amp;#34;&lt;/span>, s);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; s[i]; i&lt;span style="color:#f92672">++&lt;/span>) s[i] &lt;span style="color:#f92672">=&lt;/span> (s[i]&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#e6db74">&amp;#39;a&amp;#39;&lt;/span>&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">%&lt;/span>&lt;span style="color:#ae81ff">26&lt;/span>&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#e6db74">&amp;#39;a&amp;#39;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	printf(&lt;span style="color:#e6db74">&amp;#34;%s&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, s);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>值得注意的是 iostream 的空間有點大，所以想要壓空間用 stdio 就對了&lt;br>
-另外 &lt;code>printf&lt;/code> 格式化輸出也常常會在毒瘤題派上用場XD，例如TIOJ 1845&lt;/p></description></item></channel></rss>
+另外若非互動題也不要使用 &lt;code>endl&lt;/code> 之類會flush的函式，請用 &lt;code>'\n'&lt;/code> 代替&lt;/p></description></item></channel></rss>

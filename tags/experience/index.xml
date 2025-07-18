@@ -1,48 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Experience on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/experience/</link><description>Recent content in Experience on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 14 Jul 2025 00:08:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml"/><item><title>Farewell NPSC</title><link>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</link><pubDate>Mon, 14 Jul 2025 00:08:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</guid><description>&lt;h1 id="npsc-之於我">NPSC 之於我&lt;/h1>
 &lt;p>稍微來講點古。&lt;/p>
-&lt;p>NPSC 可以說是我開始競程的一個重要的比賽。國中的時候，因為參加資優課程，資訊科的老師開始教我們 C 語言。刷了不少 zerojudge。忘了為什麼但總之就組隊去打 NPSC。&lt;/p>
-&lt;p>國中組是兩人一隊，那時候應該是和 joylintp 一隊？&lt;br>
-決賽的題目現在都還會記得。&lt;/p>
-&lt;ul>
-&lt;li>水題真的是水題&lt;/li>
-&lt;li>密密麻麻密碼鎖被念一輩子（那時候剛學遞迴覺得很神就很想遞迴但寫不出來）&lt;/li>
-&lt;li>有一題模擬 &lt;code>cd&lt;/code> &lt;code>touch&lt;/code> &lt;code>ls&lt;/code> 以為自己會寫但寫不出來&lt;/li>
-&lt;li>有一題跟三角形有關但只要輸出 $(a + b + c) / 2$ 的數學（？）結論題&lt;/li>
-&lt;li>有一題算扔 $k$ 次骰子有幾種組合方式組出 $m$ 點的題目&lt;/li>
-&lt;/ul>
-&lt;p>（我原本以為都是國三的但 fact check 發現有些國二那年的混進來了）&lt;br>
-國三拿到第七名，跟前六名擦肩而過。好像有一隊同校的拿到了第二名。印象中來參賽的都有拿到 Darry Ho 出的那本書。雖然說來話長但多虧 NPSC 我們幾位國中生得到了考隔年（2018）初選的資格。同學裡最高的分數是 140，而我只拿了 50 之類的。而那年是特別簡單的一次 TOI 初選，要進一階必須在滿分五百分裡面拿四百多分。&lt;br>
-註：具體來說是能夠去一個新北市的營隊，地點在板中，而在該營隊得到前面的名次可以去考初選。印象中我在那個營隊也第一次學到了包含快速冪或是線段樹等等競程界特有的知識。&lt;/p>
-&lt;p>高一時我並沒有進 NPSC 決賽。決賽當天去逛了中山校慶。誰都不認識的校慶蠻無聊的。&lt;br>
-高二跟高三分別拿了五跟一。一算是撿到的，那場的重點是早早發現 E 是水題，又剛好大家都沒做出剩下的題。&lt;br>
-從 NPSC 那邊拿到了一台非常輕薄的筆電。因為換新筆電，我第一次裝 Arch Linux，而且沒有 dual boot 是直接當主力用。持續用著直到大二左右電源壞了才換成下一台筆電。&lt;/p>
-&lt;p>即使已經去好幾次 NPSC 決賽去計中去到熟門熟路了，升上大學之後換到裁判視角又是另一種有趣的視角。出題是一種特別的經驗，看到有人寫自己的題目很開心，看到有人被自己準備好的測資卡也很開心。裁判視角還得早起，在選手開始報到之前進去計中大樓，否則就得從側門偷偷摸摸的進去，進去前還得請樓上其他人幫忙開門。在比賽時看記分板預測記分板也是一大樂趣，而最好玩的就是看大量的參賽者送進來的 submission 怎麼錯的，然後在題解的時候鞭屍。&lt;/p>
-&lt;!-- 抓抄襲好玩嗎？ -->
-&lt;p>疫情無法實體舉辦的那年，NPSC 的賽制變得有點奇怪，雖然隔年又有正常舉辦了，但不知道為什麼計中那邊決定從 2024 開始就停辦了。這幾天發現 NPSC 的官網 &lt;a href="https://contest.cc.ntu.edu.tw/">https://contest.cc.ntu.edu.tw/&lt;/a> 不知道為什麼連不上了，連過去的資料都無法檢閱，還是有點愕然。&lt;br>
-雖然希望只是單純機器在維修而已，但如果連官網都消失在歷史上的話，我也只能說 有緣再見。&lt;/p></description></item><item><title>第八學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</link><pubDate>Tue, 24 Jun 2025 21:05:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</guid><description>&lt;h1 id="eighth-semester">Eighth semester&lt;/h1>
+&lt;p>NPSC 可以說是我開始競程的一個重要的比賽。國中的時候，因為參加資優課程，資訊科的老師開始教我們 C 語言。刷了不少 zerojudge。忘了為什麼但總之就組隊去打 NPSC。&lt;/p></description></item><item><title>第八學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</link><pubDate>Tue, 24 Jun 2025 21:05:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</guid><description>&lt;h1 id="eighth-semester">Eighth semester&lt;/h1>
 &lt;p>已經是最後一個學期了。雖然一兩個禮拜前學期的最後一堂課就結束了但一直沒有提筆開寫。&lt;br>
 感覺沒什麼臉寫修課心得但還是想有始有終。&lt;/p>
 &lt;h2 id="日文二下">日文二下&lt;/h2>
 &lt;p>本學期理論上唯一（？）可能讓我畢不了業的課（如果被當的話）。&lt;br>
 從藍色那本課本變成綠色了。沒有修到日文三讓人感覺這課本只用一學期很浪費。&lt;br>
 不得不說感覺進度真的好緩慢。兩次段考各考三課，感覺範圍小到填空能填錯的選項也沒多少個。&lt;br>
-以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p>
-&lt;p>本學期的最後還有一個在 NTU COOL 上做的 N4 模擬測驗。不知道是版權還是怎麼樣的還需要老師給密碼才能參加。反正不算分而且 N3 都過了就沒管這個測驗做得怎麼樣（？）&lt;/p>
-&lt;h2 id="高等資料結構">高等資料結構&lt;/h2>
-&lt;p>卡恩開的一門不知道之後會不會再開的課。帶著憧憬（？）來修。&lt;/p>
-&lt;p>每次作業大致上分成兩部份，Part I 是證明題，Part II 則可以選擇要做 Benchmark 還是 Paper Reading。Benchmark 是針對選定的課題寫程式 Benchmark，而 Paper Reading 是從論文清單裡面挑出來 summarize 以及提「有用的問題」。&lt;/p>
-&lt;p>期初的時候小看了 HW1，最後一個禮拜才開始看，Part I 四題裡面兩題都跑去看了提示。一題是題敘裡面說存在一篇 CF 文章，放棄自尊心跑去 google 就可以&lt;a href="https://codeforces.com/blog/entry/130521">找到了&lt;/a>，一題是讀懂題敘有 reference 的原論文，並想辦法弄簡單一點（原論文是樹但這題是鏈）。死線是週一的中午十二點，但因為後量子密碼學是週一早上，所以我是把死線當作星期天 23:59。Part I 拖到了週六晚上才寫完，六晚+日早讀了幾篇論文之後發現好像一天做不完 paper reading 就跳槽到 benchmark。意外的覺得老師建議的框架 Google Benchmark 很好上手，因為會產出完整的 json 檔描述 benchmark 每個 task 的時間之類的，我就丟給 GPT 生一個生圖表的 python script（再自己改一下），總之寫一下觀察拼湊出一個報告。做的時間非常少，但我覺得看上去的完成度應該很不錯。&lt;/p>
-&lt;p>接著 HW2 馬上又來了。雖然老師一直宣稱這比 HW1 還要簡單，但我怎麼看都是比 HW1 難。&lt;br>
-一題 split tree 我根本找不到有誰好好證明過，都是在說明概念（我覺得我找到 &lt;a href="https://courses.csail.mit.edu/6.851/spring21/lectures/L05.html?notes=11">這個影片的最後五分鐘&lt;/a> 有講已經蠻神奇的了但還是好難看懂）。&lt;br>
-另一題要證 wilber-1 bound 的反例，雖然好像原則上解答應該要約是一頁 A4 紙，但我真的想不到怎麼把原本論文裡面有大概十頁在證的東西弱化或怎樣之後塞進一頁。感覺不是給人寫的。想辦法模仿論文改寫成自己的話，寫了十個 lemma 跟 theorem 都還證不完。證的還是已經弱化的版本。&lt;br>
-HW2 一樣不會讀 paper 選了 benchmark，但因為 Part I 那題耗費太多心力（？）感覺這次的完成度不太高，就只是做完 benchmark 的題目敘述裡面的最低要求而已。&lt;/p></description></item><item><title>Final Fantasy VII Rebirth Review</title><link>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</link><pubDate>Wed, 02 Apr 2025 11:35:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</guid><description>&lt;h1 id="最終幻想七-重生-遊玩小記">最終幻想七 重生 遊玩小記&lt;/h1>
+以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p></description></item><item><title>Final Fantasy VII Rebirth Review</title><link>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</link><pubDate>Wed, 02 Apr 2025 11:35:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</guid><description>&lt;h1 id="最終幻想七-重生-遊玩小記">最終幻想七 重生 遊玩小記&lt;/h1>
 &lt;h2 id="前情提要">前情提要&lt;/h2>
-&lt;p>15 年前的 FF7 在 2020 年推出重製版，預計分成三部曲製作。撰文時一二部曲已公開，副標題分別是 remake 和 rebirth。我當然是沒玩過無印版本的 FF7，不過 2023 趁特價買了 FF7 remake 直到 2024 暑假才玩完，剛好 2024 年初 rebirth 也出了。但 rebirth 剛推出的時候是 PS5 獨占，所以直到 2025 年初收到 steam 的通知說 rebirth 要在 PC 上推出了，就把他買下去了。因為算是預購，所以是用大約七折的價格購買的。&lt;/p>
-&lt;p>到了發售日的 1/23 終於想要來玩的時候才發現我的 PC 顯卡只有 1060，打開遊戲根本不支援，過了幾天之後問我爸拿到一台他不用的有 4050 的筆電才終於可以玩了。本文不免會有暴雷的問題，以下的部份我就不額外防雷了，若是完全沒玩過想要玩的人建議跳過（？）為了寫這篇小記我查了維基百科但維基百科可沒有防雷，讓我覺得很不開心。&lt;/p>
-&lt;h2 id="優點">優點（？）&lt;/h2>
-&lt;p>畢竟我也沒玩過多少 3A 大作（曠野之息算嗎？），所以我覺得他的畫面和 remake 一樣很漂亮。很多建築、載具之類的東西都覺得細節很多很棒。本作（名義上）算是開放世界，因為 remake 完全是在米德加內會覺得地圖就那幾張，剛開始玩 rebirth 經過河的時候我的感想竟然是「可以游泳欸天啊」，一開始會讓人感覺世界真的很大、彷彿很自由，這麼大的世界又這麼美會真的想逛逛。&lt;/p>
-&lt;p>遊戲裡面有非常多的小遊戲。其中存在感最大的就是 Queens&amp;rsquo;s blood 女王之血這個卡牌遊戲了，每到一個新的地區不是忙著跑主線而是忙著去找新的對戰者對戰XD。我個人還蠻喜歡這個小遊戲的，容易上手但精通應該不簡單，打贏 NPC 意外的有成就感（？）。&lt;/p>
-&lt;p>還有一個很有既視感的小遊戲。在 FF7 remake 裡面是克勞德深蹲，crisis core 裡面是札克斯蹲（我也有在 switch 上玩 CC 所以感覺這像是某種延續傳統），換到 rebirth 變成蒂法仰臥起坐，總之就是一個節奏遊戲，按照時機輪流按四個按鈕。雖然支線任務只有要我們解簡單等級的，但我還是想去挑戰所有難度，最難的難度用 xbox 搖桿按 LT RT LB RB 鍵真的很痛苦，最後改成用鍵盤的鍵位才打贏關主。&lt;/p></description></item><item><title>Vim-fern</title><link>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</link><pubDate>Mon, 10 Mar 2025 23:21:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</guid><description>&lt;h1 id="推銷-vim-fern">推銷 vim-fern&lt;/h1>
+&lt;p>15 年前的 FF7 在 2020 年推出重製版，預計分成三部曲製作。撰文時一二部曲已公開，副標題分別是 remake 和 rebirth。我當然是沒玩過無印版本的 FF7，不過 2023 趁特價買了 FF7 remake 直到 2024 暑假才玩完，剛好 2024 年初 rebirth 也出了。但 rebirth 剛推出的時候是 PS5 獨占，所以直到 2025 年初收到 steam 的通知說 rebirth 要在 PC 上推出了，就把他買下去了。因為算是預購，所以是用大約七折的價格購買的。&lt;/p></description></item><item><title>Vim-fern</title><link>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</link><pubDate>Mon, 10 Mar 2025 23:21:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</guid><description>&lt;h1 id="推銷-vim-fern">推銷 vim-fern&lt;/h1>
 &lt;p>推銷用 &lt;a href="https://github.com/lambdalisue/vim-fern">vim-fern&lt;/a> 取代 NERDTree。我大概是 2023 年初換掉的，現在想說來寫個推銷 post。&lt;br>
 那時候會想要改用 vim-fern 有幾點原因：&lt;/p>
 &lt;ul>
@@ -51,35 +18,8 @@ HW2 一樣不會讀 paper 選了 benchmark，但因為 Part I 那題耗費太多
 &lt;li>那時候在玩 nvim，想要在 nvim 和 vim 兩棲，而大部分查到的 nvim 套件 &lt;a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree.lua&lt;/a>、&lt;a href="https://github.com/nvim-neo-tree/neo-tree.nvim">neo-tree.nvim&lt;/a>、&lt;a href="https://github.com/ms-jpq/chadtree">chadtree&lt;/a> 都不能在 vim 使用。&lt;/li>
 &lt;li>原本用 NERDTree 在 startify 的頁面沒有顏色，而在 file explorer 有&lt;/li>
 &lt;/ul>
-&lt;p>換去 vim-fern 之後，覺得有以下幾點優點：&lt;/p>
-&lt;ul>
-&lt;li>好看（？）反正就是看起來蠻現代的，而且搭配 &lt;code>fern-renderer-nerdfont.vim&lt;/code> 一樣可以有 icon，再配合 &lt;code>glyph-palette.vim&lt;/code> 一樣可以有有顏色的 icon。&lt;/li>
-&lt;li>nvim 和 vim 的界面可以一致&lt;/li>
-&lt;li>當游標在一個檔案上面的時候，可以按大寫 &lt;code>R&lt;/code> 改名，改名會開另一個可以像普通文字一樣編輯的 buffer，而不是在 cmd 那一行只能 backspace 不然就是要用一些不一樣的快捷鍵。&lt;/li>
-&lt;li>當游標在一個檔案上面的時候，可以按小寫 &lt;code>x&lt;/code> 打開&lt;/li>
-&lt;li>速度蠻快的：在 NERDTree 上面開比較大的 directory 會有有感的延遲，感覺 vim-fern 有改進。&lt;/li>
-&lt;li>我不確定以上 feature 在 NERDTree 裡面有沒有，但至少我可以在 vim-fern 的 buffer 裡面按 &lt;code>?&lt;/code> 來簡單的看到 cheatsheet 知道可以做什麼動作。&lt;/li>
-&lt;/ul>
-&lt;p>節錄一下 vimrc 相關的部份。&lt;/p></description></item><item><title>第七學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</link><pubDate>Thu, 13 Feb 2025 22:31:27 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</guid><description>&lt;h1 id="seventh-semester">Seventh semester&lt;/h1>
-&lt;p>因為第六學期的最後感覺太捲了，於是這學期就決定躺平。本來有想要修密碼學的理論基礎，但他還要分組報告報論文，然後課上沒一個認識的，就逃走了。課表於是看起來非常羞恥。&lt;/p>
-&lt;h2 id="日文二上">日文二上&lt;/h2>
-&lt;p>因為必須要修一門外文才能畢業，學期初跑去加簽日文一。跑了好幾個班（平均一班的中獎機率是四十人裡面十人）抽中加簽之後，畢竟我高中也有修過日文，從零開始上課實在也有點枯燥，剛好老師又說到如果我們都會了那不要浪費彼此的時間。於是跟系辦問過可以直接把日文二上下當作畢業的這門學分，再加上寄信給老師確定可以加簽，就跑去日文二上了。雖然課程網上寫擋修，但日文二上下非常的不擁擠，教室也坐不滿，只要確定自己可以而且老師同意（彭誼芝老師看起來很乾脆的同意了）看起來就直接可以修了。&lt;/p>
-&lt;p>教材看起來是所有班都統一的 &lt;a href="https://www.amazon.co.jp/%E5%AD%A6%E3%81%BC%E3%81%86%E6%97%A5%E6%9C%AC%E8%AA%9E/s?k=%E5%AD%A6%E3%81%BC%E3%81%86%E6%97%A5%E6%9C%AC%E8%AA%9E">來學日本語&lt;/a>，日文二上下會用到初級一初級二（藍色跟綠色），這學期的進度是把藍色那本後半的大約八個章節。課本在總圖旁邊的出版中心就有賣了，印象中一本是兩百五，如果有好好修滿日文一到三可以用三年其實很便宜（？）我們老師第一次上課就會用到了所以最好早早準備。&lt;/p>
-&lt;p>然後雖然我講了這麼多，但從教材也可以發現我們的課程目標似乎是考過 N4，而我在這學期也藉著修日文乾脆去試著考了十二月的 N3，考了個意外好的 174/180，不枉費我天天刷 QuizKnock 的影片。不過 JLPT 的試驗內容只有聽跟讀，在課堂上要練習寫和說，寫意外的好難（假名好難寫&amp;hellip;漢字好容易搞混&amp;hellip;），再加上我應該也最好在課堂上系統性地聽一些文法（才不會全靠感覺），應該是一個我繼續待在二的好理由。&lt;/p>
-&lt;h2 id="大學國文文學鑑賞與寫作一">大學國文：文學鑑賞與寫作（一）&lt;/h2>
-&lt;p>（誰大四還在修國文）學期初選了幾個國文，不像日文太熱門沒有大四之力，國文就直接上了。&lt;/p>
-&lt;p>我們這班的老師是沈凡玉老師，不知道是他的教課口才比較好還是我跟老師的頻率（顏色？）相近，對老師的印象還不錯。課程主題在文言的部份從漢樂府、古詩十九首、魏晉詩歌裡面選了一些文本。老師上課的方法是精讀（他自己講的），每首詩除了字面的解釋以外還會細講創作的時空背景、創作裡面代表的當時的文化，以及文人在詩裡面用典故時會講解典故。典故的部份，我覺得把他對應到現代就像是在聊天的時候喜歡引用時事或是網路梗，不解釋任何上下文，覺得簡直就是古代謎語人很有趣。基本上我是把他當每個禮拜去聽故事（雖然我也有作筆記）。考試是考論證題，要拿分應該就是要把上課講的那些短短的詩對應的龐大上下文記下來，而要高分的話可能就是要發揮創意跟文筆，找到某些支持你的論點的證據（要有讀書才有材料&amp;hellip;），發現其他人不太會發現的點之類的。不太知道自己寫得怎麼樣但盡力了。&lt;/p>
-&lt;p>寫作的部份只有三份作業。第一份是「台大三週 / X 年」寫一個回顧的散文。第二篇是看電影之後，選一個有關的問題，針對那個問題進行類似辯論的正反論述，寫一篇論說文。我們看的電影是 Die welle / 浪潮，他的敘事感覺亂七八糟，不過有一整堂國文課可以看電影還是不錯的。挑的問題好像非常不受限，重點是論說文要符合他敘述的格式跟方法，還有文章本身要有說服力，問題跟電影的相關性反而不那麼重要。最後一份作業是上課寫應用書信。基本上也是照著一個規定的框架寫，需要正確使用那些禮貌用語，可以虛構情節。總結來說是我覺得不算太辛苦也不會不舒服的作業。&lt;/p>
-&lt;p>雖然最後拿了個 A 但國文好像就是這樣，聽說還有限制百分比是只有 5% 還 10% 可以 A+。論推不推的話是推。&lt;/p>
-&lt;h2 id="專題研究">專題研究&lt;/h2>
-&lt;p>tmt514：卡恩回來教課。久仰大名於是我跟著跑去他的實驗室修專題研究（系訂必修）&lt;/p>
-&lt;p>這學期感覺相當草創（？）我報了一篇動態連通性資料結構的 paper，然後還有每週聽別人報的演算法 paper，聽到很多很多 log（？）的演算法跟很多隨機方法。整學期大概就是報 paper 跟聽 paper。但我還是覺得沒有感受到什麼方向生出一些感覺有學術意義的東西。&lt;/p>
-&lt;h2 id="程式結構與設計">程式結構與設計&lt;/h2>
-&lt;p>ICPC 培訓班。感覺很多辛苦的事情都是波路在做的，有點心虛。不過至少成功把舊 ntujudge 的題目給搬遷到 TIOJ 上了。&lt;/p>
-&lt;h2 id="結">結&lt;/h2>
-&lt;p>回顧了一下，這學期前的暑假首先是 FLOLAC，然後結束之後差不多八月下半把之前玩到一半的 FF7 remake 給玩完。好像一直都處於非常懶惰的狀態。但我覺得如果修一大堆課或是接一大堆工作把自己搞很累，大概很難提筆寫這個部落格，或是做一些有趣的自己想寫的 code？&lt;/p>
-&lt;p>這學期 GPA 4.14。但老實說不交換也不讀研的話 GPA 沒什麼用。越寫怎麼越覺得空虛了。&lt;/p>
-&lt;p>學期末的時候大約是推甄放榜的時候。大家都有去填推甄，但我覺得我應該不會去於是便抱著不要佔名額的心態沒去處理，但看起來很多人即使不太打算要去還是會先推一推當備案之類的，總覺得這樣哪裡怪怪的，但確實這樣可能才算負責任跟會風險管理，應該還是自己太幼稚。&lt;/p></description></item><item><title>cmake: Could NOT find libxxx on Archlinux</title><link>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</link><pubDate>Sun, 19 Jan 2025 23:46:42 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</guid><description>&lt;h1 id="在-archlinux-踩到的-cmake-坑">在 Archlinux 踩到的 CMake 坑&lt;/h1>
+&lt;p>換去 vim-fern 之後，覺得有以下幾點優點：&lt;/p></description></item><item><title>第七學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</link><pubDate>Thu, 13 Feb 2025 22:31:27 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</guid><description>&lt;h1 id="seventh-semester">Seventh semester&lt;/h1>
+&lt;p>因為第六學期的最後感覺太捲了，於是這學期就決定躺平。本來有想要修密碼學的理論基礎，但他還要分組報告報論文，然後課上沒一個認識的，就逃走了。課表於是看起來非常羞恥。&lt;/p></description></item><item><title>cmake: Could NOT find libxxx on Archlinux</title><link>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</link><pubDate>Sun, 19 Jan 2025 23:46:42 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</guid><description>&lt;h1 id="在-archlinux-踩到的-cmake-坑">在 Archlinux 踩到的 CMake 坑&lt;/h1>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>最近在修改 TIOJ，但一直沒辦法 native 的在 archlinux 上編譯 &lt;a href="https://github.com/TIOJ-INFOR-Online-Judge/tioj-judge/">tioj-judge&lt;/a>，只能用 docker 跑 ubuntu。於是今天就跳進這個坑裡研究為什麼。&lt;/p>
 &lt;p>節錄部份錯誤訊息&lt;/p>
@@ -105,610 +45,71 @@ Call Stack (most recent call first):
 這學期的成績看起來不是很好看。&lt;/p>
 &lt;h2 id="桌球初級">桌球初級&lt;/h2>
 &lt;p>可以說是蠻輕鬆的課，老師會從看起來真的很基本的握拍開始教起，然後發球、回球等等，最後面會用餵球的方式讓我們試著左推右攻。&lt;br>
-老師讓全班的人每四個人分一組，每節課就是先集合起來講解動作之後，四個人回到同一桌輪流互相練習。我們這一桌有一個日本人，不過剛好也有一位日文系的同學，感覺有點形成他們兩位女生的小泡泡（？）&lt;/p>
-&lt;p>因為小學的時候就有打過一點點桌球（超級一點點），所以至少發球跟握拍還是會的。從考試成績看起來看似我在這組的實力還算不錯，但考的東西應該算是非常簡單，而且後面有一些課的練習是會讓贏家輪換到別桌去，也遇到很多很厲害的同學 (a.k.a. 他們在炸魚）。&lt;/p>
-&lt;p>A+ 率是 76.92%，非常高，我也拿了 A+。後半學期的考試我個人覺得隊友的餵球影響會很重，所以如果自己真的真的完全沒有基礎的話最好找厲害一點的隊友餵球。&lt;/p>
-&lt;h2 id="語言的邏輯分析">語言的邏輯分析&lt;/h2>
-&lt;p>因為之前上過探索語言覺得語言很有趣就想說來聽聽看，第一堂課就丟給我們語奧那種題目試著做（老師稱作「語言遊戲」）。因為是第一堂課所以難度非常簡單，我就修下去這門課了。&lt;/p>
-&lt;p>不過其實是上了賊船。每個禮拜都會有作業，形式一樣是語奧的題目，但是要順便交上合理的解題過程，而且感覺要好好引用上課教的一些語言 feature，這個作業寫到後面越來越不會寫，而且在講解的部份我也聽不太懂為什麼某些回答是合理的理由。總之就是太菜了。&lt;/p>
-&lt;p>但真正困難的其實是期末報告。期末我們要分組製作一個「語言遊戲」，但在分組的時候所有積極的人迅速的就找好組了，所以我就變成跟剩下來的人想辦法湊成一組。然後大家都不太知道能做什麼以及到報告前一週都沒什麼進度，想辦法用 chatgpt 生出一個題目來但報告也報得蠻爛的，醜到不能再醜了。最後竟然還可以拿 A-，比預期好了。&lt;/p>
-&lt;h2 id="存活分析">存活分析&lt;/h2>
-&lt;p>跟著 zihongxiao 去修的一個數學系開的課。這門課的主軸是 survivor function，$S(t)$ 代表某個實體能「存活」到時間 $t$ 的機率。整門課程會用不同的方法去想辦法從 experimental results 去 inference 出原本真正的母體的 survivor function 等統計資料，並證明誤差在抽樣夠多時會趨近於 $0$ 或是用什麼速度趨近於 $0$，也就是在證明一些 estimator 的性質。&lt;/p>
-&lt;p>課程進行到途中會講到測度公理的機率論、stochastic process、martingale，但跟課中提的其他定理差不多，定義或是一些結論大概帶過去之後就會比較直覺的使用這些物件。例如在 martingale 的 filtration 那邊，雖然講了定義但我們超少用到，用到的時候感覺也是馬虎帶過去。&lt;/p>
-&lt;p>作業就是把玩定義跟直接開一些定理去證一些事情，最後面會讓我們完成上課沒有證明完的一些 lemma。老實說，我覺得這些統計的定理越到後半學期都越來越醜，但可能學問就得是這樣子吧。雖然我覺得我這門課有盡力，但拿這個 A+ 感覺還是有點不踏實。&lt;/p>
-&lt;h2 id="數位系統與實驗">數位系統與實驗&lt;/h2>
-&lt;p>講的主題大概是布林代數，怎麼用簡單的 logic gate 去拼出一個 boolean expression，例如 minterm expansion、kmap 等，大多是用來手算的方法。後半學期會講 flip-flop，即正反器，以及類似 finite state machine 的應用。&lt;/p>
-&lt;p>有四次手寫作業跟兩次 lab 作業，lab 作業是讓我們寫一些 verilog 並計算一些能優化的 latency 之類的部份。期中考跟期末考印象中都可以帶大抄，分別考了 98 跟 90，最後是拿了 A+。&lt;/p></description></item><item><title>ICPC Korea Regional 2024</title><link>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</link><pubDate>Fri, 22 Nov 2024 19:34:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</guid><description>&lt;h1 id="icpc-首爾站-2024-遊記">ICPC 首爾站 2024 遊記&lt;/h1>
+老師讓全班的人每四個人分一組，每節課就是先集合起來講解動作之後，四個人回到同一桌輪流互相練習。我們這一桌有一個日本人，不過剛好也有一位日文系的同學，感覺有點形成他們兩位女生的小泡泡（？）&lt;/p></description></item><item><title>ICPC Korea Regional 2024</title><link>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</link><pubDate>Fri, 22 Nov 2024 19:34:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</guid><description>&lt;h1 id="icpc-首爾站-2024-遊記">ICPC 首爾站 2024 遊記&lt;/h1>
 &lt;p>以下用 C 跟 R 簡稱我的隊友。Day 2 正式賽會有分隔線，怕暴雷自己小心。&lt;/p>
 &lt;h2 id="day--2">Day -2&lt;/h2>
 &lt;p>飆趕國文作業，寫完之後倒頭大睡。&lt;/p>
 &lt;h2 id="day--1">Day -1&lt;/h2>
-&lt;p>作息亂掉然後被硬拉去下午五點到十點團練。&lt;/p>
-&lt;h2 id="day-0">Day 0&lt;/h2>
-&lt;p>從桃機飛往仁川機場。&lt;/p>
-&lt;p>搭上飛機之前各種意外，C 宣告他去買鍵盤所以會晚到，然後我們先報到的時候被提醒說原本 C 說要到的時間就是最後報到時間；然後就變成我和 R 去摩斯買了東西吃結果四十分鐘之後要安檢、出關、到登機口的局面，R 先吃完離開之後我吃完，我安檢出關很迅速但登機門走反方向搞得好趕。整個龜兔賽跑。&lt;/p>
-&lt;p>這次長榮的飛機餐是豬肉炒米粉，我覺得不是很好吃，大概也有一些原因是我們嘴饞偷偷吃摩斯以及我本來就不喜歡米粉。抵達首爾只要兩小時，意外的很快。&lt;/p>
-&lt;p>出關之後我們搭機場巴士離開機場到會場所在的高陽市一山東區，票價大概 27000 韓圜，要搭約一小時。然後下車等轉乘公車才感受到 12 度的冷。跟台灣的公車一樣用現金會很迷茫怎麼投，又有語言障礙所以更難投。最後從公車站走到飯店 KINTEX by KTree，check in 之後感覺這家飯店各方面都不錯，房間裡面還有洗衣機、電磁爐（不會用到）。不過淋浴間跟馬桶之間沒有門所以地會弄濕，而且也沒有免費提供牙刷。&lt;/p>
-&lt;p>落地後的第一餐晚餐就是吃飯店樓下剛好有一個韓式烤肉店。CP 值感覺不算太高，不過好油好多肉好爽。很多小菜和點套餐附的豆腐煲都好辣，我一直拿水跟拿奶油玉米吃。吃完之後去一樣在飯店樓下的 7-11 逛了一下又買了香蕉牛奶跟冰淇淋。&lt;/p>
-&lt;p>回飯店之後發現買的鍵盤的 enter 鍵佔據了美式鍵盤的 enter 右部和整個反斜線的位子，反斜線變到 enter 的左部。打了一下字，看來是白買了。&lt;/p>
-&lt;h2 id="day-1">Day 1&lt;/h2>
-&lt;p>早上好晚起。睡前被問有沒有準備在學證明，事前沒有想到，只好隔天起來想辦法把在學證明印出來，C 去問飯店櫃台剛好櫃台可以印。&lt;/p>
-&lt;p>下午一點半報到，所以我們大概十二點就去找會場。官網寫說會場在 KINTEX 二號展覽館四樓，不過展覽館蠻大的，一樓有一些吃的地方但不太看得到哪裡是 ICPC，我們先進去一家土耳其 kebab 捲店吃了午餐（感覺小貴），出來找個電梯結果就看到 ICPC 的立牌了，搭到四樓就是報到處。順帶一提好像剛好是 BlueArchive 的什麼活動所以展覽館外牆上有 BlueArchive 的大廣告，而且報到處正好就是那個廣告的內側，因為是透明的外牆所以可以從內側看那個廣告。蔚藍檔案．啟動！&lt;/p>
-&lt;p>被華為的人稍微搭話，似乎是因為我穿著新加坡 IOI T。報到的時候有一個櫃台專門給 foreign teams 好評，但馬上就扣回去因為他要我們填一個上面全部寫韓文的單子，似乎是個資收集書以及填要寄放哪些物品到時候比賽用，雖然櫃台的人有講解但還是嚇到。&lt;/p></description></item><item><title>第六學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</link><pubDate>Sun, 07 Jul 2024 21:31:21 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</guid><description>&lt;h1 id="sixth-semester">Sixth semester&lt;/h1>
-&lt;p>在大約一月底我們得知 ICPC 會在四月舉辦。於是這學期我還是盡量把課排少，學期初的時候我原本選了一個國文課，但後來退掉了，學分也剩下 14 學分需要低修單。剩下只有五門課看起來真的超級少的。&lt;/p>
-&lt;h2 id="密碼學導論">密碼學導論&lt;/h2>
-&lt;p>學期初的時候去聽了一下覺得可以修，而且資工系一堆人都搶著要修的樣子。三類加簽，所以只要在網路上加選等抽中，雖然是個兩百多人的課但抽中也不難，會有不少人退選。&lt;/p>
-&lt;p>學期初會先講一些簡單的抽象代數，基本上都是會討論像是 $Z_n$ 或是 $GF_{q^n}$ 這種有好性質的 ring/field，主要是為了 AES 鋪路。&lt;br>
-後半學期會講 RSA 以及一些旁通道攻擊的例子，然後還有 ECB/CBC 等加密模式或是像是金鑰分發、certificate authority、bitcoin、區塊鏈這種比較分散的對我來說感覺沒什麼動力學的東西。最後雖然確實有講後量子密碼學，但其實也就是維基百科上查得到的東西而已，沒有得到什麼太有用的知識的感覺。&lt;/p>
-&lt;p>每個禮拜都有一個小考，雖然只算最高六次但我到學期末都沒湊滿，大概差一兩分。大概到差不多期中考的時候一開始幾個一起來修的資工系同學停修掉了，雖然我沒有停修但後來的小考和上課有點後悔，一直考一些奇怪的細節或是背誦的東西，然後好幾次的問答題我寫了一大篇作文沒拿滿分真的哭。&lt;/p>
-&lt;p>期中考我有點考爆，拿了個 82 分。期末考考了 91 分，我那時候心想完蛋了這樣考試平均也不到 90 怎麼 A+，但還是太小看作業的分數了。&lt;/p>
-&lt;p>整學期只有一個作業，大部份都是課本上的題目，加上一些看影片寫心得跟用 sage 做一些超簡單的練習。&lt;br>
-課本的題目感覺其實也沒什麼品味，而且有一些題目感覺像是有問題。&lt;br>
-作業有一個提早交加分的機制，從大概 16 題裡面選最好的 12 題。我那時候就卷這份作業，想要把全部的題目都在提早交的期限前寫完，雖然最後一些看影片寫心得的部份沒有寫但還是花了蠻多力氣，最後這邊的分數有拿滿；其實我懷疑我又抄題目又用 $\LaTeX$ 又每題都寫，如果我是助教肯定是心想「這麼長誰想改乾脆直接給滿分好了」(X。&lt;/p>
-&lt;h2 id="人工智慧導論">人工智慧導論&lt;/h2>
-&lt;p>忘記是上一屆還是這一屆開始是系上必修。&lt;/p>
-&lt;p>前半學期講了什麼是人工智慧跟一些比較古早的方法，主要是像是 A* 或是 alpha-beta 剪枝等 exhaustive search 以及一些機率的 bayesian inference 之類的東西。&lt;br>
-後半學期則是開始談機器學習，講 supervised 和 unsupervised 的一些方法，最後比 HTML（林軒田教授開的 ML）多的東西可能就是 reinforcement learning 吧。&lt;/p>
-&lt;p>不過我都沒有去上課，唯一一次去 103 教室是期中考的時候。期中考有夠擠，座位連梅花座都做不到，整排都是人。&lt;br>
-期中考抱佛腳抱不夠足，而且很好笑的是我到考完才知道原來可以帶大抄進去。考了個差不多是平均的八十幾分。&lt;/p></description></item><item><title>第五學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</link><pubDate>Mon, 01 Jul 2024 01:19:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</guid><description>&lt;h1 id="fifth-semester">Fifth semester&lt;/h1>
+&lt;p>作息亂掉然後被硬拉去下午五點到十點團練。&lt;/p></description></item><item><title>第六學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</link><pubDate>Sun, 07 Jul 2024 21:31:21 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</guid><description>&lt;h1 id="sixth-semester">Sixth semester&lt;/h1>
+&lt;p>在大約一月底我們得知 ICPC 會在四月舉辦。於是這學期我還是盡量把課排少，學期初的時候我原本選了一個國文課，但後來退掉了，學分也剩下 14 學分需要低修單。剩下只有五門課看起來真的超級少的。&lt;/p></description></item><item><title>第五學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</link><pubDate>Mon, 01 Jul 2024 01:19:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</guid><description>&lt;h1 id="fifth-semester">Fifth semester&lt;/h1>
 &lt;p>這個學期（大三上）原本預期是要在十一月參加 ICPC World Finals 的，所以選課除了必修以外都是選自己想選的，盡量只選到不用填低修單的學分。&lt;br>
-很貪心的還想要 4.3，但最後大失敗。&lt;/p>
-&lt;h2 id="室內五人制足球初級">室內五人制足球初級&lt;/h2>
-&lt;p>跟 ZCK 一起來修的我的第三門體育課。&lt;br>
-跟之前（室外）足球的老師是同一個老師，課程也大同小異，只是從室外十一人制變成室內五人制，球也換成室內五人制一般會使用的低彈力球。&lt;br>
-不過畢竟是在室內，所以不太會在室外踩泥土曬太陽，而是踩體育館的地板有屋頂，也許比較舒服。&lt;/p>
-&lt;p>看到許多之前在室外足球課的熟面孔，好課一修再修。&lt;br>
-這次一樣有分組比賽，分組後我們這組看起來似乎是四組裡面最菜的XD 之前的熟面孔強者都在別組。&lt;br>
-不過除了跟最強的那一隊比賽以外其實都打得還可以？&lt;br>
-我們這隊有幾個印尼人，他們感覺比較會踢，有大局觀的感覺，帶著我們也算是可以跟一些隊打平。&lt;/p>
-&lt;p>除了比賽部份會加分以外，術科項目的考試有兩個，一個是兩人互相傳球，一個是帶球繞一圈。&lt;br>
-帶球繞一圈就吃小學的老本，感覺帶得還不錯（可能整堂課都有吃老本的部份，小學有在踢足球）。&lt;br>
-另外這次有 ZCK 當隊友，兩人互相傳球的部份配合得比較好，總之最後拿到了 A+。&lt;/p>
-&lt;h2 id="數值線性代數">數值線性代數&lt;/h2>
-&lt;p>來修一門感覺很數學的課。&lt;br>
-這門課一開始先介紹高斯消去法，然後講 condition number，也就是什麼樣的線性系統是病態的，只要一開始出了一點誤差就會被放大數倍。&lt;br>
-前半學期講了 matrix norm 以及 SVD 等（整個學期都不會講 SVD 實際上怎麼有效率計算 :P）。&lt;br>
-後半學期介紹 iteration method，重心會放在 conjugate gradient method。&lt;br>
-一些簡單的矩陣分解（LU, LDU, QR, cholesky 等）也會講到，但感覺都 focus 在手算的方法（畢竟真的實用的方法是都頗複雜），再稍微給我們一些 QR 的數值穩定度比較好、LU 比較快之類的概念。&lt;/p>
-&lt;p>這門課使用的教材是 &lt;a href="https://www.cs.utexas.edu/~flame/laff/alaff/frontmatter.html">ALAFF&lt;/a>，會要求我們預習看影片等等。&lt;br>
-另外每堂課後幾乎都有實驗課，是助教用 google colab 讓我們用 numpy 跟 scipy 的套件寫一些有關矩陣運算的東西。感覺我應該還算熟這些套件所以很輕鬆。&lt;/p>
-&lt;p>最後還有一個算分的作業是每個人要上台分享一次一個 topic 的環節，但我沒有上去分享，再加上蹺了數次課，有幾次實驗課沒作到。&lt;br>
-考試期中考了 89 期末考了 92，但 lab 分數只有 75、作業分數只有 78，拿了一個難看的 B+。&lt;br>
-不過我覺得這門課算是有趣，而且在 virtual 某場 WF 的時候彷彿有幫上忙。&lt;/p></description></item><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>&lt;h1 id="icpc-world-finals-luxor-世界總決賽紀錄">ICPC World Finals @Luxor 世界總決賽紀錄&lt;/h1>
+很貪心的還想要 4.3，但最後大失敗。&lt;/p></description></item><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>&lt;h1 id="icpc-world-finals-luxor-世界總決賽紀錄">ICPC World Finals @Luxor 世界總決賽紀錄&lt;/h1>
 &lt;p>部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。&lt;br>
-如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。&lt;/p>
-&lt;hr>
-&lt;h2 id="前言">前言&lt;/h2>
-&lt;p>在大一IOI結束後ot和olmrgcsi邀請我同隊，暑假就組成ckiseki開始團練。ckiseki 這個隊名應該是由他們前一個隊伍的名字 kiseki 改過來的，我們三個人其中一個共通點是都是建中的，所以前頭加了一個 c 湊成 ck 的縮寫（？）總之我們那時候練得蠻多的，在當年（2021）的下半年在臺北站用線段樹和一些壓常得到了 46th world final 門票。本來預定應該是 2022 比賽的，但因為 covid 的關係延後得遙遙無期，直到 2023 年初才得到會在 11 月去 SSH，結果因為以巴問題又延期，2024 的 1 月才得知 2024 年 4 月改在 Luxor 舉辦。如果是大四才拿到票的學生，可能都已經工作兩三年了，可以說非常消磨熱情。&lt;br>
-我們隊在進 wf 後參加了三次的ptz camp兩次的ocpc，以及很多的 universal cup。雖然感覺我們是有成長的，但越接近 final 越發現前排隊伍有點太過耀眼。如果我們跟以前的隊伍比的話，看排行榜有機會是可以拿到銀牌，但本次比賽的隊伍名單一字排開大概十隊有紅黑人，再把一些平常團練打得很好的隊伍算進去的話，悲觀一點連拿牌都很難，如果看我們 ucup 的成績大概有一半是超級拉垮的。不過賽前一個禮拜 vir 某場 WF 的時候看到東大也是最近 vir 的而且跟我們同題數只輸 5 分鐘罰時，雖然大概是他們太老導致很少練但還是讓我稍微感到樂觀一點，努力帶著這種樂觀啟程。&lt;/p>
-&lt;h2 id="啟程">啟程&lt;/h2>
-&lt;p>結束落落長的前言，開始本次旅遊的流水帳。&lt;/p>
-&lt;p>往 Luxor 的旅程從桃機開始，週六的晚上十一點的飛機，我們七個人包含教授在櫃檯集合並登機；在同一個櫃檯也已經看到交大清大他們。這是我第一次搭日本或台灣以外的航空公司（阿聯酋航空，回來台灣之後學習到我是第一次坐所謂 A380），有點開眼界的感覺，經濟艙的座位上竟然有萬用插座（雖然九小時應該非常需要xd），而且還有一個被擋住的樓梯，往上層艙看起來有一個像是酒吧的東西；他們的餐點也還不錯吃。飛到杜拜的飛機坐得很滿，而且我們是半夜起飛，所以大家都在睡覺，我原本帶書來看但我也不好意思在他把機上燈光關掉的時侯開自己的座位燈xd。&lt;/p>
-&lt;p>
- &lt;figure>
- &lt;img src="https://omeletwithoutegg.github.io/images/icpc-wf-luxor/DSC_1805.JPG" alt="">
- &lt;figcaption>上機前可以看到是個四個引擎的大客機&lt;/figcaption>
- &lt;/figure>
-
-&lt;/p>
-&lt;p>
- &lt;figure>
- &lt;img src="https://omeletwithoutegg.github.io/images/icpc-wf-luxor/DSC_1806.JPG" alt="">
- &lt;figcaption>插頭和娛樂系統&lt;/figcaption>
- &lt;/figure>
-
-&lt;/p>
-&lt;p>坐在中間的位子蠻難睡的，努力消磨時間跟睡覺總算到達杜拜，是當地凌晨五點。到杜拜又是另一種開眼界，我們還待在轉乘的區域可以逛的商店就已經非常多，有很多的精品店還有偶爾會遇到emirates的周邊商品店。這裡已經可以遇到很多來 icpc 的人了，我們在杜拜的麥當勞買了一個約五美元的大薯四個人分著吃（好貴），剛好對面坐 NUS 的 coach；回到登機口之後還有澳洲跟日本的東工大跟京大的樣子，不過我幾乎不敢搭話，而且不知道是吃太飽還是吃壞肚子，有點肚子痛再加上很累不太能專心。&lt;/p></description></item><item><title>第三學期修課心得</title><link>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</link><pubDate>Sun, 15 Jan 2023 22:52:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</guid><description>&lt;h1 id="third-semester">Third semester&lt;/h1>
+如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。&lt;/p></description></item><item><title>第三學期修課心得</title><link>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</link><pubDate>Sun, 15 Jan 2023 22:52:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</guid><description>&lt;h1 id="third-semester">Third semester&lt;/h1>
 &lt;p>感覺時間過好快，雖然才第三個學期而已。&lt;/p>
 &lt;hr>
 &lt;h2 id="足球初級">足球初級&lt;/h2>
 &lt;p>修了個體育。&lt;br>
 老師上課的方式是每個禮拜會先教一下子基本動作，然後就讓我們分組比賽。&lt;br>
 分數來源除了考規則、考基本動作以外，還有在比賽中有好表現可以加分。&lt;br>
-分組是期初分完就固定的，但依照我的社恐力和組員相處還是很吃力（？）&lt;/p>
-&lt;p>其實每個禮拜跑動一下，結束之後心情還是不錯的（但社交能量會喪失（？））&lt;br>
-預設是在操場上課，有下雨的話會換到舊體。&lt;br>
-因為是在下半年，所以即便是在操場上，大多數時間也不太會熱。&lt;/p>
-&lt;p>最後拿到 A，不知道在什麼地方加強有機會拿到 A+。&lt;/p>
-&lt;h2 id="系統程式設計">系統程式設計&lt;/h2>
-&lt;p>簡稱 SP 的一門大二必修。&lt;br>
-課程內容幾乎都在講 system call 跟 Unix-like 的系統會有的特性。&lt;br>
-system call 從例如 &lt;code>open&lt;/code> &lt;code>read&lt;/code> &lt;code>write&lt;/code> 到 &lt;code>fcntl&lt;/code> 或 &lt;code>fork&lt;/code> 或 &lt;code>mmap&lt;/code> 都有講一下怎麼用、怎麼用不好以及怎麼用比較好。&lt;br>
-Unix-like 系統的特性則是比如說 process、thread、signal、file、pipe 好多好多。&lt;/p>
-&lt;p>這堂課有四次程式作業還有一些手寫作業，手寫作業在 ChatGPT 出來之後輕鬆很多(X&lt;br>
-程式作業是我覺得很麻煩的地方。&lt;br>
-程式作業的形式是助教會寫一份 spec 然後我們就照著上面的 implement，並且沒有什麼即時反饋的機制，比如說第一次作業是要我們擔任一個借書系統的後端部份（跟網路互動的部份有寫好部份的 code 了），用 &lt;code>open&lt;/code> &lt;code>read&lt;/code> &lt;code>write&lt;/code> 以及一些 IO multiplexing 的 syscall 去同步處理多個 request。&lt;br>
-很煩的部份是，常常在作業出來一陣子之後又更新一些檔案/spec 等等，尤其是 spec 不太清楚還要一直到 github 討論區問助教，第四次作業我覺得甚至你會需要把討論區給全部翻過一遍才能理解 spec 足夠的細節，總之就是很煩。&lt;br>
-(Update: OS 比 SP 煩更多)&lt;br>
-另外作業四次都有大腿抱，好幸運。有一些提早寫完的修課生就會寫一些 testing tool 來幫助其他人檢查他們有沒有寫錯（可能也是順便對自己的作業）。當然不可以抄襲所以常常都只能比對輸出，只是盡量考量各種 edge case 而已。&lt;br>
-我覺得這樣有點考驗臉皮夠不夠厚或是有沒有認識到那些厲害的人，是一個蠻奇怪的現象。&lt;/p></description></item><item><title>KDE connect</title><link>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</link><pubDate>Wed, 07 Sep 2022 00:57:23 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</guid><description>&lt;h1 id="kde-connect">KDE connect&lt;/h1>
-&lt;p>之前一個用 Mac 的同學表示他覺得蘋果系列的東西很方便，因為蘋果他們家把手機跟平板整合得很好，例如：可以把手機上的照片、影片等等直接傳到電腦，用手機掃了 QR code 之後用電腦開啟，同步手機與電腦的剪貼版等等。&lt;/p>
-&lt;p>最近看到一篇很有料的文章&lt;/p>
-&lt;p>&lt;a href="https://blog.ryey.icu/archlinux-and-software-on-yoga-14s-2021-part-2.html">https://blog.ryey.icu/archlinux-and-software-on-yoga-14s-2021-part-2.html&lt;/a>&lt;/p>
-&lt;p>裡面講到了 KDE connect 這個東西，實際用過之後我覺得真的是相當實用的一個工具，而且這個工具也沒有限制平台的，Mac OS 似乎也可以用（？）&lt;br>
-根據 &lt;a href="https://support.apple.com/zh-tw/HT204681">apple 官網有關「接續互通」的部份&lt;/a> 來看，雖然還是有少一些 feature 像是同步/延伸畫面，或是一些自動解鎖的 feature，&lt;br>
-不過我認為已經相當好用了。&lt;/p>
-&lt;h2 id="what-is-kde-connect">What is KDE connect&lt;/h2>
-&lt;p>KDE connect 提供了裝置之間整合的功能，我目前比較常用的是手機與電腦的一些同步功能。&lt;br>
-雖然叫做 KDE connect 不過聽說其他桌面環境也可以用（？）沒有試過不知道整合得怎麼樣。&lt;/p>
-&lt;p>這個 app 必須要在電腦跟手機都要安裝才可以使用，並且要求裝置們必須要處在同一個區域網，例如手機和筆電連同樣的 wifi 等等。&lt;br>
-安裝了 app 之後大部分常用的功能不需要開啟 app 就可以使用，例如多媒體控制會跟普通播音樂一樣在下拉通知頁面或是解鎖螢幕有一個小 widget 出現。&lt;/p>
-&lt;h2 id="我用過的-feature">我用過的 feature&lt;/h2>
-&lt;h3 id="多媒體控制">多媒體控制&lt;/h3>
-&lt;p>可以互相控制裝置的多媒體播放，使用情境可能像是離電腦很遠但離手機很近的時候。&lt;br>
-手機上的圖示跟放音樂的時候會出現的圖示差不多，所以用起來也很直覺。&lt;/p>
-&lt;p>聽說在接聽電話的時候會自動暫停正在播放的音樂或是影片。&lt;/p>
-&lt;h3 id="遠端控制">遠端控制&lt;/h3>
-&lt;p>可以用手機控制滑鼠，或是用手機鍵盤打字。&lt;br>
-用起來手感跟我的筆電觸控版差不多（沒有三指或四指手勢就是了啦）可以干擾想要對你的電腦做怪事的人(X&lt;/p>
-&lt;h3 id="投影片控制">投影片控制&lt;/h3>
-&lt;p>可以把手機當成簡報筆來用，有兩個按鍵代表 page up / page down 以及有一個按鍵對應到雷射的部份，長按會出現一個圓圈並且會跟著手機的旋轉在畫面上移動，告訴大家焦點在哪裡。&lt;br>
-雖然我覺得是一個很棒的功能，不過我目前沒有很重度的簡報需求。&lt;/p>
-&lt;h3 id="尋找裝置">尋找裝置&lt;/h3>
-&lt;p>有點有用但又有點沒用的 feature。&lt;br>
-按下去會讓手機響鈴以方便找手機。&lt;br>
-因為 KDE connect 必須要在同一個 LAN 才可以用，所以手機沒有連網路是不能用的。&lt;br>
-這個功能大概會用在習慣把手機鈴聲開靜音又突然找不到的時候用。&lt;/p></description></item><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>&lt;h1 id="second-semester">Second semester&lt;/h1>
+分組是期初分完就固定的，但依照我的社恐力和組員相處還是很吃力（？）&lt;/p></description></item><item><title>KDE connect</title><link>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</link><pubDate>Wed, 07 Sep 2022 00:57:23 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</guid><description>&lt;h1 id="kde-connect">KDE connect&lt;/h1>
+&lt;p>之前一個用 Mac 的同學表示他覺得蘋果系列的東西很方便，因為蘋果他們家把手機跟平板整合得很好，例如：可以把手機上的照片、影片等等直接傳到電腦，用手機掃了 QR code 之後用電腦開啟，同步手機與電腦的剪貼版等等。&lt;/p></description></item><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>&lt;h1 id="second-semester">Second semester&lt;/h1>
 &lt;p>年久失修的部落格，繼續只更新修課心得（流水帳）&lt;/p>
 &lt;h2 id="網路管理與系統管理-nasa">網路管理與系統管理 (NASA)&lt;/h2>
 &lt;p>禮拜一早九（？）可以選三學分跟一學分，如果選一學分的似乎可以拿來抵服務學習，不過我選了三學分的。&lt;br>
-這門課有一個必須要在寒假左右完成的 HW0，事後看起來有點奇怪的點是學期中有不少課在教的反而是在 HW0 中感覺有用到的東西。&lt;/p>
-&lt;p>在學期開始時可以到 204 去實體上課，不過下雨的時候還要早起到 204 真的很折磨。&lt;br>
-後來正好因為防疫因素變成線上了（其實原本就可以線上上課）。&lt;br>
-NASA 的上課內容主要是在講一些原理或是介紹一些協定，像是網路如何運作的（網路的五層結構）、防火牆、DNS、Wi-Fi 原理、filesystem、web service。&lt;/p>
-&lt;h3 id="作業">作業&lt;/h3>
-&lt;p>我覺得作業是 NASA 能學到最多東西也比較有趣的部份。每兩三週左右會有一個比較大的作業，每週則是有 lab 作業與影片簡答題。&lt;br>
-所謂的 lab 有點像助教課，就是在正課上完之後由助教教我們一些和正課稍微相關的工具怎麼使用，例如：shell script撰寫、cisco switch configuration 的操作、教我們如何架一個 apache web service，或是關於硬碟的切割與格式化。&lt;/p>
-&lt;p>比較大的作業則不一定會跟正課有關，以下是六次作業的標題：&lt;/p>
-&lt;ul>
-&lt;li>Homework 1 - Wireshark/tcpdump &amp;amp; UNIX / Shell Scripts&lt;/li>
-&lt;li>Homework 2 - IP/iperf/Cisco &amp;amp; partition&lt;/li>
-&lt;li>Homework 3 - Firewall &amp;amp; Virsh + Docker&lt;/li>
-&lt;li>Homework 4 - Security &amp;amp; LDAP&lt;/li>
-&lt;li>Homework 5 - DNS + DHCP &amp;amp; NFS + Fix VM&lt;/li>
-&lt;li>Homework 6 - Wireless &amp;amp; Web Server&lt;/li>
-&lt;/ul>
-&lt;p>作業內容常常都是 lab 的延伸，但是 NASA 作業的最大特色就是常常需要自己到網路上找相關資料，要願意花時間查看 documentation 或是 manual page 之類的，不然就是要找好大腿抱。舉例來說， Fix VM 那次作業就需要去查所謂 PXE 是什麼，還有怎麼讓 VM 互相溝通，使得一台可以當 server、一台可以當 client，基本上 ArchWiki 有相當完整的資訊，不過…&lt;/p></description></item><item><title>Minecraft Launcher Murmur</title><link>https://omeletwithoutegg.github.io/2022/04/16/minecraft-launcher-murmur/</link><pubDate>Sat, 16 Apr 2022 17:32:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/04/16/minecraft-launcher-murmur/</guid><description>&lt;h1 id="抱怨一下-minecraft-launcher">抱怨一下 Minecraft Launcher&lt;/h1>
+這門課有一個必須要在寒假左右完成的 HW0，事後看起來有點奇怪的點是學期中有不少課在教的反而是在 HW0 中感覺有用到的東西。&lt;/p></description></item><item><title>Minecraft Launcher Murmur</title><link>https://omeletwithoutegg.github.io/2022/04/16/minecraft-launcher-murmur/</link><pubDate>Sat, 16 Apr 2022 17:32:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/04/16/minecraft-launcher-murmur/</guid><description>&lt;h1 id="抱怨一下-minecraft-launcher">抱怨一下 Minecraft Launcher&lt;/h1>
 &lt;p>之前我都是用 &lt;a href="https://aur.archlinux.org/packages/minecraft-launcher">這個 AUR package&lt;/a> 作為 Minecraft launcher，但某個時間點之後發現登入帳號之後下面有一行小字寫說什麼無法成功記住你的登入 session 之類的，下次就必須重新進去那個跑很慢的視窗輸入密碼。&lt;br>
 Minecraft 官網上對這個警告的指示是這樣子的：&lt;br>
 &lt;a href="https://help.minecraft.net/hc/en-us/articles/4408668374925-Secure-Token-Storage-Failure-on-Linux">https://help.minecraft.net/hc/en-us/articles/4408668374925-Secure-Token-Storage-Failure-on-Linux&lt;/a>&lt;br>
-也就是說，即使不是 GNOME desktop 也叫你要去裝 gnome-keyring 這個套件，照做之後果然可以成功記住我的身份。&lt;/p>
-&lt;p>又有一陣子很久沒玩，重新打開之後發現他竟然要我輸入 gnome-keyring 的不知道什麼密碼，而且還不能 focus 在其他視窗上讓我查一下密碼到底是啥，必須取消輸入密碼才能點其他視窗，真的雷雷。不過其實那個密碼忘記了也沒怎樣，只是要每次重新登入而已。今天剛好比較閒，查了非常久 gnome-keyring 要怎麼用，看網路上的各個教學跟 archwiki 上寫的都不太一樣，根本不知道要改什麼檔案，不過我得知了正常來說，跳出來的那個視窗要我輸入的密碼跟登入 desktop session 的密碼要是一樣的才對，也就是所謂的「login key」，而不是「Default key」。&lt;/p>
-&lt;p>而且有一個很奇怪的點是這樣子的：我開機登入 KDE 之後 &lt;code>ps aux | grep gnome&lt;/code> 會知道說 &lt;code>gnome-keyring-daemon&lt;/code> 有在跑，然後直接打開 minecraft-launcher 會先跳出紅色 error 過一陣子才成功登進去，多重開機幾次之後他彷彿就被玩壞了一樣沒辦法自動登入了QQ，跑去把一些檔案（&lt;code>~/.local/share/keyring&lt;/code> 跟 &lt;code>~/.minecraft/launcher_accounts.json&lt;/code> 之類的）刪一刪改一改才讓他變回正常，但再重開機幾次又變神秘了。&lt;/p>
-&lt;p>最後覺得放棄使用他才是最好的選擇（所以我也沒研究怎樣正確的設定 gnome-keyring 使用 login key 而不是 default key），缺點只是每次要重新登入。才突然想到我可以去 AUR 看有沒有人在講有關的解決方式，意外翻到 &lt;a href="https://aur.archlinux.org/packages/polymc">polymc&lt;/a> 這個 package，popularity 竟然比原本的還多，安裝之後發現他的 UI 看起來不錯，所以我就想說乾脆來研究 polymc 怎麼用。&lt;/p>
-&lt;p>首先第一件事就是要登入一個 microsoft 的帳號（mojang 的帳號之前就被強制 migrate 了），在 polymc 中也是有非常清楚的指示，照做之後遇上了年齡不足之類的警告，跑去翻我的 microsoft 帳號發現我這個帳號明明就已經超過 18 歲了啊@@&lt;br>
-然後查了一大堆資料都說要去微軟官方的帳戶設定調整 Xbox 設定檔，但直接點進去只被告知沒有足夠的權限修改設定。就結果來說是因為雖然微軟帳號本身年齡夠了，但在申請 Xbox 帳號或是某個環節當初填的是兒童帳戶的身份，只好再花一堆時間找怎麼設定。&lt;/p></description></item><item><title>第一學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</link><pubDate>Fri, 04 Feb 2022 09:28:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</guid><description>&lt;h1 id="first-semester-in-csie">First semester in csie&lt;/h1>
+也就是說，即使不是 GNOME desktop 也叫你要去裝 gnome-keyring 這個套件，照做之後果然可以成功記住我的身份。&lt;/p></description></item><item><title>第一學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</link><pubDate>Fri, 04 Feb 2022 09:28:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</guid><description>&lt;h1 id="first-semester-in-csie">First semester in csie&lt;/h1>
 &lt;p>部落格已經年久失修ㄌ…&lt;br>
 來講講這學期都在做什麼好了&lt;/p>
 &lt;h2 id="計算機程式設計">計算機程式設計&lt;/h2>
 &lt;p>系上大一必修，大致上是教 C 的語法，從基本 IO 到指標、檔案操作、簡單遞迴等等。&lt;br>
 在高中有參加過程式競賽可以向教授申請當「真強者」，可以不用小考、上課就會在學期末拿到 A+，而通常「真強者」負責的工作是讓這門課的學生可以問問題，並且要負責驗題，整學期總共 30 題吧。&lt;br>
-劉邦鋒教授很毒舌（？）常常嘴砲學生跟助教，然後這學期說助教出的測資太爛，我們又多了一個出測資的工作。&lt;/p>
-&lt;h2 id="普通物理學甲上">普通物理學甲上&lt;/h2>
-&lt;p>另一個大一必修，上課教授是呂榮祥教授。&lt;br>
-上課不點名（超優！！），所以我後面都沒有去上課XD&lt;br>
-作業每個禮拜有似乎是從課本挑的題目，以及 VPython 模擬。&lt;br>
-VPython 照著 pdf 做大概就可以抄掉九成的 code 了，真的不想認真的話可以找到網路上一模一樣的題目。&lt;br>
-推薦每個禮拜好好做作業，因為段考會出作業題，剩下的大概就佛系看投影片吧（？）&lt;br>
-沒去上課還能抱佛腳拿到 A+ 應該算甜涼課吧。&lt;/p>
-&lt;h2 id="微積分一二">微積分一二（？）&lt;/h2>
-&lt;p>在高三的時候有修所以抵免掉了。&lt;/p>
-&lt;h2 id="計算機概論">計算機概論&lt;/h2>
-&lt;p>就教計概。&lt;br>
-作業是 nand2tetris 前面的幾個 project，要學會寫一些奇怪的語言。&lt;br>
-沒有期末考，只有 Final Project，我們的 Final Project 是用很像組合語言的 Jack 語言做一個小遊戲。&lt;br>
-期中考考上課有講的東西，應該不算難（？）&lt;br>
-可是我只有拿到 A-，但也沒有追根究底因為 C+ 根本稀釋不了ㄌ。&lt;br>
-可能還有一個原因是罪惡感，前半有比較認真看影片但後面就沒看QQ&lt;/p>
-&lt;h2 id="線性代數">線性代數&lt;/h2>
-&lt;p>在學期初努力（？）加簽到的大二必修。單班李明穗教授。&lt;br>
-我們這群有修線代的人因為老師上課沒有留任何投影片或是紀錄檔，所以有一起做一個共筆，把上課的東西抄下來。&lt;br>
-學期前半我沒怎麼上課，後面有跟著有去修的人借教室一起聽線上課。&lt;br>
-大部分人都覺得教的內容太少，不如自己看課本學比較快。&lt;br>
-然後每個禮拜有作業、有三次期末考，其實大部分都是熟練計算，和我想像的有差距。&lt;br>
-說得誇張一點，這門課就是教你怎麼做高斯消去法的。期末考計算量真的死人。&lt;br>
-順帶一提這學期的考試有至少兩次題目有問題，然後後來考完才說是題意不清，讓人很煩躁，不過反正最後還是 A+。&lt;/p>
-&lt;h2 id="醫學與生活">醫學與生活&lt;/h2>
-&lt;p>和王勻一起修的通識，但拿到 C+ 有夠慘…&lt;br>
-據說是學期當中有兩次抽點名我們都沒點到，有一次甚至還是因為為了體育分數去參加拔河@@&lt;br>
-反正是一個每週三要去醫學院聽兩小時左右的東西的課程，每次的講者都不同，另外還有一次實體參訪醫學人文博物館。&lt;br>
-分數除了出席（抽點…）以外還有實體參訪心得、整學期任選一些課的心得，還有期末考分數。&lt;br>
-後來去問為什麼會 C+ ，分數要不回來，老師所說期末考只是考考形式我也不想在乎了@@&lt;/p></description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考">2021 TOI 模考&lt;/h1>
+劉邦鋒教授很毒舌（？）常常嘴砲學生跟助教，然後這學期說助教出的測資太爛，我們又多了一個出測資的工作。&lt;/p></description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考">2021 TOI 模考&lt;/h1>
 &lt;p>可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br>
-今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p>
-&lt;p>如果想在 hackmd 上看的話可以戳 &lt;a href="https://hackmd.io/@omeletwithoutegg/TOI-2021-sols">https://hackmd.io/@omeletwithoutegg/TOI-2021-sols&lt;/a>&lt;br>
-如果只想看題目可以戳&lt;br>
-&lt;a href="https://www.facebook.com/notes/%E8%B3%87%E8%A8%8A%E7%AB%B6%E8%B3%BD%E9%81%B8%E6%89%8B%E6%96%B0%E6%89%8B%E6%9D%91/toi-2021/823380795202246/">https://www.facebook.com/notes/%E8%B3%87%E8%A8%8A%E7%AB%B6%E8%B3%BD%E9%81%B8%E6%89%8B%E6%96%B0%E6%89%8B%E6%9D%91/toi-2021/823380795202246/&lt;/a>&lt;/p>
-&lt;!-- [TOC] -->
-&lt;h2 id="免責條款">免責條款&lt;/h2>
-&lt;p>因為測資不一定夠強，有些解也是賽後討論才AC或是甚至只有精神AC的&lt;br>
-所以這裡的解有可能任何錯誤或是唬爛，不可全盤相信。&lt;/p>
-&lt;p>註：三模跟四模的 code 幾乎都沒有丟到師大開放的臨時 judge 上跑，所以不保證正確。&lt;/p>
-&lt;h2 id="一模">一模&lt;/h2>
-&lt;h3 id="p1-shortcut">p1 shortcut&lt;/h3>
-&lt;h4 id="題意">題意&lt;/h4>
-&lt;p>定義一張圖的總花費是所有點對之間的最短距離總和。&lt;br>
-給定一張 $n$ 點 $m$ 邊的簡單無向連通圖，在你可以加一條邊的情況下，和原圖相比最多可以減少多少總花費？又有幾種加邊的方式可以減少那麼多花費？&lt;/p>
-&lt;h4 id="限制">限制&lt;/h4>
-&lt;p>$3 \leq n \leq 500; n-1 \leq m \leq n(n-1)/2-1$&lt;/p>
-&lt;ul>
-&lt;li>subtask 1 (9) $n \leq 40$&lt;/li>
-&lt;li>subtask 2 (22) $n \leq 150$&lt;/li>
-&lt;li>subtask 3 (18) $m = n-1$&lt;/li>
-&lt;li>subtask 4 (51) 無額外限制&lt;/li>
-&lt;/ul>
-&lt;h4 id="作法">作法&lt;/h4>
-&lt;ul>
-&lt;li>$\mathcal{O}(n^5)$&lt;br>
-$\mathcal{O}(n^2)$枚舉要加的邊，每次重新做$n$次BFS(一次$\mathcal{O}(n+m)$)或是Floyd-Warshall&lt;/li>
-&lt;li>$\mathcal{O}(n^4)$&lt;br>
-每次枚舉要加的邊$(a,b)$時，計算每個點對的距離減少了多少，也就是$\sum_{i &amp;lt; j} \max(0, d(i,j) - (d(i,a)+1+d(b,j)), d(i,j)-(d(i,b)+1+d(a,j)))$，其中$d(i,j)$是原圖中$i$與$j$的最短距離，可以$\mathcal{O}(n^3)$預處理。&lt;/li>
-&lt;li>$\mathcal{O}(n^3)$&lt;br>
-前面的那個式子裡面的項代表的分別是$i\to a\to b\to j$和$i\to b\to a\to j$兩條路徑所減少的距離。可以發現這兩條路徑只有其中一條可能比原圖$i\to j$的路徑短，因為如果兩條都比原本的最短路徑短的話，那麼$i\to a\to j$或是$i\to b\to j$其中一個會是更短路徑，矛盾。&lt;br>
-也就是說，我們在算總花費減少多少的時候可以改為計算$\sum_{ i,j}\max(0,d(i,j)-(d(i,a)+1+d(b,j)))$&lt;br>
-考慮固定 $i,b$，那麼$j,a$之間是獨立的，我們可以拆成$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$，而對於每個$A_i$，$\sum_{j} \max(0,B_j-A_i)$是一個經典的問題，可以利用前綴和、後綴和的概念，或是排序（counting sort）+爬行法在線性時間內解決。總複雜度是枚舉所有$i,b$所需的$\mathcal{O}(n^2)$乘上對每個$a$計算$\max(0,(d(i,j)-d(b,j)-1) - d(i,a))$所需要的複雜度$\mathcal{O}(n)$，也就是$\mathcal{O}(n^3)$。&lt;/li>
-&lt;/ul>
-&lt;h4 id="code">code&lt;/h4>
-&lt;p>註：下面的code可能有些變數跟上面寫的不太一樣，例如$i,j,a,b$的角色可能有點顛倒。&lt;/p></description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</link><pubDate>Sun, 19 Sep 2021 16:32:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</guid><description>&lt;p>這篇是想放一些神奇的C++語法錯誤&lt;br>
+今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p></description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</link><pubDate>Sun, 19 Sep 2021 16:32:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</guid><description>&lt;p>這篇是想放一些神奇的C++語法錯誤&lt;br>
 也可能會放基礎的(X&lt;br>
 然後可能會是動態更新&lt;/p>
 &lt;h1 id="lambda-capture">lambda capture&lt;/h1>
 &lt;p>(Update: 2021/1/21)&lt;br>
-這似乎是因為capture到值的時候還沒成功建構func這個變數，所以會出問題&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;functional&amp;gt;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> function&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">void&lt;/span>(&lt;span style="color:#66d9ef">void&lt;/span>)&lt;span style="color:#f92672">&amp;gt;&lt;/span> func &lt;span style="color:#f92672">=&lt;/span> [&lt;span style="color:#f92672">=&lt;/span>]() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> x;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> x;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;ok &amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> x &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(x) func();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> };
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> func();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="const-reference--implicit-conversion">const reference &amp;amp; implicit conversion&lt;/h1>
-&lt;p>(Update: 2021/1/21)&lt;/p></description></item><item><title>科學班三年之小小紀錄</title><link>https://omeletwithoutegg.github.io/2021/08/13/ckcos-10th/</link><pubDate>Fri, 13 Aug 2021 04:47:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/13/ckcos-10th/</guid><description>&lt;h1 id="ckcos-10th">CKCOS 10th&lt;/h1>
-&lt;p>身為一個特殊班的學生，在畢業的時候還是會想打一些心得給未來的學弟參考吧。主要是希望對科學班有興趣的人可以了解科學班的一些權益與義務，在做這些決定的時候有更多資訊可以評估，也可以做好一些心理準備。&lt;/p>
-&lt;h2 id="考進之前">考進之前&lt;/h2>
-&lt;p>在國小的時候，家長就有帶我去補一些比較超前的課，最主要的是陳立數學，一直上到國二（吧），一開始學的比較接近小學或國中的競賽數學，後來則是變成先修高中數學，大概把高中數學都講過一遍了。&lt;br>
-另外還有補過一些物理跟化學，國三的時候因為要會考，跑去補了社會、國文、英文&lt;/p>
-&lt;p>想要去考的原因主要是被家長說服說可以證明自己的實力，沒有上也可以當成是練習，最後蠻意外的過了。&lt;br>
-T分數其實不太記得了，只記得化學跟生物應該都蠻低的，有點靠數學撐起來的感覺。&lt;br>
-我猜赫哲應該比我更清楚所以不要問我怎麼準備。&lt;/p>
-&lt;h2 id="考上之後">考上之後&lt;/h2>
-&lt;p>在可以進入科學班之後，我有選擇是否要去建中科學班，因為畢竟是男校，也有考慮過要不要去師大附中之類的。不過大家都建議既然考上就去，我也就直接進入這趟不歸路了。&lt;br>
-在錄取之後其實就可以不用讀會考了，但那時候我因為想留在班上所以就每天很隨意的寫複習考，後來會考也考了勉強可以進建中的成績。老實說覺得有點浪費時間，如果有考上的學弟記得把這段時間繼續拿來提昇自己，像是讀一些英文小說或是去看一些科普影片，又或者是直接去讀一些自己喜歡的領域的書，大概都比準備會考好。&lt;/p>
-&lt;h2 id="科學班的特色">科學班的特色&lt;/h2>
-&lt;h3 id="競賽">競賽&lt;/h3>
-&lt;p>我想擺在第一個講是因為我對這個比較熟悉。&lt;/p>
-&lt;ul>
-&lt;li>讀書會&lt;br>
-建中的很多科競賽都有讀書會在支撐，例如數讀、物讀、資讀等等，真的建議 027 的學弟要好好利用這些資源，在暑假就可以開始聽這些精彩的分享。當然，學成之後也可以為之後的學弟帶來更精彩的分享，傳承薪火。&lt;/li>
-&lt;li>能力競賽&lt;br>
-沒記錯的話科學班的學生好像要至少參加一科校內能力競賽，不過物化生只能選一科參加，通常校內會有初試、複試，接著就是北市能競，最後是全國能競。一年級的時候數學能競有到校內複試，但最後沒有變成校隊，也沒有當上資訊校隊，無緣市賽、全國賽、入營考；二年級成功變成資訊校隊，跑去撈了市賽跟全國賽的禮券回家。&lt;/li>
-&lt;li>公假&lt;br>
-建中的老師大部分都對公假是很寬容的，一二年級能競期間班上幾乎都空的很誇張，直到能競一一結束才陸續回流。要小心的是記得最好跟任課老師還是說一聲，以免無聲無息的被當掉，而且不要請超過兩個月之類的超長假…真的會得奧林匹亞回歸症候群。&lt;/li>
-&lt;li>APMOC&lt;br>
-一年級的時候被老師推薦來參加這個營隊，似乎是特殊班可以推薦一名，但我直到結束之後才知道這個營隊主要是來考試獲得數奧選訓營的資格的XD 我甚至在宿舍打 code 跟打 osu，超放鬆（？）有點對不起數學老師就是了。現在數奧的制度似乎不一樣了，不過如果有這種機會還是要好好注意一下…&lt;/li>
-&lt;/ul>
-&lt;h3 id="所謂超前進度">所謂超前進度&lt;/h3>
-&lt;p>高一高二上完高中三年課程是科學班標榜的特色之一，但在高三大部分的人並沒有變得比較輕鬆。高三可以去大學修自己有興趣的課，而且必須至少修一堂，但如果不是已經有大學念的人，可能就會因為升學壓力而沒辦法好好選自己想要的課，有些有想法的人可能還會在選課時被質疑。&lt;/p>
-&lt;h3 id="專題">專題&lt;/h3>
-&lt;p>高一高二的時候我們必須分組完成一個專題，這個專題會在成果發表時上台發表，為此我們會在高一下學期就分組並各自尋找指導教授。高三時，必須完成個別科學研究的報告書，而且是個人完成，因此高三可以說是蠟燭 $N$ 頭燒的情況。我個人的專題真的做得超糟糕，只能說讓我認識到根本不會做科學研究，各位還沒進科班的學弟對於這件義務真的要謹慎思考(X)&lt;/p>
-&lt;h3 id="畢業學分">畢業學分&lt;/h3>
-&lt;p>科學班的選修學分基本上是多到滿出來，相對的分配給必修學分的時間就比較少。&lt;br>
-我在高中有被當掉幾次國文跟一次歷史、一次體育，建議很常公假的人要記得去管畢業必修學分，不然三年級還要努力當學分精算師。&lt;/p>
-&lt;h3 id="資格考">資格考&lt;/h3>
-&lt;p>據說沒考過資格考會被退班，但其實能考進科學班而且有很大概的在聽課大概就可以通過資格考的數理科目了，很不幸的是我沒有通過英文科的標準，明明標準超低但我還是低了個兩三分。幸運的在高二我是IOI代表選手，因此可以免試掉資格考。&lt;/p>
-&lt;h2 id="比較非學術的活動">比較非學術的活動&lt;/h2>
-&lt;h3 id="聯誼">聯誼…？&lt;/h3>
-&lt;p>沒有。至少我沒有參加過，可能太邊緣吧？班上有一些跟景美、北一、中山的line群組，但基本上就是加了一個禮拜之後就冷掉，我猜想要有好關係還是要靠自己嘍。&lt;/p>
-&lt;h3 id="迎新">迎新&lt;/h3>
-&lt;p>校內會有一個數資與科班聯合的迎新，另外還有多校聯合舉辦的數資聯合迎新，可以認識外校同學或是學長姐。&lt;br>
-突然有點懷念數資聯合迎新在台大水樂園玩 RPG 的時候呢（？）&lt;/p>
-&lt;h3 id="科學營">科學營&lt;/h3>
-&lt;p>不知道什麼時候開始的傳統，似乎會去找北一的同學一起舉辦一個跟科學有關的營隊，我猜趁這個機會認識人是好機會。&lt;/p>
-&lt;h3 id="社團">社團&lt;/h3>
-&lt;p>這件事又可以扯很長了，在這邊沒辦法提，總之在資訊社的回憶很多很美好，而且也很好笑。參加各種社團大概是有效與異性接觸的管道(?)&lt;/p>
-&lt;h3 id="語癖與班上同學">語癖與班上同學&lt;/h3>
-&lt;p>升高中之後換了很多語癖，例如郭、嘍、顯然、電…等等，大部分都是從參加競賽或是同學參加競賽時與其他人碰撞所產生的有趣的火花。和這些強者在同一個班上沒有帶給我很多壓力（第一次段考就習慣後段了），不過我們這一屆來說班上很多同學都很有個性，例如會在班上運球(?!)或是大吼大叫的，有點像還在國中一樣，在高一高二的時候有點小困擾，但他們的實力也都是毋庸置疑的，和這些強者能夠同班實在是很榮幸，尤其是我個人覺得走物奧的人特別有想法，很佩服他們。&lt;/p>
-&lt;h2 id="結語">結語&lt;/h2>
-&lt;p>高中三年選擇科學班，雖然有許多辛苦的事情，例如很難的數理考題、各種吵雜的班上環境、還有最困難的做專題，但我也享受到了許多科班的權益，例如大量的化學、物理實驗課（雖然我沒有喜歡做實驗），還有與同儕或是學長請教、討論的機會，以及我覺得最有價值的讀書會，在讀書會認識的不管是學長學弟還是同屆，都讓我成長許多。我相信世上沒有完美的選擇，但希望各位選擇與沒有選擇科學班的學弟都能不後悔。&lt;/p>
-&lt;p>今天晚上是謝師宴，如果有什麼我想補充的會再更新。&lt;/p></description></item><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>&lt;h1 id="除錯模板的重要">除錯模板的重要&lt;/h1>
+這似乎是因為capture到值的時候還沒成功建構func這個變數，所以會出問題&lt;/p></description></item><item><title>科學班三年之小小紀錄</title><link>https://omeletwithoutegg.github.io/2021/08/13/ckcos-10th/</link><pubDate>Fri, 13 Aug 2021 04:47:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/13/ckcos-10th/</guid><description>&lt;h1 id="ckcos-10th">CKCOS 10th&lt;/h1>
+&lt;p>身為一個特殊班的學生，在畢業的時候還是會想打一些心得給未來的學弟參考吧。主要是希望對科學班有興趣的人可以了解科學班的一些權益與義務，在做這些決定的時候有更多資訊可以評估，也可以做好一些心理準備。&lt;/p></description></item><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>&lt;h1 id="除錯模板的重要">除錯模板的重要&lt;/h1>
 &lt;p>這是一篇很短的廢文。&lt;/p>
 &lt;p>當你發現你寫出的程式有 bug 的時候，就會是你花上很多時間的時候。&lt;br>
-尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// An AC a day keeps the doctor away.
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e">#pragma GCC optimize(&amp;#34;Ofast&amp;#34;)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#ifdef local
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define safe std::cerr&amp;lt;&amp;lt;__PRETTY_FUNCTION__&amp;lt;&amp;lt;&amp;#34; line &amp;#34;&amp;lt;&amp;lt;__LINE__&amp;lt;&amp;lt;&amp;#34; safe\n&amp;#34;
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define debug(args...) qqbx(#args, args)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define orange(args...) danb(#args, args)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> std&lt;span style="color:#f92672">::&lt;/span>cerr;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> ...T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> qqbx(&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">char&lt;/span> &lt;span style="color:#f92672">*&lt;/span>s, T ...args) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> cnt &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">sizeof&lt;/span>...(T);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ((cerr &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;\e[1;32m(&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> s &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;) = (&amp;#34;&lt;/span>), ...,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (cerr &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> args &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> (&lt;span style="color:#f92672">--&lt;/span>cnt &lt;span style="color:#f92672">?&lt;/span> &lt;span style="color:#e6db74">&amp;#34;, &amp;#34;&lt;/span> &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#34;)\e[0m&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>)));
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> danb(&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">char&lt;/span> &lt;span style="color:#f92672">*&lt;/span>s, T L, T R) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cerr &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;\e[1;32m[ &amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> s &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34; ] = [ &amp;#34;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">int&lt;/span> f &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; L &lt;span style="color:#f92672">!=&lt;/span> R; &lt;span style="color:#f92672">++&lt;/span>L) cerr &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> (f&lt;span style="color:#f92672">++&lt;/span> &lt;span style="color:#f92672">?&lt;/span> &lt;span style="color:#e6db74">&amp;#34;, &amp;#34;&lt;/span> &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>) &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#f92672">*&lt;/span>L;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cerr &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34; ]\e[0m&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#else
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define safe ((void)0)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define debug(...) ((void)0)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define orange(...) ((void)0)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#endif &lt;/span>&lt;span style="color:#75715e">// local
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e">#define all(v) begin(v),end(v)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> a[] &lt;span style="color:#f92672">=&lt;/span> {&lt;span style="color:#ae81ff">3&lt;/span>, &lt;span style="color:#ae81ff">6&lt;/span>, &lt;span style="color:#ae81ff">9&lt;/span>};
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> b;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> orange(all(a));
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> orange(all(b));
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> debug(&lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">3&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>利用 C++17 的 fold expression 可以讓 code 變得超級短。 &lt;code>&amp;quot;\e[1;32m&amp;quot;&lt;/code> 是代表綠色的代碼，可能在 windows 上不能用。當然，GDB 等等也是一個選擇，自己習慣最重要。&lt;/p></description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
+尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。&lt;/p></description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
 &lt;p>只是想打一下IOI的心得而已&lt;br>
 可能還是流水帳請多多包含(?)&lt;/p>
 &lt;h2 id="before">Before&lt;/h2>
 &lt;p>其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強&lt;br>
 因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西&lt;br>
 另外很好笑的是我這學期比前兩個學期還努力追學分，因為之前太混了XD這學期剛好要全部過才夠畢業的學分竟然夠了&lt;br>
-謝謝所有即使我交作業很混還是讓我過的老師!&lt;/p>
-&lt;p>四模拿了一個不錯看的分數，如果我在國手線下150分甚至可以抵回來(?)因為這件事我大概可以claim二階很好追分(並沒有)&lt;br>
-因為疫情的關係國培燒雞，我超期待的說，還想說今年想再寫一次國培紀錄QQ&lt;br>
-唯一比較算是訓練的東西是tmt(卡恩)和我們google meet討論一些題目&lt;br>
-第一次meet的時候是先丟題目討論，然後也講了去年的模考題，像是expected LCS那題好像就是暴力DP(雖然我不知道複雜度是什麼)&lt;br>
-ZCK真的超級積極，丟了好多POI或是JOI、CSAcademy的題目，好多題目我都是第一次見&lt;br>
-基本上沒有什麼想法，不過就算只是聽解也蠻困難的，有一些證明因為卡恩也是當場想所以有點久，我也沒注意聽就做自己的事了XD&lt;br>
-第二次meet主要討論IOI2019，有事前看過題目之後感覺就好一點了(?)不過因為一直想要把line得多一點分所以也沒有太專心(X&lt;br>
-感謝卡恩與zisk讓我腦袋有在動(?)&lt;/p>
-&lt;h2 id="day0">Day0&lt;/h2>
-&lt;p>看到好久沒看到的ZCK與wiwi還有(隔著口罩)呼吸到新鮮空氣心情還不錯&lt;br>
-晚上是練習賽&lt;br>
-題目都跟去年一樣&lt;br>
-唯一不一樣的是一題BFS&lt;br>
-結果還不能破台，好好笑&lt;br>
-不過差點在賽中因為唬爛弄出正解(?)&lt;br>
-結束之後問了一下ZCK解，果然他會只是剛好在兩小時的最後才想到(?)&lt;/p>
-&lt;h2 id="day1">Day1&lt;/h2>
-&lt;p>day1前一天打了一場div.2寫完ABCD看完F猜他的式子很漂亮就亂推AC了 然後E寫好久總算寫完&lt;br>
-這讓我感覺狀態還不錯，對我來說可能寫水題也是一個穩定心情的方法(?)&lt;/p>
-&lt;p>我們三個人還有監考人員占用一整個會議室，間隔開來坐&lt;br>
-原本是用acer的筆電但是後來變成msi的樣子，因為好像跑比較快&lt;/p>
-&lt;p>開賽的時候先打了模板&lt;br>
-ZCK帶來的鍵盤的聲音來讓人滿是壓力XD&lt;br>
-然後看紙本題目想&lt;br>
-然後&amp;hellip;就沒有然後了&lt;br>
-parks看起來有點困難先放著了一下&lt;br>
-candies看起來就很經典題，而keys也是沒有什麼想法&lt;br>
-一直畫圖交替想兩題，大概花了一小時還是沒有什麼想法&lt;br>
-三個人維持了安靜好久，然後ZCK開始動鍵盤的時候有夠可怕&lt;br>
-只好姑且先去撈分，撈了keys的基本分跟candies的一點分數&lt;br>
-仔細看了parks發現可以弄成類似2SAT的東西不過實作異常麻煩，而且我也忘記tarjan怎麼寫甚至跑去寫kosaraju(?)&lt;br>
-不過花了好久拿到了70分，我覺得還算值得&lt;br>
-接下來就繼續把candies的分數撈一撈，有一個subtask似乎是我唬爛得到的分數賽後才發現，唬爛就是爽&lt;br>
-最後一直在想candies $l=0, r=n-1$ 的subtask就結束了&lt;/p>
-&lt;p>結束之後有點怕自己又是銅牌命，趕快問分數，結果大家都一樣好好笑，而且都是銀牌左右的分數，看來 day1 實在蠻難的&lt;/p>
-&lt;h2 id="day2">Day2&lt;/h2>
-&lt;p>day1/2中間似乎吃了雙豚還是山嵐&lt;br>
-day2前一天因為睡不著跑去看了IOI2014之類的，然後發現做不出來趕快看解以免影響比賽，好好笑&lt;br>
-心中不想太多的雜事，很快就開賽了&lt;/p>
-&lt;p>打完模板開始讀題目，然後就遇到很欠嘴砲的水題(?)大概在25分鐘內就AC了，有點帶給我小小信心(X&lt;br>
-剩下兩題開始讀&lt;br>
-registers實在有點長，當然只能先去看dungeons&lt;br>
-因為想說贏了好像強度就會加倍，所以原本想說只會贏log次，寫到一半突然覺得怪怪&lt;br>
-後來發現應該是「贏了輸過的人的話那麼強度會加倍」，然後就不知道怎麼做了&lt;br>
-跑去讀registers題敘發現實在超級長，結果是要實作取min跟排序，感覺就是跟19的vision或是12的odometer這種題一樣噁心&lt;br>
-想一想覺得應該可以做很多平行化，而且去年的國培蔡孟宗甚至還講過平行化的bitonic sort，結果今年沒國培，好慘&lt;br>
-先做了取min的subtask，實作比較的方式我是先做減法，然後就可以有絕對值，就有min了&lt;br>
-平行化大概需要170個操作左右，和最後一個subtask要求150只差一點但是怎麼都壓不過，傷心&lt;br>
-後來看著dungeons一直想他怎麼樣會加倍，突然就想到2的冪次分層&lt;br>
-也就是說如果現在的強度 $z\in[2^i,2^{i+1})$ 就說現在在第 $i$ 層，那一定會輸 $2^{i+1}$ 以上的人、贏 $2^i$ 以下的人，而一旦贏了中間的人就會跳到下一層!&lt;br>
-啊待在某一層的時候一定是一直輸大的、贏小的直到贏了一個大的，因為是一張functional graph所以可以用倍增法&lt;br>
-總之整理了一下寫寫倍增法就有了時間 $(n+q)\log^2C$ 空間 $n\log^2C$ 的解，不過 $n=400000$ 開不下，開 $n=50000$ 丟上去六十幾分覺得還不錯&lt;br>
-後來測了一下發現記憶體少一點就可以開得下了，所以嘗試壓常(?)原本想說用分根號、立方根的，後來發現可以開到 $10n\log C$ 的記憶體就想說可以一次跳 $(10^7)^{\frac{1}{10}}$ 倍，然後一直亂改改就 AC 了??&lt;br>
-這應該是第一次在賽中遇到二的冪次分層，實在覺得出出這些題目的人都很厲害&lt;br>
-比賽最後在努力修改 registers 的情況下結束，可惜沒有再撈到分數&lt;/p></description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</guid><description>&lt;h1 id="ioic-2021">IOIC 2021&lt;/h1>
+謝謝所有即使我交作業很混還是讓我過的老師!&lt;/p></description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</guid><description>&lt;h1 id="ioic-2021">IOIC 2021&lt;/h1>
 &lt;p>去年就來過一次了，今年再次造訪這困難的營隊。&lt;br>
 其實幾乎沒有什麼特別不一樣的地方，不過我想說還是寫個短短的紀錄。&lt;/p>
 &lt;h1 id="吃的東西">吃的東西&lt;/h1>
 &lt;p>IOIC有準備早餐、午餐跟晚餐讓我們不用擔心時間太可怕的問題（？）&lt;br>
 然後還有下午的點心，大致上都不錯吃，除了有魚刺的便當QQ&lt;br>
-可惜的是去年會在吃東西的時候放影片，今年可能是因為疫情怕我們吵雜起來，甚至還讓我們坐梅花座。&lt;/p>
-&lt;h1 id="上課">上課&lt;/h1>
-&lt;p>這次上課的主題和去年比較起來，好像少了常數優化、隨機、分塊之類的，但是多了flow跟game theory。&lt;br>
-老實說很多東西都是聽過但是不那麼熟QQ&lt;br>
-喵喵時間不知道選訓有沒有機會再聽到一次(X&lt;br>
-而且講義幾乎都是「參考」前幾年的（雖然本來就應該要這樣，滾動式稍微有更新就好）&lt;br>
-這次覺得比較有聽到的應該是burnside lemma跟flow還有賽局的東東。雖然賽局的題目好像都跟上課沒什麼關係QQ只要會mex跟xor和通靈（重要）就好。&lt;/p>
-&lt;h1 id="模擬賽">模擬賽&lt;/h1>
-&lt;p>第一天趣味賽還可以，賽到一個隨機bubble sort的debug題&lt;br>
-接下來兩天天都爆炸，真的是實力檢討大會QQ&lt;br>
-第四天個人賽其實還不錯，但是就輸balbit，最後忙著猜pA來不及想I或是H QQ通靈難死&lt;br>
-第五天，放鬆打（？）反正好幾個人都在我們上面習慣了。&lt;br>
-這種長時間的比賽幾乎大家的開題都差不多，然後我很習慣用subtask來確認有沒有寫錯，只有整題的feedback超難@@&lt;br>
-最後差一點用題數贏，不過輸在就是輸在DP沒有想好QQ&lt;br>
-發獎品的時候拿到的是除蟲網（？）是不是要成為AY傳人了(#&lt;/p>
-&lt;h1 id="賽後補題">賽後補題&lt;/h1>
-&lt;p>基本上快把全部的題目都補完了，剩下兩題吧（？）&lt;br>
-在IOIC的judge搶topcoder好好玩，尤其是在用毒瘤演算法的時候XD&lt;/p>
-&lt;p>老實說上課幾乎都在刷題或是補題，我覺得這樣也許有點糟糕，不過我相信補題也是一種收穫。&lt;/p></description></item><item><title>jngen</title><link>https://omeletwithoutegg.github.io/2021/01/24/jngen/</link><pubDate>Sun, 24 Jan 2021 01:17:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/24/jngen/</guid><description>&lt;h1 id="jngen">jngen&lt;/h1>
+可惜的是去年會在吃東西的時候放影片，今年可能是因為疫情怕我們吵雜起來，甚至還讓我們坐梅花座。&lt;/p></description></item><item><title>jngen</title><link>https://omeletwithoutegg.github.io/2021/01/24/jngen/</link><pubDate>Sun, 24 Jan 2021 01:17:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/24/jngen/</guid><description>&lt;h1 id="jngen">jngen&lt;/h1>
 &lt;p>最近在生107北市賽題目的測資想放到TIOJ上面，其中一題是關於找兩個凸包的兩條內公切線交點。&lt;br>
 因為不太知道測資怎麼生，又想到之前東東有提過jngen這個東西，因此就把他拿來生成我需要的凸包了。&lt;br>
-我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X&lt;/p>
-&lt;h1 id="usage">Usage&lt;/h1>
-&lt;p>&lt;a href="https://github.com/ifsmirnov/jngen">https://github.com/ifsmirnov/jngen&lt;/a>&lt;/p>
-&lt;p>要使用jngen，你只需要&lt;a href="https://raw.githubusercontent.com/ifsmirnov/jngen/master/jngen.h">下載jngen.h&lt;/a>並引用標頭檔。下載來的標頭檔可以放在 &lt;code>/usr/include&lt;/code> 之類的地方，或是跟你的C++原始碼相同目錄當中。&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;#34;jngen.h&amp;#34;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> std&lt;span style="color:#f92672">::&lt;/span>cout, std&lt;span style="color:#f92672">::&lt;/span>endl;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> argc, &lt;span style="color:#66d9ef">char&lt;/span> &lt;span style="color:#f92672">*&lt;/span>argv[]) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> registerGen(argc, argv);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> parseArgs(argc, argv);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> n, m;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> getPositional(n, m);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Tree t &lt;span style="color:#f92672">=&lt;/span> Tree&lt;span style="color:#f92672">::&lt;/span>bamboo(n).link(n &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>, Tree&lt;span style="color:#f92672">::&lt;/span>star(m), &lt;span style="color:#ae81ff">0&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (getOpt(&lt;span style="color:#e6db74">&amp;#34;shuffled&amp;#34;&lt;/span>, false)) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> t.shuffle();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> t.printN().add1() &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> endl;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>下面只會挑這次有用到的主題帶過一些函數，我這次完全沒用到字串、圖論、數學的函式庫。&lt;/p></description></item><item><title>BambooFox CTF 2021</title><link>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</link><pubDate>Tue, 19 Jan 2021 12:09:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</guid><description>&lt;h1 id="bamboofox-ctf-2021">BambooFox CTF 2021&lt;/h1>
+我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X&lt;/p></description></item><item><title>BambooFox CTF 2021</title><link>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</link><pubDate>Tue, 19 Jan 2021 12:09:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</guid><description>&lt;h1 id="bamboofox-ctf-2021">BambooFox CTF 2021&lt;/h1>
 &lt;p>這次是第二次參加BambooFox，不過事前都沒有做什麼練習wwww本來想說去OT之前推薦過的網站練習一些基礎，但是忘記是什麼網站了888&lt;br>
-依然是跟joy一隊，然後另一個隊友變成casper了&lt;/p>
-&lt;p>今年似乎是大進步，不過我懷疑只是因為考很多演算法題orz&lt;/p>
-&lt;p>來講一些有解的題目，很抱歉我不知道怎麼讓我的code折疊起來XD&lt;/p>
-&lt;h2 id="gamers-cipher">Gamer&amp;rsquo;s Cipher&lt;/h2>
-&lt;p>一開場先開了 P versus ♯P，雖然查到解法可是精度跟速度都壓不過去，所以只好放棄改開別題。&lt;br>
-然後第一個成功的題目就是Gamer&amp;rsquo;s Cipher這一題。&lt;br>
-casper說看懂code就解完了（？）不過他沒辦法編譯所以也不知道怎麼辦。&lt;br>
-總之我也跑去下載code看，然後查了好一下子怎麼編譯Haskell（記得編譯要加&lt;code>-dynamic&lt;/code>的flag），成功編譯之後努力看懂code。&lt;br>
-看起來像是用&lt;a href="https://en.wikipedia.org/wiki/Nimber">Nimber&lt;/a>對字串加密，&lt;br>
-明文和密文的長度都是$n=51$，然後他的key必須要是$n$階的原根，所以我寫了一個腳本看哪些是合法的key。&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/bin/bash
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e"># search possible keys&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>len&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">51&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>printf &lt;span style="color:#e6db74">&amp;#34;len = %d\n&amp;#34;&lt;/span> $len
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> i in &lt;span style="color:#66d9ef">$(&lt;/span>seq &lt;span style="color:#ae81ff">0&lt;/span> 255&lt;span style="color:#66d9ef">)&lt;/span>; &lt;span style="color:#66d9ef">do&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo $i
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf &lt;span style="color:#e6db74">&amp;#34;%51s\n%d\n&amp;#34;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;&amp;#39;&lt;/span> $i | tr &lt;span style="color:#e6db74">&amp;#34; &amp;#34;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;a&amp;#34;&lt;/span> | ./Main 2&amp;gt;/dev/null &amp;gt;/dev/null &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> printf &lt;span style="color:#e6db74">&amp;#34;i = %d\n\n&amp;#34;&lt;/span> $i &amp;gt;&amp;gt; possible.txt
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">done&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>但是關鍵的加密部份怎麼樣都不確定我看的對不對，所以我先把nimber的乘法表弄成一個文字檔存起來，再另外寫一個python跟Haskell的輸出比對&lt;br>
-整理一下之後發現，欸這個式子不就是傅立葉轉換嗎？！（而且還是用Nimber做DFT，酷爆）就想說可能要用多項式插值或是寫inverse FFT&lt;br>
-之後用python寫inverse DFT寫掉了，基本上只要把key的乘法反元素找出來帶進去傅立葉轉換的式子就好了&lt;/p></description></item><item><title>Miku Cursor on Arch Linux</title><link>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</link><pubDate>Thu, 10 Dec 2020 17:05:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</guid><description>&lt;h1 id="在arch的初音游標">在Arch的初音游標&lt;/h1>
+依然是跟joy一隊，然後另一個隊友變成casper了&lt;/p></description></item><item><title>Miku Cursor on Arch Linux</title><link>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</link><pubDate>Thu, 10 Dec 2020 17:05:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</guid><description>&lt;h1 id="在arch的初音游標">在Arch的初音游標&lt;/h1>
 &lt;p>因為在Windows有下載一個可愛的初音游標，但是之前換成Ubuntu後就沒有把他裝回來，覺得很可惜。&lt;br>
 因此現在換成Arch之後，想說應該有一些社群的package可以用了，直接抓來就好，但是怎麼google都google不到？&lt;br>
-因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。&lt;/p>
-&lt;ol>
-&lt;li>找到&lt;a href="https://home.gamer.com.tw/creationDetail.php?sn=1760192">巴哈姆特&lt;/a>上面的原始檔（是.ani跟.cur）&lt;/li>
-&lt;li>利用&lt;a href="https://github.com/paddygord/cursor-converter">cursor-converter&lt;/a>把.ani和.cur換成x-cursor的icon類型&lt;/li>
-&lt;li>手動把對應的圖案複製到 &lt;code>~/.icons/$THEME/cursors&lt;/code> 裡面&lt;br>
-如果不知道哪個檔名是什麼的話，可以先複製別的theme的資料夾，接著用 &lt;code>xcur2png&lt;/code> 換成 png看某個檔案實際上是對應哪個圖案。&lt;/li>
-&lt;li>加上 &lt;code>index.theme&lt;/code>。反正只要有Name就可以了吧我猜&lt;/li>
-&lt;/ol>
-&lt;p>中間踩了各種怪東西XD&lt;br>
-我原本先去下載了其他主題，想說看別的主題的游標應該是什麼對應到什麼，尤其是有動畫的。&lt;br>
-不過似乎有動畫的游標和沒動畫的檔名一樣QQ&lt;br>
-然後有找到一個ani2png，但是畫質會爆炸而且沒有幫忙放到對應的位置（雖然最後也是我們自己放到對應的位置）&lt;br>
-接著找到CSDN上面有人說用CursorXP從Windows上面把游標主題包起來，接著在Linux下載一個用來轉換成icon類型的Perl腳本，&lt;br>
-會轉換成一個tar.gz然後就可以安裝的樣子了，不過還是偏糟，從Windows上面看就發現畫質還是大小大爆炸了&lt;/p>
-&lt;p>最後終於走對路，找到github上面一個比較新的repo是把.ani跟.cur轉成linux的x-cursor檔案&lt;br>
-真是要感謝他們www&lt;/p>
-&lt;p>話說我發現其實可以直接把檔案放到&lt;a href="https://github.com/OmeletWithoutEgg/miku-cursor-theme">github&lt;/a>上面，這樣也可以推廣或是找人來修改(X&lt;br>
-裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ，所以希望放到github上之後有人可以把其他那些icon改成統一的風格owo&lt;/p></description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>&lt;p>好久又沒有發文了&lt;br>
+因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。&lt;/p></description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>&lt;p>好久又沒有發文了&lt;br>
 來講講上一次發文之後我都在做什麼好了&lt;/p>
 &lt;h2 id="before-ioi">Before IOI&lt;/h2>
 &lt;p>首先在8/17開始所謂的賽前集訓&lt;br>
@@ -717,108 +118,10 @@ casper說看懂code就解完了（？）不過他沒辦法編譯所以也不知�
 還得用PC2 judge，不過我們最後都變成在玩python in one line了&lt;br>
 之後他又講了有關點連通、邊連通跟degree之類的關係&lt;br>
 後來吳邦一教授來講課，他講了一些IOI的題目還有一些常見的trick，例如四邊形之類的&lt;br>
-那時候就能看出來我超爛(((&lt;/p>
-&lt;p>週末是在師大上王柄豐的課&lt;br>
-這時似乎已經累計很多他丟的題目沒寫了QQ&lt;/p>
-&lt;p>下一個禮拜是在清大和交大&lt;br>
-第一天韓永楷教授早上早上上的有點基礎，不過下午上的東西還蠻有趣的&lt;br>
-另外有遇到吳宗達跟盧可瑜(?) 還聽到了奇怪的洋蔥式資料結構&lt;br>
-第二天是蔡孟宗教授講parametric search跟matroid之類的東西&lt;br>
-雖然matroid和submodular的東西我是幾乎聽不懂，不過我覺得這天的課都還算是有趣&lt;br>
-第三天是蔡錫鈞教授，我一開始感覺他不是很友善，然後外加上我超想睡，而且其實頗難的，課聽進去的沒有多少QQ&lt;br>
-下午的時候謝旻錚教授找了hank來跟我們virtual IOI2017&lt;br>
-想當然而我被打爆，而且AY還贏了hank，超強orzzzz&lt;br>
-晚上被教授請客XD不過餐廳有點太高級不敢吃什麼東西&lt;br>
-周五的時候謝旻錚教授講了一些計算幾何的東西，感覺只要提到簡單多邊形就是超級噁心的@@&lt;/p>
-&lt;p>回到台北之後都是王柄豐的課了&lt;br>
-終於聽到了toptree，不過還沒有實作過QQ&lt;br>
-然後也把之前ICPC的題目程式碼給補了一點點&lt;br>
-啊IOI也vir了幾場 可是總感覺沒有胸有成竹的感覺&lt;br>
-只能說IOI比成這樣真的是自己練習不足啊&lt;/p>
-&lt;p>在集訓完到IOI這中間有空一個禮拜，而且還是在開學期間，實在有夠尷尬&lt;br>
-總之我把他當成有公假，而我們的校內賽初賽也是在這個禮拜，正好可以回去確認狀況以及去校內培訓玩玩(?)&lt;/p>
-&lt;p>話說我們這屆的人能出校內賽其實算神奇&lt;br>
-原因是因為我們幾個有進過全國賽不會在北市賽佔到建中的名額，所以老師就找我們來出題目&lt;br>
-雖然我們出的題目好像沒有說很好QQ&lt;br>
-不過初賽感覺問題比較像是當天流程沒有仔細check好QQ&lt;/p>
-&lt;h2 id="after-ioi">After IOI&lt;/h2>
-&lt;p>回到教室有種更尷尬的感覺&lt;br>
-不過總之周一下午跟著蕭梓宏他們跑去台大上了微積分一&lt;br>
-前面幾堂講的實在好基礎(#)&lt;br>
-另外我周三和周五的早上有去旁聽線性代數&lt;br>
-上了幾天的課之後&lt;br>
-我發現我就算沒去台大修課，大家也剛好會去，因為班上沒人自然就沒辦法上課&lt;br>
-再加上我也沒有修這學期的數理課程，事實上我幾乎沒有課需要上啊OAO&lt;br>
-要擔心的只有國文/英文/藝術與生活/體育，我覺得英文應該是最佳選擇&lt;/p>
-&lt;p>我上微積分的第二個禮拜就開始感覺困難了orz&lt;br>
-總之希望是可以好好修完&lt;br>
-校內賽複賽變成是有點尷尬，因為我們流程是我們出題、老師選題，啊又剛好沒選到太多水題或是學長的題目QQ&lt;br>
-我覺得我應該當初直接寫出來說推薦可以直接選哪些題&lt;br>
-而且老實說也應該出幾題培訓有講過的東西，自己的盲點真的自己看不到@@&lt;br>
-大家當天的分數普遍都很低&lt;br>
-不過至少最後預期會進的人大部份都進了，還算是幸運&lt;/p>
-&lt;p>在中秋連假的時候我買了一把新鍵盤，是ducky one的60%紅軸，用起來真的只能說超爽的wwww紅軸軟又軟，啊鍵位也都整個習慣了之後小巧的它就很有魅力wwww&lt;br>
-現在我的書包裡面除了筆電跟軟軟以外還多了鍵盤這個常駐物品&lt;br>
-Esc離手指超近而且方向鍵又被拔掉超爽的XDDDD&lt;br>
-可是有一個重大問題是用注音打字的時候我習慣按方向鍵XDD 所以還是得跑去弄組合鍵&lt;br>
-總之，希望我以後還能夠常常用到這把鍵盤，還有希望他能陪我很久&lt;/p>
-&lt;p>
- &lt;img src="https://omeletwithoutegg.github.io/images/after-IOI/duckyone.jpg" alt="Ducky One 2 Mini">
-
-&lt;/p></description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</guid><description>&lt;h1 id="二階奇幻之旅">二階奇幻之旅&lt;/h1>
+那時候就能看出來我超爛(((&lt;/p></description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</guid><description>&lt;h1 id="二階奇幻之旅">二階奇幻之旅&lt;/h1>
 &lt;p>原本一段剛好和一階撞到，可以免考，但是因為疫情的緣故又錯過了&lt;br>
 不過在我們從一階回來之後傳出師大那邊有確診的消息，而且還跟我們用過同一間教室(?)&lt;br>
-所以我們就剛好利用防疫公假得到免考的資格，嘻嘻&lt;/p>
-&lt;h2 id="防疫公假">防疫公假?&lt;/h2>
-&lt;p>在自主健康管理的這段期間，我除了家裡基本上都待在王政祺家地下室&lt;br>
-寒假的時候去那邊都是在打桌遊，不過這個禮拜去不是在刷題就是在刷題XD&lt;br>
-有戳了一些POI還是BOI，不過POI真的好怪，什麼官解一兩百行特判的數學題之類的&lt;br>
-AY來的時候他會丟CF的題目，然後帶我們吃超多拉麵&lt;br>
-不過我真的對蒜不行&amp;gt;&amp;lt;&lt;/p>
-&lt;h2 id="二階">二階&lt;/h2>
-&lt;p>總之防疫公假結束之後就無縫接軌二階&lt;br>
-因為師大有確診所以我們原本應該是要待在家裡邊防疫邊線上上課&lt;br>
-我們的住宿和披薩全都因為疫情泡湯QAQ，變成線上授課&lt;br>
-啊我們上課就不是重點喔@@我覺得能夠不管任何外部事務，只專心互相討論題目、或者耍廢才是我心目中(?)的選訓營QQ&lt;br>
-非新北、台北的學生可以有一晚的住宿，我好想要飯店早餐(&lt;/p>
-&lt;p>既然我們都覺得教授上的課不是重點，能夠和其他電神互相討論才是選訓營最大的好處&amp;gt;&amp;lt;&lt;br>
-於是我們建中一群人就借用了電教和創客教室來討論(?)&lt;br>
-有些南部人待在台北的也跟著來ㄌ，這一團變得超熱鬧&lt;/p>
-&lt;h3 id="捯捯捯捯捯捯捯">捯捯捯捯捯捯捯&lt;/h3>
-&lt;p>AY跑去新竹跟東東和balbit刷題的樣子，第二個禮拜double學長也跑下去&lt;br>
-模考的時候他們再跑上來&lt;br>
-總之我們好像每次模考就會吃一兩次拉麵XD好爽&lt;/p>
-&lt;h3 id="課程">課程&lt;/h3>
-&lt;p>在二階上的有些課很奇怪，比如說什麼KMP和SA，或者建凸包求面積之類的&lt;br>
-雖然從北市賽到入營考考的字串題好像只有AC自動機那題，可是在二階教這些超奇怪的吧XD&lt;/p>
-&lt;p>有一堂課是教授會丟題目給我們寫，給一個很大的測資然後要我們找出答案之類的&lt;br>
-去年似乎是舉手讓教授看，不過今年是用google meet，答案直接打在聊天室，沒有避嫌超奇怪啦&lt;br>
-雖然是教分治的教授，不過有丟了一些有趣的DP題目&lt;/p>
-&lt;p>這次也聽到了Level Ancestor的做法，Ladder Algorithm好神奇喔&lt;br>
-不過RMQ的O(N)O(1)也聽了好幾遍，已經聽膩了&lt;/p>
-&lt;p>國手們來講課的時候AY好像弄了一個DC的bot，於是我們後面就開始duel&lt;/p>
-&lt;h3 id="休閒娛樂">休閒娛樂&lt;/h3>
-&lt;p>什麼是duel呢?&lt;br>
-就是讓bot選一題然後兩個人比誰先想出來然後AC XD&lt;br>
-我好像沒有duel的太積極ww不過AY和balbit似乎超常對決&lt;/p>
-&lt;p>不知道從誰開始玩BTD battles的，我們幾乎每天都玩(到二階結束還在玩)&lt;br>
-03t教的策略超強，可是我還是常常玩到破產，只能打五元的，超可憐又一直遇到金錢幾百萬的對手，怎麼贏?&lt;/p>
-&lt;p>另外因為沒有被關在師大，吃飯就成了一個問題&lt;br>
-我們除了在建中的熱食部吃以外，也去吃了好幾家拉麵，有點罪惡感XD&lt;br>
-啊也因為沒有被關在師大，我就可以順理成章的在晚上去打音遊，真爽(現在sdvx中毒中:P)&lt;/p>
-&lt;h3 id="模考">模考&lt;/h3>
-&lt;p>模考在師大本部舉行，地點是一個會議室(汗)&lt;br>
-而且跟全國賽一樣是用筆電，不過這次升級成電競筆電了(不如把預算拿去幫我們弄住宿或上課空間QQ)&lt;/p>
-&lt;p>三模難度超高QQ，本來以為自己被電爆不過似乎拿到最高分，因為拿到一題FWT的56分@@可惜我沒拿滿&lt;br>
-剩下pCpD幾乎沒人拿到分數，超可怕&lt;br>
-我pA沒有把手做的分數拿滿有點可惜(?)&lt;/p>
-&lt;p>四模的話，pA看起來是可以做的題目(幸好進位制不是負的)，花了一些時間丟上去部分分確定是對的之後優化個兩三次就AC了&lt;br>
-剩下的題目都做不出來QQ原本以為pB是可以做的DP但是出來好像大家都不會&lt;br>
-pC沒有拿滿很可惜，pD也是和大家一樣沒想法不過可惜我沒去拿一條鏈的case&lt;/p>
-&lt;h2 id="接下來">接下來?&lt;/h2>
-&lt;p>因為我在學校嘗試待了一個禮拜之後發現真的待不太下去(這就是奧林匹亞回歸症候群嗎&amp;hellip;)&lt;br>
-於是成功的用準備資奧的理由請了假，罪惡感爆棚呢XD&lt;br>
-現在該做的事可能就是編講義、寫題解吧，希望自己不要頹廢OvO&lt;/p></description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>&lt;h1 id="選訓生活">選訓生活(?)&lt;/h1>
+所以我們就剛好利用防疫公假得到免考的資格，嘻嘻&lt;/p></description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>&lt;h1 id="選訓生活">選訓生活(?)&lt;/h1>
 &lt;p>最近部落格停更好久喔&amp;gt;&amp;lt;&lt;br>
 不知道有沒有沒有追蹤我facebook的人在看我的部落格，嘻嘻&lt;/p>
 &lt;h2 id="入營考當天">入營考當天?&lt;/h2>
@@ -827,202 +130,15 @@ pC沒有拿滿很可惜，pD也是和大家一樣沒想法不過可惜我沒去�
 不過記分板上沒有每個人的名字，只有學校和編號&lt;br>
 幸好遇到一個奇怪的家長有拍名單之類的XD 讓我們能夠對照&lt;br>
 最後結果是AY破台拿第一，除了03t以外的建中高二應該都進了一階&lt;br>
-我們之後分團去ㄘ了拉麵！&lt;/p>
-&lt;h2 id="一階">一階&lt;/h2>
-&lt;p>懷著新奇的心情來到這個地方，報到時我好像是蠻晚進去的幾個(因為林哲宇帶路)&lt;br>
-一開始我本來想說可以打osu，因為去年似乎好多人那樣刷時間?&lt;br>
-不過晚上看到好多人在刷題，我超怕www&lt;br>
-於是就開始寫不知道甚麼題目&lt;/p>
-&lt;h3 id="課程">課程&lt;/h3>
-&lt;p>有幾堂是教授講課，首先是入營考的題解，不過好像被發現有一題假解XDD&lt;br>
-之後有一個是張經略教授，他會在白板上畫加菲貓而且上課超級high(他自嗨功力很高)&lt;/p>
-&lt;p>有一堂課是國手經驗分享，bert和minson說了好多奇怪的趣聞(?)&lt;br>
-第一個禮拜幾乎所有人都出現了(?) BB、電石、吳聖福、王彥仁好幾位都有來講題目or分享奇怪心得&lt;/p>
-&lt;p>從一模隔天開始，剩下的教授幾乎都是線上上課，所以我後來幾乎沒有在上課QQ&lt;br>
-O(N)O(1)RMQ 教了幾百遍聽到不想再聽(X)&lt;br>
-教室似乎因為防疫的關係換了三次左右，有點煩躁&lt;/p>
-&lt;p>第一個禮拜我刷的比較多應該還是TIOJ，畢竟我還是覺得我刷不動POI(?)&lt;br>
-不過第二個禮拜開始刷一些BOI，想說練一下喇分能力&lt;br>
-可是不知道是題目問題還是我的個性幾乎不是直接想到滿分解就是只有不到三十的部分分QQ&lt;br>
-POI和JOI仍然還在我的實力的很上方&lt;br>
-話說一模附近幾天剛好是JOISC，不過難到炸，我完全寫不出啥&lt;/p>
-&lt;h3 id="飲食住宿">飲食住宿&lt;/h3>
-&lt;p>我們的飯店是台大捷絲旅，對面就是哈拉星球XDD，可惜沒有辦法去打QQ&lt;br>
-然後我的室友是暘典，好像有點自然的就稍微變熟不過還是很不熟(?)&lt;br>
-早餐是飯店的早餐，這十四天每天早上吃這個真的超級爽耶，我超愛炒蛋和炸的東西&lt;br>
-午餐和晚餐在師大的學餐吃，我覺得中餐真的就是該吃早餐部XD&lt;br>
-joy一直推薦西西里雞腿堡加蛋加起司，不過我覺得沒有傳言那麼好吃&lt;br>
-晚餐就只剩西餐廳跟自助餐兩個選，我覺得西餐廳的拉麵超級糟糕，丼飯也只是勉強能吃ww&lt;br>
-自助餐則是超級尷尬的選擇，不好吃也不難吃，不過很容易就超過預算90元要自掏腰包www&lt;/p>
-&lt;p>在吃飯的時候基本上都會打牌，因為這似乎是無聊的選訓生活中少數的消遣(?) (雖然我現在覺得選訓一點都不無聊QQ)&lt;br>
-最常打的是拿破崙，ericxiao真的大師，啊seanliu到第二個禮拜才發現他知道的比牌大小規則是錯的XD超好笑&lt;br>
-此外因為那時候mini metro限免，大家一窩蜂去下載來玩&lt;br>
-吃完飯之後我幾乎都會買微舒打，好爽喔&lt;/p>
-&lt;p>在飯店，有時候晚上會和祺他人在其他房玩狼人殺或打拿破崙之類的(?)&lt;br>
-有時也會有淇怪的人來我們房間玩(?)&lt;br>
-每天晚上點名的時候有零食和飲料，算是填填牙縫(&lt;br>
-晚上沒什麼消遣，除了打牌玩狼人殺，或者打code以外，也可以跟人聊天 &amp;lt;3&lt;/p>
-&lt;h3 id="模考">模考&lt;/h3>
-&lt;p>如同國手們分享經驗時所說的，我覺得我正好就是那些在北市賽、全國賽也許表現得好，但是是第一次模考的菜雞&lt;br>
-他們提到說賽中要多喝水、多上廁所，也要記得補充血糖，轉換轉換心情並讓大腦保持清醒&lt;br>
-其實這些我在500days那本書就看過了好幾次，不過我還是當作重要的一些策略記著&lt;br>
-一模的時候我雖然打得很差，可是我沒有想到什麼特別的原因讓我打爛，單純只是我都沒有想法而已&lt;br>
-因為還沒踏進棺材所以晚上也不是特別難過，不過看到打得比我好的說什麼我很強就覺得超級不爽= =想打人(例如joy)&lt;br>
-看到別人分數比自己高還是會超級羨慕的吧&lt;br>
-二模因為pC出一大堆問題所以大家好像都打得很爛，不過我pC是最後才碰的所以幸運沒有踩雷&lt;br>
-而且還是因為pD測資爛撈到一個AC= =現在回去看每一場都有憐憫我的分數&lt;/p>
-&lt;p>模考的難度聽說比以往難，然後我實際寫也是感覺真的很難(雖然我沒去過以前的)，可能跟一些div 1的場次一樣吧?&lt;br>
-不過撈部分分的能力應該才是真正決勝的地方，有請品翔喇分大師分享入營考0AC的經驗&lt;/p>
-&lt;h2 id="列舉事項">列舉事項&lt;/h2>
-&lt;p>因為一階遇到很多酷哥，所以我要從facebook抄過來那段列舉&lt;br>
-幾件神奇的事情：&lt;/p>
-&lt;ol>
-&lt;li>thomaswang和ericxiao分別站在爛梗光譜的兩端&lt;/li>
-&lt;li>西餐廳的拉麵超糟 午餐吃早餐部唯一真理吧&lt;/li>
-&lt;li>天天喝微舒打好爽&lt;/li>
-&lt;li>吃飯店的早餐有夠爽&lt;/li>
-&lt;li>晚餐或晚上超常打拿破崙 seanliu打了兩個禮拜竟然有規則不知道 然後蕭電超強&lt;/li>
-&lt;li>YoJaHuang&amp;amp;品翔歌神了吧&lt;/li>
-&lt;li>實中的人都超酷 除了tommydong比較正常一點&lt;/li>
-&lt;li>仲群病毒大家都一直學www 「我燒雞」 「呃 我弱」&lt;/li>
-&lt;li>casperwang洗澡專家 不過還是教不會品翔&lt;/li>
-&lt;li>好多東西都是第一次接觸到 例如十二人狼人殺或是學生餐廳的點餐方法www&lt;/li>
-&lt;/ol>
-&lt;h2 id="待續">待續&amp;hellip;&lt;/h2>
-&lt;p>因為打這篇的時候我在學校努力上課(?) 所以打得斷斷續續的，一階結束之後的事放到下一篇打好了&lt;br>
-待在學校真的好可怕，所謂奧林匹亞回歸症候群就是這樣嗎QQ&lt;br>
-英文國文化學物理一直打瞌睡，然後我也不敢(或懶得)要之前沒拿的講義，完美詮釋社交障礙&lt;br>
-問了一些學長，明天問問看特教組申請推薦的方法和能不能請公假好了&lt;br>
-我要跑去看FF7實況了，TIFA真香&lt;/p></description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>&lt;h1 id="2020-ioic-小記">2020 IOIC 小記&lt;/h1>
+我們之後分團去ㄘ了拉麵！&lt;/p></description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>&lt;h1 id="2020-ioic-小記">2020 IOIC 小記&lt;/h1>
 &lt;p>五天都11點回家 好累喔&lt;br>
 不過聽到很多神奇技巧和神奇題目(?)&lt;/p>
 &lt;h2 id="day-1">Day 1&lt;/h2>
-&lt;p>早上是常數優化與電腦結構，看到一些毒瘤的東東還有會造成我常數大的一些寫法&lt;/p>
-&lt;p>中午有貓貓時間，電仁分享了他競程的心得之後，丟給我們一些題目&lt;br>
-可是我幾乎都不會做QQ&lt;br>
-下午塗大為的DP&amp;amp;圖論，速度超快的www趕火車&lt;br>
-聽到有點快要睡著，超難&lt;/p>
-&lt;p>晚上趣味賽有一個隊友還沒來QQ，不過這種類型的題目真棒&lt;br>
-空白、tab和換行不算edit distance的規則沒有想到能讓註解佔了好多除蟲題的名額XD&lt;/p>
-&lt;h2 id="day-2">Day 2&lt;/h2>
-&lt;p>資料結構初階OwO!&lt;br>
-直接從前一天下午的惡夢變成舒適的溫水浴，於是我決定自己翻講義刷題&lt;br>
-可是圖論超煩躁，DP我也不會SCC我也一直寫爛，搞了快半天AC不了半題WTF&lt;br>
-最後還被卡記憶體，直接怒不寫了QQ&lt;br>
-下午原本是數學被換成根號算法，因為蔣立元有講過蠻多的所以YP這堂還算友善(?)&lt;br>
-聽到很多有趣的題目，不過可惜我前一天自己看講義被捏到一些QQ&lt;br>
-除了2的冪次分層(不知道怎麼用)以外都蠻喜歡的&lt;br>
-因為分塊就是優美的暴力(O)&lt;/p>
-&lt;p>第一場個人賽，實在是打的有點差&lt;br>
-pA被我擱置，聽到解法之後覺得超顯然QQ為甚麼我賽中不開啊&lt;br>
-開場就碰pF，碰到結尾還AC不了，到底三小&lt;br>
-我已經自認locality很好了欸QAQ而且取模乘法加法都有好好寫啊 早知道就多試一點順序了&lt;br>
-pC開的極慢，DP式一直推不出來，有夠爛，還一直亂猜加一減一吃WA吃滿&lt;br>
-pE水題太慢看到ww在附中練習賽有寫過所以速速AC&lt;br>
-pD樹重心，推導一下式子之後想到二分搜祖先再加上去(題解後感覺這個解超爛QQ)&lt;br>
-pG是樹上莫隊裸題，但我不知道為甚麼沒自信寫(X)&lt;br>
-時間全都砸在pB，想到一個實作又臭又長的作法，花了好久實作之後TLE&lt;br>
-到結束沒時間再寫出一題QQ&lt;br>
-結束之後YP跟我說我差一點AC pB，要用degree分塊才不會爛掉(我就爛)&lt;/p>
-&lt;h2 id="day-3">Day 3&lt;/h2>
-&lt;p>早上字串，幾乎都是聽了n遍之後已經大概知道的東西(?)&lt;br>
-AC前一天pB之後有點不知道要做啥&lt;br>
-於是我試著刻了AC自動機，參考了一下講義上的code之後傳到TIOJ 1306得到SF&lt;br>
-我想說是不是我空間開錯，怎麼開都會SF，看了一下其他人的AC code發現他們都開4e5&lt;br>
-然後我開了還是SF，後來才發現是我有地方寫錯@_@&lt;br>
-後面唯一覺得有興趣的後綴自動機仍然沒有聽懂(?)雖然之前在講師小莫的blog上面看過了不過還是感覺好複雜&lt;br>
-隨機和近似實在是不太容易通靈出來，有些只要直覺的隨便亂做多次一點就足夠AC&lt;br>
-但是竟然有要先自己創造另一個題目的算法XD太難啦&lt;/p>
-&lt;p>團體賽總算是有了第三個隊友&lt;br>
-pH是裸題，pI是水題，隊友找出來之後我趕緊水掉&lt;br>
-剩下根本找不出來甚麼題目可做XD&lt;br>
-pD是簡單DP，可是我一直WA，還好隊友有提醒我一些鬼邊界狀況&lt;br>
-剩下時間花了好多開pJ，結果還漏看一個條件，而且在樹上的想法也是錯的QQ&lt;br>
-pB以為是簡單結論題沒想到原來是奇怪的經典題(?)&lt;br>
-pC也應該猜一猜在賽中寫出來的，有點可惜&lt;/p>
-&lt;h2 id="day-4">Day 4&lt;/h2>
-&lt;p>電石的資結進階，除了Pattern以外都有稍微聽過(線段樹優化建圖是在某一次蕭梓宏選的virtual場看到的XD)&lt;br>
-CDQ分治更是直接聽電石本人講過ww&lt;br>
-Pattern這東西好神奇喔，我想還要好久我才能通透，感覺題目再一些變化的話我就看不出來了&lt;br>
-下午是數學，但在上課之前出現神秘講師短短的講了Splay和LCT就不見了XD(聽說他是原本FFT的講師?)&lt;br>
-中堂休息之後突然就切換到數學模式，頓時有種我不會數學的感覺，明明聽過那麼多東西卻無法好好應用&lt;br>
-(也許我應該去精進我的數學實力? 要怎麼讀啊?)&lt;/p>
-&lt;p>個人賽一開始有想法只有pB，看到Scoreboard上面大家都AC pD就猜是水結論題直接給他猜結論下去XDD&lt;br>
-接著花時間把pB寫掉了，雖然看到一些人在丟pC不過沒什麼想法，反而翻到pE是今天電石上課直接講過的東西XD&lt;br>
-因為印象很深所以想說要自己刻出來，不過最後還是參考了一些講義的細節想法QQ&lt;br>
-幸運的搶到pF首殺之後發現pC其實好水，寫掉之後就沒事做了(?)&lt;/p></description></item><item><title>bamboofox-ctf</title><link>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</link><pubDate>Thu, 02 Jan 2020 15:00:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</guid><description>&lt;p>這次打跨年CTF應該是我第一次打一個正常的CTF吧（？）&lt;br>
+&lt;p>早上是常數優化與電腦結構，看到一些毒瘤的東東還有會造成我常數大的一些寫法&lt;/p></description></item><item><title>bamboofox-ctf</title><link>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</link><pubDate>Thu, 02 Jan 2020 15:00:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</guid><description>&lt;p>這次打跨年CTF應該是我第一次打一個正常的CTF吧（？）&lt;br>
 感覺好多有趣的題目www&lt;br>
 &lt;a href="https://ctf.bamboofox.cs.nctu.edu.tw/">https://ctf.bamboofox.cs.nctu.edu.tw/&lt;/a>&lt;/p>
 &lt;h1 id="solved-problems">Solved Problems&lt;/h1>
 &lt;h2 id="welcome">Welcome&lt;/h2>
 &lt;p>Joy說看題目給的影片就有flag了&lt;/p>
 &lt;h2 id="web-newbie">Web newbie&lt;/h2>
-&lt;p>被作業解掉，好像往source code的註解裡面找就對了&lt;/p>
-&lt;h2 id="land-1">Land-1&lt;/h2>
-&lt;p>良心題&lt;br>
-直接copy全國模擬賽的code，送我們這些有打的人免費分數&lt;br>
-Land-2碰了好久一直CE，QQ&lt;/p>
-&lt;h2 id="i-cant-see-you">I can&amp;rsquo;t see you&lt;/h2>
-&lt;p>給了一個 &lt;code>what.rar&lt;/code> ，Joy說不知道密碼不過丟到網路上某個工具就解開了XD(密碼是blind，聽說有人直接猜出來)&lt;br>
-之後會看到一張白底有黑點的圖片，對照盲人點字可以拿到flag&lt;/p>
-&lt;h2 id="how2decompyle">How2decompyle&lt;/h2>
-&lt;p>題目給了一個沒有副檔名的檔案&lt;br>
-因為題目名稱裡面有py，嘗試把他丟到google找到的decompyler之類的東西?&lt;br>
-不過因為沒有副檔名他不吃，他只吃.py和.pyc(這時我們才知道我們大概拿到.pyc，是byte code XDD)&lt;br>
-於是改副檔名再丟一樣的地方就得到原始的.py檔了&lt;br>
-讀一下發現怎麼讓他跑出flag之後跑一跑就AC了(?)&lt;/p>
-&lt;h2 id="happy-new-year">Happy New Year&lt;/h2>
-&lt;p>賽中新增的題目，直接給flag ww&lt;/p>
-&lt;h2 id="tree">Tree&lt;/h2>
-&lt;p>作業丟給我的(?)&lt;br>
-解壓縮他給的檔案之後發現看起來很欠DFS，確定葉節點是檔案可以直接讀之後就想寫個DFS&lt;br>
-不過shell的遞迴我不會，想說用python，不過還是要查套件:(，爛死&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> os &lt;span style="color:#f92672">import&lt;/span> chdir
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> glob &lt;span style="color:#f92672">import&lt;/span> glob
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">dfs&lt;/span>(s):
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	s &lt;span style="color:#f92672">=&lt;/span> s[&lt;span style="color:#ae81ff">0&lt;/span>]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#75715e">#print(&amp;#39;s = &amp;#39;, s)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	typ &lt;span style="color:#f92672">=&lt;/span> s[&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#75715e">#print(typ)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">if&lt;/span> typ &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;+&amp;#39;&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		&lt;span style="color:#66d9ef">return&lt;/span> dfs(glob(s&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/0_*&amp;#34;&lt;/span>)) &lt;span style="color:#f92672">+&lt;/span> dfs(glob(s&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/1_*&amp;#34;&lt;/span>))
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">if&lt;/span> typ &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;x&amp;#39;&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		&lt;span style="color:#66d9ef">return&lt;/span> dfs(glob(s&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/0_*&amp;#34;&lt;/span>)) &lt;span style="color:#f92672">*&lt;/span> dfs(glob(s&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/1_*&amp;#34;&lt;/span>))
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">if&lt;/span> typ &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;r&amp;#39;&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		&lt;span style="color:#75715e">#print(&amp;#39;path = &amp;#39;, s)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		&lt;span style="color:#66d9ef">return&lt;/span> int(open(s)&lt;span style="color:#f92672">.&lt;/span>read())
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> i &lt;span style="color:#f92672">in&lt;/span> range(&lt;span style="color:#ae81ff">37&lt;/span>):
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	chdir(&lt;span style="color:#e6db74">&amp;#34;flag[&amp;#34;&lt;/span>&lt;span style="color:#f92672">+&lt;/span>str(i)&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#e6db74">&amp;#34;]/&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	print(chr(dfs(glob(&lt;span style="color:#e6db74">&amp;#34;0_*&amp;#34;&lt;/span>))), end &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;&amp;#39;&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	chdir(&lt;span style="color:#e6db74">&amp;#34;..&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="alphago">AlphaGO&lt;/h2>
-&lt;p>題目給了一張圖片，是一張棋盤，上面有一些位置有不同字元&lt;br>
-還有一個奇怪的Hint，不過看不懂&lt;br>
-和Joy討論之後我丟出是不是「依照AlphaGo某場比賽下子順序看棋盤上的字元」的想法&lt;br>
-Joy就把他給AC了XD，通靈死&lt;/p></description></item></channel></rss>
+&lt;p>被作業解掉，好像往source code的註解裡面找就對了&lt;/p></description></item></channel></rss>

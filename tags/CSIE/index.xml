@@ -5,169 +5,30 @@
 &lt;p>本學期理論上唯一（？）可能讓我畢不了業的課（如果被當的話）。&lt;br>
 從藍色那本課本變成綠色了。沒有修到日文三讓人感覺這課本只用一學期很浪費。&lt;br>
 不得不說感覺進度真的好緩慢。兩次段考各考三課，感覺範圍小到填空能填錯的選項也沒多少個。&lt;br>
-以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p>
-&lt;p>本學期的最後還有一個在 NTU COOL 上做的 N4 模擬測驗。不知道是版權還是怎麼樣的還需要老師給密碼才能參加。反正不算分而且 N3 都過了就沒管這個測驗做得怎麼樣（？）&lt;/p>
-&lt;h2 id="高等資料結構">高等資料結構&lt;/h2>
-&lt;p>卡恩開的一門不知道之後會不會再開的課。帶著憧憬（？）來修。&lt;/p>
-&lt;p>每次作業大致上分成兩部份，Part I 是證明題，Part II 則可以選擇要做 Benchmark 還是 Paper Reading。Benchmark 是針對選定的課題寫程式 Benchmark，而 Paper Reading 是從論文清單裡面挑出來 summarize 以及提「有用的問題」。&lt;/p>
-&lt;p>期初的時候小看了 HW1，最後一個禮拜才開始看，Part I 四題裡面兩題都跑去看了提示。一題是題敘裡面說存在一篇 CF 文章，放棄自尊心跑去 google 就可以&lt;a href="https://codeforces.com/blog/entry/130521">找到了&lt;/a>，一題是讀懂題敘有 reference 的原論文，並想辦法弄簡單一點（原論文是樹但這題是鏈）。死線是週一的中午十二點，但因為後量子密碼學是週一早上，所以我是把死線當作星期天 23:59。Part I 拖到了週六晚上才寫完，六晚+日早讀了幾篇論文之後發現好像一天做不完 paper reading 就跳槽到 benchmark。意外的覺得老師建議的框架 Google Benchmark 很好上手，因為會產出完整的 json 檔描述 benchmark 每個 task 的時間之類的，我就丟給 GPT 生一個生圖表的 python script（再自己改一下），總之寫一下觀察拼湊出一個報告。做的時間非常少，但我覺得看上去的完成度應該很不錯。&lt;/p>
-&lt;p>接著 HW2 馬上又來了。雖然老師一直宣稱這比 HW1 還要簡單，但我怎麼看都是比 HW1 難。&lt;br>
-一題 split tree 我根本找不到有誰好好證明過，都是在說明概念（我覺得我找到 &lt;a href="https://courses.csail.mit.edu/6.851/spring21/lectures/L05.html?notes=11">這個影片的最後五分鐘&lt;/a> 有講已經蠻神奇的了但還是好難看懂）。&lt;br>
-另一題要證 wilber-1 bound 的反例，雖然好像原則上解答應該要約是一頁 A4 紙，但我真的想不到怎麼把原本論文裡面有大概十頁在證的東西弱化或怎樣之後塞進一頁。感覺不是給人寫的。想辦法模仿論文改寫成自己的話，寫了十個 lemma 跟 theorem 都還證不完。證的還是已經弱化的版本。&lt;br>
-HW2 一樣不會讀 paper 選了 benchmark，但因為 Part I 那題耗費太多心力（？）感覺這次的完成度不太高，就只是做完 benchmark 的題目敘述裡面的最低要求而已。&lt;/p></description></item><item><title>第七學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</link><pubDate>Thu, 13 Feb 2025 22:31:27 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</guid><description>&lt;h1 id="seventh-semester">Seventh semester&lt;/h1>
-&lt;p>因為第六學期的最後感覺太捲了，於是這學期就決定躺平。本來有想要修密碼學的理論基礎，但他還要分組報告報論文，然後課上沒一個認識的，就逃走了。課表於是看起來非常羞恥。&lt;/p>
-&lt;h2 id="日文二上">日文二上&lt;/h2>
-&lt;p>因為必須要修一門外文才能畢業，學期初跑去加簽日文一。跑了好幾個班（平均一班的中獎機率是四十人裡面十人）抽中加簽之後，畢竟我高中也有修過日文，從零開始上課實在也有點枯燥，剛好老師又說到如果我們都會了那不要浪費彼此的時間。於是跟系辦問過可以直接把日文二上下當作畢業的這門學分，再加上寄信給老師確定可以加簽，就跑去日文二上了。雖然課程網上寫擋修，但日文二上下非常的不擁擠，教室也坐不滿，只要確定自己可以而且老師同意（彭誼芝老師看起來很乾脆的同意了）看起來就直接可以修了。&lt;/p>
-&lt;p>教材看起來是所有班都統一的 &lt;a href="https://www.amazon.co.jp/%E5%AD%A6%E3%81%BC%E3%81%86%E6%97%A5%E6%9C%AC%E8%AA%9E/s?k=%E5%AD%A6%E3%81%BC%E3%81%86%E6%97%A5%E6%9C%AC%E8%AA%9E">來學日本語&lt;/a>，日文二上下會用到初級一初級二（藍色跟綠色），這學期的進度是把藍色那本後半的大約八個章節。課本在總圖旁邊的出版中心就有賣了，印象中一本是兩百五，如果有好好修滿日文一到三可以用三年其實很便宜（？）我們老師第一次上課就會用到了所以最好早早準備。&lt;/p>
-&lt;p>然後雖然我講了這麼多，但從教材也可以發現我們的課程目標似乎是考過 N4，而我在這學期也藉著修日文乾脆去試著考了十二月的 N3，考了個意外好的 174/180，不枉費我天天刷 QuizKnock 的影片。不過 JLPT 的試驗內容只有聽跟讀，在課堂上要練習寫和說，寫意外的好難（假名好難寫&amp;hellip;漢字好容易搞混&amp;hellip;），再加上我應該也最好在課堂上系統性地聽一些文法（才不會全靠感覺），應該是一個我繼續待在二的好理由。&lt;/p>
-&lt;h2 id="大學國文文學鑑賞與寫作一">大學國文：文學鑑賞與寫作（一）&lt;/h2>
-&lt;p>（誰大四還在修國文）學期初選了幾個國文，不像日文太熱門沒有大四之力，國文就直接上了。&lt;/p>
-&lt;p>我們這班的老師是沈凡玉老師，不知道是他的教課口才比較好還是我跟老師的頻率（顏色？）相近，對老師的印象還不錯。課程主題在文言的部份從漢樂府、古詩十九首、魏晉詩歌裡面選了一些文本。老師上課的方法是精讀（他自己講的），每首詩除了字面的解釋以外還會細講創作的時空背景、創作裡面代表的當時的文化，以及文人在詩裡面用典故時會講解典故。典故的部份，我覺得把他對應到現代就像是在聊天的時候喜歡引用時事或是網路梗，不解釋任何上下文，覺得簡直就是古代謎語人很有趣。基本上我是把他當每個禮拜去聽故事（雖然我也有作筆記）。考試是考論證題，要拿分應該就是要把上課講的那些短短的詩對應的龐大上下文記下來，而要高分的話可能就是要發揮創意跟文筆，找到某些支持你的論點的證據（要有讀書才有材料&amp;hellip;），發現其他人不太會發現的點之類的。不太知道自己寫得怎麼樣但盡力了。&lt;/p>
-&lt;p>寫作的部份只有三份作業。第一份是「台大三週 / X 年」寫一個回顧的散文。第二篇是看電影之後，選一個有關的問題，針對那個問題進行類似辯論的正反論述，寫一篇論說文。我們看的電影是 Die welle / 浪潮，他的敘事感覺亂七八糟，不過有一整堂國文課可以看電影還是不錯的。挑的問題好像非常不受限，重點是論說文要符合他敘述的格式跟方法，還有文章本身要有說服力，問題跟電影的相關性反而不那麼重要。最後一份作業是上課寫應用書信。基本上也是照著一個規定的框架寫，需要正確使用那些禮貌用語，可以虛構情節。總結來說是我覺得不算太辛苦也不會不舒服的作業。&lt;/p>
-&lt;p>雖然最後拿了個 A 但國文好像就是這樣，聽說還有限制百分比是只有 5% 還 10% 可以 A+。論推不推的話是推。&lt;/p>
-&lt;h2 id="專題研究">專題研究&lt;/h2>
-&lt;p>tmt514：卡恩回來教課。久仰大名於是我跟著跑去他的實驗室修專題研究（系訂必修）&lt;/p>
-&lt;p>這學期感覺相當草創（？）我報了一篇動態連通性資料結構的 paper，然後還有每週聽別人報的演算法 paper，聽到很多很多 log（？）的演算法跟很多隨機方法。整學期大概就是報 paper 跟聽 paper。但我還是覺得沒有感受到什麼方向生出一些感覺有學術意義的東西。&lt;/p>
-&lt;h2 id="程式結構與設計">程式結構與設計&lt;/h2>
-&lt;p>ICPC 培訓班。感覺很多辛苦的事情都是波路在做的，有點心虛。不過至少成功把舊 ntujudge 的題目給搬遷到 TIOJ 上了。&lt;/p>
-&lt;h2 id="結">結&lt;/h2>
-&lt;p>回顧了一下，這學期前的暑假首先是 FLOLAC，然後結束之後差不多八月下半把之前玩到一半的 FF7 remake 給玩完。好像一直都處於非常懶惰的狀態。但我覺得如果修一大堆課或是接一大堆工作把自己搞很累，大概很難提筆寫這個部落格，或是做一些有趣的自己想寫的 code？&lt;/p>
-&lt;p>這學期 GPA 4.14。但老實說不交換也不讀研的話 GPA 沒什麼用。越寫怎麼越覺得空虛了。&lt;/p>
-&lt;p>學期末的時候大約是推甄放榜的時候。大家都有去填推甄，但我覺得我應該不會去於是便抱著不要佔名額的心態沒去處理，但看起來很多人即使不太打算要去還是會先推一推當備案之類的，總覺得這樣哪裡怪怪的，但確實這樣可能才算負責任跟會風險管理，應該還是自己太幼稚。&lt;/p></description></item><item><title>第四學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</link><pubDate>Fri, 29 Nov 2024 23:52:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</guid><description>&lt;h1 id="fourth-semester">Fourth semester&lt;/h1>
+以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p></description></item><item><title>第七學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</link><pubDate>Thu, 13 Feb 2025 22:31:27 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</guid><description>&lt;h1 id="seventh-semester">Seventh semester&lt;/h1>
+&lt;p>因為第六學期的最後感覺太捲了，於是這學期就決定躺平。本來有想要修密碼學的理論基礎，但他還要分組報告報論文，然後課上沒一個認識的，就逃走了。課表於是看起來非常羞恥。&lt;/p></description></item><item><title>第四學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</link><pubDate>Fri, 29 Nov 2024 23:52:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</guid><description>&lt;h1 id="fourth-semester">Fourth semester&lt;/h1>
 &lt;p>拖到了大四上快結束才寫，基本上是看著課表回憶一下大概而已。&lt;br>
 這學期的成績看起來不是很好看。&lt;/p>
 &lt;h2 id="桌球初級">桌球初級&lt;/h2>
 &lt;p>可以說是蠻輕鬆的課，老師會從看起來真的很基本的握拍開始教起，然後發球、回球等等，最後面會用餵球的方式讓我們試著左推右攻。&lt;br>
-老師讓全班的人每四個人分一組，每節課就是先集合起來講解動作之後，四個人回到同一桌輪流互相練習。我們這一桌有一個日本人，不過剛好也有一位日文系的同學，感覺有點形成他們兩位女生的小泡泡（？）&lt;/p>
-&lt;p>因為小學的時候就有打過一點點桌球（超級一點點），所以至少發球跟握拍還是會的。從考試成績看起來看似我在這組的實力還算不錯，但考的東西應該算是非常簡單，而且後面有一些課的練習是會讓贏家輪換到別桌去，也遇到很多很厲害的同學 (a.k.a. 他們在炸魚）。&lt;/p>
-&lt;p>A+ 率是 76.92%，非常高，我也拿了 A+。後半學期的考試我個人覺得隊友的餵球影響會很重，所以如果自己真的真的完全沒有基礎的話最好找厲害一點的隊友餵球。&lt;/p>
-&lt;h2 id="語言的邏輯分析">語言的邏輯分析&lt;/h2>
-&lt;p>因為之前上過探索語言覺得語言很有趣就想說來聽聽看，第一堂課就丟給我們語奧那種題目試著做（老師稱作「語言遊戲」）。因為是第一堂課所以難度非常簡單，我就修下去這門課了。&lt;/p>
-&lt;p>不過其實是上了賊船。每個禮拜都會有作業，形式一樣是語奧的題目，但是要順便交上合理的解題過程，而且感覺要好好引用上課教的一些語言 feature，這個作業寫到後面越來越不會寫，而且在講解的部份我也聽不太懂為什麼某些回答是合理的理由。總之就是太菜了。&lt;/p>
-&lt;p>但真正困難的其實是期末報告。期末我們要分組製作一個「語言遊戲」，但在分組的時候所有積極的人迅速的就找好組了，所以我就變成跟剩下來的人想辦法湊成一組。然後大家都不太知道能做什麼以及到報告前一週都沒什麼進度，想辦法用 chatgpt 生出一個題目來但報告也報得蠻爛的，醜到不能再醜了。最後竟然還可以拿 A-，比預期好了。&lt;/p>
-&lt;h2 id="存活分析">存活分析&lt;/h2>
-&lt;p>跟著 zihongxiao 去修的一個數學系開的課。這門課的主軸是 survivor function，$S(t)$ 代表某個實體能「存活」到時間 $t$ 的機率。整門課程會用不同的方法去想辦法從 experimental results 去 inference 出原本真正的母體的 survivor function 等統計資料，並證明誤差在抽樣夠多時會趨近於 $0$ 或是用什麼速度趨近於 $0$，也就是在證明一些 estimator 的性質。&lt;/p>
-&lt;p>課程進行到途中會講到測度公理的機率論、stochastic process、martingale，但跟課中提的其他定理差不多，定義或是一些結論大概帶過去之後就會比較直覺的使用這些物件。例如在 martingale 的 filtration 那邊，雖然講了定義但我們超少用到，用到的時候感覺也是馬虎帶過去。&lt;/p>
-&lt;p>作業就是把玩定義跟直接開一些定理去證一些事情，最後面會讓我們完成上課沒有證明完的一些 lemma。老實說，我覺得這些統計的定理越到後半學期都越來越醜，但可能學問就得是這樣子吧。雖然我覺得我這門課有盡力，但拿這個 A+ 感覺還是有點不踏實。&lt;/p>
-&lt;h2 id="數位系統與實驗">數位系統與實驗&lt;/h2>
-&lt;p>講的主題大概是布林代數，怎麼用簡單的 logic gate 去拼出一個 boolean expression，例如 minterm expansion、kmap 等，大多是用來手算的方法。後半學期會講 flip-flop，即正反器，以及類似 finite state machine 的應用。&lt;/p>
-&lt;p>有四次手寫作業跟兩次 lab 作業，lab 作業是讓我們寫一些 verilog 並計算一些能優化的 latency 之類的部份。期中考跟期末考印象中都可以帶大抄，分別考了 98 跟 90，最後是拿了 A+。&lt;/p></description></item><item><title>第六學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</link><pubDate>Sun, 07 Jul 2024 21:31:21 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</guid><description>&lt;h1 id="sixth-semester">Sixth semester&lt;/h1>
-&lt;p>在大約一月底我們得知 ICPC 會在四月舉辦。於是這學期我還是盡量把課排少，學期初的時候我原本選了一個國文課，但後來退掉了，學分也剩下 14 學分需要低修單。剩下只有五門課看起來真的超級少的。&lt;/p>
-&lt;h2 id="密碼學導論">密碼學導論&lt;/h2>
-&lt;p>學期初的時候去聽了一下覺得可以修，而且資工系一堆人都搶著要修的樣子。三類加簽，所以只要在網路上加選等抽中，雖然是個兩百多人的課但抽中也不難，會有不少人退選。&lt;/p>
-&lt;p>學期初會先講一些簡單的抽象代數，基本上都是會討論像是 $Z_n$ 或是 $GF_{q^n}$ 這種有好性質的 ring/field，主要是為了 AES 鋪路。&lt;br>
-後半學期會講 RSA 以及一些旁通道攻擊的例子，然後還有 ECB/CBC 等加密模式或是像是金鑰分發、certificate authority、bitcoin、區塊鏈這種比較分散的對我來說感覺沒什麼動力學的東西。最後雖然確實有講後量子密碼學，但其實也就是維基百科上查得到的東西而已，沒有得到什麼太有用的知識的感覺。&lt;/p>
-&lt;p>每個禮拜都有一個小考，雖然只算最高六次但我到學期末都沒湊滿，大概差一兩分。大概到差不多期中考的時候一開始幾個一起來修的資工系同學停修掉了，雖然我沒有停修但後來的小考和上課有點後悔，一直考一些奇怪的細節或是背誦的東西，然後好幾次的問答題我寫了一大篇作文沒拿滿分真的哭。&lt;/p>
-&lt;p>期中考我有點考爆，拿了個 82 分。期末考考了 91 分，我那時候心想完蛋了這樣考試平均也不到 90 怎麼 A+，但還是太小看作業的分數了。&lt;/p>
-&lt;p>整學期只有一個作業，大部份都是課本上的題目，加上一些看影片寫心得跟用 sage 做一些超簡單的練習。&lt;br>
-課本的題目感覺其實也沒什麼品味，而且有一些題目感覺像是有問題。&lt;br>
-作業有一個提早交加分的機制，從大概 16 題裡面選最好的 12 題。我那時候就卷這份作業，想要把全部的題目都在提早交的期限前寫完，雖然最後一些看影片寫心得的部份沒有寫但還是花了蠻多力氣，最後這邊的分數有拿滿；其實我懷疑我又抄題目又用 $\LaTeX$ 又每題都寫，如果我是助教肯定是心想「這麼長誰想改乾脆直接給滿分好了」(X。&lt;/p>
-&lt;h2 id="人工智慧導論">人工智慧導論&lt;/h2>
-&lt;p>忘記是上一屆還是這一屆開始是系上必修。&lt;/p>
-&lt;p>前半學期講了什麼是人工智慧跟一些比較古早的方法，主要是像是 A* 或是 alpha-beta 剪枝等 exhaustive search 以及一些機率的 bayesian inference 之類的東西。&lt;br>
-後半學期則是開始談機器學習，講 supervised 和 unsupervised 的一些方法，最後比 HTML（林軒田教授開的 ML）多的東西可能就是 reinforcement learning 吧。&lt;/p>
-&lt;p>不過我都沒有去上課，唯一一次去 103 教室是期中考的時候。期中考有夠擠，座位連梅花座都做不到，整排都是人。&lt;br>
-期中考抱佛腳抱不夠足，而且很好笑的是我到考完才知道原來可以帶大抄進去。考了個差不多是平均的八十幾分。&lt;/p></description></item><item><title>第五學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</link><pubDate>Mon, 01 Jul 2024 01:19:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</guid><description>&lt;h1 id="fifth-semester">Fifth semester&lt;/h1>
+老師讓全班的人每四個人分一組，每節課就是先集合起來講解動作之後，四個人回到同一桌輪流互相練習。我們這一桌有一個日本人，不過剛好也有一位日文系的同學，感覺有點形成他們兩位女生的小泡泡（？）&lt;/p></description></item><item><title>第六學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</link><pubDate>Sun, 07 Jul 2024 21:31:21 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</guid><description>&lt;h1 id="sixth-semester">Sixth semester&lt;/h1>
+&lt;p>在大約一月底我們得知 ICPC 會在四月舉辦。於是這學期我還是盡量把課排少，學期初的時候我原本選了一個國文課，但後來退掉了，學分也剩下 14 學分需要低修單。剩下只有五門課看起來真的超級少的。&lt;/p></description></item><item><title>第五學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</link><pubDate>Mon, 01 Jul 2024 01:19:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</guid><description>&lt;h1 id="fifth-semester">Fifth semester&lt;/h1>
 &lt;p>這個學期（大三上）原本預期是要在十一月參加 ICPC World Finals 的，所以選課除了必修以外都是選自己想選的，盡量只選到不用填低修單的學分。&lt;br>
-很貪心的還想要 4.3，但最後大失敗。&lt;/p>
-&lt;h2 id="室內五人制足球初級">室內五人制足球初級&lt;/h2>
-&lt;p>跟 ZCK 一起來修的我的第三門體育課。&lt;br>
-跟之前（室外）足球的老師是同一個老師，課程也大同小異，只是從室外十一人制變成室內五人制，球也換成室內五人制一般會使用的低彈力球。&lt;br>
-不過畢竟是在室內，所以不太會在室外踩泥土曬太陽，而是踩體育館的地板有屋頂，也許比較舒服。&lt;/p>
-&lt;p>看到許多之前在室外足球課的熟面孔，好課一修再修。&lt;br>
-這次一樣有分組比賽，分組後我們這組看起來似乎是四組裡面最菜的XD 之前的熟面孔強者都在別組。&lt;br>
-不過除了跟最強的那一隊比賽以外其實都打得還可以？&lt;br>
-我們這隊有幾個印尼人，他們感覺比較會踢，有大局觀的感覺，帶著我們也算是可以跟一些隊打平。&lt;/p>
-&lt;p>除了比賽部份會加分以外，術科項目的考試有兩個，一個是兩人互相傳球，一個是帶球繞一圈。&lt;br>
-帶球繞一圈就吃小學的老本，感覺帶得還不錯（可能整堂課都有吃老本的部份，小學有在踢足球）。&lt;br>
-另外這次有 ZCK 當隊友，兩人互相傳球的部份配合得比較好，總之最後拿到了 A+。&lt;/p>
-&lt;h2 id="數值線性代數">數值線性代數&lt;/h2>
-&lt;p>來修一門感覺很數學的課。&lt;br>
-這門課一開始先介紹高斯消去法，然後講 condition number，也就是什麼樣的線性系統是病態的，只要一開始出了一點誤差就會被放大數倍。&lt;br>
-前半學期講了 matrix norm 以及 SVD 等（整個學期都不會講 SVD 實際上怎麼有效率計算 :P）。&lt;br>
-後半學期介紹 iteration method，重心會放在 conjugate gradient method。&lt;br>
-一些簡單的矩陣分解（LU, LDU, QR, cholesky 等）也會講到，但感覺都 focus 在手算的方法（畢竟真的實用的方法是都頗複雜），再稍微給我們一些 QR 的數值穩定度比較好、LU 比較快之類的概念。&lt;/p>
-&lt;p>這門課使用的教材是 &lt;a href="https://www.cs.utexas.edu/~flame/laff/alaff/frontmatter.html">ALAFF&lt;/a>，會要求我們預習看影片等等。&lt;br>
-另外每堂課後幾乎都有實驗課，是助教用 google colab 讓我們用 numpy 跟 scipy 的套件寫一些有關矩陣運算的東西。感覺我應該還算熟這些套件所以很輕鬆。&lt;/p>
-&lt;p>最後還有一個算分的作業是每個人要上台分享一次一個 topic 的環節，但我沒有上去分享，再加上蹺了數次課，有幾次實驗課沒作到。&lt;br>
-考試期中考了 89 期末考了 92，但 lab 分數只有 75、作業分數只有 78，拿了一個難看的 B+。&lt;br>
-不過我覺得這門課算是有趣，而且在 virtual 某場 WF 的時候彷彿有幫上忙。&lt;/p></description></item><item><title>第三學期修課心得</title><link>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</link><pubDate>Sun, 15 Jan 2023 22:52:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</guid><description>&lt;h1 id="third-semester">Third semester&lt;/h1>
+很貪心的還想要 4.3，但最後大失敗。&lt;/p></description></item><item><title>第三學期修課心得</title><link>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</link><pubDate>Sun, 15 Jan 2023 22:52:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</guid><description>&lt;h1 id="third-semester">Third semester&lt;/h1>
 &lt;p>感覺時間過好快，雖然才第三個學期而已。&lt;/p>
 &lt;hr>
 &lt;h2 id="足球初級">足球初級&lt;/h2>
 &lt;p>修了個體育。&lt;br>
 老師上課的方式是每個禮拜會先教一下子基本動作，然後就讓我們分組比賽。&lt;br>
 分數來源除了考規則、考基本動作以外，還有在比賽中有好表現可以加分。&lt;br>
-分組是期初分完就固定的，但依照我的社恐力和組員相處還是很吃力（？）&lt;/p>
-&lt;p>其實每個禮拜跑動一下，結束之後心情還是不錯的（但社交能量會喪失（？））&lt;br>
-預設是在操場上課，有下雨的話會換到舊體。&lt;br>
-因為是在下半年，所以即便是在操場上，大多數時間也不太會熱。&lt;/p>
-&lt;p>最後拿到 A，不知道在什麼地方加強有機會拿到 A+。&lt;/p>
-&lt;h2 id="系統程式設計">系統程式設計&lt;/h2>
-&lt;p>簡稱 SP 的一門大二必修。&lt;br>
-課程內容幾乎都在講 system call 跟 Unix-like 的系統會有的特性。&lt;br>
-system call 從例如 &lt;code>open&lt;/code> &lt;code>read&lt;/code> &lt;code>write&lt;/code> 到 &lt;code>fcntl&lt;/code> 或 &lt;code>fork&lt;/code> 或 &lt;code>mmap&lt;/code> 都有講一下怎麼用、怎麼用不好以及怎麼用比較好。&lt;br>
-Unix-like 系統的特性則是比如說 process、thread、signal、file、pipe 好多好多。&lt;/p>
-&lt;p>這堂課有四次程式作業還有一些手寫作業，手寫作業在 ChatGPT 出來之後輕鬆很多(X&lt;br>
-程式作業是我覺得很麻煩的地方。&lt;br>
-程式作業的形式是助教會寫一份 spec 然後我們就照著上面的 implement，並且沒有什麼即時反饋的機制，比如說第一次作業是要我們擔任一個借書系統的後端部份（跟網路互動的部份有寫好部份的 code 了），用 &lt;code>open&lt;/code> &lt;code>read&lt;/code> &lt;code>write&lt;/code> 以及一些 IO multiplexing 的 syscall 去同步處理多個 request。&lt;br>
-很煩的部份是，常常在作業出來一陣子之後又更新一些檔案/spec 等等，尤其是 spec 不太清楚還要一直到 github 討論區問助教，第四次作業我覺得甚至你會需要把討論區給全部翻過一遍才能理解 spec 足夠的細節，總之就是很煩。&lt;br>
-(Update: OS 比 SP 煩更多)&lt;br>
-另外作業四次都有大腿抱，好幸運。有一些提早寫完的修課生就會寫一些 testing tool 來幫助其他人檢查他們有沒有寫錯（可能也是順便對自己的作業）。當然不可以抄襲所以常常都只能比對輸出，只是盡量考量各種 edge case 而已。&lt;br>
-我覺得這樣有點考驗臉皮夠不夠厚或是有沒有認識到那些厲害的人，是一個蠻奇怪的現象。&lt;/p></description></item><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>&lt;h1 id="second-semester">Second semester&lt;/h1>
+分組是期初分完就固定的，但依照我的社恐力和組員相處還是很吃力（？）&lt;/p></description></item><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>&lt;h1 id="second-semester">Second semester&lt;/h1>
 &lt;p>年久失修的部落格，繼續只更新修課心得（流水帳）&lt;/p>
 &lt;h2 id="網路管理與系統管理-nasa">網路管理與系統管理 (NASA)&lt;/h2>
 &lt;p>禮拜一早九（？）可以選三學分跟一學分，如果選一學分的似乎可以拿來抵服務學習，不過我選了三學分的。&lt;br>
-這門課有一個必須要在寒假左右完成的 HW0，事後看起來有點奇怪的點是學期中有不少課在教的反而是在 HW0 中感覺有用到的東西。&lt;/p>
-&lt;p>在學期開始時可以到 204 去實體上課，不過下雨的時候還要早起到 204 真的很折磨。&lt;br>
-後來正好因為防疫因素變成線上了（其實原本就可以線上上課）。&lt;br>
-NASA 的上課內容主要是在講一些原理或是介紹一些協定，像是網路如何運作的（網路的五層結構）、防火牆、DNS、Wi-Fi 原理、filesystem、web service。&lt;/p>
-&lt;h3 id="作業">作業&lt;/h3>
-&lt;p>我覺得作業是 NASA 能學到最多東西也比較有趣的部份。每兩三週左右會有一個比較大的作業，每週則是有 lab 作業與影片簡答題。&lt;br>
-所謂的 lab 有點像助教課，就是在正課上完之後由助教教我們一些和正課稍微相關的工具怎麼使用，例如：shell script撰寫、cisco switch configuration 的操作、教我們如何架一個 apache web service，或是關於硬碟的切割與格式化。&lt;/p>
-&lt;p>比較大的作業則不一定會跟正課有關，以下是六次作業的標題：&lt;/p>
-&lt;ul>
-&lt;li>Homework 1 - Wireshark/tcpdump &amp;amp; UNIX / Shell Scripts&lt;/li>
-&lt;li>Homework 2 - IP/iperf/Cisco &amp;amp; partition&lt;/li>
-&lt;li>Homework 3 - Firewall &amp;amp; Virsh + Docker&lt;/li>
-&lt;li>Homework 4 - Security &amp;amp; LDAP&lt;/li>
-&lt;li>Homework 5 - DNS + DHCP &amp;amp; NFS + Fix VM&lt;/li>
-&lt;li>Homework 6 - Wireless &amp;amp; Web Server&lt;/li>
-&lt;/ul>
-&lt;p>作業內容常常都是 lab 的延伸，但是 NASA 作業的最大特色就是常常需要自己到網路上找相關資料，要願意花時間查看 documentation 或是 manual page 之類的，不然就是要找好大腿抱。舉例來說， Fix VM 那次作業就需要去查所謂 PXE 是什麼，還有怎麼讓 VM 互相溝通，使得一台可以當 server、一台可以當 client，基本上 ArchWiki 有相當完整的資訊，不過…&lt;/p></description></item><item><title>第一學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</link><pubDate>Fri, 04 Feb 2022 09:28:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</guid><description>&lt;h1 id="first-semester-in-csie">First semester in csie&lt;/h1>
+這門課有一個必須要在寒假左右完成的 HW0，事後看起來有點奇怪的點是學期中有不少課在教的反而是在 HW0 中感覺有用到的東西。&lt;/p></description></item><item><title>第一學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</link><pubDate>Fri, 04 Feb 2022 09:28:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</guid><description>&lt;h1 id="first-semester-in-csie">First semester in csie&lt;/h1>
 &lt;p>部落格已經年久失修ㄌ…&lt;br>
 來講講這學期都在做什麼好了&lt;/p>
 &lt;h2 id="計算機程式設計">計算機程式設計&lt;/h2>
 &lt;p>系上大一必修，大致上是教 C 的語法，從基本 IO 到指標、檔案操作、簡單遞迴等等。&lt;br>
 在高中有參加過程式競賽可以向教授申請當「真強者」，可以不用小考、上課就會在學期末拿到 A+，而通常「真強者」負責的工作是讓這門課的學生可以問問題，並且要負責驗題，整學期總共 30 題吧。&lt;br>
-劉邦鋒教授很毒舌（？）常常嘴砲學生跟助教，然後這學期說助教出的測資太爛，我們又多了一個出測資的工作。&lt;/p>
-&lt;h2 id="普通物理學甲上">普通物理學甲上&lt;/h2>
-&lt;p>另一個大一必修，上課教授是呂榮祥教授。&lt;br>
-上課不點名（超優！！），所以我後面都沒有去上課XD&lt;br>
-作業每個禮拜有似乎是從課本挑的題目，以及 VPython 模擬。&lt;br>
-VPython 照著 pdf 做大概就可以抄掉九成的 code 了，真的不想認真的話可以找到網路上一模一樣的題目。&lt;br>
-推薦每個禮拜好好做作業，因為段考會出作業題，剩下的大概就佛系看投影片吧（？）&lt;br>
-沒去上課還能抱佛腳拿到 A+ 應該算甜涼課吧。&lt;/p>
-&lt;h2 id="微積分一二">微積分一二（？）&lt;/h2>
-&lt;p>在高三的時候有修所以抵免掉了。&lt;/p>
-&lt;h2 id="計算機概論">計算機概論&lt;/h2>
-&lt;p>就教計概。&lt;br>
-作業是 nand2tetris 前面的幾個 project，要學會寫一些奇怪的語言。&lt;br>
-沒有期末考，只有 Final Project，我們的 Final Project 是用很像組合語言的 Jack 語言做一個小遊戲。&lt;br>
-期中考考上課有講的東西，應該不算難（？）&lt;br>
-可是我只有拿到 A-，但也沒有追根究底因為 C+ 根本稀釋不了ㄌ。&lt;br>
-可能還有一個原因是罪惡感，前半有比較認真看影片但後面就沒看QQ&lt;/p>
-&lt;h2 id="線性代數">線性代數&lt;/h2>
-&lt;p>在學期初努力（？）加簽到的大二必修。單班李明穗教授。&lt;br>
-我們這群有修線代的人因為老師上課沒有留任何投影片或是紀錄檔，所以有一起做一個共筆，把上課的東西抄下來。&lt;br>
-學期前半我沒怎麼上課，後面有跟著有去修的人借教室一起聽線上課。&lt;br>
-大部分人都覺得教的內容太少，不如自己看課本學比較快。&lt;br>
-然後每個禮拜有作業、有三次期末考，其實大部分都是熟練計算，和我想像的有差距。&lt;br>
-說得誇張一點，這門課就是教你怎麼做高斯消去法的。期末考計算量真的死人。&lt;br>
-順帶一提這學期的考試有至少兩次題目有問題，然後後來考完才說是題意不清，讓人很煩躁，不過反正最後還是 A+。&lt;/p>
-&lt;h2 id="醫學與生活">醫學與生活&lt;/h2>
-&lt;p>和王勻一起修的通識，但拿到 C+ 有夠慘…&lt;br>
-據說是學期當中有兩次抽點名我們都沒點到，有一次甚至還是因為為了體育分數去參加拔河@@&lt;br>
-反正是一個每週三要去醫學院聽兩小時左右的東西的課程，每次的講者都不同，另外還有一次實體參訪醫學人文博物館。&lt;br>
-分數除了出席（抽點…）以外還有實體參訪心得、整學期任選一些課的心得，還有期末考分數。&lt;br>
-後來去問為什麼會 C+ ，分數要不回來，老師所說期末考只是考考形式我也不想在乎了@@&lt;/p></description></item></channel></rss>
+劉邦鋒教授很毒舌（？）常常嘴砲學生跟助教，然後這學期說助教出的測資太爛，我們又多了一個出測資的工作。&lt;/p></description></item></channel></rss>

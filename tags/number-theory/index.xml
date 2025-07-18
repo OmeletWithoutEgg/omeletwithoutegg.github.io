@@ -1,35 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Number-Theory on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/number-theory/</link><description>Recent content in Number-Theory on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 20:42:31 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/number-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829">https://tioj.ck.tp.edu.tw/problems/1829&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p>
-&lt;p>假設答案的最簡分數是 $\frac{P}{Q}$，則你應該輸出 &lt;strong>$P$ 除以 $M$ 的餘數和 $Q$ 除以 $M$ 的餘數共兩個數字&lt;/strong>，其中 $M = 10 ^ 8 + 7$。&lt;/p>
-&lt;p>有 $T$ 筆測資，$T\leq 10^ 4; K&amp;lt;N\leq 10^ {19}; A, B\leq 3\times 10^ 9;\gcd(A,B)=1$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>本題可以拆成兩個部份。第一部份是推出機率的式子，第二部份是按照式子求出最簡分數的分子分母。&lt;/p>
-&lt;p>雖然我原本是用 martingale 推的，不過這裡就放一個比較直覺的版本。令 $f(i)$ 表示在位置 $i$ 開始走的時候，最終停在 $N$ 的機率。那麼有&lt;/p>
-&lt;p>$$&lt;br>
-\begin{cases}&lt;br>
-f(0) &amp;amp;= 0 \\&lt;br>
-f(N) &amp;amp;= 1 \\&lt;br>
-f(i) &amp;amp;= pf(i - 1) + (1 - p) f(i + 1), \forall {0 &amp;lt; i &amp;lt; N}&lt;br>
-\end{cases}&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
+&lt;p>現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2116">https://tioj.ck.tp.edu.tw/problems/2116&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>科學家發現了一種神奇的細菌，他們的繁殖方式很奇怪。這個世界上目前有 $N$ 隻細菌，第 $i$ 隻細菌的體積是 $A_i$ 立方公分。每過一年，對於一隻體積為 $x$ 立方公分的細菌，假設 $x$ 的所有正因數分別是&lt;br>
 $$1=d_1&amp;lt;d_2&amp;lt;&amp;hellip;&amp;lt;d_k=x$$&lt;br>
-那這隻細菌會生出 $k-1$ 隻細菌，體積分別是 $d_1,d_2,&amp;hellip;,d_{k-1}$ 立方公分。&lt;/p>
-&lt;p>科學家發現這種繁殖方式太快了，而且這種細菌是永生的，很快的地球會被這種細菌佔滿!請告訴科學家們，過$K$年後，細菌們的總體積是多少。由於總體積可能太大了，所以請輸出總體積除以 $10^ {9}+7$ 的餘數。&lt;/p>
-&lt;p>$N \leq 10^6, A_i \leq 10^6, K \leq 10^9$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>因為細菌之間互不干擾，不妨令 $f_t(x)$ 表示一個體積 $x$ 的細菌經過 $t$ 秒的分裂之後分裂出的所有細菌的體積總和是多少。那麼可以列出遞迴式&lt;/p>
-&lt;p>$$&lt;br>
-\begin{cases}&lt;br>
-f_t(x) &amp;amp;= \sum _ {d | x} f_{t-1} (d) &amp;amp; \text{ if } t &amp;gt; 0 \\&lt;br>
-f_0(x) &amp;amp;= x&lt;br>
-\end{cases}&lt;br>
-$$&lt;/p>
-&lt;p>最後的答案是 $\sum _ i f_K(A_i)$。&lt;/p></description></item><item><title>min 25 模板使用說明</title><link>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</link><pubDate>Tue, 10 Dec 2024 21:29:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</guid><description>&lt;h1 id="min-25-模板使用說明">min 25 模板使用說明&lt;/h1>
+那這隻細菌會生出 $k-1$ 隻細菌，體積分別是 $d_1,d_2,&amp;hellip;,d_{k-1}$ 立方公分。&lt;/p></description></item><item><title>min 25 模板使用說明</title><link>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</link><pubDate>Tue, 10 Dec 2024 21:29:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</guid><description>&lt;h1 id="min-25-模板使用說明">min 25 模板使用說明&lt;/h1>
 &lt;p>前幾個月（WF 之前）忘記為什麼就想去學 min25 篩，然後就把他模版化放進 codebook 裡了。我是看 &lt;a href="https://oi-wiki.org/math/number-theory/min-25/">https://oi-wiki.org/math/number-theory/min-25/&lt;/a> 學的，不過本文不會提到太多細節。&lt;/p>
 &lt;p>先貼上 code：&lt;/p>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">

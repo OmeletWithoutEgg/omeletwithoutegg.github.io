@@ -1,21 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Miku on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/miku/</link><description>Recent content in Miku on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 10 Dec 2020 17:05:06 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/miku/index.xml" rel="self" type="application/rss+xml"/><item><title>Miku Cursor on Arch Linux</title><link>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</link><pubDate>Thu, 10 Dec 2020 17:05:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</guid><description>&lt;h1 id="在arch的初音游標">在Arch的初音游標&lt;/h1>
 &lt;p>因為在Windows有下載一個可愛的初音游標，但是之前換成Ubuntu後就沒有把他裝回來，覺得很可惜。&lt;br>
 因此現在換成Arch之後，想說應該有一些社群的package可以用了，直接抓來就好，但是怎麼google都google不到？&lt;br>
-因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。&lt;/p>
-&lt;ol>
-&lt;li>找到&lt;a href="https://home.gamer.com.tw/creationDetail.php?sn=1760192">巴哈姆特&lt;/a>上面的原始檔（是.ani跟.cur）&lt;/li>
-&lt;li>利用&lt;a href="https://github.com/paddygord/cursor-converter">cursor-converter&lt;/a>把.ani和.cur換成x-cursor的icon類型&lt;/li>
-&lt;li>手動把對應的圖案複製到 &lt;code>~/.icons/$THEME/cursors&lt;/code> 裡面&lt;br>
-如果不知道哪個檔名是什麼的話，可以先複製別的theme的資料夾，接著用 &lt;code>xcur2png&lt;/code> 換成 png看某個檔案實際上是對應哪個圖案。&lt;/li>
-&lt;li>加上 &lt;code>index.theme&lt;/code>。反正只要有Name就可以了吧我猜&lt;/li>
-&lt;/ol>
-&lt;p>中間踩了各種怪東西XD&lt;br>
-我原本先去下載了其他主題，想說看別的主題的游標應該是什麼對應到什麼，尤其是有動畫的。&lt;br>
-不過似乎有動畫的游標和沒動畫的檔名一樣QQ&lt;br>
-然後有找到一個ani2png，但是畫質會爆炸而且沒有幫忙放到對應的位置（雖然最後也是我們自己放到對應的位置）&lt;br>
-接著找到CSDN上面有人說用CursorXP從Windows上面把游標主題包起來，接著在Linux下載一個用來轉換成icon類型的Perl腳本，&lt;br>
-會轉換成一個tar.gz然後就可以安裝的樣子了，不過還是偏糟，從Windows上面看就發現畫質還是大小大爆炸了&lt;/p>
-&lt;p>最後終於走對路，找到github上面一個比較新的repo是把.ani跟.cur轉成linux的x-cursor檔案&lt;br>
-真是要感謝他們www&lt;/p>
-&lt;p>話說我發現其實可以直接把檔案放到&lt;a href="https://github.com/OmeletWithoutEgg/miku-cursor-theme">github&lt;/a>上面，這樣也可以推廣或是找人來修改(X&lt;br>
-裡面有好多icon是從breeze主題抄過來的，畢竟應該都是很少看到的icon所以應該不會影響太大，但是想包成AUR或是什麼的時候好像就得在乎一點一致性ㄌ，所以希望放到github上之後有人可以把其他那些icon改成統一的風格owo&lt;/p></description></item></channel></rss>
+因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。&lt;/p></description></item></channel></rss>

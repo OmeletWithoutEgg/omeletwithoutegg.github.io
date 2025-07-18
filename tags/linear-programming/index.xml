@@ -2,9 +2,4 @@
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1724">https://tioj.ck.tp.edu.tw/problems/1724&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>差點看不懂的題敘。&lt;/p>
-&lt;p>簡單來說，現在有一張 $N$ 點 $M$ 邊的圖 $G$，第 $i$ 條邊權重是 $C_i$，保證前 $N-1$ 條邊是一棵樹。你希望修改一些邊的權重，使得前 $N-1$ 條邊組成的樹恰好是修改後的圖的一個最小生成樹。第 $i$ 條邊修改成 $D_i$ 的代價是 $|C_i - D_i|$，請輸出最小的代價是多少。&lt;/p>
-&lt;p>請注意可以修改樹邊也可以修改非樹邊。&lt;/p>
-&lt;p>$N \leq 100, M \leq 10000$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>如果 $T \subseteq G$ 是一個最小生成樹，則對於每一條不在 $T$ 上的邊 $e = (u, v)$，$e$ 的邊權必須大於等於任何 $\textrm{path}_T(u, v)$ 的邊的邊權，其中 $\textrm{path}_T(u, v)$ 是指 $T$ 上 $u$ 到 $v$ 的簡單路徑。不然的話，就可以把一個樹邊斷掉換成 $e$。不難證明滿足這個條件的話，$T$ 必定也會是一個最小生成樹。&lt;/p>
-&lt;p>我們可以知道我們只會把樹邊改小、把非樹邊改大。對於一條非樹邊 $e_i = (u, v)$，假設他的權重被改成 $C_i + x_i$，而樹邊 $e_j$ 則改成 $C_j - y_j$，那麼前一段的條件就可以寫成 $C_i + x_i \geq C_j - y_j$，改寫成線性規劃標準式的話就變成&lt;/p></description></item></channel></rss>
+&lt;p>簡單來說，現在有一張 $N$ 點 $M$ 邊的圖 $G$，第 $i$ 條邊權重是 $C_i$，保證前 $N-1$ 條邊是一棵樹。你希望修改一些邊的權重，使得前 $N-1$ 條邊組成的樹恰好是修改後的圖的一個最小生成樹。第 $i$ 條邊修改成 $D_i$ 的代價是 $|C_i - D_i|$，請輸出最小的代價是多少。&lt;/p></description></item></channel></rss>

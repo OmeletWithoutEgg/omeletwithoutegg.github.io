@@ -1,26 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Qutebrowser on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/qutebrowser/</link><description>Recent content in Qutebrowser on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 29 Mar 2022 10:13:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/qutebrowser/index.xml" rel="self" type="application/rss+xml"/><item><title>Qutebrowser 瀏覽器</title><link>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</link><pubDate>Tue, 29 Mar 2022 10:13:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</guid><description>&lt;h1 id="qutebrowser-vim-like-browser">Qutebrowser: vim-like browser&lt;/h1>
 &lt;p>這是一篇推薦文與介紹文。&lt;/p>
 &lt;p>已經忘記開始使用 qutebrowser 的契機是什麼了，可能是看到（東東）學長用覺得很酷。&lt;br>
-在熟悉 vim 之後，qutebrowser 作為一個「Keyboard-driven」的瀏覽器吸引力會大大提昇，其 UI 簡潔與配置的靈活也讓我愛不釋手&lt;/p>
-&lt;h2 id="installation">Installation&lt;/h2>
-&lt;p>&lt;a href="https://qutebrowser.org/doc/install.html">https://qutebrowser.org/doc/install.html&lt;/a>&lt;br>
-在 Arch 下安裝不是難事。&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo pacman -S qutebrowser
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Some optional dependencies&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo pacman -S pdfjs python-adblock python-tldextract &lt;span style="color:#ae81ff">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> python-pygments python-babel 
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Ubuntu 也一樣是 &lt;code>sudo apt install qutebrowser&lt;/code> 就可以了，但是版本似乎有點舊，以下提到的有些功能可能沒有或是行為不一樣。&lt;/p>
-&lt;h2 id="keybind-簡介">Keybind 簡介&lt;/h2>
-&lt;p>首先，hjkl 跟 vim 一樣是上下左右。&lt;/p>
-&lt;p>使用 &lt;code>:&lt;/code> 就可以進入 command mode，當然一樣可以使用各種快捷鍵來做各種瀏覽器內的操作。&lt;br>
-以下是平常最常用的 keybindings！&lt;/p></description></item></channel></rss>
+在熟悉 vim 之後，qutebrowser 作為一個「Keyboard-driven」的瀏覽器吸引力會大大提昇，其 UI 簡潔與配置的靈活也讓我愛不釋手&lt;/p></description></item></channel></rss>
