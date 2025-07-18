@@ -9,7 +9,7 @@
 &lt;p>本學期理論上唯一（？）可能讓我畢不了業的課（如果被當的話）。&lt;br>
 從藍色那本課本變成綠色了。沒有修到日文三讓人感覺這課本只用一學期很浪費。&lt;br>
 不得不說感覺進度真的好緩慢。兩次段考各考三課，感覺範圍小到填空能填錯的選項也沒多少個。&lt;br>
-以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p></description></item><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-rerooot/</guid><description>&lt;h1 id="rerooting--全方位木-dp">rerooting / 全方位木 DP&lt;/h1>
+以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p></description></item><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</guid><description>&lt;h1 id="rerooting--全方位木-dp">rerooting / 全方位木 DP&lt;/h1>
 &lt;p>因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p>
 &lt;p>大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p></description></item><item><title>Final Fantasy VII Rebirth Review</title><link>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</link><pubDate>Wed, 02 Apr 2025 11:35:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</guid><description>&lt;h1 id="最終幻想七-重生-遊玩小記">最終幻想七 重生 遊玩小記&lt;/h1>
 &lt;h2 id="前情提要">前情提要&lt;/h2>
@@ -362,7 +362,7 @@ hexo似乎是對windows比較友善？檔名都一堆底線之類的&lt;br>
 至於我則是在考完資格考後又忙著去YTP初賽，並且發現自己被最後一題電爆QQ&lt;br>
 因為17號是鳥人食雞日所以我拉一些人去ㄘ鳥人，加上加點的總共可以有八片雞肉叉燒，超爽。&lt;br>
 
- &lt;img src="https://omeletwithoutegg.github.io/images/TOI-2020-7-18-weekend/totto.jpg" alt="404 QQ">
+ &lt;img src="totto.jpg" alt="404 QQ">
 
 &lt;/p></description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</guid><description>&lt;h1 id="vim-">vim ?!&lt;/h1>
 &lt;p>vim : 古老的編輯器&lt;/p>
@@ -412,7 +412,7 @@ hexo似乎是對windows比較友善？檔名都一堆底線之類的&lt;br>
 &lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404">https://tioj.ck.tp.edu.tw/problems/1404&lt;/a>&lt;/p>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>
- &lt;img src="https://omeletwithoutegg.github.io/images/TIOJ-1404/description.gif" alt="404 QQ">
+ &lt;img src="description.gif" alt="404 QQ">
 
 &lt;br>
 在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。&lt;br>
