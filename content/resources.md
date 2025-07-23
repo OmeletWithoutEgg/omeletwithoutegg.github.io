@@ -19,6 +19,8 @@ tags: []
 - https://tmt514.github.io/
     - https://tmt514.github.io/algorithm-analysis/
 - https://sunmoon-template.blogspot.com/
+- https://abc864197532.github.io/
+- https://pixelcat31415.github.io/
 - https://alvingogo.github.io/
 - https://caidocode.blogspot.com/
 - https://the-coding-pooh.github.io/
