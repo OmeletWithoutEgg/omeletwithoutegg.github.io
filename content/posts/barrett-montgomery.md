@@ -58,9 +58,9 @@ $$
 
 $$
 \begin{cases}
-\varepsilon \leq 0 \land x \geq 0 \implies x \cdot \varepsilon \leq 0
+-1 < \lfloor R / M \rfloor - (R / M) \leq 0
 \newline
-\varepsilon > \frac{-1}{R} \land x < R \implies x \cdot \varepsilon > -1
+0 \leq \frac{x}{R} < 1
 \end{cases}
 \implies -1 < x \cdot \varepsilon \leq 0
 $$
@@ -141,7 +141,7 @@ modmul(unsigned int, unsigned int):
 
 ## Montgomery Multiplication
 
-Montgomery multiplication 的思路則跟 Barrett reduction 不太一樣。比起計算 $x \bmod M$，我們來計算 $x \cdot R^{-1} \bmod M$ 吧！其中 $R^{-1}$ 是 $R$ 在 $\mathbb{Z}_M$ 下的模逆元。
+Montgomery multiplication 的思路則跟 Barrett reduction 不太一樣。比起計算 $x \bmod M$，我們來計算 $x \cdot R^{-1} \bmod M$ 吧！其中 $R^{-1}$ 是 $R$ 在 $\mathbb{Z} _ M$ 下的模逆元。
 
 如果我們可以找到一個 $\ell$ 使得 $x + \ell \cdot M \equiv 0 \pmod R$ 的話，那麼
 $$
@@ -149,14 +149,14 @@ y = \frac{x + \ell \cdot M}{R}
 $$
 就會是一個整數。也就是說，我們直接（在整數或者實數上）除以 $R$ 就可以得到 $y$。不難驗證 $y \equiv x \cdot R^{-1} \pmod M$。
 
-$\ell$ 要怎麼找呢？移項一下得到 $\ell \cdot M \equiv -x \pmod R$，不妨取 $\ell = x \cdot (-M^{-1}) \bmod R$，其中 $M^{-1}$ 指的是在 $\mathbb{Z} _ R$ 下的模逆元。
+$\ell$ 要怎麼找呢？移項一下得到 $\ell \cdot M \equiv -x \pmod R$，不妨取 $\ell = x \cdot (-M^{-1}) \bmod R$，其中 $M^{-1}$ 指的是在 $\mathbb{Z} _ R$ 下的模逆元。雖然算模逆元需要花一些功夫，不過 $(-M^{-1}) \bmod R$ 可以在預處理時計算。
 
 接著來證明一下 $y$ 夠小。如果 $R$ 取得夠大使得 $x < MR$ 的話，則 $\frac{x}{R} < M$；同時 $\frac{\ell}{R} < 1$，所以
 $$
 y = \frac{x + \ell \cdot M}{R} = \frac{x}{R} + \frac{\ell}{R} \cdot M < M + M < 2M
 $$
 
-因此，若我們事先得到 $M$ 之後做好預處理，那麼計算 $x \cdot R^{-1} \bmod M$ 只需要一次乘法、一次加法、一次除以 $R$，以及一個 conditional subtraction。
+因此，若我們事先得到 $M$ 之後做好預處理，那麼計算 $x \cdot R^{-1} \bmod M$ 只需要一次乘法、一次 $\bmod R$ 的乘法、一次加法、一次除以 $R$，以及一個 conditional subtraction。
 
 ### 如何用 $\textrm{redc}(x)$ 湊出乘法取模運算
 
@@ -169,13 +169,13 @@ $$
 \textrm{redc}((aR \bmod M) \cdot (bR \bmod M)) = (cR \bmod M)
 $$
 
-這時候就可以引入「Montgomery Form」的概念（也有人叫 Montgomery Domain）。方便起見令函數 $f(x) = xR \bmod M$。一個數字 $x$ 的 Montgomery Form 就是 $f(x)$，而
+這時候就可以引入「Montgomery form」的概念（也有人叫 Montgomery domain）。方便起見令函數 $f(x) = xR \bmod M$。一個數字 $x$ 的 Montgomery form 就是 $f(x)$，而
 
 $$
 a \cdot b \bmod M = f^{-1}(\textrm{redc}(f(a) \cdot f(b)))
 $$
 
-也就是說，模 $M$ 下的乘法等於是先把 $a, b$ 都轉成 Montgomery Form 之後做 `redc`，再從 Montgomery Form 轉回真正的答案。而 $f$ 以及 $f^{-1}$ 的計算事實上也可以由 $\textrm{redc}$ 湊出來。
+也就是說，模 $M$ 下的乘法等於是先把 $a, b$ 都轉成 Montgomery form 之後做 `redc`，再從 Montgomery form 轉回真正的答案。而 $f$ 以及 $f^{-1}$ 的計算事實上也可以由 $\textrm{redc}$ 湊出來。
 $$
 \begin{cases}
 f(x) &=& \textrm{redc}(x \cdot (R^2 \bmod M))
@@ -185,19 +185,19 @@ f^{-1}(x) &=& \textrm{redc}(x)
 $$
 其中 $R^2 \bmod M$ 可以預處理。注意以上述方法計算 $f(x)$ 時需要保證 $x < R$。
 
-如果每次做乘法取模都把數字轉成 Montgomery Form、$\textrm{redc}$ 之後再轉回來，那麼通常不會省下太多時間。通常來說，進行連續的乘法時 Montgomery Multiplication 會更有優勢（例如：快速冪、NTT 等等），因為我們只需要在最初與最後做 Montgomery Form 的轉換。
+如果每次做乘法取模都把數字轉成 Montgomery form、$\textrm{redc}$ 之後再轉回來，那麼通常不會省下太多時間。通常來說，進行連續的乘法時 Montgomery Multiplication 會更有優勢（例如：快速冪、NTT 等等），因為我們只需要在最初與最後做 Montgomery form 的轉換。
 
-注意到，把兩個數字各自的的 Montgomery 的相加減會等於先做相加減之後再轉成 Montgomery Form，也就是
+注意到，把兩個數字各自的的 Montgomery 的相加減會等於先做相加減之後再轉成 Montgomery form，也就是
 $$
 \left(f(a) \pm f(b)\right) \bmod M = f((a \pm b) \bmod M)
 $$
-所以算加減法不需要牽涉到 Montgomery Form 的轉換。
+所以算加減法不需要牽涉到 Montgomery form 的轉換。
 
 ### 缺點
 
 Montgomery multiplication 一個很大的缺點就是需要 $R, M$ 互質，因為需要計算 $M^{-1}$，而且需要 $R^{-1}$ 的存在。通常來說 $R$ 會挑選 $2$ 的冪次，所以 $M$ 就只能是奇數。
 
-以下是一段參考實作，針對 32-bit 以下的 $M$ 我們取 $R = 2^{32}$ 便足夠了。裡面計算 $M^{-1} \pmod R$ 的方法是使用 Hensel lifting，在此省略不談。
+以下是一段參考實作，針對 32-bit 以下的 $M$ 我們取 $R = 2^{32}$ 便足夠了。裡面計算 $M^{-1} \bmod R$ 的方法是使用 Hensel lifting，在此省略不談。
 
 ```cpp
 struct Mont { // Montgomery multiplication
@@ -275,9 +275,9 @@ $$
 | Barrett reduction         | $2w$ 乘 $2w$   | 概念比較簡單 | 需要比較長的乘法                      |
 | Montgomery multiplication | $w$ 乘 $w$     | 易 vectorize | 對奇數不能使用、需要改較多程式碼 [^3] |
 
-[^3]: 以效率的觀點來看，最好是中途計算全部改用 Montgomery Form。需要在心裡掌握程式碼在哪個時間點時，哪些變數是 Montgomery Form。（當然可能某種 class 可以幫忙包裝）
+[^3]: 以效率的觀點來看，最好是中途計算全部改用 Montgomery form。需要在心裡掌握程式碼在哪個時間點時，哪些變數是 Montgomery form。（當然可能某種 class 可以幫忙包裝）
 
-若以 $M$ 是 32-bit 來看的話，Barrett reduction 需要用到 `__uint128_t` 的乘法：兩個 64-bit 的數字乘出 128-bit 的結果，對應的組合語言是 `mul` 這個 instruction。但 Montgomery 可以全部在 `uint64_t` 內做完。而若 $M$ 是 64-bit 的話，Barrett 都需要手寫 256-bit 乘法了，Montgomery 可以用 `__uint128_t` 做。Montgomery multiplication 所需乘法比較短，這也讓他更容易 vectorize。
+若以 $M$ 是 32-bit 來看的話，Barrett reduction 需要用到 `__uint128_t` 的乘法：兩個 64-bit 的數字乘出 128-bit 的結果，對應的組合語言是 `mul` 這個 instruction。但 Montgomery 可以全部在 `uint64_t` 內做完。而若 $M$ 是 64-bit 的話，Barrett 都需要手寫 256-bit 乘法了，Montgomery 可以用 `__uint128_t` 做。Montgomery multiplication 所需乘法比較短，更容易 vectorize (SIMD)。
 
 除了 Barrett reduction 和 Montgomery multiplication 以外當然還有其他演算法，例如 div2by1，但本篇不打算介紹。另外，[英文維基](https://en.wikipedia.org/wiki/Barrett_reduction)也有寫到，在某種觀點下 Barrett reduction 和 Montgomery multiplication 是一樣的，這也有在後量子密碼學的課上提到。
 
