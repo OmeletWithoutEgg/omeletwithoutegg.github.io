@@ -69,7 +69,7 @@ $$
 
 [^1]: conditional subtration 是指 `r >= M ? r - M : r`。丟上 godbolt.org 測試的結果是通常會被編譯成 `sub` 加上 `cmov`。
 
-[^2]: 我發現以前的模板寫 `-1ULL / t_M` 而不是 `(u128(1) << 64) / t_M`，但兩者有差的情形應該只有 `t_M` 是 $2$ 的冪次的時候，而那樣的情況 $q, \tilde{q}$ 的差距是 $1$，一個 conditional subtraction 仍然足夠。
+[^2]: 這裡寫 `-1ULL / t_M` 而不是 `(u128(1) << 64) / t_M`，但兩者有差的情形應該只有 `t_M` 是 $2$ 的冪次的時候，而那樣的情況 $q, \tilde{q}$ 的差距是 $1$，一個 conditional subtraction 仍然足夠。如果寫 `(u128(1) << 64) / t_M` 的話，$M = 1$ 時 $d = 2^{64}$ 就沒辦法用 `uint64_t` 存了。
 
 ```cpp
 struct Barrett {
@@ -78,7 +78,7 @@ struct Barrett {
   using u128 = __uint128_t;
   u32 M;
   u64 d; // R := 2^{64}; d := floor(R / M)
-  Barrett(u32 t_M) : M(t_M), d((u128(1) << 64) / t_M) {}
+  Barrett(u32 t_M) : M(t_M), d(-1ULL / t_M) {}
   u32 reduce(u64 x) const { // x % M
     // we need a 128-bit multiplication here to calculate q
     u64 q = (u128(d) * x) >> 64;
