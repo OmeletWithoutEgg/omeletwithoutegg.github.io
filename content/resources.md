@@ -81,5 +81,6 @@ tags: []
 - [is-my-problem-new](http://yuantiji.ac/en/)
 - [Asia Pacific site score table](https://icpcapac.solved.ac/2025)
 - [TWPCA](https://www.twpca.org/)
+- [ICPC Archives](https://icpcarchive.github.io/)
 - [區域賽記分板紀錄](https://sorahisa-rank.github.io/)
 - ~~[vim](https://www.vim.org/download.php)、[vim-plug](https://github.com/junegunn/vim-plug)~~
