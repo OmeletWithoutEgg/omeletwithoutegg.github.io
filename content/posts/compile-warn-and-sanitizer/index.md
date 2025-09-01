@@ -477,6 +477,22 @@ int main() {
 
 原則上 scope 越大的變數（例如全域變數）用較長的名字，scope 越小的變數用較短的名字（例如 for 中的 i），不僅比較不會 shadow 也比較好看懂程式碼。
 
+順帶一提，[Member initializer list](https://en.cppreference.com/w/cpp/language/initializer_list.html) 的 shadow 我認為也是應該避免的，這樣才能輕鬆分清究竟是「傳進來的 `n`」還是「自己的 member `n`」。我個人習慣採用前綴 `t_` [^t_prefix] 來避免這部份的 shadow。
+
+```cpp
+struct Point {
+  int x, y;
+  Point(int t_x, int t_y) : x(t_x), y(t_y) {}
+};
+struct Segtree {
+  int n;
+  vector<int> sum;
+  Segtree(int t_n) : n(t_n), sum(t_n * 2) {}
+};
+```
+
+[^t_prefix]: <https://github.com/cpp-best-practices/cppbestpractices/blob/master/03-Style.md#distinguish-function-parameters>
+
 ### unused
 
 沒有用到的區域變數通常是 code 還沒有寫完的徵兆。
