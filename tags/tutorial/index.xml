@@ -1,80 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tutorial/</link><description>Recent content in Tutorial on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 22 Jul 2025 22:08:42 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Barrett Reduction &amp; Montgomery Multiplication</title><link>https://omeletwithoutegg.github.io/2025/07/22/barrett-montgomery/</link><pubDate>Tue, 22 Jul 2025 22:08:42 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/22/barrett-montgomery/</guid><description>&lt;h1 id="barrett-reduction-與-montgomery-multiplication">Barrett Reduction 與 Montgomery Multiplication&lt;/h1>
-&lt;p>對競程有點經驗的人應該都要知道除法是一個很慢&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>的操作。&lt;br>
-不過，如果是除以 $2^k$ 的話就很簡單了，只要一個 shift 操作就能完成。&lt;br>
-Barrett reduction 和 Montgomery multiplication 分別用了不一樣的方法，給定一個正整數 $M$，針對 $M$ 做一些預處理之後，我們可以不用任何除法指令，只用較少的乘法、加減法與 shift 來完成「兩個數字相乘之後模 $M$」的操作。&lt;/p></description></item><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</guid><description>&lt;h1 id="rerooting--全方位木-dp">rerooting / 全方位木 DP&lt;/h1>
-&lt;p>因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p>
-&lt;p>大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p></description></item><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum">https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a>&lt;/p>
-&lt;p>有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p></description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣">一次式前綴積的多點求值與推廣&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定序列 $a_1, \dots, a_N$。考慮一次式的序列 $x - a_i$，定義其第 $i$ 個前綴積為&lt;/p>
-&lt;p>$$&lt;br>
-f_i(x) = \prod _ {j \leq i} (x - a_j)&lt;br>
-$$&lt;/p>
-&lt;p>接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p></description></item><item><title>Zobrist Hash / XOR hash</title><link>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</link><pubDate>Mon, 21 Oct 2024 21:17:34 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</guid><description>&lt;h1 id="zobrist-hash--xor-hash">Zobrist Hash / XOR hash&lt;/h1>
-&lt;p>非常簡單的一篇文章，只是看到沒有什麼中文材料就來科普（？）一下。&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>Zobrist hash 的用處是快速比較集合之間是否一樣。先令 $U$ 是我們所關心的物件的集合，對於每個物件 $u \in U$，我們都指定一個隨機的 $w$-bit 的二進位數字 $h(u)$ 給他，接著我們在比較兩個集合 $S, T \subseteq U$ 是否一樣的時候，我們直接當作比較 $\bigoplus _ {u \in S} h(u)$ 和 $\bigoplus _ {u \in T} h(u)$ 是否一樣，這樣只要 $w$ 夠大的話就有夠高的機率正確了。&lt;br>
-兩者一樣等價於 $\bigoplus _ {u\in S\oplus T} h(u)$ 為 $0$，其中 $S\oplus T$ 是對稱差集。兩個集合不一樣若且唯若對稱差集非空，而由於我們每個數字每個 bit 都是隨機的，所以當對稱差集非空的時候，這個 hash 的這個 bit 為 0 的機率是 $1/2$。&lt;br>
-因為要 $w$ 個 bit 都是 $0$ 才會把不一樣誤判成一樣，我們可以知道一次比較只有 $2^{-w}$ 的機率錯誤。常取的值會是 $w=64$。&lt;/p></description></item><item><title>Aliens DP 備忘錄</title><link>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</link><pubDate>Sat, 05 Oct 2024 23:20:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</guid><description>&lt;h1 id="aliens-trick-的一些事實列舉與說明">Aliens trick 的一些事實列舉與說明&lt;/h1>
-&lt;p>本文主要基於 &lt;a href="https://noshi91.hatenablog.com/entry/2023/11/20/052227">https://noshi91.hatenablog.com/entry/2023/11/20/052227&lt;/a> 撰寫。&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>令 $X = \mathbb{Z} \cap [L, R]$ 為一非空集合。&lt;br>
-考慮下凸函數 $f : X \to \mathbb{Z}$（註：即 $f(x) - f(x - 1) \leq f(x + 1) - f(x)$，可以用 U 型來想像）。&lt;br>
-令 $g: \mathbb{R} \to \mathbb{R}, g(p) = \min _ {x \in X}(f(x) + px)$，代表 penalty 為 p 時算出的最佳解。&lt;/p></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
-然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p>
-&lt;h1 id="先備知識">先備知識&lt;/h1>
-&lt;p>看得懂$\sum$&lt;br>
-然後會(不帶權)二分圖匹配的匈牙利演算法&lt;/p></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
-&lt;h2 id="定義">定義&lt;/h2>
-&lt;p>$$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$&lt;br>
-或者說$a,b$同餘於$m$&lt;/p>
-&lt;h2 id="基本性質">基本性質&lt;/h2>
-&lt;p>當一個題目要求答案模一個數字$m$時&lt;br>
-通常我們都可以不用先算出一個很大的答案再取模&lt;br>
-利用下面的規則能夠在計算的過程中一邊取模(加減乘不會改變等價關係)&lt;br>
-設&lt;br>
-$$&lt;br>
-\left \{&lt;br>
-\begin{matrix}&lt;br>
-a_0 \equiv a_1 \pmod m\newline&lt;br>
-b_0 \equiv b_1 \pmod m&lt;br>
-\end{matrix}&lt;br>
-\right .&lt;br>
-$$&lt;br>
-則易得到&lt;br>
-$$&lt;br>
-\left \{&lt;br>
-\begin{matrix}&lt;br>
-a_0 \pm b_0 \equiv a_1 \pm b_1 \pmod m\newline&lt;br>
-a_0b_0 \equiv a_1b_1 \pmod m&lt;br>
-\end{matrix}&lt;br>
-\right .&lt;br>
-$$&lt;/p></description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
-&lt;p>本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速&lt;br>
-這邊先定義一下捲積$ * $是什麼&lt;/p>
-&lt;p>$$&lt;br>
-(a * b) _ x = \sum _ {i+j=x} a_i b_j&lt;br>
-$$&lt;/p>
-&lt;p>實際上就等價於我們常見的多項式乘法&lt;br>
-naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意&lt;/p></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
-&lt;p>先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br>
-如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p>
-&lt;h2 id="單點修改">單點修改&lt;/h2>
-&lt;p>例題仍然是萬年RMQ&lt;/p>
-&lt;blockquote>
-&lt;p>給定一個長度$n$的序列，請支援以下操作&lt;/p></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
-&lt;h2 id="cin--cout">cin / cout&lt;/h2>
-&lt;p>因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用&lt;br>
-競程的時候記得開下面兩個東西&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>開了之後就不要使用 stdio 裡面的東西啦&lt;br>
-另外若非互動題也不要使用 &lt;code>endl&lt;/code> 之類會flush的函式，請用 &lt;code>'\n'&lt;/code> 代替&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tutorial/</link><description>Recent content in Tutorial on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 31 Aug 2025 21:48:30 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>fsanitize 與編譯警告</title><link>https://omeletwithoutegg.github.io/2025/08/31/compile-warn-and-sanitizer/</link><pubDate>Sun, 31 Aug 2025 21:48:30 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/08/31/compile-warn-and-sanitizer/</guid><description>&lt;h1 id="fsanitize-與編譯警告"&gt;fsanitize 與編譯警告&lt;/h1&gt;
+&lt;p&gt;介紹一下 fsanitize 與編譯警告這兩個能夠幫助 debug 以及減少 bug 的工具。&lt;/p&gt;
+&lt;p&gt;寫程式&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;一定會遇到 bug。&lt;br&gt;
+雖然 debug 這件事並沒有銀色子彈的存在，但 sanitizer 與編譯警告可以幫助我們簡單的排除一整類的 bug，保持我們的 san 值。&lt;/p&gt;</description></item><item><title>Barrett Reduction &amp; Montgomery Multiplication</title><link>https://omeletwithoutegg.github.io/2025/07/22/barrett-montgomery/</link><pubDate>Tue, 22 Jul 2025 22:08:42 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/22/barrett-montgomery/</guid><description>&lt;h1 id="barrett-reduction-與-montgomery-multiplication"&gt;Barrett Reduction 與 Montgomery Multiplication&lt;/h1&gt;
+&lt;p&gt;對競程有點經驗的人應該都要知道除法是一個很慢&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;的操作。&lt;br&gt;
+不過，如果是除以 $2^k$ 的話就很簡單了，只要一個 shift 操作就能完成。&lt;br&gt;
+Barrett reduction 和 Montgomery multiplication 分別用了不一樣的方法，給定一個正整數 $M$，針對 $M$ 做一些預處理之後，我們可以不用任何除法指令，只用較少的乘法、加減法與 shift 來完成「兩個數字相乘之後模 $M$」的操作。&lt;/p&gt;</description></item><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</guid><description>&lt;h1 id="rerooting--全方位木-dp"&gt;rerooting / 全方位木 DP&lt;/h1&gt;
+&lt;p&gt;因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p&gt;
+&lt;p&gt;大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p&gt;</description></item><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5"&gt;♯p Subset Sum : 5e5&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum"&gt;https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p&gt;</description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣"&gt;一次式前綴積的多點求值與推廣&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定序列 $a_1, \dots, a_N$。考慮一次式的序列 $x - a_i$，定義其第 $i$ 個前綴積為&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;
+f_i(x) = \prod _ {j \leq i} (x - a_j)&lt;br&gt;
+$$&lt;/p&gt;
+&lt;p&gt;接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p&gt;</description></item><item><title>Zobrist Hash / XOR hash</title><link>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</link><pubDate>Mon, 21 Oct 2024 21:17:34 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</guid><description>&lt;h1 id="zobrist-hash--xor-hash"&gt;Zobrist Hash / XOR hash&lt;/h1&gt;
+&lt;p&gt;非常簡單的一篇文章，只是看到沒有什麼中文材料就來科普（？）一下。&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;Zobrist hash 的用處是快速比較集合之間是否一樣。先令 $U$ 是我們所關心的物件的集合，對於每個物件 $u \in U$，我們都指定一個隨機的 $w$-bit 的二進位數字 $h(u)$ 給他，接著我們在比較兩個集合 $S, T \subseteq U$ 是否一樣的時候，我們直接當作比較 $\bigoplus _ {u \in S} h(u)$ 和 $\bigoplus _ {u \in T} h(u)$ 是否一樣，這樣只要 $w$ 夠大的話就有夠高的機率正確了。&lt;br&gt;
+兩者一樣等價於 $\bigoplus _ {u\in S\oplus T} h(u)$ 為 $0$，其中 $S\oplus T$ 是對稱差集。兩個集合不一樣若且唯若對稱差集非空，而由於我們每個數字每個 bit 都是隨機的，所以當對稱差集非空的時候，這個 hash 的這個 bit 為 0 的機率是 $1/2$。&lt;br&gt;
+因為要 $w$ 個 bit 都是 $0$ 才會把不一樣誤判成一樣，我們可以知道一次比較只有 $2^{-w}$ 的機率錯誤。常取的值會是 $w=64$。&lt;/p&gt;</description></item><item><title>Aliens DP 備忘錄</title><link>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</link><pubDate>Sat, 05 Oct 2024 23:20:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</guid><description>&lt;h1 id="aliens-trick-的一些事實列舉與說明"&gt;Aliens trick 的一些事實列舉與說明&lt;/h1&gt;
+&lt;p&gt;本文主要基於 &lt;a href="https://noshi91.hatenablog.com/entry/2023/11/20/052227"&gt;https://noshi91.hatenablog.com/entry/2023/11/20/052227&lt;/a&gt; 撰寫。&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;令 $X = \mathbb{Z} \cap [L, R]$ 為一非空集合。&lt;br&gt;
+考慮下凸函數 $f : X \to \mathbb{Z}$（註：即 $f(x) - f(x - 1) \leq f(x + 1) - f(x)$，可以用 U 型來想像）。&lt;br&gt;
+令 $g: \mathbb{R} \to \mathbb{R}, g(p) = \min _ {x \in X}(f(x) + px)$，代表 penalty 為 p 時算出的最佳解。&lt;/p&gt;</description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p&gt;我只是想做一下筆記&lt;br&gt;
+然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p&gt;
+&lt;h1 id="先備知識"&gt;先備知識&lt;/h1&gt;
+&lt;p&gt;看得懂$\sum$&lt;br&gt;
+然後會(不帶權)二分圖匹配的匈牙利演算法&lt;/p&gt;</description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>&lt;h1 id="同餘算數"&gt;同餘算數&lt;/h1&gt;
+&lt;h2 id="定義"&gt;定義&lt;/h2&gt;
+&lt;p&gt;$$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$&lt;br&gt;
+或者說$a,b$同餘於$m$&lt;/p&gt;
+&lt;h2 id="基本性質"&gt;基本性質&lt;/h2&gt;
+&lt;p&gt;當一個題目要求答案模一個數字$m$時&lt;br&gt;
+通常我們都可以不用先算出一個很大的答案再取模&lt;br&gt;
+利用下面的規則能夠在計算的過程中一邊取模(加減乘不會改變等價關係)&lt;br&gt;
+設&lt;br&gt;
+$$&lt;br&gt;
+\left \{&lt;br&gt;
+\begin{matrix}&lt;br&gt;
+a_0 \equiv a_1 \pmod m\newline&lt;br&gt;
+b_0 \equiv b_1 \pmod m&lt;br&gt;
+\end{matrix}&lt;br&gt;
+\right .&lt;br&gt;
+$$&lt;br&gt;
+則易得到&lt;br&gt;
+$$&lt;br&gt;
+\left \{&lt;br&gt;
+\begin{matrix}&lt;br&gt;
+a_0 \pm b_0 \equiv a_1 \pm b_1 \pmod m\newline&lt;br&gt;
+a_0b_0 \equiv a_1b_1 \pmod m&lt;br&gt;
+\end{matrix}&lt;br&gt;
+\right .&lt;br&gt;
+$$&lt;/p&gt;</description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</guid><description>&lt;h1 id="捲積方法-oao"&gt;捲積方法 OAO&lt;/h1&gt;
+&lt;p&gt;本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速&lt;br&gt;
+這邊先定義一下捲積$ * $是什麼&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;
+(a * b) _ x = \sum _ {i+j=x} a_i b_j&lt;br&gt;
+$$&lt;/p&gt;
+&lt;p&gt;實際上就等價於我們常見的多項式乘法&lt;br&gt;
+naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意&lt;/p&gt;</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹"&gt;迭代式線段樹&lt;/h1&gt;
+&lt;p&gt;先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br&gt;
+如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p&gt;
+&lt;h2 id="單點修改"&gt;單點修改&lt;/h2&gt;
+&lt;p&gt;例題仍然是萬年RMQ&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;給定一個長度$n$的序列，請支援以下操作&lt;/p&gt;</description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>&lt;h1 id="常用的輸入出優化"&gt;常用的輸入(出)優化&lt;/h1&gt;
+&lt;h2 id="cin--cout"&gt;cin / cout&lt;/h2&gt;
+&lt;p&gt;因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用&lt;br&gt;
+競程的時候記得開下面兩個東西&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ios_base&lt;span style="color:#f92672"&gt;::&lt;/span&gt;sync_with_stdio(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;), cin.tie(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;開了之後就不要使用 stdio 裡面的東西啦&lt;br&gt;
+另外若非互動題也不要使用 &lt;code&gt;endl&lt;/code&gt; 之類會flush的函式，請用 &lt;code&gt;'\n'&lt;/code&gt; 代替&lt;/p&gt;</description></item></channel></rss>

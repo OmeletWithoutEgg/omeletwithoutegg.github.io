@@ -1,38 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tree on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tree/</link><description>Recent content in Tree on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 09 Apr 2025 18:22:32 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tree/index.xml" rel="self" type="application/rss+xml"/><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</guid><description>&lt;h1 id="rerooting--全方位木-dp">rerooting / 全方位木 DP&lt;/h1>
-&lt;p>因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p>
-&lt;p>大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p></description></item><item><title>TIOJ 1724</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</link><pubDate>Wed, 18 Dec 2024 20:57:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</guid><description>&lt;h1 id="spacechem">SpaceChem&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1724">https://tioj.ck.tp.edu.tw/problems/1724&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>差點看不懂的題敘。&lt;/p>
-&lt;p>簡單來說，現在有一張 $N$ 點 $M$ 邊的圖 $G$，第 $i$ 條邊權重是 $C_i$，保證前 $N-1$ 條邊是一棵樹。你希望修改一些邊的權重，使得前 $N-1$ 條邊組成的樹恰好是修改後的圖的一個最小生成樹。第 $i$ 條邊修改成 $D_i$ 的代價是 $|C_i - D_i|$，請輸出最小的代價是多少。&lt;/p></description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</guid><description>&lt;h1 id="殿壬與最大流">殿壬與最大流&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2117">https://tioj.ck.tp.edu.tw/problems/2117&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>$Q \leq 2 \times 10^5$ 次詢問無向圖 $G$ 上面任兩點的最大流（邊權是 $1$）。但是，$G$ 是一張 $N$ 點 $N$ 邊連通圖。&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>$N$ 點 $N$ 邊無向連通圖的結構必定是一棵樹加上一條邊，或者也可以描述成一個環上面長出許多子樹。關鍵字是 pseudo tree 或基環樹 / based ring tree。&lt;/p></description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考">2021 TOI 模考&lt;/h1>
-&lt;p>可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br>
-今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p></description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>&lt;h1 id="can-you-arrive">Can You Arrive?&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1798">https://tioj.ck.tp.edu.tw/problems/1798&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>地鐵有$N$個站，$M$條軌道，$K$段行駛路線&lt;br>
-站與站之間使用軌道連接&lt;br>
-保證軌道不會形成環，且$M = N-1$&lt;/p>
-&lt;p>每段行駛路線代表有一輛車在兩站之間的最短路徑來回發車&lt;br>
-也就是說這段路上的任意兩站都是互通的，可以直接抵達不需轉車&lt;/p></description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社">1.銀河帝國旅行社&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1152">https://tioj.ck.tp.edu.tw/problems/1152&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給一棵樹，找最遠的兩個點的距離&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>這裡用類似DP的方法&lt;br>
-&lt;code>dfs(i)&lt;/code> 回傳一個 &lt;code>{ans, deepest}&lt;/code> 分別表示以$i$為根子樹中的答案和從$i$往下走的最遠距離&lt;br>
-那&lt;code>ans&lt;/code>可以分成有經過$i$的和沒經過的，有經過的就看最深的兩個子樹加起來是多少，沒經過的就遞迴下去算&lt;/p></description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</guid><description>&lt;h1 id="動態樹的奮鬥">動態樹的奮鬥&lt;/h1>
-&lt;p>為了這題的Link-Cut-Tree解我花了不只一整天XD&lt;br>
-壓常實在是神奇的事，把 &lt;code>long long&lt;/code> 改成 &lt;code>int&lt;/code> 再加上幾個 &lt;code>pragma&lt;/code> 終於成功壓過唯一奇怪的那筆= =&lt;br>
-而且 &lt;code>push&lt;/code> 竟然還不能用遞迴寫，到底三小&lt;br>
-LCT怎麼這麼可撥XD&lt;br>
-不過壓過去那筆之後其他筆的執行時間加起來超少，值得了&lt;/p></description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>&lt;h1 id="我要成為海賊王">我要成為海賊王&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1171">https://tioj.ck.tp.edu.tw/problems/1171&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>可能算是經典題吧，這邊提供兩種寫法: 重心剖分和輕重鍊剖分&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tree on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/tree/</link><description>Recent content in Tree on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 09 Apr 2025 18:22:32 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/tree/index.xml" rel="self" type="application/rss+xml"/><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</guid><description>&lt;h1 id="rerooting--全方位木-dp"&gt;rerooting / 全方位木 DP&lt;/h1&gt;
+&lt;p&gt;因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p&gt;
+&lt;p&gt;大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p&gt;</description></item><item><title>TIOJ 1724</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</link><pubDate>Wed, 18 Dec 2024 20:57:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</guid><description>&lt;h1 id="spacechem"&gt;SpaceChem&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1724"&gt;https://tioj.ck.tp.edu.tw/problems/1724&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;差點看不懂的題敘。&lt;/p&gt;
+&lt;p&gt;簡單來說，現在有一張 $N$ 點 $M$ 邊的圖 $G$，第 $i$ 條邊權重是 $C_i$，保證前 $N-1$ 條邊是一棵樹。你希望修改一些邊的權重，使得前 $N-1$ 條邊組成的樹恰好是修改後的圖的一個最小生成樹。第 $i$ 條邊修改成 $D_i$ 的代價是 $|C_i - D_i|$，請輸出最小的代價是多少。&lt;/p&gt;</description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</guid><description>&lt;h1 id="殿壬與最大流"&gt;殿壬與最大流&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2117"&gt;https://tioj.ck.tp.edu.tw/problems/2117&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;$Q \leq 2 \times 10^5$ 次詢問無向圖 $G$ 上面任兩點的最大流（邊權是 $1$）。但是，$G$ 是一張 $N$ 點 $N$ 邊連通圖。&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;$N$ 點 $N$ 邊無向連通圖的結構必定是一棵樹加上一條邊，或者也可以描述成一個環上面長出許多子樹。關鍵字是 pseudo tree 或基環樹 / based ring tree。&lt;/p&gt;</description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考"&gt;2021 TOI 模考&lt;/h1&gt;
+&lt;p&gt;可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br&gt;
+今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p&gt;</description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>&lt;h1 id="can-you-arrive"&gt;Can You Arrive?&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1798"&gt;https://tioj.ck.tp.edu.tw/problems/1798&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;地鐵有$N$個站，$M$條軌道，$K$段行駛路線&lt;br&gt;
+站與站之間使用軌道連接&lt;br&gt;
+保證軌道不會形成環，且$M = N-1$&lt;/p&gt;
+&lt;p&gt;每段行駛路線代表有一輛車在兩站之間的最短路徑來回發車&lt;br&gt;
+也就是說這段路上的任意兩站都是互通的，可以直接抵達不需轉車&lt;/p&gt;</description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社"&gt;1.銀河帝國旅行社&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1152"&gt;https://tioj.ck.tp.edu.tw/problems/1152&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給一棵樹，找最遠的兩個點的距離&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;這裡用類似DP的方法&lt;br&gt;
+&lt;code&gt;dfs(i)&lt;/code&gt; 回傳一個 &lt;code&gt;{ans, deepest}&lt;/code&gt; 分別表示以$i$為根子樹中的答案和從$i$往下走的最遠距離&lt;br&gt;
+那&lt;code&gt;ans&lt;/code&gt;可以分成有經過$i$的和沒經過的，有經過的就看最深的兩個子樹加起來是多少，沒經過的就遞迴下去算&lt;/p&gt;</description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</guid><description>&lt;h1 id="動態樹的奮鬥"&gt;動態樹的奮鬥&lt;/h1&gt;
+&lt;p&gt;為了這題的Link-Cut-Tree解我花了不只一整天XD&lt;br&gt;
+壓常實在是神奇的事，把 &lt;code&gt;long long&lt;/code&gt; 改成 &lt;code&gt;int&lt;/code&gt; 再加上幾個 &lt;code&gt;pragma&lt;/code&gt; 終於成功壓過唯一奇怪的那筆= =&lt;br&gt;
+而且 &lt;code&gt;push&lt;/code&gt; 竟然還不能用遞迴寫，到底三小&lt;br&gt;
+LCT怎麼這麼可撥XD&lt;br&gt;
+不過壓過去那筆之後其他筆的執行時間加起來超少，值得了&lt;/p&gt;</description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>&lt;h1 id="我要成為海賊王"&gt;我要成為海賊王&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1171"&gt;https://tioj.ck.tp.edu.tw/problems/1171&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;可能算是經典題吧，這邊提供兩種寫法: 重心剖分和輕重鍊剖分&lt;/p&gt;</description></item></channel></rss>

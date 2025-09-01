@@ -1,125 +1,125 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Template on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/template/</link><description>Recent content in Template on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 09 Apr 2025 18:22:32 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/template/index.xml" rel="self" type="application/rss+xml"/><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</guid><description>&lt;h1 id="rerooting--全方位木-dp">rerooting / 全方位木 DP&lt;/h1>
-&lt;p>因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p>
-&lt;p>大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p></description></item><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum">https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a>&lt;/p>
-&lt;p>有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p></description></item><item><title>min 25 模板使用說明</title><link>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</link><pubDate>Tue, 10 Dec 2024 21:29:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</guid><description>&lt;h1 id="min-25-模板使用說明">min 25 模板使用說明&lt;/h1>
-&lt;p>前幾個月（WF 之前）忘記為什麼就想去學 min25 篩，然後就把他模版化放進 codebook 裡了。我是看 &lt;a href="https://oi-wiki.org/math/number-theory/min-25/">https://oi-wiki.org/math/number-theory/min-25/&lt;/a> 學的，不過本文不會提到太多細節。&lt;/p>
-&lt;p>先貼上 code：&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> U, &lt;span style="color:#66d9ef">typename&lt;/span> V&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">struct&lt;/span> &lt;span style="color:#a6e22e">min25&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> lld n; &lt;span style="color:#66d9ef">int&lt;/span> sq;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>U&lt;span style="color:#f92672">&amp;gt;&lt;/span> Ss, Sl, Spre; vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>V&lt;span style="color:#f92672">&amp;gt;&lt;/span> Rs, Rl;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Sieve sv; vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>lld&lt;span style="color:#f92672">&amp;gt;&lt;/span> quo;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> U &lt;span style="color:#f92672">&amp;amp;&lt;/span>S(lld d) { &lt;span style="color:#66d9ef">return&lt;/span> d &lt;span style="color:#f92672">&amp;lt;&lt;/span> sq &lt;span style="color:#f92672">?&lt;/span> Ss[d] &lt;span style="color:#f92672">:&lt;/span> Sl[n &lt;span style="color:#f92672">/&lt;/span> d]; }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> V &lt;span style="color:#f92672">&amp;amp;&lt;/span>R(lld d) { &lt;span style="color:#66d9ef">return&lt;/span> d &lt;span style="color:#f92672">&amp;lt;&lt;/span> sq &lt;span style="color:#f92672">?&lt;/span> Rs[d] &lt;span style="color:#f92672">:&lt;/span> Rl[n &lt;span style="color:#f92672">/&lt;/span> d]; }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> min25(lld n_) &lt;span style="color:#f92672">:&lt;/span> n(n_), sq((&lt;span style="color:#66d9ef">int&lt;/span>)sqrt(n) &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>),
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Ss(sq), Sl(sq), Spre(sq), Rs(sq), Rl(sq), sv(sq) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>, Q; i &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; i &lt;span style="color:#f92672">=&lt;/span> n &lt;span style="color:#f92672">/&lt;/span> Q &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> quo.push_back(Q &lt;span style="color:#f92672">=&lt;/span> n &lt;span style="color:#f92672">/&lt;/span> i);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> U &lt;span style="color:#a6e22e">F_prime&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>f, &lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>F) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld p : sv.primes) Spre[p] &lt;span style="color:#f92672">=&lt;/span> f(p);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> sq; i&lt;span style="color:#f92672">++&lt;/span>) Spre[i] &lt;span style="color:#f92672">+=&lt;/span> Spre[i &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>];
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) S(i) &lt;span style="color:#f92672">=&lt;/span> F(i) &lt;span style="color:#f92672">-&lt;/span> F(&lt;span style="color:#ae81ff">1&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld p : sv.primes)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (p &lt;span style="color:#f92672">*&lt;/span> p &lt;span style="color:#f92672">&amp;gt;&lt;/span> i) &lt;span style="color:#66d9ef">break&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> S(i) &lt;span style="color:#f92672">-=&lt;/span> f(p) &lt;span style="color:#f92672">*&lt;/span> (S(i &lt;span style="color:#f92672">/&lt;/span> p) &lt;span style="color:#f92672">-&lt;/span> Spre[p &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>]);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> S(n);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#75715e">// F_prime: \sum _ {p is prime, p &amp;lt;= n} f(p)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> V &lt;span style="color:#a6e22e">F_comp&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>g, &lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>h) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) R(i) &lt;span style="color:#f92672">=&lt;/span> h(S(i));
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld p : sv.primes &lt;span style="color:#f92672">|&lt;/span> views&lt;span style="color:#f92672">::&lt;/span>reverse)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (p &lt;span style="color:#f92672">*&lt;/span> p &lt;span style="color:#f92672">&amp;gt;&lt;/span> i) &lt;span style="color:#66d9ef">break&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> lld prod &lt;span style="color:#f92672">=&lt;/span> p;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">int&lt;/span> c &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; prod &lt;span style="color:#f92672">*&lt;/span> p &lt;span style="color:#f92672">&amp;lt;=&lt;/span> i; &lt;span style="color:#f92672">++&lt;/span>c, prod &lt;span style="color:#f92672">*=&lt;/span> p) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> R(i) &lt;span style="color:#f92672">+=&lt;/span> g(p, c) &lt;span style="color:#f92672">*&lt;/span> (R(i &lt;span style="color:#f92672">/&lt;/span> prod) &lt;span style="color:#f92672">-&lt;/span> h(Spre[p]));
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> R(i) &lt;span style="color:#f92672">+=&lt;/span> g(p, c &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> R(n);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#75715e">// F_comp: \sum _ {2 &amp;lt;= i &amp;lt;= n} g(i)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}; &lt;span style="color:#75715e">// O(n^{3/4} / log n)
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>如果去看我們 &lt;a href="https://github.com/1011cychien/R-12-forked-codebook/blob/master/codes/Math/Min25Sieve.cpp">codebook 的連結&lt;/a> 會看到還有一串中文的註解，以下大概就是仔細的講那一串中文的註解然後隨機補充一些東西。&lt;/p></description></item><item><title>ICPC 競賽中如何製作 codebook</title><link>https://omeletwithoutegg.github.io/2024/07/13/icpc-codebook/</link><pubDate>Sat, 13 Jul 2024 22:44:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/13/icpc-codebook/</guid><description>&lt;h1 id="how-to-make-team-reference-document-in-icpc">How to make team reference document in ICPC&lt;/h1>
-&lt;h2 id="前言">前言&lt;/h2>
-&lt;p>在 ICPC 競賽中一個不可或缺的元素就是在 &lt;a href="https://icpc.global/worldfinals/rules">規則&lt;/a> 裡面被稱為 Team Reference Document 的東西。台大這邊俗稱叫 codebook。&lt;br>
-在上一次的 WF 當中是規定每一隊可以帶至多 25 頁的紙本參考資料，必須是單面印刷，字體大小需要「0.5 公尺的距離下正常視力的人可以直接閱讀」，並且可以帶總共三份完全相同的拷貝。&lt;/p></description></item><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>&lt;h1 id="除錯模板的重要">除錯模板的重要&lt;/h1>
-&lt;p>這是一篇很短的廢文。&lt;/p>
-&lt;p>當你發現你寫出的程式有 bug 的時候，就會是你花上很多時間的時候。&lt;br>
-尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。&lt;/p></description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>&lt;p>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。&lt;br>
-主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。&lt;/p></description></item><item><title>jngen</title><link>https://omeletwithoutegg.github.io/2021/01/24/jngen/</link><pubDate>Sun, 24 Jan 2021 01:17:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/24/jngen/</guid><description>&lt;h1 id="jngen">jngen&lt;/h1>
-&lt;p>最近在生107北市賽題目的測資想放到TIOJ上面，其中一題是關於找兩個凸包的兩條內公切線交點。&lt;br>
-因為不太知道測資怎麼生，又想到之前東東有提過jngen這個東西，因此就把他拿來生成我需要的凸包了。&lt;br>
-我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X&lt;/p></description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p>我只是想做一下筆記&lt;br>
-然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p>
-&lt;h1 id="先備知識">先備知識&lt;/h1>
-&lt;p>看得懂$\sum$&lt;br>
-然後會(不帶權)二分圖匹配的匈牙利演算法&lt;/p></description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</guid><description>&lt;h1 id="動態樹的奮鬥">動態樹的奮鬥&lt;/h1>
-&lt;p>為了這題的Link-Cut-Tree解我花了不只一整天XD&lt;br>
-壓常實在是神奇的事，把 &lt;code>long long&lt;/code> 改成 &lt;code>int&lt;/code> 再加上幾個 &lt;code>pragma&lt;/code> 終於成功壓過唯一奇怪的那筆= =&lt;br>
-而且 &lt;code>push&lt;/code> 竟然還不能用遞迴寫，到底三小&lt;br>
-LCT怎麼這麼可撥XD&lt;br>
-不過壓過去那筆之後其他筆的執行時間加起來超少，值得了&lt;/p></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
-&lt;p>先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br>
-如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p>
-&lt;h2 id="單點修改">單點修改&lt;/h2>
-&lt;p>例題仍然是萬年RMQ&lt;/p>
-&lt;blockquote>
-&lt;p>給定一個長度$n$的序列，請支援以下操作&lt;/p></description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>&lt;h1 id="常用的輸入出優化">常用的輸入(出)優化&lt;/h1>
-&lt;h2 id="cin--cout">cin / cout&lt;/h2>
-&lt;p>因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用&lt;br>
-競程的時候記得開下面兩個東西&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>開了之後就不要使用 stdio 裡面的東西啦&lt;br>
-另外若非互動題也不要使用 &lt;code>endl&lt;/code> 之類會flush的函式，請用 &lt;code>'\n'&lt;/code> 代替&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Template on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/template/</link><description>Recent content in Template on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 09 Apr 2025 18:22:32 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/template/index.xml" rel="self" type="application/rss+xml"/><item><title>換根 DP / 全方位木 DP</title><link>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</link><pubDate>Wed, 09 Apr 2025 18:22:32 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/09/tree-reroot/</guid><description>&lt;h1 id="rerooting--全方位木-dp"&gt;rerooting / 全方位木 DP&lt;/h1&gt;
+&lt;p&gt;因為最近打 ucup 遇到（有人抱怨他不會）所以想說就來簡單寫一篇小科普。&lt;/p&gt;
+&lt;p&gt;大方向來說，前提是根固定時，問題可以用簡單的樹 DP 解決，然後使用換根 DP 的技巧就可以快速計算出「對於所有 $i$，點 $i$ 當根時候的答案」。&lt;/p&gt;</description></item><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5"&gt;♯p Subset Sum : 5e5&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum"&gt;https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p&gt;</description></item><item><title>min 25 模板使用說明</title><link>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</link><pubDate>Tue, 10 Dec 2024 21:29:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</guid><description>&lt;h1 id="min-25-模板使用說明"&gt;min 25 模板使用說明&lt;/h1&gt;
+&lt;p&gt;前幾個月（WF 之前）忘記為什麼就想去學 min25 篩，然後就把他模版化放進 codebook 裡了。我是看 &lt;a href="https://oi-wiki.org/math/number-theory/min-25/"&gt;https://oi-wiki.org/math/number-theory/min-25/&lt;/a&gt; 學的，不過本文不會提到太多細節。&lt;/p&gt;
+&lt;p&gt;先貼上 code：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 3
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 4
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 5
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 6
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 7
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 8
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 9
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;10
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;11
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;12
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;13
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;14
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;15
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;16
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;17
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;18
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;19
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;20
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;21
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;22
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;23
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;24
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;25
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;26
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;27
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;28
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;29
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;30
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;31
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;32
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;33
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;34
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;35
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;36
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;template&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;typename&lt;/span&gt; U, &lt;span style="color:#66d9ef"&gt;typename&lt;/span&gt; V&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;struct&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;min25&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; lld n; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; sq;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;U&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; Ss, Sl, Spre; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;V&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; Rs, Rl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Sieve sv; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;lld&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; quo;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; U &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;S(lld d) { &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; d &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; sq &lt;span style="color:#f92672"&gt;?&lt;/span&gt; Ss[d] &lt;span style="color:#f92672"&gt;:&lt;/span&gt; Sl[n &lt;span style="color:#f92672"&gt;/&lt;/span&gt; d]; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; V &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;R(lld d) { &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; d &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; sq &lt;span style="color:#f92672"&gt;?&lt;/span&gt; Rs[d] &lt;span style="color:#f92672"&gt;:&lt;/span&gt; Rl[n &lt;span style="color:#f92672"&gt;/&lt;/span&gt; d]; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; min25(lld n_) &lt;span style="color:#f92672"&gt;:&lt;/span&gt; n(n_), sq((&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;)sqrt(n) &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Ss(sq), Sl(sq), Spre(sq), Rs(sq), Rl(sq), sv(sq) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, Q; i &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; n; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; n &lt;span style="color:#f92672"&gt;/&lt;/span&gt; Q &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; quo.push_back(Q &lt;span style="color:#f92672"&gt;=&lt;/span&gt; n &lt;span style="color:#f92672"&gt;/&lt;/span&gt; i);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; U &lt;span style="color:#a6e22e"&gt;F_prime&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;f, &lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;F) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld p : sv.primes) Spre[p] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; f(p);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; sq; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) Spre[i] &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; Spre[i &lt;span style="color:#f92672"&gt;-&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) S(i) &lt;span style="color:#f92672"&gt;=&lt;/span&gt; F(i) &lt;span style="color:#f92672"&gt;-&lt;/span&gt; F(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld p : sv.primes)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (p &lt;span style="color:#f92672"&gt;*&lt;/span&gt; p &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; i) &lt;span style="color:#66d9ef"&gt;break&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; S(i) &lt;span style="color:#f92672"&gt;-=&lt;/span&gt; f(p) &lt;span style="color:#f92672"&gt;*&lt;/span&gt; (S(i &lt;span style="color:#f92672"&gt;/&lt;/span&gt; p) &lt;span style="color:#f92672"&gt;-&lt;/span&gt; Spre[p &lt;span style="color:#f92672"&gt;-&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; S(n);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#75715e"&gt;// F_prime: \sum _ {p is prime, p &amp;lt;= n} f(p)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; V &lt;span style="color:#a6e22e"&gt;F_comp&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;g, &lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;h) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) R(i) &lt;span style="color:#f92672"&gt;=&lt;/span&gt; h(S(i));
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld p : sv.primes &lt;span style="color:#f92672"&gt;|&lt;/span&gt; views&lt;span style="color:#f92672"&gt;::&lt;/span&gt;reverse)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (p &lt;span style="color:#f92672"&gt;*&lt;/span&gt; p &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; i) &lt;span style="color:#66d9ef"&gt;break&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; lld prod &lt;span style="color:#f92672"&gt;=&lt;/span&gt; p;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; c &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; prod &lt;span style="color:#f92672"&gt;*&lt;/span&gt; p &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; i; &lt;span style="color:#f92672"&gt;++&lt;/span&gt;c, prod &lt;span style="color:#f92672"&gt;*=&lt;/span&gt; p) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; R(i) &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; g(p, c) &lt;span style="color:#f92672"&gt;*&lt;/span&gt; (R(i &lt;span style="color:#f92672"&gt;/&lt;/span&gt; prod) &lt;span style="color:#f92672"&gt;-&lt;/span&gt; h(Spre[p]));
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; R(i) &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; g(p, c &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; R(n);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#75715e"&gt;// F_comp: \sum _ {2 &amp;lt;= i &amp;lt;= n} g(i)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;}; &lt;span style="color:#75715e"&gt;// O(n^{3/4} / log n)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果去看我們 &lt;a href="https://github.com/1011cychien/R-12-forked-codebook/blob/master/codes/Math/Min25Sieve.cpp"&gt;codebook 的連結&lt;/a&gt; 會看到還有一串中文的註解，以下大概就是仔細的講那一串中文的註解然後隨機補充一些東西。&lt;/p&gt;</description></item><item><title>ICPC 競賽中如何製作 codebook</title><link>https://omeletwithoutegg.github.io/2024/07/13/icpc-codebook/</link><pubDate>Sat, 13 Jul 2024 22:44:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/13/icpc-codebook/</guid><description>&lt;h1 id="how-to-make-team-reference-document-in-icpc"&gt;How to make team reference document in ICPC&lt;/h1&gt;
+&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;在 ICPC 競賽中一個不可或缺的元素就是在 &lt;a href="https://icpc.global/worldfinals/rules"&gt;規則&lt;/a&gt; 裡面被稱為 Team Reference Document 的東西。台大這邊俗稱叫 codebook。&lt;br&gt;
+在上一次的 WF 當中是規定每一隊可以帶至多 25 頁的紙本參考資料，必須是單面印刷，字體大小需要「0.5 公尺的距離下正常視力的人可以直接閱讀」，並且可以帶總共三份完全相同的拷貝。&lt;/p&gt;</description></item><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>&lt;h1 id="除錯模板的重要"&gt;除錯模板的重要&lt;/h1&gt;
+&lt;p&gt;這是一篇很短的廢文。&lt;/p&gt;
+&lt;p&gt;當你發現你寫出的程式有 bug 的時候，就會是你花上很多時間的時候。&lt;br&gt;
+尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。&lt;/p&gt;</description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>&lt;p&gt;本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。&lt;br&gt;
+主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。&lt;/p&gt;</description></item><item><title>jngen</title><link>https://omeletwithoutegg.github.io/2021/01/24/jngen/</link><pubDate>Sun, 24 Jan 2021 01:17:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/24/jngen/</guid><description>&lt;h1 id="jngen"&gt;jngen&lt;/h1&gt;
+&lt;p&gt;最近在生107北市賽題目的測資想放到TIOJ上面，其中一題是關於找兩個凸包的兩條內公切線交點。&lt;br&gt;
+因為不太知道測資怎麼生，又想到之前東東有提過jngen這個東西，因此就把他拿來生成我需要的凸包了。&lt;br&gt;
+我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X&lt;/p&gt;</description></item><item><title>二分圖最大權匹配</title><link>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</link><pubDate>Mon, 16 Nov 2020 13:31:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/16/Maximum-Weight-Bipartite-Matching/</guid><description>&lt;p&gt;我只是想做一下筆記&lt;br&gt;
+然後我還是不會縮花/帶花樹演算法，所以我也不會一般圖最大權匹配&lt;/p&gt;
+&lt;h1 id="先備知識"&gt;先備知識&lt;/h1&gt;
+&lt;p&gt;看得懂$\sum$&lt;br&gt;
+然後會(不帶權)二分圖匹配的匈牙利演算法&lt;/p&gt;</description></item><item><title>TIOJ-1171-LCT</title><link>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</link><pubDate>Sat, 14 Dec 2019 23:50:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/14/TIOJ-1171-LCT/</guid><description>&lt;h1 id="動態樹的奮鬥"&gt;動態樹的奮鬥&lt;/h1&gt;
+&lt;p&gt;為了這題的Link-Cut-Tree解我花了不只一整天XD&lt;br&gt;
+壓常實在是神奇的事，把 &lt;code&gt;long long&lt;/code&gt; 改成 &lt;code&gt;int&lt;/code&gt; 再加上幾個 &lt;code&gt;pragma&lt;/code&gt; 終於成功壓過唯一奇怪的那筆= =&lt;br&gt;
+而且 &lt;code&gt;push&lt;/code&gt; 竟然還不能用遞迴寫，到底三小&lt;br&gt;
+LCT怎麼這麼可撥XD&lt;br&gt;
+不過壓過去那筆之後其他筆的執行時間加起來超少，值得了&lt;/p&gt;</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹"&gt;迭代式線段樹&lt;/h1&gt;
+&lt;p&gt;先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br&gt;
+如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p&gt;
+&lt;h2 id="單點修改"&gt;單點修改&lt;/h2&gt;
+&lt;p&gt;例題仍然是萬年RMQ&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;給定一個長度$n$的序列，請支援以下操作&lt;/p&gt;</description></item><item><title>Fast-IO</title><link>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</link><pubDate>Fri, 06 Dec 2019 11:16:37 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/Fast-IO/</guid><description>&lt;h1 id="常用的輸入出優化"&gt;常用的輸入(出)優化&lt;/h1&gt;
+&lt;h2 id="cin--cout"&gt;cin / cout&lt;/h2&gt;
+&lt;p&gt;因為C++ template的性質，不同變數型別的輸出方式都大同小異，算是實用&lt;br&gt;
+競程的時候記得開下面兩個東西&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ios_base&lt;span style="color:#f92672"&gt;::&lt;/span&gt;sync_with_stdio(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;), cin.tie(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;開了之後就不要使用 stdio 裡面的東西啦&lt;br&gt;
+另外若非互動題也不要使用 &lt;code&gt;endl&lt;/code&gt; 之類會flush的函式，請用 &lt;code&gt;'\n'&lt;/code&gt; 代替&lt;/p&gt;</description></item></channel></rss>

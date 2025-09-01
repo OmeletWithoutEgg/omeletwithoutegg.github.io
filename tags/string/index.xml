@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>String on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/string/</link><description>Recent content in String on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 18:23:40 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/string/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me">Every time you&amp;rsquo;re next to me&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1502">https://tioj.ck.tp.edu.tw/problems/1502&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有一個字串 $T$ 和一個 pattern $P$，其中 $P$ 有一些字元是 &lt;code>*&lt;/code>，&lt;code>*&lt;/code> 可以匹配一個或以上的任意字元，且 &lt;code>*&lt;/code> 不會連續出現，請問 $T$ 裡面有沒有一個子字串符合 $P$？&lt;/p></description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>&lt;h1 id="同步sync">同步(Sync)&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1927">https://tioj.ck.tp.edu.tw/problems/1927&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。&lt;br>
-有時遊戲中的兩人會產生「同步」的現象。產生同步的條件是兩人所在的格子的數字$a,b$分別滿足&lt;br>
-$$&lt;br>
-(ab)^{\frac{p-1}{2}} \equiv 1 \pmod p&lt;br>
-$$&lt;br>
-其中$p = 10^9 + 7$。產生同步後，兩人會瞬移至下一格。如果在下一格又產生「同步」，則會繼續往下走，直到其中一人超出格子範圍(到了終點了)或者兩人不再同步。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>String on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/string/</link><description>Recent content in String on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 18:23:40 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/string/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me"&gt;Every time you&amp;rsquo;re next to me&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1502"&gt;https://tioj.ck.tp.edu.tw/problems/1502&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有一個字串 $T$ 和一個 pattern $P$，其中 $P$ 有一些字元是 &lt;code&gt;*&lt;/code&gt;，&lt;code&gt;*&lt;/code&gt; 可以匹配一個或以上的任意字元，且 &lt;code&gt;*&lt;/code&gt; 不會連續出現，請問 $T$ 裡面有沒有一個子字串符合 $P$？&lt;/p&gt;</description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>&lt;h1 id="同步sync"&gt;同步(Sync)&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1927"&gt;https://tioj.ck.tp.edu.tw/problems/1927&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。&lt;br&gt;
+有時遊戲中的兩人會產生「同步」的現象。產生同步的條件是兩人所在的格子的數字$a,b$分別滿足&lt;br&gt;
+$$&lt;br&gt;
+(ab)^{\frac{p-1}{2}} \equiv 1 \pmod p&lt;br&gt;
+$$&lt;br&gt;
+其中$p = 10^9 + 7$。產生同步後，兩人會瞬移至下一格。如果在下一格又產生「同步」，則會繼續往下走，直到其中一人超出格子範圍(到了終點了)或者兩人不再同步。&lt;/p&gt;</description></item></channel></rss>

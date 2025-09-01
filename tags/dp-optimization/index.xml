@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dp-Optimization on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dp-optimization/</link><description>Recent content in Dp-Optimization on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 05 Oct 2024 23:20:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dp-optimization/index.xml" rel="self" type="application/rss+xml"/><item><title>Aliens DP 備忘錄</title><link>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</link><pubDate>Sat, 05 Oct 2024 23:20:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</guid><description>&lt;h1 id="aliens-trick-的一些事實列舉與說明">Aliens trick 的一些事實列舉與說明&lt;/h1>
-&lt;p>本文主要基於 &lt;a href="https://noshi91.hatenablog.com/entry/2023/11/20/052227">https://noshi91.hatenablog.com/entry/2023/11/20/052227&lt;/a> 撰寫。&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>令 $X = \mathbb{Z} \cap [L, R]$ 為一非空集合。&lt;br>
-考慮下凸函數 $f : X \to \mathbb{Z}$（註：即 $f(x) - f(x - 1) \leq f(x + 1) - f(x)$，可以用 U 型來想像）。&lt;br>
-令 $g: \mathbb{R} \to \mathbb{R}, g(p) = \min _ {x \in X}(f(x) + px)$，代表 penalty 為 p 時算出的最佳解。&lt;/p></description></item><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>&lt;h1 id="min--convolution-convex-arbitrary">$(\min, +)$ convolution: convex-arbitrary&lt;/h1>
-&lt;p>因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。&lt;br>
-先放兩個 yosupo library checker 的模板題連結。&lt;br>
-&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex">https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex&lt;/a>&lt;br>
-&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary">https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足&lt;br>
-$$&lt;br>
-c_k = \min_{i+j=k} (a_i + b_j)&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</guid><description>&lt;p>&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;&lt;/p>
-&lt;h1 id="超大畫框設置">超大畫框設置&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1283">https://tioj.ck.tp.edu.tw/problems/1283&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>在一個「漸進式框架」當中，你想要找到一個最大面積的矩形位置放置你最喜愛的一幅畫。&lt;/p>
-&lt;p>當然地，畫框必須掛正，所以矩形的四個邊都必須與框架的邊平行或垂直。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dp-Optimization on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dp-optimization/</link><description>Recent content in Dp-Optimization on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 05 Oct 2024 23:20:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dp-optimization/index.xml" rel="self" type="application/rss+xml"/><item><title>Aliens DP 備忘錄</title><link>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</link><pubDate>Sat, 05 Oct 2024 23:20:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/05/aliens-dp/</guid><description>&lt;h1 id="aliens-trick-的一些事實列舉與說明"&gt;Aliens trick 的一些事實列舉與說明&lt;/h1&gt;
+&lt;p&gt;本文主要基於 &lt;a href="https://noshi91.hatenablog.com/entry/2023/11/20/052227"&gt;https://noshi91.hatenablog.com/entry/2023/11/20/052227&lt;/a&gt; 撰寫。&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;令 $X = \mathbb{Z} \cap [L, R]$ 為一非空集合。&lt;br&gt;
+考慮下凸函數 $f : X \to \mathbb{Z}$（註：即 $f(x) - f(x - 1) \leq f(x + 1) - f(x)$，可以用 U 型來想像）。&lt;br&gt;
+令 $g: \mathbb{R} \to \mathbb{R}, g(p) = \min _ {x \in X}(f(x) + px)$，代表 penalty 為 p 時算出的最佳解。&lt;/p&gt;</description></item><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>&lt;h1 id="min--convolution-convex-arbitrary"&gt;$(\min, +)$ convolution: convex-arbitrary&lt;/h1&gt;
+&lt;p&gt;因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。&lt;br&gt;
+先放兩個 yosupo library checker 的模板題連結。&lt;br&gt;
+&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex"&gt;https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary"&gt;https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足&lt;br&gt;
+$$&lt;br&gt;
+c_k = \min_{i+j=k} (a_i + b_j)&lt;br&gt;
+$$&lt;/p&gt;</description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</guid><description>&lt;p&gt;&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;&lt;/p&gt;
+&lt;h1 id="超大畫框設置"&gt;超大畫框設置&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1283"&gt;https://tioj.ck.tp.edu.tw/problems/1283&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;在一個「漸進式框架」當中，你想要找到一個最大面積的矩形位置放置你最喜愛的一幅畫。&lt;/p&gt;
+&lt;p&gt;當然地，畫框必須掛正，所以矩形的四個邊都必須與框架的邊平行或垂直。&lt;/p&gt;</description></item></channel></rss>

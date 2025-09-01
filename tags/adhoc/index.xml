@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Adhoc on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/adhoc/</link><description>Recent content in Adhoc on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 27 Feb 2025 10:27:49 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/adhoc/index.xml" rel="self" type="application/rss+xml"/><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum">https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a>&lt;/p>
-&lt;p>有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p></description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829">https://tioj.ck.tp.edu.tw/problems/1829&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p></description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</guid><description>&lt;h1 id="殿壬與最大流">殿壬與最大流&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2117">https://tioj.ck.tp.edu.tw/problems/2117&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>$Q \leq 2 \times 10^5$ 次詢問無向圖 $G$ 上面任兩點的最大流（邊權是 $1$）。但是，$G$ 是一張 $N$ 點 $N$ 邊連通圖。&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>$N$ 點 $N$ 邊無向連通圖的結構必定是一棵樹加上一條邊，或者也可以描述成一個環上面長出許多子樹。關鍵字是 pseudo tree 或基環樹 / based ring tree。&lt;/p></description></item><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>&lt;h1 id="min--convolution-convex-arbitrary">$(\min, +)$ convolution: convex-arbitrary&lt;/h1>
-&lt;p>因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。&lt;br>
-先放兩個 yosupo library checker 的模板題連結。&lt;br>
-&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex">https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex&lt;/a>&lt;br>
-&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary">https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足&lt;br>
-$$&lt;br>
-c_k = \min_{i+j=k} (a_i + b_j)&lt;br>
-$$&lt;/p></description></item><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>&lt;h1 id="codeforces-793-f-julia-the-snail">Codeforces 793 F Julia the snail&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。&lt;br>
-你除了傳送以外的移動方式只有向數線的左邊走（把 $x$ 變小）&lt;br>
-接著有 $Q$ 筆詢問問，每筆詢問給 $x, y$，&lt;br>
-問你從 $x$ 開始走，在不超出 $[x, y]$ 這個區間的前提下可以走最右邊是多右邊。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Adhoc on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/adhoc/</link><description>Recent content in Adhoc on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 27 Feb 2025 10:27:49 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/adhoc/index.xml" rel="self" type="application/rss+xml"/><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5"&gt;♯p Subset Sum : 5e5&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum"&gt;https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p&gt;</description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛"&gt;化學磁牛&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829"&gt;https://tioj.ck.tp.edu.tw/problems/1829&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p&gt;</description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</guid><description>&lt;h1 id="殿壬與最大流"&gt;殿壬與最大流&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2117"&gt;https://tioj.ck.tp.edu.tw/problems/2117&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;$Q \leq 2 \times 10^5$ 次詢問無向圖 $G$ 上面任兩點的最大流（邊權是 $1$）。但是，$G$ 是一張 $N$ 點 $N$ 邊連通圖。&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;$N$ 點 $N$ 邊無向連通圖的結構必定是一棵樹加上一條邊，或者也可以描述成一個環上面長出許多子樹。關鍵字是 pseudo tree 或基環樹 / based ring tree。&lt;/p&gt;</description></item><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>&lt;h1 id="min--convolution-convex-arbitrary"&gt;$(\min, +)$ convolution: convex-arbitrary&lt;/h1&gt;
+&lt;p&gt;因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。&lt;br&gt;
+先放兩個 yosupo library checker 的模板題連結。&lt;br&gt;
+&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex"&gt;https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary"&gt;https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足&lt;br&gt;
+$$&lt;br&gt;
+c_k = \min_{i+j=k} (a_i + b_j)&lt;br&gt;
+$$&lt;/p&gt;</description></item><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>&lt;h1 id="codeforces-793-f-julia-the-snail"&gt;Codeforces 793 F Julia the snail&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。&lt;br&gt;
+你除了傳送以外的移動方式只有向數線的左邊走（把 $x$ 變小）&lt;br&gt;
+接著有 $Q$ 筆詢問問，每筆詢問給 $x, y$，&lt;br&gt;
+問你從 $x$ 開始走，在不超出 $[x, y]$ 這個區間的前提下可以走最右邊是多右邊。&lt;/p&gt;</description></item></channel></rss>

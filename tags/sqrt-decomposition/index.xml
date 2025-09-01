@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sqrt-Decomposition on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/sqrt-decomposition/</link><description>Recent content in Sqrt-Decomposition on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 23 Dec 2019 22:14:53 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/sqrt-decomposition/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1726</title><link>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</link><pubDate>Mon, 23 Dec 2019 22:14:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</guid><description>&lt;h1 id="dice-wars">Dice Wars&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1726">https://tioj.ck.tp.edu.tw/problems/1726&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>Dice Wars是一款兼具謀略和運氣的遊戲。&lt;br>
-遊戲中你扮演紫色的骰子，要攻下其他顏色的骰子的城池，進而統一全地圖。&lt;/p>
-&lt;p>如今你選到了一張看起來不錯的地圖: 整張地圖呈一條直線，每個位置都有一個顏色勢力佔領。&lt;br>
-由於每次移動到相鄰異色的城池都必須經歷一場鏖戰，你想先經過程式計算後再進行遊戲。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sqrt-Decomposition on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/sqrt-decomposition/</link><description>Recent content in Sqrt-Decomposition on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 23 Dec 2019 22:14:53 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/sqrt-decomposition/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1726</title><link>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</link><pubDate>Mon, 23 Dec 2019 22:14:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</guid><description>&lt;h1 id="dice-wars"&gt;Dice Wars&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1726"&gt;https://tioj.ck.tp.edu.tw/problems/1726&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;Dice Wars是一款兼具謀略和運氣的遊戲。&lt;br&gt;
+遊戲中你扮演紫色的骰子，要攻下其他顏色的骰子的城池，進而統一全地圖。&lt;/p&gt;
+&lt;p&gt;如今你選到了一張看起來不錯的地圖: 整張地圖呈一條直線，每個位置都有一個顏色勢力佔領。&lt;br&gt;
+由於每次移動到相鄰異色的城池都必須經歷一場鏖戰，你想先經過程式計算後再進行遊戲。&lt;/p&gt;</description></item></channel></rss>

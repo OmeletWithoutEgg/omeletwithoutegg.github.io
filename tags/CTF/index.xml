@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CTF on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/CTF/</link><description>Recent content in CTF on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 13 Jan 2023 00:34:19 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/CTF/index.xml" rel="self" type="application/rss+xml"/><item><title>2023 EOF quals</title><link>https://omeletwithoutegg.github.io/2023/01/13/2023-eof-quals/</link><pubDate>Fri, 13 Jan 2023 00:34:19 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/13/2023-eof-quals/</guid><description>&lt;h1 id="2023-eof-ctf-初賽">2023 EOF CTF 初賽&lt;/h1>
-&lt;p>修了計算機安全，然後期末考似乎是參加 EOF CTF 的初賽，另外還要交 writeup。&lt;br>
-把我寫的部份放在我的 blog 上水文章（？）&lt;br>
-下一篇文章希望是大二上的修課心得，再不寫就要忘光了。&lt;/p></description></item><item><title>BambooFox CTF 2021</title><link>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</link><pubDate>Tue, 19 Jan 2021 12:09:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</guid><description>&lt;h1 id="bamboofox-ctf-2021">BambooFox CTF 2021&lt;/h1>
-&lt;p>這次是第二次參加BambooFox，不過事前都沒有做什麼練習wwww本來想說去OT之前推薦過的網站練習一些基礎，但是忘記是什麼網站了888&lt;br>
-依然是跟joy一隊，然後另一個隊友變成casper了&lt;/p></description></item><item><title>bamboofox-ctf</title><link>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</link><pubDate>Thu, 02 Jan 2020 15:00:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</guid><description>&lt;p>這次打跨年CTF應該是我第一次打一個正常的CTF吧（？）&lt;br>
-感覺好多有趣的題目www&lt;br>
-&lt;a href="https://ctf.bamboofox.cs.nctu.edu.tw/">https://ctf.bamboofox.cs.nctu.edu.tw/&lt;/a>&lt;/p>
-&lt;h1 id="solved-problems">Solved Problems&lt;/h1>
-&lt;h2 id="welcome">Welcome&lt;/h2>
-&lt;p>Joy說看題目給的影片就有flag了&lt;/p>
-&lt;h2 id="web-newbie">Web newbie&lt;/h2>
-&lt;p>被作業解掉，好像往source code的註解裡面找就對了&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CTF on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/CTF/</link><description>Recent content in CTF on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 13 Jan 2023 00:34:19 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/CTF/index.xml" rel="self" type="application/rss+xml"/><item><title>2023 EOF quals</title><link>https://omeletwithoutegg.github.io/2023/01/13/2023-eof-quals/</link><pubDate>Fri, 13 Jan 2023 00:34:19 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/13/2023-eof-quals/</guid><description>&lt;h1 id="2023-eof-ctf-初賽"&gt;2023 EOF CTF 初賽&lt;/h1&gt;
+&lt;p&gt;修了計算機安全，然後期末考似乎是參加 EOF CTF 的初賽，另外還要交 writeup。&lt;br&gt;
+把我寫的部份放在我的 blog 上水文章（？）&lt;br&gt;
+下一篇文章希望是大二上的修課心得，再不寫就要忘光了。&lt;/p&gt;</description></item><item><title>BambooFox CTF 2021</title><link>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</link><pubDate>Tue, 19 Jan 2021 12:09:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</guid><description>&lt;h1 id="bamboofox-ctf-2021"&gt;BambooFox CTF 2021&lt;/h1&gt;
+&lt;p&gt;這次是第二次參加BambooFox，不過事前都沒有做什麼練習wwww本來想說去OT之前推薦過的網站練習一些基礎，但是忘記是什麼網站了888&lt;br&gt;
+依然是跟joy一隊，然後另一個隊友變成casper了&lt;/p&gt;</description></item><item><title>bamboofox-ctf</title><link>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</link><pubDate>Thu, 02 Jan 2020 15:00:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</guid><description>&lt;p&gt;這次打跨年CTF應該是我第一次打一個正常的CTF吧（？）&lt;br&gt;
+感覺好多有趣的題目www&lt;br&gt;
+&lt;a href="https://ctf.bamboofox.cs.nctu.edu.tw/"&gt;https://ctf.bamboofox.cs.nctu.edu.tw/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="solved-problems"&gt;Solved Problems&lt;/h1&gt;
+&lt;h2 id="welcome"&gt;Welcome&lt;/h2&gt;
+&lt;p&gt;Joy說看題目給的影片就有flag了&lt;/p&gt;
+&lt;h2 id="web-newbie"&gt;Web newbie&lt;/h2&gt;
+&lt;p&gt;被作業解掉，好像往source code的註解裡面找就對了&lt;/p&gt;</description></item></channel></rss>

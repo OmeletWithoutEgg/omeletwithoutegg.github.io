@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ternary-Search on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/ternary-search/</link><description>Recent content in Ternary-Search on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 30 Dec 2020 12:57:24 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/ternary-search/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</guid><description>&lt;h1 id="變動的過路費">變動的過路費&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1597">https://tioj.ck.tp.edu.tw/problems/1597&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給你一張有向圖，每個邊會有隨時間變動的權重，並且邊的權重對時間是一個線性函數。&lt;br>
-再給你兩個點 $A,B$，現在你想要從 $A$ 走到 $B$ 再走回 $A$，&lt;br>
-問你在時間 $[0, D-1]$ 中，最長的最短路徑和最短的最短路徑相差多少。&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136">https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br>
-你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。&lt;br>
-可以假設車速都不相同&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ternary-Search on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/ternary-search/</link><description>Recent content in Ternary-Search on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 30 Dec 2020 12:57:24 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/ternary-search/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</guid><description>&lt;h1 id="變動的過路費"&gt;變動的過路費&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1597"&gt;https://tioj.ck.tp.edu.tw/problems/1597&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給你一張有向圖，每個邊會有隨時間變動的權重，並且邊的權重對時間是一個線性函數。&lt;br&gt;
+再給你兩個點 $A,B$，現在你想要從 $A$ 走到 $B$ 再走回 $A$，&lt;br&gt;
+問你在時間 $[0, D-1]$ 中，最長的最短路徑和最短的最短路徑相差多少。&lt;/p&gt;</description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題"&gt;賽車問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136"&gt;https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br&gt;
+你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。&lt;br&gt;
+可以假設車速都不相同&lt;/p&gt;</description></item></channel></rss>

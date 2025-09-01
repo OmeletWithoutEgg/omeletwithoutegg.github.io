@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linear-Algebra on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/linear-algebra/</link><description>Recent content in Linear-Algebra on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 01 Feb 2025 02:47:28 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>求解二維網格圖上的線性方程組：關鍵變數法</title><link>https://omeletwithoutegg.github.io/2025/02/01/grid-linear-system/</link><pubDate>Sat, 01 Feb 2025 02:47:28 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/01/grid-linear-system/</guid><description>&lt;h1 id="關鍵變數法">關鍵變數法&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>上個例題 &lt;a href="https://codeforces.com/problemset/problem/963/E">https://codeforces.com/problemset/problem/963/E&lt;/a>&lt;/p>
-&lt;p>有一個人在二維網格圖上隨機上下左右走，一開始在原點 $(0, 0)$，每秒有 $p_1, p_2, p_3, p_4$ 的機率分別往上下左右走一格，問期望幾秒會走到跟原點距離超過 $r$ 的點？答案模 $10^9+7$。$p_i = a_i/\sum a_i$ 而 $1 \leq a_i \leq 1000$。&lt;/p></description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞">C.幼稚國王的獎賞&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1094">https://tioj.ck.tp.edu.tw/problems/1094&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>定義一個非負整數集合的價值是裡面所有數字XOR起來&lt;br>
-給定一些非負整數，問你能選出價值最高的子集價值是多少？&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>經典題 maximum subset xor&lt;/p>
-&lt;h3 id="線性基">線性基&lt;/h3>
-&lt;p>首先可以把每個數字的二進位看成模2的$k$維向量&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linear-Algebra on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/linear-algebra/</link><description>Recent content in Linear-Algebra on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sat, 01 Feb 2025 02:47:28 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>求解二維網格圖上的線性方程組：關鍵變數法</title><link>https://omeletwithoutegg.github.io/2025/02/01/grid-linear-system/</link><pubDate>Sat, 01 Feb 2025 02:47:28 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/01/grid-linear-system/</guid><description>&lt;h1 id="關鍵變數法"&gt;關鍵變數法&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;上個例題 &lt;a href="https://codeforces.com/problemset/problem/963/E"&gt;https://codeforces.com/problemset/problem/963/E&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有一個人在二維網格圖上隨機上下左右走，一開始在原點 $(0, 0)$，每秒有 $p_1, p_2, p_3, p_4$ 的機率分別往上下左右走一格，問期望幾秒會走到跟原點距離超過 $r$ 的點？答案模 $10^9+7$。$p_i = a_i/\sum a_i$ 而 $1 \leq a_i \leq 1000$。&lt;/p&gt;</description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞"&gt;C.幼稚國王的獎賞&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1094"&gt;https://tioj.ck.tp.edu.tw/problems/1094&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;定義一個非負整數集合的價值是裡面所有數字XOR起來&lt;br&gt;
+給定一些非負整數，問你能選出價值最高的子集價值是多少？&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;經典題 maximum subset xor&lt;/p&gt;
+&lt;h3 id="線性基"&gt;線性基&lt;/h3&gt;
+&lt;p&gt;首先可以把每個數字的二進位看成模2的$k$維向量&lt;/p&gt;</description></item></channel></rss>

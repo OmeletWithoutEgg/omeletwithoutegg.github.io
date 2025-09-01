@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/FFT/</link><description>Recent content in FFT on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 27 Feb 2025 10:27:49 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/FFT/index.xml" rel="self" type="application/rss+xml"/><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum">https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a>&lt;/p>
-&lt;p>有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p></description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣">一次式前綴積的多點求值與推廣&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定序列 $a_1, \dots, a_N$。考慮一次式的序列 $x - a_i$，定義其第 $i$ 個前綴積為&lt;/p>
-&lt;p>$$&lt;br>
-f_i(x) = \prod _ {j \leq i} (x - a_j)&lt;br>
-$$&lt;/p>
-&lt;p>接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p></description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</guid><description>&lt;h1 id="捲積方法-oao">捲積方法 OAO&lt;/h1>
-&lt;p>本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速&lt;br>
-這邊先定義一下捲積$ * $是什麼&lt;/p>
-&lt;p>$$&lt;br>
-(a * b) _ x = \sum _ {i+j=x} a_i b_j&lt;br>
-$$&lt;/p>
-&lt;p>實際上就等價於我們常見的多項式乘法&lt;br>
-naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意&lt;/p></description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</guid><description>&lt;h1 id="通關密語">通關密語&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1035">https://tioj.ck.tp.edu.tw/problems/1035&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串 $S,T$&lt;br>
-定義「最佳擬合」，就是將 $S$ 經過平移後和 $T$ 比對，同樣的字元數最多的那一種方法。&lt;br>
-請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/FFT/</link><description>Recent content in FFT on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 27 Feb 2025 10:27:49 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/FFT/index.xml" rel="self" type="application/rss+xml"/><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5"&gt;♯p Subset Sum : 5e5&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum"&gt;https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p&gt;</description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣"&gt;一次式前綴積的多點求值與推廣&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定序列 $a_1, \dots, a_N$。考慮一次式的序列 $x - a_i$，定義其第 $i$ 個前綴積為&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;
+f_i(x) = \prod _ {j \leq i} (x - a_j)&lt;br&gt;
+$$&lt;/p&gt;
+&lt;p&gt;接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p&gt;</description></item><item><title>FFT-NTT</title><link>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</link><pubDate>Wed, 25 Dec 2019 14:56:54 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/25/FFT-NTT/</guid><description>&lt;h1 id="捲積方法-oao"&gt;捲積方法 OAO&lt;/h1&gt;
+&lt;p&gt;本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速&lt;br&gt;
+這邊先定義一下捲積$ * $是什麼&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;
+(a * b) _ x = \sum _ {i+j=x} a_i b_j&lt;br&gt;
+$$&lt;/p&gt;
+&lt;p&gt;實際上就等價於我們常見的多項式乘法&lt;br&gt;
+naive的做法是$\mathcal{O}(n^2)$，顯然不夠令人滿意&lt;/p&gt;</description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</guid><description>&lt;h1 id="通關密語"&gt;通關密語&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1035"&gt;https://tioj.ck.tp.edu.tw/problems/1035&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串 $S,T$&lt;br&gt;
+定義「最佳擬合」，就是將 $S$ 經過平移後和 $T$ 比對，同樣的字元數最多的那一種方法。&lt;br&gt;
+請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。&lt;/p&gt;</description></item></channel></rss>

@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vim on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/vim/</link><description>Recent content in Vim on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 10 Mar 2025 23:21:06 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml"/><item><title>Vim-fern</title><link>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</link><pubDate>Mon, 10 Mar 2025 23:21:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</guid><description>&lt;h1 id="推銷-vim-fern">推銷 vim-fern&lt;/h1>
-&lt;p>推銷用 &lt;a href="https://github.com/lambdalisue/vim-fern">vim-fern&lt;/a> 取代 NERDTree。我大概是 2023 年初換掉的，現在想說來寫個推銷 post。&lt;br>
-那時候會想要改用 vim-fern 有幾點原因：&lt;/p>
-&lt;ul>
-&lt;li>看到 NERDTree 好像要停止更新了的&lt;a href="https://github.com/preservim/nerdtree/issues/1280">通知&lt;/a>。那時候 NERDTree 非常 inactive。&lt;/li>
-&lt;li>偶爾就會踩到一些怪怪的情況（忘記是什麼了）&lt;/li>
-&lt;li>那時候在玩 nvim，想要在 nvim 和 vim 兩棲，而大部分查到的 nvim 套件 &lt;a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree.lua&lt;/a>、&lt;a href="https://github.com/nvim-neo-tree/neo-tree.nvim">neo-tree.nvim&lt;/a>、&lt;a href="https://github.com/ms-jpq/chadtree">chadtree&lt;/a> 都不能在 vim 使用。&lt;/li>
-&lt;li>原本用 NERDTree 在 startify 的頁面沒有顏色，而在 file explorer 有&lt;/li>
-&lt;/ul>
-&lt;p>換去 vim-fern 之後，覺得有以下幾點優點：&lt;/p></description></item><item><title>Fzf fuzzy finder - best shell history picker</title><link>https://omeletwithoutegg.github.io/2022/09/08/fzf/</link><pubDate>Thu, 08 Sep 2022 21:26:22 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/08/fzf/</guid><description>&lt;h1 id="fzf-fuzzy-finder">FZF fuzzy finder&lt;/h1>
-&lt;p>&lt;code>fzf&lt;/code> 是一個通用的模糊搜尋（fuzzy find）工具，用 go 寫成。&lt;br>
-很久以前就聽過它了，但以為自己不太需要這種東西。&lt;/p>
-&lt;p>前陣子在尋找類似於 &lt;a href="https://github.com/zsh-users/zsh-history-substring-search">zsh-history-substring-search&lt;/a> 的工具，也就是我可以打一些關鍵的字之後讓 zsh 從歷史紀錄裡面找類似的指令幫我貼到 shell 裡面。&lt;/p></description></item><item><title>Qutebrowser 瀏覽器</title><link>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</link><pubDate>Tue, 29 Mar 2022 10:13:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</guid><description>&lt;h1 id="qutebrowser-vim-like-browser">Qutebrowser: vim-like browser&lt;/h1>
-&lt;p>這是一篇推薦文與介紹文。&lt;/p>
-&lt;p>已經忘記開始使用 qutebrowser 的契機是什麼了，可能是看到（東東）學長用覺得很酷。&lt;br>
-在熟悉 vim 之後，qutebrowser 作為一個「Keyboard-driven」的瀏覽器吸引力會大大提昇，其 UI 簡潔與配置的靈活也讓我愛不釋手&lt;/p></description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</guid><description>&lt;h1 id="vim-">vim ?!&lt;/h1>
-&lt;p>vim : 古老的編輯器&lt;/p>
-&lt;p>&lt;a href="https://omeletwithoutegg.github.io/2025/03/10/vim-fern/">新文章&lt;/a>&lt;/p>
-&lt;!-- https://gohugo.io/content-management/cross-references/ -->
-&lt;h2 id="來由">來由&lt;/h2>
-&lt;p>之前 ZCK 很早就開始一直推坑 vim ，而我大概是在開始瘋狂玩 OJDL 之後才開始使用 vim 的&lt;br>
-因為在遠端 server 上改 code 最直接的方式就是使用遠端主機上的 vim 直接在 ssh 的介面改&lt;br>
-所以經過幾個月(我也不知道具體多久)我大概熟悉 vim 了之後，在我的筆電上也裝了 gvim&lt;br>
-因為是 windows 的所以用起來很怪，不過經過 Google 一些設定之後變得正常一些了&lt;br>
-至於我的筆電呢，我覺得裝 linux 的必要性還沒有麻煩性高(X&lt;br>
-而且感覺arch &amp;gt; Ubuntu但是裝了arch又會因為更新速度出現各種神奇的事件&lt;br>
-所以姑且先不裝(?)&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vim on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/vim/</link><description>Recent content in Vim on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 10 Mar 2025 23:21:06 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml"/><item><title>Vim-fern</title><link>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</link><pubDate>Mon, 10 Mar 2025 23:21:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</guid><description>&lt;h1 id="推銷-vim-fern"&gt;推銷 vim-fern&lt;/h1&gt;
+&lt;p&gt;推銷用 &lt;a href="https://github.com/lambdalisue/vim-fern"&gt;vim-fern&lt;/a&gt; 取代 NERDTree。我大概是 2023 年初換掉的，現在想說來寫個推銷 post。&lt;br&gt;
+那時候會想要改用 vim-fern 有幾點原因：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;看到 NERDTree 好像要停止更新了的&lt;a href="https://github.com/preservim/nerdtree/issues/1280"&gt;通知&lt;/a&gt;。那時候 NERDTree 非常 inactive。&lt;/li&gt;
+&lt;li&gt;偶爾就會踩到一些怪怪的情況（忘記是什麼了）&lt;/li&gt;
+&lt;li&gt;那時候在玩 nvim，想要在 nvim 和 vim 兩棲，而大部分查到的 nvim 套件 &lt;a href="https://github.com/nvim-tree/nvim-tree.lua"&gt;nvim-tree.lua&lt;/a&gt;、&lt;a href="https://github.com/nvim-neo-tree/neo-tree.nvim"&gt;neo-tree.nvim&lt;/a&gt;、&lt;a href="https://github.com/ms-jpq/chadtree"&gt;chadtree&lt;/a&gt; 都不能在 vim 使用。&lt;/li&gt;
+&lt;li&gt;原本用 NERDTree 在 startify 的頁面沒有顏色，而在 file explorer 有&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;換去 vim-fern 之後，覺得有以下幾點優點：&lt;/p&gt;</description></item><item><title>Fzf fuzzy finder - best shell history picker</title><link>https://omeletwithoutegg.github.io/2022/09/08/fzf/</link><pubDate>Thu, 08 Sep 2022 21:26:22 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/08/fzf/</guid><description>&lt;h1 id="fzf-fuzzy-finder"&gt;FZF fuzzy finder&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;fzf&lt;/code&gt; 是一個通用的模糊搜尋（fuzzy find）工具，用 go 寫成。&lt;br&gt;
+很久以前就聽過它了，但以為自己不太需要這種東西。&lt;/p&gt;
+&lt;p&gt;前陣子在尋找類似於 &lt;a href="https://github.com/zsh-users/zsh-history-substring-search"&gt;zsh-history-substring-search&lt;/a&gt; 的工具，也就是我可以打一些關鍵的字之後讓 zsh 從歷史紀錄裡面找類似的指令幫我貼到 shell 裡面。&lt;/p&gt;</description></item><item><title>Qutebrowser 瀏覽器</title><link>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</link><pubDate>Tue, 29 Mar 2022 10:13:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/03/29/qutebrowser/</guid><description>&lt;h1 id="qutebrowser-vim-like-browser"&gt;Qutebrowser: vim-like browser&lt;/h1&gt;
+&lt;p&gt;這是一篇推薦文與介紹文。&lt;/p&gt;
+&lt;p&gt;已經忘記開始使用 qutebrowser 的契機是什麼了，可能是看到（東東）學長用覺得很酷。&lt;br&gt;
+在熟悉 vim 之後，qutebrowser 作為一個「Keyboard-driven」的瀏覽器吸引力會大大提昇，其 UI 簡潔與配置的靈活也讓我愛不釋手&lt;/p&gt;</description></item><item><title>Using-Vim</title><link>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</link><pubDate>Wed, 08 Jul 2020 01:15:12 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/07/08/Using-Vim/</guid><description>&lt;h1 id="vim-"&gt;vim ?!&lt;/h1&gt;
+&lt;p&gt;vim : 古老的編輯器&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://omeletwithoutegg.github.io/2025/03/10/vim-fern/"&gt;新文章&lt;/a&gt;&lt;/p&gt;
+&lt;!-- https://gohugo.io/content-management/cross-references/ --&gt;
+&lt;h2 id="來由"&gt;來由&lt;/h2&gt;
+&lt;p&gt;之前 ZCK 很早就開始一直推坑 vim ，而我大概是在開始瘋狂玩 OJDL 之後才開始使用 vim 的&lt;br&gt;
+因為在遠端 server 上改 code 最直接的方式就是使用遠端主機上的 vim 直接在 ssh 的介面改&lt;br&gt;
+所以經過幾個月(我也不知道具體多久)我大概熟悉 vim 了之後，在我的筆電上也裝了 gvim&lt;br&gt;
+因為是 windows 的所以用起來很怪，不過經過 Google 一些設定之後變得正常一些了&lt;br&gt;
+至於我的筆電呢，我覺得裝 linux 的必要性還沒有麻煩性高(X&lt;br&gt;
+而且感覺arch &amp;gt; Ubuntu但是裝了arch又會因為更新速度出現各種神奇的事件&lt;br&gt;
+所以姑且先不裝(?)&lt;/p&gt;</description></item></channel></rss>

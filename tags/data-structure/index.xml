@@ -1,111 +1,111 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data-Structure on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/data-structure/</link><description>Recent content in Data-Structure on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 09 Jul 2023 02:26:08 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/data-structure/index.xml" rel="self" type="application/rss+xml"/><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>&lt;h1 id="codeforces-793-f-julia-the-snail">Codeforces 793 F Julia the snail&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。&lt;br>
-你除了傳送以外的移動方式只有向數線的左邊走（把 $x$ 變小）&lt;br>
-接著有 $Q$ 筆詢問問，每筆詢問給 $x, y$，&lt;br>
-問你從 $x$ 開始走，在不超出 $[x, y]$ 這個區間的前提下可以走最右邊是多右邊。&lt;/p></description></item><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat">好．傳囉！ Nice Boat！&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一個長度 $N$ 的整數序列 $A_i$。&lt;br>
-如果你可以找出一個區間，他的前綴和每個數字都大於等於0，而且他的後綴和的每個數字也都大於等於0，我們就稱他是安全區間，請你找出最長的安全區間長度是多少。&lt;/p></description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考">2021 TOI 模考&lt;/h1>
-&lt;p>可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br>
-今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p></description></item><item><title>PBDS Split Join Is Slow</title><link>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</link><pubDate>Fri, 23 Jul 2021 18:16:13 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</guid><description>&lt;h1 id="幫-pbds-上香">幫 pbds 上香&lt;/h1>
-&lt;p>如題。&lt;/p>
-&lt;p>先說結論：&lt;br>
-官網的 &lt;a href="https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/tree_based_containers.html">document&lt;/a> 寫說 split 跟 join 時間是「poly-logarithm」，但是其實目前為止 GNU 的 pbds 預設的 split 是 $\mathcal{O}(N)$ 的，請看&lt;a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=81806">這篇文章&lt;/a>。&lt;br>
-不過有一些方法可以讓複雜度變回一次 &lt;code>split&lt;/code> $\Theta(\log N)$，但是有一點麻煩。&lt;/p></description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件">Ch2. Section 9. 補魔力的條件&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1764">https://tioj.ck.tp.edu.tw/problems/1764&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;ul>
-&lt;li>現在有排成一直線的$N$個格子，從左到右編號為$1 \dots N$，每個格子都有自己的高度&lt;/li>
-&lt;li>一開始你站在第一格，每次移動都只能往編號大的格子跳，目標是走到第$N$格&lt;/li>
-&lt;li>假設第$i$個格子的高度是$x_i$，從格子$i$跳到格子$j$需要耗費$\max(0, (j-i)+(x_j-x_i))$的力氣&lt;br>
-請問在花最少力氣到達終點的前提下，他最多可以跳幾次?&lt;/li>
-&lt;/ul>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>先考慮最小化力氣&lt;br>
-令$x_i+i = v_i$，簡單的列出DP式&lt;/p></description></item><item><title>TIOJ-1633</title><link>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</link><pubDate>Fri, 08 May 2020 13:43:30 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</guid><description>&lt;h1 id="序列維護問題">序列維護問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1633">https://tioj.ck.tp.edu.tw/problems/1633&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有一個由1到N的數字排成的序列。&lt;br>
-可是你對於現在這個排列很不滿意，決定透過一些操作改變這個序列。&lt;br>
-你現在有兩種操作：&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>REV L R&lt;/code> ：把L到R所有數字反轉順序，例如&lt;code>1 2 3 4&lt;/code>變成&lt;code>4 3 2 1&lt;/code>&lt;/li>
-&lt;li>&lt;code>SWAP L1 R1 L2 R2&lt;/code>：把L1到R1所有數字跟L2到R2所有數字交換位置，但順序不變。&lt;/li>
-&lt;/ul>
-&lt;p>你總共進行了M次操作，請輸出最後序列的樣子。&lt;/p></description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</guid><description>&lt;h1 id="殿壬愛序列">殿壬愛序列&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2140">https://tioj.ck.tp.edu.tw/problems/2140&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給你一個長度為$N$的序列$a_1, a_2, \dots, a_N$，並且依序執行$Q$個操作，每個操作可能是&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;code>1 x y&lt;/code> ：把$a_x$設成$y$&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>2 L R k&lt;/code> ：對於每個$i \in [L, R]$，把$a_i$設成$\lfloor \frac{a_i}{k} \rfloor$。其中$\lfloor x \rfloor$代表不大於$x$的最大整數&lt;/p></description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>&lt;h1 id="can-you-arrive">Can You Arrive?&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1798">https://tioj.ck.tp.edu.tw/problems/1798&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>地鐵有$N$個站，$M$條軌道，$K$段行駛路線&lt;br>
-站與站之間使用軌道連接&lt;br>
-保證軌道不會形成環，且$M = N-1$&lt;/p>
-&lt;p>每段行駛路線代表有一輛車在兩站之間的最短路徑來回發車&lt;br>
-也就是說這段路上的任意兩站都是互通的，可以直接抵達不需轉車&lt;/p></description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶">殿壬看蝴蝶&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2124">https://tioj.ck.tp.edu.tw/problems/2124&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>太長了，略&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>看到第五種操作就會想用平衡樹去寫這題&lt;br>
-然後仔細看看就會發現第八種操作其實和其他操作都沒什麼關係，只有第三、四種操作會改變以蝴蝶編號為順序的區間和&lt;br>
-所以呢對蝴蝶的編號開一個線段樹、對樹的編號開個Splay就能AC了&lt;br>
-Splay只需要實現查一個節點在中序是第個、查中序第k個節點是什麼，還有剪切區間&lt;br>
-至於區間和就隨便維護吧XD，code如下，我不知道該對裸題做甚麼解釋&lt;/p></description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</guid><description>&lt;h1 id="重疊的天際線">重疊的天際線&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1202">https://tioj.ck.tp.edu.tw/problems/1202&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>地平線上有許多房子，而這些房子在夕陽的照射之下形成有趣的輪廓，我們稱之為天際線(Skyline)。為了方便起見，你可以假設所有的房子都是一個位在2D平面上的矩形，並且有一條邊貼在這個假想2D平面上的X軸。&lt;/p></description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</guid><description>&lt;h1 id="進階的入門">進階的入門&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1168">https://tioj.ck.tp.edu.tw/problems/1168&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>你需要實作五個函式：&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">pop_big&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">pop_small&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">push&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> s);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">big&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">small&lt;/span>();
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>其中第一個函式需要將最大的數字移除，第二個函式需要將最小的數字移除，第三個函式需要將一個數加入目前的數字們，第四個函式需要回傳當前的最大值，第五個函式需要回傳當前的最小值。&lt;br>
-假設一開始沒有任何數字，請你實作這五個操作。&lt;/p></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408">https://tioj.ck.tp.edu.tw/problems/1408&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定$n$個時段$[l_i, r_i)$&lt;br>
-問至少有多少單位時間要是忙碌的才能滿足&lt;br>
-「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)&lt;/p></description></item><item><title>TIOJ-1739</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</link><pubDate>Wed, 11 Dec 2019 15:26:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</guid><description>&lt;h1 id="apio-08-beads-interactive">[APIO &amp;lsquo;08] Beads [Interactive]&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1739">https://tioj.ck.tp.edu.tw/problems/1739&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有一個長度$n$的序列$a$，一開始$a_i = i$&lt;br>
-接下來有$m$個操作，每個操作只會交換相鄰的兩個數字&lt;br>
-接著有$q$個詢問，每次會詢問：第$t$個操作之後，數字$x$被放到哪個位置？&lt;br>
-$n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p></description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹">迭代式線段樹&lt;/h1>
-&lt;p>先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br>
-如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p>
-&lt;h2 id="單點修改">單點修改&lt;/h2>
-&lt;p>例題仍然是萬年RMQ&lt;/p>
-&lt;blockquote>
-&lt;p>給定一個長度$n$的序列，請支援以下操作&lt;/p></description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>&lt;h1 id="我要成為海賊王">我要成為海賊王&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1171">https://tioj.ck.tp.edu.tw/problems/1171&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>可能算是經典題吧，這邊提供兩種寫法: 重心剖分和輕重鍊剖分&lt;/p></description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2">愛蜜利雅的作業2&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1282">https://tioj.ck.tp.edu.tw/problems/1282&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數&lt;br>
-$1 \leq n,q \leq 10^5$&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data-Structure on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/data-structure/</link><description>Recent content in Data-Structure on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 09 Jul 2023 02:26:08 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/data-structure/index.xml" rel="self" type="application/rss+xml"/><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>&lt;h1 id="codeforces-793-f-julia-the-snail"&gt;Codeforces 793 F Julia the snail&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。&lt;br&gt;
+你除了傳送以外的移動方式只有向數線的左邊走（把 $x$ 變小）&lt;br&gt;
+接著有 $Q$ 筆詢問問，每筆詢問給 $x, y$，&lt;br&gt;
+問你從 $x$ 開始走，在不超出 $[x, y]$ 這個區間的前提下可以走最右邊是多右邊。&lt;/p&gt;</description></item><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat"&gt;好．傳囉！ Nice Boat！&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一個長度 $N$ 的整數序列 $A_i$。&lt;br&gt;
+如果你可以找出一個區間，他的前綴和每個數字都大於等於0，而且他的後綴和的每個數字也都大於等於0，我們就稱他是安全區間，請你找出最長的安全區間長度是多少。&lt;/p&gt;</description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考"&gt;2021 TOI 模考&lt;/h1&gt;
+&lt;p&gt;可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br&gt;
+今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p&gt;</description></item><item><title>PBDS Split Join Is Slow</title><link>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</link><pubDate>Fri, 23 Jul 2021 18:16:13 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</guid><description>&lt;h1 id="幫-pbds-上香"&gt;幫 pbds 上香&lt;/h1&gt;
+&lt;p&gt;如題。&lt;/p&gt;
+&lt;p&gt;先說結論：&lt;br&gt;
+官網的 &lt;a href="https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/tree_based_containers.html"&gt;document&lt;/a&gt; 寫說 split 跟 join 時間是「poly-logarithm」，但是其實目前為止 GNU 的 pbds 預設的 split 是 $\mathcal{O}(N)$ 的，請看&lt;a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=81806"&gt;這篇文章&lt;/a&gt;。&lt;br&gt;
+不過有一些方法可以讓複雜度變回一次 &lt;code&gt;split&lt;/code&gt; $\Theta(\log N)$，但是有一點麻煩。&lt;/p&gt;</description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件"&gt;Ch2. Section 9. 補魔力的條件&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1764"&gt;https://tioj.ck.tp.edu.tw/problems/1764&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;現在有排成一直線的$N$個格子，從左到右編號為$1 \dots N$，每個格子都有自己的高度&lt;/li&gt;
+&lt;li&gt;一開始你站在第一格，每次移動都只能往編號大的格子跳，目標是走到第$N$格&lt;/li&gt;
+&lt;li&gt;假設第$i$個格子的高度是$x_i$，從格子$i$跳到格子$j$需要耗費$\max(0, (j-i)+(x_j-x_i))$的力氣&lt;br&gt;
+請問在花最少力氣到達終點的前提下，他最多可以跳幾次?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;先考慮最小化力氣&lt;br&gt;
+令$x_i+i = v_i$，簡單的列出DP式&lt;/p&gt;</description></item><item><title>TIOJ-1633</title><link>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</link><pubDate>Fri, 08 May 2020 13:43:30 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</guid><description>&lt;h1 id="序列維護問題"&gt;序列維護問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1633"&gt;https://tioj.ck.tp.edu.tw/problems/1633&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有一個由1到N的數字排成的序列。&lt;br&gt;
+可是你對於現在這個排列很不滿意，決定透過一些操作改變這個序列。&lt;br&gt;
+你現在有兩種操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;REV L R&lt;/code&gt; ：把L到R所有數字反轉順序，例如&lt;code&gt;1 2 3 4&lt;/code&gt;變成&lt;code&gt;4 3 2 1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SWAP L1 R1 L2 R2&lt;/code&gt;：把L1到R1所有數字跟L2到R2所有數字交換位置，但順序不變。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你總共進行了M次操作，請輸出最後序列的樣子。&lt;/p&gt;</description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</guid><description>&lt;h1 id="殿壬愛序列"&gt;殿壬愛序列&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2140"&gt;https://tioj.ck.tp.edu.tw/problems/2140&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給你一個長度為$N$的序列$a_1, a_2, \dots, a_N$，並且依序執行$Q$個操作，每個操作可能是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;1 x y&lt;/code&gt; ：把$a_x$設成$y$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;2 L R k&lt;/code&gt; ：對於每個$i \in [L, R]$，把$a_i$設成$\lfloor \frac{a_i}{k} \rfloor$。其中$\lfloor x \rfloor$代表不大於$x$的最大整數&lt;/p&gt;</description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>&lt;h1 id="can-you-arrive"&gt;Can You Arrive?&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1798"&gt;https://tioj.ck.tp.edu.tw/problems/1798&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;地鐵有$N$個站，$M$條軌道，$K$段行駛路線&lt;br&gt;
+站與站之間使用軌道連接&lt;br&gt;
+保證軌道不會形成環，且$M = N-1$&lt;/p&gt;
+&lt;p&gt;每段行駛路線代表有一輛車在兩站之間的最短路徑來回發車&lt;br&gt;
+也就是說這段路上的任意兩站都是互通的，可以直接抵達不需轉車&lt;/p&gt;</description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶"&gt;殿壬看蝴蝶&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2124"&gt;https://tioj.ck.tp.edu.tw/problems/2124&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;太長了，略&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;看到第五種操作就會想用平衡樹去寫這題&lt;br&gt;
+然後仔細看看就會發現第八種操作其實和其他操作都沒什麼關係，只有第三、四種操作會改變以蝴蝶編號為順序的區間和&lt;br&gt;
+所以呢對蝴蝶的編號開一個線段樹、對樹的編號開個Splay就能AC了&lt;br&gt;
+Splay只需要實現查一個節點在中序是第個、查中序第k個節點是什麼，還有剪切區間&lt;br&gt;
+至於區間和就隨便維護吧XD，code如下，我不知道該對裸題做甚麼解釋&lt;/p&gt;</description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</guid><description>&lt;h1 id="重疊的天際線"&gt;重疊的天際線&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1202"&gt;https://tioj.ck.tp.edu.tw/problems/1202&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;地平線上有許多房子，而這些房子在夕陽的照射之下形成有趣的輪廓，我們稱之為天際線(Skyline)。為了方便起見，你可以假設所有的房子都是一個位在2D平面上的矩形，並且有一條邊貼在這個假想2D平面上的X軸。&lt;/p&gt;</description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</guid><description>&lt;h1 id="進階的入門"&gt;進階的入門&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1168"&gt;https://tioj.ck.tp.edu.tw/problems/1168&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;你需要實作五個函式：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;3
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;4
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;pop_big&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;pop_small&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;push&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; s);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;big&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;small&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其中第一個函式需要將最大的數字移除，第二個函式需要將最小的數字移除，第三個函式需要將一個數加入目前的數字們，第四個函式需要回傳當前的最大值，第五個函式需要回傳當前的最小值。&lt;br&gt;
+假設一開始沒有任何數字，請你實作這五個操作。&lt;/p&gt;</description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>&lt;h1 id="我很忙"&gt;我很忙&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408"&gt;https://tioj.ck.tp.edu.tw/problems/1408&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定$n$個時段$[l_i, r_i)$&lt;br&gt;
+問至少有多少單位時間要是忙碌的才能滿足&lt;br&gt;
+「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)&lt;/p&gt;</description></item><item><title>TIOJ-1739</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</link><pubDate>Wed, 11 Dec 2019 15:26:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</guid><description>&lt;h1 id="apio-08-beads-interactive"&gt;[APIO &amp;lsquo;08] Beads [Interactive]&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1739"&gt;https://tioj.ck.tp.edu.tw/problems/1739&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有一個長度$n$的序列$a$，一開始$a_i = i$&lt;br&gt;
+接下來有$m$個操作，每個操作只會交換相鄰的兩個數字&lt;br&gt;
+接著有$q$個詢問，每次會詢問：第$t$個操作之後，數字$x$被放到哪個位置？&lt;br&gt;
+$n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p&gt;</description></item><item><title>Iterative-SegmentTree</title><link>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</link><pubDate>Sat, 07 Dec 2019 20:48:20 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/07/Iterative-SegmentTree/</guid><description>&lt;h1 id="迭代式線段樹"&gt;迭代式線段樹&lt;/h1&gt;
+&lt;p&gt;先備知識: 線段樹(帶懶標) + 位元運算(吧)&lt;br&gt;
+如果讀者還不知道線段樹的原理最好看遞迴的(?)&lt;/p&gt;
+&lt;h2 id="單點修改"&gt;單點修改&lt;/h2&gt;
+&lt;p&gt;例題仍然是萬年RMQ&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;給定一個長度$n$的序列，請支援以下操作&lt;/p&gt;</description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>&lt;h1 id="我要成為海賊王"&gt;我要成為海賊王&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1171"&gt;https://tioj.ck.tp.edu.tw/problems/1171&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;可能算是經典題吧，這邊提供兩種寫法: 重心剖分和輕重鍊剖分&lt;/p&gt;</description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2"&gt;愛蜜利雅的作業2&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1282"&gt;https://tioj.ck.tp.edu.tw/problems/1282&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數&lt;br&gt;
+$1 \leq n,q \leq 10^5$&lt;/p&gt;</description></item></channel></rss>

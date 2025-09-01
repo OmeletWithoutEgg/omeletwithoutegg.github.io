@@ -1,245 +1,245 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/math/</link><description>Recent content in Math on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 22 Jul 2025 22:08:42 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>Barrett Reduction &amp; Montgomery Multiplication</title><link>https://omeletwithoutegg.github.io/2025/07/22/barrett-montgomery/</link><pubDate>Tue, 22 Jul 2025 22:08:42 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/22/barrett-montgomery/</guid><description>&lt;h1 id="barrett-reduction-與-montgomery-multiplication">Barrett Reduction 與 Montgomery Multiplication&lt;/h1>
-&lt;p>對競程有點經驗的人應該都要知道除法是一個很慢&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>的操作。&lt;br>
-不過，如果是除以 $2^k$ 的話就很簡單了，只要一個 shift 操作就能完成。&lt;br>
-Barrett reduction 和 Montgomery multiplication 分別用了不一樣的方法，給定一個正整數 $M$，針對 $M$ 做一些預處理之後，我們可以不用任何除法指令，只用較少的乘法、加減法與 shift 來完成「兩個數字相乘之後模 $M$」的操作。&lt;/p></description></item><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5">♯p Subset Sum : 5e5&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum">https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a>&lt;/p>
-&lt;p>有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p></description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣">一次式前綴積的多點求值與推廣&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定序列 $a_1, \dots, a_N$。考慮一次式的序列 $x - a_i$，定義其第 $i$ 個前綴積為&lt;/p>
-&lt;p>$$&lt;br>
-f_i(x) = \prod _ {j \leq i} (x - a_j)&lt;br>
-$$&lt;/p>
-&lt;p>接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p></description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829">https://tioj.ck.tp.edu.tw/problems/1829&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p></description></item><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</guid><description>&lt;h1 id="巨大密室問題">巨大密室問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1619">https://tioj.ck.tp.edu.tw/problems/1619&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有長度 $n$ 的 $P_i$ 和 $O_i$ 兩個正整數序列，請任意排列這兩個序列使得 $\prod _ i (P_i + O_i)$ 盡量大。&lt;/p>
-&lt;p>$n\leq 20000, 1 \leq P_i, O_i \leq 1000$。保證答案至多是 $60000$ 位數。&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>既然兩個序列都可以動不妨令 $P_i$ 是從小排到大的。那麼可以 greedy 的猜說 $O_i$ 從大排到小會是最佳解，sort 完乘起來就是答案。&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2116">https://tioj.ck.tp.edu.tw/problems/2116&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>科學家發現了一種神奇的細菌，他們的繁殖方式很奇怪。這個世界上目前有 $N$ 隻細菌，第 $i$ 隻細菌的體積是 $A_i$ 立方公分。每過一年，對於一隻體積為 $x$ 立方公分的細菌，假設 $x$ 的所有正因數分別是&lt;br>
-$$1=d_1&amp;lt;d_2&amp;lt;&amp;hellip;&amp;lt;d_k=x$$&lt;br>
-那這隻細菌會生出 $k-1$ 隻細菌，體積分別是 $d_1,d_2,&amp;hellip;,d_{k-1}$ 立方公分。&lt;/p></description></item><item><title>min 25 模板使用說明</title><link>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</link><pubDate>Tue, 10 Dec 2024 21:29:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</guid><description>&lt;h1 id="min-25-模板使用說明">min 25 模板使用說明&lt;/h1>
-&lt;p>前幾個月（WF 之前）忘記為什麼就想去學 min25 篩，然後就把他模版化放進 codebook 裡了。我是看 &lt;a href="https://oi-wiki.org/math/number-theory/min-25/">https://oi-wiki.org/math/number-theory/min-25/&lt;/a> 學的，不過本文不會提到太多細節。&lt;/p>
-&lt;p>先貼上 code：&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> U, &lt;span style="color:#66d9ef">typename&lt;/span> V&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">struct&lt;/span> &lt;span style="color:#a6e22e">min25&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> lld n; &lt;span style="color:#66d9ef">int&lt;/span> sq;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>U&lt;span style="color:#f92672">&amp;gt;&lt;/span> Ss, Sl, Spre; vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>V&lt;span style="color:#f92672">&amp;gt;&lt;/span> Rs, Rl;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Sieve sv; vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>lld&lt;span style="color:#f92672">&amp;gt;&lt;/span> quo;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> U &lt;span style="color:#f92672">&amp;amp;&lt;/span>S(lld d) { &lt;span style="color:#66d9ef">return&lt;/span> d &lt;span style="color:#f92672">&amp;lt;&lt;/span> sq &lt;span style="color:#f92672">?&lt;/span> Ss[d] &lt;span style="color:#f92672">:&lt;/span> Sl[n &lt;span style="color:#f92672">/&lt;/span> d]; }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> V &lt;span style="color:#f92672">&amp;amp;&lt;/span>R(lld d) { &lt;span style="color:#66d9ef">return&lt;/span> d &lt;span style="color:#f92672">&amp;lt;&lt;/span> sq &lt;span style="color:#f92672">?&lt;/span> Rs[d] &lt;span style="color:#f92672">:&lt;/span> Rl[n &lt;span style="color:#f92672">/&lt;/span> d]; }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> min25(lld n_) &lt;span style="color:#f92672">:&lt;/span> n(n_), sq((&lt;span style="color:#66d9ef">int&lt;/span>)sqrt(n) &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>),
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Ss(sq), Sl(sq), Spre(sq), Rs(sq), Rl(sq), sv(sq) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>, Q; i &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; i &lt;span style="color:#f92672">=&lt;/span> n &lt;span style="color:#f92672">/&lt;/span> Q &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> quo.push_back(Q &lt;span style="color:#f92672">=&lt;/span> n &lt;span style="color:#f92672">/&lt;/span> i);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> U &lt;span style="color:#a6e22e">F_prime&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>f, &lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>F) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld p : sv.primes) Spre[p] &lt;span style="color:#f92672">=&lt;/span> f(p);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> sq; i&lt;span style="color:#f92672">++&lt;/span>) Spre[i] &lt;span style="color:#f92672">+=&lt;/span> Spre[i &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>];
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) S(i) &lt;span style="color:#f92672">=&lt;/span> F(i) &lt;span style="color:#f92672">-&lt;/span> F(&lt;span style="color:#ae81ff">1&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld p : sv.primes)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (p &lt;span style="color:#f92672">*&lt;/span> p &lt;span style="color:#f92672">&amp;gt;&lt;/span> i) &lt;span style="color:#66d9ef">break&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> S(i) &lt;span style="color:#f92672">-=&lt;/span> f(p) &lt;span style="color:#f92672">*&lt;/span> (S(i &lt;span style="color:#f92672">/&lt;/span> p) &lt;span style="color:#f92672">-&lt;/span> Spre[p &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>]);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> S(n);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#75715e">// F_prime: \sum _ {p is prime, p &amp;lt;= n} f(p)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> V &lt;span style="color:#a6e22e">F_comp&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>g, &lt;span style="color:#66d9ef">auto&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>h) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) R(i) &lt;span style="color:#f92672">=&lt;/span> h(S(i));
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld p : sv.primes &lt;span style="color:#f92672">|&lt;/span> views&lt;span style="color:#f92672">::&lt;/span>reverse)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (lld i : quo) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (p &lt;span style="color:#f92672">*&lt;/span> p &lt;span style="color:#f92672">&amp;gt;&lt;/span> i) &lt;span style="color:#66d9ef">break&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> lld prod &lt;span style="color:#f92672">=&lt;/span> p;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">int&lt;/span> c &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; prod &lt;span style="color:#f92672">*&lt;/span> p &lt;span style="color:#f92672">&amp;lt;=&lt;/span> i; &lt;span style="color:#f92672">++&lt;/span>c, prod &lt;span style="color:#f92672">*=&lt;/span> p) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> R(i) &lt;span style="color:#f92672">+=&lt;/span> g(p, c) &lt;span style="color:#f92672">*&lt;/span> (R(i &lt;span style="color:#f92672">/&lt;/span> prod) &lt;span style="color:#f92672">-&lt;/span> h(Spre[p]));
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> R(i) &lt;span style="color:#f92672">+=&lt;/span> g(p, c &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> R(n);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#75715e">// F_comp: \sum _ {2 &amp;lt;= i &amp;lt;= n} g(i)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}; &lt;span style="color:#75715e">// O(n^{3/4} / log n)
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>如果去看我們 &lt;a href="https://github.com/1011cychien/R-12-forked-codebook/blob/master/codes/Math/Min25Sieve.cpp">codebook 的連結&lt;/a> 會看到還有一串中文的註解，以下大概就是仔細的講那一串中文的註解然後隨機補充一些東西。&lt;/p></description></item><item><title>Zobrist Hash / XOR hash</title><link>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</link><pubDate>Mon, 21 Oct 2024 21:17:34 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</guid><description>&lt;h1 id="zobrist-hash--xor-hash">Zobrist Hash / XOR hash&lt;/h1>
-&lt;p>非常簡單的一篇文章，只是看到沒有什麼中文材料就來科普（？）一下。&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>Zobrist hash 的用處是快速比較集合之間是否一樣。先令 $U$ 是我們所關心的物件的集合，對於每個物件 $u \in U$，我們都指定一個隨機的 $w$-bit 的二進位數字 $h(u)$ 給他，接著我們在比較兩個集合 $S, T \subseteq U$ 是否一樣的時候，我們直接當作比較 $\bigoplus _ {u \in S} h(u)$ 和 $\bigoplus _ {u \in T} h(u)$ 是否一樣，這樣只要 $w$ 夠大的話就有夠高的機率正確了。&lt;br>
-兩者一樣等價於 $\bigoplus _ {u\in S\oplus T} h(u)$ 為 $0$，其中 $S\oplus T$ 是對稱差集。兩個集合不一樣若且唯若對稱差集非空，而由於我們每個數字每個 bit 都是隨機的，所以當對稱差集非空的時候，這個 hash 的這個 bit 為 0 的機率是 $1/2$。&lt;br>
-因為要 $w$ 個 bit 都是 $0$ 才會把不一樣誤判成一樣，我們可以知道一次比較只有 $2^{-w}$ 的機率錯誤。常取的值會是 $w=64$。&lt;/p></description></item><item><title>2023 EOF quals</title><link>https://omeletwithoutegg.github.io/2023/01/13/2023-eof-quals/</link><pubDate>Fri, 13 Jan 2023 00:34:19 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/13/2023-eof-quals/</guid><description>&lt;h1 id="2023-eof-ctf-初賽">2023 EOF CTF 初賽&lt;/h1>
-&lt;p>修了計算機安全，然後期末考似乎是參加 EOF CTF 的初賽，另外還要交 writeup。&lt;br>
-把我寫的部份放在我的 blog 上水文章（？）&lt;br>
-下一篇文章希望是大二上的修課心得，再不寫就要忘光了。&lt;/p></description></item><item><title>BSUIR Cherry Orchard</title><link>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</link><pubDate>Sun, 12 Sep 2021 00:05:19 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</guid><description>&lt;p>&lt;a href="https://codeforces.com/problemset/gymProblem/101193/J">https://codeforces.com/problemset/gymProblem/101193/J&lt;/a>&lt;/p>
-&lt;p>這題是上禮拜團練沒人寫的某一題，因為我一直覺得自己的想法是對的所以花了好久來寫這題。&lt;br>
-網路上也找不太到題解:P&lt;/p>
-&lt;h1 id="cherry-orchard">Cherry orchard&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>左下角和右上角分別是 $(0,0)$ 和 $(1,1)$ 的正方形裡面有 $n$ 個點&lt;br>
-現在隨機在正方形的兩條不同的邊各選一個點，並畫出一條直線把這 $n$ 個點分成兩部份。&lt;br>
-請問兩部份中點數的 min 的期望值是多少？&lt;br>
-$n \leq 50$&lt;/p></description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>&lt;p>本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。&lt;br>
-主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136">https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br>
-你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。&lt;br>
-可以假設車速都不相同&lt;/p></description></item><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</guid><description>&lt;h1 id="atcoder-regular-contest-106">AtCoder Regular Contest 106&lt;/h1>
-&lt;p>最近一直被ZCK推坑，vir了好幾場ARC&lt;br>
-然後打完AGC才發現自己rating太低unrated，爛死XD&lt;br>
-結果打完這場還是不到能夠rated的標準1200 QQ&lt;br>
-然後想說寫一下題解好了 :P&lt;/p></description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</guid><description>&lt;h1 id="assssss">Assssss!!&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1505">https://tioj.ck.tp.edu.tw/problems/1505&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在有一個正整數構成的除法數列&lt;/p>
-&lt;p>$&lt;br>
-x_1 / x_2 / x_3 / \dots / x_n&lt;br>
-$&lt;/p>
-&lt;p>請問是否有一種加上括號的方法使得最後運算的結果是整數?&lt;br>
-$2 \leq n \leq 10^5, 1 \leq x_i \leq 10^9$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>加上括號之後每個數字會被放到分母或分子，想當然而放在分子的數字越多越好&lt;br>
-可以發現$x_2$會恰好被放到分母一次，因此在最後他一定是當分母的&lt;br>
-而我們可以構造出一個方法讓除了$x_2$最後當分母以外，其他數字都當分子&lt;/p></description></item><item><title>TIOJ-1219</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</link><pubDate>Tue, 25 Feb 2020 09:55:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</guid><description>&lt;h1 id="發糖果囉">發糖果囉&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1219">https://tioj.ck.tp.edu.tw/problems/1219&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>求符合$1 \leq x \leq n, 1 \leq y \leq m$且$x,y$的最大公因數是$g$的數對有多少對&lt;br>
-有多筆測試資料，$1 \leq n, m, g \leq 50000$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>莫比烏斯反演&lt;/p>
-&lt;h3 id="lemma">lemma&lt;/h3>
-&lt;p>$$&lt;br>
-\sum_d \mu(d) [d | x] = [x = 1]&lt;br>
-$$&lt;br>
-拿來簡化 $[\gcd(i,j)=1]$ 的部分，再想辦法換一下$\sum$的位置&lt;br>
-$$&lt;br>
-\begin{align*}&lt;br>
-\sum _ {i=1}^n \sum _ {j=1}^m [\gcd(i, j) = g] &amp;amp;= \sum _ {i=1}^{\lfloor n/g \rfloor} \sum _ {j=1}^{\lfloor m/g \rfloor} [\gcd(i, j) = 1]\newline&lt;br>
-\sum _ {i=1}^N \sum _ {j=1}^M [\gcd(i, j) = 1] &amp;amp;= \sum _ {i=1}^N \sum _ {j=1}^M \sum_d \mu(d) \cdot [d | \gcd(i, j)]\newline&lt;br>
-&amp;amp;= \sum_d \mu(d) \sum _ {i=1}^N \sum _ {j=1}^M [d | \gcd(i, j)]\newline&lt;br>
-&amp;amp;= \sum_d \mu(d) {\lfloor \frac{N}{d} \rfloor} {\lfloor \frac{M}{d} \rfloor}&lt;br>
-\end{align*}&lt;br>
-$$&lt;br>
-預處理$\mu$的前綴，利用數論分塊可以做到$\mathcal{O}(N + Q \sqrt{N})$&lt;/p></description></item><item><title>TIOJ-1511</title><link>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</link><pubDate>Sat, 15 Feb 2020 13:25:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</guid><description>&lt;h1 id="problem-a-雷射防護網">Problem A. 雷射防護網&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1511">https://tioj.ck.tp.edu.tw/problems/1511&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>考慮在正$n$邊形的頂點中任選三點形成的三角形，請統計分別有幾個銳角三角形、直角三角形和鈍角三角形&lt;br>
-注意：兩個三角形被視為不同的，若且唯若三個頂點的編號不完全相同，並且不可以旋轉三角形&lt;br>
-$n \leq 10^6$&lt;/p></description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</guid><description>&lt;h1 id="爆炸吧現充">爆炸吧現充~&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1600">https://tioj.ck.tp.edu.tw/problems/1600&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>求共有幾個滿足&lt;/p>
-&lt;p>$$&lt;br>
-1 \leq x \leq n,&lt;br>
-\exists k &amp;gt; 1, k^2 | x&lt;br>
-$$&lt;/p>
-&lt;p>的$x$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>一開始我的想法是$[\mu(x)=0]$的前綴，想說用杜教篩或莫比烏斯反演什麼的，但怎麼推都推不出來&lt;br>
-去問王政祺之後，他說直接枚舉平方數再排容就好，至於排容的係數就直接取$\mu$&lt;/p></description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>&lt;h1 id="同餘算數">同餘算數&lt;/h1>
-&lt;h2 id="定義">定義&lt;/h2>
-&lt;p>$$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$&lt;br>
-或者說$a,b$同餘於$m$&lt;/p>
-&lt;h2 id="基本性質">基本性質&lt;/h2>
-&lt;p>當一個題目要求答案模一個數字$m$時&lt;br>
-通常我們都可以不用先算出一個很大的答案再取模&lt;br>
-利用下面的規則能夠在計算的過程中一邊取模(加減乘不會改變等價關係)&lt;br>
-設&lt;br>
-$$&lt;br>
-\left \{&lt;br>
-\begin{matrix}&lt;br>
-a_0 \equiv a_1 \pmod m\newline&lt;br>
-b_0 \equiv b_1 \pmod m&lt;br>
-\end{matrix}&lt;br>
-\right .&lt;br>
-$$&lt;br>
-則易得到&lt;br>
-$$&lt;br>
-\left \{&lt;br>
-\begin{matrix}&lt;br>
-a_0 \pm b_0 \equiv a_1 \pm b_1 \pmod m\newline&lt;br>
-a_0b_0 \equiv a_1b_1 \pmod m&lt;br>
-\end{matrix}&lt;br>
-\right .&lt;br>
-$$&lt;/p></description></item><item><title>TIOJ-1674</title><link>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</link><pubDate>Thu, 19 Dec 2019 10:58:57 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</guid><description>&lt;h1 id="新專輯">新專輯&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1674">https://tioj.ck.tp.edu.tw/problems/1674&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>最近你打算訂購$N^2$張水樹奈奈的專輯《極限魅惑IMPACT EXCITER》。&lt;br>
-由於份量實在是太多了，你決定分散成$N$份訂單。&lt;/p>
-&lt;p>然而，不幸的，依據博客來新的訂貨規定，每一位顧客第$k$次下訂單所訂的CD張數必頇是$k$的正整數倍。&lt;br>
-換句話說，一位顧客第$5$次訂的CD張數只可能是$5$張、$10$張、$15$張、…依此類推。&lt;/p></description></item><item><title>TIOJ-1948</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</link><pubDate>Wed, 11 Dec 2019 13:24:35 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</guid><description>&lt;h1 id="小向的試煉-2-1洞穴cave">小向的試煉 2-1：洞穴(Cave)&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1948">https://tioj.ck.tp.edu.tw/problems/1948&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>小向在洞穴裡偵察到了$N$個烏龍，不知道是本尊還是分身。不過他們在洞穴中都是以每秒1公分的速度前進，只是有的朝著左邊的入口前進，而有的朝著右邊的入口前進。而由於洞穴相當狹窄，兩個相向的烏龍相撞時會回頭。小向大膽猜測，本尊一定會在所有分身都出洞穴被小向打敗後才出洞穴，瞄準小向用盡魔力的那剎那攻擊小向。不過她也沒那麼多時間等所有分身慢慢走出來再找到本尊，所以小向希望能直接用她剛剛偵察到的資訊判斷哪個是本尊。($N\leq10^6$，洞穴的長度$L\leq10^9$)&lt;/p></description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</guid><description>&lt;h1 id="販賣機耶">販賣機耶&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1614">https://tioj.ck.tp.edu.tw/problems/1614&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>蝴蝶在路旁玩壞一台販賣機，它一次只能投一枚硬幣（故障？）。&lt;br>
-重點是：投進一枚x元的硬幣，然後按退幣鈕，居然會吐出一枚價值 $f(x)$ 的硬幣耶！&lt;br>
-更神秘的是，天才蝴蝶已經發現 $f(x) = x + (x-b_1) (x-b_2) (x-b_3) \dots (x-b_m)$。&lt;br>
-現在蝴蝶手上有 $n$ 枚硬幣，分別是 $a_1 \dots a_n$，請問蝴蝶投進去會賺的硬幣有幾枚？&lt;/p></description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>&lt;h1 id="同步sync">同步(Sync)&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1927">https://tioj.ck.tp.edu.tw/problems/1927&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。&lt;br>
-有時遊戲中的兩人會產生「同步」的現象。產生同步的條件是兩人所在的格子的數字$a,b$分別滿足&lt;br>
-$$&lt;br>
-(ab)^{\frac{p-1}{2}} \equiv 1 \pmod p&lt;br>
-$$&lt;br>
-其中$p = 10^9 + 7$。產生同步後，兩人會瞬移至下一格。如果在下一格又產生「同步」，則會繼續往下走，直到其中一人超出格子範圍(到了終點了)或者兩人不再同步。&lt;/p></description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</guid><description>&lt;h1 id="d番茄大戰爭">D.番茄大戰爭&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2019">https://tioj.ck.tp.edu.tw/problems/2019&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>兩個人在玩剪刀石頭布，而他們兩個人玩了$T$個回合。兩個人（此處稱為小奕和小安）各自有一個「策略」，分別為兩個字串$A$和$B$。兩個字串皆由&lt;code>R&lt;/code>、&lt;code>P&lt;/code>、&lt;code>S&lt;/code>三個字元組成，分別代表小奕和小安會出石頭、布、剪刀。兩個人都會根據他們的「策略」出題，在第$i$個回合，小奕將會出$A _ {i \mod {|A|}}$，而小安將出$B _ {i \mod{|B|}}$，從$i = 0$開始。請輸出：經過$T$個回合後，兩人分別贏了幾局，平手了幾局。&lt;/p></description></item><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</guid><description>&lt;h1 id="f無限兔子問題">F.無限兔子問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2021">https://tioj.ck.tp.edu.tw/problems/2021&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>令$F_i$是費式數列&lt;br>
-給定$s,t$，求$\sum\limits _ {i=s}^t\binom{F_i}{2}$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>這題也是有夠數學OwO&lt;br>
-題目所求是$\sum\limits _ {i=s}^t\frac{1}{2}{F_i(F_i - 1)}$&lt;br>
-可以想到分別求$\sum\limits _ {i=1}^nF_i$和$\sum\limits _ {i=1}^nF_i^2$&lt;/p></description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2">愛蜜利雅的作業2&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1282">https://tioj.ck.tp.edu.tw/problems/1282&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數&lt;br>
-$1 \leq n,q \leq 10^5$&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/math/</link><description>Recent content in Math on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 22 Jul 2025 22:08:42 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>Barrett Reduction &amp; Montgomery Multiplication</title><link>https://omeletwithoutegg.github.io/2025/07/22/barrett-montgomery/</link><pubDate>Tue, 22 Jul 2025 22:08:42 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/22/barrett-montgomery/</guid><description>&lt;h1 id="barrett-reduction-與-montgomery-multiplication"&gt;Barrett Reduction 與 Montgomery Multiplication&lt;/h1&gt;
+&lt;p&gt;對競程有點經驗的人應該都要知道除法是一個很慢&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;的操作。&lt;br&gt;
+不過，如果是除以 $2^k$ 的話就很簡單了，只要一個 shift 操作就能完成。&lt;br&gt;
+Barrett reduction 和 Montgomery multiplication 分別用了不一樣的方法，給定一個正整數 $M$，針對 $M$ 做一些預處理之後，我們可以不用任何除法指令，只用較少的乘法、加減法與 shift 來完成「兩個數字相乘之後模 $M$」的操作。&lt;/p&gt;</description></item><item><title>♯p Subset Sum</title><link>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</link><pubDate>Thu, 27 Feb 2025 10:27:49 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/27/sharp-p-subset-sum/</guid><description>&lt;h1 id="p-subset-sum--5e5"&gt;♯p Subset Sum : 5e5&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://judge.yosupo.jp/problem/sharp_p_subset_sum"&gt;https://judge.yosupo.jp/problem/sharp_p_subset_sum&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有 $N$ 個小於等於 $T$ 的正整數 $s_0,s_1,\dots,s_N$，對於所有 $t = 1,2,\dots,T$，計算有幾個 $I \subseteq \{0,1,\dots,N-1\}$ 使得 $\sum _ {i\in I} s_i = t$，輸出模 $998244353$ 的餘數&lt;/p&gt;</description></item><item><title>Multipoint Evaluation of Prefix Products</title><link>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</link><pubDate>Thu, 09 Jan 2025 23:10:09 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/09/multipoint-evaluation-of-prefix-products/</guid><description>&lt;h1 id="一次式前綴積的多點求值與推廣"&gt;一次式前綴積的多點求值與推廣&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定序列 $a_1, \dots, a_N$。考慮一次式的序列 $x - a_i$，定義其第 $i$ 個前綴積為&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;
+f_i(x) = \prod _ {j \leq i} (x - a_j)&lt;br&gt;
+$$&lt;/p&gt;
+&lt;p&gt;接著有 $Q$ 個詢問 $(u_i, v_i)$ 要你回答第 $u_i$ 個前綴積以 $x = v_i$ 代入所得到的值，即 $f_{u_i}(v_i)$。&lt;/p&gt;</description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛"&gt;化學磁牛&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829"&gt;https://tioj.ck.tp.edu.tw/problems/1829&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p&gt;</description></item><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</guid><description>&lt;h1 id="巨大密室問題"&gt;巨大密室問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1619"&gt;https://tioj.ck.tp.edu.tw/problems/1619&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有長度 $n$ 的 $P_i$ 和 $O_i$ 兩個正整數序列，請任意排列這兩個序列使得 $\prod _ i (P_i + O_i)$ 盡量大。&lt;/p&gt;
+&lt;p&gt;$n\leq 20000, 1 \leq P_i, O_i \leq 1000$。保證答案至多是 $60000$ 位數。&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;既然兩個序列都可以動不妨令 $P_i$ 是從小排到大的。那麼可以 greedy 的猜說 $O_i$ 從大排到小會是最佳解，sort 完乘起來就是答案。&lt;/p&gt;</description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</guid><description>&lt;h1 id="細菌"&gt;細菌&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2116"&gt;https://tioj.ck.tp.edu.tw/problems/2116&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;科學家發現了一種神奇的細菌，他們的繁殖方式很奇怪。這個世界上目前有 $N$ 隻細菌，第 $i$ 隻細菌的體積是 $A_i$ 立方公分。每過一年，對於一隻體積為 $x$ 立方公分的細菌，假設 $x$ 的所有正因數分別是&lt;br&gt;
+$$1=d_1&amp;lt;d_2&amp;lt;&amp;hellip;&amp;lt;d_k=x$$&lt;br&gt;
+那這隻細菌會生出 $k-1$ 隻細菌，體積分別是 $d_1,d_2,&amp;hellip;,d_{k-1}$ 立方公分。&lt;/p&gt;</description></item><item><title>min 25 模板使用說明</title><link>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</link><pubDate>Tue, 10 Dec 2024 21:29:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/10/min-25-template-readme/</guid><description>&lt;h1 id="min-25-模板使用說明"&gt;min 25 模板使用說明&lt;/h1&gt;
+&lt;p&gt;前幾個月（WF 之前）忘記為什麼就想去學 min25 篩，然後就把他模版化放進 codebook 裡了。我是看 &lt;a href="https://oi-wiki.org/math/number-theory/min-25/"&gt;https://oi-wiki.org/math/number-theory/min-25/&lt;/a&gt; 學的，不過本文不會提到太多細節。&lt;/p&gt;
+&lt;p&gt;先貼上 code：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 3
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 4
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 5
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 6
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 7
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 8
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 9
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;10
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;11
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;12
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;13
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;14
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;15
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;16
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;17
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;18
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;19
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;20
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;21
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;22
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;23
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;24
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;25
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;26
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;27
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;28
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;29
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;30
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;31
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;32
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;33
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;34
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;35
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;36
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;template&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;typename&lt;/span&gt; U, &lt;span style="color:#66d9ef"&gt;typename&lt;/span&gt; V&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;struct&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;min25&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; lld n; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; sq;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;U&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; Ss, Sl, Spre; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;V&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; Rs, Rl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Sieve sv; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;lld&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; quo;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; U &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;S(lld d) { &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; d &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; sq &lt;span style="color:#f92672"&gt;?&lt;/span&gt; Ss[d] &lt;span style="color:#f92672"&gt;:&lt;/span&gt; Sl[n &lt;span style="color:#f92672"&gt;/&lt;/span&gt; d]; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; V &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;R(lld d) { &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; d &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; sq &lt;span style="color:#f92672"&gt;?&lt;/span&gt; Rs[d] &lt;span style="color:#f92672"&gt;:&lt;/span&gt; Rl[n &lt;span style="color:#f92672"&gt;/&lt;/span&gt; d]; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; min25(lld n_) &lt;span style="color:#f92672"&gt;:&lt;/span&gt; n(n_), sq((&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;)sqrt(n) &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Ss(sq), Sl(sq), Spre(sq), Rs(sq), Rl(sq), sv(sq) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, Q; i &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; n; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; n &lt;span style="color:#f92672"&gt;/&lt;/span&gt; Q &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; quo.push_back(Q &lt;span style="color:#f92672"&gt;=&lt;/span&gt; n &lt;span style="color:#f92672"&gt;/&lt;/span&gt; i);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; U &lt;span style="color:#a6e22e"&gt;F_prime&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;f, &lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;F) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld p : sv.primes) Spre[p] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; f(p);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; sq; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) Spre[i] &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; Spre[i &lt;span style="color:#f92672"&gt;-&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) S(i) &lt;span style="color:#f92672"&gt;=&lt;/span&gt; F(i) &lt;span style="color:#f92672"&gt;-&lt;/span&gt; F(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld p : sv.primes)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (p &lt;span style="color:#f92672"&gt;*&lt;/span&gt; p &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; i) &lt;span style="color:#66d9ef"&gt;break&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; S(i) &lt;span style="color:#f92672"&gt;-=&lt;/span&gt; f(p) &lt;span style="color:#f92672"&gt;*&lt;/span&gt; (S(i &lt;span style="color:#f92672"&gt;/&lt;/span&gt; p) &lt;span style="color:#f92672"&gt;-&lt;/span&gt; Spre[p &lt;span style="color:#f92672"&gt;-&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; S(n);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#75715e"&gt;// F_prime: \sum _ {p is prime, p &amp;lt;= n} f(p)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; V &lt;span style="color:#a6e22e"&gt;F_comp&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;g, &lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;h) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) R(i) &lt;span style="color:#f92672"&gt;=&lt;/span&gt; h(S(i));
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld p : sv.primes &lt;span style="color:#f92672"&gt;|&lt;/span&gt; views&lt;span style="color:#f92672"&gt;::&lt;/span&gt;reverse)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (p &lt;span style="color:#f92672"&gt;*&lt;/span&gt; p &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; i) &lt;span style="color:#66d9ef"&gt;break&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; lld prod &lt;span style="color:#f92672"&gt;=&lt;/span&gt; p;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; c &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; prod &lt;span style="color:#f92672"&gt;*&lt;/span&gt; p &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; i; &lt;span style="color:#f92672"&gt;++&lt;/span&gt;c, prod &lt;span style="color:#f92672"&gt;*=&lt;/span&gt; p) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; R(i) &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; g(p, c) &lt;span style="color:#f92672"&gt;*&lt;/span&gt; (R(i &lt;span style="color:#f92672"&gt;/&lt;/span&gt; prod) &lt;span style="color:#f92672"&gt;-&lt;/span&gt; h(Spre[p]));
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; R(i) &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; g(p, c &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; R(n);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#75715e"&gt;// F_comp: \sum _ {2 &amp;lt;= i &amp;lt;= n} g(i)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;}; &lt;span style="color:#75715e"&gt;// O(n^{3/4} / log n)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果去看我們 &lt;a href="https://github.com/1011cychien/R-12-forked-codebook/blob/master/codes/Math/Min25Sieve.cpp"&gt;codebook 的連結&lt;/a&gt; 會看到還有一串中文的註解，以下大概就是仔細的講那一串中文的註解然後隨機補充一些東西。&lt;/p&gt;</description></item><item><title>Zobrist Hash / XOR hash</title><link>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</link><pubDate>Mon, 21 Oct 2024 21:17:34 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/10/21/zobrist-hash/</guid><description>&lt;h1 id="zobrist-hash--xor-hash"&gt;Zobrist Hash / XOR hash&lt;/h1&gt;
+&lt;p&gt;非常簡單的一篇文章，只是看到沒有什麼中文材料就來科普（？）一下。&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;Zobrist hash 的用處是快速比較集合之間是否一樣。先令 $U$ 是我們所關心的物件的集合，對於每個物件 $u \in U$，我們都指定一個隨機的 $w$-bit 的二進位數字 $h(u)$ 給他，接著我們在比較兩個集合 $S, T \subseteq U$ 是否一樣的時候，我們直接當作比較 $\bigoplus _ {u \in S} h(u)$ 和 $\bigoplus _ {u \in T} h(u)$ 是否一樣，這樣只要 $w$ 夠大的話就有夠高的機率正確了。&lt;br&gt;
+兩者一樣等價於 $\bigoplus _ {u\in S\oplus T} h(u)$ 為 $0$，其中 $S\oplus T$ 是對稱差集。兩個集合不一樣若且唯若對稱差集非空，而由於我們每個數字每個 bit 都是隨機的，所以當對稱差集非空的時候，這個 hash 的這個 bit 為 0 的機率是 $1/2$。&lt;br&gt;
+因為要 $w$ 個 bit 都是 $0$ 才會把不一樣誤判成一樣，我們可以知道一次比較只有 $2^{-w}$ 的機率錯誤。常取的值會是 $w=64$。&lt;/p&gt;</description></item><item><title>2023 EOF quals</title><link>https://omeletwithoutegg.github.io/2023/01/13/2023-eof-quals/</link><pubDate>Fri, 13 Jan 2023 00:34:19 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/13/2023-eof-quals/</guid><description>&lt;h1 id="2023-eof-ctf-初賽"&gt;2023 EOF CTF 初賽&lt;/h1&gt;
+&lt;p&gt;修了計算機安全，然後期末考似乎是參加 EOF CTF 的初賽，另外還要交 writeup。&lt;br&gt;
+把我寫的部份放在我的 blog 上水文章（？）&lt;br&gt;
+下一篇文章希望是大二上的修課心得，再不寫就要忘光了。&lt;/p&gt;</description></item><item><title>BSUIR Cherry Orchard</title><link>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</link><pubDate>Sun, 12 Sep 2021 00:05:19 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</guid><description>&lt;p&gt;&lt;a href="https://codeforces.com/problemset/gymProblem/101193/J"&gt;https://codeforces.com/problemset/gymProblem/101193/J&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;這題是上禮拜團練沒人寫的某一題，因為我一直覺得自己的想法是對的所以花了好久來寫這題。&lt;br&gt;
+網路上也找不太到題解:P&lt;/p&gt;
+&lt;h1 id="cherry-orchard"&gt;Cherry orchard&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;左下角和右上角分別是 $(0,0)$ 和 $(1,1)$ 的正方形裡面有 $n$ 個點&lt;br&gt;
+現在隨機在正方形的兩條不同的邊各選一個點，並畫出一條直線把這 $n$ 個點分成兩部份。&lt;br&gt;
+請問兩部份中點數的 min 的期望值是多少？&lt;br&gt;
+$n \leq 50$&lt;/p&gt;</description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>&lt;p&gt;本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。&lt;br&gt;
+主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。&lt;/p&gt;</description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題"&gt;賽車問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136"&gt;https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br&gt;
+你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。&lt;br&gt;
+可以假設車速都不相同&lt;/p&gt;</description></item><item><title>ARC-106</title><link>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</link><pubDate>Mon, 26 Oct 2020 19:44:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/26/ARC-106/</guid><description>&lt;h1 id="atcoder-regular-contest-106"&gt;AtCoder Regular Contest 106&lt;/h1&gt;
+&lt;p&gt;最近一直被ZCK推坑，vir了好幾場ARC&lt;br&gt;
+然後打完AGC才發現自己rating太低unrated，爛死XD&lt;br&gt;
+結果打完這場還是不到能夠rated的標準1200 QQ&lt;br&gt;
+然後想說寫一下題解好了 :P&lt;/p&gt;</description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</guid><description>&lt;h1 id="assssss"&gt;Assssss!!&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1505"&gt;https://tioj.ck.tp.edu.tw/problems/1505&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;現在有一個正整數構成的除法數列&lt;/p&gt;
+&lt;p&gt;$&lt;br&gt;
+x_1 / x_2 / x_3 / \dots / x_n&lt;br&gt;
+$&lt;/p&gt;
+&lt;p&gt;請問是否有一種加上括號的方法使得最後運算的結果是整數?&lt;br&gt;
+$2 \leq n \leq 10^5, 1 \leq x_i \leq 10^9$&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;加上括號之後每個數字會被放到分母或分子，想當然而放在分子的數字越多越好&lt;br&gt;
+可以發現$x_2$會恰好被放到分母一次，因此在最後他一定是當分母的&lt;br&gt;
+而我們可以構造出一個方法讓除了$x_2$最後當分母以外，其他數字都當分子&lt;/p&gt;</description></item><item><title>TIOJ-1219</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</link><pubDate>Tue, 25 Feb 2020 09:55:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</guid><description>&lt;h1 id="發糖果囉"&gt;發糖果囉&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1219"&gt;https://tioj.ck.tp.edu.tw/problems/1219&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;求符合$1 \leq x \leq n, 1 \leq y \leq m$且$x,y$的最大公因數是$g$的數對有多少對&lt;br&gt;
+有多筆測試資料，$1 \leq n, m, g \leq 50000$&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;莫比烏斯反演&lt;/p&gt;
+&lt;h3 id="lemma"&gt;lemma&lt;/h3&gt;
+&lt;p&gt;$$&lt;br&gt;
+\sum_d \mu(d) [d | x] = [x = 1]&lt;br&gt;
+$$&lt;br&gt;
+拿來簡化 $[\gcd(i,j)=1]$ 的部分，再想辦法換一下$\sum$的位置&lt;br&gt;
+$$&lt;br&gt;
+\begin{align*}&lt;br&gt;
+\sum _ {i=1}^n \sum _ {j=1}^m [\gcd(i, j) = g] &amp;amp;= \sum _ {i=1}^{\lfloor n/g \rfloor} \sum _ {j=1}^{\lfloor m/g \rfloor} [\gcd(i, j) = 1]\newline&lt;br&gt;
+\sum _ {i=1}^N \sum _ {j=1}^M [\gcd(i, j) = 1] &amp;amp;= \sum _ {i=1}^N \sum _ {j=1}^M \sum_d \mu(d) \cdot [d | \gcd(i, j)]\newline&lt;br&gt;
+&amp;amp;= \sum_d \mu(d) \sum _ {i=1}^N \sum _ {j=1}^M [d | \gcd(i, j)]\newline&lt;br&gt;
+&amp;amp;= \sum_d \mu(d) {\lfloor \frac{N}{d} \rfloor} {\lfloor \frac{M}{d} \rfloor}&lt;br&gt;
+\end{align*}&lt;br&gt;
+$$&lt;br&gt;
+預處理$\mu$的前綴，利用數論分塊可以做到$\mathcal{O}(N + Q \sqrt{N})$&lt;/p&gt;</description></item><item><title>TIOJ-1511</title><link>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</link><pubDate>Sat, 15 Feb 2020 13:25:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</guid><description>&lt;h1 id="problem-a-雷射防護網"&gt;Problem A. 雷射防護網&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1511"&gt;https://tioj.ck.tp.edu.tw/problems/1511&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;考慮在正$n$邊形的頂點中任選三點形成的三角形，請統計分別有幾個銳角三角形、直角三角形和鈍角三角形&lt;br&gt;
+注意：兩個三角形被視為不同的，若且唯若三個頂點的編號不完全相同，並且不可以旋轉三角形&lt;br&gt;
+$n \leq 10^6$&lt;/p&gt;</description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</guid><description>&lt;h1 id="爆炸吧現充"&gt;爆炸吧現充~&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1600"&gt;https://tioj.ck.tp.edu.tw/problems/1600&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;求共有幾個滿足&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;
+1 \leq x \leq n,&lt;br&gt;
+\exists k &amp;gt; 1, k^2 | x&lt;br&gt;
+$$&lt;/p&gt;
+&lt;p&gt;的$x$&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;一開始我的想法是$[\mu(x)=0]$的前綴，想說用杜教篩或莫比烏斯反演什麼的，但怎麼推都推不出來&lt;br&gt;
+去問王政祺之後，他說直接枚舉平方數再排容就好，至於排容的係數就直接取$\mu$&lt;/p&gt;</description></item><item><title>Modulo-Arithmetic</title><link>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</link><pubDate>Mon, 30 Dec 2019 13:25:22 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/30/Modulo-Arithmetic/</guid><description>&lt;h1 id="同餘算數"&gt;同餘算數&lt;/h1&gt;
+&lt;h2 id="定義"&gt;定義&lt;/h2&gt;
+&lt;p&gt;$$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$&lt;br&gt;
+或者說$a,b$同餘於$m$&lt;/p&gt;
+&lt;h2 id="基本性質"&gt;基本性質&lt;/h2&gt;
+&lt;p&gt;當一個題目要求答案模一個數字$m$時&lt;br&gt;
+通常我們都可以不用先算出一個很大的答案再取模&lt;br&gt;
+利用下面的規則能夠在計算的過程中一邊取模(加減乘不會改變等價關係)&lt;br&gt;
+設&lt;br&gt;
+$$&lt;br&gt;
+\left \{&lt;br&gt;
+\begin{matrix}&lt;br&gt;
+a_0 \equiv a_1 \pmod m\newline&lt;br&gt;
+b_0 \equiv b_1 \pmod m&lt;br&gt;
+\end{matrix}&lt;br&gt;
+\right .&lt;br&gt;
+$$&lt;br&gt;
+則易得到&lt;br&gt;
+$$&lt;br&gt;
+\left \{&lt;br&gt;
+\begin{matrix}&lt;br&gt;
+a_0 \pm b_0 \equiv a_1 \pm b_1 \pmod m\newline&lt;br&gt;
+a_0b_0 \equiv a_1b_1 \pmod m&lt;br&gt;
+\end{matrix}&lt;br&gt;
+\right .&lt;br&gt;
+$$&lt;/p&gt;</description></item><item><title>TIOJ-1674</title><link>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</link><pubDate>Thu, 19 Dec 2019 10:58:57 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</guid><description>&lt;h1 id="新專輯"&gt;新專輯&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1674"&gt;https://tioj.ck.tp.edu.tw/problems/1674&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;最近你打算訂購$N^2$張水樹奈奈的專輯《極限魅惑IMPACT EXCITER》。&lt;br&gt;
+由於份量實在是太多了，你決定分散成$N$份訂單。&lt;/p&gt;
+&lt;p&gt;然而，不幸的，依據博客來新的訂貨規定，每一位顧客第$k$次下訂單所訂的CD張數必頇是$k$的正整數倍。&lt;br&gt;
+換句話說，一位顧客第$5$次訂的CD張數只可能是$5$張、$10$張、$15$張、…依此類推。&lt;/p&gt;</description></item><item><title>TIOJ-1948</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</link><pubDate>Wed, 11 Dec 2019 13:24:35 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</guid><description>&lt;h1 id="小向的試煉-2-1洞穴cave"&gt;小向的試煉 2-1：洞穴(Cave)&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1948"&gt;https://tioj.ck.tp.edu.tw/problems/1948&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;小向在洞穴裡偵察到了$N$個烏龍，不知道是本尊還是分身。不過他們在洞穴中都是以每秒1公分的速度前進，只是有的朝著左邊的入口前進，而有的朝著右邊的入口前進。而由於洞穴相當狹窄，兩個相向的烏龍相撞時會回頭。小向大膽猜測，本尊一定會在所有分身都出洞穴被小向打敗後才出洞穴，瞄準小向用盡魔力的那剎那攻擊小向。不過她也沒那麼多時間等所有分身慢慢走出來再找到本尊，所以小向希望能直接用她剛剛偵察到的資訊判斷哪個是本尊。($N\leq10^6$，洞穴的長度$L\leq10^9$)&lt;/p&gt;</description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</guid><description>&lt;h1 id="販賣機耶"&gt;販賣機耶&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1614"&gt;https://tioj.ck.tp.edu.tw/problems/1614&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;蝴蝶在路旁玩壞一台販賣機，它一次只能投一枚硬幣（故障？）。&lt;br&gt;
+重點是：投進一枚x元的硬幣，然後按退幣鈕，居然會吐出一枚價值 $f(x)$ 的硬幣耶！&lt;br&gt;
+更神秘的是，天才蝴蝶已經發現 $f(x) = x + (x-b_1) (x-b_2) (x-b_3) \dots (x-b_m)$。&lt;br&gt;
+現在蝴蝶手上有 $n$ 枚硬幣，分別是 $a_1 \dots a_n$，請問蝴蝶投進去會賺的硬幣有幾枚？&lt;/p&gt;</description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>&lt;h1 id="同步sync"&gt;同步(Sync)&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1927"&gt;https://tioj.ck.tp.edu.tw/problems/1927&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。&lt;br&gt;
+有時遊戲中的兩人會產生「同步」的現象。產生同步的條件是兩人所在的格子的數字$a,b$分別滿足&lt;br&gt;
+$$&lt;br&gt;
+(ab)^{\frac{p-1}{2}} \equiv 1 \pmod p&lt;br&gt;
+$$&lt;br&gt;
+其中$p = 10^9 + 7$。產生同步後，兩人會瞬移至下一格。如果在下一格又產生「同步」，則會繼續往下走，直到其中一人超出格子範圍(到了終點了)或者兩人不再同步。&lt;/p&gt;</description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</guid><description>&lt;h1 id="d番茄大戰爭"&gt;D.番茄大戰爭&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2019"&gt;https://tioj.ck.tp.edu.tw/problems/2019&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;兩個人在玩剪刀石頭布，而他們兩個人玩了$T$個回合。兩個人（此處稱為小奕和小安）各自有一個「策略」，分別為兩個字串$A$和$B$。兩個字串皆由&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;P&lt;/code&gt;、&lt;code&gt;S&lt;/code&gt;三個字元組成，分別代表小奕和小安會出石頭、布、剪刀。兩個人都會根據他們的「策略」出題，在第$i$個回合，小奕將會出$A _ {i \mod {|A|}}$，而小安將出$B _ {i \mod{|B|}}$，從$i = 0$開始。請輸出：經過$T$個回合後，兩人分別贏了幾局，平手了幾局。&lt;/p&gt;</description></item><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</guid><description>&lt;h1 id="f無限兔子問題"&gt;F.無限兔子問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2021"&gt;https://tioj.ck.tp.edu.tw/problems/2021&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;令$F_i$是費式數列&lt;br&gt;
+給定$s,t$，求$\sum\limits _ {i=s}^t\binom{F_i}{2}$&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;這題也是有夠數學OwO&lt;br&gt;
+題目所求是$\sum\limits _ {i=s}^t\frac{1}{2}{F_i(F_i - 1)}$&lt;br&gt;
+可以想到分別求$\sum\limits _ {i=1}^nF_i$和$\sum\limits _ {i=1}^nF_i^2$&lt;/p&gt;</description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2"&gt;愛蜜利雅的作業2&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1282"&gt;https://tioj.ck.tp.edu.tw/problems/1282&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數&lt;br&gt;
+$1 \leq n,q \leq 10^5$&lt;/p&gt;</description></item></channel></rss>

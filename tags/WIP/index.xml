@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WIP on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/WIP/</link><description>Recent content in WIP on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 24 Dec 2019 12:41:46 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/WIP/index.xml" rel="self" type="application/rss+xml"/><item><title>Sieving-Method</title><link>https://omeletwithoutegg.github.io/2019/12/24/Sieving-Method/</link><pubDate>Tue, 24 Dec 2019 12:41:46 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/24/Sieving-Method/</guid><description>&lt;p>!待補QQ&lt;/p>
-&lt;h1 id="質數篩與快樂的積性函數">質數篩與快樂的積性函數&lt;/h1>
-&lt;p>想必大家都精通各種質數篩法，最簡單的$\mathcal{O}(n\sqrt{n})$就不提啦&lt;/p>
-&lt;h2 id="nlog-n篩">$n\log n$篩&lt;/h2>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> j &lt;span style="color:#f92672">=&lt;/span> i&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span>; j &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; j&lt;span style="color:#f92672">+=&lt;/span>i) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		sieve[j] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>$\sum \frac{1}{i}$的調和級數是$\mathcal{O}(\log n)$量級的，故複雜度為$\mathcal{O}(n\log n)$&lt;br>
-這個寫法也可以很簡單的統計每個數字的因數個數&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WIP on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/WIP/</link><description>Recent content in WIP on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Tue, 24 Dec 2019 12:41:46 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/WIP/index.xml" rel="self" type="application/rss+xml"/><item><title>Sieving-Method</title><link>https://omeletwithoutegg.github.io/2019/12/24/Sieving-Method/</link><pubDate>Tue, 24 Dec 2019 12:41:46 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/24/Sieving-Method/</guid><description>&lt;p&gt;!待補QQ&lt;/p&gt;
+&lt;h1 id="質數篩與快樂的積性函數"&gt;質數篩與快樂的積性函數&lt;/h1&gt;
+&lt;p&gt;想必大家都精通各種質數篩法，最簡單的$\mathcal{O}(n\sqrt{n})$就不提啦&lt;/p&gt;
+&lt;h2 id="nlog-n篩"&gt;$n\log n$篩&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;3
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;4
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; n; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; j &lt;span style="color:#f92672"&gt;=&lt;/span&gt; i&lt;span style="color:#f92672"&gt;*&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;; j &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; n; j&lt;span style="color:#f92672"&gt;+=&lt;/span&gt;i) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		sieve[j] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;$\sum \frac{1}{i}$的調和級數是$\mathcal{O}(\log n)$量級的，故複雜度為$\mathcal{O}(n\log n)$&lt;br&gt;
+這個寫法也可以很簡單的統計每個數字的因數個數&lt;/p&gt;</description></item></channel></rss>

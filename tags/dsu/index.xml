@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dsu on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dsu/</link><description>Recent content in Dsu on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 23 Feb 2020 11:26:04 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dsu/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1129</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</link><pubDate>Sun, 23 Feb 2020 11:26:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</guid><description>&lt;h1 id="聚集問題">聚集問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1129">https://tioj.ck.tp.edu.tw/problems/1129&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定二維平面上$N$個點，若編號$i,j$的點之間的距離不大於$C$則他們之間有連邊&lt;br>
-問最後的連通塊數量以及每個連通塊的大小&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>我想不到比$\mathcal{O}(N^2)$枚舉直接連邊更好的解了XD&lt;br>
-比起DFS我更喜歡用DSU因此code是DSU&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dsu on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/dsu/</link><description>Recent content in Dsu on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 23 Feb 2020 11:26:04 +0000</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/dsu/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ-1129</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</link><pubDate>Sun, 23 Feb 2020 11:26:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</guid><description>&lt;h1 id="聚集問題"&gt;聚集問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1129"&gt;https://tioj.ck.tp.edu.tw/problems/1129&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定二維平面上$N$個點，若編號$i,j$的點之間的距離不大於$C$則他們之間有連邊&lt;br&gt;
+問最後的連通塊數量以及每個連通塊的大小&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;我想不到比$\mathcal{O}(N^2)$枚舉直接連邊更好的解了XD&lt;br&gt;
+比起DFS我更喜歡用DSU因此code是DSU&lt;/p&gt;</description></item></channel></rss>

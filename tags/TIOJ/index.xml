@@ -1,673 +1,673 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TIOJ on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/TIOJ/</link><description>Recent content in TIOJ on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 20:57:33 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/TIOJ/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1724</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</link><pubDate>Wed, 18 Dec 2024 20:57:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</guid><description>&lt;h1 id="spacechem">SpaceChem&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1724">https://tioj.ck.tp.edu.tw/problems/1724&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>差點看不懂的題敘。&lt;/p>
-&lt;p>簡單來說，現在有一張 $N$ 點 $M$ 邊的圖 $G$，第 $i$ 條邊權重是 $C_i$，保證前 $N-1$ 條邊是一棵樹。你希望修改一些邊的權重，使得前 $N-1$ 條邊組成的樹恰好是修改後的圖的一個最小生成樹。第 $i$ 條邊修改成 $D_i$ 的代價是 $|C_i - D_i|$，請輸出最小的代價是多少。&lt;/p></description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛">化學磁牛&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829">https://tioj.ck.tp.edu.tw/problems/1829&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p></description></item><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</guid><description>&lt;h1 id="巨大密室問題">巨大密室問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1619">https://tioj.ck.tp.edu.tw/problems/1619&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有長度 $n$ 的 $P_i$ 和 $O_i$ 兩個正整數序列，請任意排列這兩個序列使得 $\prod _ i (P_i + O_i)$ 盡量大。&lt;/p>
-&lt;p>$n\leq 20000, 1 \leq P_i, O_i \leq 1000$。保證答案至多是 $60000$ 位數。&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>既然兩個序列都可以動不妨令 $P_i$ 是從小排到大的。那麼可以 greedy 的猜說 $O_i$ 從大排到小會是最佳解，sort 完乘起來就是答案。&lt;/p></description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</guid><description>&lt;h1 id="細菌">細菌&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2116">https://tioj.ck.tp.edu.tw/problems/2116&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>科學家發現了一種神奇的細菌，他們的繁殖方式很奇怪。這個世界上目前有 $N$ 隻細菌，第 $i$ 隻細菌的體積是 $A_i$ 立方公分。每過一年，對於一隻體積為 $x$ 立方公分的細菌，假設 $x$ 的所有正因數分別是&lt;br>
-$$1=d_1&amp;lt;d_2&amp;lt;&amp;hellip;&amp;lt;d_k=x$$&lt;br>
-那這隻細菌會生出 $k-1$ 隻細菌，體積分別是 $d_1,d_2,&amp;hellip;,d_{k-1}$ 立方公分。&lt;/p></description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</guid><description>&lt;h1 id="殿壬與最大流">殿壬與最大流&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2117">https://tioj.ck.tp.edu.tw/problems/2117&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>$Q \leq 2 \times 10^5$ 次詢問無向圖 $G$ 上面任兩點的最大流（邊權是 $1$）。但是，$G$ 是一張 $N$ 點 $N$ 邊連通圖。&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>$N$ 點 $N$ 邊無向連通圖的結構必定是一棵樹加上一條邊，或者也可以描述成一個環上面長出許多子樹。關鍵字是 pseudo tree 或基環樹 / based ring tree。&lt;/p></description></item><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me">Every time you&amp;rsquo;re next to me&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1502">https://tioj.ck.tp.edu.tw/problems/1502&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有一個字串 $T$ 和一個 pattern $P$，其中 $P$ 有一些字元是 &lt;code>*&lt;/code>，&lt;code>*&lt;/code> 可以匹配一個或以上的任意字元，且 &lt;code>*&lt;/code> 不會連續出現，請問 $T$ 裡面有沒有一個子字串符合 $P$？&lt;/p></description></item><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat">好．傳囉！ Nice Boat！&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一個長度 $N$ 的整數序列 $A_i$。&lt;br>
-如果你可以找出一個區間，他的前綴和每個數字都大於等於0，而且他的後綴和的每個數字也都大於等於0，我們就稱他是安全區間，請你找出最長的安全區間長度是多少。&lt;/p></description></item><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</guid><description>&lt;h1 id="變動的過路費">變動的過路費&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1597">https://tioj.ck.tp.edu.tw/problems/1597&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給你一張有向圖，每個邊會有隨時間變動的權重，並且邊的權重對時間是一個線性函數。&lt;br>
-再給你兩個點 $A,B$，現在你想要從 $A$ 走到 $B$ 再走回 $A$，&lt;br>
-問你在時間 $[0, D-1]$ 中，最長的最短路徑和最短的最短路徑相差多少。&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136">https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br>
-你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。&lt;br>
-可以假設車速都不相同&lt;/p></description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</guid><description>&lt;h1 id="邀請函invitation">邀請函（Invitation）&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1978">https://tioj.ck.tp.edu.tw/problems/1978&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給你一張圖，求出最大點獨立集。&lt;br>
-點數最多80&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>我本來一直以為這題是一般圖最大匹配，不過今天仔細看之後發現不是，而且一般圖沒有最大匹配=最小點覆蓋的結論。&lt;br>
-不過有最大點獨立集$+$最小點覆蓋$=|V|$。&lt;br>
-吳邦一教授講過關於最小點覆蓋的一個回溯法，於是我想說把他拿來用。&lt;/p></description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件">Ch2. Section 9. 補魔力的條件&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1764">https://tioj.ck.tp.edu.tw/problems/1764&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;ul>
-&lt;li>現在有排成一直線的$N$個格子，從左到右編號為$1 \dots N$，每個格子都有自己的高度&lt;/li>
-&lt;li>一開始你站在第一格，每次移動都只能往編號大的格子跳，目標是走到第$N$格&lt;/li>
-&lt;li>假設第$i$個格子的高度是$x_i$，從格子$i$跳到格子$j$需要耗費$\max(0, (j-i)+(x_j-x_i))$的力氣&lt;br>
-請問在花最少力氣到達終點的前提下，他最多可以跳幾次?&lt;/li>
-&lt;/ul>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>先考慮最小化力氣&lt;br>
-令$x_i+i = v_i$，簡單的列出DP式&lt;/p></description></item><item><title>TIOJ-1633</title><link>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</link><pubDate>Fri, 08 May 2020 13:43:30 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</guid><description>&lt;h1 id="序列維護問題">序列維護問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1633">https://tioj.ck.tp.edu.tw/problems/1633&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有一個由1到N的數字排成的序列。&lt;br>
-可是你對於現在這個排列很不滿意，決定透過一些操作改變這個序列。&lt;br>
-你現在有兩種操作：&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>REV L R&lt;/code> ：把L到R所有數字反轉順序，例如&lt;code>1 2 3 4&lt;/code>變成&lt;code>4 3 2 1&lt;/code>&lt;/li>
-&lt;li>&lt;code>SWAP L1 R1 L2 R2&lt;/code>：把L1到R1所有數字跟L2到R2所有數字交換位置，但順序不變。&lt;/li>
-&lt;/ul>
-&lt;p>你總共進行了M次操作，請輸出最後序列的樣子。&lt;/p></description></item><item><title>TIOJ-1039</title><link>https://omeletwithoutegg.github.io/2020/05/06/TIOJ-1039/</link><pubDate>Wed, 06 May 2020 16:36:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/06/TIOJ-1039/</guid><description>&lt;h1 id="b魔術數字">B.魔術數字&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1039">https://tioj.ck.tp.edu.tw/problems/1039&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>超級長orz&lt;br>
-總之名次的比較是看勝率，勝率的定義是「勝場數/(勝場數+敗場數)」&lt;br>
-而兩隊魔術數字$M$的定義如下：&lt;br>
-假設A隊的勝率領先B隊，只要A隊再贏除了B隊以外的隊伍$M$場，就算$B$隊剩下的所有場次都贏也不能得到和A相等的勝率&lt;br>
-假設$M$大於A隊對上除了B隊以外的隊伍剩下的場次，那我們說A隊對B隊的魔術數字尚未點亮&lt;br>
-否則我們說A隊對B隊的魔術數字是$M$&lt;br>
-如果$M$歸零的話，表示A隊不管怎麼樣名次都會超過B隊&lt;/p></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404">https://tioj.ck.tp.edu.tw/problems/1404&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>
- &lt;img src="description.gif" alt="404 QQ">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TIOJ on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/TIOJ/</link><description>Recent content in TIOJ on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 20:57:33 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/TIOJ/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1724</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</link><pubDate>Wed, 18 Dec 2024 20:57:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1724/</guid><description>&lt;h1 id="spacechem"&gt;SpaceChem&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1724"&gt;https://tioj.ck.tp.edu.tw/problems/1724&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;差點看不懂的題敘。&lt;/p&gt;
+&lt;p&gt;簡單來說，現在有一張 $N$ 點 $M$ 邊的圖 $G$，第 $i$ 條邊權重是 $C_i$，保證前 $N-1$ 條邊是一棵樹。你希望修改一些邊的權重，使得前 $N-1$ 條邊組成的樹恰好是修改後的圖的一個最小生成樹。第 $i$ 條邊修改成 $D_i$ 的代價是 $|C_i - D_i|$，請輸出最小的代價是多少。&lt;/p&gt;</description></item><item><title>TIOJ 1829</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</link><pubDate>Wed, 18 Dec 2024 20:42:31 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1829/</guid><description>&lt;h1 id="化學磁牛"&gt;化學磁牛&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1829"&gt;https://tioj.ck.tp.edu.tw/problems/1829&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;現在數線上 $K$ 的地方有隻磁牛，磁牛每秒有 $p = \frac{A}{B}$ 往左移動，$1-p$ 的距離往右移動。當移動到 $0$ 或移動到 $N$ 就會停止移動，問最後停在 $N$ 的機率是多少？&lt;/p&gt;</description></item><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</guid><description>&lt;h1 id="巨大密室問題"&gt;巨大密室問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1619"&gt;https://tioj.ck.tp.edu.tw/problems/1619&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有長度 $n$ 的 $P_i$ 和 $O_i$ 兩個正整數序列，請任意排列這兩個序列使得 $\prod _ i (P_i + O_i)$ 盡量大。&lt;/p&gt;
+&lt;p&gt;$n\leq 20000, 1 \leq P_i, O_i \leq 1000$。保證答案至多是 $60000$ 位數。&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;既然兩個序列都可以動不妨令 $P_i$ 是從小排到大的。那麼可以 greedy 的猜說 $O_i$ 從大排到小會是最佳解，sort 完乘起來就是答案。&lt;/p&gt;</description></item><item><title>TIOJ 2116</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</link><pubDate>Wed, 18 Dec 2024 18:47:15 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2116/</guid><description>&lt;h1 id="細菌"&gt;細菌&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2116"&gt;https://tioj.ck.tp.edu.tw/problems/2116&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;科學家發現了一種神奇的細菌，他們的繁殖方式很奇怪。這個世界上目前有 $N$ 隻細菌，第 $i$ 隻細菌的體積是 $A_i$ 立方公分。每過一年，對於一隻體積為 $x$ 立方公分的細菌，假設 $x$ 的所有正因數分別是&lt;br&gt;
+$$1=d_1&amp;lt;d_2&amp;lt;&amp;hellip;&amp;lt;d_k=x$$&lt;br&gt;
+那這隻細菌會生出 $k-1$ 隻細菌，體積分別是 $d_1,d_2,&amp;hellip;,d_{k-1}$ 立方公分。&lt;/p&gt;</description></item><item><title>TIOJ 2117</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</link><pubDate>Wed, 18 Dec 2024 18:33:14 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-2117/</guid><description>&lt;h1 id="殿壬與最大流"&gt;殿壬與最大流&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2117"&gt;https://tioj.ck.tp.edu.tw/problems/2117&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;$Q \leq 2 \times 10^5$ 次詢問無向圖 $G$ 上面任兩點的最大流（邊權是 $1$）。但是，$G$ 是一張 $N$ 點 $N$ 邊連通圖。&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;$N$ 點 $N$ 邊無向連通圖的結構必定是一棵樹加上一條邊，或者也可以描述成一個環上面長出許多子樹。關鍵字是 pseudo tree 或基環樹 / based ring tree。&lt;/p&gt;</description></item><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me"&gt;Every time you&amp;rsquo;re next to me&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1502"&gt;https://tioj.ck.tp.edu.tw/problems/1502&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有一個字串 $T$ 和一個 pattern $P$，其中 $P$ 有一些字元是 &lt;code&gt;*&lt;/code&gt;，&lt;code&gt;*&lt;/code&gt; 可以匹配一個或以上的任意字元，且 &lt;code&gt;*&lt;/code&gt; 不會連續出現，請問 $T$ 裡面有沒有一個子字串符合 $P$？&lt;/p&gt;</description></item><item><title>TIOJ 1841</title><link>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</link><pubDate>Fri, 11 Feb 2022 10:03:10 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/11/TIOJ-1841/</guid><description>&lt;h1 id="好傳囉-nice-boat"&gt;好．傳囉！ Nice Boat！&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一個長度 $N$ 的整數序列 $A_i$。&lt;br&gt;
+如果你可以找出一個區間，他的前綴和每個數字都大於等於0，而且他的後綴和的每個數字也都大於等於0，我們就稱他是安全區間，請你找出最長的安全區間長度是多少。&lt;/p&gt;</description></item><item><title>TIOJ 1597</title><link>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</link><pubDate>Wed, 30 Dec 2020 12:57:24 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/30/TIOJ-1597/</guid><description>&lt;h1 id="變動的過路費"&gt;變動的過路費&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1597"&gt;https://tioj.ck.tp.edu.tw/problems/1597&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給你一張有向圖，每個邊會有隨時間變動的權重，並且邊的權重對時間是一個線性函數。&lt;br&gt;
+再給你兩個點 $A,B$，現在你想要從 $A$ 走到 $B$ 再走回 $A$，&lt;br&gt;
+問你在時間 $[0, D-1]$ 中，最長的最短路徑和最短的最短路徑相差多少。&lt;/p&gt;</description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題"&gt;賽車問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136"&gt;https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br&gt;
+你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。&lt;br&gt;
+可以假設車速都不相同&lt;/p&gt;</description></item><item><title>TIOJ-1978</title><link>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</link><pubDate>Sun, 22 Nov 2020 21:39:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/22/TIOJ-1978/</guid><description>&lt;h1 id="邀請函invitation"&gt;邀請函（Invitation）&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1978"&gt;https://tioj.ck.tp.edu.tw/problems/1978&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給你一張圖，求出最大點獨立集。&lt;br&gt;
+點數最多80&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;我本來一直以為這題是一般圖最大匹配，不過今天仔細看之後發現不是，而且一般圖沒有最大匹配=最小點覆蓋的結論。&lt;br&gt;
+不過有最大點獨立集$+$最小點覆蓋$=|V|$。&lt;br&gt;
+吳邦一教授講過關於最小點覆蓋的一個回溯法，於是我想說把他拿來用。&lt;/p&gt;</description></item><item><title>TIOJ-1764</title><link>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</link><pubDate>Tue, 12 May 2020 15:31:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/12/TIOJ-1764/</guid><description>&lt;h1 id="ch2-section-9-補魔力的條件"&gt;Ch2. Section 9. 補魔力的條件&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1764"&gt;https://tioj.ck.tp.edu.tw/problems/1764&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;現在有排成一直線的$N$個格子，從左到右編號為$1 \dots N$，每個格子都有自己的高度&lt;/li&gt;
+&lt;li&gt;一開始你站在第一格，每次移動都只能往編號大的格子跳，目標是走到第$N$格&lt;/li&gt;
+&lt;li&gt;假設第$i$個格子的高度是$x_i$，從格子$i$跳到格子$j$需要耗費$\max(0, (j-i)+(x_j-x_i))$的力氣&lt;br&gt;
+請問在花最少力氣到達終點的前提下，他最多可以跳幾次?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;先考慮最小化力氣&lt;br&gt;
+令$x_i+i = v_i$，簡單的列出DP式&lt;/p&gt;</description></item><item><title>TIOJ-1633</title><link>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</link><pubDate>Fri, 08 May 2020 13:43:30 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/08/TIOJ-1633/</guid><description>&lt;h1 id="序列維護問題"&gt;序列維護問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1633"&gt;https://tioj.ck.tp.edu.tw/problems/1633&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有一個由1到N的數字排成的序列。&lt;br&gt;
+可是你對於現在這個排列很不滿意，決定透過一些操作改變這個序列。&lt;br&gt;
+你現在有兩種操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;REV L R&lt;/code&gt; ：把L到R所有數字反轉順序，例如&lt;code&gt;1 2 3 4&lt;/code&gt;變成&lt;code&gt;4 3 2 1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SWAP L1 R1 L2 R2&lt;/code&gt;：把L1到R1所有數字跟L2到R2所有數字交換位置，但順序不變。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你總共進行了M次操作，請輸出最後序列的樣子。&lt;/p&gt;</description></item><item><title>TIOJ-1039</title><link>https://omeletwithoutegg.github.io/2020/05/06/TIOJ-1039/</link><pubDate>Wed, 06 May 2020 16:36:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/06/TIOJ-1039/</guid><description>&lt;h1 id="b魔術數字"&gt;B.魔術數字&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1039"&gt;https://tioj.ck.tp.edu.tw/problems/1039&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;超級長orz&lt;br&gt;
+總之名次的比較是看勝率，勝率的定義是「勝場數/(勝場數+敗場數)」&lt;br&gt;
+而兩隊魔術數字$M$的定義如下：&lt;br&gt;
+假設A隊的勝率領先B隊，只要A隊再贏除了B隊以外的隊伍$M$場，就算$B$隊剩下的所有場次都贏也不能得到和A相等的勝率&lt;br&gt;
+假設$M$大於A隊對上除了B隊以外的隊伍剩下的場次，那我們說A隊對B隊的魔術數字尚未點亮&lt;br&gt;
+否則我們說A隊對B隊的魔術數字是$M$&lt;br&gt;
+如果$M$歸零的話，表示A隊不管怎麼樣名次都會超過B隊&lt;/p&gt;</description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>&lt;h1 id="照亮的山景"&gt;照亮的山景&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404"&gt;https://tioj.ck.tp.edu.tw/problems/1404&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;
+ &lt;img src="description.gif" alt="404 QQ"&gt;
 
-&lt;br>
-在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。&lt;br>
-如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。&lt;br>
-請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？&lt;/p></description></item><item><title>TIOJ-1628</title><link>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</link><pubDate>Sun, 03 May 2020 15:02:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</guid><description>&lt;h1 id="組合布丁">組合布丁&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1628">https://tioj.ck.tp.edu.tw/problems/1628&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>記得在快樂暑假營開始前，你曾經說過：「只要我有一次比賽沒有破台，就要請全快樂營的人吃布丁。」&lt;br>
-好吧，蚯蚓太威了，你終究是沒有破台。&lt;br>
-根據小道消息，你得知了這次的快樂暑假營總共有 $n$ 個人報名，&lt;br>
-但是實際上會出席的只有 $k$ 個人，因此你只要請 $k$ 個人吃布丁就好。&lt;br>
-而報名的第 $i$ 個人只會願意吃 $t_i$ 口味的布丁(用一個 int 範圍內的整數表示)。&lt;br>
-假設你不確定究竟誰會出席，那有幾種不同的布丁組合可能會出現在你的採買清單上 ?&lt;br>
-喔對了，因為答案可能太大了，所以你決定只要知道答案除以 $M$ 的餘數就好。&lt;br>
-輸入包含多筆測資&lt;/p></description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</guid><description>&lt;h1 id="蘿莉切割問題">蘿莉切割問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1861">https://tioj.ck.tp.edu.tw/problems/1861&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>請你把一個數字$L$切成$a_1, a_2, \dots, a_n$&lt;br>
-切一個數字$x$的代價是$x$，可以把它切成$b, x-b$兩個數字&lt;br>
-找出最小的代價&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>霍夫曼編碼XD老題目&lt;br>
-把切割的過程看成一個二元樹，每個$a_i$都代表一個葉子&lt;br>
-其餘的節點代表合併中會出現的數字(?)&lt;br>
-那麼總代價就是所有葉子的權重乘上各自的深度的和&lt;br>
-我們想要讓這個代價越小越好&lt;br>
-可以發現，在最優解$T$中：&lt;/p></description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</guid><description>&lt;h1 id="快樂規劃路徑">快樂規劃路徑&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1629">https://tioj.ck.tp.edu.tw/problems/1629&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>樹朋友們生活在一個湖邊，湖邊的樹依照順時針方向編號為$1, 2, \dots n$。&lt;br>
-他們想要讓自己更快樂，所以發明了一種娛樂方式，就是找到一條路徑遍歷全部$n$棵樹剛好一遍。&lt;br>
-要從A樹到B樹唯一的方法就是架一條很長的梯子直直伸過去。&lt;br>
-可是當然不是任何兩棵樹都可以架梯子，所以他們會先把所有可能架梯子的樹對(沒有錯字!)給你。&lt;br>
-當然，(A,B)表示A可以到B、B也可以到A。&lt;br>
-但是給定的遊歷路徑不能出現任兩條梯子交叉，不然可能會讓想要快樂的樹朋友發生危險。&lt;/p></description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</guid><description>&lt;h1 id="assssss">Assssss!!&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1505">https://tioj.ck.tp.edu.tw/problems/1505&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在有一個正整數構成的除法數列&lt;/p>
-&lt;p>$&lt;br>
-x_1 / x_2 / x_3 / \dots / x_n&lt;br>
-$&lt;/p>
-&lt;p>請問是否有一種加上括號的方法使得最後運算的結果是整數?&lt;br>
-$2 \leq n \leq 10^5, 1 \leq x_i \leq 10^9$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>加上括號之後每個數字會被放到分母或分子，想當然而放在分子的數字越多越好&lt;br>
-可以發現$x_2$會恰好被放到分母一次，因此在最後他一定是當分母的&lt;br>
-而我們可以構造出一個方法讓除了$x_2$最後當分母以外，其他數字都當分子&lt;/p></description></item><item><title>TIOJ-1219</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</link><pubDate>Tue, 25 Feb 2020 09:55:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</guid><description>&lt;h1 id="發糖果囉">發糖果囉&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1219">https://tioj.ck.tp.edu.tw/problems/1219&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>求符合$1 \leq x \leq n, 1 \leq y \leq m$且$x,y$的最大公因數是$g$的數對有多少對&lt;br>
-有多筆測試資料，$1 \leq n, m, g \leq 50000$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>莫比烏斯反演&lt;/p>
-&lt;h3 id="lemma">lemma&lt;/h3>
-&lt;p>$$&lt;br>
-\sum_d \mu(d) [d | x] = [x = 1]&lt;br>
-$$&lt;br>
-拿來簡化 $[\gcd(i,j)=1]$ 的部分，再想辦法換一下$\sum$的位置&lt;br>
-$$&lt;br>
-\begin{align*}&lt;br>
-\sum _ {i=1}^n \sum _ {j=1}^m [\gcd(i, j) = g] &amp;amp;= \sum _ {i=1}^{\lfloor n/g \rfloor} \sum _ {j=1}^{\lfloor m/g \rfloor} [\gcd(i, j) = 1]\newline&lt;br>
-\sum _ {i=1}^N \sum _ {j=1}^M [\gcd(i, j) = 1] &amp;amp;= \sum _ {i=1}^N \sum _ {j=1}^M \sum_d \mu(d) \cdot [d | \gcd(i, j)]\newline&lt;br>
-&amp;amp;= \sum_d \mu(d) \sum _ {i=1}^N \sum _ {j=1}^M [d | \gcd(i, j)]\newline&lt;br>
-&amp;amp;= \sum_d \mu(d) {\lfloor \frac{N}{d} \rfloor} {\lfloor \frac{M}{d} \rfloor}&lt;br>
-\end{align*}&lt;br>
-$$&lt;br>
-預處理$\mu$的前綴，利用數論分塊可以做到$\mathcal{O}(N + Q \sqrt{N})$&lt;/p></description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</guid><description>&lt;h1 id="殿壬愛序列">殿壬愛序列&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2140">https://tioj.ck.tp.edu.tw/problems/2140&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給你一個長度為$N$的序列$a_1, a_2, \dots, a_N$，並且依序執行$Q$個操作，每個操作可能是&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;code>1 x y&lt;/code> ：把$a_x$設成$y$&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>2 L R k&lt;/code> ：對於每個$i \in [L, R]$，把$a_i$設成$\lfloor \frac{a_i}{k} \rfloor$。其中$\lfloor x \rfloor$代表不大於$x$的最大整數&lt;/p></description></item><item><title>TIOJ-1102</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</link><pubDate>Tue, 25 Feb 2020 08:33:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</guid><description>&lt;h1 id="e海賊王">E.海賊王&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1102">https://tioj.ck.tp.edu.tw/problems/1102&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>你是一位海賊，現在有$P$個敵人與$T$個寶藏等間距圍成一圓形&lt;br>
-你必須決定一個發射砲彈的方式&lt;br>
-砲彈會波及的範圍是圓形的，每次發射後範圍內的海賊會被殺死，寶藏也會被毀壞&lt;br>
-剩下的會重整隊形，同樣等間距圍成一圓形，且半徑不變（炮彈可以波及的半徑大於他們圍成的圈的半徑）&lt;br>
-檢查過船上的砲彈存量以後，你發現一次至少要炸死兩個敵方海賊（所以剩三個海賊的話一定要一次打死三個）&lt;br>
-你決定寫個程式幫你計算最多可以拿到多少未被毀壞的寶藏&lt;/p></description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>&lt;h1 id="can-you-arrive">Can You Arrive?&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1798">https://tioj.ck.tp.edu.tw/problems/1798&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>地鐵有$N$個站，$M$條軌道，$K$段行駛路線&lt;br>
-站與站之間使用軌道連接&lt;br>
-保證軌道不會形成環，且$M = N-1$&lt;/p>
-&lt;p>每段行駛路線代表有一輛車在兩站之間的最短路徑來回發車&lt;br>
-也就是說這段路上的任意兩站都是互通的，可以直接抵達不需轉車&lt;/p></description></item><item><title>TIOJ-1129</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</link><pubDate>Sun, 23 Feb 2020 11:26:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</guid><description>&lt;h1 id="聚集問題">聚集問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1129">https://tioj.ck.tp.edu.tw/problems/1129&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定二維平面上$N$個點，若編號$i,j$的點之間的距離不大於$C$則他們之間有連邊&lt;br>
-問最後的連通塊數量以及每個連通塊的大小&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>我想不到比$\mathcal{O}(N^2)$枚舉直接連邊更好的解了XD&lt;br>
-比起DFS我更喜歡用DSU因此code是DSU&lt;/p></description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶">殿壬看蝴蝶&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2124">https://tioj.ck.tp.edu.tw/problems/2124&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>太長了，略&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>看到第五種操作就會想用平衡樹去寫這題&lt;br>
-然後仔細看看就會發現第八種操作其實和其他操作都沒什麼關係，只有第三、四種操作會改變以蝴蝶編號為順序的區間和&lt;br>
-所以呢對蝴蝶的編號開一個線段樹、對樹的編號開個Splay就能AC了&lt;br>
-Splay只需要實現查一個節點在中序是第個、查中序第k個節點是什麼，還有剪切區間&lt;br>
-至於區間和就隨便維護吧XD，code如下，我不知道該對裸題做甚麼解釋&lt;/p></description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</guid><description>&lt;h1 id="ioi2015boxes-一堆盒子">【IOI2015】Boxes 一堆盒子&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1884">https://tioj.ck.tp.edu.tw/problems/1884&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有$L$個地區排成一環狀，依序編號為$0, 1, \dots, L-1$&lt;br>
-從任何一個地區移動到相鄰的地區所需要的時間均為一單位時間&lt;/p>
-&lt;p>現在有$N$個人需要寄送貨物，他們分別住在編號為$p_1, p_2, \dots, p_n$的地區(已經依非遞減順序排序)&lt;br>
-貨物中心位在編號$0$的地區，並且郵差每次只能帶至多$K$件貨物移動&lt;br>
-(世界上只有一個郵差&amp;hellip;真辛苦)&lt;br>
-身上所有的貨物都送到後，必須回到$0$號地區，才能進行下一輪的送貨&lt;br>
-你的任務就是幫送貨的郵差計算他最少要花多少時間&lt;br>
-才能從貨物中心出發，寄送完所有貨物，最後再回到貨物中心&lt;br>
-(其中可能會回貨物中心很多次以補充貨物)&lt;/p></description></item><item><title>TIOJ-1828</title><link>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1828/</link><pubDate>Thu, 20 Feb 2020 04:56:05 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1828/</guid><description>&lt;h1 id="控控控之蘿莉控">控控控之蘿莉控&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1828">https://tioj.ck.tp.edu.tw/problems/1828&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>你走在路上遇到了一個可愛小蘿莉，因為你的控屬性，所以你跑上去問了她的名字：「小妹妹～你叫什麼名字啊？」&lt;br>
-她回答：「啊！！！你幹嘛！我不認識你啊你誰啊！！！」&lt;br>
-你：「我是你的好哥哥，來和我一起玩吧～」&lt;br>
-這時機智的小妹妹拿起手機打了110&lt;br>
-你決定要趕快逃跑，以免進入暗無天日的深淵&lt;/p></description></item><item><title>TIOJ-1553</title><link>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</link><pubDate>Wed, 19 Feb 2020 16:54:42 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</guid><description>&lt;h1 id="b-game">B-Game&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1553">https://tioj.ck.tp.edu.tw/problems/1553&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>B-Game是個殘酷的兩人卡片對戰遊戲(Battle Game)&lt;br>
-檯面上有$n$張卡片，排成環狀，每張卡片有其數值&lt;br>
-兩人輪流取卡片，只能選與已經取過的卡片相鄰的卡片，但第一個人不受此限&lt;br>
-選完卡片之後，勝負決定在將兩人手中卡片的數值和&lt;br>
-若某位玩家得分大於另一位玩家，無論大多少均是勝利&lt;/p></description></item><item><title>TIOJ-1274</title><link>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</link><pubDate>Sun, 16 Feb 2020 21:07:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</guid><description>&lt;h1 id="純屬無聊-tie-breaker">[純屬無聊] Tie Breaker&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1274">https://tioj.ck.tp.edu.tw/problems/1274&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>本題考驗你對小向的試煉題敘的理解程度。請回答以下三個問題：&lt;/p>
-&lt;ol>
-&lt;li>假設2-2的圖來自遊戲「甲」(一個包含五個字母的單字)，2-3的圖來自動畫「乙」(一個包含九個字母的單字 ，請問甲和乙中字母e出現幾次？&lt;/li>
-&lt;li>假設3-1的圖來自動畫「丙」(包含四個中文字)，3-3的圖來自漫畫「丁」(包含六個中文字) ，請問丙和丁中聲調為二聲的字有幾個？&lt;/li>
-&lt;li>假設4-1的圖來自動畫「戊」(包含八個中文字，其中第五個字是三聲)，4-2的圖來自動畫「己」(包含四個中文字)，4-3的圖來自動畫「庚」(包含六個中文字) ，且令為己的前兩個字翻譯成英文後的字母數，為戊的第二個字所代表的數字 ，「辛」是「庚」的第一個字。請問「辛」倍的x+y是幾？&lt;/li>
-&lt;/ol>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>註: 小向的試煉是TIOJ上一系列的題目，可以自行搜尋&lt;/p></description></item><item><title>TIOJ-1511</title><link>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</link><pubDate>Sat, 15 Feb 2020 13:25:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</guid><description>&lt;h1 id="problem-a-雷射防護網">Problem A. 雷射防護網&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1511">https://tioj.ck.tp.edu.tw/problems/1511&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>考慮在正$n$邊形的頂點中任選三點形成的三角形，請統計分別有幾個銳角三角形、直角三角形和鈍角三角形&lt;br>
-注意：兩個三角形被視為不同的，若且唯若三個頂點的編號不完全相同，並且不可以旋轉三角形&lt;br>
-$n \leq 10^6$&lt;/p></description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</guid><description>&lt;h1 id="重疊的天際線">重疊的天際線&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1202">https://tioj.ck.tp.edu.tw/problems/1202&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>地平線上有許多房子，而這些房子在夕陽的照射之下形成有趣的輪廓，我們稱之為天際線(Skyline)。為了方便起見，你可以假設所有的房子都是一個位在2D平面上的矩形，並且有一條邊貼在這個假想2D平面上的X軸。&lt;/p></description></item><item><title>TIOJ-1156</title><link>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</link><pubDate>Sat, 08 Feb 2020 12:29:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</guid><description>&lt;h1 id="5高中運動會">5.高中運動會&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1156">https://tioj.ck.tp.edu.tw/problems/1156&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>夢幻城市每年為全市高中生舉辦一次運動大會。為促進各校同學之間的交流，採用特別的分隊方式：每一個學校的同學，必須被均勻分散到各隊，使得每一隊中該校的人數皆相同。為增加比賽的競爭性，希望分成越多隊越好。你的任務是由各校的人數，決定最多可分成的隊數。&lt;/p></description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</guid><description>&lt;h1 id="爆炸吧現充">爆炸吧現充~&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1600">https://tioj.ck.tp.edu.tw/problems/1600&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>求共有幾個滿足&lt;/p>
-&lt;p>$$&lt;br>
-1 \leq x \leq n,&lt;br>
-\exists k &amp;gt; 1, k^2 | x&lt;br>
-$$&lt;/p>
-&lt;p>的$x$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>一開始我的想法是$[\mu(x)=0]$的前綴，想說用杜教篩或莫比烏斯反演什麼的，但怎麼推都推不出來&lt;br>
-去問王政祺之後，他說直接枚舉平方數再排容就好，至於排容的係數就直接取$\mu$&lt;/p></description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</guid><description>&lt;p>&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;&lt;/p>
-&lt;h1 id="超大畫框設置">超大畫框設置&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1283">https://tioj.ck.tp.edu.tw/problems/1283&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>在一個「漸進式框架」當中，你想要找到一個最大面積的矩形位置放置你最喜愛的一幅畫。&lt;/p>
-&lt;p>當然地，畫框必須掛正，所以矩形的四個邊都必須與框架的邊平行或垂直。&lt;/p></description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</guid><description>&lt;h1 id="進階的入門">進階的入門&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1168">https://tioj.ck.tp.edu.tw/problems/1168&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>你需要實作五個函式：&lt;/p>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">pop_big&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">pop_small&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">push&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> s);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">big&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">small&lt;/span>();
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>其中第一個函式需要將最大的數字移除，第二個函式需要將最小的數字移除，第三個函式需要將一個數加入目前的數字們，第四個函式需要回傳當前的最大值，第五個函式需要回傳當前的最小值。&lt;br>
-假設一開始沒有任何數字，請你實作這五個操作。&lt;/p></description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞">C.幼稚國王的獎賞&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1094">https://tioj.ck.tp.edu.tw/problems/1094&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>定義一個非負整數集合的價值是裡面所有數字XOR起來&lt;br>
-給定一些非負整數，問你能選出價值最高的子集價值是多少？&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>經典題 maximum subset xor&lt;/p>
-&lt;h3 id="線性基">線性基&lt;/h3>
-&lt;p>首先可以把每個數字的二進位看成模2的$k$維向量&lt;/p></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408">https://tioj.ck.tp.edu.tw/problems/1408&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定$n$個時段$[l_i, r_i)$&lt;br>
-問至少有多少單位時間要是忙碌的才能滿足&lt;br>
-「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)&lt;/p></description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社">1.銀河帝國旅行社&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1152">https://tioj.ck.tp.edu.tw/problems/1152&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給一棵樹，找最遠的兩個點的距離&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>這裡用類似DP的方法&lt;br>
-&lt;code>dfs(i)&lt;/code> 回傳一個 &lt;code>{ans, deepest}&lt;/code> 分別表示以$i$為根子樹中的答案和從$i$往下走的最遠距離&lt;br>
-那&lt;code>ans&lt;/code>可以分成有經過$i$的和沒經過的，有經過的就看最深的兩個子樹加起來是多少，沒經過的就遞迴下去算&lt;/p></description></item><item><title>TIOJ-2037</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</link><pubDate>Tue, 31 Dec 2019 16:06:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</guid><description>&lt;h1 id="警力配置">警力配置&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2037">https://tioj.ck.tp.edu.tw/problems/2037&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>裸的二分圖匹配&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>這邊給匈牙利算法&lt;br>
-有一個subtask是給一個點數很多的樹&lt;br>
-特判用dp即可&lt;/p>
-&lt;h2 id="ac-code">AC code&lt;/h2>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// __________________
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// | ________________ |
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// || ____ ||
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// || /\ | ||
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// || /__\ | ||
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// || / \ |____ ||
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// ||________________||
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// |__________________|
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// \###################\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// \###################\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// \ ____ \
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// \_______\___\_______\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// An AC a day keeps the doctor away.
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#pragma g++ optimize(&amp;#34;Ofast&amp;#34;)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#pragma loop_opt(on)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/extc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#ifdef local
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define debug(x) (cerr&amp;lt;&amp;lt;#x&amp;lt;&amp;lt;&amp;#34; = &amp;#34;&amp;lt;&amp;lt;(x)&amp;lt;&amp;lt;&amp;#39;\n&amp;#39;)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#else
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define debug(x) ((void)0)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#endif &lt;/span>&lt;span style="color:#75715e">// local
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e">#define all(v) begin(v),end(v)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define siz(v) (ll(v.size()))
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define get_pos(v,x) (lower_bound(all(v),x)-begin(v))
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define sort_uni(v) sort(begin(v),end(v)),v.erase(unique(begin(v),end(v)),end(v))
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define pb emplace_back
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define ff first
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define ss second
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#define mem(v,x) memset(v,x,sizeof v)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> __gnu_pbds;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">typedef&lt;/span> &lt;span style="color:#66d9ef">int64_t&lt;/span> ll;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">typedef&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> ld;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">typedef&lt;/span> pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>ll,ll&lt;span style="color:#f92672">&amp;gt;&lt;/span> pll;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">typedef&lt;/span> pair&lt;span style="color:#f92672">&amp;lt;&lt;/span>ld,ld&lt;span style="color:#f92672">&amp;gt;&lt;/span> pld;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">using&lt;/span> max_heap &lt;span style="color:#f92672">=&lt;/span> __gnu_pbds&lt;span style="color:#f92672">::&lt;/span>priority_queue&lt;span style="color:#f92672">&amp;lt;&lt;/span>T,less&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#f92672">&amp;gt;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">using&lt;/span> min_heap &lt;span style="color:#f92672">=&lt;/span> __gnu_pbds&lt;span style="color:#f92672">::&lt;/span>priority_queue&lt;span style="color:#f92672">&amp;lt;&lt;/span>T,greater&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#f92672">&amp;gt;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">using&lt;/span> rbt &lt;span style="color:#f92672">=&lt;/span> tree&lt;span style="color:#f92672">&amp;lt;&lt;/span>T,null_type,less&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span>,rb_tree_tag,tree_order_statistics_node_update&lt;span style="color:#f92672">&amp;gt;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">constexpr&lt;/span> ld PI &lt;span style="color:#f92672">=&lt;/span> acos(&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>), eps &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1e-5&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">constexpr&lt;/span> ll N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">2025&lt;/span>, INF &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1e18&lt;/span>, MOD &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">998244353&lt;/span>, K &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">11&lt;/span>, inf &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1e9&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">constexpr&lt;/span> ll &lt;span style="color:#a6e22e">modpow&lt;/span>(ll e,ll p,ll m&lt;span style="color:#f92672">=&lt;/span>MOD) {ll r&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>; &lt;span style="color:#66d9ef">for&lt;/span>(;p;p&lt;span style="color:#f92672">&amp;gt;&amp;gt;=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>,e&lt;span style="color:#f92672">=&lt;/span>e&lt;span style="color:#f92672">*&lt;/span>e&lt;span style="color:#f92672">%&lt;/span>m) &lt;span style="color:#66d9ef">if&lt;/span>(p&lt;span style="color:#f92672">&amp;amp;&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) r&lt;span style="color:#f92672">=&lt;/span>r&lt;span style="color:#f92672">*&lt;/span>e&lt;span style="color:#f92672">%&lt;/span>m; &lt;span style="color:#66d9ef">return&lt;/span> r;}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">constexpr&lt;/span> &lt;span style="color:#66d9ef">inline&lt;/span> ll &lt;span style="color:#a6e22e">cdiv&lt;/span>(ll x, ll m) { &lt;span style="color:#66d9ef">return&lt;/span> (x&lt;span style="color:#f92672">+&lt;/span>m&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">/&lt;/span>m; } &lt;span style="color:#75715e">// ceiling divide, x/m for flooring divide
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">struct&lt;/span> &lt;span style="color:#a6e22e">BipartiteMatching&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> G[N];
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> mx[N],my[N],vis[N],now,n;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">init&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> _n) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> n &lt;span style="color:#f92672">=&lt;/span> _n;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) G[i].clear();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">addEdge&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> x,&lt;span style="color:#66d9ef">int&lt;/span> y) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> G[x].pb(y);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">bool&lt;/span> &lt;span style="color:#a6e22e">dfs&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> x) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(vis[x] &lt;span style="color:#f92672">==&lt;/span> now) &lt;span style="color:#66d9ef">return&lt;/span> false;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vis[x] &lt;span style="color:#f92672">=&lt;/span> now;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> y:G[x]) &lt;span style="color:#66d9ef">if&lt;/span>(my[y]&lt;span style="color:#f92672">==-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#f92672">||&lt;/span> dfs(my[y])) &lt;span style="color:#66d9ef">return&lt;/span> my[mx[x]&lt;span style="color:#f92672">=&lt;/span>y]&lt;span style="color:#f92672">=&lt;/span>x, true;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> false;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">solve&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> ans &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) vis[i] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>, mx[i] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, my[i] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) &lt;span style="color:#66d9ef">if&lt;/span>(mx[i] &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> j:G[i]) &lt;span style="color:#66d9ef">if&lt;/span>(my[j]&lt;span style="color:#f92672">==-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> my[mx[i]&lt;span style="color:#f92672">=&lt;/span>j]&lt;span style="color:#f92672">=&lt;/span>i;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ans&lt;span style="color:#f92672">++&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">break&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(now &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; now &lt;span style="color:#f92672">&amp;lt;=&lt;/span> n; now&lt;span style="color:#f92672">++&lt;/span>) &lt;span style="color:#66d9ef">if&lt;/span>(mx[now] &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> dfs(now)) ans&lt;span style="color:#f92672">++&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> ans;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} sv;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> t;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> t;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(t&lt;span style="color:#f92672">--&lt;/span>) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> p,q,m;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> p &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> q &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> m;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(max(p,q) &lt;span style="color:#f92672">&amp;lt;&lt;/span> N) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sv.init(max(p,q));
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> m; i&lt;span style="color:#f92672">++&lt;/span>) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> a,b;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> a &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> b;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sv.addEdge(a,b);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> sv.solve() &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }&lt;span style="color:#66d9ef">else&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> tr(p&lt;span style="color:#f92672">+&lt;/span>q&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>array&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#ae81ff">2&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> dp(p&lt;span style="color:#f92672">+&lt;/span>q&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//assert(m == p+q-1);
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> m; i&lt;span style="color:#f92672">++&lt;/span>) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> a,b;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> a &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> b;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tr[a].pb(b&lt;span style="color:#f92672">+&lt;/span>p);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tr[b&lt;span style="color:#f92672">+&lt;/span>p].pb(a);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> function&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">void&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span>,&lt;span style="color:#66d9ef">int&lt;/span>)&lt;span style="color:#f92672">&amp;gt;&lt;/span> dfs &lt;span style="color:#f92672">=&lt;/span> [&lt;span style="color:#f92672">&amp;amp;&lt;/span>](&lt;span style="color:#66d9ef">int&lt;/span> i, &lt;span style="color:#66d9ef">int&lt;/span> p) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[i][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> (p &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> mx &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> j:tr[i]) &lt;span style="color:#66d9ef">if&lt;/span>(j&lt;span style="color:#f92672">!=&lt;/span>p) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dfs(j,i);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[i][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">+=&lt;/span> dp[j][&lt;span style="color:#ae81ff">0&lt;/span>];
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[i][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">+=&lt;/span> dp[j][&lt;span style="color:#ae81ff">0&lt;/span>];
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mx &lt;span style="color:#f92672">=&lt;/span> max(mx, dp[j][&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">-&lt;/span> dp[j][&lt;span style="color:#ae81ff">0&lt;/span>]);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dp[i][&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">+=&lt;/span> mx;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> };
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dfs(&lt;span style="color:#ae81ff">1&lt;/span>,&lt;span style="color:#ae81ff">0&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> max(dp[&lt;span style="color:#ae81ff">1&lt;/span>][&lt;span style="color:#ae81ff">0&lt;/span>],dp[&lt;span style="color:#ae81ff">1&lt;/span>][&lt;span style="color:#ae81ff">1&lt;/span>]) &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</guid><description>&lt;h1 id="萬里長城">萬里長城&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1441">https://tioj.ck.tp.edu.tw/problems/1441&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一個序列，找出最長的「長城」子序列&lt;br>
-一個序列$&amp;lt; a_1,a_2,\dots,a_n &amp;gt;$必須符合下列幾點才算是「長城」&lt;/p>
-&lt;ol>
-&lt;li>n是奇數&lt;/li>
-&lt;li>若$i$是偶數，則$a_i$必須小於相鄰的項&lt;/li>
-&lt;li>若$i$是奇數，則$a_i$必須大於相鄰的項&lt;/li>
-&lt;/ol>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>貪心法&lt;br>
-維護一個tail表示前$i$項滿足點2. 3.的最佳解，其結尾是多少&lt;br>
-假設下一個項h必須比tail大&lt;br>
-若h比tail大，那就直接接上去(並更新tail)，否則就把tail替換成h&lt;br>
-反之亦然&lt;/p></description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</guid><description>&lt;h1 id="黑色騎士團的飛彈野望">黑色騎士團的飛彈野望&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1567">https://tioj.ck.tp.edu.tw/problems/1567&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點&lt;br>
-若不可行輸出-1&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>首先我們對每個點都可以知道包覆它的圓的圓心範圍在$x$軸的哪段區間&lt;br>
-那題目就轉換成在$x$軸上放一些圓心，使得每個點對應的區間內都至少有一個點被選到&lt;br>
-此為greedy經典題，按照右界排序後，由小到大檢查若某個區間還沒有放東西就放一個在它的右界&lt;/p></description></item><item><title>TIOJ-1726</title><link>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</link><pubDate>Mon, 23 Dec 2019 22:14:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</guid><description>&lt;h1 id="dice-wars">Dice Wars&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1726">https://tioj.ck.tp.edu.tw/problems/1726&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>Dice Wars是一款兼具謀略和運氣的遊戲。&lt;br>
-遊戲中你扮演紫色的骰子，要攻下其他顏色的骰子的城池，進而統一全地圖。&lt;/p>
-&lt;p>如今你選到了一張看起來不錯的地圖: 整張地圖呈一條直線，每個位置都有一個顏色勢力佔領。&lt;br>
-由於每次移動到相鄰異色的城池都必須經歷一場鏖戰，你想先經過程式計算後再進行遊戲。&lt;/p></description></item><item><title>TIOJ-1674</title><link>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</link><pubDate>Thu, 19 Dec 2019 10:58:57 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</guid><description>&lt;h1 id="新專輯">新專輯&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1674">https://tioj.ck.tp.edu.tw/problems/1674&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>最近你打算訂購$N^2$張水樹奈奈的專輯《極限魅惑IMPACT EXCITER》。&lt;br>
-由於份量實在是太多了，你決定分散成$N$份訂單。&lt;/p>
-&lt;p>然而，不幸的，依據博客來新的訂貨規定，每一位顧客第$k$次下訂單所訂的CD張數必頇是$k$的正整數倍。&lt;br>
-換句話說，一位顧客第$5$次訂的CD張數只可能是$5$張、$10$張、$15$張、…依此類推。&lt;/p></description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</guid><description>&lt;h1 id="通關密語">通關密語&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1035">https://tioj.ck.tp.edu.tw/problems/1035&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串 $S,T$&lt;br>
-定義「最佳擬合」，就是將 $S$ 經過平移後和 $T$ 比對，同樣的字元數最多的那一種方法。&lt;br>
-請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。&lt;/p></description></item><item><title>TIOJ-1950</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</link><pubDate>Fri, 13 Dec 2019 23:26:11 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</guid><description>&lt;h1 id="小向的試煉-2-3轉rotate">小向的試煉 2-3：轉！(Rotate!)&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1950">https://tioj.ck.tp.edu.tw/problems/1950&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定長度$N$的排列，問「以交換任意兩個數字的方式排序這個序列需要多少次數」&lt;br>
-另外有$M$次修改，每次修改會交換數字$i$和數字$j$的位置，請輸出$M+1$行代表一開始和每次修改過後的答案&lt;/p></description></item><item><title>TIOJ-1394</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</link><pubDate>Fri, 13 Dec 2019 06:36:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</guid><description>&lt;h1 id="黑色騎士團的逆襲野望">黑色騎士團的逆襲野望&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1394">https://tioj.ck.tp.edu.tw/problems/1394&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>自從黑色騎士團上次的最終野望被白色騎士豬殺苦破滅之後，黑色騎士團銷聲滅跡了一陣子，不過他們仍繼續計畫著侵略神聖的大不列顛帝國。&lt;/p>
-&lt;p>終於他們發現了一個機會：原來大不列顛帝國的命脈就是對外輸出的藥品&amp;quot;REBRAIN&amp;quot;，只要能控制住它所有的運輸與加工途徑，那大不列顛帝國就完了！&lt;/p></description></item><item><title>TIOJ-1739</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</link><pubDate>Wed, 11 Dec 2019 15:26:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</guid><description>&lt;h1 id="apio-08-beads-interactive">[APIO &amp;lsquo;08] Beads [Interactive]&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1739">https://tioj.ck.tp.edu.tw/problems/1739&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有一個長度$n$的序列$a$，一開始$a_i = i$&lt;br>
-接下來有$m$個操作，每個操作只會交換相鄰的兩個數字&lt;br>
-接著有$q$個詢問，每次會詢問：第$t$個操作之後，數字$x$被放到哪個位置？&lt;br>
-$n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p></description></item><item><title>TIOJ-1948</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</link><pubDate>Wed, 11 Dec 2019 13:24:35 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</guid><description>&lt;h1 id="小向的試煉-2-1洞穴cave">小向的試煉 2-1：洞穴(Cave)&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1948">https://tioj.ck.tp.edu.tw/problems/1948&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>小向在洞穴裡偵察到了$N$個烏龍，不知道是本尊還是分身。不過他們在洞穴中都是以每秒1公分的速度前進，只是有的朝著左邊的入口前進，而有的朝著右邊的入口前進。而由於洞穴相當狹窄，兩個相向的烏龍相撞時會回頭。小向大膽猜測，本尊一定會在所有分身都出洞穴被小向打敗後才出洞穴，瞄準小向用盡魔力的那剎那攻擊小向。不過她也沒那麼多時間等所有分身慢慢走出來再找到本尊，所以小向希望能直接用她剛剛偵察到的資訊判斷哪個是本尊。($N\leq10^6$，洞穴的長度$L\leq10^9$)&lt;/p></description></item><item><title>TIOJ-2017</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</link><pubDate>Fri, 06 Dec 2019 13:03:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</guid><description>&lt;h1 id="b廢文大資料-mining">B.廢文大資料 mining&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2017">https://tioj.ck.tp.edu.tw/problems/2017&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一個序列 $a_i$ ，問有多少區間 $[l,r]$ 使得存在一個 $m \leq r$ 滿足 $\sum\limits _ {i=l}^m a_i &amp;lt; 0$？&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>先對 $a_i$ 做前綴 $s_k = \sum\limits _ {i=1}^k a_i$&lt;br>
-對於一個固定的 $l$ 來說，題目等價於找到一個最小的 $m$ 使得 $s_m - s _ {l-1} &amp;lt; 0$&lt;br>
-在 $m$ 之後的 $r$ 都會被算在答案裡面&lt;/p></description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</guid><description>&lt;h1 id="販賣機耶">販賣機耶&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1614">https://tioj.ck.tp.edu.tw/problems/1614&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>蝴蝶在路旁玩壞一台販賣機，它一次只能投一枚硬幣（故障？）。&lt;br>
-重點是：投進一枚x元的硬幣，然後按退幣鈕，居然會吐出一枚價值 $f(x)$ 的硬幣耶！&lt;br>
-更神秘的是，天才蝴蝶已經發現 $f(x) = x + (x-b_1) (x-b_2) (x-b_3) \dots (x-b_m)$。&lt;br>
-現在蝴蝶手上有 $n$ 枚硬幣，分別是 $a_1 \dots a_n$，請問蝴蝶投進去會賺的硬幣有幾枚？&lt;/p></description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>&lt;h1 id="同步sync">同步(Sync)&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1927">https://tioj.ck.tp.edu.tw/problems/1927&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。&lt;br>
-有時遊戲中的兩人會產生「同步」的現象。產生同步的條件是兩人所在的格子的數字$a,b$分別滿足&lt;br>
-$$&lt;br>
-(ab)^{\frac{p-1}{2}} \equiv 1 \pmod p&lt;br>
-$$&lt;br>
-其中$p = 10^9 + 7$。產生同步後，兩人會瞬移至下一格。如果在下一格又產生「同步」，則會繼續往下走，直到其中一人超出格子範圍(到了終點了)或者兩人不再同步。&lt;/p></description></item><item><title>TIOJ-1774</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</link><pubDate>Thu, 05 Dec 2019 21:30:24 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</guid><description>&lt;h1 id="ch3-section-9-妁艷的頭髮">Ch3. Section 9. 妁艷的頭髮&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1774">https://tioj.ck.tp.edu.tw/problems/1774&lt;/a>&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>裸背包，被值域嚇到XD&lt;br>
-不過實際上魔力&lt;code>M&lt;/code>只會到2000所以沒差的啦&lt;/p>
-&lt;h2 id="ac-code">AC code&lt;/h2>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">long&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span> n,M,dp[&lt;span style="color:#ae81ff">2001&lt;/span>];
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">signed&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ios_base&lt;span style="color:#f92672">::&lt;/span>sync_with_stdio(&lt;span style="color:#ae81ff">0&lt;/span>), cin.tie(&lt;span style="color:#ae81ff">0&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> n &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> M;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>,h,c; i &lt;span style="color:#f92672">&amp;lt;&lt;/span> n; i&lt;span style="color:#f92672">++&lt;/span>) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> h &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> c;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> j &lt;span style="color:#f92672">=&lt;/span> c; j &lt;span style="color:#f92672">&amp;lt;=&lt;/span> M; j&lt;span style="color:#f92672">++&lt;/span>) dp[j] &lt;span style="color:#f92672">=&lt;/span> max(dp[j&lt;span style="color:#f92672">-&lt;/span>c]&lt;span style="color:#f92672">+&lt;/span>h, dp[j]);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> dp[M] &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;\n&amp;#39;&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</guid><description>&lt;h1 id="d番茄大戰爭">D.番茄大戰爭&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2019">https://tioj.ck.tp.edu.tw/problems/2019&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>兩個人在玩剪刀石頭布，而他們兩個人玩了$T$個回合。兩個人（此處稱為小奕和小安）各自有一個「策略」，分別為兩個字串$A$和$B$。兩個字串皆由&lt;code>R&lt;/code>、&lt;code>P&lt;/code>、&lt;code>S&lt;/code>三個字元組成，分別代表小奕和小安會出石頭、布、剪刀。兩個人都會根據他們的「策略」出題，在第$i$個回合，小奕將會出$A _ {i \mod {|A|}}$，而小安將出$B _ {i \mod{|B|}}$，從$i = 0$開始。請輸出：經過$T$個回合後，兩人分別贏了幾局，平手了幾局。&lt;/p></description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>&lt;h1 id="我要成為海賊王">我要成為海賊王&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1171">https://tioj.ck.tp.edu.tw/problems/1171&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>可能算是經典題吧，這邊提供兩種寫法: 重心剖分和輕重鍊剖分&lt;/p></description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</guid><description>&lt;h1 id="排教室問題">排教室問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1197">https://tioj.ck.tp.edu.tw/problems/1197&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>某校有M種不同的課程，其中有些課程的時間會有衝堂。如果學校中總共有N間不同的教室，請問共有多少種安排各課程上課教室的方式？最少要用到幾間教室？&lt;br>
-$M,N \leq 10$&lt;/p></description></item><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</guid><description>&lt;h1 id="f無限兔子問題">F.無限兔子問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/2021">https://tioj.ck.tp.edu.tw/problems/2021&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>令$F_i$是費式數列&lt;br>
-給定$s,t$，求$\sum\limits _ {i=s}^t\binom{F_i}{2}$&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>這題也是有夠數學OwO&lt;br>
-題目所求是$\sum\limits _ {i=s}^t\frac{1}{2}{F_i(F_i - 1)}$&lt;br>
-可以想到分別求$\sum\limits _ {i=1}^nF_i$和$\sum\limits _ {i=1}^nF_i^2$&lt;/p></description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2">愛蜜利雅的作業2&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1282">https://tioj.ck.tp.edu.tw/problems/1282&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數&lt;br>
-$1 \leq n,q \leq 10^5$&lt;/p></description></item></channel></rss>
+&lt;br&gt;
+在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。&lt;br&gt;
+如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。&lt;br&gt;
+請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？&lt;/p&gt;</description></item><item><title>TIOJ-1628</title><link>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</link><pubDate>Sun, 03 May 2020 15:02:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/03/TIOJ-1628/</guid><description>&lt;h1 id="組合布丁"&gt;組合布丁&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1628"&gt;https://tioj.ck.tp.edu.tw/problems/1628&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;記得在快樂暑假營開始前，你曾經說過：「只要我有一次比賽沒有破台，就要請全快樂營的人吃布丁。」&lt;br&gt;
+好吧，蚯蚓太威了，你終究是沒有破台。&lt;br&gt;
+根據小道消息，你得知了這次的快樂暑假營總共有 $n$ 個人報名，&lt;br&gt;
+但是實際上會出席的只有 $k$ 個人，因此你只要請 $k$ 個人吃布丁就好。&lt;br&gt;
+而報名的第 $i$ 個人只會願意吃 $t_i$ 口味的布丁(用一個 int 範圍內的整數表示)。&lt;br&gt;
+假設你不確定究竟誰會出席，那有幾種不同的布丁組合可能會出現在你的採買清單上 ?&lt;br&gt;
+喔對了，因為答案可能太大了，所以你決定只要知道答案除以 $M$ 的餘數就好。&lt;br&gt;
+輸入包含多筆測資&lt;/p&gt;</description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</guid><description>&lt;h1 id="蘿莉切割問題"&gt;蘿莉切割問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1861"&gt;https://tioj.ck.tp.edu.tw/problems/1861&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;請你把一個數字$L$切成$a_1, a_2, \dots, a_n$&lt;br&gt;
+切一個數字$x$的代價是$x$，可以把它切成$b, x-b$兩個數字&lt;br&gt;
+找出最小的代價&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;霍夫曼編碼XD老題目&lt;br&gt;
+把切割的過程看成一個二元樹，每個$a_i$都代表一個葉子&lt;br&gt;
+其餘的節點代表合併中會出現的數字(?)&lt;br&gt;
+那麼總代價就是所有葉子的權重乘上各自的深度的和&lt;br&gt;
+我們想要讓這個代價越小越好&lt;br&gt;
+可以發現，在最優解$T$中：&lt;/p&gt;</description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</guid><description>&lt;h1 id="快樂規劃路徑"&gt;快樂規劃路徑&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1629"&gt;https://tioj.ck.tp.edu.tw/problems/1629&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;樹朋友們生活在一個湖邊，湖邊的樹依照順時針方向編號為$1, 2, \dots n$。&lt;br&gt;
+他們想要讓自己更快樂，所以發明了一種娛樂方式，就是找到一條路徑遍歷全部$n$棵樹剛好一遍。&lt;br&gt;
+要從A樹到B樹唯一的方法就是架一條很長的梯子直直伸過去。&lt;br&gt;
+可是當然不是任何兩棵樹都可以架梯子，所以他們會先把所有可能架梯子的樹對(沒有錯字!)給你。&lt;br&gt;
+當然，(A,B)表示A可以到B、B也可以到A。&lt;br&gt;
+但是給定的遊歷路徑不能出現任兩條梯子交叉，不然可能會讓想要快樂的樹朋友發生危險。&lt;/p&gt;</description></item><item><title>TIOJ-1505</title><link>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</link><pubDate>Thu, 27 Feb 2020 12:28:06 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/27/TIOJ-1505/</guid><description>&lt;h1 id="assssss"&gt;Assssss!!&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1505"&gt;https://tioj.ck.tp.edu.tw/problems/1505&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;現在有一個正整數構成的除法數列&lt;/p&gt;
+&lt;p&gt;$&lt;br&gt;
+x_1 / x_2 / x_3 / \dots / x_n&lt;br&gt;
+$&lt;/p&gt;
+&lt;p&gt;請問是否有一種加上括號的方法使得最後運算的結果是整數?&lt;br&gt;
+$2 \leq n \leq 10^5, 1 \leq x_i \leq 10^9$&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;加上括號之後每個數字會被放到分母或分子，想當然而放在分子的數字越多越好&lt;br&gt;
+可以發現$x_2$會恰好被放到分母一次，因此在最後他一定是當分母的&lt;br&gt;
+而我們可以構造出一個方法讓除了$x_2$最後當分母以外，其他數字都當分子&lt;/p&gt;</description></item><item><title>TIOJ-1219</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</link><pubDate>Tue, 25 Feb 2020 09:55:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1219/</guid><description>&lt;h1 id="發糖果囉"&gt;發糖果囉&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1219"&gt;https://tioj.ck.tp.edu.tw/problems/1219&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;求符合$1 \leq x \leq n, 1 \leq y \leq m$且$x,y$的最大公因數是$g$的數對有多少對&lt;br&gt;
+有多筆測試資料，$1 \leq n, m, g \leq 50000$&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;莫比烏斯反演&lt;/p&gt;
+&lt;h3 id="lemma"&gt;lemma&lt;/h3&gt;
+&lt;p&gt;$$&lt;br&gt;
+\sum_d \mu(d) [d | x] = [x = 1]&lt;br&gt;
+$$&lt;br&gt;
+拿來簡化 $[\gcd(i,j)=1]$ 的部分，再想辦法換一下$\sum$的位置&lt;br&gt;
+$$&lt;br&gt;
+\begin{align*}&lt;br&gt;
+\sum _ {i=1}^n \sum _ {j=1}^m [\gcd(i, j) = g] &amp;amp;= \sum _ {i=1}^{\lfloor n/g \rfloor} \sum _ {j=1}^{\lfloor m/g \rfloor} [\gcd(i, j) = 1]\newline&lt;br&gt;
+\sum _ {i=1}^N \sum _ {j=1}^M [\gcd(i, j) = 1] &amp;amp;= \sum _ {i=1}^N \sum _ {j=1}^M \sum_d \mu(d) \cdot [d | \gcd(i, j)]\newline&lt;br&gt;
+&amp;amp;= \sum_d \mu(d) \sum _ {i=1}^N \sum _ {j=1}^M [d | \gcd(i, j)]\newline&lt;br&gt;
+&amp;amp;= \sum_d \mu(d) {\lfloor \frac{N}{d} \rfloor} {\lfloor \frac{M}{d} \rfloor}&lt;br&gt;
+\end{align*}&lt;br&gt;
+$$&lt;br&gt;
+預處理$\mu$的前綴，利用數論分塊可以做到$\mathcal{O}(N + Q \sqrt{N})$&lt;/p&gt;</description></item><item><title>TIOJ-2140</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</link><pubDate>Tue, 25 Feb 2020 09:09:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-2140/</guid><description>&lt;h1 id="殿壬愛序列"&gt;殿壬愛序列&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2140"&gt;https://tioj.ck.tp.edu.tw/problems/2140&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給你一個長度為$N$的序列$a_1, a_2, \dots, a_N$，並且依序執行$Q$個操作，每個操作可能是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;1 x y&lt;/code&gt; ：把$a_x$設成$y$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;2 L R k&lt;/code&gt; ：對於每個$i \in [L, R]$，把$a_i$設成$\lfloor \frac{a_i}{k} \rfloor$。其中$\lfloor x \rfloor$代表不大於$x$的最大整數&lt;/p&gt;</description></item><item><title>TIOJ-1102</title><link>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</link><pubDate>Tue, 25 Feb 2020 08:33:26 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/25/TIOJ-1102/</guid><description>&lt;h1 id="e海賊王"&gt;E.海賊王&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1102"&gt;https://tioj.ck.tp.edu.tw/problems/1102&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;你是一位海賊，現在有$P$個敵人與$T$個寶藏等間距圍成一圓形&lt;br&gt;
+你必須決定一個發射砲彈的方式&lt;br&gt;
+砲彈會波及的範圍是圓形的，每次發射後範圍內的海賊會被殺死，寶藏也會被毀壞&lt;br&gt;
+剩下的會重整隊形，同樣等間距圍成一圓形，且半徑不變（炮彈可以波及的半徑大於他們圍成的圈的半徑）&lt;br&gt;
+檢查過船上的砲彈存量以後，你發現一次至少要炸死兩個敵方海賊（所以剩三個海賊的話一定要一次打死三個）&lt;br&gt;
+你決定寫個程式幫你計算最多可以拿到多少未被毀壞的寶藏&lt;/p&gt;</description></item><item><title>TIOJ-1798</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</link><pubDate>Sun, 23 Feb 2020 11:34:03 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1798/</guid><description>&lt;h1 id="can-you-arrive"&gt;Can You Arrive?&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1798"&gt;https://tioj.ck.tp.edu.tw/problems/1798&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;地鐵有$N$個站，$M$條軌道，$K$段行駛路線&lt;br&gt;
+站與站之間使用軌道連接&lt;br&gt;
+保證軌道不會形成環，且$M = N-1$&lt;/p&gt;
+&lt;p&gt;每段行駛路線代表有一輛車在兩站之間的最短路徑來回發車&lt;br&gt;
+也就是說這段路上的任意兩站都是互通的，可以直接抵達不需轉車&lt;/p&gt;</description></item><item><title>TIOJ-1129</title><link>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</link><pubDate>Sun, 23 Feb 2020 11:26:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/23/TIOJ-1129/</guid><description>&lt;h1 id="聚集問題"&gt;聚集問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1129"&gt;https://tioj.ck.tp.edu.tw/problems/1129&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定二維平面上$N$個點，若編號$i,j$的點之間的距離不大於$C$則他們之間有連邊&lt;br&gt;
+問最後的連通塊數量以及每個連通塊的大小&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;我想不到比$\mathcal{O}(N^2)$枚舉直接連邊更好的解了XD&lt;br&gt;
+比起DFS我更喜歡用DSU因此code是DSU&lt;/p&gt;</description></item><item><title>TIOJ-2124</title><link>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</link><pubDate>Sat, 22 Feb 2020 20:04:25 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/22/TIOJ-2124/</guid><description>&lt;h1 id="殿壬看蝴蝶"&gt;殿壬看蝴蝶&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2124"&gt;https://tioj.ck.tp.edu.tw/problems/2124&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;太長了，略&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;看到第五種操作就會想用平衡樹去寫這題&lt;br&gt;
+然後仔細看看就會發現第八種操作其實和其他操作都沒什麼關係，只有第三、四種操作會改變以蝴蝶編號為順序的區間和&lt;br&gt;
+所以呢對蝴蝶的編號開一個線段樹、對樹的編號開個Splay就能AC了&lt;br&gt;
+Splay只需要實現查一個節點在中序是第個、查中序第k個節點是什麼，還有剪切區間&lt;br&gt;
+至於區間和就隨便維護吧XD，code如下，我不知道該對裸題做甚麼解釋&lt;/p&gt;</description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</guid><description>&lt;h1 id="ioi2015boxes-一堆盒子"&gt;【IOI2015】Boxes 一堆盒子&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1884"&gt;https://tioj.ck.tp.edu.tw/problems/1884&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有$L$個地區排成一環狀，依序編號為$0, 1, \dots, L-1$&lt;br&gt;
+從任何一個地區移動到相鄰的地區所需要的時間均為一單位時間&lt;/p&gt;
+&lt;p&gt;現在有$N$個人需要寄送貨物，他們分別住在編號為$p_1, p_2, \dots, p_n$的地區(已經依非遞減順序排序)&lt;br&gt;
+貨物中心位在編號$0$的地區，並且郵差每次只能帶至多$K$件貨物移動&lt;br&gt;
+(世界上只有一個郵差&amp;hellip;真辛苦)&lt;br&gt;
+身上所有的貨物都送到後，必須回到$0$號地區，才能進行下一輪的送貨&lt;br&gt;
+你的任務就是幫送貨的郵差計算他最少要花多少時間&lt;br&gt;
+才能從貨物中心出發，寄送完所有貨物，最後再回到貨物中心&lt;br&gt;
+(其中可能會回貨物中心很多次以補充貨物)&lt;/p&gt;</description></item><item><title>TIOJ-1828</title><link>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1828/</link><pubDate>Thu, 20 Feb 2020 04:56:05 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1828/</guid><description>&lt;h1 id="控控控之蘿莉控"&gt;控控控之蘿莉控&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1828"&gt;https://tioj.ck.tp.edu.tw/problems/1828&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;你走在路上遇到了一個可愛小蘿莉，因為你的控屬性，所以你跑上去問了她的名字：「小妹妹～你叫什麼名字啊？」&lt;br&gt;
+她回答：「啊！！！你幹嘛！我不認識你啊你誰啊！！！」&lt;br&gt;
+你：「我是你的好哥哥，來和我一起玩吧～」&lt;br&gt;
+這時機智的小妹妹拿起手機打了110&lt;br&gt;
+你決定要趕快逃跑，以免進入暗無天日的深淵&lt;/p&gt;</description></item><item><title>TIOJ-1553</title><link>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</link><pubDate>Wed, 19 Feb 2020 16:54:42 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/19/TIOJ-1553/</guid><description>&lt;h1 id="b-game"&gt;B-Game&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1553"&gt;https://tioj.ck.tp.edu.tw/problems/1553&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;B-Game是個殘酷的兩人卡片對戰遊戲(Battle Game)&lt;br&gt;
+檯面上有$n$張卡片，排成環狀，每張卡片有其數值&lt;br&gt;
+兩人輪流取卡片，只能選與已經取過的卡片相鄰的卡片，但第一個人不受此限&lt;br&gt;
+選完卡片之後，勝負決定在將兩人手中卡片的數值和&lt;br&gt;
+若某位玩家得分大於另一位玩家，無論大多少均是勝利&lt;/p&gt;</description></item><item><title>TIOJ-1274</title><link>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</link><pubDate>Sun, 16 Feb 2020 21:07:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/16/TIOJ-1274/</guid><description>&lt;h1 id="純屬無聊-tie-breaker"&gt;[純屬無聊] Tie Breaker&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1274"&gt;https://tioj.ck.tp.edu.tw/problems/1274&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;本題考驗你對小向的試煉題敘的理解程度。請回答以下三個問題：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;假設2-2的圖來自遊戲「甲」(一個包含五個字母的單字)，2-3的圖來自動畫「乙」(一個包含九個字母的單字 ，請問甲和乙中字母e出現幾次？&lt;/li&gt;
+&lt;li&gt;假設3-1的圖來自動畫「丙」(包含四個中文字)，3-3的圖來自漫畫「丁」(包含六個中文字) ，請問丙和丁中聲調為二聲的字有幾個？&lt;/li&gt;
+&lt;li&gt;假設4-1的圖來自動畫「戊」(包含八個中文字，其中第五個字是三聲)，4-2的圖來自動畫「己」(包含四個中文字)，4-3的圖來自動畫「庚」(包含六個中文字) ，且令為己的前兩個字翻譯成英文後的字母數，為戊的第二個字所代表的數字 ，「辛」是「庚」的第一個字。請問「辛」倍的x+y是幾？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;註: 小向的試煉是TIOJ上一系列的題目，可以自行搜尋&lt;/p&gt;</description></item><item><title>TIOJ-1511</title><link>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</link><pubDate>Sat, 15 Feb 2020 13:25:59 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/15/TIOJ-1511/</guid><description>&lt;h1 id="problem-a-雷射防護網"&gt;Problem A. 雷射防護網&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1511"&gt;https://tioj.ck.tp.edu.tw/problems/1511&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;考慮在正$n$邊形的頂點中任選三點形成的三角形，請統計分別有幾個銳角三角形、直角三角形和鈍角三角形&lt;br&gt;
+注意：兩個三角形被視為不同的，若且唯若三個頂點的編號不完全相同，並且不可以旋轉三角形&lt;br&gt;
+$n \leq 10^6$&lt;/p&gt;</description></item><item><title>TIOJ-1202</title><link>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</link><pubDate>Sun, 09 Feb 2020 11:37:43 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/09/TIOJ-1202/</guid><description>&lt;h1 id="重疊的天際線"&gt;重疊的天際線&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1202"&gt;https://tioj.ck.tp.edu.tw/problems/1202&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;地平線上有許多房子，而這些房子在夕陽的照射之下形成有趣的輪廓，我們稱之為天際線(Skyline)。為了方便起見，你可以假設所有的房子都是一個位在2D平面上的矩形，並且有一條邊貼在這個假想2D平面上的X軸。&lt;/p&gt;</description></item><item><title>TIOJ-1156</title><link>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</link><pubDate>Sat, 08 Feb 2020 12:29:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/08/TIOJ-1156/</guid><description>&lt;h1 id="5高中運動會"&gt;5.高中運動會&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1156"&gt;https://tioj.ck.tp.edu.tw/problems/1156&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;夢幻城市每年為全市高中生舉辦一次運動大會。為促進各校同學之間的交流，採用特別的分隊方式：每一個學校的同學，必須被均勻分散到各隊，使得每一隊中該校的人數皆相同。為增加比賽的競爭性，希望分成越多隊越好。你的任務是由各校的人數，決定最多可分成的隊數。&lt;/p&gt;</description></item><item><title>TIOJ-1600</title><link>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</link><pubDate>Sun, 26 Jan 2020 22:51:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/26/TIOJ-1600/</guid><description>&lt;h1 id="爆炸吧現充"&gt;爆炸吧現充~&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1600"&gt;https://tioj.ck.tp.edu.tw/problems/1600&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;求共有幾個滿足&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;
+1 \leq x \leq n,&lt;br&gt;
+\exists k &amp;gt; 1, k^2 | x&lt;br&gt;
+$$&lt;/p&gt;
+&lt;p&gt;的$x$&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;一開始我的想法是$[\mu(x)=0]$的前綴，想說用杜教篩或莫比烏斯反演什麼的，但怎麼推都推不出來&lt;br&gt;
+去問王政祺之後，他說直接枚舉平方數再排容就好，至於排容的係數就直接取$\mu$&lt;/p&gt;</description></item><item><title>TIOJ-1283</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</link><pubDate>Sat, 25 Jan 2020 23:37:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1283/</guid><description>&lt;p&gt;&amp;lt;! &amp;ndash; ### Author: Sean Liu &amp;ndash;&amp;gt;&lt;/p&gt;
+&lt;h1 id="超大畫框設置"&gt;超大畫框設置&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1283"&gt;https://tioj.ck.tp.edu.tw/problems/1283&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;在一個「漸進式框架」當中，你想要找到一個最大面積的矩形位置放置你最喜愛的一幅畫。&lt;/p&gt;
+&lt;p&gt;當然地，畫框必須掛正，所以矩形的四個邊都必須與框架的邊平行或垂直。&lt;/p&gt;</description></item><item><title>TIOJ-1168</title><link>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</link><pubDate>Sat, 25 Jan 2020 21:20:17 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/TIOJ-1168/</guid><description>&lt;h1 id="進階的入門"&gt;進階的入門&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1168"&gt;https://tioj.ck.tp.edu.tw/problems/1168&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;你需要實作五個函式：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;3
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;4
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;pop_big&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;pop_small&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;push&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; s);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;big&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;small&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其中第一個函式需要將最大的數字移除，第二個函式需要將最小的數字移除，第三個函式需要將一個數加入目前的數字們，第四個函式需要回傳當前的最大值，第五個函式需要回傳當前的最小值。&lt;br&gt;
+假設一開始沒有任何數字，請你實作這五個操作。&lt;/p&gt;</description></item><item><title>TIOJ-1094</title><link>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</link><pubDate>Fri, 24 Jan 2020 10:33:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/24/TIOJ-1094/</guid><description>&lt;h1 id="c幼稚國王的獎賞"&gt;C.幼稚國王的獎賞&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1094"&gt;https://tioj.ck.tp.edu.tw/problems/1094&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;定義一個非負整數集合的價值是裡面所有數字XOR起來&lt;br&gt;
+給定一些非負整數，問你能選出價值最高的子集價值是多少？&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;經典題 maximum subset xor&lt;/p&gt;
+&lt;h3 id="線性基"&gt;線性基&lt;/h3&gt;
+&lt;p&gt;首先可以把每個數字的二進位看成模2的$k$維向量&lt;/p&gt;</description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>&lt;h1 id="我很忙"&gt;我很忙&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408"&gt;https://tioj.ck.tp.edu.tw/problems/1408&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定$n$個時段$[l_i, r_i)$&lt;br&gt;
+問至少有多少單位時間要是忙碌的才能滿足&lt;br&gt;
+「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)&lt;/p&gt;</description></item><item><title>TIOJ-1152</title><link>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</link><pubDate>Sun, 12 Jan 2020 23:02:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/12/TIOJ-1152/</guid><description>&lt;h1 id="1銀河帝國旅行社"&gt;1.銀河帝國旅行社&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1152"&gt;https://tioj.ck.tp.edu.tw/problems/1152&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給一棵樹，找最遠的兩個點的距離&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;這裡用類似DP的方法&lt;br&gt;
+&lt;code&gt;dfs(i)&lt;/code&gt; 回傳一個 &lt;code&gt;{ans, deepest}&lt;/code&gt; 分別表示以$i$為根子樹中的答案和從$i$往下走的最遠距離&lt;br&gt;
+那&lt;code&gt;ans&lt;/code&gt;可以分成有經過$i$的和沒經過的，有經過的就看最深的兩個子樹加起來是多少，沒經過的就遞迴下去算&lt;/p&gt;</description></item><item><title>TIOJ-2037</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</link><pubDate>Tue, 31 Dec 2019 16:06:00 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-2037/</guid><description>&lt;h1 id="警力配置"&gt;警力配置&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2037"&gt;https://tioj.ck.tp.edu.tw/problems/2037&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;裸的二分圖匹配&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;這邊給匈牙利算法&lt;br&gt;
+有一個subtask是給一個點數很多的樹&lt;br&gt;
+特判用dp即可&lt;/p&gt;
+&lt;h2 id="ac-code"&gt;AC code&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 3
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 4
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 5
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 6
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 7
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 8
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 9
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 10
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 11
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 12
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 13
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 14
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 15
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 16
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 17
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 18
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 19
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 20
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 21
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 22
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 23
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 24
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 25
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 26
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 27
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 28
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 29
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 30
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 31
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 32
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 33
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 34
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 35
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 36
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 37
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 38
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 39
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 40
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 41
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 42
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 43
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 44
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 45
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 46
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 47
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 48
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 49
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 50
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 51
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 52
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 53
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 54
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 55
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 56
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 57
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 58
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 59
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 60
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 61
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 62
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 63
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 64
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 65
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 66
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 67
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 68
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 69
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 70
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 71
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 72
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 73
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 74
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 75
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 76
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 77
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 78
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 79
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 80
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 81
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 82
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 83
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 84
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 85
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 86
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 87
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 88
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 89
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 90
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 91
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 92
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 93
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 94
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 95
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 96
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 97
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 98
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 99
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;100
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;101
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;102
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;103
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;104
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;105
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;106
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;107
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;108
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;109
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;110
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;111
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;112
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;113
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;114
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// __________________
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// | ________________ |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// || ____ ||
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// || /\ | ||
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// || /__\ | ||
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// || / \ |____ ||
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// ||________________||
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// |__________________|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// \###################\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// \###################\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// \ ____ \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// \_______\___\_______\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// An AC a day keeps the doctor away.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#pragma g++ optimize(&amp;#34;Ofast&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#pragma loop_opt(on)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;bits/extc++.h&amp;gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#ifdef local
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define debug(x) (cerr&amp;lt;&amp;lt;#x&amp;lt;&amp;lt;&amp;#34; = &amp;#34;&amp;lt;&amp;lt;(x)&amp;lt;&amp;lt;&amp;#39;\n&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#else
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define debug(x) ((void)0)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#endif &lt;/span&gt;&lt;span style="color:#75715e"&gt;// local
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;#define all(v) begin(v),end(v)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define siz(v) (ll(v.size()))
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define get_pos(v,x) (lower_bound(all(v),x)-begin(v))
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define sort_uni(v) sort(begin(v),end(v)),v.erase(unique(begin(v),end(v)),end(v))
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define pb emplace_back
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define ff first
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define ss second
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define mem(v,x) memset(v,x,sizeof v)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; std;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; __gnu_pbds;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;typedef&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;int64_t&lt;/span&gt; ll;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;typedef&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;long&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;double&lt;/span&gt; ld;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;typedef&lt;/span&gt; pair&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;ll,ll&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; pll;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;typedef&lt;/span&gt; pair&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;ld,ld&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; pld;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;template&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;typename&lt;/span&gt; T&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; max_heap &lt;span style="color:#f92672"&gt;=&lt;/span&gt; __gnu_pbds&lt;span style="color:#f92672"&gt;::&lt;/span&gt;priority_queue&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;T,less&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;T&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;template&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;typename&lt;/span&gt; T&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; min_heap &lt;span style="color:#f92672"&gt;=&lt;/span&gt; __gnu_pbds&lt;span style="color:#f92672"&gt;::&lt;/span&gt;priority_queue&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;T,greater&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;T&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;template&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;typename&lt;/span&gt; T&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; rbt &lt;span style="color:#f92672"&gt;=&lt;/span&gt; tree&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;T,null_type,less&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;T&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt;,rb_tree_tag,tree_order_statistics_node_update&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;constexpr&lt;/span&gt; ld PI &lt;span style="color:#f92672"&gt;=&lt;/span&gt; acos(&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;), eps &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1e-5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;constexpr&lt;/span&gt; ll N &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2025&lt;/span&gt;, INF &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1e18&lt;/span&gt;, MOD &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;998244353&lt;/span&gt;, K &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;11&lt;/span&gt;, inf &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1e9&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;constexpr&lt;/span&gt; ll &lt;span style="color:#a6e22e"&gt;modpow&lt;/span&gt;(ll e,ll p,ll m&lt;span style="color:#f92672"&gt;=&lt;/span&gt;MOD) {ll r&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(;p;p&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;,e&lt;span style="color:#f92672"&gt;=&lt;/span&gt;e&lt;span style="color:#f92672"&gt;*&lt;/span&gt;e&lt;span style="color:#f92672"&gt;%&lt;/span&gt;m) &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(p&lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;) r&lt;span style="color:#f92672"&gt;=&lt;/span&gt;r&lt;span style="color:#f92672"&gt;*&lt;/span&gt;e&lt;span style="color:#f92672"&gt;%&lt;/span&gt;m; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; r;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;constexpr&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;inline&lt;/span&gt; ll &lt;span style="color:#a6e22e"&gt;cdiv&lt;/span&gt;(ll x, ll m) { &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; (x&lt;span style="color:#f92672"&gt;+&lt;/span&gt;m&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)&lt;span style="color:#f92672"&gt;/&lt;/span&gt;m; } &lt;span style="color:#75715e"&gt;// ceiling divide, x/m for flooring divide
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;struct&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;BipartiteMatching&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; G[N];
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; mx[N],my[N],vis[N],now,n;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;init&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; _n) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; n &lt;span style="color:#f92672"&gt;=&lt;/span&gt; _n;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; n; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) G[i].clear();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;addEdge&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; x,&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; y) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; G[x].pb(y);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;bool&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;dfs&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; x) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(vis[x] &lt;span style="color:#f92672"&gt;==&lt;/span&gt; now) &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; false;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; vis[x] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; now;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; y:G[x]) &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(my[y]&lt;span style="color:#f92672"&gt;==-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; &lt;span style="color:#f92672"&gt;||&lt;/span&gt; dfs(my[y])) &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; my[mx[x]&lt;span style="color:#f92672"&gt;=&lt;/span&gt;y]&lt;span style="color:#f92672"&gt;=&lt;/span&gt;x, true;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; false;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;solve&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; ans &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; n; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) vis[i] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, mx[i] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, my[i] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; n; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(mx[i] &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;) &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; j:G[i]) &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(my[j]&lt;span style="color:#f92672"&gt;==-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; my[mx[i]&lt;span style="color:#f92672"&gt;=&lt;/span&gt;j]&lt;span style="color:#f92672"&gt;=&lt;/span&gt;i;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ans&lt;span style="color:#f92672"&gt;++&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;break&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(now &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; now &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; n; now&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(mx[now] &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; dfs(now)) ans&lt;span style="color:#f92672"&gt;++&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; ans;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;} sv;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;signed&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ios_base&lt;span style="color:#f92672"&gt;::&lt;/span&gt;sync_with_stdio(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;), cin.tie(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; t;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cin &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; t;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;while&lt;/span&gt;(t&lt;span style="color:#f92672"&gt;--&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; p,q,m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cin &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; p &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; q &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(max(p,q) &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; N) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; sv.init(max(p,q));
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; m; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; a,b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cin &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; sv.addEdge(a,b);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; sv.solve() &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;\n&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }&lt;span style="color:#66d9ef"&gt;else&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; tr(p&lt;span style="color:#f92672"&gt;+&lt;/span&gt;q&lt;span style="color:#f92672"&gt;+&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;array&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; dp(p&lt;span style="color:#f92672"&gt;+&lt;/span&gt;q&lt;span style="color:#f92672"&gt;+&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;//assert(m == p+q-1);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; m; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; a,b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cin &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; b;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tr[a].pb(b&lt;span style="color:#f92672"&gt;+&lt;/span&gt;p);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tr[b&lt;span style="color:#f92672"&gt;+&lt;/span&gt;p].pb(a);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; function&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;,&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;)&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; dfs &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;](&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i, &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; p) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dp[i][&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (p &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; mx &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; j:tr[i]) &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(j&lt;span style="color:#f92672"&gt;!=&lt;/span&gt;p) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dfs(j,i);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dp[i][&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; dp[j][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dp[i][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;] &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; dp[j][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; mx &lt;span style="color:#f92672"&gt;=&lt;/span&gt; max(mx, dp[j][&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;-&lt;/span&gt; dp[j][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dp[i][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;] &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; mx;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; };
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dfs(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; max(dp[&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;][&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;],dp[&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;][&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]) &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;\n&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</guid><description>&lt;h1 id="萬里長城"&gt;萬里長城&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1441"&gt;https://tioj.ck.tp.edu.tw/problems/1441&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一個序列，找出最長的「長城」子序列&lt;br&gt;
+一個序列$&amp;lt; a_1,a_2,\dots,a_n &amp;gt;$必須符合下列幾點才算是「長城」&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;n是奇數&lt;/li&gt;
+&lt;li&gt;若$i$是偶數，則$a_i$必須小於相鄰的項&lt;/li&gt;
+&lt;li&gt;若$i$是奇數，則$a_i$必須大於相鄰的項&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;貪心法&lt;br&gt;
+維護一個tail表示前$i$項滿足點2. 3.的最佳解，其結尾是多少&lt;br&gt;
+假設下一個項h必須比tail大&lt;br&gt;
+若h比tail大，那就直接接上去(並更新tail)，否則就把tail替換成h&lt;br&gt;
+反之亦然&lt;/p&gt;</description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</guid><description>&lt;h1 id="黑色騎士團的飛彈野望"&gt;黑色騎士團的飛彈野望&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1567"&gt;https://tioj.ck.tp.edu.tw/problems/1567&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點&lt;br&gt;
+若不可行輸出-1&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;首先我們對每個點都可以知道包覆它的圓的圓心範圍在$x$軸的哪段區間&lt;br&gt;
+那題目就轉換成在$x$軸上放一些圓心，使得每個點對應的區間內都至少有一個點被選到&lt;br&gt;
+此為greedy經典題，按照右界排序後，由小到大檢查若某個區間還沒有放東西就放一個在它的右界&lt;/p&gt;</description></item><item><title>TIOJ-1726</title><link>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</link><pubDate>Mon, 23 Dec 2019 22:14:53 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/23/TIOJ-1726/</guid><description>&lt;h1 id="dice-wars"&gt;Dice Wars&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1726"&gt;https://tioj.ck.tp.edu.tw/problems/1726&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;Dice Wars是一款兼具謀略和運氣的遊戲。&lt;br&gt;
+遊戲中你扮演紫色的骰子，要攻下其他顏色的骰子的城池，進而統一全地圖。&lt;/p&gt;
+&lt;p&gt;如今你選到了一張看起來不錯的地圖: 整張地圖呈一條直線，每個位置都有一個顏色勢力佔領。&lt;br&gt;
+由於每次移動到相鄰異色的城池都必須經歷一場鏖戰，你想先經過程式計算後再進行遊戲。&lt;/p&gt;</description></item><item><title>TIOJ-1674</title><link>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</link><pubDate>Thu, 19 Dec 2019 10:58:57 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/19/TIOJ-1674/</guid><description>&lt;h1 id="新專輯"&gt;新專輯&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1674"&gt;https://tioj.ck.tp.edu.tw/problems/1674&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;最近你打算訂購$N^2$張水樹奈奈的專輯《極限魅惑IMPACT EXCITER》。&lt;br&gt;
+由於份量實在是太多了，你決定分散成$N$份訂單。&lt;/p&gt;
+&lt;p&gt;然而，不幸的，依據博客來新的訂貨規定，每一位顧客第$k$次下訂單所訂的CD張數必頇是$k$的正整數倍。&lt;br&gt;
+換句話說，一位顧客第$5$次訂的CD張數只可能是$5$張、$10$張、$15$張、…依此類推。&lt;/p&gt;</description></item><item><title>TIOJ-1035</title><link>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</link><pubDate>Wed, 18 Dec 2019 08:08:39 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/18/TIOJ-1035/</guid><description>&lt;h1 id="通關密語"&gt;通關密語&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1035"&gt;https://tioj.ck.tp.edu.tw/problems/1035&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定兩個長度小於 $5 \times 10^4$ 的小寫英文字母字串 $S,T$&lt;br&gt;
+定義「最佳擬合」，就是將 $S$ 經過平移後和 $T$ 比對，同樣的字元數最多的那一種方法。&lt;br&gt;
+請輸出一個正整數，代表最佳擬合的方案下，相同的字元有幾個。&lt;/p&gt;</description></item><item><title>TIOJ-1950</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</link><pubDate>Fri, 13 Dec 2019 23:26:11 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1950/</guid><description>&lt;h1 id="小向的試煉-2-3轉rotate"&gt;小向的試煉 2-3：轉！(Rotate!)&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1950"&gt;https://tioj.ck.tp.edu.tw/problems/1950&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定長度$N$的排列，問「以交換任意兩個數字的方式排序這個序列需要多少次數」&lt;br&gt;
+另外有$M$次修改，每次修改會交換數字$i$和數字$j$的位置，請輸出$M+1$行代表一開始和每次修改過後的答案&lt;/p&gt;</description></item><item><title>TIOJ-1394</title><link>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</link><pubDate>Fri, 13 Dec 2019 06:36:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/13/TIOJ-1394/</guid><description>&lt;h1 id="黑色騎士團的逆襲野望"&gt;黑色騎士團的逆襲野望&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1394"&gt;https://tioj.ck.tp.edu.tw/problems/1394&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;自從黑色騎士團上次的最終野望被白色騎士豬殺苦破滅之後，黑色騎士團銷聲滅跡了一陣子，不過他們仍繼續計畫著侵略神聖的大不列顛帝國。&lt;/p&gt;
+&lt;p&gt;終於他們發現了一個機會：原來大不列顛帝國的命脈就是對外輸出的藥品&amp;quot;REBRAIN&amp;quot;，只要能控制住它所有的運輸與加工途徑，那大不列顛帝國就完了！&lt;/p&gt;</description></item><item><title>TIOJ-1739</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</link><pubDate>Wed, 11 Dec 2019 15:26:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1739/</guid><description>&lt;h1 id="apio-08-beads-interactive"&gt;[APIO &amp;lsquo;08] Beads [Interactive]&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1739"&gt;https://tioj.ck.tp.edu.tw/problems/1739&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有一個長度$n$的序列$a$，一開始$a_i = i$&lt;br&gt;
+接下來有$m$個操作，每個操作只會交換相鄰的兩個數字&lt;br&gt;
+接著有$q$個詢問，每次會詢問：第$t$個操作之後，數字$x$被放到哪個位置？&lt;br&gt;
+$n,m,q \leq 3 \times 10^5; 1 \leq x \leq n; 1 \leq t \leq m$&lt;/p&gt;</description></item><item><title>TIOJ-1948</title><link>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</link><pubDate>Wed, 11 Dec 2019 13:24:35 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/11/TIOJ-1948/</guid><description>&lt;h1 id="小向的試煉-2-1洞穴cave"&gt;小向的試煉 2-1：洞穴(Cave)&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1948"&gt;https://tioj.ck.tp.edu.tw/problems/1948&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;小向在洞穴裡偵察到了$N$個烏龍，不知道是本尊還是分身。不過他們在洞穴中都是以每秒1公分的速度前進，只是有的朝著左邊的入口前進，而有的朝著右邊的入口前進。而由於洞穴相當狹窄，兩個相向的烏龍相撞時會回頭。小向大膽猜測，本尊一定會在所有分身都出洞穴被小向打敗後才出洞穴，瞄準小向用盡魔力的那剎那攻擊小向。不過她也沒那麼多時間等所有分身慢慢走出來再找到本尊，所以小向希望能直接用她剛剛偵察到的資訊判斷哪個是本尊。($N\leq10^6$，洞穴的長度$L\leq10^9$)&lt;/p&gt;</description></item><item><title>TIOJ-2017</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</link><pubDate>Fri, 06 Dec 2019 13:03:18 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-2017/</guid><description>&lt;h1 id="b廢文大資料-mining"&gt;B.廢文大資料 mining&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2017"&gt;https://tioj.ck.tp.edu.tw/problems/2017&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一個序列 $a_i$ ，問有多少區間 $[l,r]$ 使得存在一個 $m \leq r$ 滿足 $\sum\limits _ {i=l}^m a_i &amp;lt; 0$？&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;先對 $a_i$ 做前綴 $s_k = \sum\limits _ {i=1}^k a_i$&lt;br&gt;
+對於一個固定的 $l$ 來說，題目等價於找到一個最小的 $m$ 使得 $s_m - s _ {l-1} &amp;lt; 0$&lt;br&gt;
+在 $m$ 之後的 $r$ 都會被算在答案裡面&lt;/p&gt;</description></item><item><title>TIOJ-1614</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</link><pubDate>Fri, 06 Dec 2019 12:51:45 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1614/</guid><description>&lt;h1 id="販賣機耶"&gt;販賣機耶&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1614"&gt;https://tioj.ck.tp.edu.tw/problems/1614&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;蝴蝶在路旁玩壞一台販賣機，它一次只能投一枚硬幣（故障？）。&lt;br&gt;
+重點是：投進一枚x元的硬幣，然後按退幣鈕，居然會吐出一枚價值 $f(x)$ 的硬幣耶！&lt;br&gt;
+更神秘的是，天才蝴蝶已經發現 $f(x) = x + (x-b_1) (x-b_2) (x-b_3) \dots (x-b_m)$。&lt;br&gt;
+現在蝴蝶手上有 $n$ 枚硬幣，分別是 $a_1 \dots a_n$，請問蝴蝶投進去會賺的硬幣有幾枚？&lt;/p&gt;</description></item><item><title>TIOJ-1927</title><link>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</link><pubDate>Fri, 06 Dec 2019 10:36:19 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/06/TIOJ-1927/</guid><description>&lt;h1 id="同步sync"&gt;同步(Sync)&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1927"&gt;https://tioj.ck.tp.edu.tw/problems/1927&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;在一個多人單向卷軸遊戲中，有$N \leq 10^5$個格子，每個格子都有一個不超過$10^9 + 6$的正整數，代表該格的狀況。&lt;br&gt;
+有時遊戲中的兩人會產生「同步」的現象。產生同步的條件是兩人所在的格子的數字$a,b$分別滿足&lt;br&gt;
+$$&lt;br&gt;
+(ab)^{\frac{p-1}{2}} \equiv 1 \pmod p&lt;br&gt;
+$$&lt;br&gt;
+其中$p = 10^9 + 7$。產生同步後，兩人會瞬移至下一格。如果在下一格又產生「同步」，則會繼續往下走，直到其中一人超出格子範圍(到了終點了)或者兩人不再同步。&lt;/p&gt;</description></item><item><title>TIOJ-1774</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</link><pubDate>Thu, 05 Dec 2019 21:30:24 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-1774/</guid><description>&lt;h1 id="ch3-section-9-妁艷的頭髮"&gt;Ch3. Section 9. 妁艷的頭髮&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1774"&gt;https://tioj.ck.tp.edu.tw/problems/1774&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;裸背包，被值域嚇到XD&lt;br&gt;
+不過實際上魔力&lt;code&gt;M&lt;/code&gt;只會到2000所以沒差的啦&lt;/p&gt;
+&lt;h2 id="ac-code"&gt;AC code&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 3
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 4
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 5
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 6
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 7
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 8
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 9
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;10
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;11
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; std;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;long&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;long&lt;/span&gt; n,M,dp[&lt;span style="color:#ae81ff"&gt;2001&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;signed&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ios_base&lt;span style="color:#f92672"&gt;::&lt;/span&gt;sync_with_stdio(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;), cin.tie(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cin &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; n &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; M;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;,h,c; i &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; n; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cin &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; h &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; c;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; j &lt;span style="color:#f92672"&gt;=&lt;/span&gt; c; j &lt;span style="color:#f92672"&gt;&amp;lt;=&lt;/span&gt; M; j&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) dp[j] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; max(dp[j&lt;span style="color:#f92672"&gt;-&lt;/span&gt;c]&lt;span style="color:#f92672"&gt;+&lt;/span&gt;h, dp[j]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; dp[M] &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;\n&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>TIOJ-2019</title><link>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</link><pubDate>Thu, 05 Dec 2019 00:48:51 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/05/TIOJ-2019/</guid><description>&lt;h1 id="d番茄大戰爭"&gt;D.番茄大戰爭&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2019"&gt;https://tioj.ck.tp.edu.tw/problems/2019&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;兩個人在玩剪刀石頭布，而他們兩個人玩了$T$個回合。兩個人（此處稱為小奕和小安）各自有一個「策略」，分別為兩個字串$A$和$B$。兩個字串皆由&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;P&lt;/code&gt;、&lt;code&gt;S&lt;/code&gt;三個字元組成，分別代表小奕和小安會出石頭、布、剪刀。兩個人都會根據他們的「策略」出題，在第$i$個回合，小奕將會出$A _ {i \mod {|A|}}$，而小安將出$B _ {i \mod{|B|}}$，從$i = 0$開始。請輸出：經過$T$個回合後，兩人分別贏了幾局，平手了幾局。&lt;/p&gt;</description></item><item><title>TIOJ-1171</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</link><pubDate>Wed, 04 Dec 2019 23:41:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1171/</guid><description>&lt;h1 id="我要成為海賊王"&gt;我要成為海賊王&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1171"&gt;https://tioj.ck.tp.edu.tw/problems/1171&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一棵樹，一開始所有頂點都是白色的，有$q$次操作，每次操作可以把一個頂點塗成黑色，或者詢問某個頂點$x$到所有黑色頂點的距離和&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;可能算是經典題吧，這邊提供兩種寫法: 重心剖分和輕重鍊剖分&lt;/p&gt;</description></item><item><title>TIOJ-1197</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</link><pubDate>Wed, 04 Dec 2019 14:18:31 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1197/</guid><description>&lt;h1 id="排教室問題"&gt;排教室問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1197"&gt;https://tioj.ck.tp.edu.tw/problems/1197&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;某校有M種不同的課程，其中有些課程的時間會有衝堂。如果學校中總共有N間不同的教室，請問共有多少種安排各課程上課教室的方式？最少要用到幾間教室？&lt;br&gt;
+$M,N \leq 10$&lt;/p&gt;</description></item><item><title>TIOJ-2021</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</link><pubDate>Wed, 04 Dec 2019 11:34:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-2021/</guid><description>&lt;h1 id="f無限兔子問題"&gt;F.無限兔子問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/2021"&gt;https://tioj.ck.tp.edu.tw/problems/2021&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;令$F_i$是費式數列&lt;br&gt;
+給定$s,t$，求$\sum\limits _ {i=s}^t\binom{F_i}{2}$&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;這題也是有夠數學OwO&lt;br&gt;
+題目所求是$\sum\limits _ {i=s}^t\frac{1}{2}{F_i(F_i - 1)}$&lt;br&gt;
+可以想到分別求$\sum\limits _ {i=1}^nF_i$和$\sum\limits _ {i=1}^nF_i^2$&lt;/p&gt;</description></item><item><title>TIOJ-1282</title><link>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</link><pubDate>Wed, 04 Dec 2019 09:31:16 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/04/TIOJ-1282/</guid><description>&lt;h1 id="愛蜜利雅的作業2"&gt;愛蜜利雅的作業2&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1282"&gt;https://tioj.ck.tp.edu.tw/problems/1282&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一個長度$n$的正整數序列，有$q$次操作，每次操作可能會對區間$[l,r]$加上$k$或詢問區間$[l,r]$的最大公因數&lt;br&gt;
+$1 \leq n,q \leq 10^5$&lt;/p&gt;</description></item></channel></rss>

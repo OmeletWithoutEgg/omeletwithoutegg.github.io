@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Geometry on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/geometry/</link><description>Recent content in Geometry on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 22 Sep 2021 01:15:50 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/geometry/index.xml" rel="self" type="application/rss+xml"/><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考">2021 TOI 模考&lt;/h1>
-&lt;p>可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br>
-今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p></description></item><item><title>BSUIR Cherry Orchard</title><link>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</link><pubDate>Sun, 12 Sep 2021 00:05:19 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</guid><description>&lt;p>&lt;a href="https://codeforces.com/problemset/gymProblem/101193/J">https://codeforces.com/problemset/gymProblem/101193/J&lt;/a>&lt;/p>
-&lt;p>這題是上禮拜團練沒人寫的某一題，因為我一直覺得自己的想法是對的所以花了好久來寫這題。&lt;br>
-網路上也找不太到題解:P&lt;/p>
-&lt;h1 id="cherry-orchard">Cherry orchard&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>左下角和右上角分別是 $(0,0)$ 和 $(1,1)$ 的正方形裡面有 $n$ 個點&lt;br>
-現在隨機在正方形的兩條不同的邊各選一個點，並畫出一條直線把這 $n$ 個點分成兩部份。&lt;br>
-請問兩部份中點數的 min 的期望值是多少？&lt;br>
-$n \leq 50$&lt;/p></description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題">賽車問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136">https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br>
-你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。&lt;br>
-可以假設車速都不相同&lt;/p></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404">https://tioj.ck.tp.edu.tw/problems/1404&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>
- &lt;img src="description.gif" alt="404 QQ">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Geometry on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/geometry/</link><description>Recent content in Geometry on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 22 Sep 2021 01:15:50 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/geometry/index.xml" rel="self" type="application/rss+xml"/><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考"&gt;2021 TOI 模考&lt;/h1&gt;
+&lt;p&gt;可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br&gt;
+今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p&gt;</description></item><item><title>BSUIR Cherry Orchard</title><link>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</link><pubDate>Sun, 12 Sep 2021 00:05:19 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/12/bsuir-cherry-orchard/</guid><description>&lt;p&gt;&lt;a href="https://codeforces.com/problemset/gymProblem/101193/J"&gt;https://codeforces.com/problemset/gymProblem/101193/J&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;這題是上禮拜團練沒人寫的某一題，因為我一直覺得自己的想法是對的所以花了好久來寫這題。&lt;br&gt;
+網路上也找不太到題解:P&lt;/p&gt;
+&lt;h1 id="cherry-orchard"&gt;Cherry orchard&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;左下角和右上角分別是 $(0,0)$ 和 $(1,1)$ 的正方形裡面有 $n$ 個點&lt;br&gt;
+現在隨機在正方形的兩條不同的邊各選一個點，並畫出一條直線把這 $n$ 個點分成兩部份。&lt;br&gt;
+請問兩部份中點數的 min 的期望值是多少？&lt;br&gt;
+$n \leq 50$&lt;/p&gt;</description></item><item><title>TIOJ 1284</title><link>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</link><pubDate>Wed, 23 Dec 2020 13:31:04 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/23/TIOJ-1284/</guid><description>&lt;h1 id="賽車問題"&gt;賽車問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/submissions/231136"&gt;https://tioj.ck.tp.edu.tw/submissions/231136&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;現在有 $n$ 輛往右邊跑的賽車，每一輛都有其固定的車速以及起始位置。&lt;br&gt;
+你想要知道在從現在開始的所有時刻中，什麼時候最領先的車子跟最落後的車子的距離會最短。&lt;br&gt;
+可以假設車速都不相同&lt;/p&gt;</description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>&lt;h1 id="照亮的山景"&gt;照亮的山景&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404"&gt;https://tioj.ck.tp.edu.tw/problems/1404&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;
+ &lt;img src="description.gif" alt="404 QQ"&gt;
 
-&lt;br>
-在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。&lt;br>
-如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。&lt;br>
-請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？&lt;/p></description></item></channel></rss>
+&lt;br&gt;
+在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。&lt;br&gt;
+如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。&lt;br&gt;
+請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？&lt;/p&gt;</description></item></channel></rss>

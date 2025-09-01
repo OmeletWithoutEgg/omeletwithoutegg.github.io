@@ -1,45 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/blog/</link><description>Recent content in Blog on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 22 Nov 2024 19:34:43 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC Korea Regional 2024</title><link>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</link><pubDate>Fri, 22 Nov 2024 19:34:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</guid><description>&lt;h1 id="icpc-首爾站-2024-遊記">ICPC 首爾站 2024 遊記&lt;/h1>
-&lt;p>以下用 C 跟 R 簡稱我的隊友。Day 2 正式賽會有分隔線，怕暴雷自己小心。&lt;/p>
-&lt;h2 id="day--2">Day -2&lt;/h2>
-&lt;p>飆趕國文作業，寫完之後倒頭大睡。&lt;/p>
-&lt;h2 id="day--1">Day -1&lt;/h2>
-&lt;p>作息亂掉然後被硬拉去下午五點到十點團練。&lt;/p></description></item><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>&lt;h1 id="icpc-world-finals-luxor-世界總決賽紀錄">ICPC World Finals @Luxor 世界總決賽紀錄&lt;/h1>
-&lt;p>部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。&lt;br>
-如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。&lt;/p></description></item><item><title>Hugo Framework</title><link>https://omeletwithoutegg.github.io/2020/11/25/hugo-framework/</link><pubDate>Wed, 25 Nov 2020 11:20:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/25/hugo-framework/</guid><description>&lt;h1 id="hugo">Hugo!&lt;/h1>
-&lt;p>似乎因為casper而嘗試從hexo跳槽到hugo。&lt;br>
-hexo似乎是對windows比較友善？檔名都一堆底線之類的&lt;br>
-啊hugo好像是對macOS比較友善QQ&lt;/p></description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description>&lt;p>這是一篇測試用的文章&lt;br>
-A quick brown fox jumps over the lazy dog.&lt;/p>
-&lt;blockquote>
-&lt;p>引用文字&lt;/p>&lt;/blockquote>
-&lt;h1 id="標題">標題&lt;/h1>
-&lt;h2 id="二級標題">二級標題&lt;/h2>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span style="color:#75715e">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	std&lt;span style="color:#f92672">::&lt;/span>cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello hexo&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> std&lt;span style="color:#f92672">::&lt;/span>endl;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ hexo clean
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ hexo s -g
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ echo &lt;span style="color:#ae81ff">7122&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/blog/</link><description>Recent content in Blog on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Fri, 22 Nov 2024 19:34:43 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>ICPC Korea Regional 2024</title><link>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</link><pubDate>Fri, 22 Nov 2024 19:34:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</guid><description>&lt;h1 id="icpc-首爾站-2024-遊記"&gt;ICPC 首爾站 2024 遊記&lt;/h1&gt;
+&lt;p&gt;以下用 C 跟 R 簡稱我的隊友。Day 2 正式賽會有分隔線，怕暴雷自己小心。&lt;/p&gt;
+&lt;h2 id="day--2"&gt;Day -2&lt;/h2&gt;
+&lt;p&gt;飆趕國文作業，寫完之後倒頭大睡。&lt;/p&gt;
+&lt;h2 id="day--1"&gt;Day -1&lt;/h2&gt;
+&lt;p&gt;作息亂掉然後被硬拉去下午五點到十點團練。&lt;/p&gt;</description></item><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>&lt;h1 id="icpc-world-finals-luxor-世界總決賽紀錄"&gt;ICPC World Finals @Luxor 世界總決賽紀錄&lt;/h1&gt;
+&lt;p&gt;部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。&lt;br&gt;
+如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。&lt;/p&gt;</description></item><item><title>Hugo Framework</title><link>https://omeletwithoutegg.github.io/2020/11/25/hugo-framework/</link><pubDate>Wed, 25 Nov 2020 11:20:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/11/25/hugo-framework/</guid><description>&lt;h1 id="hugo"&gt;Hugo!&lt;/h1&gt;
+&lt;p&gt;似乎因為casper而嘗試從hexo跳槽到hugo。&lt;br&gt;
+hexo似乎是對windows比較友善？檔名都一堆底線之類的&lt;br&gt;
+啊hugo好像是對macOS比較友善QQ&lt;/p&gt;</description></item><item><title>Hello World</title><link>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</link><pubDate>Sun, 01 Dec 2019 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/01/hello-world/</guid><description>&lt;p&gt;這是一篇測試用的文章&lt;br&gt;
+A quick brown fox jumps over the lazy dog.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用文字&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id="標題"&gt;標題&lt;/h1&gt;
+&lt;h2 id="二級標題"&gt;二級標題&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;3
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;4
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	std&lt;span style="color:#f92672"&gt;::&lt;/span&gt;cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Hello hexo&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; std&lt;span style="color:#f92672"&gt;::&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;2
+&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ hexo clean
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ hexo s -g
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ echo &lt;span style="color:#ae81ff"&gt;7122&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>

@@ -1,18 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cpp on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/cpp/</link><description>Recent content in Cpp on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 09 Jul 2023 02:26:08 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/cpp/index.xml" rel="self" type="application/rss+xml"/><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>&lt;h1 id="codeforces-793-f-julia-the-snail">Codeforces 793 F Julia the snail&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。&lt;br>
-你除了傳送以外的移動方式只有向數線的左邊走（把 $x$ 變小）&lt;br>
-接著有 $Q$ 筆詢問問，每筆詢問給 $x, y$，&lt;br>
-問你從 $x$ 開始走，在不超出 $[x, y]$ 這個區間的前提下可以走最右邊是多右邊。&lt;/p></description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</link><pubDate>Sun, 19 Sep 2021 16:32:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</guid><description>&lt;p>這篇是想放一些神奇的C++語法錯誤&lt;br>
-也可能會放基礎的(X&lt;br>
-然後可能會是動態更新&lt;/p>
-&lt;h1 id="lambda-capture">lambda capture&lt;/h1>
-&lt;p>(Update: 2021/1/21)&lt;br>
-這似乎是因為capture到值的時候還沒成功建構func這個變數，所以會出問題&lt;/p></description></item><item><title>PBDS Split Join Is Slow</title><link>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</link><pubDate>Fri, 23 Jul 2021 18:16:13 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</guid><description>&lt;h1 id="幫-pbds-上香">幫 pbds 上香&lt;/h1>
-&lt;p>如題。&lt;/p>
-&lt;p>先說結論：&lt;br>
-官網的 &lt;a href="https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/tree_based_containers.html">document&lt;/a> 寫說 split 跟 join 時間是「poly-logarithm」，但是其實目前為止 GNU 的 pbds 預設的 split 是 $\mathcal{O}(N)$ 的，請看&lt;a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=81806">這篇文章&lt;/a>。&lt;br>
-不過有一些方法可以讓複雜度變回一次 &lt;code>split&lt;/code> $\Theta(\log N)$，但是有一點麻煩。&lt;/p></description></item><item><title>jngen</title><link>https://omeletwithoutegg.github.io/2021/01/24/jngen/</link><pubDate>Sun, 24 Jan 2021 01:17:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/24/jngen/</guid><description>&lt;h1 id="jngen">jngen&lt;/h1>
-&lt;p>最近在生107北市賽題目的測資想放到TIOJ上面，其中一題是關於找兩個凸包的兩條內公切線交點。&lt;br>
-因為不太知道測資怎麼生，又想到之前東東有提過jngen這個東西，因此就把他拿來生成我需要的凸包了。&lt;br>
-我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cpp on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/cpp/</link><description>Recent content in Cpp on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Sun, 31 Aug 2025 21:48:30 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/cpp/index.xml" rel="self" type="application/rss+xml"/><item><title>fsanitize 與編譯警告</title><link>https://omeletwithoutegg.github.io/2025/08/31/compile-warn-and-sanitizer/</link><pubDate>Sun, 31 Aug 2025 21:48:30 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/08/31/compile-warn-and-sanitizer/</guid><description>&lt;h1 id="fsanitize-與編譯警告"&gt;fsanitize 與編譯警告&lt;/h1&gt;
+&lt;p&gt;介紹一下 fsanitize 與編譯警告這兩個能夠幫助 debug 以及減少 bug 的工具。&lt;/p&gt;
+&lt;p&gt;寫程式&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;一定會遇到 bug。&lt;br&gt;
+雖然 debug 這件事並沒有銀色子彈的存在，但 sanitizer 與編譯警告可以幫助我們簡單的排除一整類的 bug，保持我們的 san 值。&lt;/p&gt;</description></item><item><title>CF 793f Julia the snail</title><link>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</link><pubDate>Sun, 09 Jul 2023 02:26:08 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/07/09/cf-793f/</guid><description>&lt;h1 id="codeforces-793-f-julia-the-snail"&gt;Codeforces 793 F Julia the snail&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有 $M$ 個傳送器，第 $i$ 個可以把你從 $l_i$ 傳送到 $r_i$，其中 $l_i, r_i$ 介在 $1, N$ 之間。&lt;br&gt;
+你除了傳送以外的移動方式只有向數線的左邊走（把 $x$ 變小）&lt;br&gt;
+接著有 $Q$ 筆詢問問，每筆詢問給 $x, y$，&lt;br&gt;
+問你從 $x$ 開始走，在不超出 $[x, y]$ 這個區間的前提下可以走最右邊是多右邊。&lt;/p&gt;</description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</link><pubDate>Sun, 19 Sep 2021 16:32:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</guid><description>&lt;p&gt;這篇是想放一些神奇的C++語法錯誤&lt;br&gt;
+也可能會放基礎的(X&lt;br&gt;
+然後可能會是動態更新&lt;/p&gt;
+&lt;h1 id="lambda-capture"&gt;lambda capture&lt;/h1&gt;
+&lt;p&gt;(Update: 2021/1/21)&lt;br&gt;
+這似乎是因為capture到值的時候還沒成功建構func這個變數，所以會出問題&lt;/p&gt;</description></item><item><title>PBDS Split Join Is Slow</title><link>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</link><pubDate>Fri, 23 Jul 2021 18:16:13 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/23/pbds-split-join-is-slow/</guid><description>&lt;h1 id="幫-pbds-上香"&gt;幫 pbds 上香&lt;/h1&gt;
+&lt;p&gt;如題。&lt;/p&gt;
+&lt;p&gt;先說結論：&lt;br&gt;
+官網的 &lt;a href="https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/tree_based_containers.html"&gt;document&lt;/a&gt; 寫說 split 跟 join 時間是「poly-logarithm」，但是其實目前為止 GNU 的 pbds 預設的 split 是 $\mathcal{O}(N)$ 的，請看&lt;a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=81806"&gt;這篇文章&lt;/a&gt;。&lt;br&gt;
+不過有一些方法可以讓複雜度變回一次 &lt;code&gt;split&lt;/code&gt; $\Theta(\log N)$，但是有一點麻煩。&lt;/p&gt;</description></item><item><title>jngen</title><link>https://omeletwithoutegg.github.io/2021/01/24/jngen/</link><pubDate>Sun, 24 Jan 2021 01:17:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/24/jngen/</guid><description>&lt;h1 id="jngen"&gt;jngen&lt;/h1&gt;
+&lt;p&gt;最近在生107北市賽題目的測資想放到TIOJ上面，其中一題是關於找兩個凸包的兩條內公切線交點。&lt;br&gt;
+因為不太知道測資怎麼生，又想到之前東東有提過jngen這個東西，因此就把他拿來生成我需要的凸包了。&lt;br&gt;
+我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X&lt;/p&gt;</description></item></channel></rss>

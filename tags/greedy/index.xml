@@ -1,70 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Greedy on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/greedy/</link><description>Recent content in Greedy on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 20:17:38 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</guid><description>&lt;h1 id="巨大密室問題">巨大密室問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1619">https://tioj.ck.tp.edu.tw/problems/1619&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有長度 $n$ 的 $P_i$ 和 $O_i$ 兩個正整數序列，請任意排列這兩個序列使得 $\prod _ i (P_i + O_i)$ 盡量大。&lt;/p>
-&lt;p>$n\leq 20000, 1 \leq P_i, O_i \leq 1000$。保證答案至多是 $60000$ 位數。&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>既然兩個序列都可以動不妨令 $P_i$ 是從小排到大的。那麼可以 greedy 的猜說 $O_i$ 從大排到小會是最佳解，sort 完乘起來就是答案。&lt;/p></description></item><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me">Every time you&amp;rsquo;re next to me&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1502">https://tioj.ck.tp.edu.tw/problems/1502&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有一個字串 $T$ 和一個 pattern $P$，其中 $P$ 有一些字元是 &lt;code>*&lt;/code>，&lt;code>*&lt;/code> 可以匹配一個或以上的任意字元，且 &lt;code>*&lt;/code> 不會連續出現，請問 $T$ 裡面有沒有一個子字串符合 $P$？&lt;/p></description></item><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>&lt;h1 id="min--convolution-convex-arbitrary">$(\min, +)$ convolution: convex-arbitrary&lt;/h1>
-&lt;p>因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。&lt;br>
-先放兩個 yosupo library checker 的模板題連結。&lt;br>
-&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex">https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex&lt;/a>&lt;br>
-&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary">https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足&lt;br>
-$$&lt;br>
-c_k = \min_{i+j=k} (a_i + b_j)&lt;br>
-$$&lt;/p></description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考">2021 TOI 模考&lt;/h1>
-&lt;p>可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br>
-今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p></description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>&lt;h1 id="照亮的山景">照亮的山景&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404">https://tioj.ck.tp.edu.tw/problems/1404&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>
- &lt;img src="description.gif" alt="404 QQ">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Greedy on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/greedy/</link><description>Recent content in Greedy on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Wed, 18 Dec 2024 20:17:38 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>TIOJ 1619</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</link><pubDate>Wed, 18 Dec 2024 20:17:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1619/</guid><description>&lt;h1 id="巨大密室問題"&gt;巨大密室問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1619"&gt;https://tioj.ck.tp.edu.tw/problems/1619&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有長度 $n$ 的 $P_i$ 和 $O_i$ 兩個正整數序列，請任意排列這兩個序列使得 $\prod _ i (P_i + O_i)$ 盡量大。&lt;/p&gt;
+&lt;p&gt;$n\leq 20000, 1 \leq P_i, O_i \leq 1000$。保證答案至多是 $60000$ 位數。&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;既然兩個序列都可以動不妨令 $P_i$ 是從小排到大的。那麼可以 greedy 的猜說 $O_i$ 從大排到小會是最佳解，sort 完乘起來就是答案。&lt;/p&gt;</description></item><item><title>TIOJ 1502</title><link>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</link><pubDate>Wed, 18 Dec 2024 18:23:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/12/18/TIOJ-1502/</guid><description>&lt;h1 id="every-time-youre-next-to-me"&gt;Every time you&amp;rsquo;re next to me&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1502"&gt;https://tioj.ck.tp.edu.tw/problems/1502&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有一個字串 $T$ 和一個 pattern $P$，其中 $P$ 有一些字元是 &lt;code&gt;*&lt;/code&gt;，&lt;code&gt;*&lt;/code&gt; 可以匹配一個或以上的任意字元，且 &lt;code&gt;*&lt;/code&gt; 不會連續出現，請問 $T$ 裡面有沒有一個子字串符合 $P$？&lt;/p&gt;</description></item><item><title>關於凸函數的 (min, +) 捲積</title><link>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</link><pubDate>Tue, 15 Aug 2023 17:22:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/08/15/min-plus-convolution-convex-arbitrary/</guid><description>&lt;h1 id="min--convolution-convex-arbitrary"&gt;$(\min, +)$ convolution: convex-arbitrary&lt;/h1&gt;
+&lt;p&gt;因為最近打 ICPC WF 的題目遇到這個東西，所以想來寫一篇部落格。如果怕被暴雷題目的自己小心。&lt;br&gt;
+先放兩個 yosupo library checker 的模板題連結。&lt;br&gt;
+&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex"&gt;https://judge.yosupo.jp/problem/min_plus_convolution_convex_convex&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary"&gt;https://judge.yosupo.jp/problem/min_plus_convolution_convex_arbitrary&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;兩個序列 $a_0,a_1,\dots,a_n$ 和 $b_0, b_1, \dots, b_n$ 的 $(\min,+)$ 捲積是一個序列 $c_0,c_1,\dots,c_{2n}$ 滿足&lt;br&gt;
+$$&lt;br&gt;
+c_k = \min_{i+j=k} (a_i + b_j)&lt;br&gt;
+$$&lt;/p&gt;</description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考"&gt;2021 TOI 模考&lt;/h1&gt;
+&lt;p&gt;可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br&gt;
+今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p&gt;</description></item><item><title>TIOJ-1404</title><link>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</link><pubDate>Mon, 04 May 2020 21:05:10 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/04/TIOJ-1404/</guid><description>&lt;h1 id="照亮的山景"&gt;照亮的山景&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1404"&gt;https://tioj.ck.tp.edu.tw/problems/1404&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;
+ &lt;img src="description.gif" alt="404 QQ"&gt;
 
-&lt;br>
-在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。&lt;br>
-如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。&lt;br>
-請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？&lt;/p></description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</guid><description>&lt;h1 id="蘿莉切割問題">蘿莉切割問題&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1861">https://tioj.ck.tp.edu.tw/problems/1861&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>請你把一個數字$L$切成$a_1, a_2, \dots, a_n$&lt;br>
-切一個數字$x$的代價是$x$，可以把它切成$b, x-b$兩個數字&lt;br>
-找出最小的代價&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>霍夫曼編碼XD老題目&lt;br>
-把切割的過程看成一個二元樹，每個$a_i$都代表一個葉子&lt;br>
-其餘的節點代表合併中會出現的數字(?)&lt;br>
-那麼總代價就是所有葉子的權重乘上各自的深度的和&lt;br>
-我們想要讓這個代價越小越好&lt;br>
-可以發現，在最優解$T$中：&lt;/p></description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>&lt;h1 id="我很忙">我很忙&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408">https://tioj.ck.tp.edu.tw/problems/1408&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定$n$個時段$[l_i, r_i)$&lt;br>
-問至少有多少單位時間要是忙碌的才能滿足&lt;br>
-「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)&lt;/p></description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</guid><description>&lt;h1 id="萬里長城">萬里長城&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1441">https://tioj.ck.tp.edu.tw/problems/1441&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定一個序列，找出最長的「長城」子序列&lt;br>
-一個序列$&amp;lt; a_1,a_2,\dots,a_n &amp;gt;$必須符合下列幾點才算是「長城」&lt;/p>
-&lt;ol>
-&lt;li>n是奇數&lt;/li>
-&lt;li>若$i$是偶數，則$a_i$必須小於相鄰的項&lt;/li>
-&lt;li>若$i$是奇數，則$a_i$必須大於相鄰的項&lt;/li>
-&lt;/ol>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>貪心法&lt;br>
-維護一個tail表示前$i$項滿足點2. 3.的最佳解，其結尾是多少&lt;br>
-假設下一個項h必須比tail大&lt;br>
-若h比tail大，那就直接接上去(並更新tail)，否則就把tail替換成h&lt;br>
-反之亦然&lt;/p></description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</guid><description>&lt;h1 id="黑色騎士團的飛彈野望">黑色騎士團的飛彈野望&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1567">https://tioj.ck.tp.edu.tw/problems/1567&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點&lt;br>
-若不可行輸出-1&lt;/p>
-&lt;h2 id="solution">Solution&lt;/h2>
-&lt;p>首先我們對每個點都可以知道包覆它的圓的圓心範圍在$x$軸的哪段區間&lt;br>
-那題目就轉換成在$x$軸上放一些圓心，使得每個點對應的區間內都至少有一個點被選到&lt;br>
-此為greedy經典題，按照右界排序後，由小到大檢查若某個區間還沒有放東西就放一個在它的右界&lt;/p></description></item></channel></rss>
+&lt;br&gt;
+在一片山的上空，高度為$T$處有$N$個處於不同水平位置的燈泡，如上圖所示。&lt;br&gt;
+如果山的邊界上某一點與第$i$盞燈的連線不經過任何山稜線上的一點，我們稱第$i$盞燈可以照亮該點。&lt;br&gt;
+請問在所有$M$盞燈中，至少要打開幾盞燈，才能照亮山上每一個轉折點，或者打開所有的燈也無法照亮所有轉折點？&lt;/p&gt;</description></item><item><title>TIOJ-1861</title><link>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</link><pubDate>Fri, 01 May 2020 21:10:56 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/01/TIOJ-1861/</guid><description>&lt;h1 id="蘿莉切割問題"&gt;蘿莉切割問題&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1861"&gt;https://tioj.ck.tp.edu.tw/problems/1861&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;請你把一個數字$L$切成$a_1, a_2, \dots, a_n$&lt;br&gt;
+切一個數字$x$的代價是$x$，可以把它切成$b, x-b$兩個數字&lt;br&gt;
+找出最小的代價&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;霍夫曼編碼XD老題目&lt;br&gt;
+把切割的過程看成一個二元樹，每個$a_i$都代表一個葉子&lt;br&gt;
+其餘的節點代表合併中會出現的數字(?)&lt;br&gt;
+那麼總代價就是所有葉子的權重乘上各自的深度的和&lt;br&gt;
+我們想要讓這個代價越小越好&lt;br&gt;
+可以發現，在最優解$T$中：&lt;/p&gt;</description></item><item><title>TIOJ-1408</title><link>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</link><pubDate>Tue, 14 Jan 2020 21:06:04 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/14/TIOJ-1408/</guid><description>&lt;h1 id="我很忙"&gt;我很忙&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1408"&gt;https://tioj.ck.tp.edu.tw/problems/1408&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定$n$個時段$[l_i, r_i)$&lt;br&gt;
+問至少有多少單位時間要是忙碌的才能滿足&lt;br&gt;
+「每個時段中都有至少$c_i$單位時間是忙碌的」(每單位時間都不是忙碌就是空閒)&lt;/p&gt;</description></item><item><title>TIOJ-1441</title><link>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</link><pubDate>Tue, 31 Dec 2019 15:03:27 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/31/TIOJ-1441/</guid><description>&lt;h1 id="萬里長城"&gt;萬里長城&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1441"&gt;https://tioj.ck.tp.edu.tw/problems/1441&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定一個序列，找出最長的「長城」子序列&lt;br&gt;
+一個序列$&amp;lt; a_1,a_2,\dots,a_n &amp;gt;$必須符合下列幾點才算是「長城」&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;n是奇數&lt;/li&gt;
+&lt;li&gt;若$i$是偶數，則$a_i$必須小於相鄰的項&lt;/li&gt;
+&lt;li&gt;若$i$是奇數，則$a_i$必須大於相鄰的項&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;貪心法&lt;br&gt;
+維護一個tail表示前$i$項滿足點2. 3.的最佳解，其結尾是多少&lt;br&gt;
+假設下一個項h必須比tail大&lt;br&gt;
+若h比tail大，那就直接接上去(並更新tail)，否則就把tail替換成h&lt;br&gt;
+反之亦然&lt;/p&gt;</description></item><item><title>TIOJ-1567</title><link>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</link><pubDate>Sun, 29 Dec 2019 21:08:14 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2019/12/29/TIOJ-1567/</guid><description>&lt;h1 id="黑色騎士團的飛彈野望"&gt;黑色騎士團的飛彈野望&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1567"&gt;https://tioj.ck.tp.edu.tw/problems/1567&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;給定平面上$n$個點，求至少要用幾個圓心在$x$軸上、半徑為$r$的圓才能覆蓋所有點&lt;br&gt;
+若不可行輸出-1&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;首先我們對每個點都可以知道包覆它的圓的圓心範圍在$x$軸的哪段區間&lt;br&gt;
+那題目就轉換成在$x$軸上放一些圓心，使得每個點對應的區間內都至少有一個點被選到&lt;br&gt;
+此為greedy經典題，按照右界排序後，由小到大檢查若某個區間還沒有放東西就放一個在它的右界&lt;/p&gt;</description></item></channel></rss>

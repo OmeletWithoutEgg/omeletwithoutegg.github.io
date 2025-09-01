@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Experience on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/experience/</link><description>Recent content in Experience on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 14 Jul 2025 00:08:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml"/><item><title>Farewell NPSC</title><link>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</link><pubDate>Mon, 14 Jul 2025 00:08:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</guid><description>&lt;h1 id="npsc-之於我">NPSC 之於我&lt;/h1>
-&lt;p>稍微來講點古。&lt;/p>
-&lt;p>NPSC 可以說是我開始競程的一個重要的比賽。國中的時候，因為參加資優課程，資訊科的老師開始教我們 C 語言。刷了不少 zerojudge。忘了為什麼但總之就組隊去打 NPSC。&lt;/p></description></item><item><title>第八學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</link><pubDate>Tue, 24 Jun 2025 21:05:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</guid><description>&lt;h1 id="eighth-semester">Eighth semester&lt;/h1>
-&lt;p>已經是最後一個學期了。雖然一兩個禮拜前學期的最後一堂課就結束了但一直沒有提筆開寫。&lt;br>
-感覺沒什麼臉寫修課心得但還是想有始有終。&lt;/p>
-&lt;h2 id="日文二下">日文二下&lt;/h2>
-&lt;p>本學期理論上唯一（？）可能讓我畢不了業的課（如果被當的話）。&lt;br>
-從藍色那本課本變成綠色了。沒有修到日文三讓人感覺這課本只用一學期很浪費。&lt;br>
-不得不說感覺進度真的好緩慢。兩次段考各考三課，感覺範圍小到填空能填錯的選項也沒多少個。&lt;br>
-以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p></description></item><item><title>Final Fantasy VII Rebirth Review</title><link>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</link><pubDate>Wed, 02 Apr 2025 11:35:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</guid><description>&lt;h1 id="最終幻想七-重生-遊玩小記">最終幻想七 重生 遊玩小記&lt;/h1>
-&lt;h2 id="前情提要">前情提要&lt;/h2>
-&lt;p>15 年前的 FF7 在 2020 年推出重製版，預計分成三部曲製作。撰文時一二部曲已公開，副標題分別是 remake 和 rebirth。我當然是沒玩過無印版本的 FF7，不過 2023 趁特價買了 FF7 remake 直到 2024 暑假才玩完，剛好 2024 年初 rebirth 也出了。但 rebirth 剛推出的時候是 PS5 獨占，所以直到 2025 年初收到 steam 的通知說 rebirth 要在 PC 上推出了，就把他買下去了。因為算是預購，所以是用大約七折的價格購買的。&lt;/p></description></item><item><title>Vim-fern</title><link>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</link><pubDate>Mon, 10 Mar 2025 23:21:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</guid><description>&lt;h1 id="推銷-vim-fern">推銷 vim-fern&lt;/h1>
-&lt;p>推銷用 &lt;a href="https://github.com/lambdalisue/vim-fern">vim-fern&lt;/a> 取代 NERDTree。我大概是 2023 年初換掉的，現在想說來寫個推銷 post。&lt;br>
-那時候會想要改用 vim-fern 有幾點原因：&lt;/p>
-&lt;ul>
-&lt;li>看到 NERDTree 好像要停止更新了的&lt;a href="https://github.com/preservim/nerdtree/issues/1280">通知&lt;/a>。那時候 NERDTree 非常 inactive。&lt;/li>
-&lt;li>偶爾就會踩到一些怪怪的情況（忘記是什麼了）&lt;/li>
-&lt;li>那時候在玩 nvim，想要在 nvim 和 vim 兩棲，而大部分查到的 nvim 套件 &lt;a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree.lua&lt;/a>、&lt;a href="https://github.com/nvim-neo-tree/neo-tree.nvim">neo-tree.nvim&lt;/a>、&lt;a href="https://github.com/ms-jpq/chadtree">chadtree&lt;/a> 都不能在 vim 使用。&lt;/li>
-&lt;li>原本用 NERDTree 在 startify 的頁面沒有顏色，而在 file explorer 有&lt;/li>
-&lt;/ul>
-&lt;p>換去 vim-fern 之後，覺得有以下幾點優點：&lt;/p></description></item><item><title>第七學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</link><pubDate>Thu, 13 Feb 2025 22:31:27 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</guid><description>&lt;h1 id="seventh-semester">Seventh semester&lt;/h1>
-&lt;p>因為第六學期的最後感覺太捲了，於是這學期就決定躺平。本來有想要修密碼學的理論基礎，但他還要分組報告報論文，然後課上沒一個認識的，就逃走了。課表於是看起來非常羞恥。&lt;/p></description></item><item><title>cmake: Could NOT find libxxx on Archlinux</title><link>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</link><pubDate>Sun, 19 Jan 2025 23:46:42 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</guid><description>&lt;h1 id="在-archlinux-踩到的-cmake-坑">在 Archlinux 踩到的 CMake 坑&lt;/h1>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>最近在修改 TIOJ，但一直沒辦法 native 的在 archlinux 上編譯 &lt;a href="https://github.com/TIOJ-INFOR-Online-Judge/tioj-judge/">tioj-judge&lt;/a>，只能用 docker 跑 ubuntu。於是今天就跳進這個坑裡研究為什麼。&lt;/p>
-&lt;p>節錄部份錯誤訊息&lt;/p>
-&lt;pre tabindex="0">&lt;code>-- The C compiler identification is GNU 14.2.1
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Experience on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/experience/</link><description>Recent content in Experience on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Mon, 14 Jul 2025 00:08:59 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml"/><item><title>Farewell NPSC</title><link>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</link><pubDate>Mon, 14 Jul 2025 00:08:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/07/14/farewell-npsc/</guid><description>&lt;h1 id="npsc-之於我"&gt;NPSC 之於我&lt;/h1&gt;
+&lt;p&gt;稍微來講點古。&lt;/p&gt;
+&lt;p&gt;NPSC 可以說是我開始競程的一個重要的比賽。國中的時候，因為參加資優課程，資訊科的老師開始教我們 C 語言。刷了不少 zerojudge。忘了為什麼但總之就組隊去打 NPSC。&lt;/p&gt;</description></item><item><title>第八學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</link><pubDate>Tue, 24 Jun 2025 21:05:38 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/06/24/csie-8th-sem/</guid><description>&lt;h1 id="eighth-semester"&gt;Eighth semester&lt;/h1&gt;
+&lt;p&gt;已經是最後一個學期了。雖然一兩個禮拜前學期的最後一堂課就結束了但一直沒有提筆開寫。&lt;br&gt;
+感覺沒什麼臉寫修課心得但還是想有始有終。&lt;/p&gt;
+&lt;h2 id="日文二下"&gt;日文二下&lt;/h2&gt;
+&lt;p&gt;本學期理論上唯一（？）可能讓我畢不了業的課（如果被當的話）。&lt;br&gt;
+從藍色那本課本變成綠色了。沒有修到日文三讓人感覺這課本只用一學期很浪費。&lt;br&gt;
+不得不說感覺進度真的好緩慢。兩次段考各考三課，感覺範圍小到填空能填錯的選項也沒多少個。&lt;br&gt;
+以這學期來說的話，感覺我得到的價值是把可能形、意向形還有「〜てきます」「〜ていきます」「〜ておきます」這些文法在課中系統性的學了一遍。還有就是每個禮拜可以跟坐前面的同學練習講日文。&lt;/p&gt;</description></item><item><title>Final Fantasy VII Rebirth Review</title><link>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</link><pubDate>Wed, 02 Apr 2025 11:35:33 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/04/02/ff7-rebirth/</guid><description>&lt;h1 id="最終幻想七-重生-遊玩小記"&gt;最終幻想七 重生 遊玩小記&lt;/h1&gt;
+&lt;h2 id="前情提要"&gt;前情提要&lt;/h2&gt;
+&lt;p&gt;15 年前的 FF7 在 2020 年推出重製版，預計分成三部曲製作。撰文時一二部曲已公開，副標題分別是 remake 和 rebirth。我當然是沒玩過無印版本的 FF7，不過 2023 趁特價買了 FF7 remake 直到 2024 暑假才玩完，剛好 2024 年初 rebirth 也出了。但 rebirth 剛推出的時候是 PS5 獨占，所以直到 2025 年初收到 steam 的通知說 rebirth 要在 PC 上推出了，就把他買下去了。因為算是預購，所以是用大約七折的價格購買的。&lt;/p&gt;</description></item><item><title>Vim-fern</title><link>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</link><pubDate>Mon, 10 Mar 2025 23:21:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/03/10/vim-fern/</guid><description>&lt;h1 id="推銷-vim-fern"&gt;推銷 vim-fern&lt;/h1&gt;
+&lt;p&gt;推銷用 &lt;a href="https://github.com/lambdalisue/vim-fern"&gt;vim-fern&lt;/a&gt; 取代 NERDTree。我大概是 2023 年初換掉的，現在想說來寫個推銷 post。&lt;br&gt;
+那時候會想要改用 vim-fern 有幾點原因：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;看到 NERDTree 好像要停止更新了的&lt;a href="https://github.com/preservim/nerdtree/issues/1280"&gt;通知&lt;/a&gt;。那時候 NERDTree 非常 inactive。&lt;/li&gt;
+&lt;li&gt;偶爾就會踩到一些怪怪的情況（忘記是什麼了）&lt;/li&gt;
+&lt;li&gt;那時候在玩 nvim，想要在 nvim 和 vim 兩棲，而大部分查到的 nvim 套件 &lt;a href="https://github.com/nvim-tree/nvim-tree.lua"&gt;nvim-tree.lua&lt;/a&gt;、&lt;a href="https://github.com/nvim-neo-tree/neo-tree.nvim"&gt;neo-tree.nvim&lt;/a&gt;、&lt;a href="https://github.com/ms-jpq/chadtree"&gt;chadtree&lt;/a&gt; 都不能在 vim 使用。&lt;/li&gt;
+&lt;li&gt;原本用 NERDTree 在 startify 的頁面沒有顏色，而在 file explorer 有&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;換去 vim-fern 之後，覺得有以下幾點優點：&lt;/p&gt;</description></item><item><title>第七學期修課心得</title><link>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</link><pubDate>Thu, 13 Feb 2025 22:31:27 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/02/13/csie-7th-sem/</guid><description>&lt;h1 id="seventh-semester"&gt;Seventh semester&lt;/h1&gt;
+&lt;p&gt;因為第六學期的最後感覺太捲了，於是這學期就決定躺平。本來有想要修密碼學的理論基礎，但他還要分組報告報論文，然後課上沒一個認識的，就逃走了。課表於是看起來非常羞恥。&lt;/p&gt;</description></item><item><title>cmake: Could NOT find libxxx on Archlinux</title><link>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</link><pubDate>Sun, 19 Jan 2025 23:46:42 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2025/01/19/tioj-cmake-archlinux/</guid><description>&lt;h1 id="在-archlinux-踩到的-cmake-坑"&gt;在 Archlinux 踩到的 CMake 坑&lt;/h1&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;最近在修改 TIOJ，但一直沒辦法 native 的在 archlinux 上編譯 &lt;a href="https://github.com/TIOJ-INFOR-Online-Judge/tioj-judge/"&gt;tioj-judge&lt;/a&gt;，只能用 docker 跑 ubuntu。於是今天就跳進這個坑裡研究為什麼。&lt;/p&gt;
+&lt;p&gt;節錄部份錯誤訊息&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;-- The C compiler identification is GNU 14.2.1
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -40,105 +40,105 @@ Call Stack (most recent call first):
  /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:603 (_FPHSA_FAILURE_MESSAGE)
  build/_deps/cjail-src/cmake/Findlibseccomp.cmake:57 (find_package_handle_standard_args)
  build/_deps/cjail-src/CMakeLists.txt:19 (find_package)
-&lt;/code>&lt;/pre>&lt;p>也就是說，他在抱怨 &lt;code>find_library&lt;/code> 找不到 &lt;code>libseccomp&lt;/code> 這個 library。但是我已經 &lt;code>sudo pacman -S libseccomp&lt;/code> 了，而且 &lt;code>/usr/lib/libseccomp.so&lt;/code> 也好好的存在。&lt;/p></description></item><item><title>第四學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</link><pubDate>Fri, 29 Nov 2024 23:52:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</guid><description>&lt;h1 id="fourth-semester">Fourth semester&lt;/h1>
-&lt;p>拖到了大四上快結束才寫，基本上是看著課表回憶一下大概而已。&lt;br>
-這學期的成績看起來不是很好看。&lt;/p>
-&lt;h2 id="桌球初級">桌球初級&lt;/h2>
-&lt;p>可以說是蠻輕鬆的課，老師會從看起來真的很基本的握拍開始教起，然後發球、回球等等，最後面會用餵球的方式讓我們試著左推右攻。&lt;br>
-老師讓全班的人每四個人分一組，每節課就是先集合起來講解動作之後，四個人回到同一桌輪流互相練習。我們這一桌有一個日本人，不過剛好也有一位日文系的同學，感覺有點形成他們兩位女生的小泡泡（？）&lt;/p></description></item><item><title>ICPC Korea Regional 2024</title><link>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</link><pubDate>Fri, 22 Nov 2024 19:34:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</guid><description>&lt;h1 id="icpc-首爾站-2024-遊記">ICPC 首爾站 2024 遊記&lt;/h1>
-&lt;p>以下用 C 跟 R 簡稱我的隊友。Day 2 正式賽會有分隔線，怕暴雷自己小心。&lt;/p>
-&lt;h2 id="day--2">Day -2&lt;/h2>
-&lt;p>飆趕國文作業，寫完之後倒頭大睡。&lt;/p>
-&lt;h2 id="day--1">Day -1&lt;/h2>
-&lt;p>作息亂掉然後被硬拉去下午五點到十點團練。&lt;/p></description></item><item><title>第六學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</link><pubDate>Sun, 07 Jul 2024 21:31:21 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</guid><description>&lt;h1 id="sixth-semester">Sixth semester&lt;/h1>
-&lt;p>在大約一月底我們得知 ICPC 會在四月舉辦。於是這學期我還是盡量把課排少，學期初的時候我原本選了一個國文課，但後來退掉了，學分也剩下 14 學分需要低修單。剩下只有五門課看起來真的超級少的。&lt;/p></description></item><item><title>第五學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</link><pubDate>Mon, 01 Jul 2024 01:19:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</guid><description>&lt;h1 id="fifth-semester">Fifth semester&lt;/h1>
-&lt;p>這個學期（大三上）原本預期是要在十一月參加 ICPC World Finals 的，所以選課除了必修以外都是選自己想選的，盡量只選到不用填低修單的學分。&lt;br>
-很貪心的還想要 4.3，但最後大失敗。&lt;/p></description></item><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>&lt;h1 id="icpc-world-finals-luxor-世界總決賽紀錄">ICPC World Finals @Luxor 世界總決賽紀錄&lt;/h1>
-&lt;p>部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。&lt;br>
-如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。&lt;/p></description></item><item><title>第三學期修課心得</title><link>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</link><pubDate>Sun, 15 Jan 2023 22:52:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</guid><description>&lt;h1 id="third-semester">Third semester&lt;/h1>
-&lt;p>感覺時間過好快，雖然才第三個學期而已。&lt;/p>
-&lt;hr>
-&lt;h2 id="足球初級">足球初級&lt;/h2>
-&lt;p>修了個體育。&lt;br>
-老師上課的方式是每個禮拜會先教一下子基本動作，然後就讓我們分組比賽。&lt;br>
-分數來源除了考規則、考基本動作以外，還有在比賽中有好表現可以加分。&lt;br>
-分組是期初分完就固定的，但依照我的社恐力和組員相處還是很吃力（？）&lt;/p></description></item><item><title>KDE connect</title><link>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</link><pubDate>Wed, 07 Sep 2022 00:57:23 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</guid><description>&lt;h1 id="kde-connect">KDE connect&lt;/h1>
-&lt;p>之前一個用 Mac 的同學表示他覺得蘋果系列的東西很方便，因為蘋果他們家把手機跟平板整合得很好，例如：可以把手機上的照片、影片等等直接傳到電腦，用手機掃了 QR code 之後用電腦開啟，同步手機與電腦的剪貼版等等。&lt;/p></description></item><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>&lt;h1 id="second-semester">Second semester&lt;/h1>
-&lt;p>年久失修的部落格，繼續只更新修課心得（流水帳）&lt;/p>
-&lt;h2 id="網路管理與系統管理-nasa">網路管理與系統管理 (NASA)&lt;/h2>
-&lt;p>禮拜一早九（？）可以選三學分跟一學分，如果選一學分的似乎可以拿來抵服務學習，不過我選了三學分的。&lt;br>
-這門課有一個必須要在寒假左右完成的 HW0，事後看起來有點奇怪的點是學期中有不少課在教的反而是在 HW0 中感覺有用到的東西。&lt;/p></description></item><item><title>Minecraft Launcher Murmur</title><link>https://omeletwithoutegg.github.io/2022/04/16/minecraft-launcher-murmur/</link><pubDate>Sat, 16 Apr 2022 17:32:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/04/16/minecraft-launcher-murmur/</guid><description>&lt;h1 id="抱怨一下-minecraft-launcher">抱怨一下 Minecraft Launcher&lt;/h1>
-&lt;p>之前我都是用 &lt;a href="https://aur.archlinux.org/packages/minecraft-launcher">這個 AUR package&lt;/a> 作為 Minecraft launcher，但某個時間點之後發現登入帳號之後下面有一行小字寫說什麼無法成功記住你的登入 session 之類的，下次就必須重新進去那個跑很慢的視窗輸入密碼。&lt;br>
-Minecraft 官網上對這個警告的指示是這樣子的：&lt;br>
-&lt;a href="https://help.minecraft.net/hc/en-us/articles/4408668374925-Secure-Token-Storage-Failure-on-Linux">https://help.minecraft.net/hc/en-us/articles/4408668374925-Secure-Token-Storage-Failure-on-Linux&lt;/a>&lt;br>
-也就是說，即使不是 GNOME desktop 也叫你要去裝 gnome-keyring 這個套件，照做之後果然可以成功記住我的身份。&lt;/p></description></item><item><title>第一學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</link><pubDate>Fri, 04 Feb 2022 09:28:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</guid><description>&lt;h1 id="first-semester-in-csie">First semester in csie&lt;/h1>
-&lt;p>部落格已經年久失修ㄌ…&lt;br>
-來講講這學期都在做什麼好了&lt;/p>
-&lt;h2 id="計算機程式設計">計算機程式設計&lt;/h2>
-&lt;p>系上大一必修，大致上是教 C 的語法，從基本 IO 到指標、檔案操作、簡單遞迴等等。&lt;br>
-在高中有參加過程式競賽可以向教授申請當「真強者」，可以不用小考、上課就會在學期末拿到 A+，而通常「真強者」負責的工作是讓這門課的學生可以問問題，並且要負責驗題，整學期總共 30 題吧。&lt;br>
-劉邦鋒教授很毒舌（？）常常嘴砲學生跟助教，然後這學期說助教出的測資太爛，我們又多了一個出測資的工作。&lt;/p></description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考">2021 TOI 模考&lt;/h1>
-&lt;p>可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br>
-今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p></description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</link><pubDate>Sun, 19 Sep 2021 16:32:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</guid><description>&lt;p>這篇是想放一些神奇的C++語法錯誤&lt;br>
-也可能會放基礎的(X&lt;br>
-然後可能會是動態更新&lt;/p>
-&lt;h1 id="lambda-capture">lambda capture&lt;/h1>
-&lt;p>(Update: 2021/1/21)&lt;br>
-這似乎是因為capture到值的時候還沒成功建構func這個變數，所以會出問題&lt;/p></description></item><item><title>科學班三年之小小紀錄</title><link>https://omeletwithoutegg.github.io/2021/08/13/ckcos-10th/</link><pubDate>Fri, 13 Aug 2021 04:47:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/13/ckcos-10th/</guid><description>&lt;h1 id="ckcos-10th">CKCOS 10th&lt;/h1>
-&lt;p>身為一個特殊班的學生，在畢業的時候還是會想打一些心得給未來的學弟參考吧。主要是希望對科學班有興趣的人可以了解科學班的一些權益與義務，在做這些決定的時候有更多資訊可以評估，也可以做好一些心理準備。&lt;/p></description></item><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>&lt;h1 id="除錯模板的重要">除錯模板的重要&lt;/h1>
-&lt;p>這是一篇很短的廢文。&lt;/p>
-&lt;p>當你發現你寫出的程式有 bug 的時候，就會是你花上很多時間的時候。&lt;br>
-尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。&lt;/p></description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
-&lt;p>只是想打一下IOI的心得而已&lt;br>
-可能還是流水帳請多多包含(?)&lt;/p>
-&lt;h2 id="before">Before&lt;/h2>
-&lt;p>其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強&lt;br>
-因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西&lt;br>
-另外很好笑的是我這學期比前兩個學期還努力追學分，因為之前太混了XD這學期剛好要全部過才夠畢業的學分竟然夠了&lt;br>
-謝謝所有即使我交作業很混還是讓我過的老師!&lt;/p></description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</guid><description>&lt;h1 id="ioic-2021">IOIC 2021&lt;/h1>
-&lt;p>去年就來過一次了，今年再次造訪這困難的營隊。&lt;br>
-其實幾乎沒有什麼特別不一樣的地方，不過我想說還是寫個短短的紀錄。&lt;/p>
-&lt;h1 id="吃的東西">吃的東西&lt;/h1>
-&lt;p>IOIC有準備早餐、午餐跟晚餐讓我們不用擔心時間太可怕的問題（？）&lt;br>
-然後還有下午的點心，大致上都不錯吃，除了有魚刺的便當QQ&lt;br>
-可惜的是去年會在吃東西的時候放影片，今年可能是因為疫情怕我們吵雜起來，甚至還讓我們坐梅花座。&lt;/p></description></item><item><title>jngen</title><link>https://omeletwithoutegg.github.io/2021/01/24/jngen/</link><pubDate>Sun, 24 Jan 2021 01:17:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/24/jngen/</guid><description>&lt;h1 id="jngen">jngen&lt;/h1>
-&lt;p>最近在生107北市賽題目的測資想放到TIOJ上面，其中一題是關於找兩個凸包的兩條內公切線交點。&lt;br>
-因為不太知道測資怎麼生，又想到之前東東有提過jngen這個東西，因此就把他拿來生成我需要的凸包了。&lt;br>
-我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X&lt;/p></description></item><item><title>BambooFox CTF 2021</title><link>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</link><pubDate>Tue, 19 Jan 2021 12:09:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</guid><description>&lt;h1 id="bamboofox-ctf-2021">BambooFox CTF 2021&lt;/h1>
-&lt;p>這次是第二次參加BambooFox，不過事前都沒有做什麼練習wwww本來想說去OT之前推薦過的網站練習一些基礎，但是忘記是什麼網站了888&lt;br>
-依然是跟joy一隊，然後另一個隊友變成casper了&lt;/p></description></item><item><title>Miku Cursor on Arch Linux</title><link>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</link><pubDate>Thu, 10 Dec 2020 17:05:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</guid><description>&lt;h1 id="在arch的初音游標">在Arch的初音游標&lt;/h1>
-&lt;p>因為在Windows有下載一個可愛的初音游標，但是之前換成Ubuntu後就沒有把他裝回來，覺得很可惜。&lt;br>
-因此現在換成Arch之後，想說應該有一些社群的package可以用了，直接抓來就好，但是怎麼google都google不到？&lt;br>
-因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。&lt;/p></description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>&lt;p>好久又沒有發文了&lt;br>
-來講講上一次發文之後我都在做什麼好了&lt;/p>
-&lt;h2 id="before-ioi">Before IOI&lt;/h2>
-&lt;p>首先在8/17開始所謂的賽前集訓&lt;br>
-總共為期三周，分別在台南、新竹和台北&lt;br>
-在台南的前幾天是一個奇怪的教授要我們寫爛題目&lt;br>
-還得用PC2 judge，不過我們最後都變成在玩python in one line了&lt;br>
-之後他又講了有關點連通、邊連通跟degree之類的關係&lt;br>
-後來吳邦一教授來講課，他講了一些IOI的題目還有一些常見的trick，例如四邊形之類的&lt;br>
-那時候就能看出來我超爛(((&lt;/p></description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</guid><description>&lt;h1 id="二階奇幻之旅">二階奇幻之旅&lt;/h1>
-&lt;p>原本一段剛好和一階撞到，可以免考，但是因為疫情的緣故又錯過了&lt;br>
-不過在我們從一階回來之後傳出師大那邊有確診的消息，而且還跟我們用過同一間教室(?)&lt;br>
-所以我們就剛好利用防疫公假得到免考的資格，嘻嘻&lt;/p></description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>&lt;h1 id="選訓生活">選訓生活(?)&lt;/h1>
-&lt;p>最近部落格停更好久喔&amp;gt;&amp;lt;&lt;br>
-不知道有沒有沒有追蹤我facebook的人在看我的部落格，嘻嘻&lt;/p>
-&lt;h2 id="入營考當天">入營考當天?&lt;/h2>
-&lt;p>我和蕭梓宏還有王品翔一起去師大看好戲(X)&lt;br>
-然後電石似乎在旁邊寫作業和嘴砲(?)&lt;br>
-不過記分板上沒有每個人的名字，只有學校和編號&lt;br>
-幸好遇到一個奇怪的家長有拍名單之類的XD 讓我們能夠對照&lt;br>
-最後結果是AY破台拿第一，除了03t以外的建中高二應該都進了一階&lt;br>
-我們之後分團去ㄘ了拉麵！&lt;/p></description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>&lt;h1 id="2020-ioic-小記">2020 IOIC 小記&lt;/h1>
-&lt;p>五天都11點回家 好累喔&lt;br>
-不過聽到很多神奇技巧和神奇題目(?)&lt;/p>
-&lt;h2 id="day-1">Day 1&lt;/h2>
-&lt;p>早上是常數優化與電腦結構，看到一些毒瘤的東東還有會造成我常數大的一些寫法&lt;/p></description></item><item><title>bamboofox-ctf</title><link>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</link><pubDate>Thu, 02 Jan 2020 15:00:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</guid><description>&lt;p>這次打跨年CTF應該是我第一次打一個正常的CTF吧（？）&lt;br>
-感覺好多有趣的題目www&lt;br>
-&lt;a href="https://ctf.bamboofox.cs.nctu.edu.tw/">https://ctf.bamboofox.cs.nctu.edu.tw/&lt;/a>&lt;/p>
-&lt;h1 id="solved-problems">Solved Problems&lt;/h1>
-&lt;h2 id="welcome">Welcome&lt;/h2>
-&lt;p>Joy說看題目給的影片就有flag了&lt;/p>
-&lt;h2 id="web-newbie">Web newbie&lt;/h2>
-&lt;p>被作業解掉，好像往source code的註解裡面找就對了&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;也就是說，他在抱怨 &lt;code&gt;find_library&lt;/code&gt; 找不到 &lt;code&gt;libseccomp&lt;/code&gt; 這個 library。但是我已經 &lt;code&gt;sudo pacman -S libseccomp&lt;/code&gt; 了，而且 &lt;code&gt;/usr/lib/libseccomp.so&lt;/code&gt; 也好好的存在。&lt;/p&gt;</description></item><item><title>第四學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</link><pubDate>Fri, 29 Nov 2024 23:52:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</guid><description>&lt;h1 id="fourth-semester"&gt;Fourth semester&lt;/h1&gt;
+&lt;p&gt;拖到了大四上快結束才寫，基本上是看著課表回憶一下大概而已。&lt;br&gt;
+這學期的成績看起來不是很好看。&lt;/p&gt;
+&lt;h2 id="桌球初級"&gt;桌球初級&lt;/h2&gt;
+&lt;p&gt;可以說是蠻輕鬆的課，老師會從看起來真的很基本的握拍開始教起，然後發球、回球等等，最後面會用餵球的方式讓我們試著左推右攻。&lt;br&gt;
+老師讓全班的人每四個人分一組，每節課就是先集合起來講解動作之後，四個人回到同一桌輪流互相練習。我們這一桌有一個日本人，不過剛好也有一位日文系的同學，感覺有點形成他們兩位女生的小泡泡（？）&lt;/p&gt;</description></item><item><title>ICPC Korea Regional 2024</title><link>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</link><pubDate>Fri, 22 Nov 2024 19:34:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/22/icpc-korea-regional-2024/</guid><description>&lt;h1 id="icpc-首爾站-2024-遊記"&gt;ICPC 首爾站 2024 遊記&lt;/h1&gt;
+&lt;p&gt;以下用 C 跟 R 簡稱我的隊友。Day 2 正式賽會有分隔線，怕暴雷自己小心。&lt;/p&gt;
+&lt;h2 id="day--2"&gt;Day -2&lt;/h2&gt;
+&lt;p&gt;飆趕國文作業，寫完之後倒頭大睡。&lt;/p&gt;
+&lt;h2 id="day--1"&gt;Day -1&lt;/h2&gt;
+&lt;p&gt;作息亂掉然後被硬拉去下午五點到十點團練。&lt;/p&gt;</description></item><item><title>第六學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</link><pubDate>Sun, 07 Jul 2024 21:31:21 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/07/csie-6th-sem/</guid><description>&lt;h1 id="sixth-semester"&gt;Sixth semester&lt;/h1&gt;
+&lt;p&gt;在大約一月底我們得知 ICPC 會在四月舉辦。於是這學期我還是盡量把課排少，學期初的時候我原本選了一個國文課，但後來退掉了，學分也剩下 14 學分需要低修單。剩下只有五門課看起來真的超級少的。&lt;/p&gt;</description></item><item><title>第五學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</link><pubDate>Mon, 01 Jul 2024 01:19:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/07/01/csie-5th-sem/</guid><description>&lt;h1 id="fifth-semester"&gt;Fifth semester&lt;/h1&gt;
+&lt;p&gt;這個學期（大三上）原本預期是要在十一月參加 ICPC World Finals 的，所以選課除了必修以外都是選自己想選的，盡量只選到不用填低修單的學分。&lt;br&gt;
+很貪心的還想要 4.3，但最後大失敗。&lt;/p&gt;</description></item><item><title>ICPC World Finals @Luxor</title><link>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</link><pubDate>Thu, 25 Apr 2024 03:27:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/04/25/icpc-wf-luxor/</guid><description>&lt;h1 id="icpc-world-finals-luxor-世界總決賽紀錄"&gt;ICPC World Finals @Luxor 世界總決賽紀錄&lt;/h1&gt;
+&lt;p&gt;部落格快要長草了趕快趁現在更新一下，也是為了把自己花這麼多時間投入的活動做個好好紀錄。&lt;br&gt;
+如果是怕暴雷題目的，需要跳過的段落是「正賽」與「賽後與心得」兩段，包含賽後心得裡面的 comment。&lt;/p&gt;</description></item><item><title>第三學期修課心得</title><link>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</link><pubDate>Sun, 15 Jan 2023 22:52:47 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2023/01/15/csie-3rd-sem/</guid><description>&lt;h1 id="third-semester"&gt;Third semester&lt;/h1&gt;
+&lt;p&gt;感覺時間過好快，雖然才第三個學期而已。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="足球初級"&gt;足球初級&lt;/h2&gt;
+&lt;p&gt;修了個體育。&lt;br&gt;
+老師上課的方式是每個禮拜會先教一下子基本動作，然後就讓我們分組比賽。&lt;br&gt;
+分數來源除了考規則、考基本動作以外，還有在比賽中有好表現可以加分。&lt;br&gt;
+分組是期初分完就固定的，但依照我的社恐力和組員相處還是很吃力（？）&lt;/p&gt;</description></item><item><title>KDE connect</title><link>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</link><pubDate>Wed, 07 Sep 2022 00:57:23 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/09/07/kdeconnect/</guid><description>&lt;h1 id="kde-connect"&gt;KDE connect&lt;/h1&gt;
+&lt;p&gt;之前一個用 Mac 的同學表示他覺得蘋果系列的東西很方便，因為蘋果他們家把手機跟平板整合得很好，例如：可以把手機上的照片、影片等等直接傳到電腦，用手機掃了 QR code 之後用電腦開啟，同步手機與電腦的剪貼版等等。&lt;/p&gt;</description></item><item><title>第二學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</link><pubDate>Thu, 14 Jul 2022 09:16:59 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/07/14/csie-2nd-sem/</guid><description>&lt;h1 id="second-semester"&gt;Second semester&lt;/h1&gt;
+&lt;p&gt;年久失修的部落格，繼續只更新修課心得（流水帳）&lt;/p&gt;
+&lt;h2 id="網路管理與系統管理-nasa"&gt;網路管理與系統管理 (NASA)&lt;/h2&gt;
+&lt;p&gt;禮拜一早九（？）可以選三學分跟一學分，如果選一學分的似乎可以拿來抵服務學習，不過我選了三學分的。&lt;br&gt;
+這門課有一個必須要在寒假左右完成的 HW0，事後看起來有點奇怪的點是學期中有不少課在教的反而是在 HW0 中感覺有用到的東西。&lt;/p&gt;</description></item><item><title>Minecraft Launcher Murmur</title><link>https://omeletwithoutegg.github.io/2022/04/16/minecraft-launcher-murmur/</link><pubDate>Sat, 16 Apr 2022 17:32:05 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/04/16/minecraft-launcher-murmur/</guid><description>&lt;h1 id="抱怨一下-minecraft-launcher"&gt;抱怨一下 Minecraft Launcher&lt;/h1&gt;
+&lt;p&gt;之前我都是用 &lt;a href="https://aur.archlinux.org/packages/minecraft-launcher"&gt;這個 AUR package&lt;/a&gt; 作為 Minecraft launcher，但某個時間點之後發現登入帳號之後下面有一行小字寫說什麼無法成功記住你的登入 session 之類的，下次就必須重新進去那個跑很慢的視窗輸入密碼。&lt;br&gt;
+Minecraft 官網上對這個警告的指示是這樣子的：&lt;br&gt;
+&lt;a href="https://help.minecraft.net/hc/en-us/articles/4408668374925-Secure-Token-Storage-Failure-on-Linux"&gt;https://help.minecraft.net/hc/en-us/articles/4408668374925-Secure-Token-Storage-Failure-on-Linux&lt;/a&gt;&lt;br&gt;
+也就是說，即使不是 GNOME desktop 也叫你要去裝 gnome-keyring 這個套件，照做之後果然可以成功記住我的身份。&lt;/p&gt;</description></item><item><title>第一學期修課心得</title><link>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</link><pubDate>Fri, 04 Feb 2022 09:28:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2022/02/04/csie-1st-sem/</guid><description>&lt;h1 id="first-semester-in-csie"&gt;First semester in csie&lt;/h1&gt;
+&lt;p&gt;部落格已經年久失修ㄌ…&lt;br&gt;
+來講講這學期都在做什麼好了&lt;/p&gt;
+&lt;h2 id="計算機程式設計"&gt;計算機程式設計&lt;/h2&gt;
+&lt;p&gt;系上大一必修，大致上是教 C 的語法，從基本 IO 到指標、檔案操作、簡單遞迴等等。&lt;br&gt;
+在高中有參加過程式競賽可以向教授申請當「真強者」，可以不用小考、上課就會在學期末拿到 A+，而通常「真強者」負責的工作是讓這門課的學生可以問問題，並且要負責驗題，整學期總共 30 題吧。&lt;br&gt;
+劉邦鋒教授很毒舌（？）常常嘴砲學生跟助教，然後這學期說助教出的測資太爛，我們又多了一個出測資的工作。&lt;/p&gt;</description></item><item><title>TOI 2021 Solutions</title><link>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</link><pubDate>Wed, 22 Sep 2021 01:15:50 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/22/toi-2021-sols/</guid><description>&lt;h1 id="2021-toi-模考"&gt;2021 TOI 模考&lt;/h1&gt;
+&lt;p&gt;可能因為以前 TOI 模考題也不太公開，好像從來沒人做過這種事情，但因為現在模考題甚至可以在公開的 facebook 社團看到，所以我認為這樣沒有太不妥。&lt;br&gt;
+今年的題目相較於去年簡單很多（去年好難…），所以就嘗試把四次模擬考總共 16 題的解寫完啦～要是能幫上想做今年模考題的人就好了！&lt;/p&gt;</description></item><item><title>Cppbugs</title><link>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</link><pubDate>Sun, 19 Sep 2021 16:32:00 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/09/19/cppbugs/</guid><description>&lt;p&gt;這篇是想放一些神奇的C++語法錯誤&lt;br&gt;
+也可能會放基礎的(X&lt;br&gt;
+然後可能會是動態更新&lt;/p&gt;
+&lt;h1 id="lambda-capture"&gt;lambda capture&lt;/h1&gt;
+&lt;p&gt;(Update: 2021/1/21)&lt;br&gt;
+這似乎是因為capture到值的時候還沒成功建構func這個變數，所以會出問題&lt;/p&gt;</description></item><item><title>科學班三年之小小紀錄</title><link>https://omeletwithoutegg.github.io/2021/08/13/ckcos-10th/</link><pubDate>Fri, 13 Aug 2021 04:47:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/13/ckcos-10th/</guid><description>&lt;h1 id="ckcos-10th"&gt;CKCOS 10th&lt;/h1&gt;
+&lt;p&gt;身為一個特殊班的學生，在畢業的時候還是會想打一些心得給未來的學弟參考吧。主要是希望對科學班有興趣的人可以了解科學班的一些權益與義務，在做這些決定的時候有更多資訊可以評估，也可以做好一些心理準備。&lt;/p&gt;</description></item><item><title>Debug Template</title><link>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</link><pubDate>Sun, 08 Aug 2021 00:28:51 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/08/08/debug-template/</guid><description>&lt;h1 id="除錯模板的重要"&gt;除錯模板的重要&lt;/h1&gt;
+&lt;p&gt;這是一篇很短的廢文。&lt;/p&gt;
+&lt;p&gt;當你發現你寫出的程式有 bug 的時候，就會是你花上很多時間的時候。&lt;br&gt;
+尤其是在打 OI 的情況下，付出一點點時間讓 debug 變更簡單是有必要的。&lt;/p&gt;</description></item><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>&lt;h1 id="ioi-2021"&gt;IOI 2021&lt;/h1&gt;
+&lt;p&gt;只是想打一下IOI的心得而已&lt;br&gt;
+可能還是流水帳請多多包含(?)&lt;/p&gt;
+&lt;h2 id="before"&gt;Before&lt;/h2&gt;
+&lt;p&gt;其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強&lt;br&gt;
+因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西&lt;br&gt;
+另外很好笑的是我這學期比前兩個學期還努力追學分，因為之前太混了XD這學期剛好要全部過才夠畢業的學分竟然夠了&lt;br&gt;
+謝謝所有即使我交作業很混還是讓我過的老師!&lt;/p&gt;</description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</guid><description>&lt;h1 id="ioic-2021"&gt;IOIC 2021&lt;/h1&gt;
+&lt;p&gt;去年就來過一次了，今年再次造訪這困難的營隊。&lt;br&gt;
+其實幾乎沒有什麼特別不一樣的地方，不過我想說還是寫個短短的紀錄。&lt;/p&gt;
+&lt;h1 id="吃的東西"&gt;吃的東西&lt;/h1&gt;
+&lt;p&gt;IOIC有準備早餐、午餐跟晚餐讓我們不用擔心時間太可怕的問題（？）&lt;br&gt;
+然後還有下午的點心，大致上都不錯吃，除了有魚刺的便當QQ&lt;br&gt;
+可惜的是去年會在吃東西的時候放影片，今年可能是因為疫情怕我們吵雜起來，甚至還讓我們坐梅花座。&lt;/p&gt;</description></item><item><title>jngen</title><link>https://omeletwithoutegg.github.io/2021/01/24/jngen/</link><pubDate>Sun, 24 Jan 2021 01:17:43 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/24/jngen/</guid><description>&lt;h1 id="jngen"&gt;jngen&lt;/h1&gt;
+&lt;p&gt;最近在生107北市賽題目的測資想放到TIOJ上面，其中一題是關於找兩個凸包的兩條內公切線交點。&lt;br&gt;
+因為不太知道測資怎麼生，又想到之前東東有提過jngen這個東西，因此就把他拿來生成我需要的凸包了。&lt;br&gt;
+我覺得他的函式、方法都很乾淨，然後因為生測資仔細看了一下文件，就想說把他貼到部落格推廣一下（X&lt;/p&gt;</description></item><item><title>BambooFox CTF 2021</title><link>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</link><pubDate>Tue, 19 Jan 2021 12:09:52 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/01/19/bamboofox-ctf-2021/</guid><description>&lt;h1 id="bamboofox-ctf-2021"&gt;BambooFox CTF 2021&lt;/h1&gt;
+&lt;p&gt;這次是第二次參加BambooFox，不過事前都沒有做什麼練習wwww本來想說去OT之前推薦過的網站練習一些基礎，但是忘記是什麼網站了888&lt;br&gt;
+依然是跟joy一隊，然後另一個隊友變成casper了&lt;/p&gt;</description></item><item><title>Miku Cursor on Arch Linux</title><link>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</link><pubDate>Thu, 10 Dec 2020 17:05:06 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2020/12/10/arch-miku-mouse/</guid><description>&lt;h1 id="在arch的初音游標"&gt;在Arch的初音游標&lt;/h1&gt;
+&lt;p&gt;因為在Windows有下載一個可愛的初音游標，但是之前換成Ubuntu後就沒有把他裝回來，覺得很可惜。&lt;br&gt;
+因此現在換成Arch之後，想說應該有一些社群的package可以用了，直接抓來就好，但是怎麼google都google不到？&lt;br&gt;
+因此大概花了半天去解決他，想說在這邊做個小筆記以免下次重裝的時候重摸一遍。&lt;/p&gt;</description></item><item><title>Recent</title><link>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</link><pubDate>Tue, 06 Oct 2020 23:25:02 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/10/06/after-IOI/</guid><description>&lt;p&gt;好久又沒有發文了&lt;br&gt;
+來講講上一次發文之後我都在做什麼好了&lt;/p&gt;
+&lt;h2 id="before-ioi"&gt;Before IOI&lt;/h2&gt;
+&lt;p&gt;首先在8/17開始所謂的賽前集訓&lt;br&gt;
+總共為期三周，分別在台南、新竹和台北&lt;br&gt;
+在台南的前幾天是一個奇怪的教授要我們寫爛題目&lt;br&gt;
+還得用PC2 judge，不過我們最後都變成在玩python in one line了&lt;br&gt;
+之後他又講了有關點連通、邊連通跟degree之類的關係&lt;br&gt;
+後來吳邦一教授來講課，他講了一些IOI的題目還有一些常見的trick，例如四邊形之類的&lt;br&gt;
+那時候就能看出來我超爛(((&lt;/p&gt;</description></item><item><title>TOI-2!</title><link>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</link><pubDate>Thu, 07 May 2020 20:26:47 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/05/07/TOI-2/</guid><description>&lt;h1 id="二階奇幻之旅"&gt;二階奇幻之旅&lt;/h1&gt;
+&lt;p&gt;原本一段剛好和一階撞到，可以免考，但是因為疫情的緣故又錯過了&lt;br&gt;
+不過在我們從一階回來之後傳出師大那邊有確診的消息，而且還跟我們用過同一間教室(?)&lt;br&gt;
+所以我們就剛好利用防疫公假得到免考的資格，嘻嘻&lt;/p&gt;</description></item><item><title>TOI-1!</title><link>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</link><pubDate>Thu, 30 Apr 2020 18:23:34 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/04/30/TOI-1/</guid><description>&lt;h1 id="選訓生活"&gt;選訓生活(?)&lt;/h1&gt;
+&lt;p&gt;最近部落格停更好久喔&amp;gt;&amp;lt;&lt;br&gt;
+不知道有沒有沒有追蹤我facebook的人在看我的部落格，嘻嘻&lt;/p&gt;
+&lt;h2 id="入營考當天"&gt;入營考當天?&lt;/h2&gt;
+&lt;p&gt;我和蕭梓宏還有王品翔一起去師大看好戲(X)&lt;br&gt;
+然後電石似乎在旁邊寫作業和嘴砲(?)&lt;br&gt;
+不過記分板上沒有每個人的名字，只有學校和編號&lt;br&gt;
+幸好遇到一個奇怪的家長有拍名單之類的XD 讓我們能夠對照&lt;br&gt;
+最後結果是AY破台拿第一，除了03t以外的建中高二應該都進了一階&lt;br&gt;
+我們之後分團去ㄘ了拉麵！&lt;/p&gt;</description></item><item><title>IOICamp-2020</title><link>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</link><pubDate>Sat, 25 Jan 2020 23:08:29 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/25/IOICamp-2020/</guid><description>&lt;h1 id="2020-ioic-小記"&gt;2020 IOIC 小記&lt;/h1&gt;
+&lt;p&gt;五天都11點回家 好累喔&lt;br&gt;
+不過聽到很多神奇技巧和神奇題目(?)&lt;/p&gt;
+&lt;h2 id="day-1"&gt;Day 1&lt;/h2&gt;
+&lt;p&gt;早上是常數優化與電腦結構，看到一些毒瘤的東東還有會造成我常數大的一些寫法&lt;/p&gt;</description></item><item><title>bamboofox-ctf</title><link>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</link><pubDate>Thu, 02 Jan 2020 15:00:23 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/01/02/bamboofox-ctf/</guid><description>&lt;p&gt;這次打跨年CTF應該是我第一次打一個正常的CTF吧（？）&lt;br&gt;
+感覺好多有趣的題目www&lt;br&gt;
+&lt;a href="https://ctf.bamboofox.cs.nctu.edu.tw/"&gt;https://ctf.bamboofox.cs.nctu.edu.tw/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="solved-problems"&gt;Solved Problems&lt;/h1&gt;
+&lt;h2 id="welcome"&gt;Welcome&lt;/h2&gt;
+&lt;p&gt;Joy說看題目給的影片就有flag了&lt;/p&gt;
+&lt;h2 id="web-newbie"&gt;Web newbie&lt;/h2&gt;
+&lt;p&gt;被作業解掉，好像往source code的註解裡面找就對了&lt;/p&gt;</description></item></channel></rss>

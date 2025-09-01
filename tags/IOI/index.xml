@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IOI on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/IOI/</link><description>Recent content in IOI on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 01 Jul 2021 07:11:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/IOI/index.xml" rel="self" type="application/rss+xml"/><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>&lt;h1 id="ioi-2021">IOI 2021&lt;/h1>
-&lt;p>只是想打一下IOI的心得而已&lt;br>
-可能還是流水帳請多多包含(?)&lt;/p>
-&lt;h2 id="before">Before&lt;/h2>
-&lt;p>其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強&lt;br>
-因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西&lt;br>
-另外很好笑的是我這學期比前兩個學期還努力追學分，因為之前太混了XD這學期剛好要全部過才夠畢業的學分竟然夠了&lt;br>
-謝謝所有即使我交作業很混還是讓我過的老師!&lt;/p></description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</guid><description>&lt;h1 id="快樂規劃路徑">快樂規劃路徑&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1629">https://tioj.ck.tp.edu.tw/problems/1629&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>樹朋友們生活在一個湖邊，湖邊的樹依照順時針方向編號為$1, 2, \dots n$。&lt;br>
-他們想要讓自己更快樂，所以發明了一種娛樂方式，就是找到一條路徑遍歷全部$n$棵樹剛好一遍。&lt;br>
-要從A樹到B樹唯一的方法就是架一條很長的梯子直直伸過去。&lt;br>
-可是當然不是任何兩棵樹都可以架梯子，所以他們會先把所有可能架梯子的樹對(沒有錯字!)給你。&lt;br>
-當然，(A,B)表示A可以到B、B也可以到A。&lt;br>
-但是給定的遊歷路徑不能出現任兩條梯子交叉，不然可能會讓想要快樂的樹朋友發生危險。&lt;/p></description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</guid><description>&lt;h1 id="ioi2015boxes-一堆盒子">【IOI2015】Boxes 一堆盒子&lt;/h1>
-&lt;p>&lt;a href="https://tioj.ck.tp.edu.tw/problems/1884">https://tioj.ck.tp.edu.tw/problems/1884&lt;/a>&lt;/p>
-&lt;h2 id="description">Description&lt;/h2>
-&lt;p>有$L$個地區排成一環狀，依序編號為$0, 1, \dots, L-1$&lt;br>
-從任何一個地區移動到相鄰的地區所需要的時間均為一單位時間&lt;/p>
-&lt;p>現在有$N$個人需要寄送貨物，他們分別住在編號為$p_1, p_2, \dots, p_n$的地區(已經依非遞減順序排序)&lt;br>
-貨物中心位在編號$0$的地區，並且郵差每次只能帶至多$K$件貨物移動&lt;br>
-(世界上只有一個郵差&amp;hellip;真辛苦)&lt;br>
-身上所有的貨物都送到後，必須回到$0$號地區，才能進行下一輪的送貨&lt;br>
-你的任務就是幫送貨的郵差計算他最少要花多少時間&lt;br>
-才能從貨物中心出發，寄送完所有貨物，最後再回到貨物中心&lt;br>
-(其中可能會回貨物中心很多次以補充貨物)&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IOI on 蛋餅的競程隨筆</title><link>https://omeletwithoutegg.github.io/tags/IOI/</link><description>Recent content in IOI on 蛋餅的競程隨筆</description><generator>Hugo</generator><language>en-us</language><copyright>Omelet</copyright><lastBuildDate>Thu, 01 Jul 2021 07:11:55 +0800</lastBuildDate><atom:link href="https://omeletwithoutegg.github.io/tags/IOI/index.xml" rel="self" type="application/rss+xml"/><item><title>IOI2021</title><link>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</link><pubDate>Thu, 01 Jul 2021 07:11:55 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/07/01/IOI2021/</guid><description>&lt;h1 id="ioi-2021"&gt;IOI 2021&lt;/h1&gt;
+&lt;p&gt;只是想打一下IOI的心得而已&lt;br&gt;
+可能還是流水帳請多多包含(?)&lt;/p&gt;
+&lt;h2 id="before"&gt;Before&lt;/h2&gt;
+&lt;p&gt;其實到二模都還很擔心會不會當上國手，還有擔心自己的實力到底有沒有變強&lt;br&gt;
+因為一模是因為靠奇怪互動線性遞迴的題目才上去，啊二模唯一寫出來的題目也是IOI根本不考的東西&lt;br&gt;
+另外很好笑的是我這學期比前兩個學期還努力追學分，因為之前太混了XD這學期剛好要全部過才夠畢業的學分竟然夠了&lt;br&gt;
+謝謝所有即使我交作業很混還是讓我過的老師!&lt;/p&gt;</description></item><item><title>TIOJ-1629</title><link>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</link><pubDate>Sat, 29 Feb 2020 00:09:33 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/29/TIOJ-1629/</guid><description>&lt;h1 id="快樂規劃路徑"&gt;快樂規劃路徑&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1629"&gt;https://tioj.ck.tp.edu.tw/problems/1629&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;樹朋友們生活在一個湖邊，湖邊的樹依照順時針方向編號為$1, 2, \dots n$。&lt;br&gt;
+他們想要讓自己更快樂，所以發明了一種娛樂方式，就是找到一條路徑遍歷全部$n$棵樹剛好一遍。&lt;br&gt;
+要從A樹到B樹唯一的方法就是架一條很長的梯子直直伸過去。&lt;br&gt;
+可是當然不是任何兩棵樹都可以架梯子，所以他們會先把所有可能架梯子的樹對(沒有錯字!)給你。&lt;br&gt;
+當然，(A,B)表示A可以到B、B也可以到A。&lt;br&gt;
+但是給定的遊歷路徑不能出現任兩條梯子交叉，不然可能會讓想要快樂的樹朋友發生危險。&lt;/p&gt;</description></item><item><title>TIOJ-1884</title><link>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</link><pubDate>Thu, 20 Feb 2020 23:53:21 +0000</pubDate><guid>https://omeletwithoutegg.github.io/2020/02/20/TIOJ-1884/</guid><description>&lt;h1 id="ioi2015boxes-一堆盒子"&gt;【IOI2015】Boxes 一堆盒子&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://tioj.ck.tp.edu.tw/problems/1884"&gt;https://tioj.ck.tp.edu.tw/problems/1884&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;有$L$個地區排成一環狀，依序編號為$0, 1, \dots, L-1$&lt;br&gt;
+從任何一個地區移動到相鄰的地區所需要的時間均為一單位時間&lt;/p&gt;
+&lt;p&gt;現在有$N$個人需要寄送貨物，他們分別住在編號為$p_1, p_2, \dots, p_n$的地區(已經依非遞減順序排序)&lt;br&gt;
+貨物中心位在編號$0$的地區，並且郵差每次只能帶至多$K$件貨物移動&lt;br&gt;
+(世界上只有一個郵差&amp;hellip;真辛苦)&lt;br&gt;
+身上所有的貨物都送到後，必須回到$0$號地區，才能進行下一輪的送貨&lt;br&gt;
+你的任務就是幫送貨的郵差計算他最少要花多少時間&lt;br&gt;
+才能從貨物中心出發，寄送完所有貨物，最後再回到貨物中心&lt;br&gt;
+(其中可能會回貨物中心很多次以補充貨物)&lt;/p&gt;</description></item></channel></rss>
