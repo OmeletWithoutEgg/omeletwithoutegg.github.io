@@ -408,6 +408,8 @@ int main() {
     參考指令：`UBSAN_OPTIONS=print_stacktrace=1:halt_on_error=1 ./main`
 - 沒辦法偵測「無副作用的無窮迴圈」，即 [我寫程式發現費馬最後定理有反例了！](https://en.cppreference.com/w/c/language/behavior.html)
     解決方法：不知道，感覺像停機問題
+- 開了 sanitizer 之後程式會跑比較慢，而且記憶體用量也會變多
+    解決方法：對拍如果想要測速度的時候不要開 sanitizer（可以只開編譯警告，不會影響程式執行速度）
 
 另外，ckiseki 的模板在 sanitizer 的部份有加上 float-divide-by-zero,float-cast-overflow，多檢查一些跟浮點數有關的東西。
 
@@ -644,6 +646,8 @@ int main() {
 - 除以零（僅限編譯期就知道分母是 0 的情況）
 - 該 return 的沒 return
   - sanitizer 會報錯，編譯也會給你警告。
+
+順帶一提，雖然跟編譯警告沒什麼關係，存在一個 `-Wfatal-errors` 的 flag，可以讓編譯器在遇到第一個編譯錯誤的時候就停止編譯並只印出相關的錯誤，讓編譯器不會一次吐出所有錯誤訊息，在這邊順便推銷一下。
 
 <!-- Unreachable code -->
 
