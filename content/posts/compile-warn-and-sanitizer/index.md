@@ -84,7 +84,7 @@ int main() {
 以上是一段會觸發 addresss sanitizer 的程式，實際執行之後會印出如下的錯誤訊息並以 exit code 1 強制結束程式。
 ![](asan.png)
 
-錯誤訊息上方有一段寫了好幾個函式的 signature、檔名、行號，是錯誤發生點時的 calling stack 的長相，通常來說 debug 時就是從上往下看，關注前幾個出現在 main 裡面的地方，像這張截圖就是 `main.cpp` 的第七行中我們因為傳了錯的參數給 `reverse` 才導致記憶體戳出界。
+錯誤訊息上方有一段寫了好幾個函式的 signature、檔名、行號，是錯誤發生點時的 calling stack 的長相，通常來說 debug 時就是從上往下看，關注前幾個出現在 main 裡面的地方，像這張截圖就是 `main.cpp` 的第七行中我們因為傳了錯的參數給 `reverse` 才導致記憶體戳出界。這裡會好好的寫檔案跟行號是因為我們有加 `-g` 這個參數，如果沒有加的話只會顯示函數的位址。
 
 ## Sanitizers
 
