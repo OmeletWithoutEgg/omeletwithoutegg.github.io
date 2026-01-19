@@ -74,7 +74,7 @@ $$1=d_1&amp;lt;d_2&amp;lt;&amp;hellip;&amp;lt;d_k=x$$&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; S(n);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#75715e"&gt;// F_prime: \sum _ {p is prime, p &amp;lt;= n} f(p)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; V &lt;span style="color:#a6e22e"&gt;F_comp&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;g, &lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;h) {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; V &lt;span style="color:#a6e22e"&gt;F_comp&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;g, &lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;h) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) R(i) &lt;span style="color:#f92672"&gt;=&lt;/span&gt; h(S(i));
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld p : sv.primes &lt;span style="color:#f92672"&gt;|&lt;/span&gt; views&lt;span style="color:#f92672"&gt;::&lt;/span&gt;reverse)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) {
@@ -87,7 +87,7 @@ $$1=d_1&amp;lt;d_2&amp;lt;&amp;hellip;&amp;lt;d_k=x$$&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; R(n);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#75715e"&gt;// F_comp: \sum _ {2 &amp;lt;= i &amp;lt;= n} g(i)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;}; &lt;span style="color:#75715e"&gt;// O(n^{3/4} / log n)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}; &lt;span style="color:#75715e"&gt;// O(n^{3/4} / log n)
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果去看我們 &lt;a href="https://github.com/1011cychien/R-12-forked-codebook/blob/master/codes/Math/Min25Sieve.cpp"&gt;codebook 的連結&lt;/a&gt; 會看到還有一串中文的註解，以下大概就是仔細的講那一串中文的註解然後隨機補充一些東西。&lt;/p&gt;</description></item></channel></rss>

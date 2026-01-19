@@ -226,7 +226,7 @@ $$1=d_1&amp;lt;d_2&amp;lt;&amp;hellip;&amp;lt;d_k=x$$&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; S(n);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#75715e"&gt;// F_prime: \sum _ {p is prime, p &amp;lt;= n} f(p)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; V &lt;span style="color:#a6e22e"&gt;F_comp&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;g, &lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;h) {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; V &lt;span style="color:#a6e22e"&gt;F_comp&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;g, &lt;span style="color:#66d9ef"&gt;auto&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt;h) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) R(i) &lt;span style="color:#f92672"&gt;=&lt;/span&gt; h(S(i));
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld p : sv.primes &lt;span style="color:#f92672"&gt;|&lt;/span&gt; views&lt;span style="color:#f92672"&gt;::&lt;/span&gt;reverse)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; (lld i : quo) {
@@ -239,7 +239,7 @@ $$1=d_1&amp;lt;d_2&amp;lt;&amp;hellip;&amp;lt;d_k=x$$&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; R(n);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } &lt;span style="color:#75715e"&gt;// F_comp: \sum _ {2 &amp;lt;= i &amp;lt;= n} g(i)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;}; &lt;span style="color:#75715e"&gt;// O(n^{3/4} / log n)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}; &lt;span style="color:#75715e"&gt;// O(n^{3/4} / log n)
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果去看我們 &lt;a href="https://github.com/1011cychien/R-12-forked-codebook/blob/master/codes/Math/Min25Sieve.cpp"&gt;codebook 的連結&lt;/a&gt; 會看到還有一串中文的註解，以下大概就是仔細的講那一串中文的註解然後隨機補充一些東西。&lt;/p&gt;</description></item><item><title>第四學期修課心得</title><link>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</link><pubDate>Fri, 29 Nov 2024 23:52:40 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2024/11/29/csie-4th-sem/</guid><description>&lt;h1 id="fourth-semester"&gt;Fourth semester&lt;/h1&gt;
@@ -379,90 +379,39 @@ $n \leq 50$&lt;/p&gt;</description></item><item><title>科學班三年之小小�
 &lt;h2 id="一些其他人的-blog"&gt;一些其他人的 blog&lt;/h2&gt;
 &lt;p&gt;友情（？）連結&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.jikuai.dev/"&gt;https://www.jikuai.dev/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://abc864197532.github.io/"&gt;https://abc864197532.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alvingogo.github.io/"&gt;https://alvingogo.github.io/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.simbafs.cc/"&gt;https://blog.simbafs.cc/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://littlecube8152.github.io/"&gt;https://littlecube8152.github.io/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.forvkusa.csie.org/"&gt;https://blog.forvkusa.csie.org/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://yunxiurz.github.io/"&gt;https://yunxiurz.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://casperwang.pages.dev/"&gt;https://casperwang.pages.dev/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pixelcat31415.github.io/"&gt;https://pixelcat31415.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sunmoon-template.blogspot.com/"&gt;https://sunmoon-template.blogspot.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://the-coding-pooh.github.io/"&gt;https://the-coding-pooh.github.io/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://tmt514.github.io/"&gt;https://tmt514.github.io/&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://tmt514.github.io/algorithm-analysis/"&gt;https://tmt514.github.io/algorithm-analysis/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://sunmoon-template.blogspot.com/"&gt;https://sunmoon-template.blogspot.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://abc864197532.github.io/"&gt;https://abc864197532.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://pixelcat31415.github.io/"&gt;https://pixelcat31415.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alvingogo.github.io/"&gt;https://alvingogo.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://caidocode.blogspot.com/"&gt;https://caidocode.blogspot.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://the-coding-pooh.github.io/"&gt;https://the-coding-pooh.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="陌生人的-blog--手動-rss"&gt;陌生人的 blog : 手動 RSS&lt;/h2&gt;
+&lt;p&gt;此處放的是在 net surfing 的時候逛到覺得很酷但被我歸類在陌生人的 blog。共通點只有都是繁中。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://wiwi.blog/"&gt;https://wiwi.blog/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gou935.com/"&gt;https://gou935.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://noa.bearblog.dev/blog/"&gt;https://noa.bearblog.dev/blog/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://e89295.com/blog/"&gt;https://e89295.com/blog/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ja-errorpro.codes/"&gt;https://ja-errorpro.codes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.evanlin.com/"&gt;https://www.evanlin.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gholk.github.io/"&gt;https://gholk.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mes0903.github.io/"&gt;https://mes0903.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.vincentthh35.com/"&gt;https://www.vincentthh35.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://tux24.xyz/"&gt;https://tux24.xyz/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://noa.bearblog.dev/blog/"&gt;https://noa.bearblog.dev/blog/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ivonblog.com/"&gt;https://ivonblog.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ummit.dev/blog"&gt;https://ummit.dev/blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="年久失修的-blog"&gt;年久失修（？）的 blog&lt;/h2&gt;
-&lt;p&gt;我的 blog 隨時也會年久失修。&lt;/p&gt;
-&lt;!-- 註：目前分類依據姑且先依照更新本文時一年內有沒有新文章 --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.wiwiho.me/"&gt;https://www.wiwiho.me/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://baluteshih.blogspot.com/"&gt;https://baluteshih.blogspot.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://brian.su/"&gt;https://brian.su/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://cbdcoding.blogspot.com/"&gt;https://cbdcoding.blogspot.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://oi.ototot.tw/"&gt;https://oi.ototot.tw/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.nerde.pw/"&gt;https://blog.nerde.pw/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ltf0501.github.io/"&gt;https://ltf0501.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://sorahisa.github.io/"&gt;https://sorahisa.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.nella17.tw/"&gt;https://blog.nella17.tw/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://casperwang.pages.dev/"&gt;https://casperwang.pages.dev/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://fhvirus.github.io/"&gt;https://fhvirus.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://erdone.github.io/"&gt;https://erdone.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://emanlaicepsa.github.io/"&gt;https://emanlaicepsa.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://hiiragi4000.blogspot.com/"&gt;https://hiiragi4000.blogspot.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- - https://codingsimplifylife.blogspot.com/ --&gt;
-&lt;!-- - https://blog.tommydong.live/ --&gt;
-&lt;h2 id="一些隨機的外國資料"&gt;一些隨機的外國資料&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://shanlunjiajian.github.io/"&gt;https://shanlunjiajian.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://zhoukangyang.blog.uoj.ac/"&gt;https://zhoukangyang.blog.uoj.ac/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/enkerewpo/OI-Public-Library/tree/master/IOI%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%80%99%E9%80%89%E9%98%9F%E8%AE%BA%E6%96%87"&gt;https://github.com/enkerewpo/OI-Public-Library/tree/master/IOI%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%80%99%E9%80%89%E9%98%9F%E8%AE%BA%E6%96%87&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ei1333.github.io/"&gt;https://ei1333.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.mathenachia.blog/"&gt;https://www.mathenachia.blog/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://rsk0315.github.io/"&gt;https://rsk0315.github.io/&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://rsk0315.github.io/playground/gutcha.html"&gt;https://rsk0315.github.io/playground/gutcha.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://maspypy.com/"&gt;https://maspypy.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://noshi91.hatenablog.com/"&gt;https://noshi91.hatenablog.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.shift.moe/"&gt;https://blog.shift.moe/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.comp.nus.edu.sg/~stevenha/"&gt;https://www.comp.nus.edu.sg/~stevenha/&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://visualgo.net/en"&gt;https://visualgo.net/en&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://cpbook.net/"&gt;https://cpbook.net/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://thisisadi.yoga/ICPC/"&gt;https://thisisadi.yoga/ICPC/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://byvoid.com/zht/"&gt;https://byvoid.com/zht/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://zhuanlan.zhihu.com/p/697429479"&gt;https://zhuanlan.zhihu.com/p/697429479&lt;/a&gt; （有空的話 dump 內容出來）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- 如何打ICPC（详细揭秘） - 知乎，是 https://cphof.org/profile/topcoder:moorhsum 寫的 --&gt;
-&lt;h2 id="一些網站"&gt;一些網站&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://guide.ntucpc.org/topics/"&gt;NTUCPC Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://oichecklist.pythonanywhere.com/"&gt;OI checklist&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://codeforces.com/"&gt;CF&lt;/a&gt;, &lt;a href="https://tioj.ck.tp.edu.tw/"&gt;TIOJ&lt;/a&gt;, &lt;a href="https://atcoder.jp/"&gt;AtCoder&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://usaco.guide/"&gt;USACO Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://oiwiki.org/"&gt;OI wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://ucup.ac/"&gt;Universal Cup&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://judge.yosupo.jp/"&gt;Library Checker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="一些工具"&gt;一些工具&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://domen111.github.io/Draw-Graph/"&gt;Draw Graph&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://yuantiji.ac/en/"&gt;is-my-problem-new&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://icpcapac.solved.ac/2025"&gt;Asia Pacific site score table&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.twpca.org/"&gt;TWPCA&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://icpcarchive.github.io/"&gt;ICPC Archives&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://sorahisa-rank.github.io/"&gt;區域賽記分板紀錄&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;&lt;a href="https://www.vim.org/download.php"&gt;vim&lt;/a&gt;、&lt;a href="https://github.com/junegunn/vim-plug"&gt;vim-plug&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>&lt;p&gt;本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。&lt;br&gt;
+&lt;p&gt;我的 blog 隨時也會年久失修。&lt;/p&gt;</description></item><item><title>線性遞迴淺淺談</title><link>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</link><pubDate>Sat, 13 Feb 2021 16:28:29 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/13/linear-recurrence/</guid><description>&lt;p&gt;本篇將會介紹快速求線性遞迴數列某項的方法，以及Berlekamp-Massey演算法和一些在矩陣上的應用。&lt;br&gt;
 主要是一個整理資料還有學習筆記的功能，還有老實說這東西算是偏門又毒瘤，追求實用的人不要看XD。&lt;/p&gt;</description></item><item><title>IOICAMP 2021</title><link>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</link><pubDate>Sat, 06 Feb 2021 18:07:48 +0800</pubDate><guid>https://omeletwithoutegg.github.io/2021/02/06/IOICamp-2021/</guid><description>&lt;h1 id="ioic-2021"&gt;IOIC 2021&lt;/h1&gt;
 &lt;p&gt;去年就來過一次了，今年再次造訪這困難的營隊。&lt;br&gt;
 其實幾乎沒有什麼特別不一樣的地方，不過我想說還是寫個短短的紀錄。&lt;/p&gt;
@@ -948,7 +897,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// \ ____ \
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// \_______\___\_______\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// An AC a day keeps the doctor away.
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#pragma g++ optimize(&amp;#34;Ofast&amp;#34;)
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#pragma loop_opt(on)
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;bits/extc++.h&amp;gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
@@ -957,7 +906,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#else
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define debug(x) ((void)0)
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#endif &lt;/span&gt;&lt;span style="color:#75715e"&gt;// local
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;#define all(v) begin(v),end(v)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define all(v) begin(v),end(v)
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define siz(v) (ll(v.size()))
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define get_pos(v,x) (lower_bound(all(v),x)-begin(v))
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define sort_uni(v) sort(begin(v),end(v)),v.erase(unique(begin(v),end(v)),end(v))
@@ -965,7 +914,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define ff first
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define ss second
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#define mem(v,x) memset(v,x,sizeof v)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; std;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; __gnu_pbds;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;typedef&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;int64_t&lt;/span&gt; ll;
@@ -979,7 +928,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;constexpr&lt;/span&gt; ll N &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2025&lt;/span&gt;, INF &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1e18&lt;/span&gt;, MOD &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;998244353&lt;/span&gt;, K &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;11&lt;/span&gt;, inf &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1e9&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;constexpr&lt;/span&gt; ll &lt;span style="color:#a6e22e"&gt;modpow&lt;/span&gt;(ll e,ll p,ll m&lt;span style="color:#f92672"&gt;=&lt;/span&gt;MOD) {ll r&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(;p;p&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;,e&lt;span style="color:#f92672"&gt;=&lt;/span&gt;e&lt;span style="color:#f92672"&gt;*&lt;/span&gt;e&lt;span style="color:#f92672"&gt;%&lt;/span&gt;m) &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt;(p&lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;) r&lt;span style="color:#f92672"&gt;=&lt;/span&gt;r&lt;span style="color:#f92672"&gt;*&lt;/span&gt;e&lt;span style="color:#f92672"&gt;%&lt;/span&gt;m; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; r;}
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;constexpr&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;inline&lt;/span&gt; ll &lt;span style="color:#a6e22e"&gt;cdiv&lt;/span&gt;(ll x, ll m) { &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; (x&lt;span style="color:#f92672"&gt;+&lt;/span&gt;m&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)&lt;span style="color:#f92672"&gt;/&lt;/span&gt;m; } &lt;span style="color:#75715e"&gt;// ceiling divide, x/m for flooring divide
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;struct&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;BipartiteMatching&lt;/span&gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; G[N];
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; mx[N],my[N],vis[N],now,n;
@@ -1027,7 +976,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; tr(p&lt;span style="color:#f92672"&gt;+&lt;/span&gt;q&lt;span style="color:#f92672"&gt;+&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; vector&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;array&lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; dp(p&lt;span style="color:#f92672"&gt;+&lt;/span&gt;q&lt;span style="color:#f92672"&gt;+&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;//assert(m == p+q-1);
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; m; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; i &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;; i &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; m; i&lt;span style="color:#f92672"&gt;++&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; a,b;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cin &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style="color:#f92672"&gt;&amp;gt;&amp;gt;&lt;/span&gt; b;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tr[a].pb(b&lt;span style="color:#f92672"&gt;+&lt;/span&gt;p);
@@ -1229,7 +1178,7 @@ $$&lt;br&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
 &lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; std;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;using&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;namespace&lt;/span&gt; std;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;long&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;long&lt;/span&gt; n,M,dp[&lt;span style="color:#ae81ff"&gt;2001&lt;/span&gt;];
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;signed&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;() {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ios_base&lt;span style="color:#f92672"&gt;::&lt;/span&gt;sync_with_stdio(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;), cin.tie(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;);
@@ -1295,7 +1244,7 @@ A quick brown fox jumps over the lazy dog.&lt;/p&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
 &lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;() {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	std&lt;span style="color:#f92672"&gt;::&lt;/span&gt;cout &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Hello hexo&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; std&lt;span style="color:#f92672"&gt;::&lt;/span&gt;endl;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
