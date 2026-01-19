@@ -95,13 +95,13 @@ tags: []
 - [CF](https://codeforces.com/), [TIOJ](https://tioj.ck.tp.edu.tw/), [AtCoder](https://atcoder.jp/)
 - [USACO Guide](https://usaco.guide/)
 - [OI wiki](https://oiwiki.org/)
-- [Universal Cup](http://ucup.ac/)
+- [Universal Cup](https://ucup.ac/)
 - [Library Checker](https://judge.yosupo.jp/)
 
 ## 一些工具
 
 - [Draw Graph](https://domen111.github.io/Draw-Graph/)
-- [is-my-problem-new](http://yuantiji.ac/en/)
+- [is-my-problem-new](https://yuantiji.ac/en/)
 - [Asia Pacific site score table](https://icpcapac.solved.ac/2025)
 - [TWPCA](https://www.twpca.org/)
 - [ICPC Archives](https://icpcarchive.github.io/)
