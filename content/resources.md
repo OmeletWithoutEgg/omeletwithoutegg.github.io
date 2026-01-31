@@ -26,6 +26,7 @@ tags: []
 ## 陌生人的 blog : 手動 RSS
 
 此處放的是在 net surfing 的時候逛到覺得很酷但被我歸類在陌生人的 blog。共通點只有都是繁中。
+disclaimer: 放此處並不代表我支持所有裡面的言論
 
 - <https://wiwi.blog/>
 - <https://gou935.com/>
@@ -46,7 +47,7 @@ tags: []
 我的 blog 隨時也會年久失修。
 <!-- 註：目前分類依據姑且先依照更新本文時一年內有沒有新文章 -->
 
-- <https://www.wiwiho.me/>
+- <https://wiwiho.me/>
 - <https://baluteshih.blogspot.com/>
 - <https://brian.su/>
 - <https://cbdcoding.blogspot.com/>
