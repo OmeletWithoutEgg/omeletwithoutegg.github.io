@@ -30,7 +30,6 @@ disclaimer: 放此處並不代表我支持所有裡面的言論
 
 - <https://wiwi.blog/>
 - <https://gou935.com/>
-- <https://noa.bearblog.dev/blog/>
 - <https://e89295.com/blog/>
 - <https://ja-errorpro.codes/>
 - <https://www.evanlin.com/>
