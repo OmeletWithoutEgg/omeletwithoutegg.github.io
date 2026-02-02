@@ -40,6 +40,9 @@ G 這次是投 2025 new grad，大概前一年十月左右就會放上去要投�
 - 幫忙弄資芽新官網
 - https://github.com/Task-Management-Tools/tmt-cli
 - contribute to TIOJ
+- 幫一些比賽出題驗題
+    - 校內賽、團體預賽：其實基本上沒出 idea，但有做生測資跟驗題那些比較機械的工作。
+    - 台中站：當 tester。正賽的時候在軍營（？）
 - 打一些 universal cup
     - 但我現在一點都不會做題了 退化
 - 考多益、N1。[其實沒考多益哈哈](https://www.dcard.tw/f/ntu/p/259177174)[^7]。這幾天收到 N1 合格了。
