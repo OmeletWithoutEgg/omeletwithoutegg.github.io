@@ -32,14 +32,17 @@ disclaimer: 放此處並不代表我支持所有裡面的言論
 - <https://gou935.com/>
 - <https://e89295.com/blog/>
 - <https://ja-errorpro.codes/>
+- <https://ghostsinthelab.org/>
 - <https://www.evanlin.com/>
 - <https://gholk.github.io/>
 - <https://mes0903.github.io/>
 - <https://www.vincentthh35.com/>
+- <https://www.omegaatt.com/>
 - <https://tux24.xyz/>
 - <https://noa.bearblog.dev/blog/>
 - <https://ivonblog.com/>
 - <https://ummit.dev/blog>
+- <https://meteorv.dev/>
 
 ## 年久失修（？）的 blog
 
