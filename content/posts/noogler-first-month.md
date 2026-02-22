@@ -1,7 +1,7 @@
 ---
 title: "Noogler 一個月心得"
 date: 2026-02-20T23:48:19+08:00
-draft: true
+draft: false
 mathjax: true
 tags: [experience]
 ---
