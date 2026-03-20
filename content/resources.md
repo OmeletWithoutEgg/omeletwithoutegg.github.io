@@ -14,6 +14,7 @@ tags: []
 
 - <https://abc864197532.github.io/>
 - <https://alvingogo.github.io/>
+- <https://astraytlul.github.io/>
 - <https://blog.simbafs.cc/>
 - <https://blog.forvkusa.csie.org/>
 - <https://casperwang.pages.dev/>
