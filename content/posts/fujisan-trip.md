@@ -1,6 +1,6 @@
 ---
 title: "2026 秋 東京"
-date: 2026-09-06T22:12:21+08:00
+date: 2026-10-03T02:03:48+08:00
 draft: false
 mathjax: true
 tags: [experience, trip, tokyo]
