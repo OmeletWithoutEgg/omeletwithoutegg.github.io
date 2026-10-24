@@ -11,18 +11,17 @@ tags: []
 ## 一些其他人的 blog
 
 友情（？）連結
+<!-- 註：原則上照字典序排 -->
 
 - <https://abc864197532.github.io/>
-- <https://alvingogo.github.io/>
 - <https://astraytlul.github.io/>
-- <https://blog.simbafs.cc/>
 - <https://blog.forvkusa.csie.org/>
-- <https://casperwang.pages.dev/>
 - <https://pixelcat31415.github.io/>
 - <https://sunmoon-template.blogspot.com/>
 - <https://the-coding-pooh.github.io/>
 - <https://tmt514.github.io/>
   - <https://tmt514.github.io/algorithm-analysis/>
+- <https://wiwiho.me/>
 
 ## 陌生人的 blog : 手動 RSS
 
@@ -44,15 +43,15 @@ disclaimer: 放此處並不代表我支持所有裡面的言論
 - <https://ivonblog.com/>
 - <https://ummit.dev/blog>
 - <https://meteorv.dev/>
+- <https://lq7.tw/>
 
 ## 年久失修（？）的 blog
 
 我的 blog 隨時也會年久失修。
 <!-- 註：目前分類依據姑且先依照更新本文時一年內有沒有新文章 -->
 
-- <https://wiwiho.me/>
+- <https://alvingogo.github.io/>
 - <https://baluteshih.blogspot.com/>
-- <https://brian.su/>
 - <https://cbdcoding.blogspot.com/>
 - <https://oi.ototot.tw/>
 - <https://blog.nerde.pw/>
@@ -67,8 +66,11 @@ disclaimer: 放此處並不代表我支持所有裡面的言論
 - <https://yunxiurz.github.io/>
 - <https://littlecube8152.github.io/>
 - <https://www.jikuai.dev/>
-<!-- - https://codingsimplifylife.blogspot.com/ -->
+- <https://codingsimplifylife.blogspot.com/>
+<!-- - <https://brian.su/> -->
 <!-- - https://blog.tommydong.live/ -->
+<!-- - <https://blog.simbafs.cc/> -->
+<!-- - <https://casperwang.pages.dev/> -->
 
 ## 一些隨機的外國資料
 
