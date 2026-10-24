@@ -3,7 +3,7 @@ title: "Farewell NPSC"
 date: 2025-07-14T00:08:59+08:00
 draft: false
 mathjax: true
-tags: [experience, ICPC]
+tags: [experience, icpc]
 ---
 
 # NPSC 之於我

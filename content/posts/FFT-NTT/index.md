@@ -2,7 +2,7 @@
 title: FFT-NTT
 mathjax: true
 date: 2019-12-25 14:56:54
-tags: [tutorial, FFT]
+tags: [tutorial, fft]
 ---
 # 捲積方法 OAO
 本篇的重點應該是放在理解與使用與競程相關的捲積，其中會利用到FFT或NTT加速

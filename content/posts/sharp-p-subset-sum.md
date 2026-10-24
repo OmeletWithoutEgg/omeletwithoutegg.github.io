@@ -3,7 +3,7 @@ title: "♯p Subset Sum"
 date: 2025-02-27T10:27:49+08:00
 draft: false
 mathjax: true
-tags: [tutorial, FFT, math, adhoc, template]
+tags: [tutorial, fft, math, adhoc, template]
 ---
 
 # ♯p Subset Sum : 5e5
