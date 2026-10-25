@@ -1,38 +1,46 @@
+import { isVisible, setVisible } from "./visibility.js";
+
 export function initDesktopNavigation() {
-  const menu = $("#menu");
-  const nav = $("#menu > #nav");
-  const desktopMenuIcon = $("#menu-icon");
-  const tabletMenuIcon = $("#menu-icon-tablet");
-  const tabletTopIcon = $("#top-icon-tablet");
-  const menuIcons = desktopMenuIcon.add(tabletMenuIcon);
+  const menu = document.getElementById("menu");
+  if (!menu) return () => {};
+
+  const nav = menu.querySelector("#nav");
+  const desktopMenuIcon = document.getElementById("menu-icon");
+  const tabletMenuIcon = document.getElementById("menu-icon-tablet");
+  const tabletTopIcon = document.getElementById("top-icon-tablet");
+  const menuIcons = [desktopMenuIcon, tabletMenuIcon].filter(Boolean);
 
   function setMenuExpanded(expanded) {
-    menu.css("visibility", expanded ? "visible" : "hidden");
-    menuIcons.toggleClass("active", expanded);
-    menuIcons.attr("aria-expanded", String(expanded));
+    menu.style.visibility = expanded ? "visible" : "hidden";
+    menuIcons.forEach(icon => {
+      icon.classList.toggle("active", expanded);
+      icon.setAttribute("aria-expanded", String(expanded));
+    });
   }
 
   // Keep the existing default: expand the menu on wide screens.
-  setMenuExpanded($(document).width() >= 1440);
-  menuIcons.attr("aria-controls", "menu");
-  menuIcons.on("click", function(event) {
-    event.preventDefault();
-    setMenuExpanded(menu.css("visibility") === "hidden");
+  setMenuExpanded(document.documentElement.clientWidth >= 1440);
+  menuIcons.forEach(icon => {
+    icon.setAttribute("aria-controls", "menu");
+    icon.addEventListener("click", event => {
+      event.preventDefault();
+      setMenuExpanded(getComputedStyle(menu).visibility === "hidden");
+    });
   });
 
   return function updateDesktopNavigation(scrollTop) {
-    if (!menu.length) return;
-
-    const topDistance = menu.offset().top;
+    const topDistance = menu.getClientRects().length
+      ? menu.getBoundingClientRect().top + scrollTop
+      : 0;
     // Preserve the gap between thresholds to avoid flickering at the boundary.
     const nearTop = topDistance < 60 || scrollTop === 0;
     const farFromTop = topDistance > 100;
     if (!nearTop && !farFromTop) return;
 
-    nav.toggle(nearTop);
-    if (!desktopMenuIcon.is(":visible")) {
-      tabletMenuIcon.toggle(nearTop);
-      tabletTopIcon.toggle(!nearTop);
+    setVisible(nav, nearTop);
+    if (!isVisible(desktopMenuIcon)) {
+      setVisible(tabletMenuIcon, nearTop);
+      setVisible(tabletTopIcon, !nearTop);
     }
   };
 }

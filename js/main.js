@@ -1,17 +1,25 @@
 import { initHeaderNavigation } from "./navigation/header.js";
 import { initDesktopNavigation } from "./navigation/desktop.js";
 import { initMobileNavigation } from "./navigation/mobile.js";
+import { initNavigationActions } from "./navigation/actions.js";
 
-$(document).ready(function() {
+function initNavigation() {
   initHeaderNavigation();
-  if (!$(".post").length) return;
+  if (!document.querySelector(".post")) return;
 
+  initNavigationActions();
   const updateDesktopNavigation = initDesktopNavigation();
   const updateMobileNavigation = initMobileNavigation();
 
-  $(window).on("scroll", function() {
-    const scrollTop = $(window).scrollTop();
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
     updateDesktopNavigation(scrollTop);
     updateMobileNavigation(scrollTop);
-  });
-});
+  }, { passive: true });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initNavigation, { once: true });
+} else {
+  initNavigation();
+}

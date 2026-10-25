@@ -1,21 +1,25 @@
+import { setVisible } from "./visibility.js";
+
 export function initMobileNavigation() {
-  const footer = $("#footer-post");
-  const footerSubmenus = $("#nav-footer, #toc-footer, #share-footer");
-  const footerTopIcon = $("#actions-footer > #top");
+  const footer = document.getElementById("footer-post");
+  if (!footer) return () => {};
+
+  const submenus = document.querySelectorAll("#nav-footer, #toc-footer, #share-footer");
+  const toggles = footer.querySelectorAll("[data-toggle]");
+  const topIcon = document.querySelector("#actions-footer > #top");
   let lastScrollTop = 0;
 
   return function updateMobileNavigation(scrollTop) {
-    if (!footer.length) return;
-
     // Hide while scrolling down; show while scrolling up.
-    footer.toggle(scrollTop <= lastScrollTop);
+    setVisible(footer, scrollTop <= lastScrollTop);
     lastScrollTop = scrollTop;
-    footerSubmenus.hide();
+    submenus.forEach(submenu => setVisible(submenu, false));
+    toggles.forEach(toggle => toggle.setAttribute("aria-expanded", "false"));
 
     if (scrollTop < 60) {
-      footerTopIcon.hide();
+      setVisible(topIcon, false);
     } else if (scrollTop > 100) {
-      footerTopIcon.show();
+      setVisible(topIcon, true);
     }
   };
 }
