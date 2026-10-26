@@ -1,37 +1,3 @@
-<!-- May include footer scripts here -->
-
-<!-- Add button to copy code block -->
-<script defer src="{{ "/lib/clipboard/clipboard.min.js" | relURL }}"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // copy-btn HTML
-    let btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\" style=\"z-index: 9999\">";
-    const copyIcon = {{ partial "icon.html" (dict "name" "clone") }};
-    btn += copyIcon;
-    btn += '</span>'; 
-    // mount it!
-    document.querySelectorAll(".highlight table").forEach(table => {
-      table.insertAdjacentHTML("beforebegin", btn);
-    });
-    const clip = new ClipboardJS('.btn-copy', {
-      text: function(trigger) {
-        const selector = 'code[data-lang]:not([data-lang=""]) > span';
-        const elements = Array.from(trigger.nextElementSibling.querySelectorAll(selector));
-        const code = elements.map(e => e.innerText).join('');
-        return code;
-      }
-    });
-    clip.on("success", function(e) {
-      e.trigger.setAttribute('aria-label', "Copied!");
-      e.clearSelection();
-    });
-    clip.on("error", function(e) {
-      console.error("Action:", e.action);
-      console.error("Trigger:", e.trigger);
-    });
-  });
-</script>
-
 <!-- Dark mode toggle button -->
 <button id="dark-mode-toggle-btn" aria-label="Toggle dark mode" style="display:none;">
   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -39,33 +5,7 @@
     <path class="moon" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
   </svg>
 </button>
-<script>
-  function getSavedTheme() {
-    return localStorage.getItem('theme') || 'dark';
-  }
-  function saveTheme(theme) {
-    localStorage.setItem('theme', theme);
-  }
-  function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-  }
-  function toggleTheme() {
-    const currentTheme = getSavedTheme();
-    const newTheme = currentTheme === 'dark' ? 'white' : 'dark';
-    applyTheme(newTheme);
-    saveTheme(newTheme);
-  }
-  applyTheme(getSavedTheme());
-  // listen for storage changes from other tabs
-  window.addEventListener('storage', function(e) {
-    if (e.key === 'theme') {
-      applyTheme(e.newValue);
-    }
-  });
-</script>
-
-<!-- Add background animation and toggle button -->
-<script defer src="{{ "/js/canvas-nest.js" | relURL }}"></script>
+<!-- Background animation and toggle button -->
 <canvas id="bganim-canvas"></canvas>
 
 <button id="bganim-toggle-btn" aria-label="Toggle background animation" style="display:none;">
@@ -75,69 +15,6 @@
   </svg>
 </button>
 <script>
-  let movingPoints = null;
-  function initMovingPoints() {
-    if (movingPoints !== null) return;
-    movingPoints = createMovingPoints({
-      canvas: document.getElementById("bganim-canvas"),
-      config: {
-        count: 90,
-        color: "0,200,100",
-        opacity: 0.5,
-      }
-    });
-  }
-  function getSavedEnabledState() {
-    const saved = localStorage.getItem('bganim-enabled');
-    const defaultEnabled = window.innerWidth >= 480;
-    const savedEnabled = saved === 'true';
-    return saved === null ? defaultEnabled : savedEnabled;
-  }
-  function saveEnabledState(enabled) {
-    localStorage.setItem('bganim-enabled', enabled);
-  }
-  function applyEnabledState(enabled) {
-    document.documentElement.setAttribute('data-bganim-enabled', enabled);
-    if (enabled) {
-      initMovingPoints();
-      movingPoints.startAnimation();
-    } else {
-      if (movingPoints !== null) {
-        movingPoints.stopAnimation();
-      }
-    }
-  }
-  function toggleEnabledState() {
-    const currentEnabledState = getSavedEnabledState();
-    const newEnabledState = !currentEnabledState;
-    applyEnabledState(newEnabledState);
-    saveEnabledState(newEnabledState);
-  }
-  document.addEventListener("DOMContentLoaded", function() {
-    applyEnabledState(getSavedEnabledState());
-  });
-  window.addEventListener('storage', function(e) {
-    if (e.key === 'bganim-enabled') {
-      applyEnabledState(e.newValue === 'true');
-    }
-  });
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
 </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const nav = document.querySelector("#nav > ul");
-    if (!nav) return;
-    const controls = document.createElement("li");
-    nav.append(controls);
-    for (const [id, handler] of [
-      ["dark-mode-toggle-btn", toggleTheme],
-      ["bganim-toggle-btn", toggleEnabledState],
-    ]) {
-      const button = document.getElementById(id);
-      if (!button) continue;
-      controls.append(button);
-      button.addEventListener("click", handler);
-      button.style.display = "";
-    }
-  });
-</script>
+{{ partial "asset-script.html" (dict "path" "js/site-controls.js") }}

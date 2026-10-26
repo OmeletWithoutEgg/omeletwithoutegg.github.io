@@ -1,4 +1,4 @@
-function createMovingPoints({ canvas, config = {} }) {
+export function createMovingPoints({ canvas, config = {} }) {
   if (!canvas || !(canvas instanceof HTMLCanvasElement)) {
     throw new Error("must provide a valid <canvas> element.");
   }
