@@ -1,5 +1,4 @@
 .highlight {
-  overflow-x: auto;
   margin: 1rem 0;
   padding: 10px 15px;
   border-radius: 4px;
@@ -9,11 +8,6 @@
 .highlight pre {
   margin: 0;
   padding: 0;
-  border: none;
-  background: none;
-}
-.highlight table {
-  width: auto;
 }
 .highlight td.gutter {
   text-align: right;
