@@ -8,6 +8,7 @@ function saveTheme(theme) {
 }
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
+  document.getElementById('dark-mode-toggle-btn')?.setAttribute('aria-pressed', String(theme === 'dark'));
 }
 function toggleTheme() {
   const currentTheme = getSavedTheme();
@@ -29,7 +30,8 @@ function initMovingPoints() {
 }
 function getSavedEnabledState() {
   const saved = localStorage.getItem('bganim-enabled');
-  const defaultEnabled = window.innerWidth >= 480;
+  const defaultEnabled = window.innerWidth >= 480
+    && !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const savedEnabled = saved === 'true';
   return saved === null ? defaultEnabled : savedEnabled;
 }
@@ -38,6 +40,7 @@ function saveEnabledState(enabled) {
 }
 function applyEnabledState(enabled) {
   document.documentElement.setAttribute('data-bganim-enabled', enabled);
+  document.getElementById('bganim-toggle-btn')?.setAttribute('aria-pressed', String(enabled));
   if (enabled) {
     initMovingPoints();
     movingPoints.startAnimation();
@@ -73,12 +76,17 @@ function mountControls() {
 function initSiteControls() {
   window.addEventListener("storage", function(e) {
     if (e.key === "theme") {
-      applyTheme(e.newValue);
+      applyTheme(e.newValue || "dark");
     } else if (e.key === "bganim-enabled") {
       applyEnabledState(e.newValue === "true");
     }
   });
 
+  window.matchMedia("(prefers-reduced-motion: reduce)").addEventListener("change", function() {
+    applyEnabledState(getSavedEnabledState());
+  });
+
+  applyTheme(getSavedTheme());
   applyEnabledState(getSavedEnabledState());
   mountControls();
 }

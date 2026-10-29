@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ partial "asset-style.html" (resources.Get "css/search.css") }}
 <section class="search">
-  <form action="{{ "search" | absURL }}">
-    <input class="search-input" id="search-input" name="s" placeholder="Search..."/>
+  <form role="search" action="{{ "search" | absURL }}">
+    <input class="search-input" id="search-input" name="s" type="search" aria-label="Search" placeholder="Search..."/>
   </form>
   <div id="search-results">
    <h2>Search Results</h2>

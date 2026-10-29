@@ -43,3 +43,9 @@ html[data-theme="white"] #dark-mode-toggle-btn .moon {
 html[data-theme="dark"] #dark-mode-toggle-btn .sun {
   display: inline;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-bganim-enabled="true"] #bganim-toggle-btn .hexagon {
+    animation: none;
+  }
+}
