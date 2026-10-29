@@ -15,13 +15,6 @@ function toggleTheme() {
   applyTheme(newTheme);
   saveTheme(newTheme);
 }
-// listen for storage changes from other tabs
-window.addEventListener('storage', function(e) {
-  if (e.key === 'theme') {
-    applyTheme(e.newValue);
-  }
-});
-
 let movingPoints = null;
 function initMovingPoints() {
   if (movingPoints !== null) return;
@@ -60,17 +53,7 @@ function toggleEnabledState() {
   applyEnabledState(newEnabledState);
   saveEnabledState(newEnabledState);
 }
-document.addEventListener("DOMContentLoaded", function() {
-  applyEnabledState(getSavedEnabledState());
-});
-window.addEventListener('storage', function(e) {
-  if (e.key === 'bganim-enabled') {
-    applyEnabledState(e.newValue === 'true');
-  }
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
+function mountControls() {
   const nav = document.querySelector("#nav > ul");
   if (!nav) return;
   const controls = document.createElement("li");
@@ -85,4 +68,19 @@ document.addEventListener("DOMContentLoaded", function() {
     button.addEventListener("click", handler);
     button.style.display = "";
   }
-});
+}
+
+function initSiteControls() {
+  window.addEventListener("storage", function(e) {
+    if (e.key === "theme") {
+      applyTheme(e.newValue);
+    } else if (e.key === "bganim-enabled") {
+      applyEnabledState(e.newValue === "true");
+    }
+  });
+
+  applyEnabledState(getSavedEnabledState());
+  mountControls();
+}
+
+document.addEventListener("DOMContentLoaded", initSiteControls);
