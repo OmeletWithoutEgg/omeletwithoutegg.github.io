@@ -64,7 +64,7 @@ weight = 6
         lineNoStart = 1
         lineNos = true
         lineNumbersInTable = true
-        noClasses = true
+        noClasses = false
         tabWidth = 4
 
 [params]
@@ -90,7 +90,7 @@ weight = 6
     mathjax = true
 
     colortheme = "dark" # dark, light, white, or classic
-    css = ["css/highlight-block.css"]
+    css = ["css/chroma.css", "css/highlight-block.css"]
   
     [params.comments]
     enabled = true # default
