@@ -1,7 +1,6 @@
 ---
 title: "科學班三年之小小紀錄"
 date: 2021-08-13T04:47:43+08:00
-mathjax: true
 tags: [experience]
 ---
 

@@ -2,7 +2,6 @@
 title: Iterative-SegmentTree
 date: 2019-12-07 20:48:20
 tags: [template, tutorial, data-structure]
-mathjax: true
 ---
 # 迭代式線段樹
 

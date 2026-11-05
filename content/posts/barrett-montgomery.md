@@ -2,7 +2,6 @@
 title: "Barrett Reduction & Montgomery Multiplication"
 date: 2025-07-22T22:08:42+08:00
 draft: false
-mathjax: true
 tags: [tutorial, math, number-theory]
 ---
 

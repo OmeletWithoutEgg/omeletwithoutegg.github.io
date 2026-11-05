@@ -2,7 +2,6 @@
 title: "第四學期修課心得"
 date: 2024-11-29T23:52:40+08:00
 draft: false
-mathjax: true
 tags: [CSIE, experience]
 ---
 

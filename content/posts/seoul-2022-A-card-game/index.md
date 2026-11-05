@@ -2,7 +2,6 @@
 title: "Seoul 2022 A : Card Game"
 date: 2023-09-06T14:47:03+08:00
 draft: false
-mathjax: true
 tags: [dp, ]
 ---
 
@@ -55,7 +54,7 @@ $1 \leq N, M \leq 25$
 
 假設一個局面 $u$ 做一個動作可以走到的局面集合是 $V(u)$，那局面 $u$ 的 SG value 可以遞迴的定義為
 $$
-sg(u) = \operatorname{mex}_\limits{v \in V(u)}(sg(v))
+sg(u) = \operatorname*{mex}_{v \in V(u)}(sg(v))
 $$
 其中一堆數字的 $\operatorname{mex}$ 是最小沒有出現在這些數字中的非負整數。
 SG value 為 $0$ 的局面是必敗態，而非零的盤面都是必勝態。

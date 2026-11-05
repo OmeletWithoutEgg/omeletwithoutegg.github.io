@@ -1,6 +1,5 @@
 ---
 title: FFT-NTT
-mathjax: true
 date: 2019-12-25 14:56:54
 tags: [tutorial, fft]
 ---
@@ -26,8 +25,10 @@ for(int i = 0; i < A.size(); i++) {
 
 先假設我們有兩個多項式
 $$
-A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\newline
+\begin{gathered}
+A(x) = \sum a_i x^i, B(x) = \sum b_i x^i\\
 C(x) = A(x)B(x)
+\end{gathered}
 $$
 除了上述利用分配律乘開以外
 因為$C$的次數已經可以確定
@@ -92,8 +93,10 @@ $$
 首先先來介紹單位根$\omega$是使得
 
 $$
-\omega ^ n = 1\newline
+\begin{gathered}
+\omega ^ n = 1\\
 \forall 0 \leq i < j < n, \omega^i \neq \omega^j
+\end{gathered}
 $$
 
 的數
@@ -139,7 +142,7 @@ $$
 
 $$
 \text{for } 0 \leq i < \frac{n}{2}, 
-\left\\{\begin{matrix}
+\left\{\begin{matrix}
 y _ i &= F _ {even}(i) + \omega_n^i F _ {odd}(i) \newline
 y _ {i+\frac{n}{2}} &= F _ {even}(i) - \omega_n^i F _ {odd}(i)
 \end{matrix}\right.
@@ -254,9 +257,11 @@ signed main() {
 可以看到我們每次都是將一個序列的偶數項放前面做，奇數項放後面做再合併
 這可以想成將最低位的0/1移到最高位，例如
 $$
-100010\textbf{1} \rightarrow \textbf{1}100010\newline
-111110\textbf{1} \rightarrow \textbf{1}111110\newline
+\begin{gathered}
+100010\textbf{1} \rightarrow \textbf{1}100010\\
+111110\textbf{1} \rightarrow \textbf{1}111110\\
 101010\textbf{0} \rightarrow \textbf{0}101010
+\end{gathered}
 $$
 重複執行了把最低位移到最高位的動作$k = \log_2{n}$次之後
 原本放在$i$的位置的數字的index最後會被放到$j$的地方，其中$j$是$i$在$k$位二進位數的反轉

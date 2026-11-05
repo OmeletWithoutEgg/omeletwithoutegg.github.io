@@ -2,7 +2,6 @@
 title: "適應"
 date: 2026-10-20T23:58:27+08:00
 draft: false
-mathjax: true
 tags: [experience]
 ---
 

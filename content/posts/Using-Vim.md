@@ -1,6 +1,5 @@
 ---
 title: Using-Vim
-mathjax: true
 date: 2020-07-08 01:15:12
 tags: [vim, linux]
 ---

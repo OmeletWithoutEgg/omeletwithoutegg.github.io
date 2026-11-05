@@ -1,6 +1,5 @@
 ---
 title: bamboofox-ctf
-mathjax: true
 date: 2020-01-02 15:00:23
 tags: [CTF, experience]
 ---

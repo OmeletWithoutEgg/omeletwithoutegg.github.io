@@ -1,6 +1,5 @@
 ---
 title: Sieving-Method
-mathjax: true
 date: 2019-12-24 12:41:46
 tags: [WIP]
 ---

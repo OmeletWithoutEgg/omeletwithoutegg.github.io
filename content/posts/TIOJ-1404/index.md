@@ -1,6 +1,5 @@
 ---
 title: TIOJ-1404
-mathjax: true
 date: 2020-05-04 21:05:10
 tags: [TIOJ, geometry, greedy]
 ---

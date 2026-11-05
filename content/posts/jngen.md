@@ -2,7 +2,6 @@
 title: "jngen"
 date: 2021-01-24T01:17:43+08:00
 draft: false
-mathjax: true
 tags: [template, experience, cpp]
 ---
 

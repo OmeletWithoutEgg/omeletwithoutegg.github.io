@@ -2,7 +2,6 @@
 title: "Farewell NPSC"
 date: 2025-07-14T00:08:59+08:00
 draft: false
-mathjax: true
 tags: [experience, icpc]
 ---
 

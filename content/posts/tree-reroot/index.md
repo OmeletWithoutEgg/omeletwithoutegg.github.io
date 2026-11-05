@@ -2,7 +2,6 @@
 title: "換根 DP / 全方位木 DP"
 date: 2025-04-09T18:22:32+08:00
 draft: false
-mathjax: true
 tags: [tutorial, tree, dp, dfs, template]
 ---
 
@@ -32,7 +31,7 @@ $$
 當根從 $x$ 變成一個 $x$ 的鄰居 $y$ 的時候，只有 $x, y$ 兩個頂點的 DP 值會變化，具體來說會像是
 $$
 \begin{cases}
-dp'_x = dp _ x \cdot \frac{1}{ 1 + dp_y } \\\\
+dp'_x = dp _ x \cdot \frac{1}{ 1 + dp_y } \\
 dp'_y = dp _ y \cdot (1 + dp'_x)
 \end{cases}
 $$

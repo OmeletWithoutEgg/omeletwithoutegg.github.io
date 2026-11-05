@@ -2,7 +2,6 @@
 title: "Vim-fern"
 date: 2025-03-10T23:21:06+08:00
 draft: false
-mathjax: true
 tags: [vim, linux, experience]
 ---
 

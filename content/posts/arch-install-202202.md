@@ -2,7 +2,6 @@
 title: "Arch Install 202202"
 date: 2022-02-08T08:30:33+08:00
 draft: false
-mathjax: true
 tags: [arch, linux, pacman, KDE, plasma, grub]
 ---
 

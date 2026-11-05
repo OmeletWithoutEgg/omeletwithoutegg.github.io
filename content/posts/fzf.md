@@ -2,7 +2,6 @@
 title: "Fzf fuzzy finder - best shell history picker"
 date: 2022-09-08T21:26:22+08:00
 draft: false
-mathjax: true
 tags: [arch, linux, vim]
 ---
 

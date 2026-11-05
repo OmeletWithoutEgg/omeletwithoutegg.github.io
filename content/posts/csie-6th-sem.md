@@ -2,7 +2,6 @@
 title: "第六學期修課心得"
 date: 2024-07-07T21:31:21+08:00
 draft: false
-mathjax: true
 tags: [CSIE, experience]
 ---
 
@@ -84,15 +83,15 @@ Final project 基本上就是做一個月內做得出來的東西。雖然說「
 $$
 \begin{cases}
     D &=
-    \\{ \frac{1}{2^n} : n \in \mathbb{Z}^+ \\}
-    \\\\
+    \{ \frac{1}{2^n} : n \in \mathbb{Z}^+ \}
+    \\
     c(x) &=
     \begin{cases}
-    1 & \text{if } x = 0 \\\\
-    0 & \text{if } x \in D \land b(x) = 1 \\\\
+    1 & \text{if } x = 0 \\
+    0 & \text{if } x \in D \land b(x) = 1 \\
     b(x) & \text{otherwise}
     \end{cases}
-    \\\\
+    \\
     b(x) &=
     \min \limits _ {y \in [0, x)} (c(x))
 \end{cases}

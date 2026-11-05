@@ -2,7 +2,6 @@
 title: "Final Fantasy VII Rebirth Review"
 date: 2025-04-02T11:35:33+08:00
 draft: false
-mathjax: true
 tags: [experience]
 ---
 

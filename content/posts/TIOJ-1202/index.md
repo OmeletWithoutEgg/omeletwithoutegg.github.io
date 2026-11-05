@@ -1,6 +1,5 @@
 ---
 title: TIOJ-1202
-mathjax: true
 date: 2020-02-09 11:37:43
 tags: [TIOJ, data-structure]
 ---

@@ -2,7 +2,6 @@
 title: "Pandoc HackMD to pdf"
 date: 2023-10-02T00:33:55+08:00
 draft: false
-mathjax: true
 tags: [linux, archlinux]
 ---
 

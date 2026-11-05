@@ -2,7 +2,6 @@
 title: "Kde Zoom Shortcut"
 date: 2022-07-17T07:07:20+08:00
 draft: false
-mathjax: true
 tags: [linux, KDE, plasma]
 ---
 

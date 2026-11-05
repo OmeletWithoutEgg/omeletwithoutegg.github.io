@@ -3,7 +3,6 @@ title: TIOJ-1283
 date: 2020-01-25 23:37:00
 tags: [TIOJ, dp, dp-optimization]
 author: Sean Liu
-mathjax: true
 ---
 <! -- ### Author: Sean Liu -->
 

@@ -2,7 +2,6 @@
 title: "cmake: Could NOT find libxxx on Archlinux"
 date: 2025-01-19T23:46:42+08:00
 draft: false
-mathjax: true
 tags: [experience]
 ---
 

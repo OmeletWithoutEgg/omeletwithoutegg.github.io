@@ -2,7 +2,6 @@
 title: "Udon Emoji Post"
 date: 2026-01-25T00:38:09+08:00
 draft: false
-mathjax: false
 tags: [japanese, casual]
 ---
 

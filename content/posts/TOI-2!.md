@@ -1,6 +1,5 @@
 ---
 title: TOI-2!
-mathjax: true
 date: 2020-05-07 20:26:47
 tags: [experience, TOI]
 ---

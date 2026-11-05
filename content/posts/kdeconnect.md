@@ -2,7 +2,6 @@
 title: "KDE connect"
 date:  2022-09-07T00:57:23+08:00
 draft: false
-mathjax: true
 tags: [KDE, linux, plasma, experience]
 ---
 

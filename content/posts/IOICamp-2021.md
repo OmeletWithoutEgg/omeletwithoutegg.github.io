@@ -1,7 +1,6 @@
 ---
 title: "IOICAMP 2021"
 date: 2021-02-06T18:07:48+08:00
-mathjax: true
 tags: [experience, IOIC]
 ---
 

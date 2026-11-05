@@ -1,7 +1,6 @@
 ---
 title: "Debug Template"
 date: 2021-08-08T00:28:51+08:00
-mathjax: true
 tags: [template, experience]
 ---
 

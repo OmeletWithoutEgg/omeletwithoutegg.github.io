@@ -1,7 +1,6 @@
 ---
 title: "PBDS Split Join Is Slow"
 date: 2021-07-23T18:16:13+08:00
-mathjax: true
 tags: [binary-tree, data-structure, cpp, splay-tree]
 ---
 

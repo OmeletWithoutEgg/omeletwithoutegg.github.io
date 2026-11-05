@@ -2,7 +2,6 @@
 title: "Cppbugs"
 date: 2021-09-19T16:32:00+08:00
 draft: false
-mathjax: true
 tags: [cpp, experience]
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: TIOJ-1629
-mathjax: true
 date: 2020-02-29 00:09:33
 tags: [TIOJ, IOI]
 ---

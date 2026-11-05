@@ -1,7 +1,6 @@
 ---
 title: "BSUIR Cherry Orchard"
 date: 2021-09-12T00:05:19+08:00
-mathjax: true
 tags: [math, geometry]
 ---
 

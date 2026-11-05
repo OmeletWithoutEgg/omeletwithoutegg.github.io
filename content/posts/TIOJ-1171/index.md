@@ -2,7 +2,6 @@
 title: TIOJ-1171
 date: 2019-12-04 23:41:02
 tags: [TIOJ, tree, data-structure]
-mathjax: true
 ---
 # 我要成為海賊王
 https://tioj.ck.tp.edu.tw/problems/1171

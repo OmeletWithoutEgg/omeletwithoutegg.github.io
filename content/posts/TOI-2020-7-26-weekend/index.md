@@ -1,6 +1,5 @@
 ---
 title: 國培 week 2
-mathjax: true
 date: 2020-08-05 11:39:26
 tags:
 ---

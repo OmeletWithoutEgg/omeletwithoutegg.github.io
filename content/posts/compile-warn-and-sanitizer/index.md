@@ -2,7 +2,6 @@
 title: "fsanitize 與編譯警告"
 date: 2025-08-31T21:48:30+08:00
 draft: false
-mathjax: true
 tags: [tutorial, linux, icpc, cpp]
 ---
 

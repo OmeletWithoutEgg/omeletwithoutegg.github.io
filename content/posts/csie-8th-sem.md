@@ -2,7 +2,6 @@
 title: "第八學期修課心得"
 date: 2025-06-24T21:05:38+08:00
 draft: false
-mathjax: true
 tags: [CSIE, experience]
 ---
 

@@ -2,7 +2,6 @@
 title: "第二學期修課心得"
 date: 2022-07-14T09:16:59+08:00
 draft: false
-mathjax: true
 tags: [CSIE, experience]
 ---
 

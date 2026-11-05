@@ -2,7 +2,6 @@
 title: "ICPC 競賽中如何製作 codebook"
 date: 2024-07-13T22:44:05+08:00
 draft: false
-mathjax: true
 tags: [icpc, codebook, template]
 ---
 

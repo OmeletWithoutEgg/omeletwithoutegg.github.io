@@ -2,7 +2,6 @@
 title: "min 25 模板使用說明"
 date: 2024-12-10T21:29:00+08:00
 draft: false
-mathjax: true
 tags: [math, number-theory, template]
 ---
 
@@ -74,7 +73,7 @@ template <typename U, typename V> struct min25 {
 
 $$
 \begin{cases}
-f(n) &= (1, n) \\\\
+f(n) &= (1, n) \\
 h((s_0, s_1)) &= s_1 - s_0
 \end{cases}
 $$
@@ -117,7 +116,7 @@ https://loj.ac/p/6053
 
 $$
 \begin{cases}
-f(n) &= (1, n, [n \text{ is odd}]) \\\\
+f(n) &= (1, n, [n \text{ is odd}]) \\
 h((s_0, s_1, s_{parity})) &= s_1 + s_0 - 2 s_{parity}
 \end{cases}
 $$

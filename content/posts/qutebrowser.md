@@ -2,7 +2,6 @@
 title: "Qutebrowser 瀏覽器"
 date: 2022-03-29T10:13:55+08:00
 draft: false
-mathjax: true
 tags: [arch, linux, qutebrowser, vim]
 ---
 

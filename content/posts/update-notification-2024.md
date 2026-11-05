@@ -2,7 +2,6 @@
 title: "更新 Resource 和 About"
 date: 2024-12-14T00:55:34+08:00
 draft: false
-mathjax: true
 tags: []
 ---
 

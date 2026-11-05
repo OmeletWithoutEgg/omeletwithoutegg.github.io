@@ -2,7 +2,6 @@
 title: "ICPC Korea Regional 2024"
 date: 2024-11-22T19:34:43+08:00
 draft: false
-mathjax: true
 tags: [experience, blog]
 ---
 

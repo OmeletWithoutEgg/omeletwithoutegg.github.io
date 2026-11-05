@@ -2,7 +2,6 @@
 title: "線性遞迴淺淺談"
 date: 2021-02-13T16:28:29+08:00
 draft: false
-mathjax: true
 tags: [template, math]
 ---
 

@@ -2,7 +2,6 @@
 title: "VirtualBox cannot start"
 date: 2022-12-24T02:40:02+08:00
 draft: false
-mathjax: true
 tags: [arch, linux]
 ---
 

@@ -2,7 +2,6 @@
 title: "♯p Subset Sum"
 date: 2025-02-27T10:27:49+08:00
 draft: false
-mathjax: true
 tags: [tutorial, fft, math, adhoc, template]
 ---
 
@@ -31,12 +30,12 @@ $$
 $$
 \begin{aligned}
 \log f(x)
-&= \sum _ {i=0} ^ {N-1} \log (1 + x^{s_i}) \\\\
-&= \sum _ {i=0} ^ {N-1} \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^{s_i})^j \\\\
-&= \sum _ {i=0} ^ {N-1} \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^{s_i})^j \\\\
-&= \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^k)^j \\\\
-&= \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} x^{kj} \\\\
-&\equiv \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ {\lfloor T / k \rfloor} \frac{(-1)^{j+1}}{j} x^{kj} \pmod {x^{T+1}} \\\\
+&= \sum _ {i=0} ^ {N-1} \log (1 + x^{s_i}) \\
+&= \sum _ {i=0} ^ {N-1} \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^{s_i})^j \\
+&= \sum _ {i=0} ^ {N-1} \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^{s_i})^j \\
+&= \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} (x^k)^j \\
+&= \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ \infty \frac{(-1)^{j+1}}{j} x^{kj} \\
+&\equiv \sum _ {k=1} ^ T a_k \sum _ {j=1} ^ {\lfloor T / k \rfloor} \frac{(-1)^{j+1}}{j} x^{kj} \pmod {x^{T+1}} \\
 \end{aligned}
 $$
 

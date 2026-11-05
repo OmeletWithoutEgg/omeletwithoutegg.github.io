@@ -2,7 +2,6 @@
 title: "Zobrist Hash / XOR hash"
 date: 2024-10-21T21:17:34+08:00
 draft: false
-mathjax: true
 tags: [math, bitmask, tutorial]
 ---
 

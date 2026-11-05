@@ -2,7 +2,6 @@
 title: "量子刷題"
 date: 2025-07-15T17:06:52+08:00
 draft: false
-mathjax: true
 tags: [quantum]
 ---
 

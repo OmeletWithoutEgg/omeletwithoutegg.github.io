@@ -1,6 +1,5 @@
 ---
 title: Recent
-mathjax: true
 date: 2020-10-06 23:25:02
 tags: [experience]
 ---

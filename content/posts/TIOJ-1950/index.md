@@ -2,7 +2,6 @@
 title: TIOJ-1950
 date: 2019-12-13 23:26:11
 tags: [TIOJ, binary-tree, splay-tree]
-mathjax: true
 ---
 # 小向的試煉 2-3：轉！(Rotate!)
 https://tioj.ck.tp.edu.tw/problems/1950

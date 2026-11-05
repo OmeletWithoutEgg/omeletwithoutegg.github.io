@@ -1,6 +1,5 @@
 ---
 title: Modulo-Arithmetic
-mathjax: true
 date: 2019-12-30 13:25:22
 tags: [tutorial, math]
 ---
@@ -16,7 +15,7 @@ $$m | (a-b) \Leftrightarrow a \equiv b \pmod m$$
 利用下面的規則能夠在計算的過程中一邊取模(加減乘不會改變等價關係)
 設
 $$
-\left \\{
+\left \{
 \begin{matrix}
 a_0 \equiv a_1 \pmod m\newline
 b_0 \equiv b_1 \pmod m 
@@ -25,7 +24,7 @@ b_0 \equiv b_1 \pmod m
 $$
 則易得到
 $$
-\left \\{
+\left \{
 \begin{matrix}
 a_0 \pm b_0 \equiv a_1 \pm b_1 \pmod m\newline
 a_0b_0 \equiv a_1b_1 \pmod m

@@ -2,7 +2,6 @@
 title: "ICPC World Finals @Luxor"
 date: 2024-04-25T03:27:52+08:00
 draft: false
-mathjax: true
 tags: [experience, blog]
 ---
 

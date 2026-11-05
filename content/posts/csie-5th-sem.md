@@ -2,7 +2,6 @@
 title: "第五學期修課心得"
 date: 2024-07-01T01:19:05+08:00
 draft: false
-mathjax: true
 tags: [CSIE, experience]
 ---
 

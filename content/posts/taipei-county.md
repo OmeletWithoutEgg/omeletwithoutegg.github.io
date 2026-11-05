@@ -2,7 +2,6 @@
 title: "臺北縣"
 date: 2026-10-25T03:23:55+08:00
 draft: false
-mathjax: true
 tags: [experience]
 ---
 

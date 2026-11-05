@@ -1,6 +1,5 @@
 ---
 title: 二分圖最大權匹配
-mathjax: true
 date: 2020-11-16 13:31:22
 tags: [tutorial, template, graph, matching]
 ---

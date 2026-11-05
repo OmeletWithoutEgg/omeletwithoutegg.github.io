@@ -2,7 +2,6 @@
 title: "心態"
 date: 2022-03-10T01:05:35+08:00
 draft: false
-mathjax: true
 tags: []
 ---
 

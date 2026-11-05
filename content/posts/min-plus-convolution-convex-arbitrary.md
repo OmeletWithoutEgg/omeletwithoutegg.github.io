@@ -2,7 +2,6 @@
 title: "關於凸函數的 (min, +) 捲積"
 date: 2023-08-15T17:22:59+08:00
 draft: false
-mathjax: true
 tags: [dp-optimization, greedy, adhoc]
 ---
 
@@ -35,7 +34,7 @@ $a, b$ 都是凸的 case 很單純，首先 $c_0=a_0+b_0$，然後 $a, b$ 的差
 以結論來說就是轉移點單調，$k$ 遞增的時候最好的 $b_i$ index 也會遞增，即
 
 $$
-\operatorname{argmin}_ \limits i(b_i+a_{k-i}) \leq \operatorname{argmin}_ \limits i(b_i+a_{k+1-i})
+\operatorname*{argmin}_{i}(b_i+a_{k-i}) \leq \operatorname*{argmin}_{i}(b_i+a_{k+1-i})
 $$
 
 注意這邊的 $\operatorname{argmin}$ 如果有多個最小值我們取最小的 index $i$。
@@ -43,22 +42,22 @@ $$
 ### 證明
 
 令
-$\operatorname{argmin}_ \limits i(b_i+a_{k-i}) = x$
-$\operatorname{argmin}_ \limits i(b_i+a_{k+1-i}) = y$
+$\operatorname*{argmin}_{i}(b_i+a_{k-i}) = x$
+$\operatorname*{argmin}_{i}(b_i+a_{k+1-i}) = y$
 設 $x>y$
 明顯 $x, y$ 都不大於 $k$。
 $$
-\left\\{
+\left\{
 \begin{matrix}
-b_x+a_{k-x} & < & b_y+a_{k-y} \\\\
-b_y+a_{k+1-y} &\leq& b_x + a_{k+1-x} \\\\
+b_x+a_{k-x} & < & b_y+a_{k-y} \\
+b_y+a_{k+1-y} &\leq& b_x + a_{k+1-x} \\
 \end{matrix}
 \right.
 \implies
-\left\\{
+\left\{
 \begin{matrix}
-b_x - b_y & < & a_{k-y} - a_{k-x} \\\\
-b_x - b_y &\geq& a_{k+1-y} - a_{k+1-x} \\\\
+b_x - b_y & < & a_{k-y} - a_{k-x} \\
+b_x - b_y &\geq& a_{k+1-y} - a_{k+1-x} \\
 \end{matrix}
 \right.
 $$

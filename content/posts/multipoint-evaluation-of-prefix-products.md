@@ -2,7 +2,6 @@
 title: "Multipoint Evaluation of Prefix Products"
 date: 2025-01-09T23:10:09+08:00
 draft: false
-mathjax: true
 tags: [tutorial, math, fft, matrix]
 ---
 
@@ -33,8 +32,8 @@ naive 可以做到 $\mathcal{O}(NQ)$。以下介紹一個 $\mathcal{O}((N+Q)\log
 令 $A_{l, r} = A_l A_{l+1}\cdots A_r$。令 $B_{l, r} = B_l B_{l+1} \cdots B_r$。令 $C_{l, r} = A_1 A_2 \dots A_{l-1} \mod (B_l B_{l+1} \cdots B_r)$。在第一段提到的二元樹上每個節點對應的 $A_{l, r}$ 和 $B_{l, r}$ 都可以直接由下往上快速算出來。並且我們可以列出 $C_{l, r}$ 由上往下的遞推式：
 $$
 \begin{aligned}
-C_{l, m} &= C_{l, r} \mod B_{l, m} \\\\
-C_{m+1, r} &= C_{l, r} \cdot A_{l, m} \mod B_{m+1, r} \\\\
+C_{l, m} &= C_{l, r} \mod B_{l, m} \\
+C_{m+1, r} &= C_{l, r} \cdot A_{l, m} \mod B_{m+1, r} \\
 \end{aligned}
 $$
 
@@ -71,12 +70,12 @@ https://judge.yosupo.jp/problem/many_factorials
 在本來的 setting 中 $A_i$ 都是不高於一次的多項式，而本題則推廣 $\mathbf{A}_i$ 是一個多項式矩陣。
 
 令 $v_m = \begin{bmatrix}
-    \binom{x}{m} \\\\ \sum _ {i\le m} \binom{x}{i}
+    \binom{x}{m} \\ \sum _ {i\le m} \binom{x}{i}
 \end{bmatrix}$。則，
 
 $$
 v_m = \begin{bmatrix}
-    \binom{x}{m} \\\\ \sum _ {i\le m} \binom{x}{i}
+    \binom{x}{m} \\ \sum _ {i\le m} \binom{x}{i}
 \end{bmatrix}
 = \begin{bmatrix}
 \frac{x+m-1}{m} & 0 \\\\
@@ -96,7 +95,7 @@ $$
 $$
 \mathbf{A}_i =
 \begin{bmatrix}
-\frac{x-i+1}{i} & 0 \\\\
+\frac{x-i+1}{i} & 0 \\
 \frac{x-i+1}{i} & 1
 \end{bmatrix}
 $$

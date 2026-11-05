@@ -2,7 +2,6 @@
 title: "求解二維網格圖上的線性方程組：關鍵變數法"
 date: 2025-02-01T02:47:28+08:00
 draft: false
-mathjax: true
 tags: [linear-algebra, matrix]
 ---
 

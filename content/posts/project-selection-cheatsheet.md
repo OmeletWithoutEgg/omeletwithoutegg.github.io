@@ -2,7 +2,6 @@
 title: "Project Selection Cheatsheet"
 date: 2025-10-27T20:38:10+08:00
 draft: false
-mathjax: true
 tags: [icpc, template, flow, tutorial]
 ---
 

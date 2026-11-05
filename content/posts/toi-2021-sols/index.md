@@ -1,7 +1,6 @@
 ---
 title: "TOI 2021 Solutions"
 date: 2021-09-22T01:15:50+08:00
-mathjax: true
 tags: [experience, TOI, geometry, data-structure, dfs, dp, greedy, tree]
 ---
 
@@ -293,9 +292,9 @@ signed main() {
 #### 題意
 互動題，現在有一個遞迴數列形如
 $$
-\left\\{\begin{matrix}
-a_0 = & A \\\\ 
-a_1 = & A+B \\\\ 
+\left\{\begin{matrix}
+a_0 = & A \\
+a_1 = & A+B \\
 a_n = & a_{n-1}+a_{n-2}+f(n) & (n \geq 2)
 \end{matrix}\right.
 $$
@@ -1006,7 +1005,7 @@ signed main() {
 二維平面上有 $n$ 個點 $(x, y)$，有 $m$ 條線段分別從上方無窮遠處落下，要對每個線段輸出最先碰到的點是誰，如果沒有碰到任何點要輸出 $-1$，如果有多個最先碰到的點請輸出 $x$ 座標最小的。
 線段在下落的過程中保持斜率不變，故每個線段可以用三個參數 $(a, w, h)$ 描述，
 表示若在下落的過程中，左端點和右端點的座標分別是 $(x_l, y_l), (x_r, y_r)$，
-則 $x_l = a，x_r - x_l = w, y_r - y_l = h$。
+則 $x_l = a, x_r - x_l = w, y_r - y_l = h$。
 
 
 #### 限制

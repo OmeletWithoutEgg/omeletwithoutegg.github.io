@@ -2,7 +2,6 @@
 title: "Minecraft Launcher Murmur"
 date: 2022-04-16T17:32:05+08:00
 draft: false
-mathjax: true
 tags: [minecraft, arch, linux, experience]
 ---
 

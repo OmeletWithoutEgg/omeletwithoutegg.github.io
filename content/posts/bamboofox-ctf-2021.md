@@ -2,7 +2,6 @@
 title: "BambooFox CTF 2021"
 date: 2021-01-19T12:09:52+08:00
 draft: false
-mathjax: true
 tags: [CTF, experience]
 ---
 

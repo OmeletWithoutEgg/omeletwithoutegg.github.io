@@ -2,7 +2,6 @@
 title: "第四個月"
 date: 2026-05-24T22:06:22+08:00
 draft: false
-mathjax: true
 tags: [experience]
 ---
 

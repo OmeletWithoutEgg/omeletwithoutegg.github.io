@@ -2,7 +2,6 @@
 title: "Resources"
 date: 2021-02-14T20:15:17+08:00
 draft: false
-mathjax: true
 tags: []
 ---
 

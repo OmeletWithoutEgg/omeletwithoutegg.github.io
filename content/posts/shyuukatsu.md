@@ -2,7 +2,6 @@
 title: "就活"
 date: 2026-01-30T00:13:32+08:00
 draft: false
-mathjax: true
 tags: [experience]
 ---
 
