@@ -50,6 +50,10 @@ weight = 6
 
 # Markup Config
 [markup]
+    [markup.goldmark.parser]
+        wrapStandAloneImageWithinParagraph = false
+        [markup.goldmark.parser.attribute]
+            block = true
     [markup.goldmark.renderer]
         hardWraps = true
         unsafe = true # https://discourse.gohugo.io/t/warning-when-mixing-html-and-markdown/52280
