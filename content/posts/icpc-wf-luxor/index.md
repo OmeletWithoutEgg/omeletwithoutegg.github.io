@@ -80,7 +80,7 @@ tags: [experience, blog]
 
 ![](DSC_1861.JPG "Luxor 神廟一塊似乎寫著希臘字母的石板")
 
-![](MOV_1863.gif "logo 直接投影在神廟上，而且邊閃爍邊調大小")
+{{< video src="MOV_1863.mp4" poster="MOV_1863-poster.webp" width="1200" height="676" loop=true muted=true caption="logo 直接投影在神廟上，而且邊閃爍邊調大小" >}}
 
 結束之後似乎 ucup 有一群人聚集拍照，我們沒有拍到就先回飯店了。我們很晚才到飯店加上我在床上打混了蠻久，拖到洗完澡都快一點了，吹完頭髮出來才想到，糟糕會不會吵到他們。
 
